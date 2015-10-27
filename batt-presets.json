@@ -1,0 +1,100 @@
+/*
+These are the battery presets for the Battery Drain calculator in the Steam Engine calculator suite.
+
+The format of this file is a non-standard JSON with JavaScript style comments.
+
+All batteries must have the following properties:
+* nm : The name of the battery manufacturer, and the model/version name.
+* q : The capacity of each cell, in mAh.
+
+All batteries must have one of the following two properties:
+* a : The maximum safe continuous amp drain of the battery.
+* c : The C-rating of the battery.
+
+Optional properties:
+* s : The number of cells in series. Defaults to 1. Not in use yet.
+* p : The number of cells in parallel. Defaults to 1. Not in use yet.
+* t : A note/memo about the battery.
+* chem : Battery chemistry. Not in use yet. Example: 'LiMn2O4'
+* ff : Form factor. Not in use yet. Example: '18650'
+
+The source URL(s) for the specifications can - and should - be be added as a JavaScript style comment, for new batteries.
+*/
+[
+	{"nm":"AW IMR 14500","q":600,"a":4}
+	,{"nm":"AW IMR 14500","q":650,"a":9,"nomu":3.7}
+	,{"nm":"AW IMR 16340","q":550,"a":4}
+	,{"nm":"AW IMR 18350","q":700,"c":8.5}
+	,{"nm":"AW IMR 18350","q":800,"a":12}
+	,{"nm":"AW IMR 18490","q":1100,"c":15}
+	,{"nm":"AW IMR 18490","q":1200,"c":15}
+	,{"nm":"AW IMR 18650","q":1600,"c":15}
+	,{"nm":"AW IMR 18650","q":2000,"c":5}
+	,{"nm":"AW IMR 18650","q":2200,"a":20}
+	,{"nm":"AWT 26650 4500mah 75A","q":4500,"a":35}
+	,{"nm":"EH IMR 18350","q":800,"c":8}
+	,{"nm":"EH IMR 18500","q":1100,"c":8}
+	,{"nm":"EH IMR 18650","q":2000,"c":8}
+	,{"nm":"EH IMR 18650","q":2250,"c":8}
+	,{"nm":"Efest IMR 18350","q":700,"c":15}
+	,{"nm":"Efest IMR 18350","q":800,"c":8}
+	,{"nm":"Efest IMR 18490","q":1100,"c":8}
+	,{"nm":"Efest IMR 18500","q":700,"c":6}
+	,{"nm":"Efest IMR 18500","q":1000,"a":15}
+	,{"nm":"Efest IMR 18500","q":1100,"a":10}
+	,{"nm":"Efest IMR 18650","q":1500,"a":15}
+	,{"nm":"Efest IMR 18650","q":1600,"a":30}
+	,{"nm":"Efest IMR 18650","q":2000,"a":10}
+	,{"nm":"Efest IMR 18650","q":2100,"a":30}
+	,{"nm":"Efest IMR 18650","q":2250,"a":10}
+	,{"nm":"Efest IMR 18650 35A","q":2500,"a":20}
+	,{"nm":"Efest IMR 18650","q":3100,"a":20}
+	,{"nm":"Efest IMR 26650","q":3500,"a":32}
+	,{"nm":"Innokin iTaste MVP 2.0","q":2600,"c":3,"t":"The C rating is a guesstimate based on the 0.8Ω limit of the MVP2. This is a regulated device, so remember to choose APV under Device type."}
+	,{"nm":"Innokin iTaste VV v3","q":800,"c":4,"t":"The C rating is a guesstimate based on the 11W max power of the VV v3. The official battery capacity is 800 mAh, but some units or clones have been reported to contain a 650 mAh battery. This is a regulated device, so remember to choose APV under Device type."}
+	,{"nm":"Keeppower IMR26650","q":5200,"a":30}
+	,{"nm":"LG 18650HB6","q":1500,"a":30, "t":"LGDAHB61865", "chem":"NCM", "ff": "18650"}
+	,{"nm":"LG 18650HE2","q":2500,"c":8}
+	,{"nm":"LG 18650HG2","q":3000,"a":20}
+	,{"nm":"MNKE IMR 18650","q":1500,"c":20}
+	,{"nm":"MNKE IMR 26650","q":3500,"a":20}
+	,{"nm":"MXJO IMR 18650 35A","q":2500,"a":20}
+	,{"nm":"MXJO IMR 18650 20A","q":3000,"a":20}
+	,{"nm":"Nitecore/NL188","q":3100,"c":2}
+	,{"nm":"Orbtronic 18650 PD2900","q":2900,"a":10}
+	,{"nm":"Orbtronic 18650 SX22","q":2000,"c":11}
+	,{"nm":"Orbtronic 18650 SX30","q":2100,"c":14.2}
+	,{"nm":"Orbtronic 18650","q":3600,"c":1.3}
+	,{"nm":"Orbtronic CGR18650CH","q":2250,"c":4.4}
+	,{"nm":"Orbtronic NCR18650A","q":3100,"c":2}
+	,{"nm":"Panasonic CGR18650CH","q":2250,"c":4.4}
+	,{"nm":"Panasonic NCR18650A","q":3100,"c":2}
+	,{"nm":"Panasonic NCR18650B","q":3400,"c":2}
+	,{"nm":"Panasonic NCR18650BD","q":3200,"a":10}
+	,{"nm":"Panasonic NCR18650PD","q":2900,"c":3.4}
+	,{"nm":"Panasonic NCR18650PF","q":2900,"a":10}
+	,{"nm":"Panasonic CGR26650A","q":2650,"a":50}
+	,{"nm":"Samsung ICR18650-26F","q":2600,"c":2}
+	,{"nm":"Samsung INR18650-20R","q":2000,"c":10}
+	,{"nm":"Samsung INR18650-25R","q":2500,"c":8.8}
+	,{"nm":"Samsung INR18650-20Q","q":2000,"a":15 }
+	,{"nm":"Samsung INR18650-30Q","q":3000,"a":15,"nomu":3.6 }
+	,{"nm":"Sanyo UR16650ZTA","q":2500,"a":5}
+	,{"nm":"Sanyo UR18650EX","q":2000,"c":10}
+	,{"nm":"Sanyo UR18650F","q":2400,"c":1,"t":"This is a low drain battery not really suited for vaping."}
+	,{"nm":"Sibeile IMR 18500","q":1100,"c":1.5}
+	,{"nm":"Sibeile IMR 18500","q":1100,"a":22}
+	,{"nm":"Sony US18650VTC3","q":1600,"a":30}
+	,{"nm":"Sony US18650VTC4","q":2100,"a":30}
+	,{"nm":"Sony US18650VTC5","q":2600,"a":30}
+	,{"nm":"Sony US18650v3","q":2250,"a":10}
+	,{"nm":"Sony US26650VT","q":3500,"a":50}
+	,{"nm":"Torchy IMR 18350","q":850,"c":3.5}
+	,{"nm":"UltraFire BRC 18650 4000mAh li-ion","q":2600,"c":1.15,"t":"The true capacity of this battery is much lower than 4000 mAh. The C rating is a rough estimate."}
+	,{"nm":"UltraFire XSL 18350 1200mAh","q":750,"a":1.2,"t":"The true capacity of this battery is much lower than 1200 mAh."}
+	,{"nm":"Vappower IMR 26650","q":4200,"a":40}
+	,{"nm":"Vamped 18650","q":2000,"a":20,"t":"This is a 20A battery with a 40A pulse discharge rate."}
+	,{"nm":"Vamped 26650","q":3500,"a":40}
+	,{"nm":"Xtar IMR 18350","q":850,"c":5}
+	,{"nm":"Xtar IMR 18500","q":1100,"c":15}
+]
