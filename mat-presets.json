@@ -1,0 +1,429 @@
+/*
+These are the material presets for the Coil wrapping and Wire Wizard calculators in the Steam Engine calculator suite.
+
+The format of this file is a non-standard JSON with JavaScript style comments.
+
+All materials must have the following properties:
+* id : A short name consisting only of the letters a-z and the numbers 0-9.
+* nm : The name of the wire material, optionally with the vendor name.
+* rstv : The resistivity in Ω mm²/m. The resistivity needs to be accurate.
+* hc : The heat capacity in J/g×K.
+* dens : The density in g/cm³.
+
+Some of the existing values for heat capacity and density are estimates. This is clearly not optimal, 
+but it will have a smaller effect on the accuracy of most calculations than inaccuracies in resistivity would. 
+Since these values are mandatory (at least for now), an estimate is better than nothing.
+The values may be made optional in the future, and estimates removed.
+
+Optional properties:
+* tcr : Temperature coefficient of resistance, e.g. 0.006 for Ni200.
+* tfr : Temperature factors of resistance. This is an array of temperature-factor pairs.
+
+It is highly desirable to have a TCR or a TFR property for all new materials, even if the TCR is very low.
+
+The source URL(s) for all new material can - and should - be be added as a JavaScript style comment. 
+Any irregularities or assumptions in the data should also be pointed out and explained JavaScript style comments.
+*/
+[
+	{
+		"id": "ka1"
+		,"nm": "Kanthal A1 / APM"
+		,"rstv": 1.45
+		,"hc": 0.46 // typical kanthal, and stated for ka1
+		,"dens": 7.1
+		,"tfr" : [[20,1], [100,1.0001], [400,1.001], [500,1.01], [600,1.02], [700,1.02], [800,1.03], [900,1.04], [1000,1.04], [1200,1.04], [1300,1.04], [1400,1.05]]
+	},{
+		"id": "ka"
+		,"nm": "Kanthal A / AE / AF"
+		,"rstv": 1.39
+		,"hc": 0.4625 // guesstimate
+		,"dens": 7.15
+		,"tfr" : [[20,1], [100,1.001], [200,1.01], [300,1.015], [400,1.02], [500,1.03], [600,1.04], [700,1.045], [800,1.05], [900,1.055], [1000,1.06], [1300,1.065]]
+	},{
+		"id": "kd"
+		,"nm": "Kanthal D"
+		,"rstv": 1.35
+		,"hc": 0.465 // guesstimate
+		,"dens": 7.25
+		,"tfr": [[20,1], [100,1.001], [200,1.01], [300,1.015], [400,1.02], [500,1.03], [600,1.04], [700,1.05], [800,1.06], [900,1.07], [1100,1.075], [1200,1.08], [1300,1.085]]
+	},{
+		"id": "n20"  // 20% Cr, 80% Ni
+		,"nm": "Nichrome N20"
+		,"rstv": 0.95
+		,"hc": 0.447 // guesstimate - all the elements in Nichrome are between 0.444 and 0.449
+		,"dens": 8.7 // guesstimate
+	},{
+		"id": "n40"
+		,"nm": "Nichrome N40"
+		,"rstv": 1.04
+		,"hc": 0.447
+		,"dens": 8.6 // interpolated
+	},{
+		"id": "n60"
+		,"nm": "Nichrome N60 (C)"
+		,"rstv": 1.11
+		,"hc": 0.447
+		,"dens": 8.5 // interpolated
+		,"tcr": 0.0004
+		,"tfr":[
+			[20,1]
+			,[93, 1.017]
+			,[204, 1.035]
+			,[315, 1.052]
+			,[427, 1.069]
+			,[538, 1.086]
+			,[649, 1.092]
+			,[760, 1.098]
+			,[871, 1.102]
+			,[985, 1.105]
+		]
+	},{
+		"id": "n70"
+		,"nm": "Nichrome N70 (B)"
+		,"rstv": 1.18
+		,"hc": 0.447
+		,"dens": 8.4 // interpolated
+	},{
+		"id": "n80" // 80% Cr, 20% Ni
+		,"nm": "Nichrome N80 (A)"
+		,"rstv": 1.09
+		,"hc": 0.447
+		,"dens": 8.31
+		,"tfr":[
+			[20,1]
+			,[93, 1.008]
+			,[204, 1.02]
+			,[315, 1.033]
+			,[427, 1.048]
+			,[538, 1.063] // above this point the resistivity dips down again
+		]
+   },{
+        "id": "ss304"// http://dtic.mil/dtic/tr/fulltext/u2/a129160.pdf
+        ,"nm": "SS 304"
+        ,"rstv": 0.713 // http://dtic.mil/dtic/tr/fulltext/u2/a129160.pdf
+        ,"hc": 0.5 // guesstimate
+        ,"dens": 8 // guesstimate
+        ,"tfr": [
+			[-100,0.8412]
+			,[20,1]
+			,[100,1.0909]
+			,[150,1.1426]
+			,[200,1.1917]
+			,[250,1.2388]
+			,[300,1.2844]
+			,[500,1.4445]
+		]
+   
+    },{
+        "id": "ss316"// source: http://dtic.mil/dtic/tr/fulltext/u2/a129160.pdf
+        ,"nm": "SS 316"
+        ,"rstv": 0.771 // http://dtic.mil/dtic/tr/fulltext/u2/a129160.pdf
+        ,"hc": 0.5 // guesstimate
+        ,"dens": 8 // guesstimate
+        ,"tfr": [
+			[-100,0.8646]
+			,[20,1]
+			,[100,1.0795]
+			,[150,1.1258]
+			,[200,1.1678]
+			,[250,1.2075]
+			,[300,1.2463]
+			,[500,1.3844]
+		]
+	},{
+		"id": "ss316l"
+		,"nm": "SS 316L / Elite"
+		,"rstv": 0.75
+		,"hc": 0.5
+		,"dens": 8
+		,"tfr": [
+			[-183,0.7588]
+			,[-173,0.7717]
+			,[-123,0.8366]
+			,[-73,0.8962]
+			,[-23,0.9546]
+			,[0, 0.978]
+			,[20, 1]
+			,[100, 1.08]
+			,[105, 1.084]
+			,[110, 1.089]
+			,[115, 1.094]
+			,[120, 1.099]
+			,[125, 1.103]
+			,[130, 1.108]
+			,[135, 1.112]
+			,[140, 1.117]
+			,[145, 1.121]
+			,[150, 1.126]
+			,[155, 1.13]
+			,[160, 1.134]
+			,[165, 1.139]
+			,[170, 1.143]
+			,[175, 1.147]
+			,[180, 1.151]
+			,[185, 1.156]
+			,[190, 1.16]
+			,[195, 1.164]
+			,[200, 1.168]
+			,[205, 1.172]
+			,[210, 1.176]
+			,[215, 1.18]
+			,[220, 1.184]
+			,[225, 1.188]
+			,[230, 1.192]
+			,[235, 1.196]
+			,[240, 1.2]
+			,[245, 1.204]
+			,[250, 1.207]
+			,[255, 1.211]
+			,[260, 1.215]
+			,[265, 1.219]
+			,[270, 1.223]
+			,[275, 1.227]
+			,[280, 1.231]
+			,[285, 1.235]
+			,[290, 1.239]
+			,[295, 1.242]
+			,[300, 1.246]
+			,[327,1.2672]
+			,[427,1.3372]
+			,[527,1.4008]
+			,[627,1.454]
+			,[727,1.5006]
+		]
+	},{
+		"id": "ss317l"
+		,"nm": "SS 317L / Haywire"
+		,"rstv": 0.81 // Or 0.87? Or 0.79? Conflicting information.
+		,"hc": 0.5
+		,"dens": 7.9
+		,"tcr": 0.00094
+	},{
+		"id": "ti1"
+		,"nm": "Titanium 1"
+		,"rstv": 0.47
+		,"hc": 0.523
+		,"dens": 4.43
+		,"tcr": 0.0035
+		,"tfr": [
+			[20,1]
+			,[24,1.022177419]
+			,[37,1.066532258]
+			,[53,1.120967742]
+			,[66,1.169354839]
+			,[78,1.213709677]
+			,[94,1.272177419]
+			,[106,1.3125]
+			,[120,1.366935484]
+			,[134,1.41733871]
+			,[147,1.463709677]
+			,[159,1.510080645]
+			,[176,1.572580645]
+			,[189,1.622983871]
+			,[221,1.739919355]
+			,[233,1.782258065]
+			,[247,1.836693548]
+			,[258,1.872983871]
+			,[270,1.915322581]
+			,[287,1.97983871]
+			,[301,2.028225806]
+			,[323,2.106854839]
+			,[339,2.163306452]
+			,[353,2.20766129]
+			,[364,2.245967742]
+			,[374,2.278225806]
+			,[392,2.336693548]
+			,[404,2.379032258]
+			,[419,2.425403226]
+			,[431,2.465725806]
+			,[445,2.510080645]
+			,[460,2.556451613]
+			,[479,2.614919355]
+			,[497,2.665322581]
+			,[513,2.709677419]
+			,[541,2.788306452]
+			,[557,2.828629032]
+			,[574,2.870967742]
+			,[594,2.921370968]
+			,[609,2.959677419]
+			,[630,3.006048387]
+			,[646,3.04233871]
+			,[669,3.090725806]
+			,[683,3.116935484]
+			,[702,3.153225806]
+			,[720,3.189516129]
+			,[739,3.219758065]
+			,[753,3.243951613]
+			,[770,3.27016129]
+			,[794,3.306451613]
+			,[812,3.330645161]
+			,[830,3.352822581]
+			,[843,3.370967742]
+		]
+		
+	},{
+		"id": "ti2"  // R50400
+		,"nm": "Titanium 2 (R50400)"
+		,"rstv": 0.56
+		,"hc": 0.54 // guesstimate
+		,"dens": 4.51
+		,"tfr": [ // from ECF user vapealone
+			[20, 1]
+			,[27, 1.027237354]
+			,[44, 1.091439689]
+			,[61, 1.145914397]
+			,[76, 1.210116732]
+			,[95, 1.262645914]
+			,[109, 1.317120623]
+			,[128, 1.383268482]
+			,[146, 1.443579767]
+			,[163, 1.505836576]
+			,[181, 1.56614786]
+			,[199, 1.630350195]
+			,[217, 1.694552529]
+			,[233, 1.750972763]
+			,[247, 1.80155642]
+			,[266, 1.86770428]
+			,[287, 1.939688716]
+			,[311, 2.027237354]
+			,[328, 2.087548638]
+			,[343, 2.13618677]
+			,[360, 2.190661479]
+			,[387, 2.274319066]
+			,[413, 2.357976654]
+			,[430, 2.406614786]
+			,[456, 2.492217899]
+			,[475, 2.542801556]
+			,[495, 2.605058366]
+			,[521, 2.673151751]
+			,[535, 2.710116732]
+			,[555, 2.760700389]
+			,[569, 2.793774319]
+			,[591, 2.842412451]
+			,[606, 2.879377432]
+			,[628, 2.929961089]
+			,[641, 2.957198444]
+			,[658, 2.990272374]
+			,[672, 3.019455253]
+			,[693, 3.058365759]
+			,[719, 3.10311284]
+			,[743, 3.142023346]
+			,[755, 3.175097276]
+			,[772, 3.196498054]
+			,[800, 3.219844358]
+			,[836, 3.26459144]
+		]
+	},{
+		"id": "tie" // "Titanium ready" from e-SmokeGuru
+		,"nm": "Titanium ready (e-SG)"
+		/*
+		- 0.18mm wire at 33.4 Ω/m gives 0.85 Ω mm²/m,
+		- 0.20mm wire at 22.5 Ω/m gives 0.71 Ω mm²/m,
+		- 0.25mm wire at 19.5 Ω/m gives 0.96 Ω mm²/m,
+		- 0.32mm wire at 13.3 Ω/m gives 1.07 Ω mm²/m,
+		- 0.40mm wire at 6.8 Ω/m gives 0.85 Ω mm²/m.				
+		*/
+		,"rstv": 0.85
+		,"hc": 0.56 // guesstimate
+		,"dens": 4.75 // guesstimate
+	},{
+		"id": "nio"
+		,"nm": "Niobium alloy"
+		,"rstv": 1.46809443507 // Niobium has a resistivity of 1.01247892074 times that of Kanthal A1 at the same gauge, according to StealthVape.
+		,"hc": 0.45 // wild guess
+		,"dens": 7.5 // wild guess
+	},{
+		"id": "ni200lin"
+		,"nm": "Nickel Ni200 (linear TCR)"
+		,"rstv": 0.096
+		,"hc": 0.456
+		,"dens": 8.89
+		,"tcr": 0.006
+	},{
+		"id": "ni200"
+		,"nm": "Nickel Ni200  (TFR curve)"
+		,"rstv": 0.096
+		,"hc": 0.456
+		,"dens": 8.89
+		,"tcr": 0.006
+		,"tfr": [ // from Evolv
+			[-73.3333333333333333333, 0.620729625225067]
+			,[-17.7777777777777777778, 0.827668249607086]
+			,[20,1]
+			,[21.1111111111111111111, 1.00000214576721]
+			,[93.3333333333333333333, 1.31032383441925]
+			,[204.4444444444444444444, 1.94822633266449]
+			,[315.5555555555555555556, 2.82758617401123]
+			,[426.6666666666666666667, 3.51726651191711]
+		]
+	},{
+		"id": "nife30"
+		,"nm": "NiFe30 (Resistherm)"
+		,"rstv": 0.33 // http://www.abcpol.pl/en/our-offer/resistance-alloys
+		,"hc": 0.45 // guesstimate
+		,"dens": 8.2 // guesstimate
+		,"tcr": 0.0032
+	},{
+		"id": "reactor"
+		,"nm": "NiFe (Reactor Wire)"
+		,"rstv": 0.4334
+		,"hc": 0.45 // guesstimate
+		,"dens": 8.2 // guesstimate
+		,"tcr": 0.004
+	},{
+		"id": "nife30stealth"
+		,"nm": "NiFe30 (StealthVape)"
+		,"rstv": 0.21
+		,"hc": 0.45 // guesstimate
+		,"dens": 8.5
+		,"tcr": 0.005
+   },{
+        "id": "nidh" // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/100-nickel/
+        ,"nm": "Nickel DH"
+        ,"rstv": 0.09 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/100-nickel/
+        ,"hc":  0.48// http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/100-nickel/
+        ,"dens": 8.9 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/100-nickel/
+        ,"tfr": [
+			[-100,0.6]
+			,[20,1]
+			,[100,1.4]
+			,[150,1.6941]
+			,[200,2.08]
+			,[250,2.5092]
+			,[300,2.97]
+			,[500,4.23]
+		]
+    },{
+        "id": "nft70" // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-70/
+        ,"nm": "Nifethal 70 (Alloy120)"
+        ,"rstv": 0.2 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-70/
+        ,"hc": 0.52 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-70/
+        ,"dens": 8.45 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-70/
+        ,"tfr": [
+			[-100,0.576]
+			,[20,1]
+			,[100,1.42]
+			,[150,1.68]
+			,[200,1.91]
+			,[250,2.19]
+			,[300,2.47]
+			,[500,3.66]
+		]
+    },{
+        "id": "nft52" // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-52/
+        ,"nm": "Nifethal 52 (Alloy52)"
+        ,"rstv": 0.37 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-52/
+        ,"hc": 0.5 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-52/
+        ,"dens": 8.2 // http://kanthal.com/en/products/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/nifethal-52/
+        ,"tfr": [
+			[-100,0.664]
+			,[20,1]
+			,[100,1.33]
+			,[150,1.53]
+			,[200,1.73]
+			,[250,1.93]
+			,[300,2.13]
+			,[500,2.77]
+		]
+	}
+]
