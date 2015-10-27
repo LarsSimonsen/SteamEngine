@@ -1,0 +1,232 @@
+/*
+These are the mod  presets for the Mod Range calculator in the Steam Engine calculator suite.
+
+The format of this file is a non-standard JSON with JavaScript style comments.
+
+There are three types of items: 
+* Mods with custom boards, e.g. the Provari P3.
+* Modder's boards, e.g. the Evolv DNA 20.
+* Mods that use a modder's board, e.g. Beyond Vape Solara.
+
+All mods with custom boards, and all modder's boards, must have the following properties:
+* nm : The name of the mod manufacturer, and the model/version name.
+* umax : The maximum output voltage the mod can produce.
+* pmax : The maximum output power (wattage) the mod can produce.
+* imax : The maximum output current (amperage) the mod can produce.
+
+Optional properties:
+* rmin : The minimum resistance the mod will fire.
+* rmax : The maximum resistance the mod will fire.
+* umin : The minimum output voltage the mod can produce. (Not used at the moment.)
+* pmin : The minimum output power (wattage) the mod can produce.  (Not used at the moment.)
+
+Modder's boards must also have the following property:
+* chipnm : A short name that can be used as a reference in the item about the mod. See the DNA 20 for an example.
+
+Mods that use a modder's board must have the following properties:
+* chip : The referance to the chipnm property of the board. See the Protovapor XPV DNA-20D for an example.
+
+The source URL(s) for the specifications can - and should - be be added as a JavaScript style comment, for new mods.
+*/
+[
+{"nm":"AceSmok Ace 50","umin":3,"umax":6,"pmin":3,"pmax":50,"rmin":0.3,"rmax":3.3,"imax":15}
+,{"nm":"Ante Meridiem Axis","umin":2.8,"umax":5.75,"pmax":76.8,"rmin":0.16,"rmax":3,"imax":16}
+,{"nm":"Anyvape AnyMOD","umin":3,"umax":6,"pmin":3,"pmax":18,"imax":5}
+,{"nm":"Arrow 100W","umin":1.1,"umax":13,"pmin":7,"pmax":100,"rmin":0.2,"rmax":3.3,"imax":25}
+,{"nm":"Artisan Supermax","umin":3,"umax":6,"pmin":5,"pmax":82,"rmin":0.2,"rmax":3,"imax":16}
+,{"nm":"Asmodus Snow Wolf 200W","umin":0.5,"umax":7,"pmin":5,"pmax":200,"rmin":0.05,"rmax":2.5,"imax":35}
+,{"nm":"Aspire CF Sub Ohm","umin":3.2,"umax":4.2,"pmin":20,"pmax":58.75,"rmin":0.3,"rmax":1,"imax":40}
+,{"nm":"Beastmode Industries BMI 100 Watt V.1","umin":1,"umax":9.5,"pmin":10,"pmax":100,"rmin":0.15,"rmax":3,"imax":40}
+,{"nm":"Beyond Vape Solara","chip":"DNA30"}
+,{"nm":"Billet Box rev. 3a","umax":5.5,"pmax":12,"imax":3}
+,{"nm":"Cana Modz","chip":"ClouporDNA30"}
+,{"nm":"Cloupor DNA-30","umin":4,"umax":8.3,"pmin":7,"pmax":30,"rmin":0.3,"rmax":3.3,"imax":10,"chipnm":"ClouporDNA30"}
+,{"nm":"Cloupor DNA-50","umin":3.2,"umax":9,"pmin":7,"pmax":50,"rmin":0.2,"rmax":3,"imax":10,"chipnm":"ClouporDNA50"}
+,{"nm":"Cloupor GT","umin":0.5,"umax":7,"pmin":1,"pmax":80,"rmin":0.1,"rmax":3.5,"imax":20}
+,{"nm":"Cloupor Mini","umin":3.6,"umax":7,"pmin":7,"pmax":30,"rmin":0.45,"rmax":3,"imax":10}
+,{"nm":"Cloupor T5","umin":2,"umax":9.3,"pmin":7,"pmax":50,"rmin":0.2,"rmax":3.6,"imax":10}
+,{"nm":"Cloupor T6","umax":9.3,"pmin":7,"pmax":100,"rmin":0.2,"rmax":4,"imax":15}
+,{"nm":"Cloupor T8","umin":1.5,"umax":7.6,"pmin":7,"pmax":150,"rmin":0.15,"rmax":4,"imax":20}
+,{"nm":"Cloupor ZNA50","umin":3.6,"umax":8.5,"pmin":7,"pmax":50,"rmin":0.3,"rmax":3.3,"imax":10}
+,{"nm":"Craving Vapor HexOhm","chip":"OKRT10"}
+,{"nm":"Craving Vapor HexOhm V2","chip":"OKL2T20W12"}
+,{"nm":"C-Tratech Smart Box 50W","umin":1,"umax":10,"pmin":3,"pmax":50,"rmin":0.25,"rmax":3,"imax":15}
+,{"nm":"Dicodes Dani Extreme","umin":1.87,"umax":7.7,"pmin":5,"pmax":20,"rmin":0.3,"rmax":9.9,"imax":8}
+,{"nm":"Dicodes Dani Extreme v2 / Pipeline Pro v2","umax":12,"pmin":5,"pmax":40,"rmin":0.05,"rmax":5,"imax":15}
+,{"nm":"DJK Wood Mods The Nerd VV","umin":3,"umax":5.5,"pmax":76.8,"rmin":0.2,"rmax":3,"imax":16}
+,{"nm":"Dovpo DT-50","umin":2.5,"umax":7,"pmax":50,"rmin":0.2,"imax":25}
+,{"nm":"Dovpo E-LVT","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.3,"imax":5}
+,{"nm":"Dovpo E-Mech","umin":3,"umax":6,"pmin":3,"pmax":30,"rmin":0.5,"rmax":5,"imax":7}
+,{"nm":"Dovpo TC 50","umin":3.2,"umax":4.2,"pmin":1,"pmax":50,"rmin":0.1,"rmax":3,"imax":23}
+,{"nm":"eGo Twist","umin":3.2,"umax":4.8,"pmin":4,"pmax":12,"rmin":1.2,"rmax":3,"imax":2.5}
+,{"nm":"eGo-V V3","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":2.5}
+,{"nm":"Evod V v3","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":2.5}
+,{"nm":"Evolv DNA-20D","umin":4,"umax":8.3,"pmin":7,"pmax":20,"rmin":1,"rmax":3.3,"imax":6,"chipnm":"DNA20"}
+,{"nm":"Evolv DNA-30D","umin":4,"umax":8.3,"pmin":7,"pmax":30,"rmin":0.5,"rmax":3,"imax":10,"chipnm":"DNA30"}
+,{"nm":"Evolv DNA-40 (std. wire)","umin":1,"umax":9,"pmin":1,"pmax":40,"rmin":0.16,"rmax":2,"imax":16,"chipnm":"DNA40"}
+,{"nm":"Evolv DNA-40 (Ni 200)","umin":1,"umax":9,"pmin":1,"pmax":40,"rmin":0.1,"rmax":1,"imax":16,"chipnm":"DNA40temp"}
+,{"nm":"Evolv DNA-200","umax":9,"pmin":1,"pmax":200,"imax":50,"chipnm":"DNA200"}
+,{"nm":"Evolv DNA-200 (TC mode)","umax":6.25,"pmin":1,"pmax":200,"imax":70,"chipnm":"DNA200"}
+,{"nm":"Evolv Kick 2","umin":2,"umax":6.3,"pmin":5,"pmax":15,"rmin":0.5,"rmax":3.3,"imax":6}
+,{"nm":"Eleaf iStick","umin":3,"umax":5.5,"pmin":3,"pmax":20,"rmin":1,"rmax":3,"imax":4.5}
+,{"nm":"Eleaf iStick 30W","umin":2,"umax":8,"pmin":5,"pmax":30,"rmin":0.4,"rmax":5,"imax":8.66}
+,{"nm":"Eleaf iStick 40W TC","umax":8,"pmin":5,"pmax":40,"rmin":0.05,"rmax":3.5,"imax":14.5}
+,{"nm":"Eleaf iStick 50W","umin":2,"umax":10,"pmin":5,"pmax":50,"rmin":0.2,"rmax":5,"imax":25}
+,{"nm":"Eleaf iStick 100W","umin":2,"umax":10,"pmin":5,"pmax":100,"rmin":0.15,"rmax":5,"imax":25}
+,{"nm":"Gossmods The Duke","umin":3,"umax":6,"pmax":50,"rmin":0.5,"imax":10}
+,{"nm":"Grand Innovations GI2","umin":1,"umax":5.5,"pmin":1,"pmax":100,"rmin":0.4,"rmax":4,"imax":25}
+,{"nm":"Hana Modz V3","chip":"DNA30"}
+,{"nm":"Hana Modz DNA 40","chip":"DNA40"}
+,{"nm":"Heatvape Invader Mini","umin":1,"umax":9.9,"pmin":1,"pmax":50,"rmin":0.16,"rmax":2,"imax":17.6}
+,{"nm":"Heatvape Invader Mini (TC mode)","umin":1,"umax":9.9,"pmin":1,"pmax":50,"rmin":0.1,"rmax":1,"imax":17.6}
+,{"nm":"iJoy A160","umin":1,"umax":7,"pmin":5,"pmax":160,"rmin":0.03,"rmax":3,"imax":35}
+,{"nm":"Innokin Cool Fire II","umax":6,"pmin":7,"pmax":12.5,"rmin":1,"imax":5}
+,{"nm":"Innokin Cool Fire IV","umin":3,"umax":7.5,"pmin":6,"pmax":40,"rmin":0.2,"imax":14.5}
+,{"nm":"Innokin Disrupter","umin":3,"umax":7.5,"pmin":6,"pmax":50,"rmin":0.2,"rmax":3.1,"imax":16}
+,{"nm":"Innokin iTaste 134 / iTaste 134 mini","umin":3,"umax":6,"pmin":6.5,"pmax":12.5,"rmin":1.2,"rmax":3.5,"imax":3}
+,{"nm":"Innokin iTaste MVP 2.0","umin":3.3,"umax":5,"pmin":6,"pmax":11,"rmin":0.8,"imax":3.5}
+,{"nm":"Innokin iTaste MVP 20 Watt","umin":3.3,"umax":7.5,"pmin":6,"pmax":20,"rmin":1,"imax":6}
+,{"nm":"Innokin iTaste MVP 3.0","umin":3,"umax":9,"pmin":6,"pmax":30,"rmin":0.4,"rmax":2.5,"imax":9}
+,{"nm":"Innokin iTaste MVP 3 Pro","umin":3,"umax":9,"pmin":6,"pmax":60,"rmin":0.2,"rmax":3.1,"imax":17.5}
+,{"nm":"Innokin iTaste SVD","umin":3.3,"umax":6,"pmin":3,"pmax":15,"rmin":1.3,"rmax":6,"imax":5}
+,{"nm":"Innokin iTaste SVD2","umin":2,"umax":6.3,"pmin":5,"pmax":20,"rmin":0.5,"rmax":3,"imax":6}
+,{"nm":"Innokin iTaste VTR","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":0.8,"imax":5}
+,{"nm":"Innokin iTaste VV V3.0","umin":3.3,"umax":5,"pmin":6,"pmax":11,"rmin":1.2,"imax":3.5}
+,{"nm":"Joy4life Beyang 30W","umax":5.5,"pmax":30,"rmin":0.2,"imax":20}
+,{"nm":"Joyetech eCom Supreme","umin":3,"umax":8,"pmin":5,"pmax":30,"rmin":0.5,"imax":8}
+,{"nm":"Joyetech eVic","umin":3,"umax":5,"pmin":2,"pmax":11,"rmin":1.5,"imax":2.5}
+,{"nm":"Joyetech eVic VT","umax":8,"pmax":60,"imax":20,"rmin":0.15,"rmax":3.5}
+,{"nm":"Joyetech eVic VT (TC mode)","umax":8,"pmax":60,"imax":20,"rmin":0.05,"rmax":1}
+,{"nm":"Joyetech eVic Supreme","umax":6,"pmax":30,"rmin":0.5,"rmax":5,"imax":6}
+,{"nm":"J Well Alesia","umin":1,"umax":8,"pmin":7,"pmax":40,"rmin":0.3,"rmax":3,"imax":18}
+,{"nm":"J Well Troca","umin":1,"umax":8,"pmin":7,"pmax":30,"rmin":0.3,"rmax":3,"imax":12}
+,{"nm":"Kanger e-Power v3","umax":6,"pmax":12,"imax":2}
+,{"nm":"Kanger IPOW 2","umax":5,"pmax":15,"imax":3.9}
+,{"nm":"Kanger KBOX","umin":2.2,"umax":10,"pmin":8,"pmax":40,"rmin":0.4,"rmax":3,"imax":10}
+,{"nm":"Kanger KBOX Mini / SUBOX Mini","umax":9,"pmin":7,"pmax":50,"rmin":0.3,"imax":12}
+,{"nm":"Kanger K-Simar 20","umin":1.8,"umax":7,"pmin":2.8,"pmax":20,"rmin":0.5,"rmax":2.5,"imax":3.7}
+,{"nm":"Kangside e-Huge","umin":3.2,"umax":7.3,"pmin":7,"pmax":35,"rmin":0.5,"rmax":3,"imax":12}
+,{"nm":"Kamry 20","umin":3.6,"umax":7.6,"pmin":7,"pmax":23,"rmin":0.2,"rmax":3,"imax":10}
+,{"nm":"Kamry 60W","umin":1.4,"umax":8,"pmin":7,"pmax":60,"rmin":0.3,"imax":20}
+,{"nm":"Kamry God Box","umin":1.5,"umax":10.5,"pmin":5,"pmax":180,"rmin":0.3,"rmax":3,"imax":30}
+,{"nm":"KangXin VF clone v3","umin":1,"umax":9.9,"pmin":1,"pmax":40,"rmin":0.16,"rmax":2,"imax":16}
+,{"nm":"KangXin KX5-50W","umin":3.2,"umax":11.5,"pmin":5,"pmax":50,"rmin":0.2,"rmax":3,"imax":11.59}
+,{"nm":"KSD 30","umin":1.8,"umax":8.2,"pmin":7,"pmax":30,"rmin":0.5,"rmax":7,"imax":7.8}
+,{"nm":"KSD Kmax (single battery)","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":3}
+,{"nm":"KSD Kmax (stacked)","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":5}
+,{"nm":"L-Rider Lambo 6.0","umin":3,"umax":6,"pmin":1,"pmax":20,"rmin":0.6,"imax":5}
+,{"nm":"L-Rider Lavatube","umin":3,"umax":6,"pmax":15,"rmin":1.3,"imax":2.5}
+,{"nm":"Lotus Jellyfish","umax":6,"pmax":53,"rmin":0.1,"rmax":3.5,"imax":30}
+,{"nm":"Lotus LE80","umin":3.3,"umax":6,"pmin":6.6,"pmax":180,"rmin":0.2,"rmax":5,"imax":30}
+,{"nm":"Luxyoun Smaug","umax":17.5,"pmax":150,"rmin":0.3,"rmax":3,"imax":40}
+,{"nm":"Majesty 150W","umin":1,"umax":8.4,"pmin":3,"pmax":150,"rmin":0.1,"rmax":4,"imax":30}
+,{"nm":"Megatron 260","umin":7.5,"umax":12.6,"pmin":7,"pmax":260,"rmin":0.3,"rmax":4,"imax":30}
+,{"nm":"Naos Raptor 10A","umin":0.59,"umax":6,"pmax":50,"imax":10}
+,{"nm":"Naos Raptor 20A","umin":0.59,"umax":6,"pmax":120,"imax":20}
+,{"nm":"Nivel V3","umin":3,"umax":6,"pmax":15,"rmin":1,"imax":3.5,"chipnm":"NivelV3"}
+,{"nm":"Notcigs Buzz Pro","chip":"notcigsvv"}
+,{"nm":"Notcigs VV","umin":3.3,"umax":5.5,"pmax":15,"imax":3.3,"chipnm":"notcigsvv"}
+,{"nm":"OKL2-T/20-W12","umin":3.3,"umax":5.5,"pmax":110,"rmin":0.2,"imax":20,"chipnm":"OKL2T20W12"}
+,{"nm":"OKR-T10","umin":0.591,"umax":6,"pmax":50,"rmin":0.6,"imax":10,"chipnm":"OKRT10"}
+,{"nm":"Pioneer4You/Green Leaf Seven 22","chip":"SX220"}
+,{"nm":"Pioneer4You/Green Leaf Seven 30W","chip":"SX300"}
+,{"nm":"Pioneer4You/Green Leaf IPV","chip":"SX330"}
+,{"nm":"Pioneer4You/Green Leaf IPV D2","chip":"SX130H"}
+,{"nm":"Pioneer4You/Green Leaf IPV Mini","chip":"SX130"}
+,{"nm":"Pioneer4You/Green Leaf IPV Mini 2","chip":"SX330v2c"}
+,{"nm":"Pioneer4You/Green Leaf IPV V2","chip":"SX330v2"}
+,{"nm":"Pioneer4You/Green Leaf IPV V2S","chip":"SX330v2s"}
+,{"nm":"Pioneer4You/Green Leaf IPV V3 100W","chip":"SX330v3"}
+,{"nm":"Pioneer4You/Green Leaf IPV V3 150W","chip":"SX330v3s"}
+,{"nm":"Pioneer4You/Green Leaf IPV V3 200W","chip":"SX330v3si"}
+,{"nm":"Pioneer4You/Green Leaf IPV V4 100W","chip":"SX330v4s"}
+,{"nm":"Pioneer4You/Green Leaf P-Max","umin":3,"umax":6,"pmin":5,"pmax":15,"rmin":1,"rmax":5,"imax":5}
+,{"nm":"Protovapor XPV DNA-20D","chip":"DNA20"}
+,{"nm":"Protovapor XPV DNA-30D","chip":"DNA30"}
+,{"nm":"Protovapor XPV DNA-40D","chip":"DNA40"}
+,{"nm":"ProVari 2, ProVari 2.5","umin":2.9,"umax":6,"pmin":0,"pmax":15,"rmin":1.2,"imax":3.5}
+,{"nm":"ProVari P3 beta","umin":2.9,"umax":6,"pmin":3,"pmax":20,"rmin":0.7,"imax":5}
+,{"nm":"ProVari P35","umin":2.9,"umax":6,"pmin":3,"pmax":20,"rmin":0.7,"imax":5.5}
+,{"nm":"Psmoke GI2","umin":1,"umax":5.5,"pmin":1,"pmax":100,"rmin":0.1,"rmax":4,"imax":20}
+,{"nm":"Raffmods Ranger","chip":"OKRT10"}
+,{"nm":"RainbowHeaven Arrow","umin":1.1,"umax":13,"pmin":7,"pmax":100,"rmin":0.3,"rmax":3.3,"imax":30}
+,{"nm":"Robbot Tech ZNA50","umax":11,"pmin":7,"pmax":50,"rmin":0.3,"rmax":3.5,"imax":30}
+,{"nm":"Reo VV Grand/Woodvil","chip":"notcigsvv"}
+,{"nm":"Sigelei 20W","umin":3,"umax":8.5,"pmin":7,"pmax":20,"rmin":0.5,"rmax":3,"imax":5.35}
+,{"nm":"Sigelei 30W","chip":"SX300"}
+,{"nm":"Sigelei Legend v2","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":5}
+,{"nm":"Sigelei Raptor","chip":"SX330v3"}
+,{"nm":"Sigelei 50W","umin":3.6,"umax":8.5,"pmin":7,"pmax":50,"rmin":0.2,"rmax":3,"imax":16}
+,{"nm":"Sigelei 75W TC","umin":0.5,"umax":8.5,"pmin":5,"pmax":75,"rmin":0.05,"rmax":2.5,"imax":25}
+,{"nm":"Sigelei 100W","chip":"SX330v3"}
+,{"nm":"Sigelei 150W","umax":7.5,"pmax":150,"imax":30}
+,{"nm":"Sigelei Kick","umax":4.2,"pmax":10,"rmin":1,"imax":4}
+,{"nm":"Sigelei Mini","chip":"SX130v1.5"}
+,{"nm":"Sigelei Vmax","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.25,"rmax":3,"imax":5}
+,{"nm":"Sigelei Zmax V3","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.5,"rmax":3,"imax":4}
+,{"nm":"Sigelei Zmax V5","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":4}
+,{"nm":"Simeiyue God 180","umin":1,"umax":12.6,"pmax":180,"rmin":0.5,"rmax":4,"imax":20}
+,{"nm":"Simeiyue God 180s","umin":1,"umax":9.6,"pmax":220,"rmin":0.2,"rmax":4,"imax":23}
+,{"nm":"Simeiyue God 260","umin":1,"umax":11,"pmin":5,"pmax":260,"rmin":0.3,"rmax":4,"imax":35}
+,{"nm":"Smok Ace","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"rmax":3,"imax":5}
+,{"nm":"Smok BEC Pro","umin":3,"umax":12,"pmin":6,"pmax":50,"rmin":0.2,"rmax":9.9,"imax":10}
+,{"nm":"Smok Sid","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"rmax":3,"imax":4}
+,{"nm":"Smok X Cube II","umin":0.35,"umax":8,"pmin":6,"pmax":160,"rmin":0.01,"rmax":3,"imax":20}
+,{"nm":"Smok X Pro BT50","umax":12,"pmax":50,"rmin":0.2,"rmax":3,"imax":16}
+,{"nm":"Smok X Pro M36","umax":6.7,"pmax":36,"rmin":0.2,"rmax":4,"imax":16}
+,{"nm":"Smok X Pro M50","umin":3,"umax":12,"pmin":6,"pmax":50,"rmin":0.2,"rmax":4,"imax":11}
+,{"nm":"Smok X Pro M80","umin":2.8,"umax":12,"pmin":6,"pmax":80,"rmin":0.1,"rmax":30,"imax":20}
+,{"nm":"Smok Zmax","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":4}
+,{"nm":"Smok Zmax Mini","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":6}
+,{"nm":"SMY 260W","umax":12.6,"pmax":260,"rmin":0.3,"rmax":4,"imax":30}
+,{"nm":"SMY 50TC","umin":1,"umax":14,"pmin":5,"pmax":50,"rmin":0.1,"rmax":3,"imax":35}
+,{"nm":"SMY GOD 180","umin":1.5,"umax":10.5,"pmin":5,"pmax":180,"rmin":0.3,"rmax":4,"imax":30}
+,{"nm":"Steam STM-1 / STM-2","umin":3,"umax":6,"pmin":3,"pmax":15,"imax":4}
+,{"nm":"Sunzip Vapmod Deezel","umax":8.4,"pmin":3,"pmax":150,"imax":38.8,"rmin":0.099,"rmax":3}
+,{"nm":"SvoëMesto Semovar","chip":"NivelV3"}
+,{"nm":"Taifun The Eye","umin":2.5,"umax":8,"pmax":24,"rmin":0.7,"rmax":6,"imax":5}
+,{"nm":"Taifun The Eye (updated)","umin":2.5,"umax":8,"pmax":24,"rmin":0.5,"rmax":6,"imax":7}
+,{"nm":"Tesla","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"imax":3}
+,{"nm":"Tesla 120W","umax":11,"pmin":7.5,"pmax":120,"rmin":0.18,"rmax":3,"imax":24}
+,{"nm":"Tesla 2 Sub Mod","umax":4.2,"pmax":100,"rmin":0.1,"rmax":3.5,"imax":40}
+,{"nm":"Tesla Spider","umax":4.8,"pmax":12,"imax":3}
+,{"nm":"Tobeco ZNA 36","umin":1.2,"umax":11,"pmin":5,"pmax":36,"rmin":0.3,"rmax":3.3,"imax":12}
+,{"nm":"Vamo 35W (clone)","umax":9,"pmin":7,"pmax":35,"rmin":0.3,"rmax":3,"imax":10}
+,{"nm":"Vamo V1 / V2 / V3 / V5","umin":3,"umax":6,"pmin":3,"pmax":15,"rmin":1.2,"rmax":5,"imax":3.2}
+,{"nm":"Vamo V7","umin":1,"umax":9,"pmin":3,"pmax":40,"rmin":0.2,"rmax":5,"imax":10}
+,{"nm":"VaporFi Vox II","umin":3,"umax":8.5,"pmin":7,"pmax":50,"rmin":0.2,"rmax":3,"imax":22}
+,{"nm":"Vapor Flask v1/v2 DNA 30","chip":"DNA30"}
+,{"nm":"Vapor Flask v2 DNA 40","chip":"DNA40"}
+,{"nm":"Vapor Shark DNA","chip":"DNA20"}
+,{"nm":"Vapor Shark DNA/rDNA 30","chip":"DNA30"}
+,{"nm":"Vapor Shark rDNA 40","chip":"DNA40"}
+,{"nm":"Vicious Ant VariAnt 120W","umin":2,"umax":8.4,"pmin":5,"pmax":120,"rmin":0.2,"imax":20}
+,{"nm":"Vicious Ant VariAnt 250W","umin":2,"umax":8.4,"pmin":5,"pmax":250,"imax":30}
+,{"nm":"Vision Spinner / Spinner II","umin":3.3,"umax":4.8,"pmin":4,"pmax":12,"rmin":1.2,"rmax":3,"imax":2.5}
+,{"nm":"Vision X.Fir/X.Gun","umin":3,"umax":6,"pmin":6,"pmax":12,"imax":2.5}
+,{"nm":"Volcano Lavatube","umin":3,"umax":6,"pmax":12.5,"imax":2.5}
+,{"nm":"Volcano Lavatube v2.5","umin":3,"umax":6,"pmax":15,"imax":3}
+,{"nm":"YiHi SX130","umin":3,"umax":8,"pmin":5,"pmax":30,"rmin":0.5,"rmax":3,"imax":13,"chipnm":"SX130"}
+,{"nm":"YiHi SX130 v1.5","umax":8.5,"pmax":30,"rmin":0.3,"rmax":3,"imax":13,"chipnm":"SX130v1.5"}
+,{"nm":"YiHi SX130H","umin":1,"umax":7,"pmin":7,"pmax":75,"rmin":0.2,"rmax":3,"imax":25,"chipnm":"SX130H"}
+,{"nm":"YiHi SX220","umin":4,"umax":8.5,"pmin":7,"pmax":22,"rmin":0.5,"rmax":3.5,"imax":5.5,"chipnm":"SX220"}
+,{"nm":"YiHi SX300","umin":4,"umax":8.5,"pmin":7,"pmax":30,"rmin":0.5,"rmax":3,"imax":10,"chipnm":"SX300"}
+,{"nm":"YiHi SX330 V1 35W","umin":3.6,"umax":8.5,"pmin":7,"pmax":35,"rmin":0.3,"rmax":3,"imax":13.5,"chipnm":"SX330"}
+,{"nm":"YiHi SX330 V2 50W","umin":3.6,"umax":8.5,"pmin":7,"pmax":50,"rmin":0.2,"rmax":3,"imax":16,"chipnm":"SX330v2"}
+,{"nm":"YiHi SX330 V2C 70W","umin":3.6,"umax":8.5,"pmin":7,"pmax":70,"rmin":0.2,"rmax":3,"imax":30,"chipnm":"SX330v2c"}
+,{"nm":"YiHi SX330 V2 S 60W","umin":3.6,"umax":8.5,"pmin":7,"pmax":60,"rmin":0.2,"rmax":3,"imax":20,"chipnm":"SX330v2s"}
+,{"nm":"YiHi SX330 V3 100W","umin":1,"umax":7,"pmin":10,"pmax":100,"rmin":0.15,"rmax":1.5,"imax":30,"chipnm":"SX330v3"}
+,{"nm":"YiHi SX330 V3 150W","umin":1.3,"umax":8.5,"pmin":10,"pmax":150,"rmin":0.1,"rmax":3,"imax":40,"chipnm":"SX330v3-150"}
+,{"nm":"YiHi SX330 V3S 150W","umin":1,"umax":7,"pmin":7,"pmax":150,"rmin":0.1,"rmax":3,"imax":40,"chipnm":"SX330v3s"}
+,{"nm":"YiHi SX330-V3Si 200W","umax":8.5,"pmax":200,"rmin":0.1,"rmax":3,"imax":40,"chipnm":"SX330v3si"}
+,{"nm":"YiHi SX330 V4S 100W","umin":1,"umax":7,"pmin":7,"pmax":100,"rmin":0.1,"rmax":3,"imax":35,"chipnm":"SX330v4s"}
+,{"nm":"YiHi SX350 30W","umin":1.5,"umax":9.5,"pmin":5,"pmax":30,"rmin":0.2,"rmax":3,"imax":12.5}
+,{"nm":"YiHi SX350 50W","umin":1,"umax":9.5,"pmin":5,"pmax":50,"rmin":0.2,"rmax":3,"imax":25}
+,{"nm":"YiHi SX350 100W","umin":1,"umax":9.5,"pmin":10,"pmax":100,"rmin":0.15,"rmax":3,"imax":40}
+,{"nm":"YiHi SX350J VJ mode","umin":1,"umax":9.5,"pmin":5,"pmax":50,"rmin":0.05,"rmax":0.3,"imax":40}
+,{"nm":"YiHi SX350J VW/single batt mode","umin":1,"umax":9.5,"pmin":5,"pmax":60,"rmin":0.15,"rmax":1.5,"imax":40}
+,{"nm":"YiHi SX350J VW/dual batt mode","umin":1,"umax":9.5,"pmin":5,"pmax":120,"rmin":0.15,"rmax":3,"imax":40}
+,{"nm":"YiHi SX470","umin":2,"umax":8.5,"pmin":5,"pmax":20,"rmin":0.5,"rmax":3,"imax":4.5}
+,{"nm":"YiHi SX450","umin":2,"umax":8.5,"pmin":5,"pmax":20,"rmin":1,"rmax":3.5,"imax":4.5}
+,{"nm":"YiHi SXMini","umax":9.5,"pmax":60,"rmin":0.15,"rmax":3,"imax":40}
+]
