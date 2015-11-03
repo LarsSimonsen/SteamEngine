@@ -199,6 +199,13 @@ Any irregularities or assumptions in the data should also be pointed out and exp
 		,"dens": 7.9
 		,"tcr": 0.00094
 	},{
+		"id": "ss430"
+		,"nm": "SS 430"
+		,"rstv": 0.6 // http://www.aksteel.com/pdf/markets_products/stainless/ferritic/430_Data_Sheet.pdf
+		,"hc": 0.46 // http://www.matweb.com/search/datasheet.aspx?matguid=a3ab430905ca4c5a925e7fbf68826140&ckck=1
+		,"dens": 7.74 // http://www.aksteel.com/pdf/markets_products/stainless/ferritic/430_Data_Sheet.pdf
+		,"tcr": 0.00138
+	},{
 		"id": "ti1"
 		,"nm": "Titanium 1"
 		,"rstv": 0.47
