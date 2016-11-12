@@ -8,10 +8,10 @@ All batteries must have the following properties:
 * q : The capacity of each cell, in mAh.
 
 All batteries must have one of the following two properties:
-* a : The maximum safe continuous amp drain of the battery.
+* a : The maximum safe continuous amp drain of the battery..
 * c : The C-rating of the battery.
 
-Optional properties:
+Optional properties :
 * s : The number of cells in series. Defaults to 1. Not in use yet.
 * p : The number of cells in parallel. Defaults to 1. Not in use yet.
 * t : A note/memo about the battery.
