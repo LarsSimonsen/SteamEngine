@@ -6,6 +6,7 @@ export const messages: CalculatorRouteMessages = {
     description: "Skriv inn egenskapene til nikotinbasen og blandingen du ønsker.",
     menu: "Meny",
     reset: "Tilbakestill",
+    calculating: "Beregner…",
     load: "Last inn",
     save: "Lagre",
     batch: "Blanding",

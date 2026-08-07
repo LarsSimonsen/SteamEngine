@@ -6,6 +6,7 @@ export const messages: CalculatorRouteMessages = {
     description: "Find a useful resistance range from a regulated mod's output limits.",
     manage: "Manage mods",
     reset: "Reset",
+    calculating: "Calculating…",
     builtInDevices: "Built-in devices",
     presets: "Presets",
     presetIntro: "Choose a regulated mod preset.",

@@ -14,6 +14,7 @@ export const messages: CalculatorRouteMessages = {
     export: "Eksporter",
     import: "Importer",
     reset: "Tilbakestill",
+    calculating: "Beregner…",
     importDesign: "Importer Wire Wizard-design",
     resetPersistence: "Tilbakestill eller importer et gyldig design for å erstatte de lagrede dataene.",
     coilParameters: "Spoleparametere",

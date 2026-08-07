@@ -10,6 +10,7 @@ export const messages: CalculatorRouteMessages = {
     needModelText: "for trådgeometri, komplekse konstruksjoner og spoleberegninger. Dette fokuserte verktøyet er nyttig for å sammenligne og kombinere motstandskurver.",
     controls: "Temperaturpunkter",
     reset: "Tilbakestill",
+    calculating: "Beregner…",
     temperatureList: "Kommaseparerte temperaturer",
     temperatureScale: "Temperaturskala",
     help: "Når du redigerer disse verdiene, fjernes valgte materialer. DNA 200-utdata godtar 2–8 punkter og trenger ett punkt nær 70 °F (omtrent 21 °C).",
