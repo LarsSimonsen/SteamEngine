@@ -1,7 +1,7 @@
 import type { CalculatorRouteMessages } from "../../calculator-messages";
 
 export const messages: CalculatorRouteMessages = {
-    eyebrow: "Battery safety calculator",
+    eyebrow: "Battery drain and safety calculator",
     title: "Battery drain",
     description: "Estimate atomizer output, battery drain, and available current headroom for regulated and unregulated mods.",
     manage: "Manage batteries",

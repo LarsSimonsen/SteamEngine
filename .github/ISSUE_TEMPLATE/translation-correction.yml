@@ -1,0 +1,49 @@
+name: Translation correction
+description: Suggest a correction to a Steam Engine translation.
+title: "[Translation]: "
+labels:
+  - translation
+body:
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Language
+      description: Select the translation that needs correction.
+      options:
+        - Norwegian Bokmål (nb)
+        - Norwegian Nynorsk (nn)
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or calculator
+      description: For example, Ohm's law, Wire Wizard, or Catalog.
+    validations:
+      required: true
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current translated text
+      description: Copy the text as it currently appears.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-text
+    attributes:
+      label: Suggested replacement
+      description: Enter the wording you recommend.
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation or source
+      description: Optionally explain the correction or link to a terminology source.
+  - type: checkboxes
+    id: license
+    attributes:
+      label: Contribution license
+      options:
+        - label: I agree to license this contribution under the repository's MIT License.
+          required: true

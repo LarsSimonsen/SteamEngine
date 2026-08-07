@@ -15,7 +15,11 @@ export const messages: SharedMessages = {
         bokmaal: "Bokmål",
     },
     theme: { switchToLight: "Switch to light mode", switchToDark: "Switch to dark mode" },
-    footer: { purgeCache: "Purge cache" },
+    footer: {
+        purgeCache: "Purge cache",
+        translationDraft: "This translation was machine-drafted and is awaiting human review.",
+        suggestCorrection: "Suggest a correction",
+    },
     error: {
         title: "The calculator could not update",
         cancel: "Cancel",

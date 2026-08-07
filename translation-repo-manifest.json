@@ -1,5 +1,5 @@
 {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "scope": "translation-only",
     "files": [
         "src/i18n/messages/en.ts",
@@ -29,7 +29,14 @@
         "src/i18n/catalog-presentations/en.ts",
         "src/i18n/catalog-presentations/nb.ts",
         "src/i18n/catalog-presentations/nn.ts",
-        "src/i18n/translation-review.json"
+        "src/i18n/translation-review.json",
+        "src/i18n/translation-review.schema.json",
+        "src/i18n/translation-review/nb.json",
+        "src/i18n/translation-review/nn.json",
+        "src/i18n/glossary.schema.json",
+        "src/i18n/glossaries/nb.json",
+        "src/i18n/glossaries/nn.json",
+        ".github/ISSUE_TEMPLATE/translation-correction.yml"
     ],
     "directories": [
         "src/i18n/catalog-data"

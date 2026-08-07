@@ -25,8 +25,8 @@ const delta = "Δ";
 const rho = "ρ";
 
 const batterySummary = (battery: (typeof batteryPresets)[number]): string => battery.batteryAccess === "integrated"
-    ? "An internal battery pack in the device rather than a user-replaceable cell."
-    : "A removable rechargeable cell used in compatible devices.";
+    ? "En intern batteripakke i enheten, ikke en celle som brukeren kan bytte."
+    : "En utskiftbar, oppladbar celle for kompatible enheter.";
 
 const bokmaalConcepts: Readonly<Record<string, Pick<
     CatalogPresentation,
@@ -481,9 +481,9 @@ const bokmaalConcepts: Readonly<Record<string, Pick<
         ],
     },
     "concept-heat-flux": {
-        displayName: "Varmestrøm",
-        description: "Varmestrøm beskriver hvor raskt varmeenergi passerer gjennom eller fra en overflate.",
-        summary: "Hvor raskt varmeenergi flyttes gjennom en overflate.",
+        displayName: "Varmefluks",
+        description: "Varmefluks beskriver hvor mye varmeenergi som passerer gjennom en overflate per tidsenhet og arealenhet.",
+        summary: "Varmeoverføring per arealenhet.",
         wikipediaUrl: "https://nb.wikipedia.org/wiki/Varmefluks",
         sections: [
             {
@@ -491,23 +491,23 @@ const bokmaalConcepts: Readonly<Record<string, Pick<
                 title: "Definisjon",
                 formulas: [{ expression: "q'' = Q_dot / A" }],
                 bullets: [
-                    "q'' er varmestrømstetthet i W/m².",
+                    "q'' er varmestrømtetthet, også kalt varmefluks, i W/m².",
                     "Q_dot er samlet varmeoverføringsrate i watt (W).",
                     "A er arealet som varmen overføres gjennom, i kvadratmeter (m²).",
                 ],
                 paragraphs: [
-                    "Varmestrøm er forskjellig fra varmekapasitet: Varmekapasitet beskriver lagret energi per "
-                        + "temperaturendring, mens varmestrøm beskriver hvor raskt varme passerer gjennom en overflate.",
+                    "Varmefluks er forskjellig fra varmekapasitet: Varmekapasitet beskriver lagret energi per "
+                        + "temperaturendring, mens varmefluks beskriver varmeoverføring per arealenhet.",
                 ],
             },
             {
                 id: "worked-example",
                 title: "Regneeksempel",
                 examples: [{
-                    title: "Gjennomsnittlig varmestrømstetthet fra en varmeovn",
+                    title: "Gjennomsnittlig varmefluks fra en varmeovn",
                     setup: "En varmeovn på 100 W overfører varme gjennom et areal på 0,020 m².",
                     formulas: ["q'' = 100 W / 0,020 m² = 5 000 W/m²"],
-                    conclusion: "Den gjennomsnittlige varmestrømstettheten er 5 000 W/m², eller 0,5 W/cm².",
+                    conclusion: "Den gjennomsnittlige varmefluksen er 5 000 W/m², eller 0,5 W/cm².",
                 }],
             },
             {
@@ -541,9 +541,9 @@ const bokmaalConcepts: Readonly<Record<string, Pick<
                 title: "Praktiske kontroller",
                 bullets: [
                     "Konverter arealet til m² før du bruker W/m².",
-                    "Skill mellom gjennomsnittlig varmestrømstetthet og en lokal topp; oppvarmingen kan være ujevn.",
+                    "Skill mellom gjennomsnittlig varmefluks og en lokal topp; oppvarmingen kan være ujevn.",
                     "Ta med kontaktmotstand, konveksjon, stråling og varmetap når det er nødvendig.",
-                    "Varmestrøm er en overføringsrate, ikke en temperatur; bruk varmekapasitet for temperaturendring.",
+                    "Varmefluks er en overføringsrate per arealenhet, ikke en temperatur; bruk varmekapasitet for temperaturendring.",
                 ],
             },
         ],

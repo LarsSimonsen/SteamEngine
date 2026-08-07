@@ -1,7 +1,7 @@
 import type { CalculatorRouteMessages } from "../../calculator-messages";
 
 export const messages: CalculatorRouteMessages = {
-    eyebrow: "Kalkulator for batteritryggleik",
+    eyebrow: "Kalkulator for batteriforbruk og -tryggleik",
     title: "Batteriforbruk",
     description: "Rekn ut forstøveren effekt, batteriforbruk og tilgjengeleg straumreserve for regulerte og uregulerte modder.",
     manage: "Administrer batterier",
