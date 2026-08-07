@@ -18,7 +18,11 @@ export const messages: SharedMessages = normalizeNynorsk({
         bokmaal: "Nynorsk",
     },
     theme: { switchToLight: "Bytt til lys modus", switchToDark: "Bytt til mørk modus" },
-    footer: { purgeCache: "Tøm hurtigbuffer" },
+    footer: {
+        purgeCache: "Tøm hurtigbuffer",
+        translationDraft: "Denne omsetjinga er maskinlaga og ventar på menneskeleg gjennomgang.",
+        suggestCorrection: "Foreslå ei retting",
+    },
     error: {
         title: "Kalkulatoren kunne ikkje oppdateres",
         cancel: "Avbryt",

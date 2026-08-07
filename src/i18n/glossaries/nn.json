@@ -1,0 +1,73 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "nn",
+    "entries": {
+        "battery": {
+            "source": "battery",
+            "preferred": "batteri",
+            "context": "Electrical energy storage used by a vaping device.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "spole",
+            "context": "The heating coil or a coil being designed in a calculator.",
+            "discouraged": ["coil"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "medium"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "straum",
+            "context": "Electrical current measured in amperes.",
+            "discouraged": ["strøm"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "effekt",
+            "context": "Electrical power measured in watts.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "motstand",
+            "context": "Electrical resistance measured in ohms.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "temperature-coefficient": {
+            "source": "temperature coefficient",
+            "preferred": "temperaturkoeffisient",
+            "context": "A material's resistance temperature coefficient.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "spenning",
+            "context": "Electrical potential difference measured in volts.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "wire": {
+            "source": "wire",
+            "preferred": "tråd",
+            "context": "Resistance or wrapping wire used to build a coil.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://www.steam-engine.org/schemas/translation-review-v1.json",
+    "title": "Steam Engine per-locale translation review",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schemaVersion", "sourceLocale", "locale", "entries"],
+    "properties": {
+        "schemaVersion": { "const": 1 },
+        "sourceLocale": { "const": "en" },
+        "locale": { "type": "string", "minLength": 2 },
+        "entries": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/$defs/review" }
+        }
+    },
+    "$defs": {
+        "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "sourceSignature",
+                "translationSignature",
+                "state",
+                "provenance",
+                "confidence"
+            ],
+            "properties": {
+                "sourceSignature": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+                "translationSignature": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+                "state": { "enum": ["machine", "needs-review", "reviewed", "approved"] },
+                "provenance": {
+                    "type": "object",
+                    "required": ["kind", "method"],
+                    "properties": {
+                        "kind": { "enum": ["machine", "human"] },
+                        "method": { "type": "string", "minLength": 1 },
+                        "model": { "type": "string", "minLength": 1 }
+                    }
+                },
+                "confidence": { "enum": ["high", "medium", "low"] },
+                "uncertainty": {
+                    "type": "object",
+                    "required": ["reason"],
+                    "properties": {
+                        "reason": { "type": "string", "minLength": 1 },
+                        "sources": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": ["label"],
+                                "properties": {
+                                    "label": { "type": "string", "minLength": 1 },
+                                    "url": { "type": "string", "format": "uri" }
+                                }
+                            }
+                        }
+                    }
+                },
+                "reviewer": { "type": "string", "minLength": 1 },
+                "reviewedAt": { "type": "string", "format": "date" }
+            }
+        }
+    }
+}
