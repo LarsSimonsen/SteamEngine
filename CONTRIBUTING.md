@@ -22,3 +22,14 @@ additional reviewer before it is imported into the application.
 
 By submitting a pull request, you agree that your contribution is provided under the
 MIT License in this repository and that you have the right to contribute it.
+
+## Future catalog entries
+
+Encyclopedia presentation bundles belong under `src/i18n/catalog-data/`, one JSON file
+per locale and category. Validate them against
+`catalog-presentation.schema.json` before submitting a pull request.
+
+Use canonical catalog IDs as entry keys. Keep slugs, formulas, enum values, URLs,
+section IDs, product identity, and calculator data unchanged. Add only localized
+presentation fields such as names, descriptions, summaries, notes, safety text, and
+concept prose.

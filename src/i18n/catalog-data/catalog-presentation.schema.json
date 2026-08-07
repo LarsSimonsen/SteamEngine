@@ -1,0 +1,84 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Steam Engine catalog presentation bundle",
+    "type": "object",
+    "required": ["schemaVersion", "locale", "category", "entries"],
+    "properties": {
+        "schemaVersion": { "const": 1 },
+        "locale": { "enum": ["en", "nb", "nn"] },
+        "category": { "enum": ["concepts", "materials", "batteries", "mods"] },
+        "entries": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/$defs/presentation" }
+        }
+    },
+    "additionalProperties": false,
+    "$defs": {
+        "presentation": {
+            "type": "object",
+            "required": ["displayName"],
+            "properties": {
+                "displayName": { "type": "string" },
+                "description": { "type": "string" },
+                "summary": { "type": "string" },
+                "notes": { "type": "array", "items": { "type": "string" } },
+                "safetyText": { "type": "string" },
+                "wikipediaUrl": { "type": "string", "format": "uri" },
+                "sections": {
+                    "type": "array",
+                    "items": { "$ref": "#/$defs/section" }
+                }
+            },
+            "additionalProperties": false
+        },
+        "section": {
+            "type": "object",
+            "required": ["id", "title"],
+            "properties": {
+                "id": { "type": "string" },
+                "title": { "type": "string" },
+                "paragraphs": { "type": "array", "items": { "type": "string" } },
+                "formulas": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["expression"],
+                        "properties": {
+                            "expression": { "type": "string" },
+                            "explanation": { "type": "string" }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "bullets": { "type": "array", "items": { "type": "string" } },
+                "examples": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["title", "setup", "formulas", "conclusion"],
+                        "properties": {
+                            "title": { "type": "string" },
+                            "setup": { "type": "string" },
+                            "formulas": { "type": "array", "items": { "type": "string" } },
+                            "conclusion": { "type": "string" }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "table": {
+                    "type": "object",
+                    "required": ["headers", "rows"],
+                    "properties": {
+                        "headers": { "type": "array", "items": { "type": "string" } },
+                        "rows": {
+                            "type": "array",
+                            "items": { "type": "array", "items": { "type": "string" } }
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
