@@ -1,7 +1,20 @@
-# SteamEngine
+# Steam Engine translations
 
-These are the presets for the Steam Engine calculator suite.
+This repository contains only the translation source files used by the Steam Engine
+application. It is intentionally not a copy of the application repository.
 
-The format of these files is a non-standard JSON with JavaScript style comments.
+The initial review language is Bokmål (`nb`). Nynorsk (`nn`) is a separate locale; do
+not introduce a generic `no` locale.
 
-The source URL(s) for the specifications can - and should - be be added as a JavaScript style comment, for new entries.
+## Translation source
+
+- `src/i18n/messages.ts`
+- `src/i18n/calculator-messages.ts`
+- `src/i18n/catalog-presentations.ts`
+
+Do not add calculator logic, catalog identity, route definitions, generated output,
+translation caches, or protected reference files here. The application repository
+imports reviewed changes through its translation-only synchronization workflow.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for review rules. This repository is licensed
+under the [MIT License](LICENSE).

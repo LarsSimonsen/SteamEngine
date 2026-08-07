@@ -1,0 +1,9 @@
+{
+    "schemaVersion": 1,
+    "scope": "translation-only",
+    "files": [
+        "src/i18n/messages.ts",
+        "src/i18n/calculator-messages.ts",
+        "src/i18n/catalog-presentations.ts"
+    ]
+}
