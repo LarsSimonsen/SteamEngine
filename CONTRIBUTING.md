@@ -2,8 +2,8 @@
 
 Submit translation changes as pull requests. Edit only target-locale presentation
 values in the allowlisted locale file; do not change the English source, TypeScript
-types, application imports, or calculation data. The bundle layout is one file per
-locale: `en`, `nb`, and `nn`.
+types, application imports, or calculation data. The bundle layout is one folder per
+calculator, with one locale file per language: `en`, `nb`, and `nn`.
 
 Preserve:
 

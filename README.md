@@ -10,7 +10,8 @@ locale so reviews can be scoped cleanly.
 ## Translation source
 
 - `src/i18n/messages/{en,nb,nn}.ts`
-- `src/i18n/calculator-messages/{en,nb,nn}.ts`
+- `src/i18n/calculator-messages/{batt,coil,converter,juice,modrange,tcr,wirewiz}/`
+  with `en.ts`, `nb.ts`, and `nn.ts` inside each calculator folder
 - `src/i18n/catalog-presentations/{en,nb,nn}.ts`
 - `src/i18n/translation-review.json`
 - `src/i18n/catalog-data/` for future encyclopedia presentation bundles
