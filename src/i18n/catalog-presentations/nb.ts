@@ -1,24 +1,14 @@
-import type { Locale } from "./locales";
-import { toNynorsk } from "./nynorsk";
-import { batteryPresets } from "../catalogs/batteries/defaults";
-import { concepts, type ConceptSection } from "../catalogs/concepts/catalog";
-import { builtInPresets } from "../catalogs/mods/presets";
-import { materials } from "../catalogs/materials/catalog";
-import type { CatalogCategory } from "../pages/encyclopedia/routes";
+import { batteryPresets } from "../../catalogs/batteries/defaults";
+import { concepts } from "../../catalogs/concepts/catalog";
+import { builtInPresets } from "../../catalogs/mods/presets";
+import { materials } from "../../catalogs/materials/catalog";
+import type {
+    CatalogPresentation,
+    CatalogPresentationMap,
+    CatalogPresentationSet,
+} from "../catalog-presentations";
 
-export type CatalogPresentation = {
-    readonly displayName: string;
-    readonly description?: string;
-    readonly summary?: string;
-    readonly sections?: readonly ConceptSection[];
-    readonly wikipediaUrl?: string;
-    readonly notes?: readonly string[];
-    readonly safetyText?: string;
-};
-
-export type CatalogPresentationMap = Readonly<Record<string, CatalogPresentation>>;
-
-export type CatalogPresentationSet = Readonly<Record<CatalogCategory, CatalogPresentationMap>>;
+import { presentations as english } from "./en";
 
 const recordFor = <T extends { readonly id: string }>(
     items: readonly T[],
@@ -37,36 +27,6 @@ const rho = "ρ";
 const batterySummary = (battery: (typeof batteryPresets)[number]): string => battery.batteryAccess === "integrated"
     ? "An internal battery pack in the device rather than a user-replaceable cell."
     : "A removable rechargeable cell used in compatible devices.";
-
-export const english: CatalogPresentationSet = {
-    concepts: recordFor(concepts, (concept) => ({
-        displayName: concept.title,
-        description: concept.lead,
-        summary: concept.summary,
-        sections: concept.sections,
-        wikipediaUrl: concept.wikipediaUrl,
-    })),
-    materials: recordFor(materials, (material) => {
-        const description = material.description ?? `Catalog profile for ${material.name}.`;
-        return {
-            displayName: material.name,
-            description,
-            summary: firstSentence(description),
-        };
-    }),
-    batteries: recordFor(batteryPresets, (battery) => ({
-        displayName: battery.displayName,
-        description: battery.description,
-        summary: batterySummary(battery),
-        notes: battery.dataNote ? [battery.dataNote] : undefined,
-        safetyText: battery.safetyWarning,
-    })),
-    mods: recordFor(builtInPresets, (mod) => ({
-        displayName: mod.displayName,
-        description: mod.description ?? `A regulated vaping device profile for ${mod.displayName}.`,
-        summary: firstSentence(mod.description ?? `A regulated vaping device profile for ${mod.displayName}.`),
-    })),
-};
 
 const bokmaalConcepts: Readonly<Record<string, Pick<
     CatalogPresentation,
@@ -791,7 +751,7 @@ const bokmaalBatteryNotes: Readonly<Record<string, string>> = {
     "battery-96": "30 A verdi for nøyaktig fembeinsrevisjon; firebeins- og senere revisjoner med samme omslag er vesentlig forskjellige og må ikke arve denne profilen.",
 };
 
-export const bokmaal: CatalogPresentationSet = {
+export const presentations: CatalogPresentationSet = {
     concepts: recordFor(concepts, (concept) => ({
         ...english.concepts[concept.id],
         ...bokmaalConcepts[concept.id],
@@ -825,41 +785,3 @@ export const bokmaal: CatalogPresentationSet = {
         summary: "En profil for en regulert enhet eller et styrekort.",
     })),
 };
-
-const nynorsk = toNynorsk(bokmaal);
-
-export const catalogPresentations: Readonly<Record<Locale, CatalogPresentationSet>> = {
-    en: english,
-    nb: bokmaal,
-    nn: nynorsk,
-};
-
-export const catalogPresentationFor = (
-    locale: Locale,
-    category: CatalogCategory,
-    id: string,
-): CatalogPresentation => {
-    const presentation = catalogPresentations[locale][category][id];
-    if (!presentation) throw new Error(`Missing ${locale} catalog presentation for ${category}:${id}`);
-    return presentation;
-};
-
-const catalogIds: Readonly<Record<CatalogCategory, readonly string[]>> = {
-    concepts: concepts.map((item) => item.id),
-    materials: materials.map((item) => item.id),
-    batteries: batteryPresets.map((item) => item.id),
-    mods: builtInPresets.map((item) => item.id),
-};
-
-export const missingCatalogPresentationKeys = (): readonly string[] => Object.entries(catalogIds).flatMap(
-    ([category, ids]) => Object.keys(catalogPresentations).flatMap((locale) => ids
-        .filter((id) => catalogPresentations[locale as Locale][category as CatalogCategory][id] === undefined)
-        .map((id) => `${locale}:${category}:${id}`)),
-);
-
-export const assertCatalogPresentationCoverage = (): void => {
-    const missing = missingCatalogPresentationKeys();
-    if (missing.length > 0) throw new Error(`Missing catalog presentation coverage: ${missing.join(", ")}`);
-};
-
-assertCatalogPresentationCoverage();

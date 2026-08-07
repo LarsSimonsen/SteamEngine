@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "bundles": {
+        "messages": {
+            "sourceFile": "src/i18n/messages/en.ts",
+            "sourceSignature": "a22691d6039adb8b66bbd89c769e7f9fc0706bf9e0ff5e6fb1b3aa217606aa26",
+            "files": {
+                "en": "src/i18n/messages/en.ts",
+                "nb": "src/i18n/messages/nb.ts",
+                "nn": "src/i18n/messages/nn.ts"
+            },
+            "locales": {
+                "en": { "state": "source" },
+                "nb": {
+                    "state": "machine",
+                    "provenance": { "kind": "machine", "method": "initial static localization draft" }
+                },
+                "nn": {
+                    "state": "machine",
+                    "provenance": { "kind": "machine", "method": "materialized from Bokmål draft" }
+                }
+            }
+        },
+        "calculator-messages": {
+            "sourceFile": "src/i18n/calculator-messages/en.ts",
+            "sourceSignature": "cacff38b86f248397972c0ad4ba43142e64ccac9e3b159763e80b158c5e23580",
+            "files": {
+                "en": "src/i18n/calculator-messages/en.ts",
+                "nb": "src/i18n/calculator-messages/nb.ts",
+                "nn": "src/i18n/calculator-messages/nn.ts"
+            },
+            "locales": {
+                "en": { "state": "source" },
+                "nb": {
+                    "state": "machine",
+                    "provenance": { "kind": "machine", "method": "initial static localization draft" }
+                },
+                "nn": {
+                    "state": "machine",
+                    "provenance": { "kind": "machine", "method": "materialized from Bokmål draft" }
+                }
+            }
+        },
+        "catalog-presentations": {
+            "sourceFile": "src/i18n/catalog-presentations/en.ts",
+            "sourceSignature": "093354b436a6899e0e51ca4ee7462d7a4bd091c2fd99882dbe21f0452f6285c2",
+            "files": {
+                "en": "src/i18n/catalog-presentations/en.ts",
+                "nb": "src/i18n/catalog-presentations/nb.ts",
+                "nn": "src/i18n/catalog-presentations/nn.ts"
+            },
+            "locales": {
+                "en": { "state": "source" },
+                "nb": {
+                    "state": "machine",
+                    "provenance": { "kind": "machine", "method": "initial static catalog localization draft" }
+                },
+                "nn": {
+                    "state": "machine",
+                    "provenance": { "kind": "machine", "method": "materialized from Bokmål draft" }
+                }
+            }
+        }
+    }
+}

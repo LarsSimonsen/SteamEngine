@@ -19,4 +19,6 @@ canonical catalog before importing them.
 
 Use one file per locale and catalog category under this directory. The initial scaffold
 contains English and Bokmål placeholders for concepts, materials, batteries, and mods.
-Do not create a generic `no` bundle; Nynorsk requires its own complete locale review.
+Machine catalog drafts may be used by the application, but must carry review metadata
+and be replaced only after human review. Do not create a generic `no` bundle; Nynorsk
+requires its own complete locale review.

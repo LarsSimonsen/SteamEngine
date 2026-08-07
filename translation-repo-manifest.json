@@ -2,9 +2,16 @@
     "schemaVersion": 2,
     "scope": "translation-only",
     "files": [
-        "src/i18n/messages.ts",
-        "src/i18n/calculator-messages.ts",
-        "src/i18n/catalog-presentations.ts"
+        "src/i18n/messages/en.ts",
+        "src/i18n/messages/nb.ts",
+        "src/i18n/messages/nn.ts",
+        "src/i18n/calculator-messages/en.ts",
+        "src/i18n/calculator-messages/nb.ts",
+        "src/i18n/calculator-messages/nn.ts",
+        "src/i18n/catalog-presentations/en.ts",
+        "src/i18n/catalog-presentations/nb.ts",
+        "src/i18n/catalog-presentations/nn.ts",
+        "src/i18n/translation-review.json"
     ],
     "directories": [
         "src/i18n/catalog-data"
