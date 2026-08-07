@@ -1,0 +1,121 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "zh-Hans",
+    "entries": {
+        "battery": {
+            "source": "battery",
+            "preferred": "电池",
+            "context": "Electrical energy storage used by a vaping device.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "线圈",
+            "context": "The heating coil or a coil being designed in a calculator.",
+            "discouraged": ["线圈绕组"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "电流",
+            "context": "Electrical current measured in amperes.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "功率",
+            "context": "Electrical power measured in watts.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "电阻",
+            "context": "Electrical resistance measured in ohms.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "temperature-coefficient": {
+            "source": "temperature coefficient",
+            "preferred": "温度系数",
+            "context": "A material's resistance temperature coefficient.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "medium"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "电压",
+            "context": "Electrical potential difference measured in volts.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "wire": {
+            "source": "wire",
+            "preferred": "电热丝",
+            "context": "Resistance or wrapping wire used to build a coil.",
+            "discouraged": ["导线"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "medium"
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "热通量",
+            "context": "Heat transfer per unit area in coil and thermal calculations.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "medium"
+        },
+        "vaping": {
+            "source": "vaping",
+            "preferred": "电子烟使用",
+            "context": "Use of an electronic cigarette or vaporizer.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "medium"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "雾化器",
+            "context": "The heating/output component of a vaping device.",
+            "state": "needs-review",
+            "uncertainty": {
+                "reason": "The best Mainland Chinese term depends on whether the context means the complete atomizer assembly or only its heating element.",
+                "sources": [
+                    { "label": "Google Translate", "url": "https://translate.googleapis.com/" },
+                    { "label": "MyMemory (rate-limited during drafting)", "url": "https://api.mymemory.translated.net/" }
+                ]
+            },
+            "alternatives": ["雾化芯", "发热组件"],
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "low"
+        },
+        "regulated-mod": {
+            "source": "regulated mod",
+            "preferred": "调压设备",
+            "context": "A vaping device with regulated voltage or power output.",
+            "state": "needs-review",
+            "uncertainty": {
+                "reason": "Chinese vaping communities use several overlapping terms for regulated mods and the preferred consumer-facing term may vary by audience.",
+                "sources": [
+                    { "label": "Google Translate", "url": "https://translate.googleapis.com/" },
+                    { "label": "MyMemory (rate-limited during drafting)", "url": "https://api.mymemory.translated.net/" }
+                ]
+            },
+            "alternatives": ["调压电子烟", "稳压设备"],
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "low"
+        }
+    }
+}

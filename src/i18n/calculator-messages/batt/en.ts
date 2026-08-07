@@ -6,6 +6,7 @@ export const messages: CalculatorRouteMessages = {
     description: "Estimate atomizer output, battery drain, and available current headroom for regulated and unregulated mods.",
     manage: "Manage batteries",
     reset: "Reset",
+    calculating: "Calculating…",
     device: "Device",
     deviceType: "Device type",
     powerRegulated: "Power regulated mod",
@@ -32,6 +33,8 @@ export const messages: CalculatorRouteMessages = {
     batteryHelp: "Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
     results: "Results",
     enterValue: "Enter a value for",
+    // Translator note: this is the atomizer's emitted power/output (the voltage, current, and wattage values),
+    // not an output port or interface. Translate it as produced output or performance.
     atomizerOutput: "Atomizer output",
     batteryDrain: "Battery drain",
     batterySafety: "Battery safety",

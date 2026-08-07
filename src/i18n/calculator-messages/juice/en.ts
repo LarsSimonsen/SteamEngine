@@ -6,6 +6,7 @@ export const messages: CalculatorRouteMessages = {
     description: "Input the properties of your nicotine base and your desired mix.",
     menu: "Menu",
     reset: "Reset",
+    calculating: "Calculating…",
     load: "Load",
     save: "Save",
     batch: "Batch",

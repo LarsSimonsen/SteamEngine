@@ -6,6 +6,7 @@ export const messages: CalculatorRouteMessages = {
     description: "Beregn forstøverens effekt, batteriforbruk og tilgjengelig strømreserve for regulerte og uregulerte modder.",
     manage: "Administrer batterier",
     reset: "Tilbakestill",
+    calculating: "Beregner…",
     device: "Enhet",
     deviceType: "Enhetstype",
     powerRegulated: "Effektregulert mod",

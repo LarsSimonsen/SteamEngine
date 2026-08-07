@@ -17,6 +17,7 @@ export const messages: CalculatorRouteMessages = {
     standardWireGauge: "Standard Wire Gauge",
     fractionalInches: "Brøktommer",
     reset: "Tilbakestill standardverdier",
+    calculating: "Beregner…",
     betweenStandardValues: "Mellom standardverdier",
     larger: "større",
     smaller: "mindre",

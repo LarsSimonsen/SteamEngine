@@ -10,6 +10,7 @@ export const messages: CalculatorRouteMessages = {
     needModelText: "for wire geometry, complex constructions, and coil calculations. This focused tool remains useful for comparing and combining resistance curves.",
     controls: "Temperature points",
     reset: "Reset",
+    calculating: "Calculating…",
     temperatureList: "Comma-separated temperatures",
     temperatureScale: "Temperature scale",
     help: "Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",

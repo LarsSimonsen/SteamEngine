@@ -6,6 +6,7 @@ export const messages: CalculatorRouteMessages = {
     description: "Finn et nyttig motstandsområde fra utgangsgrensene til en regulert mod.",
     manage: "Administrer modder",
     reset: "Tilbakestill",
+    calculating: "Beregner…",
     builtInDevices: "Innebygde enheter",
     presets: "Forvalg",
     presetIntro: "Velg et forvalg for en regulert mod.",

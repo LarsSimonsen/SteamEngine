@@ -14,6 +14,7 @@ export const messages: CalculatorRouteMessages = {
     export: "Export",
     import: "Import",
     reset: "Reset",
+    calculating: "Calculating…",
     importDesign: "Import Wire Wizard design",
     resetPersistence: "Reset or import a valid design to replace the saved data.",
     coilParameters: "Coil parameters",

@@ -11,8 +11,6 @@ export const messages: SharedMessages = {
         language: "Språk",
         languageFilter: "Filtrer språk",
         noLanguageMatches: "Ingen språk funnet.",
-        english: "English",
-        bokmaal: "Bokmål",
     },
     theme: { switchToLight: "Bytt til lys modus", switchToDark: "Bytt til mørk modus" },
     footer: {
@@ -33,10 +31,16 @@ export const messages: SharedMessages = {
         oldVersionNote: "Du finner den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",
     },
+    calculatorVisibility: {
+        label: "Kalkulatorsynlighet",
+        ariaLabel: (label) => `Kalkulatorsynlighet for ${label}`,
+        shown: "Vist",
+        hidden: "Skjult",
+    },
     catalogManager: {
         manage: (plural) => `Administrer ${plural.toLocaleLowerCase()}`,
         shared: (noun) => `felles katalog for ${noun.toLocaleLowerCase()}`,
-        close: (plural) => `Lukk ${plural.toLocaleLowerCase()}-administrasjon`,
+        close: (noun) => `Lukk ${noun.toLocaleLowerCase()}administrasjon`,
         choose: (plural) => `Velg synlige innebygde elementer eller opprett ${plural.toLocaleLowerCase()} som lagres i nettleseren.`,
         builtIn: (plural) => `Innebygde ${plural.toLocaleLowerCase()}`,
         visibility: (plural) => `Synlighetsendringer lagres med en gang. Skjulte ${plural.toLocaleLowerCase()} kan fortsatt klones.`,

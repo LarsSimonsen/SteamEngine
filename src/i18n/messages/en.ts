@@ -11,8 +11,6 @@ export const messages: SharedMessages = {
         language: "Language",
         languageFilter: "Filter languages",
         noLanguageMatches: "No languages found.",
-        english: "English",
-        bokmaal: "Bokmål",
     },
     theme: { switchToLight: "Switch to light mode", switchToDark: "Switch to dark mode" },
     footer: {
@@ -30,10 +28,16 @@ export const messages: SharedMessages = {
         retrying: "Retrying…",
     },
     calculatorHeader: { oldVersionNote: "You can find the old version of this calculator", oldVersionLinkLabel: "here" },
+    calculatorVisibility: {
+        label: "Calculator visibility",
+        ariaLabel: (label) => `Calculator visibility for ${label}`,
+        shown: "Shown",
+        hidden: "Hidden",
+    },
     catalogManager: {
         manage: (plural) => `Manage ${plural.toLocaleLowerCase()}`,
         shared: (noun) => `shared ${noun.toLocaleLowerCase()} catalog`,
-        close: (plural) => `Close ${plural.toLocaleLowerCase()} manager`,
+        close: (noun) => `Close ${noun.toLocaleLowerCase()} manager`,
         choose: (plural) => `Choose visible built-ins or create ${plural.toLocaleLowerCase()} stored in this browser.`,
         builtIn: (plural) => `Built-in ${plural.toLocaleLowerCase()}`,
         visibility: (plural) => `Visibility changes save immediately. Hidden ${plural.toLocaleLowerCase()} remain available for cloning.`,
