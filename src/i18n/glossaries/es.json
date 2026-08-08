@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "es",
+    "entries": {
+        "vape": {
+            "source": "vape",
+            "preferred": "vapeo",
+            "context": "General user-facing term for the activity and its related devices.",
+            "discouraged": ["vaporizador"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish vaping terminology research" },
+            "confidence": "high"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "cigarrillo electrónico",
+            "context": "Formal general term for an electronic cigarette.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish technical terminology research" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizador",
+            "context": "The vaping component that vaporizes e-liquid and emits output power.",
+            "discouraged": ["interfaz", "puerto de salida"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish vaping terminology research" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "resistencia",
+            "context": "The heating component of an atomizer; bobina may be used when referring specifically to its wound shape.",
+            "discouraged": ["espiral"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish vaping terminology research" },
+            "confidence": "high"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "líquido para cigarrillos electrónicos",
+            "context": "Liquid used by the atomizer; líquido de vapeo is a concise user-facing alternative.",
+            "discouraged": ["jugo"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish technical terminology research" },
+            "confidence": "high"
+        },
+        "battery-drain": {
+            "source": "battery drain",
+            "preferred": "consumo de batería",
+            "context": "Current and power drawn from a battery in a calculator result.",
+            "discouraged": ["drenaje de batería"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual technical translation" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "potencia de salida",
+            "context": "Power emitted by the atomizer, not an interface or output port.",
+            "discouraged": ["interfaz de salida", "puerto de salida"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual technical translation" },
+            "confidence": "high"
+        }
+    }
+}

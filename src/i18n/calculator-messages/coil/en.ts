@@ -9,6 +9,7 @@ export const messages: CalculatorRouteMessages = {
     converter: "Converter",
     hideConverter: "Hide converter",
     reset: "Reset",
+    calculating: "Calculating…",
     coilSpecifications: "Coil specifications",
     units: "Units",
     metric: "Metric units",

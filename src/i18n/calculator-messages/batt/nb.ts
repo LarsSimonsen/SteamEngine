@@ -1,11 +1,12 @@
 import type { CalculatorRouteMessages } from "../../calculator-messages";
 
 export const messages: CalculatorRouteMessages = {
-    eyebrow: "Kalkulator for batterisikkerhet",
+    eyebrow: "Kalkulator for batteriforbruk og -sikkerhet",
     title: "Batteriforbruk",
     description: "Beregn forstøverens effekt, batteriforbruk og tilgjengelig strømreserve for regulerte og uregulerte modder.",
     manage: "Administrer batterier",
     reset: "Tilbakestill",
+    calculating: "Beregner…",
     device: "Enhet",
     deviceType: "Enhetstype",
     powerRegulated: "Effektregulert mod",
@@ -43,7 +44,7 @@ export const messages: CalculatorRouteMessages = {
     safe: "Beregnet forbruk er innenfor den effektive batterigrensen.",
     caution: "Mindre enn 20 % strømreserve gjenstår.",
     danger: "Beregnet forbruk overskrider den effektive batterigrensen.",
-    runtimeHelp: "Dette idealiserte estimatet forutsetter kontinuerlig effekt ved beregnet batteriforbruk. Faktisk driftstid varierer med utkoblingsspenning, spenningsfall, cellealder, enhetens forbruk og avbrutt bruk.",
+    runtimeHelp: "Dette idealiserte estimatet forutsetter kontinuerlig effekt ved beregnet batterieffekt. Faktisk driftstid varierer med utkoblingsspenning, spenningsfall, cellealder, enhetens eget forbruk og periodisk bruk.",
     voltageLabel: "Spenning",
     currentLabel: "Strøm",
     powerLabel: "Effekt"

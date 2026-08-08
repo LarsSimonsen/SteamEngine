@@ -1,0 +1,55 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://www.steam-engine.org/schemas/translation-glossary-v1.json",
+    "title": "Steam Engine locale glossary",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schemaVersion", "sourceLocale", "locale", "entries"],
+    "properties": {
+        "schemaVersion": { "const": 1 },
+        "sourceLocale": { "const": "en" },
+        "locale": { "type": "string", "minLength": 2 },
+        "entries": {
+            "type": "object",
+            "patternProperties": {
+                "^[a-z0-9]+(?:-[a-z0-9]+)*$": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "source",
+                        "preferred",
+                        "context",
+                        "state",
+                        "provenance",
+                        "confidence"
+                    ],
+                    "properties": {
+                        "source": { "type": "string", "minLength": 1 },
+                        "preferred": { "type": "string", "minLength": 1 },
+                        "context": { "type": "string", "minLength": 1 },
+                        "discouraged": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "uniqueItems": true
+                        },
+                        "state": { "enum": ["machine", "needs-review", "reviewed", "approved"] },
+                        "provenance": {
+                            "type": "object",
+                            "required": ["kind", "method"],
+                            "properties": {
+                                "kind": { "enum": ["machine", "human"] },
+                                "method": { "type": "string", "minLength": 1 },
+                                "model": { "type": "string", "minLength": 1 }
+                            }
+                        },
+                        "confidence": { "enum": ["high", "medium", "low"] },
+                        "uncertainty": { "type": "object" },
+                        "reviewer": { "type": "string", "minLength": 1 },
+                        "reviewedAt": { "type": "string", "format": "date" }
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
