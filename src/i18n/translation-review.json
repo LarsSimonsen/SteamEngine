@@ -99,6 +99,11 @@
             "state": "needs-review",
             "reviewFile": "src/i18n/translation-review/ja.json",
             "glossaryFile": "src/i18n/glossaries/ja.json"
+        },
+        "ko": {
+            "state": "needs-review",
+            "reviewFile": "src/i18n/translation-review/ko.json",
+            "glossaryFile": "src/i18n/glossaries/ko.json"
         }
     },
     "bundles": {
@@ -125,7 +130,8 @@
                 "bn": "src/i18n/messages/bn.ts",
                 "pt": "src/i18n/messages/pt.ts",
                 "pt-BR": "src/i18n/messages/pt-BR.ts",
-                "ja": "src/i18n/messages/ja.ts"
+                "ja": "src/i18n/messages/ja.ts",
+                "ko": "src/i18n/messages/ko.ts"
             }
         },
         "calculator-messages": {
@@ -168,7 +174,8 @@
                     "bn": "src/i18n/calculator-messages/batt/bn.ts",
                     "pt": "src/i18n/calculator-messages/batt/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/batt/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/batt/ja.ts"
+                    "ja": "src/i18n/calculator-messages/batt/ja.ts",
+                    "ko": "src/i18n/calculator-messages/batt/ko.ts"
                 },
                 "coil": {
                     "en": "src/i18n/calculator-messages/coil/en.ts",
@@ -190,7 +197,8 @@
                     "bn": "src/i18n/calculator-messages/coil/bn.ts",
                     "pt": "src/i18n/calculator-messages/coil/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/coil/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/coil/ja.ts"
+                    "ja": "src/i18n/calculator-messages/coil/ja.ts",
+                    "ko": "src/i18n/calculator-messages/coil/ko.ts"
                 },
                 "converter": {
                     "en": "src/i18n/calculator-messages/converter/en.ts",
@@ -212,7 +220,8 @@
                     "bn": "src/i18n/calculator-messages/converter/bn.ts",
                     "pt": "src/i18n/calculator-messages/converter/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/converter/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/converter/ja.ts"
+                    "ja": "src/i18n/calculator-messages/converter/ja.ts",
+                    "ko": "src/i18n/calculator-messages/converter/ko.ts"
                 },
                 "juice": {
                     "en": "src/i18n/calculator-messages/juice/en.ts",
@@ -234,7 +243,8 @@
                     "bn": "src/i18n/calculator-messages/juice/bn.ts",
                     "pt": "src/i18n/calculator-messages/juice/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/juice/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/juice/ja.ts"
+                    "ja": "src/i18n/calculator-messages/juice/ja.ts",
+                    "ko": "src/i18n/calculator-messages/juice/ko.ts"
                 },
                 "modrange": {
                     "en": "src/i18n/calculator-messages/modrange/en.ts",
@@ -256,7 +266,8 @@
                     "bn": "src/i18n/calculator-messages/modrange/bn.ts",
                     "pt": "src/i18n/calculator-messages/modrange/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/modrange/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/modrange/ja.ts"
+                    "ja": "src/i18n/calculator-messages/modrange/ja.ts",
+                    "ko": "src/i18n/calculator-messages/modrange/ko.ts"
                 },
                 "tcr": {
                     "en": "src/i18n/calculator-messages/tcr/en.ts",
@@ -278,7 +289,8 @@
                     "bn": "src/i18n/calculator-messages/tcr/bn.ts",
                     "pt": "src/i18n/calculator-messages/tcr/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/tcr/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/tcr/ja.ts"
+                    "ja": "src/i18n/calculator-messages/tcr/ja.ts",
+                    "ko": "src/i18n/calculator-messages/tcr/ko.ts"
                 },
                 "wirewiz": {
                     "en": "src/i18n/calculator-messages/wirewiz/en.ts",
@@ -300,7 +312,8 @@
                     "bn": "src/i18n/calculator-messages/wirewiz/bn.ts",
                     "pt": "src/i18n/calculator-messages/wirewiz/pt.ts",
                     "pt-BR": "src/i18n/calculator-messages/wirewiz/pt-BR.ts",
-                    "ja": "src/i18n/calculator-messages/wirewiz/ja.ts"
+                    "ja": "src/i18n/calculator-messages/wirewiz/ja.ts",
+                    "ko": "src/i18n/calculator-messages/wirewiz/ko.ts"
                 }
             }
         },
@@ -327,7 +340,8 @@
                 "bn": "src/i18n/catalog-presentations/bn.ts",
                 "pt": "src/i18n/catalog-presentations/pt.ts",
                 "pt-BR": "src/i18n/catalog-presentations/pt-BR.ts",
-                "ja": "src/i18n/catalog-presentations/ja.ts"
+                "ja": "src/i18n/catalog-presentations/ja.ts",
+                "ko": "src/i18n/catalog-presentations/ko.ts"
             }
         }
     }
