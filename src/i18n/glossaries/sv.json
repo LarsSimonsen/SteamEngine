@@ -1,0 +1,120 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "sv",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "vejping",
+            "context": "Use the established Swedish verb-derived term for the activity; use e-cigarett where the device is meant.",
+            "discouraged": ["vaping"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish language and vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Institutet för språk och folkminnen: vejpa", "url": "https://www.isof.se/svenska-spraket/nyord/nyordssoket/2015/vejpa" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "förångare",
+            "context": "The vaping component that heats and vaporizes e-liquid; retain atomizer only where it is a product name or technical identifier.",
+            "discouraged": ["brännare"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish government and vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Länsstyrelsernas knowledge summary on e-cigarettes", "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc289/1732533024885/Tobaksfria%20nikotinprodukter%20-%20En%20kunskapssammanst%C3%A4llning%20om%20elektroniska%20cigaretter.pdf" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "coil",
+            "context": "Swedish vaping sources commonly retain coil; explain with värmespole or värmetråd only where needed.",
+            "discouraged": ["brännare"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Swedish government knowledge summary on e-cigarettes", "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc289/1732533024885/Tobaksfria%20nikotinprodukter%20-%20En%20kunskapssammanst%C3%A4llning%20om%20elektroniska%20cigaretter.pdf" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "coilhuvud",
+            "context": "A replaceable atomizer/coil assembly.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish vaping terminology sources" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "e-vätska",
+            "context": "Use the standard Swedish term for the liquid used in an electronic cigarette; e-juice is an accepted alternative.",
+            "discouraged": ["rökvätska"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish government and vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Länsstyrelsernas knowledge summary on e-cigarettes", "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc289/1732533024885/Tobaksfria%20nikotinprodukter%20-%20En%20kunskapssammanst%C3%A4llning%20om%20elektroniska%20cigaretter.pdf" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "batteri",
+            "context": "Use batteri for the device power source and battericell when the individual cell is the focus.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish technical and vaping terminology" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "motstånd",
+            "context": "Electrical resistance, measured in ohm.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by standard Swedish electrical terminology" },
+            "confidence": "high"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "spänning",
+            "context": "Electrical voltage.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by standard Swedish electrical terminology" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "ström",
+            "context": "Electrical current, not present flow or currency.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by standard Swedish electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "effekt",
+            "context": "Electrical power, measured in watt.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by standard Swedish electrical terminology" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "atomizer output",
+            "preferred": "effekt som avges från förångaren",
+            "context": "This is emitted power from the atomizer, not a user-interface output.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish vaping terminology and the English source annotation" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "The concise UI label must distinguish emitted atomizer power from a generic output or interface result.",
+                "bestCurrentTranslation": "effekt som avges från förångaren",
+                "alternatives": ["förångarens avgivna effekt", "förångarens uteffekt"],
+                "sources": [
+                    { "label": "Länsstyrelsernas knowledge summary on e-cigarettes", "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc289/1732533024885/Tobaksfria%20nikotinprodukter%20-%20En%20kunskapssammanst%C3%A4llning%20om%20elektroniska%20cigaretter.pdf" },
+                    { "label": "EUR-Lex Swedish terminology for e-cigarette heating and vaporization", "url": "https://eur-lex.europa.eu/legal-content/SV/TXT/PDF/?uri=CELEX:32023R0808" }
+                ]
+            }
+        }
+    }
+}
