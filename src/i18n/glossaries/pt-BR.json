@@ -1,0 +1,128 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "pt-BR",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "vaping",
+            "context": "No Brasil, ‘vaping’ e ‘vape’ são termos comunitários correntes; ‘vaporização’ é a forma explicativa mais formal.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Anvisa: Cigarro eletrônico", "url": "https://www.gov.br/anvisa/pt-br/assuntos/tabaco/cigarro-eletronico/cigarro-eletronico" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizador",
+            "context": "Termo técnico amplamente usado no Brasil para o componente que vaporiza o líquido.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "TecMundo: Dossiê e-Cig", "url": "https://www.tecmundo.com.br/saude/114378-dossie-cig-tudo-voce-queria-saber-cigarros-eletronicos.htm/" },
+                { "label": "VáPorAqui vaping glossary", "url": "https://www.vaporaqui.net/glossario-entenda-a-linguagem-do-vaper/" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "bobina",
+            "context": "No Brasil, ‘bobina’ e ‘coil’ são termos comuns; ‘resistência’ também é usado para a peça ou seu valor elétrico.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "VáPorAqui vaping glossary", "url": "https://www.vaporaqui.net/glossario-entenda-a-linguagem-do-vaper/" },
+                { "label": "Smoke Brasil resistance guide", "url": "https://www.smokebrasil.com/resistencia-vape-o-guia-definitivo-para-a-sua-coil/" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "cabeça da bobina",
+            "context": "Conjunto substituível da bobina/atomizador; ‘cabeça da resistência’ é uma alternativa comum.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping terminology" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "e-líquido",
+            "context": "‘Líquido’, ‘e-líquido’ e ‘juice’ aparecem no uso brasileiro; a interface usa e-líquido para maior clareza.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Anvisa: Cigarro eletrônico", "url": "https://www.gov.br/anvisa/pt-br/assuntos/tabaco/cigarro-eletronico/cigarro-eletronico" },
+                { "label": "TecMundo: Dossiê e-Cig", "url": "https://www.tecmundo.com.br/saude/114378-dossie-cig-tudo-voce-queria-saber-cigarros-eletronicos.htm/" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "bateria",
+            "context": "Termo técnico comum no português brasileiro.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese technical sources" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "resistência",
+            "context": "Resistência elétrica e também o nome comercial da bobina; medida em ohms.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese electrical and vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Smoke Brasil resistance guide", "url": "https://www.smokebrasil.com/resistencia-vape-o-guia-definitivo-para-a-sua-coil/" }
+            ]
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "voltagem",
+            "context": "‘Voltagem’ é o termo comum na comunidade brasileira de vapes; ‘tensão’ é a alternativa técnica formal.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping terminology" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "TecMundo: Dossiê e-Cig", "url": "https://www.tecmundo.com.br/saude/114378-dossie-cig-tudo-voce-queria-saber-cigarros-eletronicos.htm/" }
+            ]
+        },
+        "current": {
+            "source": "current",
+            "preferred": "corrente",
+            "context": "Corrente elétrica, não corrente de ar ou moeda.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "potência",
+            "context": "Potência elétrica, medida em watts; não use ‘poder’ na interface técnica.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping and electrical terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "TecMundo: Dossiê e-Cig", "url": "https://www.tecmundo.com.br/saude/114378-dossie-cig-tudo-voce-queria-saber-cigarros-eletronicos.htm/" }
+            ]
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "potência emitida pelo atomizador",
+            "context": "‘Output’ significa a potência elétrica emitida pelo atomizador, não uma interface ou um campo genérico de saída.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Brazilian Portuguese vaping terminology" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "O uso brasileiro alterna entre ‘potência de saída’ e descrições de emissão; a segunda opção preserva melhor a função física específica desta calculadora.",
+                "bestCurrentTranslation": "potência emitida pelo atomizador",
+                "alternatives": ["potência de saída do atomizador", "potência de saída"],
+                "sources": [
+                    { "label": "Anvisa: Cigarro eletrônico", "url": "https://www.gov.br/anvisa/pt-br/assuntos/tabaco/cigarro-eletronico/cigarro-eletronico" },
+                    { "label": "TecMundo: Dossiê e-Cig", "url": "https://www.tecmundo.com.br/saude/114378-dossie-cig-tudo-voce-queria-saber-cigarros-eletronicos.htm/" }
+                ]
+            }
+        }
+    }
+}
