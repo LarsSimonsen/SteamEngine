@@ -1,0 +1,96 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "pl",
+    "entries": {
+        "vape": {
+            "source": "vape",
+            "preferred": "vape",
+            "context": "Potoczne określenie elektronicznego papierosa i sprzętu do wapowania.",
+            "discouraged": ["waporyzator"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polskie źródła terminologii e-papierosów" },
+            "confidence": "high"
+        },
+        "vaping": {
+            "source": "vaping",
+            "preferred": "wapowanie",
+            "context": "Czynność używania e-papierosa; polskie źródła branżowe i słownikowe używają czasownika wapować.",
+            "discouraged": ["parowanie"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polskie źródła językowe i branżowe" },
+            "confidence": "medium"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "e-papieros",
+            "context": "Standardowe polskie określenie elektronicznego papierosa.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polskie źródła rządowe i słownikowe" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizer",
+            "context": "Element e-papierosa podgrzewający liquid i wytwarzający aerozol; nie jest to interfejs ani port wyjściowy.",
+            "discouraged": ["parownik"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polskie źródła rządowe, techniczne i unijne" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "grzałka",
+            "context": "Element grzewczy atomizera; w obliczeniach oporu oznacza spiralę lub zespół grzewczy.",
+            "discouraged": ["cewka", "coil"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polskie źródła techniczne i branżowe" },
+            "confidence": "high"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "liquid",
+            "context": "Płyn używany w e-papierosie; polskie źródła techniczne powszechnie zachowują termin liquid.",
+            "discouraged": ["sok", "płyn do wapowania"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polskie źródła rządowe i branżowe" },
+            "confidence": "high"
+        },
+        "battery-drain": {
+            "source": "battery drain",
+            "preferred": "zużycie baterii",
+            "context": "Pobór energii i prądu z baterii w wynikach kalkulatora.",
+            "discouraged": ["drenaż baterii"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polska terminologia techniczna" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "moc wyjściowa",
+            "context": "Moc oddawana przez atomizer; w kontekście atomizera chodzi o emisję mocy, nie o interfejs.",
+            "discouraged": ["interfejs wyjściowy", "port wyjściowy"],
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Polskie źródła terminologii vape i tłumaczenie kontekstowe" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Moc wyjściowa jest standardowym terminem elektrycznym, ale atomizer-output wymaga rozróżnienia między mocą na grzałce a emisją aerozolu.",
+                "bestCurrentTranslation": "moc oddawana przez atomizer",
+                "alternatives": ["moc wyjściowa atomizera", "moc na atomizerze"],
+                "sources": [
+                    { "label": "Wojewódzka Stacja Sanitarno-Epidemiologiczna w Poznaniu", "url": "https://www.gov.pl/web/wsse-poznan/e-papierosy" },
+                    { "label": "EUR-Lex, klasyfikacja atomizera", "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/PDF/?uri=CELEX:32023R0808" }
+                ]
+            }
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "opór",
+            "context": "Wielkość elektryczna mierzona dla grzałki; oporność jest również powszechna w polskich materiałach vape.",
+            "discouraged": ["rezystancja"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Polska terminologia elektryczna i vape" },
+            "confidence": "medium"
+        }
+    }
+}
