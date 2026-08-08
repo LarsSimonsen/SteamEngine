@@ -1,0 +1,121 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "da",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "dampe",
+            "context": "Use the Danish verb for using an e-cigarette; use e-cigaret when the device is meant.",
+            "discouraged": ["vaping"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish language and vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Den Danske Ordbog: e-væske", "url": "https://ordnet.dk/ddo/ordbog/e-v%C3%A6ske" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "fordamper",
+            "context": "The component that heats and vaporizes e-liquid; forstøver is an accepted technical alternative.",
+            "discouraged": ["brænder"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish government and vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "EUR-Lex Danish terminology for e-cigarette vaporization", "url": "https://eur-lex.europa.eu/legal-content/DA/TXT/PDF/?uri=CELEX:32023R0808" },
+                { "label": "Sikkerhedsstyrelsen Danish e-cigarette hardware terminology", "url": "https://www.sik.dk/erhverv/produkter/e-cigaretter/vejledninger/anmeldelse-e-cigaretprodukter/hardware-e-cigaretter-krav-anmeldelse" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "coil",
+            "context": "Danish vaping sources identify coil as the most widespread term; do not replace it with the misleading brænder in calculator labels.",
+            "discouraged": ["brænder"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish vaping terminology sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Din eCigaret: coils", "url": "https://din-ecigaret.dk/info-om-coils" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "coilhoved",
+            "context": "A replaceable atomizer/coil assembly.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish vaping terminology sources" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "e-væske",
+            "context": "The standard Danish term for the liquid used in an electronic cigarette; e-juice is an accepted alternative.",
+            "discouraged": ["røg væske"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish language sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Den Danske Ordbog: e-væske", "url": "https://ordnet.dk/ddo/ordbog/e-v%C3%A6ske" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "batteri",
+            "context": "Use batteri for the power source and battericelle when the individual cell is the focus.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish technical terminology" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "modstand",
+            "context": "Electrical resistance, measured in ohm.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish electrical terminology" },
+            "confidence": "high"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "spænding",
+            "context": "Electrical voltage.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish electrical terminology" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "strøm",
+            "context": "Electrical current, not present flow or currency.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "effekt",
+            "context": "Electrical power, measured in watt.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish electrical terminology" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "atomizer output",
+            "preferred": "effekt, der afgives fra fordamperen",
+            "context": "This is emitted power from the atomizer, not a user-interface output.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Danish vaping terminology and the English source annotation" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "The concise UI label must distinguish emitted atomizer power from a generic output or interface result.",
+                "bestCurrentTranslation": "effekt, der afgives fra fordamperen",
+                "alternatives": ["fordamperens afgivne effekt", "fordamperens udgangseffekt"],
+                "sources": [
+                    { "label": "EUR-Lex Danish terminology for e-cigarette vaporization", "url": "https://eur-lex.europa.eu/legal-content/DA/TXT/PDF/?uri=CELEX:32023R0808" },
+                    { "label": "Sikkerhedsstyrelsen Danish e-cigarette hardware terminology", "url": "https://www.sik.dk/erhverv/produkter/e-cigaretter/vejledninger/anmeldelse-e-cigaretprodukter/hardware-e-cigaretter-krav-anmeldelse" }
+                ]
+            }
+        }
+    }
+}
