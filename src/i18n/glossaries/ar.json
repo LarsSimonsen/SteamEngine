@@ -1,0 +1,67 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "ar",
+    "entries": {
+        "vape": {
+            "source": "vape",
+            "preferred": "الفيب",
+            "context": "General user-facing vaping term.",
+            "discouraged": ["مبخّر"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Arabic vaping terminology research" },
+            "confidence": "high"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "السيجارة الإلكترونية",
+            "context": "Formal general term for an electronic cigarette.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Arabic technical usage research" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "المبخّر",
+            "context": "The vaping component that vaporizes e-liquid and emits output power.",
+            "discouraged": ["واجهة", "منفذ"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Arabic vaping terminology research" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "الكويل",
+            "context": "The heating component of an atomizer; explain as المقاومة when formal clarity is needed.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Arabic vaping terminology research" },
+            "confidence": "high"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "السائل الإلكتروني",
+            "context": "Liquid used by the atomizer.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Arabic technical usage research" },
+            "confidence": "high"
+        },
+        "battery-drain": {
+            "source": "battery drain",
+            "preferred": "استهلاك البطارية",
+            "context": "Current and power drawn from a battery in a calculator result.",
+            "discouraged": ["نزف البطارية"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual translation" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "القدرة المنبعثة",
+            "context": "Power emitted by the atomizer, not an interface or output port.",
+            "discouraged": ["واجهة الخرج"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual translation" },
+            "confidence": "high"
+        }
+    }
+}
