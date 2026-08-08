@@ -1,0 +1,120 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "ja",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "VAPE",
+            "context": "日本語のVAPE利用者の間ではVAPEが一般的で、説明的な表現にはベイピングや蒸気化も使えます。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping sources" },
+            "confidence": "high",
+            "sources": [{ "label": "JAPAN VAPE TV: VAPE用語集", "url": "https://japanvapetv.com/vape/wordbook" }]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "アトマイザー",
+            "context": "日本語のVAPE専門用語で、リキッドを加熱して蒸気化する部品を指します。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "BEYOND VAPE JAPAN: VAPE用語解説", "url": "https://www.beyondvape.jp/cts/topics/glossary/" },
+                { "label": "VAPE ONLINE: 電子タバコ用語", "url": "https://donika.co.jp/vape-online/glossary/40" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "コイル",
+            "context": "日本語のVAPE製品とビルド関連の一般的な用語です。抵抗値を表す場合は抵抗値を使います。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "JAPAN VAPE TV: VAPE用語集", "url": "https://japanvapetv.com/vape/wordbook" },
+                { "label": "Vape Studio: コイルと抵抗値", "url": "https://www.vapestudio.jp/user_data/column/howtouse/vape_080" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "コイルヘッド",
+            "context": "交換式のコイル部品を指します。製品によっては交換用コイルとも呼ばれます。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping sources" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "リキッド",
+            "context": "日本語のVAPE利用者の間で最も一般的な表現です。Eリキッドやリキッドも使われます。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "BEYOND VAPE JAPAN: VAPE用語解説", "url": "https://www.beyondvape.jp/cts/topics/glossary/" },
+                { "label": "VAPE ONLINE: 電子タバコ用語", "url": "https://donika.co.jp/vape-online/glossary/40" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "バッテリー",
+            "context": "VAPE製品ではバッテリーが一般的な表現です。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese technical sources" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "抵抗値",
+            "context": "コイルの電気的な抵抗を指し、通常はΩで表示します。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping and electrical sources" },
+            "confidence": "high",
+            "sources": [{ "label": "Vape Studio: コイルと抵抗値", "url": "https://www.vapestudio.jp/user_data/column/howtouse/vape_080" }]
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "電圧",
+            "context": "電気工学とVAPE製品の仕様で標準的に使われる用語です。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese electrical sources" },
+            "confidence": "high",
+            "sources": [{ "label": "Vape Studio: アトマイザーの電力・電圧・抵抗値", "url": "https://www.vapestudio.jp/user_data/column/information/vape_071" }]
+        },
+        "current": {
+            "source": "current",
+            "preferred": "電流",
+            "context": "電気の流れを表す技術用語です。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese electrical sources" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "電力",
+            "context": "電気的な仕事率を指し、VAPEではワット数として表示されることもあります。",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping and electrical sources" },
+            "confidence": "high",
+            "sources": [{ "label": "Vape Studio: アトマイザーの電力・電圧・抵抗値", "url": "https://www.vapestudio.jp/user_data/column/information/vape_071" }]
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "アトマイザー出力電力",
+            "context": "この計算機ではアトマイザーから出る電気的な電力を指します。単なる出力欄や画面インターフェースを意味しません。",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Japanese vaping and technical sources" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "日本語のVAPE資料では出力、出力電力、ワット数が併用されます。このUIでは物理量としての電力を明示する表現を採用しました。",
+                "bestCurrentTranslation": "アトマイザー出力電力",
+                "alternatives": ["アトマイザーの出力", "アトマイザーのワット数"],
+                "sources": [
+                    { "label": "Vape Studio: アトマイザーの電力・電圧・抵抗値", "url": "https://www.vapestudio.jp/user_data/column/information/vape_071" },
+                    { "label": "Efusion DNA 200 Japanese manual", "url": "https://www.ecigdo.com/doc/Efusion-DNA200-0907-JA-ecigdo.pdf" }
+                ]
+            }
+        }
+    }
+}
