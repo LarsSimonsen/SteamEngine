@@ -1,0 +1,110 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "ko",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "베이핑",
+            "context": "한국 전자담배 커뮤니티에서는 베이핑과 베이프가 널리 쓰이며, 전자담배 사용을 설명할 때도 사용합니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping sources" },
+            "confidence": "high",
+            "sources": [{ "label": "이베이프: 전자담배 용어", "url": "https://evape.kr/bbs/board.php?bo_table=tip&wr_id=1" }]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "아토마이저",
+            "context": "한국 VAPE 커뮤니티에서 일반적으로 사용하는 용어이며, 무화기라는 표현도 쓰입니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping sources" },
+            "confidence": "high",
+            "sources": [{ "label": "이베이프: 전자담배 용어", "url": "https://evape.kr/bbs/board.php?bo_table=tip&wr_id=1" }]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "코일",
+            "context": "한국 VAPE 제품과 빌드에서 일반적으로 사용하는 표현입니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping sources" },
+            "confidence": "high",
+            "sources": [{ "label": "이베이프: 전자담배 용어", "url": "https://evape.kr/bbs/board.php?bo_table=tip&wr_id=1" }]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "코일 헤드",
+            "context": "교체형 코일 부품을 뜻하며, 교체 코일이라는 표현도 사용할 수 있습니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping sources" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "액상",
+            "context": "한국 전자담배 사용자 사이에서 가장 일반적인 표현이며, 액상 리퀴드라는 표현도 보입니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping sources" },
+            "confidence": "high",
+            "sources": [{ "label": "NYC DOH Korean vaping guide", "url": "https://www.nyc.gov/assets/doh/downloads/pdf/smoke/tobacco-ecig-action-kit-coaching-guide-children-ko.pdf" }]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "배터리",
+            "context": "한국어 기술 문서와 VAPE 커뮤니티에서 일반적인 표현입니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean technical sources" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "저항값",
+            "context": "코일의 전기적 저항을 가리키며, 보통 Ω 단위로 표시합니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping and electrical sources" },
+            "confidence": "high",
+            "sources": [{ "label": "이베이프: 전자담배 용어", "url": "https://evape.kr/bbs/board.php?bo_table=tip&wr_id=1" }]
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "전압",
+            "context": "전기공학과 VAPE 사양에서 표준적으로 사용하는 용어입니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean electrical sources" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "전류",
+            "context": "전기의 흐름을 뜻하는 기술 용어입니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean electrical sources" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "전력",
+            "context": "전기적 일률을 뜻하며, VAPE 인터페이스에서는 와트 수 또는 출력으로도 표시됩니다.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping and electrical sources" },
+            "confidence": "high",
+            "sources": [{ "label": "이베이프: 전자담배 용어", "url": "https://evape.kr/bbs/board.php?bo_table=tip&wr_id=1" }]
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "아토마이저 출력 전력",
+            "context": "이 계산기에서는 아토마이저에서 방출되는 전기적 전력을 뜻하며, 단순한 출력 필드나 인터페이스를 뜻하지 않습니다.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Korean vaping and technical sources" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "한국어 VAPE 자료에서는 출력, 출력 전력, 와트 수가 함께 사용됩니다. 이 UI에서는 물리량인 전력을 명시하는 표현을 선택했습니다.",
+                "bestCurrentTranslation": "아토마이저 출력 전력",
+                "alternatives": ["아토마이저 출력", "아토마이저 와트 수"],
+                "sources": [
+                    { "label": "이베이프: 전자담배 용어", "url": "https://evape.kr/bbs/board.php?bo_table=tip&wr_id=1" },
+                    { "label": "NCBI e-cigarette glossary", "url": "https://www.ncbi.nlm.nih.gov/books/NBK507189/?report=printable" }
+                ]
+            }
+        }
+    }
+}
