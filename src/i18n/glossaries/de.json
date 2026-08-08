@@ -1,0 +1,86 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "de",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "Dampfen",
+            "context": "General German term for using an electronic cigarette.",
+            "discouraged": ["Rauchen"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German vaping terminology research" },
+            "confidence": "high"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "E-Zigarette",
+            "context": "Common German name for an electronic-cigarette device.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German technical and vaping usage" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "Verdampfer",
+            "context": "The vaping component that heats Liquid; not an interface or connector.",
+            "discouraged": ["Atomizer"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German vaping glossaries and technical terminology" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "Wicklung",
+            "context": "Technical calculator term for the resistive heating assembly; Coil remains common in German vaping usage.",
+            "discouraged": ["Spule"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German vaping glossaries" },
+            "confidence": "medium"
+        },
+        "replaceable-coil-head": {
+            "source": "replaceable coil head",
+            "preferred": "Verdampferkopf",
+            "context": "Replaceable heating head used in a tank or pod.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German vaping usage" },
+            "confidence": "high"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "Liquid",
+            "context": "Vaping liquid used in a tank or Verdampfer.",
+            "discouraged": ["E-Flüssigkeit"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German native vaping usage" },
+            "confidence": "high"
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "Akku",
+            "context": "Rechargeable battery or cell used to power a vaping device.",
+            "discouraged": ["Batterie"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "German technical and vaping usage" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "vom Verdampfer abgegebene Leistung",
+            "context": "Power emitted by the atomizer, not an interface or output connector.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "German vaping terminology research" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "German sources distinguish the Verdampfer as the device and the Leistung as its electrical output; the English annotation requires emitted-power wording rather than an interface label.",
+                "bestCurrentTranslation": "Vom Verdampfer abgegebene Leistung",
+                "alternatives": ["Ausgangsleistung des Verdampfers", "Leistungsabgabe des Verdampfers"],
+                "sources": [
+                    { "label": "Backendampfer: Glossar elektrische Zigaretten", "url": "https://backendampfer.de/glossar/" },
+                    { "label": "VapeTrade: Glossar zum Dampfen", "url": "https://www.vapetrade.de/ratgeber/vape/glossar-und-begriffe/" },
+                    { "label": "BesserDampfen: Verdampfer", "url": "https://www.besserdampfen.de/hilfe/verdampfer/" }
+                ]
+            }
+        }
+    }
+}
