@@ -1,0 +1,120 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "is",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "veip",
+            "context": "Use veip as the established Icelandic loanword in user-facing contexts; use rafsígaretta or rafrettur for the device.",
+            "discouraged": ["vaping"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic language and vaping sources" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Reykjavík youth survey using veip and rafrettur", "url": "https://reykjavik.is/sites/default/files/2023-07/Rvk_farsaeld_23.pdf" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "uppgufari",
+            "context": "The component that heats and vaporizes e-liquid; hitari is the broader heating-element term.",
+            "discouraged": ["brennari"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic technical sources" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Vísindavefurinn: how e-cigarettes work", "url": "https://www.visindavefur.is/svar.php?id=69718" },
+                { "label": "Icelandic EEA terminology for e-cigarette refill equipment", "url": "https://gagnagrunnur.ees.is/32016d0586" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "spóla",
+            "context": "Use spóla for the coil/heating spiral in calculator labels; retain coil only where it is a product identifier.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic vaping terminology sources" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Canatura Icelandic vaping terminology", "url": "https://www.canatura.com/is/a/veip-thu-rett-fordastu-algengustu-mistoekin" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "spóluhaus",
+            "context": "A replaceable atomizer/coil assembly.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic vaping terminology" },
+            "confidence": "low"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "rafvökvi",
+            "context": "The liquid used in an electronic cigarette; use vökvi when the calculator context already makes the meaning clear.",
+            "discouraged": ["reykvökvi"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic official and consumer sources" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Krabbameinsfélag Íslands: rafrettuvökvi", "url": "https://www.krabb.is/forvarnir/taktu-profid/taktu-profid-rafsigarettur" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "rafhlaða",
+            "context": "Use rafhlaða for a battery; use rafhlöðuhylki when the battery enclosure is meant.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic technical terminology" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "viðnám",
+            "context": "Electrical resistance, measured in ohm.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic electrical terminology" },
+            "confidence": "high"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "spenna",
+            "context": "Electrical voltage.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic electrical terminology" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "straumur",
+            "context": "Electrical current, not present flow or currency.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "afl",
+            "context": "Electrical power, measured in watt.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic electrical terminology" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "atomizer output",
+            "preferred": "afl sem gefið er frá uppgufaranum",
+            "context": "This is emitted power from the atomizer, not a user-interface output.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic vaping terminology and the English source annotation" },
+            "confidence": "low",
+            "uncertainty": {
+                "reason": "The compact Icelandic label must distinguish emitted power from the vaporizer from a generic output or interface result.",
+                "bestCurrentTranslation": "afl sem gefið er frá uppgufaranum",
+                "alternatives": ["afl uppgufarans", "útgangsafl uppgufarans"],
+                "sources": [
+                    { "label": "Vísindavefurinn: the heater produces vapor in an e-cigarette", "url": "https://www.visindavefur.is/svar.php?id=69718" },
+                    { "label": "Icelandic EEA terminology for vaporizer components", "url": "https://gagnagrunnur.ees.is/32016d0586" }
+                ]
+            }
+        }
+    }
+}
