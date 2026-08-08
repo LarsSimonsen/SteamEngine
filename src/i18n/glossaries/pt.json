@@ -1,0 +1,128 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "pt",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "vaporização",
+            "context": "Em fontes portuguesas de Portugal, ‘vaporização’ e ‘cigarro eletrónico’ são os termos gerais; ‘vaping’ também ocorre em contextos comunitários.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "APORVAP Manual de Boas Práticas", "url": "https://aporvap.pt/manual-de-boas-praticas/" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizador",
+            "context": "Termo técnico estabelecido em fontes portuguesas; é o componente onde o e-líquido é vaporizado.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vaping360 Portugal atomizer guide", "url": "https://vaping360.com/pt/learn/atomizers-clearomizers-cartomizers/" },
+                { "label": "AtomizeMoments: Cigarro Electrónico", "url": "https://www.atomizemoments.pt/cigarro-electronico/" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "resistência",
+            "context": "Em Portugal, ‘resistência’ é o termo de interface mais natural para a coil; ‘bobina’ aparece como alternativa descritiva.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "APORVAP Perguntas Frequentes", "url": "https://aporvap.pt/perguntas-frequentes/" },
+                { "label": "VaporPlanet Portugal resistências", "url": "https://www.vaporplanet.pt/resistncias-c-1_22.html" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "cabeça da resistência",
+            "context": "Conjunto substituível da resistência/atomizador; ‘cabeça da resistência’ é mais claro do que um empréstimo literal.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping terminology" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "e-líquido",
+            "context": "Termo usado por fontes portuguesas; ‘líquido’ pode ser usado quando o contexto já é claro.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "APORVAP Perguntas Frequentes", "url": "https://aporvap.pt/perguntas-frequentes/" },
+                { "label": "Universidade do Algarve: cigarros eletrónicos", "url": "https://sapientia.ualg.pt/server/api/core/bitstreams/26c8d0b2-a348-48fa-b86b-cf0cfbb5fc92/content" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "bateria",
+            "context": "Termo técnico comum em Portugal.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) technical sources" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "resistência",
+            "context": "Resistência elétrica e resistência da coil; medida em ohms.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) electrical and vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "VaporPlanet Portugal resistências", "url": "https://www.vaporplanet.pt/resistncias-c-1_22.html" }
+            ]
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "tensão",
+            "context": "Prefira o termo elétrico europeu ‘tensão’ na interface; ‘voltagem’ é uma alternativa corrente no comércio de vapes.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) electrical terminology" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Vapora Portugal product safety specifications", "url": "https://vapora.pt/produto/cthulhu-boro-rba-aio-2-cthulhu-mods/" }
+            ]
+        },
+        "current": {
+            "source": "current",
+            "preferred": "corrente",
+            "context": "Corrente elétrica, não corrente de ar nem moeda.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "potência",
+            "context": "Potência elétrica, medida em watts; ‘potência’ é preferível a ‘poder’ na interface técnica.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping and electrical terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "APORVAP Manual de Boas Práticas", "url": "https://aporvap.pt/manual-de-boas-praticas/" }
+            ]
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "potência emitida pelo atomizador",
+            "context": "‘Output’ refere-se à potência elétrica emitida pelo atomizador, não a uma interface ou a um campo genérico de saída.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping terminology" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Fontes portuguesas usam tanto ‘potência de saída’ como descrições centradas na emissão; é importante manter explícito que o valor é potência emitida pelo atomizador.",
+                "bestCurrentTranslation": "potência emitida pelo atomizador",
+                "alternatives": ["potência de saída do atomizador", "potência de saída"],
+                "sources": [
+                    { "label": "Vaping360 Portugal atomizer guide", "url": "https://vaping360.com/pt/learn/atomizers-clearomizers-cartomizers/" },
+                    { "label": "DGS: Cigarros eletrónicos", "url": "https://www.dgs.pt/programa-nacional-para-a-prevencao-e-controlo-do-tabagismo/cigarros-eletronicos.aspx" }
+                ]
+            }
+        }
+    }
+}
