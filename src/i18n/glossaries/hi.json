@@ -1,0 +1,118 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "hi",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "वेपिंग",
+            "context": "Hindi public-health and consumer sources commonly retain वेपिंग; use ई-सिगरेट for the device.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "MSD Manual Hindi: वेपिंग", "url": "https://www.msdmanuals.com/hi/home/special-subjects/illicit-drugs-and-intoxicants/vaping" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "एटमाइज़र",
+            "context": "Use the established technical loanword for the part that vaporizes e-liquid; heating element may be वर्णित as हीटिंग एलिमेंट where explanation is needed.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi vaping terminology" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Depango Hindi guide to e-cigarette components", "url": "https://www.depangovape.com/hi/news/understanding-the-components-and-build-of-e-cigarettes/" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "कॉइल",
+            "context": "Hindi vaping sources retain कॉइल as the established hardware term; do not replace it with a generic spring or inductor term.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Tastefog Hindi coil guide", "url": "https://www.mytastefog.com/hi/news/whats-the-difference-vaping-coils/" },
+                { "label": "VapeMantra vaping glossary", "url": "https://www.vapemantra.com/vaping-glossary/" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "कॉइल हेड",
+            "context": "A replaceable atomizer/coil assembly.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi vaping terminology" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "ई-लिक्विड",
+            "context": "Hindi sources commonly use the transliterated technical term; लिक्विड निकोटीन is used when nicotine liquid is specifically meant.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi public-health and vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "MSD Manual Hindi vaping article", "url": "https://www.msdmanuals.com/hi/home/special-subjects/illicit-drugs-and-intoxicants/vaping" },
+                { "label": "Missouri Department of Health Hindi e-cigarette factsheet", "url": "https://health.mo.gov/living/wellness/tobacco/smokingandtobacco/pdf/facts-about-ecigs_Hindi.pdf" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "बैटरी",
+            "context": "Use the established Hindi technical loanword for the power source.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi technical sources" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "प्रतिरोध",
+            "context": "Electrical resistance, measured in ओम.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi electrical terminology" },
+            "confidence": "high"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "वोल्टेज",
+            "context": "Use the common Hindi technical loanword in the calculator interface.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi electrical terminology" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "करंट",
+            "context": "Electrical current, not present flow or currency.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "पावर",
+            "context": "Electrical power, measured in वाट; पावर is the natural technical UI term.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi electrical terminology" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "atomizer output",
+            "preferred": "एटमाइज़र से निकलने वाली पावर",
+            "context": "This is emitted power from the atomizer, not a user-interface output.",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi vaping terminology and the English source annotation" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "The compact Hindi label must distinguish emitted atomizer power from a generic output or interface result.",
+                "bestCurrentTranslation": "एटमाइज़र से निकलने वाली पावर",
+                "alternatives": ["एटमाइज़र की आउटपुट पावर", "एटमाइज़र द्वारा दी गई पावर"],
+                "sources": [
+                    { "label": "Depango Hindi guide to e-cigarette components", "url": "https://www.depangovape.com/hi/news/understanding-the-components-and-build-of-e-cigarettes/" },
+                    { "label": "MSD Manual Hindi explanation of vaping vapor", "url": "https://www.msdmanuals.com/hi/home/special-subjects/illicit-drugs-and-intoxicants/vaping" }
+                ]
+            }
+        }
+    }
+}
