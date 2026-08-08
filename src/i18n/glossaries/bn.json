@@ -1,0 +1,122 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "bn",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "ভ্যাপিং",
+            "context": "বাংলা ভ্যাপিং ও পণ্যবিষয়ক লেখায় প্রচলিত ঋণশব্দ; ডিভাইসের জন্য ই-সিগারেট ব্যবহার করুন।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali vaping sources" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vaping360 Bengali product and review pages", "url": "https://vaping360.com/bn/reviews/joyetech-ego-aio-review/" }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "অ্যাটোমাইজার",
+            "context": "বাংলা ভ্যাপিং লেখায় ব্যবহৃত প্রযুক্তিগত ঋণশব্দ; এটি ই-লিকুইড বাষ্পীভূত করা অংশ।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali vaping terminology" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Vaping360 Bengali atomizer guide", "url": "https://vaping360.com/bn/learn/atomizers-clearomizers-cartomizers/" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "কয়েল",
+            "context": "কয়েল ও কয়েল রেজিস্ট্যান্স বাংলা ভ্যাপিং পৃষ্ঠায় প্রচলিত প্রযুক্তিগত পরিভাষা।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vaping360 Bengali Joyetech review", "url": "https://vaping360.com/bn/reviews/joyetech-ego-aio-review/" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "কয়েল হেড",
+            "context": "প্রতিস্থাপনযোগ্য অ্যাটোমাইজার/কয়েল সমাবেশ।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali vaping terminology" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "ই-লিকুইড",
+            "context": "বাংলা ভ্যাপিং পৃষ্ঠায় ব্যবহৃত প্রতিষ্ঠিত প্রযুক্তিগত ঋণশব্দ।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali vaping terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vaping360 Bengali e-liquid guide", "url": "https://vaping360.com/bn/best-e-liquids/e-juice-flavors/" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "ব্যাটারি",
+            "context": "বৈদ্যুতিক শক্তির উৎসের প্রচলিত বাংলা প্রযুক্তিগত ঋণশব্দ।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali technical sources" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "রেজিস্ট্যান্স",
+            "context": "ক্যালকুলেটর ইন্টারফেসে বৈদ্যুতিক রেজিস্ট্যান্সের জন্য প্রচলিত প্রযুক্তিগত শব্দ; একক ওহম।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali electrical terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vaping360 Bengali product specifications", "url": "https://vaping360.com/bn/reviews/joyetech-ego-aio-review/" }
+            ]
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "ভোল্টেজ",
+            "context": "বাংলা প্রযুক্তিগত লেখায় প্রচলিত ঋণশব্দ।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali electrical terminology" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "কারেন্ট",
+            "context": "বৈদ্যুতিক কারেন্ট; প্রবাহ বা মুদ্রা নয়।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali electrical terminology" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "পাওয়ার",
+            "context": "বৈদ্যুতিক পাওয়ার, সাধারণত ওয়াটে মাপা হয়।",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali electrical terminology" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vaping360 Bengali e-liquid pen guide", "url": "https://vaping360.com/bn/best-vape-pens/e-liquid-pens/" }
+            ]
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "অ্যাটোমাইজার থেকে নির্গত পাওয়ার",
+            "context": "এখানে output একটি ইন্টারফেস নয়; অ্যাটোমাইজার থেকে নির্গত বৈদ্যুতিক পাওয়ার বোঝায়।",
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Bengali vaping terminology" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "বাংলা প্রযুক্তিগত লেখায় output power-এর জন্য ‘আউটপুট পাওয়ার’ প্রচলিত, কিন্তু এই ক্যালকুলেটরের প্রসঙ্গে নির্গত পাওয়ার অর্থটি স্পষ্ট রাখা জরুরি।",
+                "bestCurrentTranslation": "অ্যাটোমাইজার থেকে নির্গত পাওয়ার",
+                "alternatives": ["অ্যাটোমাইজারের আউটপুট পাওয়ার", "অ্যাটোমাইজার থেকে নির্গত শক্তি"],
+                "sources": [
+                    { "label": "Vaping360 Bengali e-liquid pen guide", "url": "https://vaping360.com/bn/best-vape-pens/e-liquid-pens/" },
+                    { "label": "CORESTA e-cigarette terminology report", "url": "https://www.coresta.org/sites/default/files/technical_documents/main/ECIG-RefRep_Ecig-History-Operation-Regulation_Feb2014b.pdf" }
+                ]
+            }
+        }
+    }
+}
