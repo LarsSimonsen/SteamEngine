@@ -1,0 +1,86 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "it",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "svapo",
+            "context": "Termine italiano corrente per l'uso delle sigarette elettroniche e il relativo ambito; vaping resta comune nei nomi tecnici e commerciali.",
+            "discouraged": ["vaporizzazione"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Fonti italiane di terminologia dello svapo e traduzione contestuale" },
+            "confidence": "high"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "sigaretta elettronica",
+            "context": "Termine italiano standard per il dispositivo elettronico.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Uso italiano tecnico e comune" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizzatore",
+            "context": "Componente che riscalda il liquido e genera aerosol; non è un'interfaccia né una porta di uscita.",
+            "discouraged": ["nebulizzatore"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Glossari italiani dello svapo e terminologia del produttore" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "resistenza",
+            "context": "Nel calcolatore indica l'elemento riscaldante; coil resta un prestito comune, mentre resistenza è la forma tecnica più chiara.",
+            "discouraged": ["bobina"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Glossari italiani dello svapo" },
+            "confidence": "high"
+        },
+        "replaceable-coil-head": {
+            "source": "replaceable coil head",
+            "preferred": "testina",
+            "context": "Gruppo sostituibile dell'atomizzatore che comprende resistenza e materiale di alimentazione.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Glossari italiani dello svapo" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "liquido",
+            "context": "Liquido per sigaretta elettronica; e-liquid resta comune nei testi tecnici italiani.",
+            "discouraged": ["succo"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Glossari italiani dello svapo" },
+            "confidence": "high"
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "batteria",
+            "context": "Termine italiano standard per la sorgente di energia del dispositivo; cella si usa quando si intende il singolo elemento sostituibile.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Terminologia elettrica italiana e fonti sullo svapo" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "potenza emessa dall'atomizzatore",
+            "context": "Nel contesto dell'atomizzatore indica la potenza emessa o trasferita all'elemento riscaldante, non un'interfaccia o una porta di uscita.",
+            "discouraged": ["uscita dell'atomizzatore", "porta di uscita"],
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Fonti italiane di terminologia dello svapo e traduzione contestuale" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Le fonti italiane usano atomizzatore per il componente e potenza per l'erogazione, ma l'annotazione inglese specifica che output descrive una potenza emessa, non un'interfaccia.",
+                "bestCurrentTranslation": "Potenza emessa dall'atomizzatore",
+                "alternatives": ["Potenza di uscita dell'atomizzatore", "Potenza sull'atomizzatore"],
+                "sources": [
+                    { "label": "VapeItalia: dizionario dello svapo", "url": "https://www.vapeitalia.it/il-dizionario-dello-svapo" },
+                    { "label": "Svapo Blog: glossario", "url": "https://www.svapo.blog/glossario/" },
+                    { "label": "Innokin Italia: termini del vaping", "url": "https://it.innokin.com/vape-terms" }
+                ]
+            }
+        }
+    }
+}
