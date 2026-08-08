@@ -21,7 +21,7 @@
             "glossaryFile": "src/i18n/glossaries/zh-Hans.json"
         },
         "ar": {
-            "state": "machine",
+            "state": "needs-review",
             "reviewFile": "src/i18n/translation-review/ar.json",
             "glossaryFile": "src/i18n/glossaries/ar.json"
         }
