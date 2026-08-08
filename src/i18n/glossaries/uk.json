@@ -1,0 +1,79 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "uk",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "вейпінг",
+            "context": "Сучасний український термін для використання електронної сигарети; у пояснювальному тексті можливе також паріння.",
+            "discouraged": ["випаровування"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Українські галузеві джерела та контекстний переклад" },
+            "confidence": "medium"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "електронна сигарета",
+            "context": "Стандартне українське позначення електронної сигарети.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "атомайзер",
+            "context": "Компонент електронної сигарети, який нагріває рідину та утворює аерозоль; це не інтерфейс і не вихідний порт.",
+            "discouraged": ["розпилювач"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "спіраль",
+            "context": "Нагрівальний елемент атомайзера; у калькуляторах означає спіраль або нагрівальний вузол.",
+            "discouraged": ["котушка"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "confidence": "high"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "рідина",
+            "context": "Рідина для електронної сигарети; за потреби уточнюється як рідина для вейпа.",
+            "discouraged": ["сік"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "confidence": "high"
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "акумулятор",
+            "context": "Електричний акумуляторний елемент або акумуляторний блок; батарея збережена лише там, де йдеться про загальне побутове вживання.",
+            "discouraged": ["батарея"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Українська електротехнічна термінологія" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "потужність, яку віддає атомайзер",
+            "context": "У контексті атомайзера це потужність, що віддається або випромінюється нагрівальним вузлом, а не інтерфейс чи вихідний порт.",
+            "discouraged": ["вихід атомайзера", "вихідний порт"],
+            "state": "needs-review",
+            "provenance": { "kind": "machine", "method": "Українські джерела термінології вейпінгу та контекстний переклад" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Українські джерела послідовно вживають атомайзер для пристрою, але в англійському тексті окремо уточнено, що output означає випромінювану потужність, а не інтерфейс.",
+                "bestCurrentTranslation": "Потужність, яку віддає атомайзер",
+                "alternatives": ["Вихідна потужність атомайзера", "Потужність на атомайзері"],
+                "sources": [
+                    { "label": "KalyanCity: що таке атомайзер", "url": "https://kalyan-city.com.ua/chto-takoe-atomajzer/" },
+                    { "label": "Hotline: як вибрати електронну сигарету", "url": "https://hotline.ua/ua/guides/yak-vibrati-elektronn-cigarki/" },
+                    { "label": "Parovoz Vape: корисна інформація", "url": "https://parovoz.org.ua/pokupatelyu/poleznaya-informatsiya/" }
+                ]
+            }
+        }
+    }
+}
