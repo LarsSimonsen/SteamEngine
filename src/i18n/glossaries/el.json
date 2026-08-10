@@ -1,0 +1,152 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "el",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "άτμισμα",
+            "context": "Καθιερωμένος σύγχρονος όρος για τη χρήση ηλεκτρονικού τσιγάρου.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek government and native vaping sources"
+            },
+            "confidence": "high",
+            "sources": [
+                {
+                    "label": "Υπουργείο Υγείας: Ηλεκτρονικό τσιγάρο - άτμισμα",
+                    "url": "https://www.moh.gov.gr/articles/health/dieythynsh-prwtobathmias-frontidas-ygeias/draseis-kai-programmata-agwghs-ygeias/agwgh-ygeias/draseis-kai-parembaseis-eyaisthhtopoihshs-kai-enhmerwshs-toy-mathhtikoy-plhthysmoy/prolhpsh-kai-diaxeirish-xrhshs-kapnoy-sta-sxoleia/6561-anasainw-eleythera-zw-eleythera?fdl=15716"
+                }
+            ]
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "ατμοποιητής",
+            "context": "Καθιερωμένος ελληνικός όρος για το εξάρτημα που παράγει ατμό.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek vaping sources"
+            },
+            "confidence": "high",
+            "sources": [
+                { "label": "eCig: Ατμοποιητές και αντιστάσεις", "url": "https://www.e-cig.gr/hlektroniko-tsigaro/mods/atmopoiites-antistaseis" },
+                { "label": "Nobacco: Οδηγίες για νέους ατμιστές", "url": "https://www.nobacco.gr/el/odigies-gia-neoys-atmistes/" }
+            ]
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "αντίσταση",
+            "context": "Στο ελληνικό άτμισμα το θερμαντικό coil αποδίδεται συνήθως ως αντίσταση.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek vaping sources"
+            },
+            "confidence": "high",
+            "sources": [
+                { "label": "eCig: Ατμοποιητές και αντιστάσεις", "url": "https://www.e-cig.gr/hlektroniko-tsigaro/mods/atmopoiites-antistaseis" },
+                { "label": "Playcenter: Αντιστάσεις / coils", "url": "https://playcenter.gr/ilektronika-tsigara/atmopoiites/antistaseis-coils/" }
+            ]
+        },
+        "coil-head": {
+            "source": "coil head",
+            "preferred": "ανταλλακτική κεφαλή (αντίσταση)",
+            "context": "Περιγράφει σαφώς την αντικαταστάσιμη κεφαλή που περιέχει το θερμαντικό στοιχείο.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek vaping sources"
+            },
+            "confidence": "high",
+            "sources": [
+                { "label": "Nobacco: Οδηγίες για νέους ατμιστές", "url": "https://www.nobacco.gr/el/odigies-gia-neoys-atmistes/" }
+            ]
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "υγρό αναπλήρωσης",
+            "context": "Επίσημος και ευρέως χρησιμοποιούμενος όρος για το υγρό του ηλεκτρονικού τσιγάρου.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek government and native vaping sources"
+            },
+            "confidence": "high",
+            "sources": [
+                {
+                    "label": "Υπουργείο Υγείας: Ηλεκτρονικά τσιγάρα και υγρά αναπλήρωσης",
+                    "url": "https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/antimetwpish-eksarthsewn/loipes-eksarthseis/plhrofories-gia-thn-ypobolh-dedomenwn-koinopoihsh-apo-kataskeyastes-kai-eisagwgeis-gia-proionta-kapnoy-hlektronika-tsigara-kai-ygra-anaplhrwshs-nea-proionta-kapnoy-fytika-proionta-gia-kapnisma-hlketrika-thermainomena-proionta-xwris-kapno-kai-proionta-niko/14254-plhrofories-gia-ton-tropo-koinopoihshs-twn-hlektronikwn-tsigarwn-kai-twn-periektwn-epanaplhrwshs-toys-arthro-18-toy-nomoy-4419-2016-ndash-fek-174-a-rsquo-2016"
+                },
+                { "label": "Nobacco: Οδηγίες για νέους ατμιστές", "url": "https://www.nobacco.gr/el/odigies-gia-neoys-atmistes/" }
+            ]
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "μπαταρία",
+            "context": "Καθιερωμένος όρος στην τεχνική και καταναλωτική χρήση.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "αντίσταση",
+            "context": "Η ηλεκτρική αντίσταση, σε Ω· το ίδιο ουσιαστικό χρησιμοποιείται και για το coil ως εξάρτημα.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek vaping sources"
+            },
+            "confidence": "high",
+            "sources": [
+                { "label": "Alter Ego: Αντίσταση ατμοποιητή", "url": "https://www.alterego.gr/blog/tips/ti-einai-i-antistasi-atmopoiiti-kai-pos-na-tin-epilexete-/" }
+            ]
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "τάση",
+            "context": "Καθιερωμένος όρος ηλεκτρολογίας για το μέγεθος που μετριέται σε volt.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "ρεύμα",
+            "context": "Καθιερωμένος όρος ηλεκτρολογίας για το ηλεκτρικό ρεύμα.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "ισχύς",
+            "context": "Καθιερωμένος όρος ηλεκτρολογίας για το μέγεθος που μετριέται σε watt.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
+            "confidence": "high"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "ισχύς εξόδου",
+            "context": "Η ηλεκτρική ισχύς που παρέχει η συσκευή στον ατμοποιητή.",
+            "state": "needs-review",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft informed by Greek vaping usage"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Στις ελληνικές πηγές χρησιμοποιούνται τόσο η ισχύς όσο και τα Watt για την έξοδο συσκευής.",
+                "bestCurrentTranslation": "ισχύς εξόδου",
+                "alternatives": ["έξοδος ισχύος", "Watt εξόδου"],
+                "sources": [
+                    { "label": "Playcenter: Αντιστάσεις / coils", "url": "https://playcenter.gr/ilektronika-tsigara/atmopoiites/antistaseis-coils/" },
+                    { "label": "Alter Ego: Αντίσταση ατμοποιητή", "url": "https://www.alterego.gr/blog/tips/ti-einai-i-antistasi-atmopoiiti-kai-pos-na-tin-epilexete-/" }
+                ]
+            }
+        }
+    }
+}
