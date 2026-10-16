@@ -68,7 +68,7 @@ describe("encyclopedia hub", () => {
         expect(screen.getByRole("button", { name: /^Materials$/ })).toBeInTheDocument();
         expect(screen.getByRole("button", { name: /^Mods and boards$/ })).toBeInTheDocument();
         expect(screen.queryByRole("button", { name: /Browse/ })).not.toBeInTheDocument();
-    }, 15_000);
+    });
 
     it("localizes the catalog hub chrome on Bokmål pages", () => {
         document.body.innerHTML = '<div id="root" data-locale="nb"></div>';
@@ -78,7 +78,7 @@ describe("encyclopedia hub", () => {
         expect(screen.getByPlaceholderText("Søk etter navn, modeller eller aliaser")).toBeInTheDocument();
         expect(screen.getByRole("button", { name: "Konsepter" })).toBeInTheDocument();
         expect(screen.getByRole("link", { name: "Steam Engine-forsiden" })).toHaveAttribute("href", "/nb");
-    }, 15_000);
+    });
 
     it("keeps the selected category in the URL fragment", () => {
         render(<EncyclopediaHub />);
@@ -112,7 +112,7 @@ describe("encyclopedia hub", () => {
             .map((link) => link.getAttribute("href"));
         expect(hrefs.length).toBeGreaterThan(0);
         expect(hrefs.every((href) => href !== null && !href.endsWith("/"))).toBe(true);
-    }, 10_000);
+    });
 
     it("filters entries by category and search text", () => {
         render(<EncyclopediaHub />);

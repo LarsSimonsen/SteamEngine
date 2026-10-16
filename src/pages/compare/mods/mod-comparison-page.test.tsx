@@ -54,7 +54,7 @@ describe("mod comparison page", () => {
         expect(screen.queryByRole("option", { name: /DNA-40 \(Ni 200\)/ })).not.toBeInTheDocument();
         expect(screen.queryByText("dna40")).not.toBeInTheDocument();
         expect(screen.getAllByRole("option", { name: /Evolv DNA-40.*40 W.*9 V/ })).toHaveLength(2);
-    }, 10_000);
+    });
 
     it("leaves an unselected side empty and links the selected heading", async () => {
         window.history.replaceState(null, "", "/compare/mods?a=geekvape-aegis-solo-3");

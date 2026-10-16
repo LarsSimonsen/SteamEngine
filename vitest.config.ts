@@ -16,5 +16,7 @@ export default defineConfig({
             "tools/**/*.test.mjs",
         ],
         setupFiles: ["./src/test-setup.ts"],
+        // Rendering the full catalog in jsdom is slow, and several times slower on shared CI runners.
+        testTimeout: process.env.CI ? 60_000 : 15_000,
     },
 });

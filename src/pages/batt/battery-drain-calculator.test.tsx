@@ -501,7 +501,7 @@ describe("BatteryDrainCalculator", () => {
         fireEvent.click(screen.getByRole("button", { name: "Delete" }));
         fireEvent.click(screen.getByRole("button", { name: "Confirm delete" }));
         expect(screen.getByLabelText("Cell preset")).not.toHaveTextContent("Example Cell 2");
-    }, 15000);
+    });
 
     it("clones a built-in battery even when it is hidden from the preset selector", () => {
         render(<BatteryDrainCalculator />);
