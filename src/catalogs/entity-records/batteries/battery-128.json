@@ -1,0 +1,36 @@
+{
+    "entityId": "battery-128",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Linkdata 60P - 60A 6000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-linkdata-60p-60a-6000mah-21700.994389/",
+            "limitations": "Complete exact-model report; sample-specific results and tester estimates."
+        },
+        {
+            "id": "market",
+            "title": "LINKDATA INR21700S-60P - 6000mAh & 60A Continuous Discharge",
+            "url": "https://www.becellbattery.com/shop/linkdata-inr21700s-60p/",
+            "limitations": "Distributor listing and stock status are not safety certification."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

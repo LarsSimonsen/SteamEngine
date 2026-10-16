@@ -33,7 +33,7 @@ export const messages: CalculatorRouteMessages = {
     at: "Ved",
     currentLimitRequires: "krev straumgrensa",
     voltageLimitRequires: "krev spenningsgrensa",
-    resistanceAtLimit: "Motstand ved grensen",
+    resistanceAtLimit: "Motstand ved grensa",
     voltageReachedFirst: "Spenningsgrensa blir nådd først.",
     currentReachedFirst: "Straumgrensa blir nådd først.",
     adjustedGraph: "Den konfigurerte maksimale effekten gir ikkje eit brukbart motstandsområde saman med dei andre registrerte grensene. Denne grafen bruker ei redusert øvre grense på",

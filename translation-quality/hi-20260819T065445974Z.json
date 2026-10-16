@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260819T065445974Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Hindi pass found no new actionable translation defects in the reviewed scope; the trigonometry terminology and worked example were internally consistent." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Hindi human review was performed in this cycle; existing machine-drafted IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "owner-authorized", "reviewer": "LarsSimonsen", "summary": "Publication was explicitly authorized by LarsSimonsen in the current task request; competent human review remains pending." }
+    },
+    "findings": []
+}

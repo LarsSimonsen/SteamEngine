@@ -1,0 +1,23 @@
+{
+    "entityId": "naos-raptor-20a",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Naos Raptor 20A datasheet",
+            "url": "https://www.mouser.com/datasheet/2/167/nsr020_ds-3402015.pdf",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": []
+}

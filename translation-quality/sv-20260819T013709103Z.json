@@ -1,0 +1,104 @@
+{
+    "schemaVersion": 1,
+    "locale": "sv",
+    "cycleId": "sv-20260819T013709103Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Swedish source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Swedish pass identified nine remaining trigonometry, circuit, and unit-translation defects; all nine were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Swedish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "sv-20260819-008",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Swedish right-triangle formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The formulas used opposite, adjacent, and hypotenuse instead of Swedish side terminology."],
+            "resolution": "Localized all three side labels in the formulas."
+        },
+        {
+            "id": "sv-20260819-009",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions contained opposite, adjacent, and hypotenuse."],
+            "resolution": "Localized the side labels while preserving inverse-function notation."
+        },
+        {
+            "id": "sv-20260819-010",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-cell formula retained the English word series in a Swedish annotation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (series)."],
+            "resolution": "Changed the annotation to (seriekoppling)."
+        },
+        {
+            "id": "sv-20260819-011",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch voltage formula retained an English annotation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (parallel branches)."],
+            "resolution": "Changed it to (parallellkopplade grenar)."
+        },
+        {
+            "id": "sv-20260819-012",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The yard conversion retained the English unit name.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula was 1 yard = 3 fot = 0,9144 m."],
+            "resolution": "Kept the standard Swedish yard term and corrected the mixed formula wording to the intended localized form."
+        },
+        {
+            "id": "sv-20260819-013",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle section mixed Swedish prose with English formula terminology.",
+            "disposition": "resolved",
+            "evidence": ["The paragraph defined Swedish side terms while the displayed formulas retained English labels."],
+            "resolution": "Aligned all displayed ratios with the Swedish explanation."
+        },
+        {
+            "id": "sv-20260819-014",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angle-finding section was inconsistent across inverse formulas and the surrounding Swedish prose.",
+            "disposition": "resolved",
+            "evidence": ["The inverse formulas did not reuse the Swedish side terminology from the preceding explanation."],
+            "resolution": "Applied one consistent Swedish terminology set throughout the section."
+        },
+        {
+            "id": "sv-20260819-015",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The imperial-length formula mixed English and Swedish naming.",
+            "disposition": "resolved",
+            "evidence": ["The yard formula combined an English yard label with Swedish fot."],
+            "resolution": "Normalized the formula to consistent Swedish unit naming."
+        },
+        {
+            "id": "sv-20260819-016",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch annotation was the remaining English label in the circuit formulas.",
+            "disposition": "resolved",
+            "evidence": ["The surrounding Swedish voltage-law section used Swedish terminology while this annotation remained English."],
+            "resolution": "Changed the annotation to parallellkopplade grenar."
+        }
+    ]
+}

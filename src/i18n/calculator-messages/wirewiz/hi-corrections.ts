@@ -1,0 +1,32 @@
+import type { CalculatorRouteMessages } from "../../calculator-messages";
+import { messages as draftMessages } from "./hi";
+
+export const messages: CalculatorRouteMessages = {
+    ...draftMessages,
+    title: "वायर विज़ार्ड",
+    importDesign: "Wire Wizard डिज़ाइन आयात करें",
+    coilParameters: "कॉइल पैरामीटर",
+    wraps: "रैप्स",
+    legLength: "लेग की लंबाई",
+    wrapSpacing: "रैप की दूरी",
+    wireDesign: "वायर डिज़ाइन",
+    single: "एकल",
+    twisted: "ट्विस्टेड",
+    removeWire: "वायर हटाएँ",
+    heatCapacity: "ताप क्षमता",
+    powerDissipated: "शक्ति क्षय",
+    strands: "स्ट्रैंड",
+    coilParametersTitle: "कॉइल पैरामीटर",
+    wireDesignTitle: "वायर डिज़ाइन",
+    temperaturePoints: "तापमान बिंदु (°C, अल्पविराम से अलग)",
+    temperature: "तापमान (°C)",
+    celsius: "सेल्सियस (°C)",
+    tcrExplanation: "20 °C और 300 °C के बीच प्रतिरोध में सापेक्ष परिवर्तन।",
+    table: "तालिका",
+    matchTemperature: "इसके समतुल्य तापमान के लिए मॉड में चुनी सामग्री:",
+    adjustTemperature: "तापमान लगभग इतना सेट करें:",
+    staggeredClapton: "स्टैगर्ड क्लैप्टन",
+    dna200: "DNA200",
+    sourceFactorSuffix: "इस तापमान पर।",
+    heatFlux: "ताप-प्रवाह घनत्व",
+};

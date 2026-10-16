@@ -1,0 +1,1618 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20261007T232502040Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Four common technical IDs across all 21 remaining locales, 36 systematic entries across German, Simplified Chinese, Swedish and Polish; eight focused terms across eleven candidates; full Ohm, juice and mod-range scopes in German. Prior screening supplied additional context. Evidence confirmed from fresh effective-runtime snapshot. German shows repeated severe wrong-sense translations of current, power, nicotine base, volume and target instructions across multiple calculators, plus stale mod-range meaning. Selected by breadth and severity, not queue priority. Full independent critique covered 1115 canonical entries and 11 explicit route metadata records, plus optional labels and runtime assembly. Canonical English, German glossary, current JSX, relevant knowledge base and independent native manufacturer references were available.",
+        "limitations": [
+            "Comparative model screening, not exhaustive assessment or a mathematically established global ranking.",
+            "Model critique is not competent human review or maintainer approval.",
+            "No browser visual review or source edits performed in this independent pass.",
+            "Read all dictionary scope and route metadata; source English leaks recorded separately, not a complete application hard-coded-string audit.",
+            "Stylistic variants such as Spule/Wicklung were not mass-rewritten; findings focus on meaning, grammar, stale source and technical distinctions.",
+            "Other locales retain existing behavior for the newly optional localization hooks."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation metadata and all 101 canonical correction signatures verified; typecheck passed; 573 tests in 85 files passed. Optional Wire Wizard suffix is explicitly supported by parity validation; a negative regression test confirms missing required messages still fail. Complete IIS and Cloudflare builds passed: 64 route cases, 39 IIS rules, 737 generated links across 10279 HTML files, and 64 Cloudflare artifact route cases. Browser checks passed for 15 German routes, three catalog editors, five battery placeholders, Ohm/Wire Wizard sentence assembly, balanced generated HTML, three desktop/mobile layouts and 12 English routes. Calculation API fixtures isolate rendering. Independent implementation review passed; human review remains pending."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Reviewed all 1115 canonical entries and 11 route metadata records. Corrected 109 display entries including eight optional messages and seven runtime argument mappings whose sentinel text is unchanged. Corrections span 42 recurring issue groups over three bounded iterations. Localized decimal formatting and valid symbols were preserved."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review performed; machine-draft notice remains visible."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User explicitly requested full review, improvement, commit, push and deploy, then asked to continue."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-001",
+            "translationId": "messages.ohm.fields.current",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous German: Aktuell",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "Strom"
+        },
+        {
+            "id": "de-002",
+            "translationId": "calculators.modrange.current",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous German: Aktuell",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "Strom"
+        },
+        {
+            "id": "de-003",
+            "translationId": "calculators.modrange.currentLimit",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current limit",
+                "Previous German: Aktuelle Grenze",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "Stromgrenze"
+        },
+        {
+            "id": "de-004",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous German: die aktuelle Grenze erfordert",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "die Stromgrenze erfordert"
+        },
+        {
+            "id": "de-005",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous German: Zuerst wird das aktuelle Limit erreicht.",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "Zuerst wird die Stromgrenze erreicht."
+        },
+        {
+            "id": "de-006",
+            "translationId": "calculators.batt.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
+                "Previous German: Nennspannung und Kapazität bestimmen die geschätzte gespeicherte Energie und Dauerlaufzeit. Sie haben keinen Einfluss auf das aktuelle Limit.",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "Nennspannung und Kapazität bestimmen die geschätzte gespeicherte Energie und Dauerlaufzeit. Sie haben keinen Einfluss auf die Stromgrenze."
+        },
+        {
+            "id": "de-007",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Electrical current was translated as current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous German: Es verbleiben weniger als 20 % des aktuellen Spielraums.",
+                "Canonical electrical labels use amperes; Aktuell/aktuelle does not identify electric current."
+            ],
+            "resolution": "Es verbleiben weniger als 20 % Stromreserve."
+        },
+        {
+            "id": "de-008",
+            "translationId": "messages.ohm.fields.power",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-power] Power means electrical Leistung, not Macht.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous German: Macht",
+                "Ohm and modrange report watts."
+            ],
+            "resolution": "Leistung"
+        },
+        {
+            "id": "de-009",
+            "translationId": "calculators.modrange.power",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-power] Power means electrical Leistung, not Macht.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous German: Macht",
+                "Ohm and modrange report watts."
+            ],
+            "resolution": "Leistung"
+        },
+        {
+            "id": "de-010",
+            "translationId": "calculators.juice.nicStrengthIn",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-labels] Nic abbreviates nicotine, not nice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic strength in",
+                "Previous German: Schöne Kraft drin",
+                "Canonical juice labels identify nicotine concentration/base, not beauty or strength in general."
+            ],
+            "resolution": "Nikotinstärke in"
+        },
+        {
+            "id": "de-011",
+            "translationId": "calculators.juice.nicBase",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-labels] Nic abbreviates nicotine, not nice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic base",
+                "Previous German: Schöne Basis",
+                "Canonical juice labels identify nicotine concentration/base, not beauty or strength in general."
+            ],
+            "resolution": "Nikotinbase"
+        },
+        {
+            "id": "de-012",
+            "translationId": "calculators.juice.nicStrength",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-labels] Nic abbreviates nicotine, not nice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic strength",
+                "Previous German: Schöne Stärke",
+                "Canonical juice labels identify nicotine concentration/base, not beauty or strength in general."
+            ],
+            "resolution": "Nikotinstärke"
+        },
+        {
+            "id": "de-013",
+            "translationId": "calculators.juice.volume",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[liquid-volume] Liquid volume is not sound volume.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Volume",
+                "Previous German: Lautstärke",
+                "Juice table compares ml volume with gram weight."
+            ],
+            "resolution": "Volumen"
+        },
+        {
+            "id": "de-014",
+            "translationId": "calculators.juice.amount",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[juice-amount] Amount refers to liquid quantity, not a monetary amount.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Amount you want to make",
+                "Previous German: Betrag, den Sie machen möchten",
+                "The batch input specifies how much liquid to make."
+            ],
+            "resolution": "Menge, die Sie herstellen möchten"
+        },
+        {
+            "id": "de-015",
+            "translationId": "calculators.juice.targetLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[juice-target] Shooting for is a target idiom, not photography.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: what you're shooting for",
+                "Previous German: wofür du fotografierst",
+                "Target concentration helper."
+            ],
+            "resolution": "was Sie erreichen möchten"
+        },
+        {
+            "id": "de-016",
+            "translationId": "calculators.juice.flavor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavor-ingredient] Flavor refers to a measured flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor",
+                "Previous German: Geschmack",
+                "The ingredient has a percentage and VG carrier."
+            ],
+            "resolution": "Aroma"
+        },
+        {
+            "id": "de-017",
+            "translationId": "calculators.juice.flavorName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavor-ingredient] Flavor refers to a measured flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor",
+                "Previous German: Geschmack",
+                "The ingredient has a percentage and VG carrier."
+            ],
+            "resolution": "Aroma"
+        },
+        {
+            "id": "de-018",
+            "translationId": "calculators.juice.flavorPercentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavor-ingredient] Flavor refers to a measured flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor percentage",
+                "Previous German: Geschmacksprozentsatz",
+                "The ingredient has a percentage and VG carrier."
+            ],
+            "resolution": "Aromaanteil"
+        },
+        {
+            "id": "de-019",
+            "translationId": "calculators.juice.flavorVg",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavor-ingredient] Flavor refers to a measured flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor is VG based",
+                "Previous German: Der Geschmack basiert auf VG",
+                "The ingredient has a percentage and VG carrier."
+            ],
+            "resolution": "Das Aroma ist VG-basiert"
+        },
+        {
+            "id": "de-020",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavor-ingredient] Flavor refers to a measured flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous German: Möglicherweise müssen Sie Ihren angestrebten Nic-, VG- oder PG-Gehalt oder Geschmack reduzieren. Alternativ können Sie eine stärkere Nic-Basis oder eine Nic-Basis mit einem anderen VG/PG-Verhältnis verwenden. Bitte passen Sie Ihre Einstellungen an, bis alle Zahlen größer als Null sind.",
+                "The ingredient has a percentage and VG carrier."
+            ],
+            "resolution": "Möglicherweise müssen Sie Ihren angestrebten Nikotin-, VG- oder PG-Gehalt oder den Aromaanteil reduzieren. Alternativ können Sie eine stärkere Nikotinbase oder eine Nikotinbase mit einem anderen VG/PG-Verhältnis verwenden. Bitte passen Sie Ihre Einstellungen an, bis alle Zahlen größer als Null sind."
+        },
+        {
+            "id": "de-021",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous German: Akkuvoreinstellungen",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zellenvoreinstellung"
+        },
+        {
+            "id": "de-022",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous German: Cell selection",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zellenauswahl"
+        },
+        {
+            "id": "de-023",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous German: Wählen Sie eine Voreinstellung für den integrierten Akku oder geben Sie unten Ihre eigenen Werte ein.",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Wählen Sie den im gesamten Akkupack verwendeten Zellentyp oder geben Sie unten Werte pro Zelle ein."
+        },
+        {
+            "id": "de-024",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous German: Akkuvoreinstellung",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zellenvoreinstellung"
+        },
+        {
+            "id": "de-025",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous German: Akkuwerte",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zelle und Akkupack"
+        },
+        {
+            "id": "de-026",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous German: Battery configuration",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Akkukonfiguration"
+        },
+        {
+            "id": "de-027",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous German: 1S — Single cell",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "1S — Einzelzelle"
+        },
+        {
+            "id": "de-028",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous German: Custom configuration",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Benutzerdefinierte Konfiguration"
+        },
+        {
+            "id": "de-029",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous German: Cells in series",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zellen in Reihe"
+        },
+        {
+            "id": "de-030",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous German: Parallel strings",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Parallele Stränge"
+        },
+        {
+            "id": "de-031",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous German: cells",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zellen"
+        },
+        {
+            "id": "de-032",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous German: cell",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Zelle"
+        },
+        {
+            "id": "de-033",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous German: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Verwenden Sie identische, aufeinander abgestimmte Zellen gleichen Alters und Zustands. Die Stromaufteilung ist idealisiert; die schwächste Zelle begrenzt den Akkupack."
+        },
+        {
+            "id": "de-034",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous German: Battery pack",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Akkupack"
+        },
+        {
+            "id": "de-035",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-topology] Battery configuration additions remain untranslated or retain obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous German: Estimated current per cell",
+                "Fresh English explicitly distinguishes per-cell inputs from the pack and series/parallel configuration."
+            ],
+            "resolution": "Geschätzter Strom pro Zelle"
+        },
+        {
+            "id": "de-036",
+            "translationId": "calculators.batt.enterValue",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-validation-fragment] Validation fragment puts the separable verb before its appended object.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter a value for",
+                "Previous German: Geben Sie einen Wert für ein",
+                "battery-drain-calculator.tsx:663 appends the field label and period.",
+                "Parent checked complete JSX sentence assembly and corrected punctuation/word order."
+            ],
+            "resolution": "Bitte einen Wert eingeben für:"
+        },
+        {
+            "id": "de-037",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-current-source-labels] Result labels still describe earlier concepts instead of the current canonical results.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous German: Optimaler Widerstand",
+                "Current English deliberately names guidance, crossover and upper-range midpoint; median/optimal/sweet spot are not equivalent."
+            ],
+            "resolution": "Hinweise zum Widerstand"
+        },
+        {
+            "id": "de-038",
+            "translationId": "calculators.modrange.maximumPowerRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-current-source-labels] Result labels still describe earlier concepts instead of the current canonical results.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum-power range",
+                "Previous German: Maximaler Leistungsbereich",
+                "Current English deliberately names guidance, crossover and upper-range midpoint; median/optimal/sweet spot are not equivalent."
+            ],
+            "resolution": "Widerstandsbereich für maximale Leistung"
+        },
+        {
+            "id": "de-039",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-current-source-labels] Result labels still describe earlier concepts instead of the current canonical results.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous German: Mittlerer Widerstand",
+                "Current English deliberately names guidance, crossover and upper-range midpoint; median/optimal/sweet spot are not equivalent."
+            ],
+            "resolution": "Übergang zwischen Strom- und Spannungsbegrenzung"
+        },
+        {
+            "id": "de-040",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-current-source-labels] Result labels still describe earlier concepts instead of the current canonical results.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous German: Sweet Spot",
+                "Current English deliberately names guidance, crossover and upper-range midpoint; median/optimal/sweet spot are not equivalent."
+            ],
+            "resolution": "Mittelpunkt des oberen Bereichs"
+        },
+        {
+            "id": "de-041",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-current-source-labels] Result labels still describe earlier concepts instead of the current canonical results.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous German: Median",
+                "Current English deliberately names guidance, crossover and upper-range midpoint; median/optimal/sweet spot are not equivalent."
+            ],
+            "resolution": "Übergang zwischen Strom- und Spannungsbegrenzung"
+        },
+        {
+            "id": "de-042",
+            "translationId": "calculators.modrange.optimalRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-current-source-labels] Result labels still describe earlier concepts instead of the current canonical results.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optimal range",
+                "Previous German: Optimale Reichweite",
+                "Current English deliberately names guidance, crossover and upper-range midpoint; median/optimal/sweet spot are not equivalent."
+            ],
+            "resolution": "Optimaler Bereich"
+        },
+        {
+            "id": "de-043",
+            "translationId": "calculators.modrange.adjustedGraph",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-graph-fragment] The appended ceiling value occurs after the German verb.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The configured maximum power does not produce a usable resistance range with the other recorded limits. This graph uses a reduced ceiling of",
+                "Previous German: Die konfigurierte Maximalleistung ergibt mit den anderen erfassten Grenzen keinen nutzbaren Widerstandsbereich. In diesem Diagramm wird eine reduzierte Obergrenze von verwendet",
+                "mod-range-graph.tsx:42 appends numeric watts after adjustedGraph."
+            ],
+            "resolution": "Die konfigurierte Maximalleistung ergibt mit den anderen erfassten Grenzen keinen nutzbaren Widerstandsbereich. Für dieses Diagramm gilt eine reduzierte Obergrenze von"
+        },
+        {
+            "id": "de-044",
+            "translationId": "messages.ohm.simpleLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-locks] UI value locks were translated as physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Simple locks",
+                "Previous German: Einfache Schlösser",
+                "The control keeps numerical values constant."
+            ],
+            "resolution": "Einfache Sperren"
+        },
+        {
+            "id": "de-045",
+            "translationId": "messages.ohm.showDetailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-locks] UI value locks were translated as physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Show detailed locks",
+                "Previous German: Detaillierte Schlösser anzeigen",
+                "The control keeps numerical values constant."
+            ],
+            "resolution": "Detaillierte Sperren anzeigen"
+        },
+        {
+            "id": "de-046",
+            "translationId": "messages.ohm.detailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-locks] UI value locks were translated as physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Detailed locks",
+                "Previous German: Detaillierte Schlösser",
+                "The control keeps numerical values constant."
+            ],
+            "resolution": "Detaillierte Sperren"
+        },
+        {
+            "id": "de-047",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-assembly] The assembled Ohm introduction is grammatically broken.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous German: Das ist einfach",
+                "ohm-calculator.tsx:209-213 concatenates prefix + Ohmsches Gesetz + und + optional Joule label + suffix. Use a colon to preserve nominative linked titles.",
+                "Parent checked complete JSX sentence assembly and corrected punctuation/word order."
+            ],
+            "resolution": "Die Zusammenhänge"
+        },
+        {
+            "id": "de-048",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-assembly] The assembled Ohm introduction is grammatically broken.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous German: Taschenrechner.",
+                "ohm-calculator.tsx:209-213 concatenates prefix + Ohmsches Gesetz + und + optional Joule label + suffix. Use a colon to preserve nominative linked titles.",
+                "Parent checked complete JSX sentence assembly and corrected punctuation/word order."
+            ],
+            "resolution": "bilden die Grundlage dieses einfachen Rechners."
+        },
+        {
+            "id": "de-049",
+            "translationId": "messages.catalogManager.filterBuiltIns",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-builtins] Built-in presets were translated as physical built-in devices or filtering was reversed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Filter built-ins",
+                "Previous German: Integrierte Filter",
+                "Catalog manager filters bundled entries; mod presets are not appliances installed in furniture."
+            ],
+            "resolution": "Vorgegebene Einträge filtern"
+        },
+        {
+            "id": "de-050",
+            "translationId": "messages.catalogManager.choose",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-builtins] Built-in presets were translated as physical built-in devices or filtering was reversed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose visible built-ins or create __se_arg_0__ stored in this browser.",
+                "Previous German: Wählen Sie sichtbare integrierte Funktionen oder erstellen Sie __SE_ARG_0__, das in diesem Browser gespeichert ist.",
+                "Catalog manager filters bundled entries; mod presets are not appliances installed in furniture."
+            ],
+            "resolution": "Wählen Sie sichtbare vorgegebene Einträge oder erstellen Sie __SE_ARG_0__, die in diesem Browser gespeichert werden. Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-051",
+            "translationId": "calculators.modrange.builtInDevices",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-builtins] Built-in presets were translated as physical built-in devices or filtering was reversed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in devices",
+                "Previous German: Einbaugeräte",
+                "Catalog manager filters bundled entries; mod presets are not appliances installed in furniture."
+            ],
+            "resolution": "Vorgegebene Geräte"
+        },
+        {
+            "id": "de-052",
+            "translationId": "messages.catalogManager.builtIn",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in __se_arg_0__",
+                "Previous German: Integriertes __SE_ARG_0__",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Vorgegeben: __SE_ARG_0__ Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-053",
+            "translationId": "messages.catalogManager.custom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __se_arg_0__",
+                "Previous German: Benutzerdefiniert __SE_ARG_0__",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Benutzerdefiniert: __SE_ARG_0__ Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-054",
+            "translationId": "messages.catalogManager.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous German: Neue benutzerdefinierte __SE_ARG_0__",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Neuer benutzerdefinierter Eintrag: __SE_ARG_0__ Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-055",
+            "translationId": "messages.catalogManager.noneYet",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No custom __se_arg_0__ yet.",
+                "Previous German: Noch kein benutzerdefiniertes __SE_ARG_0__.",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Noch keine benutzerdefinierten Einträge: __SE_ARG_0__. Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-056",
+            "translationId": "messages.catalogEditor.editCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Edit custom __se_arg_0__",
+                "Previous German: Benutzerdefiniertes __SE_ARG_0__ bearbeiten",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Benutzerdefinierten Eintrag bearbeiten: __SE_ARG_0__ Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-057",
+            "translationId": "messages.catalogEditor.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous German: Neue benutzerdefinierte __SE_ARG_0__",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Neuer benutzerdefinierter Eintrag: __SE_ARG_0__ Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-058",
+            "translationId": "messages.catalogEditor.properties",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ properties",
+                "Previous German: __SE_ARG_0__ Eigenschaften",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "Eigenschaften: __SE_ARG_0__ Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-059",
+            "translationId": "messages.catalogEditor.save",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-template-grammar] Reusable catalog templates have incorrect agreement or word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Save __se_arg_0__",
+                "Previous German: Speichern __SE_ARG_0__",
+                "Manager uses plural nouns for builtIn/custom/noneYet and singular noun for newCustom/editor; colon forms avoid gender assumptions. English noun leakage is separately recorded."
+            ],
+            "resolution": "__SE_ARG_0__ speichern Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-060",
+            "translationId": "messages.catalogManager.shared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[shared-catalog] Shared catalog means shared across calculators, not released/shared with other users.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: shared __se_arg_0__ catalog",
+                "Previous German: freigegebener __SE_ARG_0__-Katalog",
+                "Browser-local common catalog context."
+            ],
+            "resolution": "gemeinsamer __SE_ARG_0__-Katalog Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-061",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Button top describes a raised battery contact, not multiple buttons.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous German: Oberteil mit Knöpfen",
+                "Terminal-style options flat top/button top."
+            ],
+            "resolution": "Erhöhter Pluspol (Button Top)"
+        },
+        {
+            "id": "de-062",
+            "translationId": "messages.catalogEditor.terminalStyle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Button top describes a raised battery contact, not multiple buttons.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Terminal style",
+                "Previous German: Terminal-Stil",
+                "Terminal-style options flat top/button top."
+            ],
+            "resolution": "Kontaktform"
+        },
+        {
+            "id": "de-063",
+            "translationId": "messages.catalogEditor.wrapperColor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-wrapper] Wrapper is the cell sleeve, not an envelope or outer packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrapper color",
+                "Previous German: Farbe des Umschlags",
+                "Catalog construction fields and exact-wrapper revision identity refer to the cell sleeve."
+            ],
+            "resolution": "Farbe der Ummantelung"
+        },
+        {
+            "id": "de-064",
+            "translationId": "messages.encyclopediaDetail.wrapperColor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-wrapper] Wrapper is the cell sleeve, not an envelope or outer packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrapper color",
+                "Previous German: Farbe des Umschlags",
+                "Catalog construction fields and exact-wrapper revision identity refer to the cell sleeve."
+            ],
+            "resolution": "Farbe der Ummantelung"
+        },
+        {
+            "id": "de-065",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-discharge-rating] Current/C discharge rating is mistranslated as power or water outflow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ A continuous-discharge rating.",
+                "Previous German: Im Katalog ist eine Dauerentladungsleistung von __SE_ARG_0__ A aufgeführt.",
+                "A and C here specify discharge-current capability, not watts."
+            ],
+            "resolution": "Im Katalog ist ein Dauerentladestrom von __SE_ARG_0__ A angegeben."
+        },
+        {
+            "id": "de-066",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeC",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-discharge-rating] Current/C discharge rating is mistranslated as power or water outflow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ C continuous-discharge rating.",
+                "Previous German: Im Katalog ist eine Dauerentladungsleistung von __SE_ARG_0__ C aufgeführt.",
+                "A and C here specify discharge-current capability, not watts."
+            ],
+            "resolution": "Im Katalog ist eine Dauerentladerate von __SE_ARG_0__ C angegeben."
+        },
+        {
+            "id": "de-067",
+            "translationId": "messages.encyclopediaDetail.noContinuousDischarge",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-discharge-rating] Current/C discharge rating is mistranslated as power or water outflow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A continuous-discharge rating is not established in the catalog.",
+                "Previous German: Eine Dauerentladungsleistung ist im Katalog nicht festgelegt.",
+                "A and C here specify discharge-current capability, not watts."
+            ],
+            "resolution": "Eine Dauerentladegrenze ist im Katalog nicht festgelegt."
+        },
+        {
+            "id": "de-068",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.continuousDischarge",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-discharge-rating] Current/C discharge rating is mistranslated as power or water outflow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous-discharge rating",
+                "Previous German: Kontinuierliche Entladungsleistung",
+                "A and C here specify discharge-current capability, not watts."
+            ],
+            "resolution": "Dauerentladegrenze"
+        },
+        {
+            "id": "de-069",
+            "translationId": "messages.catalogEditor.continuousC",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-discharge-rating] Current/C discharge rating is mistranslated as power or water outflow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous discharge C rating",
+                "Previous German: Kontinuierliche Entladung C-Bewertung",
+                "A and C here specify discharge-current capability, not watts."
+            ],
+            "resolution": "C-Rate bei Dauerentladung"
+        },
+        {
+            "id": "de-070",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-discharge-rating] Current/C discharge rating is mistranslated as power or water outflow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous German: Geben Sie mindestens einen kontinuierlichen Entladegrenzwert ein. Integrierte Akkus sind interne Mod-Packs, daher sind keine eigenständigen Zellenabmessungen erforderlich. Die Abmessungen der herausnehmbaren Zelle sind nominal; Benutzen Sie die Anmerkungen für die gemessenen Abmessungen im Verkaufszustand. Wenn beide Abflussgrenzwerte festgelegt sind, verwendet der Rechner weiterhin den sichereren abgeleiteten Grenzwert, wenn sie erheblich voneinander abweichen.",
+                "A and C here specify discharge-current capability, not watts."
+            ],
+            "resolution": "Geben Sie mindestens einen kontinuierlichen Entladegrenzwert ein. Integrierte Akkus sind interne Mod-Packs, daher sind keine eigenständigen Zellenabmessungen erforderlich. Die Abmessungen der herausnehmbaren Zelle sind nominal; Benutzen Sie die Anmerkungen für die gemessenen Abmessungen im Verkaufszustand. Wenn beide Entladegrenzwerte festgelegt sind, verwendet der Rechner weiterhin den sichereren abgeleiteten Grenzwert, wenn sie erheblich voneinander abweichen."
+        },
+        {
+            "id": "de-071",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.resistivity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[resistivity] Resistivity was confused with resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Electrical resistivity at 20 °C",
+                "Previous German: Elektrischer Widerstand bei 20 °C",
+                "Material property is geometry-independent resistivity, consistent with editor Ω mm²/m label."
+            ],
+            "resolution": "Spezifischer elektrischer Widerstand bei 20 °C"
+        },
+        {
+            "id": "de-072",
+            "translationId": "calculators.coil.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Heat flux labels lose the per-area quantity distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous German: Wärmefluss",
+                "Knowledge base heat-flux.md and canonical concept define W/m²; German concept itself uses Wärmestromdichte."
+            ],
+            "resolution": "Wärmestromdichte"
+        },
+        {
+            "id": "de-073",
+            "translationId": "calculators.coil.targetHeatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Heat flux labels lose the per-area quantity distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Target heat flux",
+                "Previous German: Zielwärmefluss",
+                "Knowledge base heat-flux.md and canonical concept define W/m²; German concept itself uses Wärmestromdichte."
+            ],
+            "resolution": "Zielwärmestromdichte"
+        },
+        {
+            "id": "de-074",
+            "translationId": "calculators.wirewiz.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Heat flux labels lose the per-area quantity distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous German: Wärmefluss",
+                "Knowledge base heat-flux.md and canonical concept define W/m²; German concept itself uses Wärmestromdichte."
+            ],
+            "resolution": "Wärmestromdichte"
+        },
+        {
+            "id": "de-075",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Heat flux labels lose the per-area quantity distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux is a transfer rate, not a temperature; use heat capacity for temperature change.",
+                "Previous German: Der Wärmefluss ist eine Übertragungsrate, keine Temperatur; nutzen Sie die Wärmekapazität für Temperaturänderungen.",
+                "Knowledge base heat-flux.md and canonical concept define W/m²; German concept itself uses Wärmestromdichte."
+            ],
+            "resolution": "Die Wärmestromdichte ist eine Übertragungsrate pro Fläche, keine Temperatur; nutzen Sie die Wärmekapazität für Temperaturänderungen."
+        },
+        {
+            "id": "de-076",
+            "translationId": "calculators.tcr.results",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tcr-results] Resistance by temperature means resistance as a function of temperature.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance by temperature",
+                "Previous German: Widerstand durch Temperatur",
+                "Table columns contain temperature-specific resistance."
+            ],
+            "resolution": "Widerstand in Abhängigkeit von der Temperatur"
+        },
+        {
+            "id": "de-077",
+            "translationId": "calculators.tcr.noticeCleared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tcr-cleared] Cleared selections were translated as released materials.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature points changed; selected materials were cleared.",
+                "Previous German: Temperaturpunkte geändert; ausgewählte Materialien wurden freigegeben.",
+                "Temperature editing clears selected material entries."
+            ],
+            "resolution": "Temperaturpunkte geändert; ausgewählte Materialien wurden entfernt."
+        },
+        {
+            "id": "de-078",
+            "translationId": "calculators.tcr.export",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tcr-export] Output is a data export, not an electrical terminal.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 output",
+                "Previous German: DNA 200-Ausgang",
+                "DNA 200 CSV output is exported resistance-curve data."
+            ],
+            "resolution": "DNA 200-Ausgabe"
+        },
+        {
+            "id": "de-079",
+            "translationId": "calculators.tcr.help",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tcr-export] Output is a data export, not an electrical terminal.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",
+                "Previous German: Durch Bearbeiten dieser Werte werden ausgewählte Materialien gelöscht. Der DNA 200-Ausgang akzeptiert 2–8 Punkte und benötigt einen Punkt in der Nähe von 70 °F (ca. 21 °C).",
+                "DNA 200 CSV output is exported resistance-curve data."
+            ],
+            "resolution": "Durch Bearbeiten dieser Werte werden ausgewählte Materialien entfernt. Die DNA 200-Ausgabe akzeptiert 2–8 Punkte und benötigt einen Punkt in der Nähe von 70 °F (ca. 21 °C)."
+        },
+        {
+            "id": "de-080",
+            "translationId": "calculators.wirewiz.tfrEditor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-editor] Editor means editing control, not publishing editor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: TFR editor",
+                "Previous German: TFR-Herausgeber",
+                "TFR point editing UI."
+            ],
+            "resolution": "TFR-Editor"
+        },
+        {
+            "id": "de-081",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-wraps] Wrap count remains untranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wraps",
+                "Previous German: Wraps",
+                "Count of turns in a coil, not a brand name."
+            ],
+            "resolution": "Windungen"
+        },
+        {
+            "id": "de-082",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-equivalent-fragments] Equivalent-temperature sentence mistakes set-to for a product set and misplaces the verb.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous German: Um es mit einem Mod-Set abzugleichen",
+                "wire-wizard.tsx:1067 appends material, comma, second fragment, numeric temperatures and period.",
+                "Parent checked complete JSX sentence assembly and corrected punctuation/word order."
+            ],
+            "resolution": "Verwendet Ihr Mod das Materialprofil"
+        },
+        {
+            "id": "de-083",
+            "translationId": "calculators.wirewiz.adjustTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-equivalent-fragments] Equivalent-temperature sentence mistakes set-to for a product set and misplaces the verb.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: adjust the temperature to approximately",
+                "Previous German: Stellen Sie die Temperatur auf ungefähr ein",
+                "wire-wizard.tsx:1067 appends material, comma, second fragment, numeric temperatures and period.",
+                "Parent checked complete JSX sentence assembly and corrected punctuation/word order."
+            ],
+            "resolution": "stellen Sie zum Abgleich ungefähr folgende Temperatur ein:"
+        },
+        {
+            "id": "de-084",
+            "translationId": "calculators.wirewiz.resetPersistence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-reset] Reset refers to the tool, not resetting a valid design.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset or import a valid design to replace the saved data.",
+                "Previous German: Setzen Sie ein gültiges Design zurück oder importieren Sie es, um die gespeicherten Daten zu ersetzen.",
+                "The alternative is reset OR import a valid design."
+            ],
+            "resolution": "Setzen Sie die Einstellungen zurück oder importieren Sie ein gültiges Design, um die gespeicherten Daten zu ersetzen."
+        },
+        {
+            "id": "de-085",
+            "translationId": "calculators.wirewiz.single",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-types] Single and twisted wire choices are not localized precisely.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single",
+                "Previous German: Single",
+                "These are wire construction modes, not identity names."
+            ],
+            "resolution": "Einzeldraht"
+        },
+        {
+            "id": "de-086",
+            "translationId": "calculators.wirewiz.twisted",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-types] Single and twisted wire choices are not localized precisely.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Twisted",
+                "Previous German: Verdreht",
+                "These are wire construction modes, not identity names."
+            ],
+            "resolution": "Verdrillt"
+        },
+        {
+            "id": "de-087",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[series-resistors] Series resistors were narrowed to dropping resistors.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Series resistors",
+                "Previous German: Vorwiderstände",
+                "Example describes two resistors connected in series, no specified dropping-resistor role."
+            ],
+            "resolution": "Widerstände in Reihe"
+        },
+        {
+            "id": "de-088",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-table] Gauge number was translated as a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous German: Messgerät",
+                "Column contains 10, 20, 30 wire gauge numbers."
+            ],
+            "resolution": "Drahtstärke"
+        },
+        {
+            "id": "de-089",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[si-heading] Common SI units include derived units as well as base units.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Common SI units",
+                "Previous German: SI-Basiseinheiten",
+                "Section includes volts, ohms, watts, joules etc beneath base-unit table."
+            ],
+            "resolution": "Gebräuchliche SI-Einheiten"
+        },
+        {
+            "id": "de-090",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pound-symbol] Canonical lb unit symbol was replaced by ambiguous German Pfund.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 lb ≈ 0.45359237 kg.",
+                "Previous German: 1 Pfund ≈ 0,45359237 kg.",
+                "German Pfund commonly denotes 500 g, whereas this conversion is explicitly lb; preserve canonical unit symbol."
+            ],
+            "resolution": "1 lb ≈ 0,45359237 kg."
+        },
+        {
+            "id": "de-091",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[tabless-revision] Tabless was mistranslated as table revision and pulse prohibition was reversed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous German: 45 A unabhängiger, kontinuierlicher Wert für die getestete Tabellenrevision; ersetzt keine Pulswerte.",
+                "Bosch and Festool native manufacturer usage both retain Tabless; canonical warning prohibits substituting pulse ratings for continuous rating.",
+                "https://www.bosch-professional.com/de/de/leistungsklassen/expert/elektrowerkzeuge/akkus/ — Native manufacturer text uses Tabless-Zellen for cell technology, not Tabellenrevision.",
+                "https://www.festool.de/-/media/tts/fcp/press/2026/tabless/pressemitteilung-de.pdf — Independent manufacturer uses Tabless and explains tabs as Laschen."
+            ],
+            "resolution": "45 A unabhängiger Dauerentladewert für die getestete Tabless-Revision; keine Pulswerte als Ersatz verwenden."
+        },
+        {
+            "id": "de-092",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[low-drain] Low drain concerns current capability, not capacity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Low-drain battery; not suited for vaping.",
+                "Previous German: Batterie mit geringer Entladekapazität; nicht zum Dampfen geeignet.",
+                "English warning distinguishes current delivery suitability from stored charge."
+            ],
+            "resolution": "Akku mit geringer Strombelastbarkeit; nicht zum Dampfen geeignet."
+        },
+        {
+            "id": "de-093",
+            "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[integrated-mod] Built-in battery became a built-in battery-regulated mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in-battery regulated mod rated at 100 W; testing measured 101 W, 29 A, and at least 7.97 V.",
+                "Previous German: Eingebauter, batteriegeregelter Mod mit einer Leistung von 100 W; Beim Test wurden 101 W, 29 A und mindestens 7,97 V gemessen.",
+                "The canonical construction is a regulated mod with an integrated battery."
+            ],
+            "resolution": "Geregelter Mod mit integriertem Akku und einer Nennleistung von 100 W; beim Test wurden 101 W, 29 A und mindestens 7,97 V gemessen."
+        },
+        {
+            "id": "de-094",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-revision-qualification] Appeared pre-production is rendered as certain pre-production.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 90 A is temperature-limited and tested cells appeared pre-production.",
+                "Previous German: 40 A konservativer Wert; 90 A ist temperaturbegrenzt, und die getesteten Zellen waren Vorserienprodukte.",
+                "Preserve uncertainty of source observation."
+            ],
+            "resolution": "40 A konservativer Wert; 90 A ist temperaturbegrenzt, und die getesteten Zellen schienen Vorserienprodukte zu sein."
+        },
+        {
+            "id": "de-ohm-joule-link",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-assembly] Optional law label is absent and renders English fallback.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous German: English source fallback",
+                "ohm-calculator.tsx:211 uses joulesLawLinkLabel ?? English; add optional field to German effective messages together with prefix/suffix."
+            ],
+            "resolution": "Joulesches Gesetz"
+        },
+        {
+            "id": "de-wire-temperature-tail",
+            "translationId": "calculators.wirewiz.sourceFactorSuffix",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[wire-temperature-tail] Localize the previously hard-coded temperature suffix using the new optional hook.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: at this temperature.",
+                "Previous German: English source fallback",
+                "Original source leak at wire-wizard.tsx:1061; parent reports adding optional suffix hook. Verify assembly retains separating whitespace."
+            ],
+            "resolution": "bei dieser Temperatur."
+        },
+        {
+            "id": "de-catalog-custom-description",
+            "translationId": "messages.catalogManager.customItemsDescription",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-custom-description] Localize the browser-local custom entry explanation using the new optional hook.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom materials/batteries/mods are always shown in calculator selectors.",
+                "Previous German: English source fallback",
+                "Original catalog-manager.tsx:92–97 supplies English for non-nb; parent reports adding optional description hook.",
+                "Parent checked complete JSX sentence assembly and corrected punctuation/word order."
+            ],
+            "resolution": "Benutzerdefinierte __SE_ARG_0__ werden in den Auswahllisten der Rechner immer angezeigt."
+        },
+        {
+            "id": "de-runtime-catalogManager-manage",
+            "translationId": "messages.catalogManager.manage",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Translate known catalog category arguments at the German presentation boundary; preserve arbitrary item names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Manage __se_arg_0__",
+                "Previous German: __SE_ARG_0__ verwalten",
+                "Shared manager and editor code pass English category nouns; German function maps only category arguments. User label callbacks are left untouched."
+            ],
+            "resolution": "__SE_ARG_0__ verwalten Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-runtime-catalogManager-close",
+            "translationId": "messages.catalogManager.close",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Translate known catalog category arguments at the German presentation boundary; preserve arbitrary item names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Close __se_arg_0__ manager",
+                "Previous German: Schließen Sie den __SE_ARG_0__-Manager",
+                "Shared manager and editor code pass English category nouns; German function maps only category arguments. User label callbacks are left untouched."
+            ],
+            "resolution": "Schließen Sie den __SE_ARG_0__-Manager Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-runtime-catalogManager-visibility",
+            "translationId": "messages.catalogManager.visibility",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Translate known catalog category arguments at the German presentation boundary; preserve arbitrary item names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Visibility changes save immediately. Hidden __se_arg_0__ remain available for cloning.",
+                "Previous German: Sichtbarkeitsänderungen werden sofort gespeichert. Versteckte __SE_ARG_0__ bleiben zum Klonen verfügbar.",
+                "Shared manager and editor code pass English category nouns; German function maps only category arguments. User label callbacks are left untouched."
+            ],
+            "resolution": "Sichtbarkeitsänderungen werden sofort gespeichert. Versteckte __SE_ARG_0__ bleiben zum Klonen verfügbar. Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-runtime-catalogManager-resetSaved",
+            "translationId": "messages.catalogManager.resetSaved",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Translate known catalog category arguments at the German presentation boundary; preserve arbitrary item names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset saved __se_arg_0__ data",
+                "Previous German: Gespeicherte __SE_ARG_0__-Daten zurücksetzen",
+                "Shared manager and editor code pass English category nouns; German function maps only category arguments. User label callbacks are left untouched."
+            ],
+            "resolution": "Gespeicherte __SE_ARG_0__-Daten zurücksetzen Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-runtime-catalogManager-savedReset",
+            "translationId": "messages.catalogManager.savedReset",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Translate known catalog category arguments at the German presentation boundary; preserve arbitrary item names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saved __se_arg_0__ data was reset.",
+                "Previous German: Gespeicherte __SE_ARG_0__-Daten wurden zurückgesetzt.",
+                "Shared manager and editor code pass English category nouns; German function maps only category arguments. User label callbacks are left untouched."
+            ],
+            "resolution": "Gespeicherte __SE_ARG_0__-Daten wurden zurückgesetzt. Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-runtime-catalogEditor-saved",
+            "translationId": "messages.catalogEditor.saved",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Translate known catalog category arguments at the German presentation boundary; preserve arbitrary item names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ saved.",
+                "Previous German: __SE_ARG_0__ gespeichert.",
+                "Shared manager and editor code pass English category nouns; German function maps only category arguments. User label callbacks are left untouched."
+            ],
+            "resolution": "__SE_ARG_0__ gespeichert. Known category arguments are localized; user item names remain untouched."
+        },
+        {
+            "id": "de-ohm-label-capitalization",
+            "translationId": "messages.ohm.lockSummary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[ohm-runtime-capitalization] Capitalize German electrical nouns in assembled lock summary even when UI passes lowercased field labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Changing __SE_ARG_0__ keeps __se_arg_1__ constant.",
+                "Previous German: Durch Ändern von __SE_ARG_0__ bleibt __SE_ARG_1__ konstant.",
+                "Browser shows spannung/strom/leistung in lock summaries; ohm-calculator.tsx196–200 lowercases adjusted names. German field-name callback restores noun capitalization while preserving placeholders."
+            ],
+            "resolution": "Durch Ändern von __SE_ARG_0__ bleibt __SE_ARG_1__ konstant."
+        },
+        {
+            "id": "de-battery-placeholder-sizeCodePlaceholder",
+            "translationId": "messages.catalogEditor.sizeCodePlaceholder",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[battery-editor-placeholders] Localize hard-coded English battery editor placeholder found during rendered-form review.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, e.g. 18650",
+                "Previous German: English source fallback",
+                "src/catalogs/batteries/battery-editor.tsx; browser form inspection. Optional German message preserves existing behavior in other locales. Existing generic Optional placeholders now use the established localized optional message."
+            ],
+            "resolution": "Optional, z. B. 18650"
+        },
+        {
+            "id": "de-battery-placeholder-wrapperColorPlaceholder",
+            "translationId": "messages.catalogEditor.wrapperColorPlaceholder",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[battery-editor-placeholders] Localize hard-coded English battery editor placeholder found during rendered-form review.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, descriptive",
+                "Previous German: English source fallback",
+                "src/catalogs/batteries/battery-editor.tsx; browser form inspection. Optional German message preserves existing behavior in other locales. Existing generic Optional placeholders now use the established localized optional message."
+            ],
+            "resolution": "Optionale Farbbeschreibung"
+        },
+        {
+            "id": "de-battery-placeholder-markingsPlaceholder",
+            "translationId": "messages.catalogEditor.markingsPlaceholder",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[battery-editor-placeholders] Localize hard-coded English battery editor placeholder found during rendered-form review.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional; one wrapper marking per line",
+                "Previous German: English source fallback",
+                "src/catalogs/batteries/battery-editor.tsx; browser form inspection. Optional German message preserves existing behavior in other locales. Existing generic Optional placeholders now use the established localized optional message."
+            ],
+            "resolution": "Optional; eine Aufschrift pro Zeile"
+        },
+        {
+            "id": "de-battery-placeholder-currentWithCRatingPlaceholder",
+            "translationId": "messages.catalogEditor.currentWithCRatingPlaceholder",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[battery-editor-placeholders] Localize hard-coded English battery editor placeholder found during rendered-form review.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when C rating is set",
+                "Previous German: English source fallback",
+                "src/catalogs/batteries/battery-editor.tsx; browser form inspection. Optional German message preserves existing behavior in other locales. Existing generic Optional placeholders now use the established localized optional message."
+            ],
+            "resolution": "Optional bei Angabe der C-Rate"
+        },
+        {
+            "id": "de-battery-placeholder-cRatingWithCurrentPlaceholder",
+            "translationId": "messages.catalogEditor.cRatingWithCurrentPlaceholder",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[battery-editor-placeholders] Localize hard-coded English battery editor placeholder found during rendered-form review.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when current is set",
+                "Previous German: English source fallback",
+                "src/catalogs/batteries/battery-editor.tsx; browser form inspection. Optional German message preserves existing behavior in other locales. Existing generic Optional placeholders now use the established localized optional message."
+            ],
+            "resolution": "Optional bei Angabe des Stroms"
+        },
+        {
+            "id": "de-false-positive-0",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "Upper/lowercase sentinel differences are not lost placeholders.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "German functions replace both __SE_ARG_n__ and __se_arg_n__; English may lowercase noun values. Preserve argument count and do not rewrite valid interpolation behavior merely to equalize audit sentinels."
+            ],
+            "resolution": "Retained the valid existing behavior."
+        },
+        {
+            "id": "de-false-positive-1",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "German decimal commas and thousands dots preserve numerical values.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "All concept worked examples reviewed; 0,8, 1.000 and 6.894,76 are valid localized presentations, not changed inputs."
+            ],
+            "resolution": "Retained the valid existing behavior."
+        },
+        {
+            "id": "de-false-positive-2",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "Canonical brands, formulas and shared technical names are valid unchanged text.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Steam Engine, Wire Wizard, DNA200, AWG/BWG/SWG, Clapton and SI symbols are not untranslated prose."
+            ],
+            "resolution": "Retained the valid existing behavior."
+        },
+        {
+            "id": "de-source-joule-summary",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "English Joule summary has a physics wording defect; German already describes energy conversion accurately.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "the Steam Engine Joule heating reference defines electrical energy conversion to heat.",
+                "Existing effective German: Wie elektrischer Strom elektrische Energie in Wärme umwandelt."
+            ],
+            "resolution": "Rejected changing German to match the flawed English wording; preserved accurate German. English source correction is outside this locale edit."
+        }
+    ]
+}

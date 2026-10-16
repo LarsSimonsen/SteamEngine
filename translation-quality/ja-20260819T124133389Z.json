@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "ja", "cycleId": "ja-20260819T124133389Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Japanese source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Japanese critique found protected-name drift, reversed chronology, coil-lead errors, ingredient false friends, and physical-property mistranslations." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Japanese human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "ja-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated or transliterated instead of retaining protected identities.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored the names across navigation, shared labels, TCR, and Wire Wizard." },
+        { "id": "ja-date", "translationId": "shared.encyclopediaDetail.introducedNoEarlier", "category": "factual-or-safety-risk", "severity": "high", "summary": "No earlier than was rendered as by, reversing the date constraint.", "disposition": "resolved", "evidence": ["The canonical label specifies a lower date bound."], "resolution": "Used 以降." },
+        { "id": "ja-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and their power loss were translated as anatomical legs and leg strength.", "disposition": "resolved", "evidence": ["The fields describe electrical lead wire."], "resolution": "Used リード線 consistently." },
+        { "id": "ja-juice", "translationId": "calculators.juice.vg", "category": "factual-or-safety-risk", "severity": "high", "summary": "VG became the US state Virginia, while nicotine labels and the safety warning were unnatural or ambiguous.", "disposition": "resolved", "evidence": ["VG is a protected technical abbreviation in e-liquid formulation."], "resolution": "Restored VG and rewrote the nicotine labels and warning." },
+        { "id": "ja-properties", "translationId": "calculators.wirewiz.mass", "category": "translation-defect", "severity": "high", "summary": "Mass was translated as the religious service and volume as audio volume.", "disposition": "resolved", "evidence": ["These are physical properties of wire."], "resolution": "Used 質量 and 体積." }
+    ]
+}

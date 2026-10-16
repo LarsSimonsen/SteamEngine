@@ -3,6 +3,30 @@
     "sourceLocale": "en",
     "locale": "it",
     "entries": {
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "cella",
+            "context": "Singolo elemento del pacco batteria; i valori di ingresso sono per cella.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source related-language comparison with independent machine review",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "pacco batteria",
+            "context": "Insieme di celle collegate in serie e/o in parallelo.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source related-language comparison with independent machine review",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
         "vaping": {
             "source": "vaping",
             "preferred": "svapo",

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Publish Steam Engine to Cloudflare Pages"
+  short_description: "Publish through Cloudflare Pages"
+  default_prompt: >-
+    Use $steam-engine-cloudflare-pages-publishing to build, deploy, and verify
+    Steam Engine on Cloudflare Pages.

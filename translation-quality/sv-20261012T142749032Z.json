@@ -1,0 +1,2786 @@
+{
+    "schemaVersion": 1,
+    "locale": "sv",
+    "cycleId": "sv-20261012T142749032Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Comparative screening of all remaining locales selected Swedish for battery-drain/charging confusion, repeated electrical-current mistranslations and loss of battery-warning meaning. Full review covered 1115 canonical entries, optional hooks, catalog nouns, glossary and route metadata. Independent critique resources listed below; existing canonical numerical claims retained. Resources: skills/_shared/i18n-translation-contract.md; https://www.isof.se/svenska-spraket/nyord/nyordssoket/2015/vejpa; https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter; https://www.metallkompetens.se/handbok/om-aluminium/ytbehandling/kemisk-och-elektrokemisk-ytbehandling/; https://www.kth.se/tekmek/forskargrupper/lattkonstruktioner/multifunktionella-material-och-strukturer-1.1253469",
+        "limitations": [
+            "Comparative screening is not an exhaustive global ranking.",
+            "Model critique is not competent human review.",
+            "Shared application strings outside locale dictionaries are documented separately; no unrelated multi-locale architecture changes.",
+            "This is model linguistic critique, not competent human review or maintainer approval.",
+            "Shared hardcoded English and canonical source defects are recorded separately and are not authorized locale edits.",
+            "No claim of native human validation of specialized construction names; established product and construction identities preserved.",
+            "Optional customItemsDescription has three actual noun-specific English fallback sentences (materials uses plural selectors); finding source is the semantic template. Applying its known-noun mapping preserves that always-visible-in-selectors behavior.",
+            "Existing English and Swedish juice pages overflow 390 px viewport to 548 px due to offscreen sr-only input positioning; visible layout fits after isolating those controls in browser only. No source layout change."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "All 1115 runtime signatures and numeric/placeholders verified; 955 unaffected metadata entries preserved. Typecheck and staged full IIS build passed (64 route cases, 737 links across 10279 HTML files). Cloudflare build and artifact passed. Browser checked 15 pages and 3 editors, plus four desktop/mobile layouts. Full test suite passed: 573 tests in 85 files. All changed catalog templates verified across 10 consumers; complete-locale coverage and machine-draft notice retained."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Reviewed all 1115 canonical entries, 13 route metadata records, 11 glossary entries, 8 optional hooks and 17 runtime noun functions. Corrected 160 canonical strings, 8 optional hooks, one glossary entry and six category nouns in 68 coherent groups. 177 findings resolved; 33 canonical/shared-source issues documented separately."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Swedish human review performed; existing unaffected approval attribution preserved, changed text returned to machine review."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User requested review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "sv-001",
+            "translationId": "messages.catalogManager.manage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Manage __se_arg_0__",
+                "Previous Swedish: Hantera __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-002",
+            "translationId": "messages.catalogManager.shared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: shared __se_arg_0__ catalog",
+                "Previous Swedish: Delad katalog: __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-003",
+            "translationId": "messages.catalogManager.close",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Close __se_arg_0__ manager",
+                "Previous Swedish: Stäng hanteringen av __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-004",
+            "translationId": "messages.catalogManager.choose",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose visible built-ins or create __se_arg_0__ stored in this browser.",
+                "Previous Swedish: Välj synliga inbyggda poster eller skapa anpassade __SE_ARG_0__ i webbläsaren."
+            ],
+            "resolution": "Välj synliga inbyggda poster eller skapa anpassade __SE_ARG_0__ som sparas i den här webbläsaren."
+        },
+        {
+            "id": "sv-005",
+            "translationId": "messages.catalogManager.builtIn",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in __se_arg_0__",
+                "Previous Swedish: Inbyggda __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-006",
+            "translationId": "messages.catalogManager.visibility",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Visibility changes save immediately. Hidden __se_arg_0__ remain available for cloning.",
+                "Previous Swedish: Dolda __SE_ARG_0__ kan fortfarande klonas."
+            ],
+            "resolution": "Ändringar av synligheten sparas direkt. Dolda __SE_ARG_0__ kan fortfarande klonas."
+        },
+        {
+            "id": "sv-007",
+            "translationId": "messages.catalogManager.custom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __se_arg_0__",
+                "Previous Swedish: Anpassade __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-008",
+            "translationId": "messages.catalogManager.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous Swedish: Ny anpassad __SE_ARG_0__"
+            ],
+            "resolution": "Ny anpassad post: __SE_ARG_0__"
+        },
+        {
+            "id": "sv-009",
+            "translationId": "messages.catalogManager.noneYet",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No custom __se_arg_0__ yet.",
+                "Previous Swedish: Det finns inga anpassade __SE_ARG_0__ ännu."
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-010",
+            "translationId": "messages.catalogManager.resetSaved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset saved __se_arg_0__ data",
+                "Previous Swedish: Återställ data för __SE_ARG_0__"
+            ],
+            "resolution": "Återställ sparade data för __SE_ARG_0__"
+        },
+        {
+            "id": "sv-011",
+            "translationId": "messages.catalogManager.savedReset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saved __se_arg_0__ data was reset.",
+                "Previous Swedish: Sparade data för __SE_ARG_0__ återställdes."
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-012",
+            "translationId": "messages.catalogEditor.editCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Edit custom __se_arg_0__",
+                "Previous Swedish: Redigera anpassad __SE_ARG_0__"
+            ],
+            "resolution": "Redigera anpassad post: __SE_ARG_0__"
+        },
+        {
+            "id": "sv-013",
+            "translationId": "messages.catalogEditor.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous Swedish: Ny anpassad __SE_ARG_0__"
+            ],
+            "resolution": "Ny anpassad post: __SE_ARG_0__"
+        },
+        {
+            "id": "sv-014",
+            "translationId": "messages.catalogEditor.properties",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ properties",
+                "Previous Swedish: __SE_ARG_0__ egenskaper"
+            ],
+            "resolution": "Egenskaper för __SE_ARG_0__"
+        },
+        {
+            "id": "sv-015",
+            "translationId": "messages.catalogEditor.save",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Save __se_arg_0__",
+                "Previous Swedish: Spara __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "sv-016",
+            "translationId": "messages.catalogEditor.saved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Translate only known entity noun arguments; neutral templates accommodate common and neuter nouns. Restore omitted storage/saving meaning where applicable.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ saved.",
+                "Previous Swedish: __SE_ARG_0__ sparad."
+            ],
+            "resolution": "Post sparad: __SE_ARG_0__."
+        },
+        {
+            "id": "sv-017",
+            "translationId": "messages.catalogManager.usedBy",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[user-name-gender] Custom names have unknown grammatical gender; retain both user arguments without inflecting them.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cannot delete __SE_ARG_0__; it is used by __SE_ARG_1__.",
+                "Previous Swedish: Kan inte ta bort __SE_ARG_0__; den används av __SE_ARG_1__."
+            ],
+            "resolution": "Kan inte ta bort __SE_ARG_0__; __SE_ARG_1__ använder posten."
+        },
+        {
+            "id": "sv-018",
+            "translationId": "messages.catalogEditor.terminalStyle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Terminal means battery contact, not a generic style.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Terminal style",
+                "Previous Swedish: Terminal stil"
+            ],
+            "resolution": "Poltyp"
+        },
+        {
+            "id": "sv-019",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Button top is a raised battery terminal, not a top with a button.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous Swedish: Topp med knapp"
+            ],
+            "resolution": "Upphöjd pol"
+        },
+        {
+            "id": "sv-020",
+            "translationId": "messages.catalogEditor.protectedStatus",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection-label] Status of protection is not a protected status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected status",
+                "Previous Swedish: Skyddad status"
+            ],
+            "resolution": "Skyddsstatus"
+        },
+        {
+            "id": "sv-021",
+            "translationId": "messages.catalogEditor.continuousC",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[discharge-rating] Use grammatical technical rating language.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous discharge C rating",
+                "Previous Swedish: Kontinuerlig urladdning C-klassificering"
+            ],
+            "resolution": "C-värde för kontinuerlig urladdning"
+        },
+        {
+            "id": "sv-022",
+            "translationId": "messages.catalogEditor.dataNote",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[split-compounds] Swedish compound noun is incorrectly split.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Data note",
+                "Previous Swedish: Data anmärkning"
+            ],
+            "resolution": "Dataanmärkning"
+        },
+        {
+            "id": "sv-023",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[discharge-not-emissions] Utsläpp means emissions; preserve discharge-limit selection and all physical-dimension conditions.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Swedish: Ange minst en kontinuerlig utsläppsgräns. Integrerade batterier är interna mod-paket, så fristående celldimensioner krävs inte. Avtagbara cellers dimensioner är nominella; använd anteckningarna för uppmätta sålda mått. När båda utsläppsgränserna är inställda fortsätter räknaren att använda den säkrare härledda gränsen om de skiljer sig väsentligt."
+            ],
+            "resolution": "Ange minst en gräns för kontinuerlig urladdning. Integrerade batterier är interna batteripaket i modden, så mått för fristående celler krävs inte. Måtten för löstagbara celler är nominella; använd anteckningarna för uppmätta mått i det skick cellerna säljs. När båda urladdningsgränserna är angivna fortsätter räknaren att använda den säkrare härledda gränsen om de skiljer sig väsentligt."
+        },
+        {
+            "id": "sv-024",
+            "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-assembly] Saved message and normalization suffix concatenate without a separator; leading space is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was interpolated and the curve was normalized.",
+                "Previous Swedish: 20°C-punkten interpolerades och kurvan normaliserades."
+            ],
+            "resolution": " 20 °C-punkten interpolerades och kurvan normaliserades."
+        },
+        {
+            "id": "sv-025",
+            "translationId": "messages.catalogEditor.normalizationExtrapolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-assembly] Saved message and normalization suffix concatenate without a separator; leading space is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was extrapolated and the curve was normalized.",
+                "Previous Swedish: 20°C-punkten extrapolerades och kurvan normaliserades."
+            ],
+            "resolution": " 20 °C-punkten extrapolerades och kurvan normaliserades."
+        },
+        {
+            "id": "sv-026",
+            "translationId": "messages.catalogEditor.normalizationExisting",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-assembly] Saved message and normalization suffix concatenate without a separator; leading space is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The TFR curve was normalized at 20 °C.",
+                "Previous Swedish: TFR-kurvan normaliserades vid 20 °C."
+            ],
+            "resolution": " TFR-kurvan normaliserades vid 20 °C."
+        },
+        {
+            "id": "sv-027",
+            "translationId": "messages.catalogEditor.minAtomizerResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-terminology] Use glossary term förångare and preserve resistance unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Minimum atomizer resistance (Ω)",
+                "Previous Swedish: Minsta atomizerresistans (Ω)"
+            ],
+            "resolution": "Minsta motstånd i förångaren (Ω)"
+        },
+        {
+            "id": "sv-028",
+            "translationId": "messages.catalogEditor.maxAtomizerResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-terminology] Use glossary term förångare and preserve resistance unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum atomizer resistance (Ω)",
+                "Previous Swedish: Maximalt atomizermotstånd (Ω)"
+            ],
+            "resolution": "Största motstånd i förångaren (Ω)"
+        },
+        {
+            "id": "sv-029",
+            "translationId": "messages.home.intro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-drain] Drain is consumption, not charging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine is a suite of practical calculators for building coils, checking battery drain, mixing e-liquid, and understanding the numbers behind your setup.",
+                "Previous Swedish: Steam Engine är en svit med praktiska miniräknare för att bygga spolar, kontrollera batteriladdningen, blanda e-vätska och förstå siffrorna bakom din installation."
+            ],
+            "resolution": "Steam Engine är en svit med praktiska miniräknare för att bygga spolar, kontrollera batteriförbrukningen, blanda e-vätska och förstå siffrorna bakom din installation."
+        },
+        {
+            "id": "sv-030",
+            "translationId": "messages.home.tools.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-terminology] Spridare means a sprinkler/injector; source refers to rebuildable atomizers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Plan rebuildable atomizer coils and explore their electrical behavior.",
+                "Previous Swedish: Planera återuppbyggbara spridarspolar och utforska deras elektriska beteende."
+            ],
+            "resolution": "Planera coils för byggbara förångare och utforska deras elektriska beteende."
+        },
+        {
+            "id": "sv-031",
+            "translationId": "messages.home.tools.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] Power was replaced with a second occurrence of current.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: See current and power drain for a battery-powered device.",
+                "Previous Swedish: Se ström och strömförbrukning för en batteridriven enhet.",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Se ström- och effektförbrukning för en batteridriven enhet."
+        },
+        {
+            "id": "sv-032",
+            "translationId": "messages.home.tools.converter.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[fractional-inches] Express fractional inches as fractions, preserving all conversion categories.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert between millimeters, inches, fractional inches, and wire gauges.",
+                "Previous Swedish: Konvertera mellan millimeter, tum, fraktionell tum och trådmått."
+            ],
+            "resolution": "Omvandla mellan millimeter, tum, tum i bråkform och tråddimensioner."
+        },
+        {
+            "id": "sv-033",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-introduction-assembly] Reassemble introduction around separately linked law names without an ungrammatical genitive compound.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous Swedish: Detta är en enkel"
+            ],
+            "resolution": "Den här enkla kalkylatorn använder"
+        },
+        {
+            "id": "sv-034",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-introduction-assembly] Completes the introduction with both linked laws; keep shared conjunction och unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous Swedish: kalkylator."
+            ],
+            "resolution": "för beräkningarna."
+        },
+        {
+            "id": "sv-035",
+            "translationId": "messages.ohm.values",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-values] Värderingar means opinions or valuations rather than numeric values.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Values",
+                "Previous Swedish: Värderingar"
+            ],
+            "resolution": "Värden"
+        },
+        {
+            "id": "sv-036",
+            "translationId": "messages.encyclopedia.browseCategory",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-browse-grammar] The Swedish verb requires bland when browsing a collection.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Browse __SE_ARG_0__ (__SE_ARG_1__ entries)",
+                "Previous Swedish: Bläddra __SE_ARG_0__ (__SE_ARG_1__ poster)"
+            ],
+            "resolution": "Bläddra bland __SE_ARG_0__ (__SE_ARG_1__ poster)"
+        },
+        {
+            "id": "sv-037",
+            "translationId": "messages.encyclopedia.categoryLabels.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-boards] Brädor means wooden boards; the catalog contains electronic control boards.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mods and boards",
+                "Previous Swedish: Mods och brädor"
+            ],
+            "resolution": "Moddar och styrkort"
+        },
+        {
+            "id": "sv-038",
+            "translationId": "messages.encyclopediaDetail.introduced",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-participles] Use introduction participle rather than active past plural/adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Introduced __SE_ARG_0__",
+                "Previous Swedish: Introducerade __SE_ARG_0__"
+            ],
+            "resolution": "Introducerad __SE_ARG_0__"
+        },
+        {
+            "id": "sv-039",
+            "translationId": "messages.encyclopediaDetail.reviewed",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-participles] Date of review needs a passive participle, not active past tense.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reviewed __SE_ARG_0__",
+                "Previous Swedish: Recenserade __SE_ARG_0__"
+            ],
+            "resolution": "Granskad __SE_ARG_0__"
+        },
+        {
+            "id": "sv-040",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[discharge-rating] Restore grammatical placement of continuous rating and preserve its unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ A continuous-discharge rating.",
+                "Previous Swedish: Katalogen listar en __SE_ARG_0__ A kontinuerlig urladdningsklassning."
+            ],
+            "resolution": "Katalogen anger ett kontinuerligt urladdningsvärde på __SE_ARG_0__ A."
+        },
+        {
+            "id": "sv-041",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeC",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[discharge-rating] Restore grammatical placement of continuous rating and preserve its unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ C continuous-discharge rating.",
+                "Previous Swedish: Katalogen listar en __SE_ARG_0__ C kontinuerlig urladdningsklassning."
+            ],
+            "resolution": "Katalogen anger ett kontinuerligt urladdningsvärde på __SE_ARG_0__ C."
+        },
+        {
+            "id": "sv-042",
+            "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rewrap-brand] Omslagsmärke does not communicate rebranding cells; retain uncertainty about actual manufacturer.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The label is treated as a rewrap brand; the underlying cell manufacturer is not assumed from the wrapper.",
+                "Previous Swedish: Etiketten behandlas som ett omslagsmärke; den underliggande celltillverkaren antas inte från omslaget."
+            ],
+            "resolution": "Märket behandlas som ett varumärke som märker om andra tillverkares celler; den ursprungliga celltillverkaren antas inte enbart utifrån höljet."
+        },
+        {
+            "id": "sv-043",
+            "translationId": "messages.encyclopediaDetail.basedOnBoardProfile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-boards] Styrelse means governing board, not electronic control board.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This device profile is based on the board profile:",
+                "Previous Swedish: Den här enhetsprofilen är baserad på styrelseprofilen:"
+            ],
+            "resolution": "Den här enhetsprofilen är baserad på styrkortets profil:"
+        },
+        {
+            "id": "sv-044",
+            "translationId": "messages.encyclopediaDetail.noAuthenticityAssessment",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-entry] Entry means catalog record, not admission.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No entry-specific authenticity assessment has been recorded.",
+                "Previous Swedish: Ingen inträdesspecifik äkthetsbedömning har registrerats."
+            ],
+            "resolution": "Ingen postspecifik äkthetsbedömning har registrerats."
+        },
+        {
+            "id": "sv-045",
+            "translationId": "messages.encyclopediaDetail.modBoardCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-boards] Restore the device versus control-board distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod board and device catalog",
+                "Previous Swedish: Modskort och enhetskatalog"
+            ],
+            "resolution": "Katalog över moddar och styrkort"
+        },
+        {
+            "id": "sv-046",
+            "translationId": "messages.encyclopediaDetail.inVaping",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaping-term] Follow Swedish glossary and ISOF usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: In vaping",
+                "Previous Swedish: I vaping",
+                "ISOF: vejpa: https://www.isof.se/svenska-spraket/nyord/nyordssoket/2015/vejpa — Official Swedish language authority recognizes vejpa; aligns with existing glossary vejping."
+            ],
+            "resolution": "Vid vejping"
+        },
+        {
+            "id": "sv-047",
+            "translationId": "messages.encyclopediaDetail.basedOnArticle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[knowledge-attribution-grammar] Repair possessive/compound assembly without changing product identity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Based on the Steam Engine knowledge-base article",
+                "Previous Swedish: Baserat på Steam Engine kunskapsbasartikeln"
+            ],
+            "resolution": "Baserat på artikeln i kunskapsbasen för Steam Engine"
+        },
+        {
+            "id": "sv-048",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.continuousDischarge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[discharge-rating] Betyg means a grade; this is an electrical rating.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous-discharge rating",
+                "Previous Swedish: Betyg för kontinuerlig urladdning"
+            ],
+            "resolution": "Märkvärde för kontinuerlig urladdning"
+        },
+        {
+            "id": "sv-049",
+            "translationId": "calculators.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-drain] Restore consumption, electrical output scope, and current headroom.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimate atomizer output, battery drain, and available current headroom for regulated and unregulated mods.",
+                "Previous Swedish: Uppskatta förångareffekt, batteriladdning och tillgängligt strömutrymme för reglerade och oreglerade moddar."
+            ],
+            "resolution": "Uppskatta förångarens elektriska värden, batteriförbrukningen och den tillgängliga strömmarginalen för reglerade och oreglerade moddar."
+        },
+        {
+            "id": "sv-050",
+            "translationId": "calculators.batt.efficiency",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conversion-efficiency] Field is dimensionless conversion efficiency, not general effectiveness.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Efficiency",
+                "Previous Swedish: Effektivitet"
+            ],
+            "resolution": "Verkningsgrad"
+        },
+        {
+            "id": "sv-051",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Swedish: Batteriförinställningar"
+            ],
+            "resolution": "Förinställning för battericell"
+        },
+        {
+            "id": "sv-052",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Swedish: Cell selection"
+            ],
+            "resolution": "Cellval"
+        },
+        {
+            "id": "sv-053",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Swedish: Välj en inbyggd batteriförinställning eller ange dina egna värden nedan."
+            ],
+            "resolution": "Välj den cell som används i hela batteripaketet eller ange värden per cell nedan."
+        },
+        {
+            "id": "sv-054",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Swedish: Batteri förinställt"
+            ],
+            "resolution": "Förinställning för battericell"
+        },
+        {
+            "id": "sv-055",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Swedish: Batterivärden"
+            ],
+            "resolution": "Cell och batteripaket"
+        },
+        {
+            "id": "sv-056",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Swedish: Battery configuration"
+            ],
+            "resolution": "Batterikonfiguration"
+        },
+        {
+            "id": "sv-057",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Swedish: 1S — Single cell"
+            ],
+            "resolution": "1S — En cell"
+        },
+        {
+            "id": "sv-058",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Swedish: Custom configuration"
+            ],
+            "resolution": "Anpassad konfiguration"
+        },
+        {
+            "id": "sv-059",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Swedish: Cells in series"
+            ],
+            "resolution": "Celler i serie"
+        },
+        {
+            "id": "sv-060",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Swedish: Parallel strings"
+            ],
+            "resolution": "Parallellgrenar"
+        },
+        {
+            "id": "sv-061",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous Swedish: cells"
+            ],
+            "resolution": "celler"
+        },
+        {
+            "id": "sv-062",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Swedish: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "Använd identiska, matchade celler med samma ålder och skick. Strömfördelningen är idealiserad; den svagaste cellen begränsar batteripaketet."
+        },
+        {
+            "id": "sv-063",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Swedish: Battery pack"
+            ],
+            "resolution": "Batteripaket"
+        },
+        {
+            "id": "sv-064",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-parity] Cell/pack interface remains untranslated or retains stale single-battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Swedish: Estimated current per cell"
+            ],
+            "resolution": "Uppskattad ström per cell"
+        },
+        {
+            "id": "sv-065",
+            "translationId": "calculators.batt.batteryHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current is electrical current, not present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
+                "Previous Swedish: Nominell spänning och kapacitet bestämmer den uppskattade lagrade energin och kontinuerlig drifttid. De påverkar inte den nuvarande gränsen.",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Nominell spänning och kapacitet bestämmer den uppskattade lagrade energin och kontinuerlig drifttid. De påverkar inte strömgränsen."
+        },
+        {
+            "id": "sv-066",
+            "translationId": "calculators.batt.atomizerOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] Table lists voltage, current and power supplied to the atomizer; it is not power emitted from it.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Atomizer output",
+                "Previous Swedish: Effekt som avges från förångaren",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Förångarens elektriska värden"
+        },
+        {
+            "id": "sv-067",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[current-headroom] Current headroom is not present height.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous Swedish: Mindre än 20 % av den nuvarande höjden återstår."
+            ],
+            "resolution": "Mindre än 20 % strömmarginal återstår."
+        },
+        {
+            "id": "sv-068",
+            "translationId": "calculators.batt.runtimeHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-overhead] Explain electrical overhead as device consumption.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This idealized estimate assumes continuous output at the calculated battery power. Real runtime varies with cutoff voltage, voltage sag, cell age, device overhead, and intermittent use.",
+                "Previous Swedish: Denna idealiserade uppskattning förutsätter kontinuerlig uteffekt vid den beräknade batterieffekten. Verklig körtid varierar med avstängningsspänning, spänningsnedgång, cellålder, enhetsoverhead och intermittent användning."
+            ],
+            "resolution": "Denna idealiserade uppskattning förutsätter kontinuerlig uteffekt vid den beräknade batterieffekten. Verklig körtid varierar med avstängningsspänning, spänningsnedgång, cellålder, enhetens egenförbrukning och intermittent användning."
+        },
+        {
+            "id": "sv-069",
+            "translationId": "calculators.coil.imperial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[imperial-units] Repair incorrect Swedish name of imperial unit system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Imperial units",
+                "Previous Swedish: Imperiska enheter"
+            ],
+            "resolution": "Brittiska måttenheter"
+        },
+        {
+            "id": "sv-070",
+            "translationId": "calculators.coil.buildDetails",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[split-compounds] Split compound reads as an instruction to build details.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Build details",
+                "Previous Swedish: Bygg detaljer"
+            ],
+            "resolution": "Konstruktionsdetaljer"
+        },
+        {
+            "id": "sv-071",
+            "translationId": "calculators.coil.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-turns] Omslag means covers/wrappings; winding count is turns.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Number of wraps",
+                "Previous Swedish: Antal omslag"
+            ],
+            "resolution": "Antal varv"
+        },
+        {
+            "id": "sv-072",
+            "translationId": "calculators.coil.coilArea",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-area] This is physical surface area, not a general region.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil area",
+                "Previous Swedish: Spoleområde"
+            ],
+            "resolution": "Spolarea"
+        },
+        {
+            "id": "sv-073",
+            "translationId": "calculators.converter.inches",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[inches] Translate remaining English unit name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Inches",
+                "Previous Swedish: Inches"
+            ],
+            "resolution": "Tum"
+        },
+        {
+            "id": "sv-074",
+            "translationId": "calculators.converter.needleGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge is a dimension scale, not a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG (needle gauge)",
+                "Previous Swedish: BWG (nålmätare)"
+            ],
+            "resolution": "BWG (nålkaliber)"
+        },
+        {
+            "id": "sv-075",
+            "translationId": "calculators.converter.standardWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Preserve the name of the SWG system instead of calling it a wire-measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Standard Wire Gauge",
+                "Previous Swedish: Standard trådmätare"
+            ],
+            "resolution": "Standard Wire Gauge"
+        },
+        {
+            "id": "sv-076",
+            "translationId": "calculators.converter.fractionalInches",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[fractional-inches] Repair Swedish expression for fractional inches.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Fractional inches",
+                "Previous Swedish: Bråktal tum"
+            ],
+            "resolution": "Tum i bråkform"
+        },
+        {
+            "id": "sv-077",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-language] Untranslated nic fragments and broken word order obscure mixing adjustment.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous Swedish: Du kan behöva sänka ditt mål nic, VG eller PG innehåll, eller smaksättning. Alternativt kan du använda en starkare nic-bas eller en nic-bas med ett annat VG/PG-förhållande. Justera dina inställningar tills alla siffror är större än noll."
+            ],
+            "resolution": "Du kan behöva sänka den önskade nikotinhalten, VG- eller PG-halten eller mängden smaksättning. Alternativt kan du använda en starkare nikotinbas eller en nikotinbas med ett annat VG/PG-förhållande. Justera inställningarna tills alla tal är större än noll."
+        },
+        {
+            "id": "sv-078",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-language] Use clear nicotine concentration wording rather than fragmented English nic compounds.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous Swedish: Din målnivå för nic är högre än din nic-basstyrka. Du bör antingen få en starkare nic-bas eller sänka din mål-nic-styrka."
+            ],
+            "resolution": "Den önskade nikotinhalten är högre än nikotinbasens styrka. Skaffa antingen en starkare nikotinbas eller sänk den önskade nikotinhalten."
+        },
+        {
+            "id": "sv-079",
+            "translationId": "calculators.juice.flavorPercentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavor-percentage] This measures flavoring ingredient, not abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor percentage",
+                "Previous Swedish: Smakprocent"
+            ],
+            "resolution": "Smaksättning i procent"
+        },
+        {
+            "id": "sv-080",
+            "translationId": "calculators.modrange.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modifier-attachment] Regulated modifies the mod, not the calculator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod calculator",
+                "Previous Swedish: Reglerad mod-kalkylator"
+            ],
+            "resolution": "Kalkylator för reglerade moddar"
+        },
+        {
+            "id": "sv-081",
+            "translationId": "calculators.modrange.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[split-compounds] Repair split noun construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod range",
+                "Previous Swedish: Mod intervall"
+            ],
+            "resolution": "Moddens intervall"
+        },
+        {
+            "id": "sv-082",
+            "translationId": "calculators.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[output-limits] Limits include voltage and current, not only power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous Swedish: Hitta ett användbart motståndsområde från en reglerad mods uteffektgränser."
+            ],
+            "resolution": "Hitta ett användbart motståndsområde från en reglerad mods utgångsgränser."
+        },
+        {
+            "id": "sv-083",
+            "translationId": "calculators.modrange.preset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modifier-attachment] Regulated modifies the mod, not its preset.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod preset",
+                "Previous Swedish: Reglerad mod förinställd"
+            ],
+            "resolution": "Förinställning för reglerad mod"
+        },
+        {
+            "id": "sv-084",
+            "translationId": "calculators.modrange.specs",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[split-compounds] Repair split noun construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod specs",
+                "Previous Swedish: Mod specifikationer"
+            ],
+            "resolution": "Moddens specifikationer"
+        },
+        {
+            "id": "sv-085",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-parity] Restore current canonical guidance meaning; old median/optimum/sweet-spot wording is stale.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Swedish: Optimalt motstånd"
+            ],
+            "resolution": "Vägledning om motstånd"
+        },
+        {
+            "id": "sv-086",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-parity] Restore current canonical guidance meaning; old median/optimum/sweet-spot wording is stale.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Swedish: Medianmotstånd"
+            ],
+            "resolution": "Skärningspunkt mellan ström- och spänningsgränserna"
+        },
+        {
+            "id": "sv-087",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-parity] Restore current canonical guidance meaning; old median/optimum/sweet-spot wording is stale.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Swedish: Sweet spot"
+            ],
+            "resolution": "Mittpunkt i det övre intervallet"
+        },
+        {
+            "id": "sv-088",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-parity] Restore current canonical guidance meaning; old median/optimum/sweet-spot wording is stale.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Swedish: Median"
+            ],
+            "resolution": "Skärningspunkt mellan ström- och spänningsgränserna"
+        },
+        {
+            "id": "sv-089",
+            "translationId": "calculators.modrange.currentLimit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current is electrical, not current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current limit",
+                "Previous Swedish: Aktuell gräns",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Strömgräns"
+        },
+        {
+            "id": "sv-090",
+            "translationId": "calculators.modrange.at",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[at-operating-point] At an operating point is vid, not the clock-time abbreviation kl.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: At",
+                "Previous Swedish: Kl"
+            ],
+            "resolution": "Vid"
+        },
+        {
+            "id": "sv-091",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current is electrical, not present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous Swedish: den nuvarande gränsen kräver",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "strömgränsen kräver"
+        },
+        {
+            "id": "sv-092",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current is electrical, not present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous Swedish: Den nuvarande gränsen nås först.",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Strömgränsen nås först."
+        },
+        {
+            "id": "sv-093",
+            "translationId": "calculators.modrange.powerCurveLegend",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[chart-legend] Legend is a chart key, not a story.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power curve legend",
+                "Previous Swedish: Effektkurva legend"
+            ],
+            "resolution": "Teckenförklaring för effektkurvan"
+        },
+        {
+            "id": "sv-094",
+            "translationId": "calculators.modrange.optimalRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-range] Range is numeric interval, not physical reach.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optimal range",
+                "Previous Swedish: Optimal räckvidd"
+            ],
+            "resolution": "Optimalt intervall"
+        },
+        {
+            "id": "sv-095",
+            "translationId": "calculators.modrange.power",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] Kraft is force, not electrical power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous Swedish: Kraft",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Effekt"
+        },
+        {
+            "id": "sv-096",
+            "translationId": "calculators.modrange.current",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current is electrical, not current in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Swedish: Aktuell",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Ström"
+        },
+        {
+            "id": "sv-097",
+            "translationId": "calculators.tcr.help",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[curve-points] Poäng means scores; this interface accepts curve points. Export wording distinguishes data from hardware output.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",
+                "Previous Swedish: Om du redigerar dessa värden rensas valda material. DNA 200-utgång accepterar 2–8 poäng och behöver en punkt nära 70 °F (cirka 21 °C)."
+            ],
+            "resolution": "Om du redigerar dessa värden rensas valda material. DNA 200-exporten accepterar 2–8 punkter och behöver en punkt nära 70 °F (cirka 21 °C)."
+        },
+        {
+            "id": "sv-098",
+            "translationId": "calculators.tcr.results",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-temperature] By temperature expresses a relationship, not passage through temperature.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance by temperature",
+                "Previous Swedish: Motstånd genom temperatur"
+            ],
+            "resolution": "Motstånd vid olika temperaturer"
+        },
+        {
+            "id": "sv-099",
+            "translationId": "calculators.tcr.export",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[data-export] Output is an exported data file, not an electrical port.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 output",
+                "Previous Swedish: DNA 200-utgång"
+            ],
+            "resolution": "DNA 200-export"
+        },
+        {
+            "id": "sv-100",
+            "translationId": "calculators.tcr.csvOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[data-export] Output is an exported data file, not an electrical port.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 CSV output",
+                "Previous Swedish: DNA 200 CSV-utgång"
+            ],
+            "resolution": "DNA 200-export i CSV-format"
+        },
+        {
+            "id": "sv-101",
+            "translationId": "calculators.wirewiz.strandWire",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-strand] Strandtråd is a literal beach-strand translation, not a constituent wire.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Strand wire",
+                "Previous Swedish: Strandtråd"
+            ],
+            "resolution": "Deltråd"
+        },
+        {
+            "id": "sv-102",
+            "translationId": "calculators.wirewiz.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modifier-attachment] Custom modifies the wire, not the calculator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom wire calculator",
+                "Previous Swedish: Anpassad trådräknare"
+            ],
+            "resolution": "Kalkylator för anpassade trådar"
+        },
+        {
+            "id": "sv-103",
+            "translationId": "calculators.wirewiz.tfrEditor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[software-editor] Redaktör is a human editor, not a software editing tool.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: TFR editor",
+                "Previous Swedish: TFR redaktör"
+            ],
+            "resolution": "TFR-redigerare"
+        },
+        {
+            "id": "sv-104",
+            "translationId": "calculators.wirewiz.dnaUnavailable",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[data-export] Output means exported data, not electrical output.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA200 output is unavailable:",
+                "Previous Swedish: DNA200-utgång är inte tillgänglig:"
+            ],
+            "resolution": "DNA200-export är inte tillgänglig:"
+        },
+        {
+            "id": "sv-105",
+            "translationId": "calculators.wirewiz.single",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-construction] Use wire construction adjective rather than personal single status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single",
+                "Previous Swedish: Singel"
+            ],
+            "resolution": "Enkel"
+        },
+        {
+            "id": "sv-106",
+            "translationId": "calculators.wirewiz.parallel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-construction] Adjective agrees with tråd; not adverb parallellt.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel",
+                "Previous Swedish: Parallellt"
+            ],
+            "resolution": "Parallell"
+        },
+        {
+            "id": "sv-107",
+            "translationId": "calculators.wirewiz.twisted",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-construction] Twisted-wire construction is tvinnad.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Twisted",
+                "Previous Swedish: Vridet"
+            ],
+            "resolution": "Tvinnad"
+        },
+        {
+            "id": "sv-108",
+            "translationId": "calculators.wirewiz.staggeredClapton",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[staggered-clapton] Retain named construction; vacklade means stumbled/wavered.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Staggered Clapton",
+                "Previous Swedish: Vacklade Clapton"
+            ],
+            "resolution": "Staggered Clapton"
+        },
+        {
+            "id": "sv-109",
+            "translationId": "calculators.wirewiz.vapingRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaping-term] Use Swedish vaping term and the stated temperature context.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: in vaping range",
+                "Previous Swedish: inom vaping-intervall",
+                "ISOF: vejpa: https://www.isof.se/svenska-spraket/nyord/nyordssoket/2015/vejpa — Official Swedish language authority recognizes vejpa; aligns with existing glossary vejping."
+            ],
+            "resolution": "inom temperaturintervallet för vejping"
+        },
+        {
+            "id": "sv-110",
+            "translationId": "comparisons.mods.atomizerRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-terminology] Comparison displays minimum and maximum atomizer resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Atomizer range",
+                "Previous Swedish: Atomizerintervall"
+            ],
+            "resolution": "Förångarens motståndsintervall"
+        },
+        {
+            "id": "sv-111",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example is a solved example, not employed/worked labor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked examples",
+                "Previous Swedish: Arbetade exempel"
+            ],
+            "resolution": "Lösta exempel"
+        },
+        {
+            "id": "sv-112",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example is a solved example, not employed/worked labor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Swedish: Arbetat exempel"
+            ],
+            "resolution": "Löst exempel"
+        },
+        {
+            "id": "sv-113",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example is a solved example, not employed/worked labor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Swedish: Arbetat exempel"
+            ],
+            "resolution": "Löst exempel"
+        },
+        {
+            "id": "sv-114",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example is a solved example, not employed/worked labor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Swedish: Arbetat exempel"
+            ],
+            "resolution": "Löst exempel"
+        },
+        {
+            "id": "sv-115",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example is a solved example, not employed/worked labor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Swedish: Arbetat exempel"
+            ],
+            "resolution": "Löst exempel"
+        },
+        {
+            "id": "sv-116",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-series-grammar] Coordinate the two electrical connection types grammatically.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series and parallel",
+                "Previous Swedish: Celler i serie och parallella"
+            ],
+            "resolution": "Serie- och parallellkopplade celler"
+        },
+        {
+            "id": "sv-117",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistor-versus-resistance] A resistor has voltage across it; resistance is a quantity, not the component.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Relate resistor voltage and current with V = I × R.",
+                "Previous Swedish: Sambandet mellan resistansens spänning och ström är V = I × R."
+            ],
+            "resolution": "Sambandet mellan spänningen över ett motstånd och strömmen genom det är V = I × R."
+        },
+        {
+            "id": "sv-118",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[simultaneous-equations] Simultaneous equations means a system of equations, not equations occurring concurrently.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Solve the simultaneous equations and check power balance.",
+                "Previous Swedish: Lös de samtidiga ekvationerna och kontrollera effektbalansen."
+            ],
+            "resolution": "Lös ekvationssystemet och kontrollera effektbalansen."
+        },
+        {
+            "id": "sv-119",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mechanical-strain] Strain is deformation, distinct from applied mechanical load.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A manufacturer's TCR normally applies to a stated temperature and resistance range. Temperature gradients, material changes, contacts, mechanical strain, and self-heating can make a real result differ from the first-order estimate.",
+                "Previous Swedish: En tillverkares TCR gäller normalt för ett angivet temperatur- och motståndsområde. Temperaturgradienter, materialförändringar, kontakter, mekanisk belastning och självuppvärmning kan göra att ett verkligt resultat skiljer sig från första ordningens uppskattning.",
+                "KTH: Multifunktionella material och strukturer: https://www.kth.se/tekmek/forskargrupper/lattkonstruktioner/multifunktionella-material-och-strukturer-1.1253469 — Native technical usage differentiates mechanical loads from strain (töjning), including changes in electrical resistivity under strain measurement."
+            ],
+            "resolution": "En tillverkares TCR gäller normalt för ett angivet temperatur- och motståndsområde. Temperaturgradienter, materialförändringar, kontakter, mekanisk töjning och självuppvärmning kan göra att ett verkligt resultat skiljer sig från första ordningens uppskattning."
+        },
+        {
+            "id": "sv-120",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[right-triangles] Right means a right angle, not correct.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Right triangles",
+                "Previous Swedish: Rätt trianglar"
+            ],
+            "resolution": "Rätvinkliga trianglar"
+        },
+        {
+            "id": "sv-121",
+            "translationId": "catalog.concepts.concept-heat-capacity.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[indirect-question] Restore declarative summary word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: How much energy an object needs to change temperature.",
+                "Previous Swedish: Hur mycket energi behöver ett föremål för att ändra temperatur."
+            ],
+            "resolution": "Hur mycket energi ett föremål behöver för att ändra temperatur."
+        },
+        {
+            "id": "sv-122",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-area] Use area as the physical quantity rather than an unspecified region.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A is the area through which heat is transferred in square metres (m²).",
+                "Previous Swedish: A är det område genom vilket värme överförs i kvadratmeter (m²)."
+            ],
+            "resolution": "A är arean genom vilken värme överförs, i kvadratmeter (m²)."
+        },
+        {
+            "id": "sv-123",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[imperial-units] Imperialistiska is political imperialism, not the measurement system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The SI system and imperial measurements",
+                "Previous Swedish: SI-systemet och imperialistiska mätningar"
+            ],
+            "resolution": "SI-systemet och brittiska måttenheter"
+        },
+        {
+            "id": "sv-124",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[derived-si-units] Section contains derived units too; calling all of them base units is incorrect.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Common SI units",
+                "Previous Swedish: SI-grundenheter"
+            ],
+            "resolution": "Vanliga SI-enheter"
+        },
+        {
+            "id": "sv-125",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Quantity in metrology is storhet.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quantity",
+                "Previous Swedish: Kvantitet",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Storhet"
+        },
+        {
+            "id": "sv-126",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Mass and force are distinct physical quantities, not amounts.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A pound can refer to mass (lb) or force (lbf), which are different quantities. Likewise, inches, square inches, and cubic inches measure different dimensions.",
+                "Previous Swedish: Ett pund kan hänvisa till massa (lb) eller kraft (lbf), som är olika mängder. På samma sätt mäter tum, kvadrattum och kubiktum olika dimensioner.",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "Ett pund kan hänvisa till massa (lb) eller kraft (lbf), som är olika storheter. På samma sätt mäter tum, kvadrattum och kubiktum olika dimensioner."
+        },
+        {
+            "id": "sv-127",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mathematical-power] Power in exponentiation is potens, not electrical effect.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Area and volume conversions use the length factor raised to the relevant power.",
+                "Previous Swedish: Area- och volymomvandlingar använder längdfaktorn upphöjd till relevant effekt."
+            ],
+            "resolution": "Area- och volymomvandlingar använder längdfaktorn upphöjd till motsvarande potens."
+        },
+        {
+            "id": "sv-128",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numerical-rounding] Numerical rounding is avrunda, not physically rounding/circling.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Round only at the end so intermediate results retain useful precision.",
+                "Previous Swedish: Runda endast i slutet så att mellanresultaten behåller användbar precision."
+            ],
+            "resolution": "Avrunda först i slutet så att mellanresultaten behåller användbar precision."
+        },
+        {
+            "id": "sv-129",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Wire gauge is a numbered dimension system, not a meter.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A gauge number describes a nominal size only when its gauge system is named.",
+                "Previous Swedish: Ett mätarnummer beskriver en nominell storlek endast när dess mätsystem är namngivet."
+            ],
+            "resolution": "Ett dimensionsnummer beskriver en nominell storlek endast när dess dimensionssystem anges."
+        },
+        {
+            "id": "sv-130",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Wire gauge is a numbered dimension system, not a meter.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Why wire-gauge numbers need a named system and a stated diameter.",
+                "Previous Swedish: Varför trådmätarnummer behöver ett namngivet system och en angiven diameter."
+            ],
+            "resolution": "Varför trådens dimensionsnummer behöver ett namngivet system och en angiven diameter."
+        },
+        {
+            "id": "sv-131",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge number is not a meter count.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A larger ordinary gauge number generally means a smaller diameter; sizes above gauge 0 use 00, 000, or 0000.",
+                "Previous Swedish: Ett högre vanligt mätartal betyder i allmänhet en mindre diameter; storlekar över 0 skrivs 00, 000 eller 0000."
+            ],
+            "resolution": "Ett högre vanligt dimensionsnummer betyder i allmänhet en mindre diameter; storlekar över 0 skrivs 00, 000 eller 0000."
+        },
+        {
+            "id": "sv-132",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[split-compounds] Repair Swedish heading compound syntax.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: AWG diameter and area",
+                "Previous Swedish: AWG diameter och area"
+            ],
+            "resolution": "Diameter och area enligt AWG"
+        },
+        {
+            "id": "sv-133",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ampacity] Ampacity is current-carrying capacity, not generic capacity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For 1/0, 2/0, 3/0, and 4/0, use n = 0, -1, -2, and -3. AWG determines conductor size, not a universal safe current; ampacity also depends on material, insulation, cooling, installation, and applicable electrical rules.",
+                "Previous Swedish: För 1/0, 2/0, 3/0 och 4/0, använd n = 0, -1, -2 och -3. AWG bestämmer ledarstorlek, inte en universell säker ström; kapacitet beror också på material, isolering, kylning, installation och tillämpliga elektriska regler."
+            ],
+            "resolution": "För 1/0, 2/0, 3/0 och 4/0, använd n = 0, -1, -2 och -3. AWG bestämmer ledarstorlek, inte en universell säker ström; strömförmåga beror också på material, isolering, kylning, installation och tillämpliga elektriska regler."
+        },
+        {
+            "id": "sv-134",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge column gives dimension numbers, not meters.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous Swedish: Mätare"
+            ],
+            "resolution": "Dimensionsnummer"
+        },
+        {
+            "id": "sv-135",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-versus-twisted] Stranded conductor need not imply the specific twisting construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: These values are nominal. Product tolerances, coatings, insulation, and stranded construction can change the measured or overall diameter.",
+                "Previous Swedish: Dessa värden är nominella. Produkttoleranser, beläggningar, isolering och tvinnad konstruktion kan ändra den uppmätta eller totala diametern."
+            ],
+            "resolution": "Dessa värden är nominella. Produkttoleranser, beläggningar, isolering och flertrådig konstruktion kan ändra den uppmätta eller totala diametern."
+        },
+        {
+            "id": "sv-136",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge means wire dimension, not a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge, area, and resistance",
+                "Previous Swedish: Mätare, area och motstånd"
+            ],
+            "resolution": "Tråddimension, area och motstånd"
+        },
+        {
+            "id": "sv-137",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Repair gauge meaning and Swedish subordinate sentence order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous Swedish: Motstånd beror på ledarlängd L, tvärsnittsarea A och materialresistivitet ρ. Eftersom arean varierar med kvadraten på diametern, kan en blygsam diameterskillnad göra en betydande motståndsskillnad. I AWG, en ökning av mätaren med tre storlekar halverar ungefär ytan och fördubblar motståndet per längdenhet för samma material och temperatur."
+            ],
+            "resolution": "Motstånd beror på ledarlängd L, tvärsnittsarea A och materialresistivitet ρ. Eftersom arean varierar med kvadraten på diametern, kan en blygsam diameterskillnad göra en betydande motståndsskillnad. I AWG halverar en ökning av dimensionsnumret med tre storlekar ungefär arean och fördubblar motståndet per längdenhet för samma material och temperatur."
+        },
+        {
+            "id": "sv-138",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge means a dimension number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Determine current capacity from product data and electrical rules, not from gauge number alone.",
+                "Previous Swedish: Bestäm strömförmågan utifrån produktdata och elektriska regler, inte enbart utifrån mätetalet."
+            ],
+            "resolution": "Bestäm strömförmågan utifrån produktdata och elektriska regler, inte enbart utifrån dimensionsnumret."
+        },
+        {
+            "id": "sv-139",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[pulse-rating-direction] Existing instruction reverses what may not be substituted; continuous value must not be replaced by pulse ratings.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous Swedish: 45 A, ett oberoende kontinuerligt värde för den testade tabless-revisionen; ersätt inte pulsvärden."
+            ],
+            "resolution": "45 A, ett oberoende kontinuerligt värde för den testade tabless-revisionen; ersätt inte detta värde med pulsvärden."
+        },
+        {
+            "id": "sv-140",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaping-term] Follow Swedish glossary and ISOF usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Low-drain battery; not suited for vaping.",
+                "Previous Swedish: Batteri med låg urladdningsförmåga; inte lämpligt för vaping.",
+                "ISOF: vejpa: https://www.isof.se/svenska-spraket/nyord/nyordssoket/2015/vejpa — Official Swedish language authority recognizes vejpa; aligns with existing glossary vejping."
+            ],
+            "resolution": "Batteri med låg urladdningsförmåga; inte lämpligt för vejping."
+        },
+        {
+            "id": "sv-141",
+            "translationId": "catalogText.mod.preset-9.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[metal-finishing] Bright-dipped is chemical bright finishing, not dipping in light; use technical Swedish terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Billet Box Rev. 3a with a bead-blasted, bright-dipped anodized aluminum finish; introduced in May 2014.",
+                "Previous Swedish: Billet Box Rev. 3a med en pärlblästrad, ljusdoppad anodiserad aluminiumfinish; introducerades i maj 2014.",
+                "Metallkompetens: Kemisk och elektrokemisk ytbehandling: https://www.metallkompetens.se/handbok/om-aluminium/ytbehandling/kemisk-och-elektrokemisk-ytbehandling/ — Glansbetning is a chemical bright finishing process; ljusdoppad is not the process name."
+            ],
+            "resolution": "Billet Box Rev. 3a med en kulblästrad, glansbetad och anodiserad aluminiumyta; introducerades i maj 2014."
+        },
+        {
+            "id": "sv-142",
+            "translationId": "catalogText.mod.preset-10.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[chipset-gender] Chipset takes neuter ett.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A Cloupor 30 W device using a third-party DNA30-style clone chipset, not an authentic Evolv DNA-30D board.",
+                "Previous Swedish: En Cloupor 30 W-enhet som använder en DNA30-liknande klonchipset från tredje part, inte ett autentiskt Evolv DNA-30D-kort."
+            ],
+            "resolution": "En Cloupor 30 W-enhet som använder ett DNA30-liknande klonchipset från tredje part, inte ett autentiskt Evolv DNA-30D-kort."
+        },
+        {
+            "id": "sv-143",
+            "translationId": "catalogText.mod.preset-231.profile",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[decimal-voltage-corruption] Original space makes 8.979 V into 8979 V; restore canonical value with Swedish decimal comma.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-21700 regulated mod with 18650 adapters; VAPORESSO rates it 220 W; testing measured 208 W, 8.979 V, and 39 A.",
+                "Previous Swedish: Dual-21700 reglerad mod med 18650 adaptrar; VAPORESSO ger den 220 W; testningen mätte 208 W, 8 979 V och 39 A."
+            ],
+            "resolution": "Reglerad mod för två 21700-celler med adaptrar för 18650; VAPORESSO anger 220 W; vid test uppmättes 208 W, 8,979 V och 39 A."
+        },
+        {
+            "id": "sv-144",
+            "translationId": "catalogText.mod.preset-234.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-cell-configurations] Translate cell-count description and manufacturer rating rather than English Dual or gives power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-18650 regulated mod; VAPORESSO rates it 220 W; testing measured 215 W, 9.08 V, and 37 A.",
+                "Previous Swedish: Dual-18650 reglerad mod; VAPORESSO ger den 220 W; testningen mätte 215 W, 9,08 V och 37 A."
+            ],
+            "resolution": "Reglerad mod för två 18650-celler; VAPORESSO anger 220 W; vid test uppmättes 215 W, 9,08 V och 37 A."
+        },
+        {
+            "id": "sv-145",
+            "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-cell-configurations] Battery is built in; mod is regulated, not battery-regulated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in-battery regulated mod rated at 100 W; testing measured 101 W, 29 A, and at least 7.97 V.",
+                "Previous Swedish: Inbyggd batterireglerad mod klassad till 100 W; testningen mätte 101 W, 29 A och minst 7,97 V."
+            ],
+            "resolution": "Reglerad mod med inbyggt batteri klassad till 100 W; testningen mätte 101 W, 29 A och minst 7,97 V."
+        },
+        {
+            "id": "sv-146",
+            "translationId": "catalogText.mod.preset-236.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-cell-configurations] Translate physical cell configuration; preserve AS Chip 4.0 identity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-18650 regulated mod using AS Chip 4.0; manufacturer profile is 100 W, 7.5 V, 32 A, 0.1–3 Ω.",
+                "Previous Swedish: Single-18650 reglerad mod med AS Chip 4.0; tillverkarens profil är 100 W, 7,5 V, 32 A, 0,1–3 Ω."
+            ],
+            "resolution": "Reglerad mod för en 18650-cell med AS Chip 4.0; tillverkarens profil är 100 W, 7,5 V, 32 A, 0,1–3 Ω."
+        },
+        {
+            "id": "sv-147",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-cell-configurations] Adapter enables an 18650 cell; mod is not an adapter itself.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell 21700/18650-adapter mod; Eleaf specifies 100 W, 9 V, 0.05–3.5 Ω; testing identified 30 A.",
+                "Previous Swedish: Encells 21700/18650-adaptermod; Eleaf specificerar 100 W, 9 V, 0,05–3,5 Ω; testning identifierade 30 A."
+            ],
+            "resolution": "Mod för en 21700-cell, med adapter för 18650; Eleaf specificerar 100 W, 9 V, 0,05–3,5 Ω; testning identifierade 30 A."
+        },
+        {
+            "id": "sv-148",
+            "translationId": "catalogText.mod.preset-238.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-cell-configurations] Adapted means installed with an adapter, not physically modified cells.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell regulated squonk mod for 21700, 20700, or adapted 18650 cells with a conservative 95 W, 6 V, 34 A profile.",
+                "Previous Swedish: Encellsreglerad squonk-mod för 21700, 20700 eller anpassade 18650-celler med en konservativ 95 W, 6 V, 34 A-profil."
+            ],
+            "resolution": "Reglerad squonk-mod för en cell av typen 21700, 20700 eller 18650 med adapter, med en konservativ profil på 95 W, 6 V och 34 A."
+        },
+        {
+            "id": "sv-149",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Swedish: R är motstånd, mätt i ohm (\\u03a9)."
+            ],
+            "resolution": "R är motstånd, mätt i ohm (Ω)."
+        },
+        {
+            "id": "sv-150",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Swedish: En 4,2 V-källa är ansluten till en 1,0 \\u03a9 belastning."
+            ],
+            "resolution": "En 4,2 V-källa är ansluten till en 1,0 Ω belastning."
+        },
+        {
+            "id": "sv-151",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Swedish: I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+            ],
+            "resolution": "I = 4,2 V / 1,0 Ω = 4,2 A"
+        },
+        {
+            "id": "sv-152",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Swedish: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "R = 12 V / 2 A = 6 Ω"
+        },
+        {
+            "id": "sv-153",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Swedish: Kretsresistansen är 6 \\u03a9."
+            ],
+            "resolution": "Kretsresistansen är 6 Ω."
+        },
+        {
+            "id": "sv-154",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Swedish: En ström på 0,5 A flyter genom ett 10 \\u03a9 motstånd."
+            ],
+            "resolution": "En ström på 0,5 A flyter genom ett 10 Ω motstånd."
+        },
+        {
+            "id": "sv-155",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Swedish: 1 k\\u03a9 = 1 000 \\u03a9"
+            ],
+            "resolution": "1 kΩ = 1 000 Ω"
+        },
+        {
+            "id": "sv-156",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Swedish: 1 M\\u03a9 = 1 000 000 \\u03a9"
+            ],
+            "resolution": "1 MΩ = 1 000 000 Ω"
+        },
+        {
+            "id": "sv-157",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Swedish: Två 0,20 \\u03a9 motstånd i serie är anslutna till 8,0 V."
+            ],
+            "resolution": "Två 0,20 Ω motstånd i serie är anslutna till 8,0 V."
+        },
+        {
+            "id": "sv-158",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Swedish: R_total = 0,40 \\u03a9"
+            ],
+            "resolution": "R_total = 0,40 Ω"
+        },
+        {
+            "id": "sv-159",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Swedish: Två lika 0,40 \\u03a9 grenar är anslutna till 4,0 V."
+            ],
+            "resolution": "Två lika 0,40 Ω grenar är anslutna till 4,0 V."
+        },
+        {
+            "id": "sv-160",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Swedish: R_total = 0,20 \\u03a9"
+            ],
+            "resolution": "R_total = 0,20 Ω"
+        },
+        {
+            "id": "sv-161",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous Swedish: \\u03b1 är materialets temperaturkoefficient, uttryckt i 1/°C eller ppm/°C."
+            ],
+            "resolution": "α är materialets temperaturkoefficient, uttryckt i 1/°C eller ppm/°C."
+        },
+        {
+            "id": "sv-162",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 1.00 \\u03a9 resistance is specified at 20 \\u00b0C, with a TCR of 400 ppm/\\u00b0C.",
+                "Previous Swedish: Ett motstånd på 1,00 \\u03a9 specificeras vid 20 \\u00b0C, med en TCR på 400 ppm/\\u00b0C."
+            ],
+            "resolution": "Ett motstånd på 1,00 Ω specificeras vid 20 °C, med en TCR på 400 ppm/°C."
+        },
+        {
+            "id": "sv-163",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Swedish: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "α = 400 × 10^-6 / °C = 0,0004 / °C"
+        },
+        {
+            "id": "sv-164",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Swedish: \\u0394T = 100 - 20 = 80 \\u00b0C"
+            ],
+            "resolution": "ΔT = 100 - 20 = 80 °C"
+        },
+        {
+            "id": "sv-165",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Swedish: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "R_T = 1,00 [1 + 0,0004 × 80] = 1,032 Ω"
+        },
+        {
+            "id": "sv-166",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Swedish: Det uppskattade motståndet är 1,032 \\u03a9, cirka 3,2% över dess värde vid 20 \\u00b0C."
+            ],
+            "resolution": "Det uppskattade motståndet är 1,032 Ω, cirka 3,2% över dess värde vid 20 °C."
+        },
+        {
+            "id": "sv-167",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Swedish: Motstånd: ohm (\\u03a9)."
+            ],
+            "resolution": "Motstånd: ohm (Ω)."
+        },
+        {
+            "id": "sv-168",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode-display] Decode literal Unicode escape notation in human-facing text while preserving the represented symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Swedish: Till exempel är 2,2 k\\u03a9 lika med 2 200 \\u03a9 och 15 mA är lika med 0,015 A. Konvertera värden till kompatibla enheter innan du använder en formel."
+            ],
+            "resolution": "Till exempel är 2,2 kΩ lika med 2 200 Ω och 15 mA är lika med 0,015 A. Konvertera värden till kompatibla enheter innan du använder en formel."
+        },
+        {
+            "id": "sv-169",
+            "translationId": "messages.catalogManager.customItemsDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-catalog-nouns] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __SE_ARG_0__ are always shown in the calculator selector.",
+                "Previous Swedish: Custom __SE_ARG_0__ are always shown in the calculator selector."
+            ],
+            "resolution": "Anpassade __SE_ARG_0__ visas alltid i kalkylatorns väljare."
+        },
+        {
+            "id": "sv-170",
+            "translationId": "messages.catalogEditor.sizeCodePlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-editor-placeholders] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, e.g. 18650",
+                "Previous Swedish: Optional, e.g. 18650"
+            ],
+            "resolution": "Valfritt, t.ex. 18650"
+        },
+        {
+            "id": "sv-171",
+            "translationId": "messages.catalogEditor.wrapperColorPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-editor-placeholders] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, descriptive",
+                "Previous Swedish: Optional, descriptive"
+            ],
+            "resolution": "Valfritt, beskrivande"
+        },
+        {
+            "id": "sv-172",
+            "translationId": "messages.catalogEditor.markingsPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-editor-placeholders] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional; one wrapper marking per line",
+                "Previous Swedish: Optional; one wrapper marking per line"
+            ],
+            "resolution": "Valfritt; en märkning från höljet per rad"
+        },
+        {
+            "id": "sv-173",
+            "translationId": "messages.catalogEditor.currentWithCRatingPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-editor-placeholders] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when C rating is set",
+                "Previous Swedish: Optional when C rating is set"
+            ],
+            "resolution": "Valfritt när C-värdet är angivet"
+        },
+        {
+            "id": "sv-174",
+            "translationId": "messages.catalogEditor.cRatingWithCurrentPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-editor-placeholders] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when current is set",
+                "Previous Swedish: Optional when current is set"
+            ],
+            "resolution": "Valfritt när strömmen är angiven"
+        },
+        {
+            "id": "sv-175",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-introduction-assembly] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous Swedish: Joule's law"
+            ],
+            "resolution": "Joules lag"
+        },
+        {
+            "id": "sv-176",
+            "translationId": "calculators.wirewiz.sourceFactorSuffix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-factor-suffix] Existing optional hook falls back to English; supply locale-owned Swedish text.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: at this temperature.",
+                "Previous Swedish: at this temperature."
+            ],
+            "resolution": "vid denna temperatur."
+        },
+        {
+            "id": "sv-177",
+            "translationId": "glossary.output-power",
+            "category": "terminology-disagreement",
+            "severity": "medium",
+            "summary": "[atomizer-output] Glossary source atomizer output names all electrical values supplied to the atomizer, not power emitted from it.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: atomizer output",
+                "Previous Swedish: effekt som avges från förångaren",
+                "RISE: Riksmätplatsen för elektriska storheter: https://www.ri.se/sv/metrologi-och-matteknik/riksmatplatser/expertis/riksmatplatsen-for-elektriska-storheter — National metrology terminology distinguishes ström, spänning, resistans, elektrisk effekt and storheter."
+            ],
+            "resolution": "förångarens elektriska värden"
+        },
+        {
+            "id": "sv-178",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Swedish: R är motstånd, mätt i ohm (\\u03a9)."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-179",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous Swedish: En resistans på 0 Ω är en idealisk kortslutning och måste hanteras separat."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-180",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Swedish: En 4,2 V-källa är ansluten till en 1,0 \\u03a9 belastning."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-181",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Swedish: I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-182",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Swedish: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-183",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Swedish: Kretsresistansen är 6 \\u03a9."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-184",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Swedish: En ström på 0,5 A flyter genom ett 10 \\u03a9 motstånd."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-185",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Swedish: 1 k\\u03a9 = 1 000 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-186",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Swedish: 1 M\\u03a9 = 1 000 000 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-187",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Swedish: En spole på 0,8 Ω leder 3 A."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-188",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Swedish: Två 0,20 \\u03a9 motstånd i serie är anslutna till 8,0 V."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-189",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Swedish: R_total = 0,40 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-190",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Swedish: Två lika 0,40 \\u03a9 grenar är anslutna till 4,0 V."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-191",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Swedish: R_total = 0,20 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-192",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous Swedish: \\u03b1 är materialets temperaturkoefficient, uttryckt i 1/°C eller ppm/°C."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-193",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 1.00 \\u03a9 resistance is specified at 20 \\u00b0C, with a TCR of 400 ppm/\\u00b0C.",
+                "Previous Swedish: Ett motstånd på 1,00 \\u03a9 specificeras vid 20 \\u00b0C, med en TCR på 400 ppm/\\u00b0C."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-194",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Swedish: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-195",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Swedish: \\u0394T = 100 - 20 = 80 \\u00b0C"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-196",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Swedish: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-197",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Swedish: Det uppskattade motståndet är 1,032 \\u03a9, cirka 3,2% över dess värde vid 20 \\u00b0C."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-198",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Swedish: Motstånd: ohm (\\u03a9)."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-199",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-unicode-display] Canonical English contains literal Unicode escape notation; repair source presentation in a separate shared-source change.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Swedish: Till exempel är 2,2 k\\u03a9 lika med 2 200 \\u03a9 och 15 mA är lika med 0,015 A. Konvertera värden till kompatibla enheter innan du använder en formel."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-200",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[canonical-joule-summary] English summary treats resistance as energy being converted. Swedish already correctly describes electrical energy becoming heat.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: How electrical current turns resistance into heat.",
+                "Previous Swedish: Hur elektrisk ström omvandlar elektrisk energi till värme."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-201",
+            "translationId": "calculators.juice.safetyText",
+            "category": "source-content-defect",
+            "severity": "high",
+            "summary": "[canonical-calculation-certainty] Cross-checking another tool cannot provide a hundred-percent safety or accuracy guarantee. Current Swedish already avoids this overclaim; retain it.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Concentrated nicotine can harm or kill children, pets, or even adults. Please inform yourself of how to mitigate the dangers before you try mixing your own. If you want to be a hundred percent certain about your calculations, you should double check your results using other tools as well.",
+                "Previous Swedish: Koncentrerat nikotin kan skada eller döda barn, husdjur och vuxna. Läs på om hur riskerna minskas innan du blandar egen e-vätska och kontrollera beräkningen med ett annat verktyg."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "sv-202",
+            "translationId": "shared-ui.catalogManager.inUse",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: __SE_ARG_0__ is used by __SE_ARG_1__.",
+                "Previous Swedish: __SE_ARG_0__ is used by __SE_ARG_1__."
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-203",
+            "translationId": "shared-ui.catalogManager.loadFailure",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: No custom __SE_ARG_0__ were loaded, and saved data was not overwritten.",
+                "Previous Swedish: No custom __SE_ARG_0__ were loaded, and saved data was not overwritten."
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-204",
+            "translationId": "shared-ui.tcr.duplicateForWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: for wire",
+                "Previous Swedish: for wire"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-205",
+            "translationId": "shared-ui.wirewiz.core",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core",
+                "Previous Swedish: Core"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-206",
+            "translationId": "shared-ui.wirewiz.wrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Wrap",
+                "Previous Swedish: Wrap"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-207",
+            "translationId": "shared-ui.wirewiz.dualCore",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core (two identical wires)",
+                "Previous Swedish: Core (two identical wires)"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-208",
+            "translationId": "shared-ui.wirewiz.primaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Primary wrap (one around each core)",
+                "Previous Swedish: Primary wrap (one around each core)"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-209",
+            "translationId": "shared-ui.wirewiz.secondaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Secondary wrap (around both cores)",
+                "Previous Swedish: Secondary wrap (around both cores)"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "sv-210",
+            "translationId": "shared-ui.wirewiz.singleWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-ui-localization] Hardcoded shared UI text has no existing locale-owned hook; separate shared i18n change needed.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: __SE_ARG_0__ wire",
+                "Previous Swedish: __SE_ARG_0__ wire"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        }
+    ]
+}

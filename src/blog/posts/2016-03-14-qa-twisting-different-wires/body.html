@@ -1,0 +1,17 @@
+<p>One user asked:</p>
+<blockquote><p>I want to twist Kanthal and Nickel, but your coil calculator doesn&#8217;t support mixing different materials.</p></blockquote>
+<p>And another:</p>
+<blockquote><p>How do you enter twisted wires where 2 different types of wire are twisted together? To me, it appears that it only allows you to use the same type of wire based on the dropdowns.</p>
+<p>If it doesn&#8217;t already exist, would it be possible to add, and is there an estimate time when it would be available?</p></blockquote>
+<p><span id="more-175"></span></p>
+<p>And a third:</p>
+<blockquote><p>It would be nice to be able to pick multiple wire types for twisted builds to see what they would ohm out to. For example 2x24KA1 twisted, 2x28KA1 twisted, then both twisted together. So 4 cores total but 2 cores of 24KA1 and 2 cores of 28KA1.</p></blockquote>
+<p>The old coil calculator doesn&#8217;t support mixing materials, but if you use the <a href="wirewiz" target="_blank">Wire Wizard</a>, you can mix as many materials as you want.</p>
+<p>You cannot use the <strong>twisted</strong> option for this, though, and here is why:</p>
+<p>When you twist one type of wire (say Kanthal) with an equally thick wire of a different material (say Ni200), the Kanthal will be much more rigid than the Ni200. This means that the Kanthal will not bend much, while the Ni200 will almost wrap like a spaced clapton wire around the Kanthal.</p>
+<p>For this reason, it&#8217;s not possible to accurately calculate twisted wires of different materials. That would require data on how the different materials behave when bended. That data simply isn&#8217;t available.</p>
+<p>There are a couple of ways around this limitation, however:</p>
+<ol>
+<li>Calculate the coil as a spaced <strong>clapton</strong>. (Click the cog icon to input a wrap spacing. This will be analogous to the twist pitch.) If the wire made from the more rigid material is also thicker than the &#8220;wrap&#8221; wire, this method will be pretty accurate in every way.</li>
+<li>If you&#8217;re able to wrap the wires in such a way that they end up being of equal length, and neither wire is stretched more than the other, you can model them as <strong>parallel</strong> wires. This will give you a somewhat lower resistance than what you&#8217;ll actually be getting in reality, but the TCR will be accurate, because the total TCR depends on the ratio of one wire to the other. If you are one of the people who use the Wire Wizard for the TCR, and you&#8217;re not all that interested in the resistance, this option may be for you.</li>
+</ol>

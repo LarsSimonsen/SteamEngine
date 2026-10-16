@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "es",
+    "cycleId": "es-20260818T124320674Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Spanish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Spanish pass identified 25 actionable defects in electrical, circuit, thermal, and trigonometric terminology; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Spanish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "es-20260818-026",
+            "translationId": "concept-ohms-law.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm's-law display name was not capitalized as a title.",
+            "disposition": "resolved",
+            "evidence": ["The previous value was ‘ley de ohm’."],
+            "resolution": "Changed it to ‘Ley de Ohm’."
+        },
+        {
+            "id": "es-20260818-027",
+            "translationId": "concept-ohms-law.relationship.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The section title was not capitalized as a Spanish heading.",
+            "disposition": "resolved",
+            "evidence": ["The previous value was ‘la relación’."],
+            "resolution": "Changed it to ‘La relación’."
+        },
+        {
+            "id": "es-20260818-028",
+            "translationId": "concept-ohms-law.relationship.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current definition repeated ‘amperios’.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘medida en amperios o amperios’."],
+            "resolution": "Changed it to a concise  amperage-unit definition."
+        },
+        {
+            "id": "es-20260818-029",
+            "translationId": "concept-ohms-law.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance-example title was lowercased inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘encontrar resistencia’."],
+            "resolution": "Changed it to ‘Encontrar la resistencia’."
+        },
+        {
+            "id": "es-20260818-030",
+            "translationId": "concept-ohms-law.worked-examples.examples.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage-example title was lowercased inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘encontrar voltaje’."],
+            "resolution": "Changed it to ‘Encontrar el voltaje’."
+        },
+        {
+            "id": "es-20260818-031",
+            "translationId": "concept-ohms-law.electrical-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Electrical power was translated as electrical energy.",
+            "disposition": "resolved",
+            "evidence": ["The section formula and paragraph describe power P, not energy."],
+            "resolution": "Changed the title to ‘Potencia eléctrica’."
+        },
+        {
+            "id": "es-20260818-032",
+            "translationId": "concept-ohms-law.unit-conversions.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The kilo-ohm conversion omitted spacing around the units.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘1kΩ = 1.000Ω’."],
+            "resolution": "Restored readable protected-unit spacing."
+        },
+        {
+            "id": "es-20260818-033",
+            "translationId": "concept-ohms-law.unit-conversions.bullets.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The mega-ohm conversion was mistranslated as milli-ohms.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘1 mΩ’ for the source's 1 MΩ."],
+            "resolution": "Restored the 1 MΩ = 1,000,000 Ω conversion."
+        },
+        {
+            "id": "es-20260818-034",
+            "translationId": "concept-ohms-law.unit-conversions.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The watt conversion omitted spacing around the units.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘1W = 1.000mW’."],
+            "resolution": "Restored readable protected-unit spacing."
+        },
+        {
+            "id": "es-20260818-035",
+            "translationId": "concept-joule-heating.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule-heating display name was not capitalized as a title.",
+            "disposition": "resolved",
+            "evidence": ["The previous value was ‘calentamiento en julios’."],
+            "resolution": "Changed it to ‘Calentamiento de Joule’."
+        },
+        {
+            "id": "es-20260818-036",
+            "translationId": "concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Joule-heating summary said current converts resistance into heat.",
+            "disposition": "resolved",
+            "evidence": ["Electrical energy, not resistance, is converted to heat."],
+            "resolution": "Rephrased it as electrical current converting electrical energy into heat."
+        },
+        {
+            "id": "es-20260818-037",
+            "translationId": "concept-joule-heating.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power title used ‘calefacción’, which suggests building heating.",
+            "disposition": "resolved",
+            "evidence": ["The section concerns electrical heating power in a component."],
+            "resolution": "Changed it to ‘Potencia de calentamiento’."
+        },
+        {
+            "id": "es-20260818-038",
+            "translationId": "concept-joule-heating.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The paragraph called electrical energy a rate of transfer.",
+            "disposition": "resolved",
+            "evidence": ["The source distinguishes power as a rate from energy itself."],
+            "resolution": "Changed the subject to potencia eléctrica and retained the thermal explanation."
+        },
+        {
+            "id": "es-20260818-039",
+            "translationId": "concept-kirchhoffs-laws.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Kirchhoff display name was not capitalized as a title.",
+            "disposition": "resolved",
+            "evidence": ["The previous value was ‘las leyes de kirchhoff’."],
+            "resolution": "Changed it to ‘Leyes de Kirchhoff’."
+        },
+        {
+            "id": "es-20260818-040",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit introduction used an awkward literal translation of reason about.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said a diagram was easier to ‘razonar sobre’."],
+            "resolution": "Changed it to say the terms facilitate understanding a circuit diagram."
+        },
+        {
+            "id": "es-20260818-041",
+            "translationId": "concept-kirchhoffs-laws.series-and-parallel.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit section title had an unnecessary final period.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Circuitos en serie y paralelo.’."],
+            "resolution": "Removed the trailing punctuation from the heading."
+        },
+        {
+            "id": "es-20260818-042",
+            "translationId": "concept-kirchhoffs-laws.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-branches formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘parallel branches’."],
+            "resolution": "Translated the protected formula label as ‘ramas paralelas’."
+        },
+        {
+            "id": "es-20260818-043",
+            "translationId": "concept-kirchhoffs-laws.cells.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘series’."],
+            "resolution": "Translated the formula label as ‘serie’."
+        },
+        {
+            "id": "es-20260818-044",
+            "translationId": "concept-kirchhoffs-laws.cells.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘parallel’."],
+            "resolution": "Translated the formula label as ‘paralelo’."
+        },
+        {
+            "id": "es-20260818-045",
+            "translationId": "concept-kirchhoffs-laws.solving-and-limits.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The last solving instruction switched from formal imperative to informal second person.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Resuelve’ while neighboring instructions use formal ‘Marque’ and ‘Aplique’."],
+            "resolution": "Changed it to the formal imperative ‘Resuelva’."
+        },
+        {
+            "id": "es-20260818-046",
+            "translationId": "concept-temperature-coefficient-of-resistance.positive-and-negative.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The sentence after the semicolon was incorrectly capitalized.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘; Muchos metales’."],
+            "resolution": "Changed ‘Muchos’ to lowercase ‘muchos’."
+        },
+        {
+            "id": "es-20260818-047",
+            "translationId": "concept-trigonometry.right-triangles.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle heading lacked capitalization and an accent mark.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘triangulos rectángulos’."],
+            "resolution": "Changed it to ‘Triángulos rectángulos’."
+        },
+        {
+            "id": "es-20260818-048",
+            "translationId": "concept-trigonometry.right-triangles.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula retained English geometry terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / hypotenuse’."],
+            "resolution": "Translated the protected labels as ‘opuesto / hipotenusa’."
+        },
+        {
+            "id": "es-20260818-049",
+            "translationId": "concept-trigonometry.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The side-finding example title was lowercased inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘encontrar un lado’."],
+            "resolution": "Changed it to ‘Encontrar un lado’."
+        },
+        {
+            "id": "es-20260818-050",
+            "translationId": "concept-trigonometry.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The sine function was mistranslated as the Spanish word for sin.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used ‘pecado(30°)’ instead of mathematical sin(30°)."],
+            "resolution": "Restored the protected mathematical function sin(30°)."
+        }
+    ]
+}

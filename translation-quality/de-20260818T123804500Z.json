@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260818T123804500Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded German pass identified 25 actionable defects in electrical, circuit, thermal, trigonometric, and unit terminology; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-20260818-001",
+            "translationId": "concept-ohms-law.relationship.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current definition repeated the German word for ampere.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘Ampere oder Ampere’."],
+            "resolution": "Changed it to the concise ‘gemessen in Ampere (A)’."
+        },
+        {
+            "id": "de-20260818-002",
+            "translationId": "concept-ohms-law.electrical-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Electrical power was translated as electrical energy.",
+            "disposition": "resolved",
+            "evidence": ["The section formula and text describe Leistung P, not energy."],
+            "resolution": "Changed the title to ‘Elektrische Leistung’."
+        },
+        {
+            "id": "de-20260818-003",
+            "translationId": "concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The summary said current transforms resistance into heat.",
+            "disposition": "resolved",
+            "evidence": ["The physical quantity transformed into heat is electrical energy."],
+            "resolution": "Rephrased it as current converting electrical energy into heat."
+        },
+        {
+            "id": "de-20260818-004",
+            "translationId": "concept-kirchhoffs-laws.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conservation description lacked a clear object and loop wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘Erhaltung an Schaltungsknoten’ in an incomplete construction."],
+            "resolution": "Clarified conservation at circuit nodes and in closed loops."
+        },
+        {
+            "id": "de-20260818-005",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-terms title used the wrong technical noun.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Schaltungsbedingungen’."],
+            "resolution": "Changed it to ‘Schaltungsbegriffe’."
+        },
+        {
+            "id": "de-20260818-006",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The introductory sentence used an awkward literal idiom.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording said the concepts made it easier to think about a diagram."],
+            "resolution": "Changed it to say the concepts make a schematic easier to understand."
+        },
+        {
+            "id": "de-20260818-007",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "A branch was translated as an ‘aktueller’ path rather than a current path.",
+            "disposition": "resolved",
+            "evidence": ["‘Aktuell’ means current in time, not electric current."],
+            "resolution": "Changed it to ‘Strompfad’."
+        },
+        {
+            "id": "de-20260818-008",
+            "translationId": "concept-kirchhoffs-laws.current-law.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Kirchhoff's current law used the false cognate ‘aktuelles Gesetz’. ",
+            "disposition": "resolved",
+            "evidence": ["The title used ‘aktuell’ instead of the electrical-current term ‘Strom’."],
+            "resolution": "Changed it to ‘Kirchhoffs Stromgesetz’."
+        },
+        {
+            "id": "de-20260818-009",
+            "translationId": "concept-kirchhoffs-laws.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law paragraph used the wrong term for current direction and capitalized a sentence fragment.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘aktuelle Richtung’ and ‘Ein negatives’ mid-sentence."],
+            "resolution": "Rephrased it using ‘Stromrichtung’ and normal German sentence casing."
+        },
+        {
+            "id": "de-20260818-010",
+            "translationId": "concept-kirchhoffs-laws.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "A closed loop was translated as a regulatory circuit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘geschlossenen Regelkreis’."],
+            "resolution": "Changed it to a closed electrical loop."
+        },
+        {
+            "id": "de-20260818-011",
+            "translationId": "concept-temperature-coefficient-of-resistance.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR example title used an unnatural literal adjective.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Ein hitziger Widerstand’."],
+            "resolution": "Changed it to ‘Widerstand bei hoher Temperatur’."
+        },
+        {
+            "id": "de-20260818-012",
+            "translationId": "concept-temperature-coefficient-of-resistance.worked-example.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR unit was corrupted in the German setup sentence.",
+            "disposition": "resolved",
+            "evidence": ["The previous text displayed ‘ppm/ü’ instead of ppm/°C."],
+            "resolution": "Restored the protected temperature unit ppm/°C."
+        },
+        {
+            "id": "de-20260818-013",
+            "translationId": "concept-trigonometry.right-triangles.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula used ‘Gegenteil’ instead of the German geometry term Gegenkathete.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula read ‘sin = Gegenteil / Hypotenuse’."],
+            "resolution": "Changed it to ‘Gegenkathete / Hypotenuse’."
+        },
+        {
+            "id": "de-20260818-014",
+            "translationId": "concept-trigonometry.right-triangles.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula mixed imprecise opposite and adjacent terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used ‘gegenüber / angrenzend’."],
+            "resolution": "Changed it to the standard German Gegenkathete / Ankathete terms."
+        },
+        {
+            "id": "de-20260818-015",
+            "translationId": "concept-trigonometry.finding-sides-and-angles.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-cosine formula contained a typo in Ankathete.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘Antenkathete’."],
+            "resolution": "Corrected the formula to ‘Ankathete / Hypotenuse’."
+        },
+        {
+            "id": "de-20260818-016",
+            "translationId": "concept-trigonometry.degrees-and-radians.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The full-cycle statement omitted the word Bogenmaß after 2π.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended with ‘2π im Bogenmaß’ without the unit noun."],
+            "resolution": "Clarified that a full cycle is 2π im Bogenmaß."
+        },
+        {
+            "id": "de-20260818-017",
+            "translationId": "concept-heat-capacity.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The water example title was an unnatural compound.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Heizungswasser’."],
+            "resolution": "Changed it to ‘Wasser erwärmen’."
+        },
+        {
+            "id": "de-20260818-018",
+            "translationId": "concept-heat-capacity.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-heating title used a general heating noun.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Heizung mit Strom’."],
+            "resolution": "Changed it to ‘Elektrische Erwärmung’."
+        },
+        {
+            "id": "de-20260818-019",
+            "translationId": "concept-heat-capacity.worked-example.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The German conclusion capitalized a new clause after a semicolon.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘; Eine echte Heizung’."],
+            "resolution": "Changed the clause to normal German lowercase after the semicolon."
+        },
+        {
+            "id": "de-20260818-020",
+            "translationId": "concept-heat-flux.definition.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux unit was translated as heat flow rather than heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The source quantity q'' is flux per area, not total heat flow."],
+            "resolution": "Changed the label to Wärmestromdichte."
+        },
+        {
+            "id": "de-20260818-021",
+            "translationId": "concept-heat-flux.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The final heat-flux check used an infinitive instead of an imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘Wärmekapazität zur Temperaturänderung nutzen’."],
+            "resolution": "Rephrased it with the formal imperative ‘nutzen Sie’."
+        },
+        {
+            "id": "de-20260818-022",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The mass row was translated as ‘Messe’.",
+            "disposition": "resolved",
+            "evidence": ["‘Messe’ means a fair or mass, not physical mass as a quantity label."],
+            "resolution": "Changed the row to ‘Masse’."
+        },
+        {
+            "id": "de-20260818-023",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The time unit was translated as the ordinal ‘zweitens’.",
+            "disposition": "resolved",
+            "evidence": ["The previous row used ‘zweitens’ instead of ‘Sekunde’."],
+            "resolution": "Changed the unit name to ‘Sekunde’."
+        },
+        {
+            "id": "de-20260818-024",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.5",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The amount-of-substance row used ‘Maulwurf’ and the wrong quantity label.",
+            "disposition": "resolved",
+            "evidence": ["‘Maulwurf’ means mole as an animal; the SI quantity is Stoffmenge with unit Mol."],
+            "resolution": "Changed the row to Stoffmenge and Mol."
+        },
+        {
+            "id": "de-20260818-025",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.6",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The candela symbol used uppercase CD.",
+            "disposition": "resolved",
+            "evidence": ["The SI symbol for candela is lowercase cd."],
+            "resolution": "Corrected the protected SI symbol to cd."
+        }
+    ]
+}

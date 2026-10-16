@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "ja",
+    "cycleId": "ja-20260818T181103158Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Japanese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Japanese pass identified 25 actionable formula, terminology, grammar, technical-clarity, and SI-unit defects across electrical, circuit, TCR, trigonometric, thermal, and unit content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Japanese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ja-20260818-026",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating summary said current changes resistance into heat instead of electrical energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary used 電流が抵抗を熱に変える."
+            ],
+            "resolution": "Changed it to current converting electrical energy into heat."
+        },
+        {
+            "id": "ja-20260818-027",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coil setup used an unnatural verb for carrying current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup said the coil transmits 3 A."
+            ],
+            "resolution": "Rephrased it as 3 A flowing through the 0.8 Ω coil."
+        },
+        {
+            "id": "ja-20260818-028",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-heating paragraph used an English-derived headroom term and less natural wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used ヘッドルーム and mixed the caution structure."
+            ],
+            "resolution": "Rewrote it with Japanese safety-margin wording and clearer battery limits."
+        },
+        {
+            "id": "ja-20260818-029",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current-law heading mistranslated law as a current state.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was キルヒホッフの現在法則."
+            ],
+            "resolution": "Changed it to キルヒホッフの電流則."
+        },
+        {
+            "id": "ja-20260818-030",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KCL formula omitted standard spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was ΣI = 0."
+            ],
+            "resolution": "Restored Σ I = 0."
+        },
+        {
+            "id": "ja-20260818-031",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL explanation used current-direction and current-flow wording that was unnatural in Japanese.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used 現在の方向 and 伝送 for electrical current."
+            ],
+            "resolution": "Rewrote it with 電流の向き and natural flow wording."
+        },
+        {
+            "id": "ja-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series-resistance example localized the protected total-resistance variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was R_合計 = 0.40 Ω."
+            ],
+            "resolution": "Restored R_total = 0.40 Ω."
+        },
+        {
+            "id": "ja-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KVL formula omitted standard spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was ΣV = 0."
+            ],
+            "resolution": "Restored Σ V = 0."
+        },
+        {
+            "id": "ja-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KVL example omitted spacing between the voltage value and unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was +8.0V - V_1 - V_2 = 0."
+            ],
+            "resolution": "Restored +8.0 V - V_1 - V_2 = 0."
+        },
+        {
+            "id": "ja-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law paragraph mistranslated sign as a physical sign/indication.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used 兆候 instead of 符号."
+            ],
+            "resolution": "Rewrote it with natural loop-direction, polarity, and sign terminology."
+        },
+        {
+            "id": "ja-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series-cell formula localized the protected series note.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression ended with (シリーズ)."
+            ],
+            "resolution": "Restored the protected (series) notation."
+        },
+        {
+            "id": "ja-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning used awkward wording for charging cells in series.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used 直列リチウムイオン充電."
+            ],
+            "resolution": "Rephrased it as charging lithium-ion cells in series with per-cell monitoring and balancing/protection."
+        },
+        {
+            "id": "ja-20260818-038",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The TCR coefficient units omitted standard spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used 1/°C and ppm/°C."
+            ],
+            "resolution": "Changed it to 1 / °C and ppm / °C."
+        },
+        {
+            "id": "ja-20260818-039",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-difference instruction said temperatures rather than temperature differences.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began with 温度では."
+            ],
+            "resolution": "Changed it to the correct wording for T - T_0 temperature differences."
+        },
+        {
+            "id": "ja-20260818-040",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.setup",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The TCR example contained a corrupted ohm symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup rendered 1.00 Ω as 1.00 :9."
+            ],
+            "resolution": "Restored the 1.00 Ω notation."
+        },
+        {
+            "id": "ja-20260818-041",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation had incorrect side descriptions and awkward punctuation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph confused adjacent/opposite relationships and included an English-style fragment."
+            ],
+            "resolution": "Rewrote the definitions and SOH-CAH-TOA mnemonic in natural Japanese."
+        },
+        {
+            "id": "ja-20260818-042",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The worked formula localized the protected side label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression used Japanese labels inside the formula."
+            ],
+            "resolution": "Restored opposite = 10 × sin(30°) = 5 cm."
+        },
+        {
+            "id": "ja-20260818-043",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The second worked formula localized the protected side label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression used Japanese labels inside the formula."
+            ],
+            "resolution": "Restored adjacent = 10 × cos(30°) ≈ 8.66 cm."
+        },
+        {
+            "id": "ja-20260818-044",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The identity heading translated identities as personal identities.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 波形と役立つ正体."
+            ],
+            "resolution": "Changed it to 波形と恒等式."
+        },
+        {
+            "id": "ja-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity conclusion said more heaters were needed instead of more energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous sentence ended with さらに多くのヒーターが必要."
+            ],
+            "resolution": "Corrected it to say that more energy is required because of heat loss."
+        },
+        {
+            "id": "ja-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading relied on awkward loanwords.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was オブジェクトとマテリアル."
+            ],
+            "resolution": "Changed it to 物体と材料."
+        },
+        {
+            "id": "ja-20260818-047",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI length row used an English-derived spelling and a localized unit name as the symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row was 長さ / メーター / メートル."
+            ],
+            "resolution": "Corrected it to 長さ / メートル / m."
+        },
+        {
+            "id": "ja-20260818-048",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.1.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The SI mass quantity was mistranslated as misa.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used ミサ instead of 質量."
+            ],
+            "resolution": "Changed it to 質量."
+        },
+        {
+            "id": "ja-20260818-049",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.6.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The candela symbol used uppercase letters.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used CD instead of cd."
+            ],
+            "resolution": "Corrected the symbol to cd."
+        },
+        {
+            "id": "ja-20260818-050",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.2.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The milli prefix used the Japanese word for metre as its symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used メートル for 10^-3."
+            ],
+            "resolution": "Corrected the symbol to m."
+        }
+    ]
+}

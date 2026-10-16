@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T172926803Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Bengali pass identified 25 remaining technical wording, terminology, and unit-formatting defects across TCR, trigonometry, thermal concepts, heat flux, and SI units; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The watt conversion used the wrong Bengali prefix for milliwatts.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the protected engineering form 1 W = 1,000 mW."
+        },
+        {
+            "id": "bn-20260818-077",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR description used an awkward verb for describing resistance change.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with natural Bengali technical wording."
+        },
+        {
+            "id": "bn-20260818-078",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR summary used প্রতিরোধ ক্ষমতা, which can mean resistance capacity rather than resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the precise Bengali term for resistance."
+        },
+        {
+            "id": "bn-20260818-079",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The near-zero TCR bullet used an inconsistent transliteration and awkward construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with consistent TCR and রোধ terminology."
+        },
+        {
+            "id": "bn-20260818-080",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coefficient-sign bullet was grammatically incomplete.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a complete Bengali instruction while preserving the sign warning."
+        },
+        {
+            "id": "bn-20260818-081",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked example title used an unnatural genitive phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the concise title উত্তপ্ত রোধ."
+        },
+        {
+            "id": "bn-20260818-082",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to I = V / R."
+        },
+        {
+            "id": "bn-20260818-083",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The power paragraph mixed resistance capacity with electrical power terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it to distinguish রোধ from বৈদ্যুতিক ক্ষমতা."
+        },
+        {
+            "id": "bn-20260818-084",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry title translated sides as দিক rather than the geometric term বাহু.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to অজানা বাহু ও কোণ নির্ণয়."
+        },
+        {
+            "id": "bn-20260818-085",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle setup used an unnatural verb for forming an angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a natural statement that a 10 cm hypotenuse forms a 30° angle."
+        },
+        {
+            "id": "bn-20260818-086",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The example conclusion used an awkward literal phrase for an inverse trigonometric function.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to বিপরীতমুখী ত্রিকোণমিতিক ফাংশন."
+        },
+        {
+            "id": "bn-20260818-087",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The waveform instruction referred to keeping sine and quadrant rather than signs and quadrant.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to preserve the sign and quadrant."
+        },
+        {
+            "id": "bn-20260818-088",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity example title retained the literal কাজের উদাহরণ.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the clearer Bengali title সমাধানসহ উদাহরণ."
+        },
+        {
+            "id": "bn-20260818-089",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity setup localized kg inconsistently and used less natural wording for water.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with standard units and natural Bengali."
+        },
+        {
+            "id": "bn-20260818-090",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-heating title used an awkward literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to বৈদ্যুতিক শক্তিতে উত্তাপ."
+        },
+        {
+            "id": "bn-20260818-091",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heating-time formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to t = m × c × ΔT / P."
+        },
+        {
+            "id": "bn-20260818-092",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object/material paragraph mixed English punctuation with a literal property phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as consistent Bengali prose."
+        },
+        {
+            "id": "bn-20260818-093",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The phase-change explanation used অবস্থা rather than the more precise Bengali term দশা.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with দশা and preserved the latent-heat unit."
+        },
+        {
+            "id": "bn-20260818-094",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux summary used an ungrammatical phrase for per-area transfer.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to একক ক্ষেত্রফল দিয়ে তাপ স্থানান্তরের হার."
+        },
+        {
+            "id": "bn-20260818-095",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The q'' definition called heat-flux density simply heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to তাপ-প্রবাহের ঘনত্ব and retained W/m²."
+        },
+        {
+            "id": "bn-20260818-096",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked example localized watt inconsistently.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the protected 100 W and 0.020 m² units."
+        },
+        {
+            "id": "bn-20260818-097",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The radiation paragraph used an unclear rendering of emissivity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with নির্গম্যতা and smoother technical Bengali."
+        },
+        {
+            "id": "bn-20260818-098",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI title said common units rather than base units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to মৌলিক এসআই একক."
+        },
+        {
+            "id": "bn-20260818-099",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI time row used an incorrect Bengali unit name and symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to সময়, সেকেন্ড, s."
+        },
+        {
+            "id": "bn-20260818-100",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI temperature row used a Bengali transliteration for the protected kelvin symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Bengali presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed the symbol to K."
+        }
+    ]
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "pl",
+    "cycleId": "pl-20260818T212411338Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Polish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Polish pass identified 25 actionable terminology, grammar, formula-notation, technical-clarity, and SI-unit defects across circuit, Joule-heating, TCR, trigonometric, thermal, and SI content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Polish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "pl-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm's-law relationship heading was too vague in Polish.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Związek."],
+            "resolution": "Changed it to the technical term Zależność."
+        },
+        {
+            "id": "pl-20260818-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The rearranged-formulas heading was a literal and unnatural Polish phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Zmienione formuły."],
+            "resolution": "Changed it to Przekształcone wzory."
+        },
+        {
+            "id": "pl-20260818-053",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The zero-resistance warning used an awkward unit-first construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous text was Rezystancja zerowa Ω jest idealnym zwarciem i należy się z nią obchodzić osobno."],
+            "resolution": "Rephrased it as resistance equal to zero being an ideal short circuit that needs separate treatment."
+        },
+        {
+            "id": "pl-20260818-054",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance example title used the less precise word opór.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Znajdź opór."],
+            "resolution": "Changed it to Oblicz rezystancję for consistency with the concept terminology."
+        },
+        {
+            "id": "pl-20260818-055",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage example title used an imperative that was inconsistent with the other example labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Znajdź napięcie."],
+            "resolution": "Changed it to Oblicz napięcie."
+        },
+        {
+            "id": "pl-20260818-056",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.0",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The kilo-ohm conversion did not use Polish thousands grouping.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used 1 kΩ = 1000 Ω."],
+            "resolution": "Changed it to 1 kΩ = 1 000 Ω for consistent engineering notation."
+        },
+        {
+            "id": "pl-20260818-057",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description used a literal loanword and called resistance opór.",
+            "disposition": "resolved",
+            "evidence": ["The previous description used konwersję ... przez opór."],
+            "resolution": "Rewrote it with zamianę energii and the precise term rezystancja."
+        },
+        {
+            "id": "pl-20260818-058",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current definition used an unnatural Polish sentence structure.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was I jest prądem w amperach (A)."],
+            "resolution": "Changed it to I to prąd wyrażony w amperach (A)."
+        },
+        {
+            "id": "pl-20260818-059",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-factor bullet used a literal transfer term and vague word for surrounding equipment.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began with Transfer ciepła do powietrza, cieczy i sprzętu."],
+            "resolution": "Rephrased it as heat transfer to air, liquids, and surrounding components."
+        },
+        {
+            "id": "pl-20260818-060",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The explanatory paragraph used transfer as an English-derived noun and did not name heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used szybkość transferu energii and strumień ciepła."],
+            "resolution": "Changed it to natural Polish and the more precise term gęstość strumienia ciepła."
+        },
+        {
+            "id": "pl-20260818-061",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-terms heading was translated as circuit conditions rather than terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Warunki obwodu."],
+            "resolution": "Changed it to Terminy dotyczące obwodu."
+        },
+        {
+            "id": "pl-20260818-062",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff description used an awkward plural construction for circuit nodes.",
+            "disposition": "resolved",
+            "evidence": ["The previous description referred to węzłach obwodów."],
+            "resolution": "Rewrote it as behavior at circuit nodes and around closed loops."
+        },
+        {
+            "id": "pl-20260818-063",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The KVL example formula retained an English-style decimal point in a Polish locale.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began with +8.0 V."],
+            "resolution": "Changed the numeric notation to +8,0 V."
+        },
+        {
+            "id": "pl-20260818-064",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell statement used an awkward phrase for approximate summation.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended with pojemność i dostępny prąd zwiększają się w przybliżeniu."],
+            "resolution": "Rephrased it to say that capacity and available current approximately add."
+        },
+        {
+            "id": "pl-20260818-065",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-solving bullet used the literal phrase równania jednoczesne.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said Rozwiąż równania jednoczesne i sprawdź bilans mocy."],
+            "resolution": "Changed it to the standard Polish term układ równań."
+        },
+        {
+            "id": "pl-20260818-066",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR unit explanation said temperatures use a scale instead of being expressed in one.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was Temperatury muszą używać tej samej skali i jednostek."],
+            "resolution": "Rewrote it to require the same temperature scale and compatible units for T - T_0."
+        },
+        {
+            "id": "pl-20260818-067",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The TCR example omitted conventional spacing in the coefficient units.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used 400 × 10^-6 / °C and 0,0004 / °C without the locale's unit spacing convention."],
+            "resolution": "Normalized the coefficient formula notation to the Polish engineering style."
+        },
+        {
+            "id": "pl-20260818-068",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR limitations paragraph used a literal phrase for material changes and an imprecise result comparison.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used zmiany materiału and różnił się od szacunków."],
+            "resolution": "Clarified changes in material properties and the first-order estimate."
+        },
+        {
+            "id": "pl-20260818-069",
+            "translationId": "catalog.concepts.concept-trigonometry.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The trigonometry description used an unnatural verb for relating angles and lengths.",
+            "disposition": "resolved",
+            "evidence": ["The previous description began with Trygonometria wiąże kąty i długości."],
+            "resolution": "Changed it to łączy kąty z długościami."
+        },
+        {
+            "id": "pl-20260818-070",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.degrees-and-radians.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The degrees-and-radians guidance contained an unnecessary comma and a literal phrase for angle mode.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used tryb prawidłowego kąta and placed a comma before daje."],
+            "resolution": "Rewrote it as the correct angle mode and a full-turn statement."
+        },
+        {
+            "id": "pl-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity definition used a terse unit list without saying what C represents.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was C to pojemność cieplna w J/K lub J/°C."],
+            "resolution": "Rephrased it as heat capacity expressed in J/K or J/°C."
+        },
+        {
+            "id": "pl-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.setup",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The water-heating setup omitted standard spacing before degree symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup used 20°C and 70°C."],
+            "resolution": "Changed the temperatures to 20 °C and 70 °C and added natural Polish punctuation."
+        },
+        {
+            "id": "pl-20260818-073",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-heating heading was unnecessarily wordy.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Ogrzewanie energią elektryczną."],
+            "resolution": "Changed it to the concise technical heading Ogrzewanie elektryczne."
+        },
+        {
+            "id": "pl-20260818-074",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object-versus-material heading used an informal contrast word.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Przedmiot kontra materiał."],
+            "resolution": "Changed it to the neutral technical heading Obiekt a materiał."
+        },
+        {
+            "id": "pl-20260818-075",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table heading called the entries typical units instead of identifying them as base units.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Typowe jednostki SI."],
+            "resolution": "Changed it to Jednostki podstawowe SI."
+        }
+    ]
+}

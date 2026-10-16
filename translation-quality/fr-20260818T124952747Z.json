@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "fr",
+    "cycleId": "fr-20260818T124952747Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and French source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded French pass identified 25 actionable defects in electrical, circuit, trigonometric, thermal, and unit terminology; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent French human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "fr-20260818-026",
+            "translationId": "concept-ohms-law.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance-example title used an incorrect French construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Trouver de la résistance’."],
+            "resolution": "Changed it to ‘Trouver la résistance’."
+        },
+        {
+            "id": "fr-20260818-027",
+            "translationId": "concept-ohms-law.worked-examples.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The resistance formula contained the corrupted result ‘6 = 9’. ",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘R = 12 V / 2 A = 6 = 9’."],
+            "resolution": "Restored the protected result ‘6 Ω’."
+        },
+        {
+            "id": "fr-20260818-028",
+            "translationId": "concept-ohms-law.worked-examples.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The resistance conclusion repeated the corrupted result.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with ‘6 = 9’."],
+            "resolution": "Restored the conclusion as 6 Ω."
+        },
+        {
+            "id": "fr-20260818-029",
+            "translationId": "concept-ohms-law.electrical-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Electrical power was translated as electrical energy.",
+            "disposition": "resolved",
+            "evidence": ["The section formula and paragraph describe puissance P, not energy."],
+            "resolution": "Changed the title to ‘Puissance électrique’."
+        },
+        {
+            "id": "fr-20260818-030",
+            "translationId": "concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Joule-heating summary said current transforms resistance into heat.",
+            "disposition": "resolved",
+            "evidence": ["Electrical energy, not resistance, is converted into heat."],
+            "resolution": "Rephrased it as electrical current transforming electrical energy into heat."
+        },
+        {
+            "id": "fr-20260818-031",
+            "translationId": "concept-joule-heating.worked-example.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule formula used spaces inside superscript expressions.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘P = I ^ 2 × R = 3 ^ 2’."],
+            "resolution": "Restored the protected formula syntax I^2 and 3^2."
+        },
+        {
+            "id": "fr-20260818-032",
+            "translationId": "concept-joule-heating.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The paragraph called electrical energy a rate of transfer.",
+            "disposition": "resolved",
+            "evidence": ["The source distinguishes power as a rate from energy itself."],
+            "resolution": "Changed the subject to puissance électrique."
+        },
+        {
+            "id": "fr-20260818-033",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit introduction used an awkward literal phrase for reasoning about a diagram.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said the terms made reasoning about a schematic easier."],
+            "resolution": "Changed it to facilitate understanding a circuit schematic."
+        },
+        {
+            "id": "fr-20260818-034",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "A branch was translated as an ‘actual’ path instead of a current path.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘chemin actuel’."],
+            "resolution": "Changed it to ‘chemin de courant’."
+        },
+        {
+            "id": "fr-20260818-035",
+            "translationId": "concept-kirchhoffs-laws.current-law.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law title used ‘actuelle’ rather than the electrical-current term.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘La loi actuelle de Kirchhoff’."],
+            "resolution": "Changed it to ‘La loi des courants de Kirchhoff’."
+        },
+        {
+            "id": "fr-20260818-036",
+            "translationId": "concept-kirchhoffs-laws.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-branches formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘parallel branches’."],
+            "resolution": "Translated the label as ‘branches parallèles’."
+        },
+        {
+            "id": "fr-20260818-037",
+            "translationId": "concept-kirchhoffs-laws.cells.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘series’."],
+            "resolution": "Translated the label as ‘série’."
+        },
+        {
+            "id": "fr-20260818-038",
+            "translationId": "concept-kirchhoffs-laws.cells.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘parallel’."],
+            "resolution": "Translated the label as ‘parallèle’."
+        },
+        {
+            "id": "fr-20260818-039",
+            "translationId": "concept-trigonometry.right-triangles.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula retained English geometry terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / hypotenuse’."],
+            "resolution": "Translated the labels as ‘opposé / hypoténuse’."
+        },
+        {
+            "id": "fr-20260818-040",
+            "translationId": "concept-trigonometry.right-triangles.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula retained English geometry terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘adjacent / hypotenuse’."],
+            "resolution": "Translated the labels as ‘adjacent / hypoténuse’."
+        },
+        {
+            "id": "fr-20260818-041",
+            "translationId": "concept-trigonometry.right-triangles.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula retained English geometry terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / adjacent’."],
+            "resolution": "Translated the labels as ‘opposé / adjacent’."
+        },
+        {
+            "id": "fr-20260818-042",
+            "translationId": "concept-trigonometry.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The opposite-side formula used an awkward literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began with ‘ci-contre’."],
+            "resolution": "Changed it to the technical term ‘opposé’."
+        },
+        {
+            "id": "fr-20260818-043",
+            "translationId": "concept-trigonometry.finding-sides-and-angles.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The adjacent-side formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘adjacent’ in an otherwise French example."],
+            "resolution": "Retained the standard French technical term ‘adjacent’."
+        },
+        {
+            "id": "fr-20260818-044",
+            "translationId": "concept-trigonometry.waveforms-and-identities.bullets.2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The waveform note mistranslated sign as panel.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘Gardez le panneau’."],
+            "resolution": "Changed it to preserve the sign and quadrant."
+        },
+        {
+            "id": "fr-20260818-045",
+            "translationId": "concept-heat-capacity.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity summary used incorrect French question grammar.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘Quelle quantité d’énergie un objet a besoin’."],
+            "resolution": "Rephrased it as ‘De quelle quantité d'énergie un objet a-t-il besoin’."
+        },
+        {
+            "id": "fr-20260818-046",
+            "translationId": "concept-heat-capacity.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The water example title was an unnatural noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Eau de chauffage’."],
+            "resolution": "Changed it to ‘Chauffer de l'eau’."
+        },
+        {
+            "id": "fr-20260818-047",
+            "translationId": "concept-heat-capacity.worked-example.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity conclusion referred to a radiator instead of a heater.",
+            "disposition": "resolved",
+            "evidence": ["The source discusses a real heater; ‘radiateur’ narrows the meaning incorrectly."],
+            "resolution": "Changed it to ‘un véritable chauffage’."
+        },
+        {
+            "id": "fr-20260818-048",
+            "translationId": "concept-heat-flux.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux check used an infinitive instead of an imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Distinguer’."],
+            "resolution": "Changed it to the formal imperative ‘Distinguez’."
+        },
+        {
+            "id": "fr-20260818-049",
+            "translationId": "concept-heat-flux.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The final heat-flux check used an infinitive instead of an imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘utiliser’."],
+            "resolution": "Changed it to ‘utilisez’ and clarified temperature changes."
+        },
+        {
+            "id": "fr-20260818-050",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table mistranslated mass as ‘Messe’. ",
+            "disposition": "resolved",
+            "evidence": ["The previous row used ‘Messe’ instead of ‘Masse’."],
+            "resolution": "Corrected the quantity label to ‘Masse’."
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "entityId": "battery-91",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A tabless 21700 power cell rated by Reliance at 6Ah and 50A maximum continuous discharge.",
+        "description": "The RS60 is Reliance's exact 21700 power-series cell. The current product matrix lists 6Ah nominal capacity, at least 5C continuous discharge without the 80°C cutoff, and 50A maximum continuous discharge. Battery Mooch published an exact-model vaping test at 5850mAh.",
+        "highlights": [
+            "6Ah nominal capacity",
+            "50A maximum continuous rating",
+            "Tabless construction",
+            "Exact vaping test"
+        ]
+    },
+    "sources": [
+        {
+            "id": "matrix",
+            "title": "Tabless cylindrical cell product matrix",
+            "url": "https://www.reliance-battery.com/products-en.html",
+            "publisher": "Reliance Battery",
+            "limitations": "Manufacturer product claims."
+        },
+        {
+            "id": "voltt",
+            "title": "Reliance RS60 cell library record",
+            "url": "https://voltt.aboutenergy.io/cell-library/Reliance_RS60",
+            "publisher": "About:Energy Voltt",
+            "limitations": "Manufacturer-linked secondary database."
+        },
+        {
+            "id": "ecf",
+            "title": "Bench Test Results: Reliance RS60 - 50A 5850mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/feeds/hot?page=10",
+            "publisher": "E-Cigarette Forum",
+            "limitations": "Full exact-model report text was retrieved through the ECF feed and reviewed; the feed is a presentation of the original forum report."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "Reliance's product matrix identifies INR21700-RS60 as an exact model in its RS power series.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Reliance lists 6Ah nominal capacity; the exact vaping test title reports 5850mAh.",
+            "evidenceDate": "2026-06-19",
+            "confidence": "medium"
+        },
+        {
+            "id": "rating",
+            "statement": "Reliance lists 50A maximum continuous discharge, while the retrieved vaping report supports 30A continuous and treats 50A as temperature-limited.",
+            "evidenceDate": "2026-06-19",
+            "confidence": "high"
+        },
+        {
+            "id": "test",
+            "statement": "The retrieved exact-model vaping report measured about 5850mAh, about 77°C at 30A to 2.5V, and considered 30A continuous reasonable.",
+            "evidenceDate": "2026-06-19",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The product matrix separates a no-cutoff continuous value from a maximum value, and the retrieved test supports 30A continuous while treating 50A as temperature-limited.",
+            "runtimeImplication": "Use 30A as the proposed runtime ceiling."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "chemistry": "Lithium-ion, Ni-based cathode",
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

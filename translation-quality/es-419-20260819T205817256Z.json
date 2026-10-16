@@ -1,0 +1,282 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T205817256Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete effective es-419 locale, canonical English scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata validation, TypeScript typecheck, the full test suite, and the production build passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh independent pass identified 17 grouped areas for improvement; all 17 were corrected in the bounded es-419 batch."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Latin American Spanish human review was performed; the locale remains machine-reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner authorized correction and commit, but not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "es419-register-consistency",
+            "translationId": "messages.home.chooseCalculator;calculators.juice.description;calculators.modrange.choosePreset;comparisons.batteries.compareDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The locale mixes tú, usted, and infinitive-style UI wording.",
+            "disposition": "resolved",
+            "resolution": "Standardized the effective es-419 UI on informal tú forms for these user-facing actions.",
+            "evidence": [
+                "The same user-facing surface uses Elige, Ingresa, Mantente, and Explora alongside Calcule, Consulte, Elija, and Seleccione.",
+                "Material and battery comparison selectors also mix Elige, Seleccionar, and Seleccione."
+            ],
+            "ownerQuestion": "Should es-419 standardize on informal tú or formal usted before the next correction batch?"
+        },
+        {
+            "id": "es419-shared-machine-ui",
+            "translationId": "messages.navigation.calculators;messages.theme.switchToLight;messages.catalogEditor.basedOnPreset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Several shared labels remain literal or grammatically incomplete.",
+            "disposition": "resolved",
+            "resolution": "Rewrote the shared labels as natural Spanish UI phrases.",
+            "evidence": [
+                "Navegación con calculadora is not a natural label for calculator navigation.",
+                "Cambiar al modo de luz is a literal rendering of light mode.",
+                "Basado en preestablecido is missing the article and uses an awkward noun."
+            ],
+            "ownerQuestion": "Should these shared UI labels be corrected in the next bounded batch?"
+        },
+        {
+            "id": "es419-coil-wire-terminology",
+            "translationId": "calculators.coil.singleCoil;calculators.coil.resistanceWireLength;calculators.coil.wrapSpacing;calculators.wirewiz.twistHelp;calculators.wirewiz.wireDesign",
+            "category": "terminology-disagreement",
+            "severity": "high",
+            "summary": "Coil, wire, and winding terminology is not consistently aligned with the locale glossary or the calculator context.",
+            "disposition": "resolved",
+            "resolution": "Standardized vaping-facing coil terminology on resistencia and wire terminology on alambre.",
+            "evidence": [
+                "The glossary prefers resistencia for vaping-facing coil usage, while many calculator labels still use bobina.",
+                "The same technical surface alternates between alambre and cable.",
+                "Espaciado de envoltura and cable paralelo sin torcer are literal and obscure descriptions of turns and wire construction."
+            ],
+            "ownerQuestion": "Should the next batch standardize coil-facing UI on resistencia and wire terminology on alambre, with bobina retained only where geometry requires it?"
+        },
+        {
+            "id": "es419-battery-output-semantics",
+            "translationId": "calculators.batt.description;calculators.batt.atomizerOutput;calculators.batt.outputVoltage;calculators.batt.estimatedRuntime;calculators.batt.safe",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Battery-calculator labels blur output power, discharge current, and runtime semantics.",
+            "disposition": "resolved",
+            "resolution": "Clarified battery output power, discharge-current limits, and continuous autonomy labels and notices.",
+            "evidence": [
+                "Salida del atomizador does not explicitly identify output power.",
+                "Tiempo de ejecución estimado and Tiempo de ejecución continuo sound like software execution rather than battery operating time.",
+                "El consumo estimado está dentro del límite efectivo de la batería does not clearly identify discharge current."
+            ],
+            "ownerQuestion": "Should the battery calculator use explicit terms such as potencia de salida, corriente de descarga, and autonomía?"
+        },
+        {
+            "id": "es419-battery-help-and-evidence",
+            "translationId": "messages.catalogEditor.batteryHelp;messages.encyclopediaDetail.batteryInternal;messages.encyclopediaDetail.continuousDischargeCurrent;messages.encyclopediaDetail.rewrapExplanation",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Battery help and evidence text still contains wording that can obscure the measured quantity or evidence qualification.",
+            "disposition": "resolved",
+            "resolution": "Rewrote safety-sensitive battery help and evidence strings to identify current values and evidence limitations explicitly.",
+            "evidence": [
+                "The continuous-discharge label is presented as a clasificación rather than clearly as a current of __ A.",
+                "Paquete interno en el dispositivo is awkward and does not clearly contrast an integrated pack with a user-replaceable cell.",
+                "El fabricante de la celda subyacente no se asume en el envoltorio is not idiomatic Spanish and weakens the evidence limitation."
+            ],
+            "ownerQuestion": "Should this battery-safety group be rewritten and reviewed as a single safety-critical terminology batch?"
+        },
+        {
+            "id": "es419-battery-lifecycle-wording",
+            "translationId": "messages.encyclopediaDetail.oldBatteryWarning;messages.encyclopediaDetail.unknownBatteryIntroductionNotice;messages.encyclopediaDetail.unknownChemistry",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Battery lifecycle and chemistry notices contain mistranslated or unnatural concepts.",
+            "disposition": "resolved",
+            "resolution": "Corrected lifecycle, supersession, and chemistry wording.",
+            "evidence": [
+                "Probablemente sea reemplazado changes a possible supersession into a prediction about the battery.",
+                "Si ha sido superada is not a natural rendering of whether a model has been superseded.",
+                "Etiqueta química is not the intended meaning of a confirmed battery chemistry."
+            ],
+            "ownerQuestion": "Should these notices be rewritten around reemplazada/sustituida and composición química?"
+        },
+        {
+            "id": "es419-tcr-terminology",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.temperatureCoefficient;calculators.tcr.title;catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "TCR is repeatedly shortened to an ambiguous temperature coefficient.",
+            "disposition": "resolved",
+            "resolution": "Standardized TCR on coeficiente de temperatura de la resistencia across UI and catalog content.",
+            "evidence": [
+                "Coeficiente de temperatura omits that the coefficient applies to electrical resistance.",
+                "The catalog bullet translates α as a generic material temperature coefficient rather than a resistance temperature coefficient.",
+                "The title and property label should use one precise term across calculator and encyclopedia surfaces."
+            ],
+            "ownerQuestion": "Should es-419 standardize TCR on coeficiente de temperatura de la resistencia?"
+        },
+        {
+            "id": "es419-formula-localization",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas;catalog.concepts.concept-trigonometry.sections.right-triangles.formulas;catalog.concepts.concept-trigonometry.sections.degrees-and-radians.formulas",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Several formulas still expose English words or mixed decimal conventions inside Spanish technical content.",
+            "disposition": "resolved",
+            "resolution": "Translated visible formula annotations and normalized Spanish decimal formatting in the affected examples.",
+            "evidence": [
+                "The Kirchhoff voltage formula still contains (parallel branches) and (series).",
+                "The trigonometry formulas still contain opposite, adjacent, hypotenuse, and radians.",
+                "Spanish explanatory sections mix decimal dots and decimal commas, such as 4.2 V beside 4,2 V."
+            ],
+            "ownerQuestion": "Should all visible formula annotations and numeric examples be normalized in a dedicated technical-formatting batch?"
+        },
+        {
+            "id": "es419-trigonometry-orthography",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.title;catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title;catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Trigonometry headings and examples retain lower-case or missing-accent Spanish.",
+            "disposition": "resolved",
+            "resolution": "Corrected trigonometry headings, accents, casing, and heading punctuation.",
+            "evidence": [
+                "triangulos rectángulos is missing the initial capital and accent on Triángulos.",
+                "encontrar un lado is lower-case in a title where surrounding headings use title-style capitalization.",
+                "Formas de onda e identidades útiles. contains an unnecessary sentence period in the heading."
+            ],
+            "ownerQuestion": "Should the trigonometry headings be normalized as part of the formula-localization batch?"
+        },
+        {
+            "id": "es419-heat-flux-style",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0;catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Heat-flux prose mixes sentence capitalization and infinitive instructions.",
+            "disposition": "resolved",
+            "resolution": "Cleaned heat-flux prose, instruction style, and numeric formatting.",
+            "evidence": [
+                "The paragraph contains σ; Las temperaturas after a semicolon.",
+                "Distinguir el flujo de calor promedio is an infinitive fragment among imperative instructions.",
+                "The worked example also mixes decimal dots and commas in a way that can be misread."
+            ],
+            "ownerQuestion": "Should the heat-flux concept receive a focused prose and number-format cleanup?"
+        },
+        {
+            "id": "es419-mod-board-terminology",
+            "translationId": "messages.home.catalogDescription;messages.encyclopedia.categoryLabels.mods;messages.encyclopediaDetail.propertyLabels.boardController;messages.encyclopediaDetail.modBoardCatalog",
+            "category": "terminology-disagreement",
+            "severity": "medium",
+            "summary": "Mod and control-board terminology is improved but still mixes mod, tarjeta, placa, and tablero across the effective locale.",
+            "disposition": "resolved",
+            "resolution": "Applied mod and tarjeta de control terminology consistently to the affected catalog UI.",
+            "evidence": [
+                "The user-facing category uses tarjetas while the draft catalog still contains placa, tablero, and tarjeta/controlador variants.",
+                "Some strings say mod, some say modificaciones, and some say dispositivos for the same catalog category.",
+                "The glossary prefers tarjeta de control, but the policy is not applied uniformly to all labels and descriptions."
+            ],
+            "ownerQuestion": "Should es-419 adopt tarjeta de control for boards and preserve mod as the device term throughout the catalog UI?"
+        },
+        {
+            "id": "es419-comparison-selectors",
+            "translationId": "comparisons.batteries.compareChooseBattery;comparisons.materials.chooseMaterial;comparisons.materials.firstMaterial;comparisons.materials.secondMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Comparison selectors use inconsistent grammatical forms and address.",
+            "disposition": "resolved",
+            "resolution": "Standardized battery and material comparison selectors on informal imperative wording and A/B labels.",
+            "evidence": [
+                "Elige una batería is informal while the comparison description and selector labels use formal usted.",
+                "Seleccionar material A is an infinitive while Seleccione el material B is an imperative.",
+                "The battery and material comparers should expose the same A/B selector pattern."
+            ],
+            "ownerQuestion": "Should all es-419 comparer selectors use one formal or informal imperative pattern?"
+        },
+        {
+            "id": "es419-comparison-grammar",
+            "translationId": "comparisons.mods.invalidSelection;comparisons.mods.sameSelection;comparisons.materials.capabilityDiffers;comparisons.materials.noSafetyNote",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Several comparison messages remain awkward, especially around agreement and catalog phrasing.",
+            "disposition": "resolved",
+            "resolution": "Rewrote comparison messages for agreement, catalog phrasing, and natural Spanish UI tone.",
+            "evidence": [
+                "El mod o la tarjeta de control al que hace referencia has a mixed-gender agreement problem.",
+                "Seleccionaste conflicts with the surrounding formal comparison messages.",
+                "Perfil de control de temperatura de catálogo is understandable but unnatural, and no se registra ninguna nota is stiff UI language."
+            ],
+            "ownerQuestion": "Should these comparer messages be rewritten together after the register and board-terminology policy is chosen?"
+        },
+        {
+            "id": "es419-catalog-metadata-register",
+            "translationId": "messages.encyclopediaDetail.sourceBackedMaterial;messages.encyclopediaDetail.sourceBackedEntity;messages.encyclopediaDetail.evidenceNotes;messages.encyclopediaDetail.confidence;messages.encyclopediaDetail.catalogNote",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Research-record metadata remains literal, legalistic, or inconsistent in capitalization.",
+            "disposition": "resolved",
+            "resolution": "Rewrote research-record metadata as consistent Spanish labels and messages.",
+            "evidence": [
+                "Registro de material respaldado por la fuente and Registro de entidad respaldado por fuente are awkward compounds.",
+                "Confianza is less precise than nivel de confianza for evidence metadata.",
+                "nota de catálogo is lower-case while neighboring metadata labels are title-cased."
+            ],
+            "ownerQuestion": "Should catalog research metadata be rewritten as a consistent Spanish UI terminology group?"
+        },
+        {
+            "id": "es419-lowercase-labels",
+            "translationId": "calculators.batt.outputVoltage;calculators.batt.nominalVoltage;calculators.coil.imperial;calculators.coil.roundWire;calculators.wirewiz.removeWire;calculators.wirewiz.tfrEditor",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "Many standalone labels remain lower-case or use inconsistent capitalization.",
+            "disposition": "resolved",
+            "resolution": "Normalized capitalization for the affected standalone calculator labels.",
+            "evidence": [
+                "voltaje de salida, tensión nominal, unidades imperiales, alambre redondo, quitar el cable, and editor TFR appear as standalone labels with inconsistent casing.",
+                "The inconsistency makes the locale look machine-generated even where the underlying terms are understandable."
+            ],
+            "ownerQuestion": "Should standalone Spanish labels be normalized for capitalization after the terminology corrections?"
+        },
+        {
+            "id": "es419-juice-register",
+            "translationId": "calculators.juice.amount;calculators.juice.baseLabel;calculators.juice.negativeValue;calculators.juice.saved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The e-liquid calculator mixes informal address, lower-case fragments, and literal recipe wording.",
+            "disposition": "resolved",
+            "resolution": "Rewrote the affected juice-calculator labels and notices in the selected informal UI register.",
+            "evidence": [
+                "Cantidad que quieres hacer and lo indicado en la etiqueta mix informal and fragmentary label styles.",
+                "Un valor negativo significa que la combinación actual no es viable is understandable but less direct than a result-state warning.",
+                "The surrounding calculator uses both Ingresa/Usa and formal imperative forms."
+            ],
+            "ownerQuestion": "Should the juice calculator be normalized to the same address and label style as the rest of es-419?"
+        },
+        {
+            "id": "es419-wirewiz-labels",
+            "translationId": "calculators.wirewiz.wireDesign;calculators.wirewiz.temperatureControl;calculators.wirewiz.twisted;calculators.wirewiz.removeWire;calculators.wirewiz.resistanceFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Wire Wizard still contains literal construction labels and lower-case fragments.",
+            "disposition": "resolved",
+            "resolution": "Clarified Wire Wizard construction terminology and normalized standalone label wording.",
+            "evidence": [
+                "Diseño de alambre and Alambre trenzado are understandable but need a deliberate wire-construction terminology policy.",
+                "Retorcido is less precise than trenzado for the construction option.",
+                "control de temperatura, factor de resistencia, and quitar el cable are lower-case fragments used as standalone UI labels."
+            ],
+            "ownerQuestion": "Should Wire Wizard receive a dedicated terminology and capitalization pass after the coil/wire policy is selected?"
+        }
+    ]
+}

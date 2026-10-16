@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260818T143525859Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Greek source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Greek pass identified 25 actionable formula, terminology, grammar, and technical-clarity defects across electrical, trigonometric, thermal, unit, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Greek human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "el-20260818-051",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule example described a power rate as joules per second without stating the equivalent power.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used a literal joules-per-second phrasing."],
+            "resolution": "Clarified the result as 7,2 W or 72 J in 10 seconds."
+        },
+        {
+            "id": "el-20260818-052",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-transfer bullet used a generic Greek word for material where equipment was intended.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet referred generically to material alongside air and liquid."],
+            "resolution": "Changed the final term to εξοπλισμό."
+        },
+        {
+            "id": "el-20260818-053",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula retained the English side name opposite.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula contained the English word opposite."],
+            "resolution": "Localized the side name as απέναντι πλευρά."
+        },
+        {
+            "id": "el-20260818-054",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula retained the English side names adjacent and hypotenuse.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula contained adjacent and hypotenuse in English."],
+            "resolution": "Localized the terms as διπλανή πλευρά and υποτείνουσα."
+        },
+        {
+            "id": "el-20260818-055",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula retained English names for both triangle sides.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula contained opposite and adjacent in English."],
+            "resolution": "Localized the terms as απέναντι πλευρά and διπλανή πλευρά."
+        },
+        {
+            "id": "el-20260818-056",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-sine formula retained English triangle-side terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous inverse formula used opposite and hypotenuse."],
+            "resolution": "Localized the terms as απέναντι πλευρά and υποτείνουσα."
+        },
+        {
+            "id": "el-20260818-057",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-cosine formula retained English triangle-side terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous inverse formula used adjacent and hypotenuse."],
+            "resolution": "Localized the terms as διπλανή πλευρά and υποτείνουσα."
+        },
+        {
+            "id": "el-20260818-058",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-tangent formula retained English triangle-side terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous inverse formula used opposite and adjacent."],
+            "resolution": "Localized the terms as απέναντι πλευρά and διπλανή πλευρά."
+        },
+        {
+            "id": "el-20260818-059",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-difference equivalence was phrased imprecisely.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet did not clearly state the one-kelvin and one-degree-Celsius difference equivalence."],
+            "resolution": "Rephrased the statement as a 1 K temperature difference equaling a 1 °C difference."
+        },
+        {
+            "id": "el-20260818-060",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating conclusion used a rounded or unclear time expression.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion did not preserve the validated 523 s result clearly."],
+            "resolution": "Restored the approximate ideal time and the 80-percent-efficiency result of 523 s."
+        },
+        {
+            "id": "el-20260818-061",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change explanation used an imprecise phrase for the material's phase.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used a generic or awkward phase description."],
+            "resolution": "Changed it to the precise phrase φάση του υλικού."
+        },
+        {
+            "id": "el-20260818-062",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The limitation paragraph referred to specific heat instead of specific heat capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous Greek terminology did not distinguish specific heat capacity precisely."],
+            "resolution": "Changed the term to ειδική θερμοχωρητικότητα and retained the practical limitations."
+        },
+        {
+            "id": "el-20260818-063",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux description used a less precise translation for heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous description did not consistently use the technical Greek term for heat-flux density."],
+            "resolution": "Aligned the description with πυκνότητα θερμικής ροής."
+        },
+        {
+            "id": "el-20260818-064",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux summary was indirect and less clear than the source concept.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary did not state the rate of heat transfer per unit area directly."],
+            "resolution": "Changed it to Ο ρυθμός μεταφοράς θερμότητας ανά μονάδα επιφάνειας."
+        },
+        {
+            "id": "el-20260818-065",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux definition did not use the preferred technical Greek term.",
+            "disposition": "resolved",
+            "evidence": ["The previous definition described q'' with a generic heat-flow term."],
+            "resolution": "Defined q'' as πυκνότητα θερμικής ροής in W/m²."
+        },
+        {
+            "id": "el-20260818-066",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The definition paragraph blurred heat capacity and heat-flux density terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used inconsistent terms when contrasting stored energy with transfer rate."],
+            "resolution": "Rewrote the contrast using πυκνότητα θερμικής ροής consistently."
+        },
+        {
+            "id": "el-20260818-067",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example section title was translated with an overly generic label.",
+            "disposition": "resolved",
+            "evidence": ["The previous title did not clearly identify the section as a calculation example."],
+            "resolution": "Changed it to Παράδειγμα υπολογισμού."
+        },
+        {
+            "id": "el-20260818-068",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example title omitted the technical density concept.",
+            "disposition": "resolved",
+            "evidence": ["The previous title used a generic heater heat-flow phrase."],
+            "resolution": "Changed it to Μέση πυκνότητα θερμικής ροής από θερμαντήρα."
+        },
+        {
+            "id": "el-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example conclusion used an inconsistent quantity name.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion did not align its terminology with the heat-flux density definition."],
+            "resolution": "Aligned the conclusion with πυκνότητα θερμικής ροής and preserved both unit forms."
+        },
+        {
+            "id": "el-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction note used an inconsistent translation for heat flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used a generic flow term for the direction indicated by the minus sign."],
+            "resolution": "Changed it to θερμική ροή."
+        },
+        {
+            "id": "el-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The convection-and-radiation paragraph used inconsistent technical capitalization and phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used a lowercase or nonstandard rendering of Kelvin and less precise technical wording."],
+            "resolution": "Clarified the coefficients, absolute temperatures, and the unit name Kelvin."
+        },
+        {
+            "id": "el-20260818-072",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.2.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI base-units table used an inconsistent Greek form for second.",
+            "disposition": "resolved",
+            "evidence": ["The previous table row did not use the standard Greek unit name."],
+            "resolution": "Changed the unit name to δευτερόλεπτο."
+        },
+        {
+            "id": "el-20260818-073",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-connection definition did not clearly state that current has one path.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used an awkward literal description of a series connection."],
+            "resolution": "Rewrote it as a series connection providing only one path through the components."
+        },
+        {
+            "id": "el-20260818-074",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge comparison used an awkward phrase for stranded construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used a literal or unnatural Greek expression for strand construction."],
+            "resolution": "Changed it to κατασκευή με κλώνους and clarified its effect on measured diameter."
+        },
+        {
+            "id": "el-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical wire specification bullet did not clearly describe stranded conductors and their construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used vague wording for multi-strand conductors."],
+            "resolution": "Rewrote it with πολύκλωνους αγωγούς and κατασκευή των κλώνων."
+        }
+    ]
+}

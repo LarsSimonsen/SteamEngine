@@ -1,0 +1,14 @@
+{
+    "schemaVersion": 1, "locale": "nb", "cycleId": "nb-20260819T130917428Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Bokmål source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Bokmål critique confirmed interpolation and protected names work and found ambiguous coil-lead terminology and an imprecise nicotine-safety instruction." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Bokmål human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "nb-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads were described with the anatomical word for legs, obscuring the electrical meaning.", "disposition": "resolved", "evidence": ["The fields describe the lead portions of resistance wire."], "resolution": "Used tilledning consistently in Coil and Wire Wizard." },
+        { "id": "nb-safety", "translationId": "calculators.juice.safetyText", "category": "factual-or-safety-risk", "severity": "medium", "summary": "The nicotine warning referred vaguely to mixing it yourself and softened the independent-check instruction.", "disposition": "resolved", "evidence": ["The context is mixing e-liquid from concentrated nicotine."], "resolution": "Named e-liquid explicitly and retained a direct independent-check instruction." }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "entityId": "j-well-alesia",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-69",
+            "title": "Alesia, la nouvelle box de J Well",
+            "url": "https://www.toute-la-franchise.com/news-alesia-la-nouvelle-box-de-l-enseigne-de-cigarette-electronique-j-well",
+            "limitations": "Exact-model trade article reports the Alesia being put on the market; it is not a first-sale record."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "J Well Alesia specification",
+            "url": "https://www.edampf-shop.com/layout/PDF_Download/DM_07_2015.pdf",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated"
+            }
+        ]
+    }
+}

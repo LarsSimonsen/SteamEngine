@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260820T005459479Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, complete effective Bengali runtime content, repository checks, and targeted Bengali technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation and TypeScript checking passed after every correction batch."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three complete-scope passes resolved 75 terminology, discharge-label, technical-concept, and Bengali grammar findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Bengali corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-shared-and-core-terms",
+            "translationId": "messages.home.tools.ohm.description",
+            "category": "terminology-disagreement",
+            "severity": "high",
+            "summary": "Twenty-five shared UI, calculator, comparison, and concept entries retained inconsistent power and resistance terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "Electrical power and resistance used mixed transliterations and Bengali engineering terms.",
+                "Several loading labels used three periods instead of the locale ellipsis.",
+                "Core concept statements retained machine-literal technical phrasing."
+            ],
+            "resolution": "Standardized Bengali power and resistance terminology and corrected shared labels and foundational concept prose."
+        },
+        {
+            "id": "bn-discharge-and-si-terms",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Twenty-five battery-discharge, Ohm, Joule, Kirchhoff, TCR, heat-flux, and SI entries remained awkward or ambiguous.",
+            "disposition": "resolved",
+            "evidence": [
+                "Continuous-discharge templates contained a duplicated article and mixed discharge terms.",
+                "Technical concepts mixed resistance with resistivity and power with energy terminology.",
+                "Several headings retained untranslated English possessives or literal machine constructions."
+            ],
+            "resolution": "Rewrote discharge templates and standardized circuit, thermal, and SI terminology without changing protected values."
+        },
+        {
+            "id": "bn-ui-and-concept-grammar",
+            "translationId": "messages.encyclopedia.noMatches",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Twenty-five visible messages and concept summaries used incomplete Bengali sentences, English punctuation, or unnatural calques.",
+            "disposition": "resolved",
+            "evidence": [
+                "Several no-result and saved-state messages were grammatically incomplete.",
+                "Converter precision help omitted necessary case marking.",
+                "Concept summaries and descriptions read as literal word-order transfers."
+            ],
+            "resolution": "Replaced the affected strings with complete, natural Bengali sentences and clearer technical summaries."
+        }
+    ]
+}

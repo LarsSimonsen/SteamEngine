@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T102009902Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Nynorsk translation defects in the remaining TCR and trigonometry text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-051",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-scale bullet retained the Bokmål form temperaturene and verb bruke.",
+            "disposition": "resolved",
+            "evidence": ["Before: Temperaturene må bruke samme skala ..."],
+            "resolution": "Changed to Nynorsk temperaturane and må bruke same skala."
+        },
+        {
+            "id": "nn-20260818-052",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.1.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The positive-TCR bullet used Bokmål article, verb, and plural forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En positiv TCR betyr at motstanden øker når temperaturen stiger; mange metaller oppfører seg slik."],
+            "resolution": "Changed to Nynorsk Ein, tyder, aukar, stig, and metall forms."
+        },
+        {
+            "id": "nn-20260818-053",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.1.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The negative-TCR bullet used Bokmål article, verb, and temperature form.",
+            "disposition": "resolved",
+            "evidence": ["Before: En negativ TCR betyr at motstanden synker når temperaturen stiger."],
+            "resolution": "Changed to Nynorsk Ein, tyder, søkk, and stig forms."
+        },
+        {
+            "id": "nn-20260818-054",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.1.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The near-zero TCR bullet retained Bokmål verb and preposition forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En TCR nær null betyr at motstanden endrer seg lite innenfor det angitte området."],
+            "resolution": "Changed to Nynorsk Ein, tyder, endrar, innanfor, and oppgitte forms."
+        },
+        {
+            "id": "nn-20260818-055",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.1.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coefficient-sign bullet retained several Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Fortegnet ... viss en negativ verdi erstattes ... snus forutsigelsen."],
+            "resolution": "Rewrote the sentence with Nynorsk forteikn, ein, blir erstatta, and føreseiing forms."
+        },
+        {
+            "id": "nn-20260818-056",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example title used the Bokmål form Regneeksempel.",
+            "disposition": "resolved",
+            "evidence": ["Before: Regneeksempel."],
+            "resolution": "Changed to: Rekneeksempel."
+        },
+        {
+            "id": "nn-20260818-057",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heated-resistor example title used Bokmål article and participle forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En oppvarmet motstand."],
+            "resolution": "Changed to: Ein oppvarma motstand."
+        },
+        {
+            "id": "nn-20260818-058",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example setup used Bokmål article and indefinite-form wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: En motstand ... med en TCR ..."],
+            "resolution": "Changed to Nynorsk Ein motstand and ein TCR."
+        },
+        {
+            "id": "nn-20260818-059",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example conclusion used the Bokmål adverb omtrent.",
+            "disposition": "resolved",
+            "evidence": ["Before: omtrent 3,2 % høgare."],
+            "resolution": "Changed omtrent to the Nynorsk om lag."
+        },
+        {
+            "id": "nn-20260818-060",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-limits title used the Bokmål form begrensninger.",
+            "disposition": "resolved",
+            "evidence": ["Before: TCR, effekt og praktiske begrensninger."],
+            "resolution": "Changed to: TCR, effekt og praktiske avgrensingar."
+        },
+        {
+            "id": "nn-20260818-061",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage explanation retained Bokmål forms throughout.",
+            "disposition": "resolved",
+            "evidence": ["Before: For en motstand ... drives ... øker ... strømmen ... en konstantstrømkilde."],
+            "resolution": "Rewrote the paragraph with Nynorsk articles, verbs, and constant-current terminology."
+        },
+        {
+            "id": "nn-20260818-062",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR applicability paragraph retained Bokmål forms for specification and self-heating.",
+            "disposition": "resolved",
+            "evidence": ["Before: Produsentens TCR gjelder normalt for et angitt ... selvoppvarming ... avviker."],
+            "resolution": "Rewrote the paragraph with Nynorsk produsenten sin, gjeld, oppgitt, sjølvoppvarming, and avvik forms."
+        },
+        {
+            "id": "nn-20260818-063",
+            "translationId": "catalog.concepts.concept-trigonometry.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry description retained the Bokmål verb knytter and noun modeller.",
+            "disposition": "resolved",
+            "evidence": ["Before: Trigonometri knytter sammen vinkler ... geometriske modeller."],
+            "resolution": "Changed to Nynorsk knyter, vinklar, and modellar."
+        },
+        {
+            "id": "nn-20260818-064",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle title used Bokmål adjective and noun forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Rettvinklede trekanter."],
+            "resolution": "Changed to: Rettvinkla trekantar."
+        },
+        {
+            "id": "nn-20260818-065",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle explanation was largely Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["Before: Relativt til en vinkel ... motstående ... hosliggende ... en huskeregel."],
+            "resolution": "Rewrote the paragraph with Nynorsk angle, side, adjacent, and mnemonic terminology."
+        },
+        {
+            "id": "nn-20260818-066",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula used the Bokmål form motstående.",
+            "disposition": "resolved",
+            "evidence": ["Before: sin(θ) = motstående / hypotenuse."],
+            "resolution": "Changed to: sin(θ) = motståande / hypotenuse."
+        },
+        {
+            "id": "nn-20260818-067",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula used the Bokmål form hosliggende.",
+            "disposition": "resolved",
+            "evidence": ["Before: cos(θ) = hosliggende / hypotenuse."],
+            "resolution": "Changed to: cos(θ) = hosliggjande / hypotenuse."
+        },
+        {
+            "id": "nn-20260818-068",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula used Bokmål side terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: tan(θ) = motstående / hosliggende."],
+            "resolution": "Changed to Nynorsk motståande and hosliggjande."
+        },
+        {
+            "id": "nn-20260818-069",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unknown-sides title used Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Finn ukjente sider og vinkler."],
+            "resolution": "Changed to: Finn ukjende sider og vinklar."
+        },
+        {
+            "id": "nn-20260818-070",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example title used the Bokmål article en.",
+            "disposition": "resolved",
+            "evidence": ["Before: Finn en side."],
+            "resolution": "Changed to: Finn ei side."
+        },
+        {
+            "id": "nn-20260818-071",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example setup used Bokmål article and verb forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En hypotenus ... danner en vinkel."],
+            "resolution": "Changed to Nynorsk Ein hypotenus ... dannar ein vinkel."
+        },
+        {
+            "id": "nn-20260818-072",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example conclusion used the Bokmål article and participle kjente.",
+            "disposition": "resolved",
+            "evidence": ["Before: Bruk en invers ... når sidelengdene er kjente."],
+            "resolution": "Changed to Nynorsk ein and kjende."
+        },
+        {
+            "id": "nn-20260818-073",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-sine formula used the Bokmål form motstående.",
+            "disposition": "resolved",
+            "evidence": ["Before: θ = sin^-1(motstående / hypotenuse)."],
+            "resolution": "Changed to: θ = sin^-1(motståande / hypotenuse)."
+        },
+        {
+            "id": "nn-20260818-074",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-cosine formula used the Bokmål form hosliggende.",
+            "disposition": "resolved",
+            "evidence": ["Before: θ = cos^-1(hosliggende / hypotenuse)."],
+            "resolution": "Changed to: θ = cos^-1(hosliggjande / hypotenuse)."
+        },
+        {
+            "id": "nn-20260818-075",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-tangent formula used Bokmål side terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: θ = tan^-1(motstående / hosliggende)."],
+            "resolution": "Changed to Nynorsk motståande and hosliggjande."
+        }
+    ]
+}

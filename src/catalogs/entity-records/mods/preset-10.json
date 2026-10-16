@@ -1,0 +1,38 @@
+{
+    "entityId": "cloupor-dna30",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-10",
+            "title": "Hana Modz Clone Review – Cloupor DNA30",
+            "url": "https://vapingcheap.com/hana-modz-clone-review-dna30-cloupor/",
+            "limitations": "Exact Cloupor DNA30 page and dated contemporaneous discussion establish an upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Cloupor DNA-30 review discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/cloupor-dna-30-box-mod.575924/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "entityId": "preset-238",
+    "entityType": "mod-device",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "catalog-identity"
+    },
+    "summary": {
+        "shortDescription": "A single-cell regulated squonk mod rated at 95W, 6V, and a conservative 34A.",
+        "description": "The Pulse V2 supports one 21700 or 20700 cell, or an 18650 with adapter, and has a 5–95W, 0.5–6V, 0.05–3Ω profile. The review lists under-34A current protection while independent testing reached 35A and 111W; the runtime deliberately retains 34A as the conservative ceiling.",
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "retail",
+            "title": "Vandy Vape PULSE V2 Squonk Box Mod in Ireland",
+            "url": "https://e-shop.ie/vandy-vape-pulse-v2-squonk-box-mod-in-ireland/p355",
+            "limitations": "Exact retailer product presence evidence."
+        },
+        {
+            "id": "review",
+            "title": "Vandy Vape Pulse V2 Review",
+            "url": "https://www.planetofthevapes.co.uk/reviews/squonking/vandy-vape-pulse-v2.html",
+            "limitations": "Exact-device specialist review and independent sample measurements."
+        },
+        {
+            "id": "operating-features-pulse-v2-20260824",
+            "title": "VandY Vape Pulse V2",
+            "url": "https://www.e-cigarette-forum.com/threads/vandy-vape-pulse-v2.964189/",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "safetyFindings": [
+        {
+            "id": "legacy-safety-note",
+            "title": "Research safety note",
+            "summary": "Preserve the under-34A versus 35A/111W conflict and conservative 34A runtime decision.",
+            "appliesTo": "This catalog profile",
+            "status": "review-required"
+        }
+    ],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "21700",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "20700",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "es",
+    "cycleId": "es-20260819T015447788Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Spanish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Spanish pass identified abbreviated side labels in the trigonometry formulas and worked example; all were aligned with the established Spanish terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Spanish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "es-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle formulas used abbreviated side labels that did not match the established Spanish wording.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory paragraph used lado opuesto and lado adyacente, while the formulas displayed only opuesto and adyacente."],
+            "resolution": "Expanded the formula labels to lado opuesto and lado adyacente."
+        },
+        {
+            "id": "es-20260819-011",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-trigonometry formulas used abbreviated side labels that differed from the surrounding Spanish explanation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed opuesto and adyacente instead of the established lado opuesto and lado adyacente."],
+            "resolution": "Aligned all three inverse formulas with the established side terminology."
+        },
+        {
+            "id": "es-20260819-012",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used shortened side labels instead of the terminology used in the explanatory text.",
+            "disposition": "resolved",
+            "evidence": ["The example labels were opuesto and adyacente while the section consistently described the sides as lado opuesto and lado adyacente."],
+            "resolution": "Expanded both example labels to lado opuesto and lado adyacente."
+        }
+    ]
+}

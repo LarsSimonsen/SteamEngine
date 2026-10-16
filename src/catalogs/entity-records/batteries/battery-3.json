@@ -1,0 +1,124 @@
+{
+    "entityId": "battery-3",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for AW IMR 16340.",
+        "description": "This researched draft preserves the calculator's 550mAh and 4A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "store-16340",
+            "title": "16340 batteries",
+            "url": "https://www.18650batterystore.com/collections/16340-batteries-additional-sizes",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "test-b27",
+            "title": "Battery comparison guide",
+            "url": "https://budgetlightforum.com/t/battery-comparison-guide/23822",
+            "publisher": "BudgetLightForum / HKJ",
+            "limitations": "Independent comparison table; observed dimensions and wrapper details apply to the tested sample and revision."
+        },
+        {
+            "id": "test-b28",
+            "title": "Test/review of AW IMR16340 550mAh (Red) 2016",
+            "url": "https://www.candlepowerforums.com/threads/test-review-of-aw-imr16340-550mah-red-2016.418304/",
+            "publisher": "BudgetLightForum / HKJ",
+            "limitations": "Exact red-wrapper review, but its published 14 mm × 49 mm dimensions conflict with the 16340 size code and other measurements."
+        },
+        {
+            "id": "spec-b32",
+            "title": "List of all batteries in our database",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "Battery test database mirror",
+            "limitations": "Aggregated historical test records; supports the listed AW variant's top style and protection status but is not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves AW IMR 16340 550mAh 4A as a 550mAh preset with a 4A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "AW IMR 16340 550mAh samples are documented with a red wrapper and button top; the comparison guide measured one tested sample at 16.6 mm × 33.7 mm, while a later review reports an incompatible 14 mm × 49 mm dimension.",
+            "evidenceDate": "2016",
+            "confidence": "medium"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The AW IMR 16340 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry AW IMR 16340 has reliable market-introduction evidence dated 2016-04-24 or earlier.",
+            "evidenceDate": "2016-04-24",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "16340",
+            "nominalDiameterMm": 16,
+            "nominalLengthMm": 34
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": false,
+        "appearance": {
+            "wrapperColor": "red"
+        },
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "low",
+            "summary": "The historical red-wrapper/button-top appearance is documented, but no manufacturer verification path or batch-specific authenticity evidence was identified.",
+            "checks": [
+                "Inspect the exact wrapper and label revision before treating it as AW.",
+                "Compare the hologram and markings with a known-good historical sample.",
+                "Do not rely on red wrapper color or dimensions alone as proof of authenticity."
+            ]
+        }
+    }
+}

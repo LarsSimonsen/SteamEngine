@@ -1,0 +1,3300 @@
+{
+    "schemaVersion": 1,
+    "locale": "uk",
+    "cycleId": "uk-20261007T230324950Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Selected Ukrainian after screening 12 common IDs across 22 remaining locales, wider systematic samples across six candidates and focused technical comparisons across four. Ukrainian showed repeated wrong-sense translations spanning electrical quantities, battery descriptions, mixing and wire design. This is sample-based selection, not a conclusive exhaustive global ranking. Canonical English, effective translations, glossary, UI code, knowledge-base articles and native Ukrainian technical references were available.",
+        "limitations": [
+            "Independent model critique does not constitute competent human review.",
+            "Specialized staggered-Clapton terminology remains marked needs-review; descriptive wording is supplied.",
+            "Canonical English Joule-heating summary retains a physics wording defect; Ukrainian explicitly paraphrases intended energy conversion."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation metadata and all 246 canonical correction signatures verified; typecheck passed; 572 tests in 85 files passed. Complete IIS and Cloudflare production builds passed: 64 route cases, 39 IIS rules, 737 generated links across 10279 HTML files, and 64 Cloudflare artifact route cases. Fifteen Ukrainian browser routes and three desktop/mobile calculator layouts passed; calculation API fixtures isolate translation rendering. Independent changed-source review completed and its three final wording fixes applied. Human review remains pending."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Reviewed all 1115 canonical entries: messages 308, calculators.batt 67, calculators.coil 80, calculators.converter 25, calculators.juice 55, calculators.modrange 49, calculators.tcr 42, calculators.wirewiz 101, comparisons 56, catalog.concepts 295, catalogText 37. Also checked 11 explicit route metadata records, two derived comparison routes, catalog-derived metadata and optional Ohm/Joule sentence composition. Corrected 248 display entries in 73 recurring issue groups over three bounded iterations. Valid localized decimal formatting and descriptive mathematical labels were retained; unit and identifier drift was corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Ukrainian human review was performed; draft notice remains visible."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User explicitly requested full review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "uk-001",
+            "translationId": "messages.navigation.home",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-name] Product identity translated literally as steam engine.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine home",
+                "Previous Ukrainian: Паровий двигун додому"
+            ],
+            "resolution": "Головна сторінка Steam Engine"
+        },
+        {
+            "id": "uk-002",
+            "translationId": "messages.navigation.calculators",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[calculator-navigation] Reverses navigation of calculators into navigation calculator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculator navigation",
+                "Previous Ukrainian: Калькулятор навігації"
+            ],
+            "resolution": "Навігація калькуляторами"
+        },
+        {
+            "id": "uk-003",
+            "translationId": "messages.catalogManager.filterBuiltIns",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[filter-action] Filter action mistranslated as built-in filters.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Filter built-ins",
+                "Previous Ukrainian: Вбудовані фільтри"
+            ],
+            "resolution": "Фільтрувати вбудовані записи"
+        },
+        {
+            "id": "uk-004",
+            "translationId": "messages.catalogEditor.name",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[entity-name] Catalog entity has a name, not a personal first name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Name",
+                "Previous Ukrainian: Ім'я"
+            ],
+            "resolution": "Назва"
+        },
+        {
+            "id": "uk-005",
+            "translationId": "messages.catalogEditor.removableCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-cell] Battery cell is not a spreadsheet cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Removable cell",
+                "Previous Ukrainian: Знімна комірка"
+            ],
+            "resolution": "Знімний акумуляторний елемент"
+        },
+        {
+            "id": "uk-006",
+            "translationId": "messages.catalogEditor.terminalStyle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Electrical terminal mistaken for terminal style.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Terminal style",
+                "Previous Ukrainian: Термінальний стиль"
+            ],
+            "resolution": "Тип контакту"
+        },
+        {
+            "id": "uk-007",
+            "translationId": "messages.catalogEditor.flatTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Specifies terminal construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flat top",
+                "Previous Ukrainian: Плоский верх"
+            ],
+            "resolution": "Плоский контакт"
+        },
+        {
+            "id": "uk-008",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Button top mistranslated as clothing with buttons.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous Ukrainian: Топ на ґудзиках"
+            ],
+            "resolution": "Виступний контакт"
+        },
+        {
+            "id": "uk-009",
+            "translationId": "messages.catalogEditor.protectedStatus",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection-status] Field describes whether cell protection exists, not a protected status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected status",
+                "Previous Ukrainian: Захищений статус"
+            ],
+            "resolution": "Наявність захисту"
+        },
+        {
+            "id": "uk-010",
+            "translationId": "messages.catalogEditor.continuousCurrent",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[continuous-discharge] Continuous refers to discharge duration, not DC.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous discharge current (A)",
+                "Previous Ukrainian: Постійний струм розряду (А)"
+            ],
+            "resolution": "Струм безперервного розряду (A)"
+        },
+        {
+            "id": "uk-011",
+            "translationId": "messages.catalogEditor.continuousC",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[continuous-discharge] Retain C rating meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous discharge C rating",
+                "Previous Ukrainian: Безперервний розряд C"
+            ],
+            "resolution": "Рейтинг C безперервного розряду"
+        },
+        {
+            "id": "uk-012",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-editor-help] Cell becomes camera and discharge becomes emissions in operating guidance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Ukrainian: Введіть принаймні одну безперервну межу розряду. Інтегровані батареї є внутрішніми блоками модів, тому розміри окремого елемента не потрібні. Розміри знімної камери номінальні; використовуйте примітки для виміряних розмірів у стані продажу. Якщо встановлено обидва ліміти викиду, калькулятор продовжує використовувати безпечніший отриманий ліміт, якщо вони істотно відрізняються."
+            ],
+            "resolution": "Вкажіть принаймні одну межу безперервного розряду. Вбудовані акумулятори є внутрішніми блоками мода, тому розміри окремого елемента не потрібні. Розміри знімних елементів номінальні; фактичні розміри виробу зазначайте у примітках. Якщо вказано обидві межі розряду й вони істотно відрізняються, калькулятор використовує безпечнішу з отриманих меж."
+        },
+        {
+            "id": "uk-013",
+            "translationId": "messages.catalogEditor.removeTfrPoint",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tfr-identity] TFR abbreviation corrupted to СКР.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Remove TFR point",
+                "Previous Ukrainian: Видаліть точку СКР"
+            ],
+            "resolution": "Видалити точку TFR"
+        },
+        {
+            "id": "uk-014",
+            "translationId": "messages.catalogEditor.addTfrPoint",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tfr-identity] TFR abbreviation corrupted to СКР.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Add TFR point",
+                "Previous Ukrainian: Додайте точку СКР"
+            ],
+            "resolution": "Додати точку TFR"
+        },
+        {
+            "id": "uk-015",
+            "translationId": "messages.home.intro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Coil must follow glossary спіраль; e-liquid is not electronic liquid.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine is a suite of practical calculators for building coils, checking battery drain, mixing e-liquid, and understanding the numbers behind your setup.",
+                "Previous Ukrainian: Steam Engine — це набір практичних калькуляторів для створення котушок, перевірки розряду батареї, змішування електронної рідини та розуміння цифр, що стоять за вашим налаштуванням."
+            ],
+            "resolution": "Steam Engine — це набір практичних калькуляторів для намотування спіралей, перевірки розряду акумулятора, змішування рідини та розуміння числових параметрів вашої конфігурації."
+        },
+        {
+            "id": "uk-016",
+            "translationId": "messages.home.tools.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rebuildable-atomizer] Rebuildable describes the atomizer, not renewable coils.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Plan rebuildable atomizer coils and explore their electrical behavior.",
+                "Previous Ukrainian: Сплануйте відновлювані спіралі атомайзера та вивчіть їхню електричну поведінку."
+            ],
+            "resolution": "Плануйте спіралі для обслуговуваних атомайзерів і досліджуйте їхні електричні характеристики."
+        },
+        {
+            "id": "uk-017",
+            "translationId": "messages.home.tools.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[power-vs-energy] Power mistranslated as energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: See current and power drain for a battery-powered device.",
+                "Previous Ukrainian: Переглядайте споживання струму й енергії пристроєм, що живиться від акумулятора."
+            ],
+            "resolution": "Переглядайте споживання струму й потужності пристроєм, що живиться від акумулятора."
+        },
+        {
+            "id": "uk-018",
+            "translationId": "messages.home.tools.modrange.label",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-name] Mod range means operating range, not model lineup.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod range",
+                "Previous Ukrainian: Модельний ряд"
+            ],
+            "resolution": "Діапазон мода"
+        },
+        {
+            "id": "uk-019",
+            "translationId": "messages.home.tools.juice.label",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[eliquid-term] E-liquid is not electronic liquid.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: E-liquid",
+                "Previous Ukrainian: Електронна рідина"
+            ],
+            "resolution": "Рідина для вейпа"
+        },
+        {
+            "id": "uk-020",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-composition] Composed sentence must remain grammatical around the fixed law-title link.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous Ukrainian: Це просто"
+            ],
+            "resolution": "Це простий калькулятор, що використовує"
+        },
+        {
+            "id": "uk-021",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-composition] Natural trailing phrase accommodates the renderer’s inserted space after the link.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous Ukrainian: калькулятор."
+            ],
+            "resolution": "для розрахунків."
+        },
+        {
+            "id": "uk-022",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-composition] Optional label is missing; actual UI falls back to English Joule’s law.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: ",
+                "Previous Ukrainian: English Joule link fallback"
+            ],
+            "resolution": "закон Джоуля — Ленца"
+        },
+        {
+            "id": "uk-023",
+            "translationId": "messages.ohm.values",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-values] Values mistranslated as moral values.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Values",
+                "Previous Ukrainian: Цінності"
+            ],
+            "resolution": "Значення"
+        },
+        {
+            "id": "uk-024",
+            "translationId": "messages.ohm.lock",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-lock] Lock holds a numeric value constant, not a physical padlock.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Lock",
+                "Previous Ukrainian: Замок"
+            ],
+            "resolution": "Фіксувати"
+        },
+        {
+            "id": "uk-025",
+            "translationId": "messages.ohm.simpleLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-lock] Numeric-value locking, not physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Simple locks",
+                "Previous Ukrainian: Прості замки"
+            ],
+            "resolution": "Проста фіксація"
+        },
+        {
+            "id": "uk-026",
+            "translationId": "messages.ohm.showDetailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-lock] Numeric-value locking, not physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Show detailed locks",
+                "Previous Ukrainian: Показати докладні замки"
+            ],
+            "resolution": "Показати докладні налаштування фіксації"
+        },
+        {
+            "id": "uk-027",
+            "translationId": "messages.ohm.hideDetailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-lock] Numeric-value locking, not physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Hide detailed locks",
+                "Previous Ukrainian: Приховайте детальні замки"
+            ],
+            "resolution": "Приховати докладні налаштування фіксації"
+        },
+        {
+            "id": "uk-028",
+            "translationId": "messages.ohm.detailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-lock] Numeric-value locking, not physical locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Detailed locks",
+                "Previous Ukrainian: Деталізовані замки"
+            ],
+            "resolution": "Докладні налаштування фіксації"
+        },
+        {
+            "id": "uk-029",
+            "translationId": "messages.ohm.fields.current",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electric-current] Current mistranslated as current/recent adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Ukrainian: поточний"
+            ],
+            "resolution": "Струм"
+        },
+        {
+            "id": "uk-030",
+            "translationId": "messages.encyclopedia.lead",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mods-and-boards] Mods and boards are devices and PCBs, not modifications and control panels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Browse the concepts, materials, batteries, mods, and control boards behind the calculators.",
+                "Previous Ukrainian: Перегляньте концепції, матеріали, батареї, модифікації та панелі керування, що стоять за калькуляторами."
+            ],
+            "resolution": "Перегляньте поняття, матеріали, акумулятори, моди та плати керування, на яких ґрунтуються калькулятори."
+        },
+        {
+            "id": "uk-031",
+            "translationId": "messages.encyclopedia.categoryDescriptions.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack] Pack mistranslated as package.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells, packs, and integrated power sources.",
+                "Previous Ukrainian: Елементи, пакети та інтегровані джерела живлення."
+            ],
+            "resolution": "Елементи, акумуляторні блоки та вбудовані джерела живлення."
+        },
+        {
+            "id": "uk-032",
+            "translationId": "messages.encyclopedia.categoryDescriptions.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mods-and-boards] Control boards are PCBs, not electrical cabinets.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated devices and control-board profiles.",
+                "Previous Ukrainian: Регульовані пристрої та профілі щитів керування."
+            ],
+            "resolution": "Регульовані пристрої та профілі плат керування."
+        },
+        {
+            "id": "uk-033",
+            "translationId": "messages.encyclopediaDetail.property",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-property] Property mistranslated as ownership.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Property",
+                "Previous Ukrainian: Власність"
+            ],
+            "resolution": "Властивість"
+        },
+        {
+            "id": "uk-034",
+            "translationId": "messages.encyclopediaDetail.unknownPropertyValue",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-property] Value/property mistranslated as price/real estate.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog does not establish a value for this property.",
+                "Previous Ukrainian: У каталозі не встановлено вартість цієї власності."
+            ],
+            "resolution": "У каталозі не встановлено значення цієї властивості."
+        },
+        {
+            "id": "uk-035",
+            "translationId": "messages.encyclopediaDetail.temperatureResistanceCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-temperature] Temperature resistance curve is not thermal durability.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature resistance curve",
+                "Previous Ukrainian: Крива термостійкості"
+            ],
+            "resolution": "Залежність опору від температури"
+        },
+        {
+            "id": "uk-036",
+            "translationId": "messages.encyclopediaDetail.identityStability",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[entity-identity] Product identity is not human personality.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Identity stability",
+                "Previous Ukrainian: Стабільність особистості"
+            ],
+            "resolution": "Стабільність ідентифікації"
+        },
+        {
+            "id": "uk-037",
+            "translationId": "messages.encyclopediaDetail.researchSources",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[research-sources] Sources used in research, not research into sources.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Research sources",
+                "Previous Ukrainian: Дослідження джерел"
+            ],
+            "resolution": "Джерела дослідження"
+        },
+        {
+            "id": "uk-038",
+            "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-cell] Cell must denote electrochemical element.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The label is treated as a rewrap brand; the underlying cell manufacturer is not assumed from the wrapper.",
+                "Previous Ukrainian: Етикетка розглядається як бренд повторної упаковки; виробник основної комірки не випливає з обгортки."
+            ],
+            "resolution": "Маркування розглядається як бренд перепакованих акумуляторів; виробника самого елемента не визначають за оболонкою."
+        },
+        {
+            "id": "uk-039",
+            "translationId": "messages.encyclopediaDetail.unknownBatteryIntroductionNotice",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-cell] Battery cell mistranslated as biological cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The market introduction date for this cell is unknown, so its age and whether it has been superseded cannot be determined.",
+                "Previous Ukrainian: Дата появи на ринку цієї клітини невідома, тому її вік і те, чи була вона замінена, неможливо визначити."
+            ],
+            "resolution": "Дата появи цього елемента на ринку невідома, тому неможливо визначити його вік і те, чи його вже замінили новішою моделлю."
+        },
+        {
+            "id": "uk-040",
+            "translationId": "messages.encyclopediaDetail.protectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-cell] Battery cell mistranslated as biological cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected cell.",
+                "Previous Ukrainian: Захищена клітина."
+            ],
+            "resolution": "Захищений акумуляторний елемент."
+        },
+        {
+            "id": "uk-041",
+            "translationId": "messages.encyclopediaDetail.unprotectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-cell] Battery cell mistranslated as biological cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unprotected cell.",
+                "Previous Ukrainian: Незахищена клітина."
+            ],
+            "resolution": "Незахищений акумуляторний елемент."
+        },
+        {
+            "id": "uk-042",
+            "translationId": "messages.encyclopediaDetail.noUsableResistanceRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-limits] From catalog limits mistranslated as outside the catalog.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No usable resistance range can be calculated from the catalog limits.",
+                "Previous Ukrainian: Жоден корисний діапазон опору не може бути розрахований за межами каталогу."
+            ],
+            "resolution": "За обмеженнями, наведеними в каталозі, неможливо розрахувати придатний діапазон опору."
+        },
+        {
+            "id": "uk-043",
+            "translationId": "messages.encyclopediaDetail.modBoardCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mods-and-boards] Broken noun order obscures catalog subject.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod board and device catalog",
+                "Previous Ukrainian: Мод плати і каталог пристроїв"
+            ],
+            "resolution": "Каталог плат керування та модів"
+        },
+        {
+            "id": "uk-044",
+            "translationId": "messages.encyclopediaDetail.materialCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Coil materials mistranslated as rolled materials.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil material catalog",
+                "Previous Ukrainian: Каталог рулонних матеріалів"
+            ],
+            "resolution": "Каталог матеріалів для спіралей"
+        },
+        {
+            "id": "uk-045",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[capacity-vs-power] Battery capacity mistranslated as power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity",
+                "Previous Ukrainian: Номінальна потужність"
+            ],
+            "resolution": "Номінальна ємність"
+        },
+        {
+            "id": "uk-046",
+            "translationId": "calculators.batt.powerRegulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod-grammar] Regulated power mod has broken modifier attachment.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power regulated mod",
+                "Previous Ukrainian: Регульована потужність мод"
+            ],
+            "resolution": "Мод із регулюванням потужності"
+        },
+        {
+            "id": "uk-047",
+            "translationId": "calculators.batt.voltageRegulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod-grammar] Regulated voltage mod has broken modifier attachment.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Voltage regulated mod",
+                "Previous Ukrainian: Регульована напруга мод"
+            ],
+            "resolution": "Мод із регулюванням напруги"
+        },
+        {
+            "id": "uk-048",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] English now specifies a cell rather than entire battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Ukrainian: Попередні налаштування батареї"
+            ],
+            "resolution": "Профіль елемента"
+        },
+        {
+            "id": "uk-049",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Ukrainian: Cell selection"
+            ],
+            "resolution": "Вибір елемента"
+        },
+        {
+            "id": "uk-050",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[stale-cell-pack-ui] Stale translation instructs choosing an integrated battery instead of per-cell pack values.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Ukrainian: Виберіть попередні налаштування вбудованої батареї або введіть власні значення нижче."
+            ],
+            "resolution": "Виберіть тип елемента для всього акумуляторного блока або введіть нижче значення для одного елемента."
+        },
+        {
+            "id": "uk-051",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] English now specifies a cell rather than entire battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Ukrainian: Попереднє налаштування батареї"
+            ],
+            "resolution": "Профіль елемента"
+        },
+        {
+            "id": "uk-052",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Stale battery values heading omits new pack model.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Ukrainian: Значення батареї"
+            ],
+            "resolution": "Елемент і акумуляторний блок"
+        },
+        {
+            "id": "uk-053",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Ukrainian: Battery configuration"
+            ],
+            "resolution": "Конфігурація акумуляторного блока"
+        },
+        {
+            "id": "uk-054",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Ukrainian: 1S — Single cell"
+            ],
+            "resolution": "1S — один елемент"
+        },
+        {
+            "id": "uk-055",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Ukrainian: Custom configuration"
+            ],
+            "resolution": "Власна конфігурація"
+        },
+        {
+            "id": "uk-056",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Ukrainian: Cells in series"
+            ],
+            "resolution": "Послідовно з’єднані елементи"
+        },
+        {
+            "id": "uk-057",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Ukrainian: Parallel strings"
+            ],
+            "resolution": "Паралельні гілки"
+        },
+        {
+            "id": "uk-058",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Invariant abbreviation fits every numeric count in the compact pack summary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous Ukrainian: cells"
+            ],
+            "resolution": "елем."
+        },
+        {
+            "id": "uk-059",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Invariant abbreviation fits every numeric count in the compact pack summary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous Ukrainian: cell"
+            ],
+            "resolution": "елем."
+        },
+        {
+            "id": "uk-060",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[stale-cell-pack-ui] Untranslated matched-cell safety warning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Ukrainian: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "Використовуйте однакові, підібрані елементи одного віку й стану. Розподіл струму ідеалізовано; найслабший елемент обмежує можливості всього блока."
+        },
+        {
+            "id": "uk-061",
+            "translationId": "calculators.batt.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[capacity-vs-power] Capacity mistranslated as power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
+                "Previous Ukrainian: Номінальна напруга та потужність визначають очікувану накопичену енергію та тривалість роботи. Вони не впливають на обмеження струму."
+            ],
+            "resolution": "Номінальна напруга та ємність визначають розрахункову накопичену енергію та час безперервної роботи. Вони не впливають на межу струму."
+        },
+        {
+            "id": "uk-062",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Ukrainian: Battery pack"
+            ],
+            "resolution": "Акумуляторний блок"
+        },
+        {
+            "id": "uk-063",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-cell-pack-ui] Untranslated new cell/pack interface.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Ukrainian: Estimated current per cell"
+            ],
+            "resolution": "Розрахунковий струм на елемент"
+        },
+        {
+            "id": "uk-064",
+            "translationId": "calculators.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wrap-term] Build parameters read as an instruction to build parameters; wraps as wrapping.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose your wire and build parameters to estimate wraps, resistance, and heat.",
+                "Previous Ukrainian: Виберіть дріт і побудуйте параметри, щоб оцінити обгортання, опір і тепло."
+            ],
+            "resolution": "Виберіть дріт і параметри спіралі, щоб оцінити кількість витків, опір і теплові характеристики."
+        },
+        {
+            "id": "uk-065",
+            "translationId": "calculators.coil.twistPitch",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[twist-pitch] Twist is untranslated instead of technical operation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Twist pitch",
+                "Previous Ukrainian: Крок твіст"
+            ],
+            "resolution": "Крок скручування"
+        },
+        {
+            "id": "uk-066",
+            "translationId": "calculators.coil.strands",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-strand] Wire strands, not locks of hair.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Number of strands",
+                "Previous Ukrainian: Кількість пасом"
+            ],
+            "resolution": "Кількість жил"
+        },
+        {
+            "id": "uk-067",
+            "translationId": "calculators.coil.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wrap-term] Wrap spacing is between coil turns, not packaging interval.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrap spacing",
+                "Previous Ukrainian: Інтервал обгортання"
+            ],
+            "resolution": "Відстань між витками"
+        },
+        {
+            "id": "uk-068",
+            "translationId": "calculators.coil.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wrap-term] Coil turns are витки.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Number of wraps",
+                "Previous Ukrainian: Кількість обертів"
+            ],
+            "resolution": "Кількість витків"
+        },
+        {
+            "id": "uk-069",
+            "translationId": "calculators.coil.wireMass",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-mass] Wire mass is a property, not wire-like mass.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire mass",
+                "Previous Ukrainian: Дротова маса"
+            ],
+            "resolution": "Маса дроту"
+        },
+        {
+            "id": "uk-070",
+            "translationId": "calculators.coil.customMaterials",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[user-defined-material] Custom materials are user-created records, not manufactured to order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom materials",
+                "Previous Ukrainian: Матеріали на замовлення"
+            ],
+            "resolution": "Користувацькі матеріали"
+        },
+        {
+            "id": "uk-071",
+            "translationId": "calculators.converter.inputUnit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[measurement-unit] Unit confused with hardware module.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Input unit",
+                "Previous Ukrainian: Блок введення"
+            ],
+            "resolution": "Вхідна одиниця вимірювання"
+        },
+        {
+            "id": "uk-072",
+            "translationId": "calculators.converter.needleGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[needle-gauge] Gauge omitted, leaving just needle.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG (needle gauge)",
+                "Previous Ukrainian: BWG (голка)"
+            ],
+            "resolution": "BWG (калібр голок)"
+        },
+        {
+            "id": "uk-073",
+            "translationId": "calculators.converter.outputUnit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[measurement-unit] Unit confused with hardware module.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Output unit",
+                "Previous Ukrainian: Блок виведення"
+            ],
+            "resolution": "Вихідна одиниця вимірювання"
+        },
+        {
+            "id": "uk-074",
+            "translationId": "calculators.converter.precisionHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-table] Gauge tables are wire-size tables, not measuring instruments.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Precision applies to numeric results. Gauge tables remain at their published values.",
+                "Previous Ukrainian: Точність застосовується до числових результатів. Таблиці вимірювальних приладів залишаються на своїх опублікованих значеннях."
+            ],
+            "resolution": "Точність застосовується до числових результатів. У таблицях калібрів дроту зберігаються опубліковані значення."
+        },
+        {
+            "id": "uk-075",
+            "translationId": "calculators.juice.load",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[load-action] Load action mistranslated as electrical load.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Load",
+                "Previous Ukrainian: навантаження"
+            ],
+            "resolution": "Завантажити"
+        },
+        {
+            "id": "uk-076",
+            "translationId": "calculators.juice.amount",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[batch-amount] Amount to make mistranslated as money to earn.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Amount you want to make",
+                "Previous Ukrainian: Сума, яку ви хочете заробити"
+            ],
+            "resolution": "Об’єм, який ви хочете приготувати"
+        },
+        {
+            "id": "uk-077",
+            "translationId": "calculators.juice.nicStrengthIn",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-strength] Nic strength means nicotine concentration.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic strength in",
+                "Previous Ukrainian: Nic сила в"
+            ],
+            "resolution": "Концентрація нікотину в"
+        },
+        {
+            "id": "uk-078",
+            "translationId": "calculators.juice.nicBase",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-base] Nic mistaken for personal name Nick.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic base",
+                "Previous Ukrainian: База Ніка"
+            ],
+            "resolution": "Нікотинова основа"
+        },
+        {
+            "id": "uk-079",
+            "translationId": "calculators.juice.nicStrength",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-strength] Nic strength means nicotine concentration.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic strength",
+                "Previous Ukrainian: Nic сила"
+            ],
+            "resolution": "Концентрація нікотину"
+        },
+        {
+            "id": "uk-080",
+            "translationId": "calculators.juice.targetLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[target-idiom] Shooting-for idiom translated as shooting.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: what you're shooting for",
+                "Previous Ukrainian: для чого ти стріляєш"
+            ],
+            "resolution": "бажаний результат"
+        },
+        {
+            "id": "uk-081",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-strength] Nic abbreviations left untranslated and strength obscured.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous Ukrainian: Можливо, вам знадобиться зменшити цільовий nic, вміст VG або PG або ароматизатор. Крім того, використовуйте більш міцну основу nic або основу nic з іншим співвідношенням VG/PG. Змініть налаштування, щоб усі числа були більшими за нуль."
+            ],
+            "resolution": "Можливо, потрібно зменшити цільову концентрацію нікотину, вміст VG чи PG або частку ароматизатора. Або використайте нікотинову основу з вищою концентрацією чи іншим співвідношенням VG/PG. Змініть налаштування так, щоб усі числа були більшими за нуль."
+        },
+        {
+            "id": "uk-082",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-strength] Nic abbreviations left untranslated and strength obscured.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous Ukrainian: Ваш цільовий рівень nic вищий за вашу базову силу nic. Ви повинні або отримати сильнішу базу nic, або зменшити цільову силу nic."
+            ],
+            "resolution": "Цільова концентрація нікотину вища за концентрацію нікотинової основи. Використайте основу з вищою концентрацією або зменште цільову концентрацію нікотину."
+        },
+        {
+            "id": "uk-083",
+            "translationId": "calculators.juice.flavorPercentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-percentage] Percentage of ingredient, not percentage of taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor percentage",
+                "Previous Ukrainian: Відсоток смаку"
+            ],
+            "resolution": "Частка ароматизатора"
+        },
+        {
+            "id": "uk-084",
+            "translationId": "calculators.juice.flavorVg",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-percentage] Carrier applies to flavoring ingredient, not aroma.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor is VG based",
+                "Previous Ukrainian: Аромат базується на VG"
+            ],
+            "resolution": "Ароматизатор на основі VG"
+        },
+        {
+            "id": "uk-085",
+            "translationId": "calculators.modrange.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod-grammar] Regulated applies to mod, not calculator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod calculator",
+                "Previous Ukrainian: Регульований калькулятор модів"
+            ],
+            "resolution": "Калькулятор регульованого мода"
+        },
+        {
+            "id": "uk-086",
+            "translationId": "calculators.modrange.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-name] Mod range is operating range, not product lineup.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod range",
+                "Previous Ukrainian: Модельний ряд"
+            ],
+            "resolution": "Діапазон мода"
+        },
+        {
+            "id": "uk-087",
+            "translationId": "calculators.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-output-limits] Output limits include voltage/current, not only output power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous Ukrainian: Знайдіть корисний діапазон опору від обмежень вихідної потужності регульованого мода."
+            ],
+            "resolution": "Знайдіть придатний діапазон опору за обмеженнями вихідних параметрів регульованого мода."
+        },
+        {
+            "id": "uk-088",
+            "translationId": "calculators.modrange.presets",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[russian-preset] Russian word in Ukrainian UI.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Presets",
+                "Previous Ukrainian: Предустановки"
+            ],
+            "resolution": "Попередні налаштування"
+        },
+        {
+            "id": "uk-089",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-modrange-guidance] Stale translation still claims optimal resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Ukrainian: Оптимальний опір"
+            ],
+            "resolution": "Орієнтири для вибору опору"
+        },
+        {
+            "id": "uk-090",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-modrange-guidance] Stale translation says average resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Ukrainian: Середній опір"
+            ],
+            "resolution": "Точка перетину обмежень струму й напруги"
+        },
+        {
+            "id": "uk-091",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-modrange-guidance] Stale literal sweet spot omits current source meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Ukrainian: Солодке місце"
+            ],
+            "resolution": "Середина верхньої частини діапазону"
+        },
+        {
+            "id": "uk-092",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electric-current] Current confused with present/current adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous Ukrainian: Поточний ліміт досягається першим."
+            ],
+            "resolution": "Спочатку досягається межа струму."
+        },
+        {
+            "id": "uk-093",
+            "translationId": "calculators.modrange.watt",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[unit-symbol] Watt mistranslated with volt-looking Cyrillic В.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: W",
+                "Previous Ukrainian: В"
+            ],
+            "resolution": "W"
+        },
+        {
+            "id": "uk-094",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stale-modrange-guidance] Stale median label does not describe current/voltage crossover.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Ukrainian: Медіана"
+            ],
+            "resolution": "Точка перетину обмежень струму й напруги"
+        },
+        {
+            "id": "uk-095",
+            "translationId": "calculators.tcr.needModel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Follow heating-coil glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Need a complete coil model?",
+                "Previous Ukrainian: Потрібна повна модель котушки?"
+            ],
+            "resolution": "Потрібна повна модель спіралі?"
+        },
+        {
+            "id": "uk-096",
+            "translationId": "calculators.tcr.needModelText",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Follow heating-coil glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: for wire geometry, complex constructions, and coil calculations. This focused tool remains useful for comparing and combining resistance curves.",
+                "Previous Ukrainian: для геометрії проводів, складних конструкцій і розрахунків котушок. Цей цілеспрямований інструмент залишається корисним для порівняння та комбінування кривих опору."
+            ],
+            "resolution": "для геометрії дроту, складних конструкцій і розрахунків спіралей. Цей спеціалізований інструмент залишається корисним для порівняння та поєднання кривих опору."
+        },
+        {
+            "id": "uk-097",
+            "translationId": "calculators.tcr.help",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[curve-points] Data points mistranslated as scores.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",
+                "Previous Ukrainian: Редагування цих значень очищає вибрані матеріали. Вихід DNA 200 приймає 2–8 балів і потребує однієї точки близько 70 °F (приблизно 21 °C)."
+            ],
+            "resolution": "Редагування цих значень скидає вибір матеріалів. Формат для DNA 200 приймає 2–8 точок і потребує однієї точки поблизу 70 °F (приблизно 21 °C)."
+        },
+        {
+            "id": "uk-098",
+            "translationId": "calculators.tcr.customMaterials",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[user-defined-material] Custom materials are user-created records, not manufactured to order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom materials",
+                "Previous Ukrainian: Матеріали на замовлення"
+            ],
+            "resolution": "Користувацькі матеріали"
+        },
+        {
+            "id": "uk-099",
+            "translationId": "calculators.tcr.export",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[dna-identity] DNA product identity must stay Latin.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 output",
+                "Previous Ukrainian: ДНК 200 вихід"
+            ],
+            "resolution": "Дані для DNA 200"
+        },
+        {
+            "id": "uk-100",
+            "translationId": "calculators.tcr.csvOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[dna-identity] DNA product identity must stay Latin.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 CSV output",
+                "Previous Ukrainian: Вихід ДНК 200 CSV"
+            ],
+            "resolution": "Дані CSV для DNA 200"
+        },
+        {
+            "id": "uk-101",
+            "translationId": "calculators.wirewiz.graphFinal",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-vs-wiring] Wire result mistranslated as wiring.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Final wire result",
+                "Previous Ukrainian: Остаточний результат проводки"
+            ],
+            "resolution": "Кінцевий результат для дроту"
+        },
+        {
+            "id": "uk-102",
+            "translationId": "calculators.wirewiz.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Follow heating-coil glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Build and analyze complex wires for custom coils. The first modern version retains the legacy model and output formats.",
+                "Previous Ukrainian: Створюйте та аналізуйте складні дроти для спеціальних котушок. Перша сучасна версія зберігає застарілу модель і вихідні формати."
+            ],
+            "resolution": "Створюйте та аналізуйте складні дроти для власних спіралей. Перша сучасна версія зберігає попередню модель і формати результатів."
+        },
+        {
+            "id": "uk-103",
+            "translationId": "calculators.wirewiz.coilParameters",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Follow heating-coil glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil parameters",
+                "Previous Ukrainian: Параметри котушки"
+            ],
+            "resolution": "Параметри спіралі"
+        },
+        {
+            "id": "uk-104",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wrap-term] Coil turns, not wrappers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wraps",
+                "Previous Ukrainian: обгортання"
+            ],
+            "resolution": "Витки"
+        },
+        {
+            "id": "uk-105",
+            "translationId": "calculators.wirewiz.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wrap-term] Distance between coil turns.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrap spacing",
+                "Previous Ukrainian: Інтервал обгортання"
+            ],
+            "resolution": "Відстань між витками"
+        },
+        {
+            "id": "uk-106",
+            "translationId": "calculators.wirewiz.tfrEditor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[tfr-identity] TFR abbreviation corrupted to СКР.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: TFR editor",
+                "Previous Ukrainian: Редактор СКР"
+            ],
+            "resolution": "Редактор TFR"
+        },
+        {
+            "id": "uk-107",
+            "translationId": "calculators.wirewiz.dna200",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[dna-identity] DNA product identity must stay Latin.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA200",
+                "Previous Ukrainian: ДНК200"
+            ],
+            "resolution": "DNA200"
+        },
+        {
+            "id": "uk-108",
+            "translationId": "calculators.wirewiz.temperatureUnavailable",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[calculation-vs-measurement] Results are calculated, not measured by a sensor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature results are unavailable:",
+                "Previous Ukrainian: Результати вимірювання температури недоступні:"
+            ],
+            "resolution": "Температурні результати недоступні:"
+        },
+        {
+            "id": "uk-109",
+            "translationId": "calculators.wirewiz.referenceMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[reference-material] Reference material here is the comparison material, not reading material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reference material",
+                "Previous Ukrainian: Довідковий матеріал"
+            ],
+            "resolution": "Еталонний матеріал"
+        },
+        {
+            "id": "uk-110",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-equivalent-composition] Composed instruction must introduce selected reference material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous Ukrainian: Щоб відповідати йому на встановленому моді"
+            ],
+            "resolution": "Щоб отримати такий самий результат на моді з профілем"
+        },
+        {
+            "id": "uk-111",
+            "translationId": "calculators.wirewiz.adjustTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-equivalent-composition] Composed instruction specifies numerical setpoint.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: adjust the temperature to approximately",
+                "Previous Ukrainian: відрегулюйте температуру приблизно"
+            ],
+            "resolution": "встановіть температуру приблизно"
+        },
+        {
+            "id": "uk-112",
+            "translationId": "calculators.wirewiz.single",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-wire] Single wire mistranslated as unmarried.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single",
+                "Previous Ukrainian: неодружений"
+            ],
+            "resolution": "Одинарний"
+        },
+        {
+            "id": "uk-113",
+            "translationId": "calculators.wirewiz.staggeredClapton",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[staggered-clapton] Staggered mistranslated as staggered/stumbled verb.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Staggered Clapton",
+                "Previous Ukrainian: Клептон похитнувся"
+            ],
+            "resolution": "Клептон зі зміщеними витками"
+        },
+        {
+            "id": "uk-114",
+            "translationId": "calculators.wirewiz.current",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electric-current] Current mistranslated as current/recent adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Ukrainian: поточний"
+            ],
+            "resolution": "Струм"
+        },
+        {
+            "id": "uk-115",
+            "translationId": "calculators.wirewiz.strands",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-strand] Wire strands, not locks of hair.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Strands",
+                "Previous Ukrainian: Пасма"
+            ],
+            "resolution": "Жили"
+        },
+        {
+            "id": "uk-116",
+            "translationId": "calculators.wirewiz.twistPitch",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[twist-pitch] Twist is a technical operation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Twist pitch",
+                "Previous Ukrainian: Крок твіст"
+            ],
+            "resolution": "Крок скручування"
+        },
+        {
+            "id": "uk-117",
+            "translationId": "calculators.wirewiz.customMaterials",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[user-defined-material] Custom materials are user-created records, not manufactured to order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom materials",
+                "Previous Ukrainian: Матеріали на замовлення"
+            ],
+            "resolution": "Користувацькі матеріали"
+        },
+        {
+            "id": "uk-118",
+            "translationId": "calculators.wirewiz.coilParametersTitle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-term] Follow heating-coil glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil parameters",
+                "Previous Ukrainian: Параметри котушки"
+            ],
+            "resolution": "Параметри спіралі"
+        },
+        {
+            "id": "uk-119",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[kirchhoff-loops] Circuit loops are contours, not time cycles.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Apply KCL at independent nodes and KVL around independent loops.",
+                "Previous Ukrainian: Застосуйте KCL на незалежних вузлах і KVL навколо незалежних циклів."
+            ],
+            "resolution": "Застосуйте KCL у незалежних вузлах і KVL для незалежних контурів."
+        },
+        {
+            "id": "uk-120",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[hypotenuse-geometry] Translation places hypotenuse opposite 30°, contradicting right-triangle geometry.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 10 cm hypotenuse meets an angle of 30°.",
+                "Previous Ukrainian: У прямокутному трикутнику гіпотенуза завдовжки 10 см лежить навпроти кута 30°."
+            ],
+            "resolution": "У прямокутному трикутнику гіпотенуза завдовжки 10 cm утворює з одним із катетів кут 30°."
+        },
+        {
+            "id": "uk-121",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[angle-mode] Correct angle mode is not a right-angle mode.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A calculator must be in the correct angle mode. Using degree mode for a radian value, or vice versa, produces a different result. A complete cycle is 360° or 2π radians.",
+                "Previous Ukrainian: Калькулятор має бути в режимі правильного кута. Використання градусного режиму для значення в радіанах або навпаки дає інший результат. Повний цикл становить 360° або 2π радіан."
+            ],
+            "resolution": "На калькуляторі має бути вибрано правильні одиниці вимірювання кутів. Використання режиму градусів для значення в радіанах або навпаки дає інший результат. Повний оберт становить 360° або 2π радіан."
+        },
+        {
+            "id": "uk-122",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heating-example] Literal heat the example obscures physical referent.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat the 41.8 kJ example with a constant 100 W source and no losses.",
+                "Previous Ukrainian: Нагрійте приклад 41,8 кДж за допомогою джерела постійної потужності 100 Вт і без втрат."
+            ],
+            "resolution": "Для нагрівання води з попереднього прикладу потрібно 41.8 kJ. Використайте джерело сталої потужності 100 W і припустіть, що втрат немає."
+        },
+        {
+            "id": "uk-123",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] Спрацьований means triggered/worn, not worked mathematical example.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Ukrainian: Спрацьований приклад"
+            ],
+            "resolution": "Приклад розрахунку"
+        },
+        {
+            "id": "uk-124",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[common-si-units] Common is not base; source table happens to list bases but title should preserve source distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Common SI units",
+                "Previous Ukrainian: Основні одиниці СІ"
+            ],
+            "resolution": "Поширені одиниці СІ"
+        },
+        {
+            "id": "uk-125",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Physical quantity is not amount/count.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quantity",
+                "Previous Ukrainian: Кількість"
+            ],
+            "resolution": "Величина"
+        },
+        {
+            "id": "uk-126",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-dimension] Dimensions in dimensional analysis are not geometric sizes.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A pound can refer to mass (lb) or force (lbf), which are different quantities. Likewise, inches, square inches, and cubic inches measure different dimensions.",
+                "Previous Ukrainian: Фунт може стосуватися маси (lb) або сили (lbf), які є різними величинами. Подібним чином дюйми, квадратні дюйми та кубічні дюйми вимірюють різні розміри."
+            ],
+            "resolution": "Фунт може позначати масу (lb) або силу (lbf), а це різні величини. Так само дюйми, квадратні дюйми та кубічні дюйми вимірюють величини різних розмірностей."
+        },
+        {
+            "id": "uk-127",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-dimension] Dimensions in dimensional analysis are not geometric sizes.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Confirm that both sides of an equation have compatible dimensions.",
+                "Previous Ukrainian: Переконайтеся, що обидві сторони рівняння мають сумісні розміри."
+            ],
+            "resolution": "Переконайтеся, що обидві частини рівняння мають сумісні розмірності."
+        },
+        {
+            "id": "uk-128",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[ampacity] Ampacity becomes actual current, losing distinction between load and rating.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For 1/0, 2/0, 3/0, and 4/0, use n = 0, -1, -2, and -3. AWG determines conductor size, not a universal safe current; ampacity also depends on material, insulation, cooling, installation, and applicable electrical rules.",
+                "Previous Ukrainian: Для 1/0, 2/0, 3/0 і 4/0 використовуйте n = 0, -1, -2 і -3. AWG визначає розмір провідника, а не універсальний безпечний струм; струм також залежить від матеріалу, ізоляції, охолодження, монтажу та відповідних електричних правил."
+            ],
+            "resolution": "Для 1/0, 2/0, 3/0 і 4/0 використовуйте n = 0, -1, -2 і -3. AWG визначає розмір провідника, а не універсальний безпечний струм; допустимий струм також залежить від матеріалу, ізоляції, охолодження, монтажу та відповідних електротехнічних норм."
+        },
+        {
+            "id": "uk-129",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[pulse-substitution-direction] Translation reverses substitution warning, telling readers not to replace pulse values with continuous rating.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous Ukrainian: 45 A, незалежне безперервне значення для перевіреної tabless-версії; не замінюйте ним імпульсні значення.",
+                "{\"subject\":\"pulse-substitution-direction\",\"issuer\":\"E-One Moli Energy\",\"title\":\"Product\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://www.molicel.com/product/\",\"locator\":\"Power Cell section\",\"conclusion\":\"Manufacturer distinguishes continuous and pulse discharge ratings. The correction only restores the English prohibition on substituting pulse ratings; no device-specific numerical ratings changed.\",\"limitations\":\"General distinction only; this marketing page does not establish any catalog cell rating. Canonical source and local battery methodology supply exact translation meaning.\"}",
+                "https://www.molicel.com/product/ — Manufacturer distinguishes continuous and pulse discharge ratings. The correction only restores the English prohibition on substituting pulse ratings; no device-specific numerical ratings changed."
+            ],
+            "resolution": "45 A — незалежно визначене значення безперервного струму для випробуваної версії tabless; не підставляйте замість нього імпульсні рейтинги."
+        },
+        {
+            "id": "uk-130",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared pre-production upgraded to certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; tested cells appeared pre-production and lacked the CCC logo.",
+                "Previous Ukrainian: 40 A, консервативне значення; випробувані елементи були передсерійними і не мали логотипа CCC."
+            ],
+            "resolution": "40 A — консервативне значення; випробувані елементи, імовірно, були передсерійними й не мали логотипа CCC."
+        },
+        {
+            "id": "uk-131",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared pre-production upgraded to certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 19 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Ukrainian: 19 A, консервативне значення; точні випробувані зразки були передсерійними й не мали маркування CCC."
+            ],
+            "resolution": "19 A — консервативне значення; конкретні випробувані зразки, імовірно, були передсерійними й не мали маркування CCC."
+        },
+        {
+            "id": "uk-132",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared pre-production upgraded to certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 90 A is temperature-limited and tested cells appeared pre-production.",
+                "Previous Ukrainian: 40 A, консервативне значення; 90 A має температурні обмеження, а випробувані елементи були передсерійними."
+            ],
+            "resolution": "40 A — консервативне значення; 90 A обмежено температурою, а випробувані елементи, імовірно, були передсерійними."
+        },
+        {
+            "id": "uk-133",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared pre-production upgraded to certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 13 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Ukrainian: 13 A, консервативне значення; точні випробувані зразки були передсерійними й не мали маркування CCC."
+            ],
+            "resolution": "13 A — консервативне значення; конкретні випробувані зразки, імовірно, були передсерійними й не мали маркування CCC."
+        },
+        {
+            "id": "uk-134",
+            "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[integrated-mod-vs-battery] Device description mistranslated as a battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in-battery regulated mod rated at 100 W; testing measured 101 W, 29 A, and at least 7.97 V.",
+                "Previous Ukrainian: Вбудована батарея з регульованою потужністю 100 Вт; тестування виміряло 101 Вт, 29 А та принаймні 7,97 В."
+            ],
+            "resolution": "Регульований мод із вбудованим акумулятором і заявленою потужністю 100 W; під час тестування виміряно 101 W, 29 A і щонайменше 7.97 V."
+        },
+        {
+            "id": "uk-135",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] Construction description left in English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell 21700/18650-adapter mod; Eleaf specifies 100 W, 9 V, 0.05–3.5 Ω; testing identified 30 A.",
+                "Previous Ukrainian: Single-cell 21700/18650-adapter mod; Eleaf вказує 100 Вт, 9 В, 0,05–3,5 Ом; тестування виявило 30 А."
+            ],
+            "resolution": "Мод для одного елемента 21700 або 18650 з адаптером; Eleaf вказує 100 W, 9 V, 0.05–3.5 Ω; під час тестування визначено 30 A."
+        },
+        {
+            "id": "uk-136",
+            "translationId": "catalogText.mod.preset-238.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] Single-cell mistranslated as single-component.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell regulated squonk mod for 21700, 20700, or adapted 18650 cells with a conservative 95 W, 6 V, 34 A profile.",
+                "Previous Ukrainian: Однокомпонентний регульований мод Squonk для 21700, 20700 або адаптованих комірок 18650 із консервативним профілем 95 Вт, 6 В, 34 А."
+            ],
+            "resolution": "Регульований сквонк-мод для одного елемента 21700, 20700 або 18650 з адаптером, із консервативним профілем 95 W, 6 V, 34 A."
+        },
+        {
+            "id": "uk-137",
+            "translationId": "catalogText.mod.preset-231.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] Dual-cell format designation left untranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-21700 regulated mod with 18650 adapters; VAPORESSO rates it 220 W; testing measured 208 W, 8.979 V, and 39 A.",
+                "Previous Ukrainian: Регульований мод Dual-21700 з адаптерами 18650; VAPORESSO оцінює його в 220 Вт; тестування виміряло 208 Вт, 8,979 В і 39 А."
+            ],
+            "resolution": "Регульований мод для двох елементів 21700 з адаптерами для 18650; VAPORESSO заявляє 220 W; під час тестування виміряно 208 W, 8.979 V і 39 A."
+        },
+        {
+            "id": "uk-138",
+            "translationId": "catalogText.mod.preset-234.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] Dual-cell format designation left untranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-18650 regulated mod; VAPORESSO rates it 220 W; testing measured 215 W, 9.08 V, and 37 A.",
+                "Previous Ukrainian: Регульований мод Dual-18650; VAPORESSO оцінює його в 220 Вт; тестування виміряло 215 Вт, 9,08 В і 37 А."
+            ],
+            "resolution": "Регульований мод для двох елементів 18650; VAPORESSO заявляє 220 W; під час тестування виміряно 215 W, 9.08 V і 37 A."
+        },
+        {
+            "id": "uk-139",
+            "translationId": "catalogText.mod.preset-236.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] Single-cell format designation left untranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-18650 regulated mod using AS Chip 4.0; manufacturer profile is 100 W, 7.5 V, 32 A, 0.1–3 Ω.",
+                "Previous Ukrainian: Регульований мод Single-18650 з використанням AS Chip 4.0; профіль виробника 100 Вт, 7,5 В, 32 А, 0,1–3 Ом."
+            ],
+            "resolution": "Регульований мод для одного елемента 18650 з AS Chip 4.0; профіль виробника: 100 W, 7.5 V, 32 A, 0.1–3 Ω."
+        },
+        {
+            "id": "uk-140",
+            "translationId": "calculators.coil.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] The displayed mW/mm² quantity is heat flux density, not total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous Ukrainian: Тепловий потік",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"National University Lviv Polytechnic\",\"author\":\"Yuliia Dzikovska\",\"title\":\"Нормативно-технічне забезпечення вимірювань розподілу температури теплового поля об’єктів промисловості та медицини\",\"publicationDate\":\"2017\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf\",\"locator\":\"PDF page 127, discussion of equation 4.7\",\"conclusion\":\"Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.\",\"limitations\":\"Terminology evidence, not a vaping safety assessment.\"}",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"Igor Sikorsky Kyiv Polytechnic Institute\",\"author\":\"Anton Karvatskyi\",\"title\":\"Методи та інструменти числового аналізу фізичних полів обладнання хімічних виробництв та пакувальної техніки\",\"publicationDate\":\"2018\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf\",\"conclusion\":\"Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area.\",\"limitations\":\"Terminology evidence only; no new vaping claim or numerical limit.\"}",
+                "https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf — Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.",
+                "https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf — Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area."
+            ],
+            "resolution": "Густина теплового потоку"
+        },
+        {
+            "id": "uk-141",
+            "translationId": "calculators.coil.targetHeatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] The displayed mW/mm² quantity is heat flux density, not total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Target heat flux",
+                "Previous Ukrainian: Цільовий тепловий потік",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"National University Lviv Polytechnic\",\"author\":\"Yuliia Dzikovska\",\"title\":\"Нормативно-технічне забезпечення вимірювань розподілу температури теплового поля об’єктів промисловості та медицини\",\"publicationDate\":\"2017\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf\",\"locator\":\"PDF page 127, discussion of equation 4.7\",\"conclusion\":\"Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.\",\"limitations\":\"Terminology evidence, not a vaping safety assessment.\"}",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"Igor Sikorsky Kyiv Polytechnic Institute\",\"author\":\"Anton Karvatskyi\",\"title\":\"Методи та інструменти числового аналізу фізичних полів обладнання хімічних виробництв та пакувальної техніки\",\"publicationDate\":\"2018\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf\",\"conclusion\":\"Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area.\",\"limitations\":\"Terminology evidence only; no new vaping claim or numerical limit.\"}",
+                "https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf — Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.",
+                "https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf — Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area."
+            ],
+            "resolution": "Цільова густина теплового потоку"
+        },
+        {
+            "id": "uk-142",
+            "translationId": "calculators.wirewiz.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] The displayed mW/mm² quantity is heat flux density, not total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous Ukrainian: Тепловий потік",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"National University Lviv Polytechnic\",\"author\":\"Yuliia Dzikovska\",\"title\":\"Нормативно-технічне забезпечення вимірювань розподілу температури теплового поля об’єктів промисловості та медицини\",\"publicationDate\":\"2017\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf\",\"locator\":\"PDF page 127, discussion of equation 4.7\",\"conclusion\":\"Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.\",\"limitations\":\"Terminology evidence, not a vaping safety assessment.\"}",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"Igor Sikorsky Kyiv Polytechnic Institute\",\"author\":\"Anton Karvatskyi\",\"title\":\"Методи та інструменти числового аналізу фізичних полів обладнання хімічних виробництв та пакувальної техніки\",\"publicationDate\":\"2018\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf\",\"conclusion\":\"Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area.\",\"limitations\":\"Terminology evidence only; no new vaping claim or numerical limit.\"}",
+                "https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf — Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.",
+                "https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf — Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area."
+            ],
+            "resolution": "Густина теплового потоку"
+        },
+        {
+            "id": "uk-143",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Use the same area-normalized term as article title and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux describes how quickly heat crosses a surface, independent of the total amount of material storing heat.",
+                "Previous Ukrainian: Тепловий потік описує, як швидко тепло перетинає поверхню, незалежно від загальної кількості матеріалу, що накопичує тепло.",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"National University Lviv Polytechnic\",\"author\":\"Yuliia Dzikovska\",\"title\":\"Нормативно-технічне забезпечення вимірювань розподілу температури теплового поля об’єктів промисловості та медицини\",\"publicationDate\":\"2017\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf\",\"locator\":\"PDF page 127, discussion of equation 4.7\",\"conclusion\":\"Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.\",\"limitations\":\"Terminology evidence, not a vaping safety assessment.\"}",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"Igor Sikorsky Kyiv Polytechnic Institute\",\"author\":\"Anton Karvatskyi\",\"title\":\"Методи та інструменти числового аналізу фізичних полів обладнання хімічних виробництв та пакувальної техніки\",\"publicationDate\":\"2018\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf\",\"conclusion\":\"Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area.\",\"limitations\":\"Terminology evidence only; no new vaping claim or numerical limit.\"}",
+                "https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf — Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.",
+                "https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf — Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area."
+            ],
+            "resolution": "Густина теплового потоку описує швидкість передавання тепла через одиницю площі поверхні незалежно від загальної кількості матеріалу, що накопичує тепло."
+        },
+        {
+            "id": "uk-144",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Example concerns flux density, not total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Average heater flux",
+                "Previous Ukrainian: Середній потік нагрівача",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"National University Lviv Polytechnic\",\"author\":\"Yuliia Dzikovska\",\"title\":\"Нормативно-технічне забезпечення вимірювань розподілу температури теплового поля об’єктів промисловості та медицини\",\"publicationDate\":\"2017\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf\",\"locator\":\"PDF page 127, discussion of equation 4.7\",\"conclusion\":\"Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.\",\"limitations\":\"Terminology evidence, not a vaping safety assessment.\"}",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"Igor Sikorsky Kyiv Polytechnic Institute\",\"author\":\"Anton Karvatskyi\",\"title\":\"Методи та інструменти числового аналізу фізичних полів обладнання хімічних виробництв та пакувальної техніки\",\"publicationDate\":\"2018\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf\",\"conclusion\":\"Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area.\",\"limitations\":\"Terminology evidence only; no new vaping claim or numerical limit.\"}",
+                "https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf — Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.",
+                "https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf — Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area."
+            ],
+            "resolution": "Середня густина теплового потоку нагрівача"
+        },
+        {
+            "id": "uk-145",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Use area-normalized term consistent with units.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux is a transfer rate, not a temperature; use heat capacity for temperature change.",
+                "Previous Ukrainian: Тепловий потік — це швидкість передавання енергії, а не температура; для зміни температури використовуйте теплоємність.",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"National University Lviv Polytechnic\",\"author\":\"Yuliia Dzikovska\",\"title\":\"Нормативно-технічне забезпечення вимірювань розподілу температури теплового поля об’єктів промисловості та медицини\",\"publicationDate\":\"2017\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf\",\"locator\":\"PDF page 127, discussion of equation 4.7\",\"conclusion\":\"Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.\",\"limitations\":\"Terminology evidence, not a vaping safety assessment.\"}",
+                "{\"subject\":\"heat-flux-density\",\"issuer\":\"Igor Sikorsky Kyiv Polytechnic Institute\",\"author\":\"Anton Karvatskyi\",\"title\":\"Методи та інструменти числового аналізу фізичних полів обладнання хімічних виробництв та пакувальної техніки\",\"publicationDate\":\"2018\",\"checkedDate\":\"2026-10-08\",\"url\":\"https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf\",\"conclusion\":\"Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area.\",\"limitations\":\"Terminology evidence only; no new vaping claim or numerical limit.\"}",
+                "https://lpnu.ua/sites/default/files/2020/dissertation/1771/disdzikovskaym.pdf — Native technical usage explicitly pairs густина теплового потоку with W/m²; agrees with canonical knowledge-base formula and actual mW/mm² UI.",
+                "https://ela.kpi.ua/bitstream/123456789/23913/1/Tutorial-HP-2.pdf — Independent Ukrainian technical textbook uses густина теплового потоку for surface heat-transfer rate per area."
+            ],
+            "resolution": "Густина теплового потоку — це швидкість передавання енергії через одиницю площі, а не температура; для визначення зміни температури використовуйте теплоємність."
+        },
+        {
+            "id": "uk-146",
+            "translationId": "routeMetadata.uk./modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-limits] За межами means outside the limits, reversing intended from-limits meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous Ukrainian: Знайдіть корисний діапазон опору за межами вихідних параметрів регульованого мода."
+            ],
+            "resolution": "Знайдіть придатний діапазон опору за обмеженнями вихідних параметрів регульованого мода."
+        },
+        {
+            "id": "uk-147",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Ukrainian: I = 4,2 В / 1,0 \\u03a9 = 4,2 А"
+            ],
+            "resolution": "I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+        },
+        {
+            "id": "uk-148",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Ukrainian: R = 12 В / 2 А = 6 \\u03a9"
+            ],
+            "resolution": "R = 12 V / 2 A = 6 \\u03a9"
+        },
+        {
+            "id": "uk-149",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: V = 0.5 A × 10 Ω = 5 V",
+                "Previous Ukrainian: V = 0,5 А × 10 Ω = 5 В"
+            ],
+            "resolution": "V = 0,5 A × 10 Ω = 5 V"
+        },
+        {
+            "id": "uk-150",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: P = I^2 × R = 3^2 × 0.8 = 7.2 W",
+                "Previous Ukrainian: P = I^2 × R = 3^2 × 0,8 = 7,2 Вт"
+            ],
+            "resolution": "P = I^2 × R = 3^2 × 0,8 = 7,2 W"
+        },
+        {
+            "id": "uk-151",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: E = P × t = 7.2 W × 10 s = 72 J",
+                "Previous Ukrainian: E = P × t = 7,2 Вт × 10 с = 72 Дж"
+            ],
+            "resolution": "E = P × t = 7,2 W × 10 s = 72 J"
+        },
+        {
+            "id": "uk-152",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Ukrainian: R_загальний = 0,40 \\u03a9"
+            ],
+            "resolution": "R_total = 0,40 \\u03a9"
+        },
+        {
+            "id": "uk-153",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I = 8.0 V / 0.40 Ω = 20 A",
+                "Previous Ukrainian: I = 8,0 В / 0,40 Ω = 20 А"
+            ],
+            "resolution": "I = 8,0 V / 0,40 Ω = 20 A"
+        },
+        {
+            "id": "uk-154",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Ukrainian: R_загальний = 0,20 \\u03a9"
+            ],
+            "resolution": "R_total = 0,20 \\u03a9"
+        },
+        {
+            "id": "uk-155",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I_total = 4.0 V / 0.20 Ω = 20 A",
+                "Previous Ukrainian: I_total = 4,0 В / 0,20 Ом = 20 А"
+            ],
+            "resolution": "I_total = 4,0 V / 0,20 Ω = 20 A"
+        },
+        {
+            "id": "uk-156",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: opposite = 10 × sin(30°) = 5 cm",
+                "Previous Ukrainian: протилежна сторона = 10 × sin(30°) = 5 см"
+            ],
+            "resolution": "протилежна сторона = 10 × sin(30°) = 5 cm"
+        },
+        {
+            "id": "uk-157",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: adjacent = 10 × cos(30°) ≈ 8.66 cm",
+                "Previous Ukrainian: прилегла сторона = 10 × cos(30°) ≈ 8,66 см"
+            ],
+            "resolution": "прилегла сторона = 10 × cos(30°) ≈ 8,66 cm"
+        },
+        {
+            "id": "uk-158",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Q = 0.20 × 4,180 × 50 = 41,800 J",
+                "Previous Ukrainian: Q = 0,20 × 4180 × 50 = 41800 Дж"
+            ],
+            "resolution": "Q = 0,20 × 4180 × 50 = 41800 J"
+        },
+        {
+            "id": "uk-159",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: t = 41,800 J / 100 W = 418 s",
+                "Previous Ukrainian: t = 41800 Дж / 100 Вт = 418 с"
+            ],
+            "resolution": "t = 41800 J / 100 W = 418 s"
+        },
+        {
+            "id": "uk-160",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: q'' = 100 W / 0.020 m² = 5,000 W/m²",
+                "Previous Ukrainian: q'' = 100 Вт / 0,020 м² = 5 000 Вт/м²"
+            ],
+            "resolution": "q'' = 100 W / 0,020 m² = 5 000 W/m²"
+        },
+        {
+            "id": "uk-161",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.1 inch × 25.4 = 2.54 mm",
+                "Previous Ukrainian: 0,1 дюйма × 25,4 = 2,54 мм"
+            ],
+            "resolution": "0,1 дюйма × 25,4 = 2,54 mm"
+        },
+        {
+            "id": "uk-162",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[protected-formula] Restore canonical unit symbols and formula identifiers; preserve valid decimal commas and descriptive Ukrainian labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 5 mm / 25.4 ≈ 0.19685 inch",
+                "Previous Ukrainian: 5 мм / 25,4 ≈ 0,19685 дюйма"
+            ],
+            "resolution": "5 mm / 25,4 ≈ 0,19685 дюйма"
+        },
+        {
+            "id": "uk-163",
+            "translationId": "messages.catalogEditor.weightGrams",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Weight (g)",
+                "Previous Ukrainian: Вага (г)"
+            ],
+            "resolution": "Вага (g)"
+        },
+        {
+            "id": "uk-164",
+            "translationId": "messages.catalogEditor.nominalDiameter",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal diameter (mm)",
+                "Previous Ukrainian: Номінальний діаметр (мм)"
+            ],
+            "resolution": "Номінальний діаметр (mm)"
+        },
+        {
+            "id": "uk-165",
+            "translationId": "messages.catalogEditor.nominalLength",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal length (mm)",
+                "Previous Ukrainian: Номінальна довжина (мм)"
+            ],
+            "resolution": "Номінальна довжина (mm)"
+        },
+        {
+            "id": "uk-166",
+            "translationId": "messages.catalogEditor.length",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Length (mm)",
+                "Previous Ukrainian: Довжина (мм)"
+            ],
+            "resolution": "Довжина (mm)"
+        },
+        {
+            "id": "uk-167",
+            "translationId": "messages.catalogEditor.width",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Width (mm)",
+                "Previous Ukrainian: Ширина (мм)"
+            ],
+            "resolution": "Ширина (mm)"
+        },
+        {
+            "id": "uk-168",
+            "translationId": "messages.catalogEditor.thickness",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Thickness (mm)",
+                "Previous Ukrainian: Товщина (мм)"
+            ],
+            "resolution": "Товщина (mm)"
+        },
+        {
+            "id": "uk-169",
+            "translationId": "messages.catalogEditor.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity (mAh)",
+                "Previous Ukrainian: Номінальна ємність (мАг)"
+            ],
+            "resolution": "Номінальна ємність (mAh)"
+        },
+        {
+            "id": "uk-170",
+            "translationId": "messages.catalogEditor.nominalVoltage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage (V)",
+                "Previous Ukrainian: Номінальна напруга (В)"
+            ],
+            "resolution": "Номінальна напруга (V)"
+        },
+        {
+            "id": "uk-171",
+            "translationId": "messages.catalogEditor.resistivity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistivity (Ω mm²/m)",
+                "Previous Ukrainian: Питомий опір (Ω мм²/м)"
+            ],
+            "resolution": "Питомий опір (Ω mm²/m)"
+        },
+        {
+            "id": "uk-172",
+            "translationId": "messages.catalogEditor.heatCapacity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat capacity (J/g·K)",
+                "Previous Ukrainian: Теплоємність (Дж/г·K)"
+            ],
+            "resolution": "Теплоємність (J/g·K)"
+        },
+        {
+            "id": "uk-173",
+            "translationId": "messages.catalogEditor.density",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Density (g/cm³)",
+                "Previous Ukrainian: Щільність (г/см³)"
+            ],
+            "resolution": "Щільність (g/cm³)"
+        },
+        {
+            "id": "uk-174",
+            "translationId": "messages.catalogEditor.maxOutputVoltage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum output voltage (V)",
+                "Previous Ukrainian: Максимальна вихідна напруга (В)"
+            ],
+            "resolution": "Максимальна вихідна напруга (V)"
+        },
+        {
+            "id": "uk-175",
+            "translationId": "messages.catalogEditor.maxOutputPower",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum output power (W)",
+                "Previous Ukrainian: Максимальна вихідна потужність (Вт)"
+            ],
+            "resolution": "Максимальна вихідна потужність (W)"
+        },
+        {
+            "id": "uk-176",
+            "translationId": "calculators.juice.ml",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: ml",
+                "Previous Ukrainian: мл"
+            ],
+            "resolution": "ml"
+        },
+        {
+            "id": "uk-177",
+            "translationId": "calculators.modrange.ampere",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A",
+                "Previous Ukrainian: А"
+            ],
+            "resolution": "A"
+        },
+        {
+            "id": "uk-178",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: V is voltage, measured in volts (V).",
+                "Previous Ukrainian: V — напруга, виміряна у вольтах (В)."
+            ],
+            "resolution": "V — напруга, виміряна у вольтах (V)."
+        },
+        {
+            "id": "uk-179",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I is current, measured in amperes or amps (A).",
+                "Previous Ukrainian: I — струм, виміряний в амперах (А)."
+            ],
+            "resolution": "I — струм, виміряний в амперах (A)."
+        },
+        {
+            "id": "uk-180",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Ukrainian: Джерело 4,2 В підключається до навантаження 1,0 \\u03a9."
+            ],
+            "resolution": "Джерело 4,2 V підключається до навантаження 1,0 \\u03a9."
+        },
+        {
+            "id": "uk-181",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The load current is 4.2 A.",
+                "Previous Ukrainian: Струм навантаження 4,2 А."
+            ],
+            "resolution": "Струм навантаження 4,2 A."
+        },
+        {
+            "id": "uk-182",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A circuit has 12 V across it and draws 2 A.",
+                "Previous Ukrainian: У ланцюзі напруга 12 В і споживає 2 А."
+            ],
+            "resolution": "До кола прикладено напругу 12 V, і воно споживає струм 2 A."
+        },
+        {
+            "id": "uk-183",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Ukrainian: Через опір 10 \\u03a9 протікає струм 0,5 А."
+            ],
+            "resolution": "Через опір 10 \\u03a9 протікає струм 0,5 A."
+        },
+        {
+            "id": "uk-184",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The voltage is 5 V.",
+                "Previous Ukrainian: Напруга 5 В."
+            ],
+            "resolution": "Напруга 5 V."
+        },
+        {
+            "id": "uk-185",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Ohm's law combines with the power relationship P = V × I. Power P is measured in watts (W). For a 4.2 V source and a 1.0 Ω load, the ideal power is 17.64 W. The component needs enough thermal capacity and headroom to dissipate the resulting heat safely.",
+                "Previous Ukrainian: Закон Ома поєднується зі співвідношенням потужності P = V × I. Потужність P вимірюють у ватах (Вт). Для джерела 4,2 В і навантаження 1,0 Ω ідеальна потужність становить 17,64 Вт. Компоненту потрібні достатня теплоємність і запас безпеки, щоб безпечно розсіювати утворене тепло."
+            ],
+            "resolution": "Закон Ома поєднується зі співвідношенням потужності P = V × I. Потужність P вимірюють у ватах (W). Для джерела 4,2 V і навантаження 1,0 Ω ідеальна потужність становить 17,64 W. Компоненту потрібні достатня теплоємність і запас безпеки, щоб безпечно розсіювати утворене тепло."
+        },
+        {
+            "id": "uk-186",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 mA = 0.001 A",
+                "Previous Ukrainian: 1 мА = 0,001 А"
+            ],
+            "resolution": "1 mA = 0,001 A"
+        },
+        {
+            "id": "uk-187",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 W = 1,000 mW",
+                "Previous Ukrainian: 1 Вт = 1000 мВт"
+            ],
+            "resolution": "1 W = 1000 mW"
+        },
+        {
+            "id": "uk-188",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: P is power in watts (W).",
+                "Previous Ukrainian: P — потужність у ватах (Вт)."
+            ],
+            "resolution": "P — потужність у ватах (W)."
+        },
+        {
+            "id": "uk-189",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: V is voltage in volts (V).",
+                "Previous Ukrainian: V — напруга у вольтах (В)."
+            ],
+            "resolution": "V — напруга у вольтах (V)."
+        },
+        {
+            "id": "uk-190",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I is current in amperes (A).",
+                "Previous Ukrainian: I — струм в амперах (А)."
+            ],
+            "resolution": "I — струм в амперах (A)."
+        },
+        {
+            "id": "uk-191",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Ukrainian: Через котушку опором 0,8 Ω проходить струм 3 А."
+            ],
+            "resolution": "Через котушку опором 0,8 Ω проходить струм 3 A."
+        },
+        {
+            "id": "uk-192",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The coil converts energy to heat at 7.2 joules per second, or 72 J over 10 seconds.",
+                "Previous Ukrainian: Котушка перетворює електричну енергію на тепло з потужністю 7,2 Вт; за 10 секунд це становить 72 Дж."
+            ],
+            "resolution": "Спіраль перетворює енергію на тепло зі швидкістю 7,2 джоуля за секунду, або 72 J за 10 секунд."
+        },
+        {
+            "id": "uk-193",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: If 8 A enters a node and one branch carries 3 A away, the remaining branches must carry a combined 5 A away. Choose current directions before solving; a negative result means the real current flows opposite to the assumed direction.",
+                "Previous Ukrainian: Якщо у вузол входить 8 А, а одна гілка відводить 3 А, решта гілок разом мають відвести 5 А. Перед розв’язанням визначте напрямки струму; негативний результат означає, що реальний струм тече проти припущеного напрямку."
+            ],
+            "resolution": "Якщо у вузол входить 8 A, а одна гілка відводить 3 A, решта гілок разом мають відвести 5 A. Перед розв’язанням визначте напрямки струму; негативний результат означає, що реальний струм тече проти припущеного напрямку."
+        },
+        {
+            "id": "uk-194",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Ukrainian: Два резистора 0,20 \\u03a9 підключені послідовно до 8,0 В."
+            ],
+            "resolution": "Два резистори 0,20 \\u03a9 підключені послідовно до 8,0 V."
+        },
+        {
+            "id": "uk-195",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The same 20 A passes through both resistors.",
+                "Previous Ukrainian: Через обидва резистори проходить однаковий струм 20 А."
+            ],
+            "resolution": "Через обидва резистори проходить однаковий струм 20 A."
+        },
+        {
+            "id": "uk-196",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Ukrainian: Дві рівні гілки 0,40 \\u03a9 підключаються до 4,0 В."
+            ],
+            "resolution": "Дві рівні гілки 0,40 \\u03a9 підключаються до 4,0 V."
+        },
+        {
+            "id": "uk-197",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: With equal branch resistance, each branch carries 10 A.",
+                "Previous Ukrainian: При рівному опорі гілки кожна гілка несе 10 А."
+            ],
+            "resolution": "При рівному опорі гілки кожна гілка несе 10 A."
+        },
+        {
+            "id": "uk-198",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: C is heat capacity in J/K or J/°C.",
+                "Previous Ukrainian: C — теплоємність у Дж/К або Дж/°C."
+            ],
+            "resolution": "C — теплоємність у J/K або J/°C."
+        },
+        {
+            "id": "uk-199",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Q is transferred heat energy in joules (J).",
+                "Previous Ukrainian: Q — передана теплова енергія в джоулях (Дж)."
+            ],
+            "resolution": "Q — передана теплова енергія в джоулях (J)."
+        },
+        {
+            "id": "uk-200",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: m is mass in kilograms and c is specific heat capacity in J/(kg·K).",
+                "Previous Ukrainian: m — маса в кілограмах, а c — питома теплоємність у Дж/(кг·К)."
+            ],
+            "resolution": "m — маса в кілограмах, а c — питома теплоємність у J/(kg·K)."
+        },
+        {
+            "id": "uk-201",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A temperature difference of 1 K is the same size as a difference of 1 °C.",
+                "Previous Ukrainian: Різниця температур в 1 К дорівнює різниці в 1 °С."
+            ],
+            "resolution": "Різниця температур в 1 K дорівнює різниці в 1 °C."
+        },
+        {
+            "id": "uk-202",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat 0.20 kg of water from 20 °C to 70 °C using c = 4,180 J/(kg·K).",
+                "Previous Ukrainian: Нагрійте 0,20 кг води від 20 °C до 70 °C, використовуючи c = 4180 Дж/(кг·К)."
+            ],
+            "resolution": "Нагрійте 0,20 kg води від 20 °C до 70 °C, використовуючи c = 4180 J/(kg·K)."
+        },
+        {
+            "id": "uk-203",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The ideal energy requirement is 41.8 kJ; a real heater needs more because of losses.",
+                "Previous Ukrainian: Ідеальна потреба в енергії становить 41,8 кДж; справжній обігрівач потребує більше через втрати."
+            ],
+            "resolution": "Ідеальна потреба в енергії становить 41,8 kJ; справжній обігрівач потребує більше через втрати."
+        },
+        {
+            "id": "uk-204",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: During melting or boiling, supplied energy can change the material's state without changing its temperature. L is specific latent heat in J/kg.",
+                "Previous Ukrainian: Під час плавлення або кипіння підведена енергія може змінити фазу матеріалу без зміни його температури. L — питома теплота фазового переходу в Дж/кг."
+            ],
+            "resolution": "Під час плавлення або кипіння підведена енергія може змінити фазу матеріалу без зміни його температури. L — питома теплота фазового переходу в J/kg."
+        },
+        {
+            "id": "uk-205",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: q'' is heat flux in W/m².",
+                "Previous Ukrainian: q'' — густина теплового потоку у Вт/м²."
+            ],
+            "resolution": "q'' — густина теплового потоку у W/m²."
+        },
+        {
+            "id": "uk-206",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Q_dot is total heat-transfer rate in watts (W).",
+                "Previous Ukrainian: Q_dot — загальна швидкість передавання тепла у ватах (Вт)."
+            ],
+            "resolution": "Q_dot — загальна швидкість передавання тепла у ватах (W)."
+        },
+        {
+            "id": "uk-207",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A is the area through which heat is transferred in square metres (m²).",
+                "Previous Ukrainian: A – площа, через яку передається тепло в квадратних метрах (м²)."
+            ],
+            "resolution": "A – площа, через яку передається тепло в квадратних метрах (m²)."
+        },
+        {
+            "id": "uk-208",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 100 W heater transfers heat through an area of 0.020 m².",
+                "Previous Ukrainian: Обігрівач потужністю 100 Вт передає тепло через площу 0,020 м²."
+            ],
+            "resolution": "Обігрівач потужністю 100 W передає тепло через площу 0,020 m²."
+        },
+        {
+            "id": "uk-209",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The average heat flux is 5,000 W/m², or 0.5 W/cm².",
+                "Previous Ukrainian: Середня густина теплового потоку становить 5 000 Вт/м², або 0,5 Вт/см²."
+            ],
+            "resolution": "Середня густина теплового потоку становить 5 000 W/m², або 0,5 W/cm²."
+        },
+        {
+            "id": "uk-210",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: k is thermal conductivity in W/(m·K).",
+                "Previous Ukrainian: k – теплопровідність у Вт/(м·К)."
+            ],
+            "resolution": "k – теплопровідність у W/(m·K)."
+        },
+        {
+            "id": "uk-211",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert area to m² before using W/m².",
+                "Previous Ukrainian: Перш ніж використовувати Вт/м², переведіть площу в м²."
+            ],
+            "resolution": "Перш ніж використовувати W/m², переведіть площу в m²."
+        },
+        {
+            "id": "uk-212",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.0.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: m",
+                "Previous Ukrainian: м"
+            ],
+            "resolution": "m"
+        },
+        {
+            "id": "uk-213",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.1.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: kg",
+                "Previous Ukrainian: кг"
+            ],
+            "resolution": "kg"
+        },
+        {
+            "id": "uk-214",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.2.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: s",
+                "Previous Ukrainian: с"
+            ],
+            "resolution": "s"
+        },
+        {
+            "id": "uk-215",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.3.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: K",
+                "Previous Ukrainian: К"
+            ],
+            "resolution": "K"
+        },
+        {
+            "id": "uk-216",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.4.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A",
+                "Previous Ukrainian: А"
+            ],
+            "resolution": "A"
+        },
+        {
+            "id": "uk-217",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.5.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: mol",
+                "Previous Ukrainian: мол"
+            ],
+            "resolution": "mol"
+        },
+        {
+            "id": "uk-218",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.6.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cd",
+                "Previous Ukrainian: кд"
+            ],
+            "resolution": "cd"
+        },
+        {
+            "id": "uk-219",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Voltage: volt (V).",
+                "Previous Ukrainian: Напруга: вольт (В)."
+            ],
+            "resolution": "Напруга: вольт (V)."
+        },
+        {
+            "id": "uk-220",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power: watt (W).",
+                "Previous Ukrainian: Потужність: ват (Вт)."
+            ],
+            "resolution": "Потужність: ват (W)."
+        },
+        {
+            "id": "uk-221",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Energy: joule (J).",
+                "Previous Ukrainian: Енергія: джоуль (Дж)."
+            ],
+            "resolution": "Енергія: джоуль (J)."
+        },
+        {
+            "id": "uk-222",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Force: newton (N).",
+                "Previous Ukrainian: Сила: ньютон (Н)."
+            ],
+            "resolution": "Сила: ньютон (N)."
+        },
+        {
+            "id": "uk-223",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.5",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Pressure: pascal (Pa).",
+                "Previous Ukrainian: Тиск: паскаль (Па)."
+            ],
+            "resolution": "Тиск: паскаль (Pa)."
+        },
+        {
+            "id": "uk-224",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.6",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Frequency: hertz (Hz).",
+                "Previous Ukrainian: Частота: герц (Гц)."
+            ],
+            "resolution": "Частота: герц (Hz)."
+        },
+        {
+            "id": "uk-225",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.1.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: M",
+                "Previous Ukrainian: М"
+            ],
+            "resolution": "M"
+        },
+        {
+            "id": "uk-226",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.2.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: m",
+                "Previous Ukrainian: м"
+            ],
+            "resolution": "m"
+        },
+        {
+            "id": "uk-227",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.4.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: n",
+                "Previous Ukrainian: н"
+            ],
+            "resolution": "n"
+        },
+        {
+            "id": "uk-228",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Ukrainian: Наприклад, 2,2 к\\u03a9 дорівнює 2200 \\u03a9, а 15 мА дорівнює 0,015 А. Перед використанням формули переведіть значення в сумісні одиниці."
+            ],
+            "resolution": "Наприклад, 2,2 k\\u03a9 дорівнює 2200 \\u03a9, а 15 mA дорівнює 0,015 A. Перед використанням формули переведіть значення в сумісні одиниці."
+        },
+        {
+            "id": "uk-229",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert 0.1 inch to millimetres and 5 mm to inches.",
+                "Previous Ukrainian: Перетворіть 0,1 дюйма в міліметри та 5 мм в дюйми."
+            ],
+            "resolution": "Перетворіть 0,1 дюйма в міліметри та 5 mm в дюйми."
+        },
+        {
+            "id": "uk-230",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 lb ≈ 0.45359237 kg.",
+                "Previous Ukrainian: 1 фунт ≈ 0,45359237 кг."
+            ],
+            "resolution": "1 lb ≈ 0,45359237 kg."
+        },
+        {
+            "id": "uk-231",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 lbf ≈ 4.44822 N.",
+                "Previous Ukrainian: 1 фунт-сила ≈ 4,44822 Н."
+            ],
+            "resolution": "1 lbf ≈ 4,44822 N."
+        },
+        {
+            "id": "uk-232",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 psi ≈ 6,894.76 Pa.",
+                "Previous Ukrainian: 1 psi ≈ 6894,76 Па."
+            ],
+            "resolution": "1 psi ≈ 6894,76 Pa."
+        },
+        {
+            "id": "uk-233",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 2.588 mm",
+                "Previous Ukrainian: 2,588 мм"
+            ],
+            "resolution": "2,588 mm"
+        },
+        {
+            "id": "uk-234",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 3.251 mm",
+                "Previous Ukrainian: 3,251 мм"
+            ],
+            "resolution": "3,251 mm"
+        },
+        {
+            "id": "uk-235",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 3.404 mm",
+                "Previous Ukrainian: 3,404 мм"
+            ],
+            "resolution": "3,404 mm"
+        },
+        {
+            "id": "uk-236",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.1.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.8128 mm",
+                "Previous Ukrainian: 0,8128 мм"
+            ],
+            "resolution": "0,8128 mm"
+        },
+        {
+            "id": "uk-237",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.1.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.9144 mm",
+                "Previous Ukrainian: 0,9144 мм"
+            ],
+            "resolution": "0,9144 mm"
+        },
+        {
+            "id": "uk-238",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.1.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.8890 mm",
+                "Previous Ukrainian: 0,8890 мм"
+            ],
+            "resolution": "0,8890 mm"
+        },
+        {
+            "id": "uk-239",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.2.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.2540 mm",
+                "Previous Ukrainian: 0,2540 мм"
+            ],
+            "resolution": "0,2540 mm"
+        },
+        {
+            "id": "uk-240",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.2.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.3150 mm",
+                "Previous Ukrainian: 0,3150 мм"
+            ],
+            "resolution": "0,3150 mm"
+        },
+        {
+            "id": "uk-241",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.2.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.3048 mm",
+                "Previous Ukrainian: 0,3048 мм"
+            ],
+            "resolution": "0,3048 mm"
+        },
+        {
+            "id": "uk-242",
+            "translationId": "catalogText.mod.preset-10.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbol] Preserve canonical unit symbols; Cyrillic local abbreviations break the explicit protected-token contract.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A Cloupor 30 W device using a third-party DNA30-style clone chipset, not an authentic Evolv DNA-30D board.",
+                "Previous Ukrainian: Пристрій Cloupor потужністю 30 Вт використовує чіпсет-клон стороннього виробника у стилі DNA30, а не автентичну плату Evolv DNA-30D."
+            ],
+            "resolution": "Пристрій Cloupor потужністю 30 W використовує чіпсет-клон стороннього виробника у стилі DNA30, а не автентичну плату Evolv DNA-30D."
+        },
+        {
+            "id": "uk-243",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-joule-summary] English says current turns resistance into heat. Documented paraphrase restores intended energy conversion; canonical English discrepancy remains explicitly recorded.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: How electrical current turns resistance into heat.",
+                "Previous Ukrainian: Як електричний струм перетворює опір на тепло.",
+                "the Steam Engine Joule heating reference defines conversion of electrical energy into heat."
+            ],
+            "resolution": "Як електрична енергія перетворюється на тепло під час проходження струму."
+        },
+        {
+            "id": "uk-244",
+            "translationId": "messages.catalogManager.manage",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "[placeholder-casing] Case difference in extracted placeholders is not a runtime placeholder failure: each locale function replaces its own marker correctly.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Manage __se_arg_0__",
+                "Previous Ukrainian: Керувати __SE_ARG_0__",
+                "Source and target functions each interpolate their own markers; source lowercases its noun."
+            ],
+            "resolution": "Retained working interpolation; extracted sentinel casing is not a runtime defect."
+        },
+        {
+            "id": "uk-245",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[exact-wrapper-identity] Exact-wrapper value refers to a specific tested variant, not accuracy/value of the wrapper itself.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A exact-wrapper value; 70 A is limited to 60 C and tested as an EVE 40PL rewrap.",
+                "Previous Ukrainian: 40 A, точне значення оболонки; 70 A обмежене 60 °C і випробуване як перепакований EVE 40PL."
+            ],
+            "resolution": "40 A — значення для конкретного варіанта оболонки; 70 A обмежено температурою 60 °C; випробуваний елемент визначено як перепакований EVE 40PL."
+        },
+        {
+            "id": "uk-246",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[exact-wrapper-identity] Preserve revision-specific applicability and underlying cell sourcing.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 20 A exact-wrapper value; the tester recommends below 15 A continuous. Vapehuset advertises 25 A in its title, and later rewrap sourcing or wrapper revisions may differ.",
+                "Previous Ukrainian: 20 A, точне значення оболонки; тестер рекомендує менше ніж 15 A безперервно. Vapehuset рекламує 25 A у назві, а пізніше джерело перепакування або версії оболонки можуть відрізнятися."
+            ],
+            "resolution": "20 A — значення для конкретного варіанта оболонки; випробувач рекомендує безперервний струм нижче 15 A. Vapehuset рекламує 25 A у назві, а в пізніших партіях можуть відрізнятися постачальник самих елементів або версія оболонки."
+        },
+        {
+            "id": "uk-247",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[exact-wrapper-identity] Exact-model value is model-specific, not a precision assertion; underlying sourcing is cell sourcing.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 30 A exact-model value; this is a rewrap and later wrapper revisions or underlying sourcing may differ.",
+                "Previous Ukrainian: 30 A, точне значення моделі; це перепакування, і пізніші версії оболонки або початкове джерело можуть відрізнятися."
+            ],
+            "resolution": "30 A — значення для конкретної моделі; це перепакований елемент, і в пізніших партіях можуть відрізнятися версія оболонки або постачальник самого елемента."
+        },
+        {
+            "id": "uk-248",
+            "translationId": "catalogText.mod.preset-9.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[billet-finish] Bright-dipped surface treatment omitted; preserve all three finish operations and product identity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Billet Box Rev. 3a with a bead-blasted, bright-dipped anodized aluminum finish; introduced in May 2014.",
+                "Previous Ukrainian: Коробка Billet Box Rev. 3a з покриттям з анодованого алюмінію, обробленого дробеструйною обробкою; представлений у травні 2014 року."
+            ],
+            "resolution": "Billet Box Rev. 3a з алюмінієвою поверхнею, обробленою струменем мікрокульок, хімічно освітленою та анодованою; представлений у травні 2014 року."
+        },
+        {
+            "id": "uk-249",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[continuous-discharge] Continuous-current limits are limits for sustained operation, not permanently fixed limits.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Check that components, connections, and insulation can handle the expected current and power. Use appropriate headroom because real components can heat unevenly and resistance can change with temperature. Batteries and power supplies also have continuous current limits.",
+                "Previous Ukrainian: Перевірте, чи витримують компоненти, з’єднання та ізоляція очікуваний струм і потужність. Використовуйте відповідний запас, оскільки реальні компоненти можуть нагріватися нерівномірно, а опір може змінюватися з температурою. Батареї та джерела живлення також мають постійні обмеження струму."
+            ],
+            "resolution": "Перевірте, чи витримують компоненти, з’єднання та ізоляція очікуваний струм і потужність. Передбачте належний запас, оскільки реальні компоненти можуть нагріватися нерівномірно, а опір може змінюватися з температурою. Акумулятори та джерела живлення також мають межі струму для безперервної роботи."
+        }
+    ]
+}

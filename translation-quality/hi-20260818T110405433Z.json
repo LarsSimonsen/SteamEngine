@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260818T110405433Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Hindi translation defects in battery evidence, safety, and profile text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "hi-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary was unnecessarily wordy.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to concise Hindi wording for a removable rechargeable cell."
+        },
+        {
+            "id": "hi-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The integrated-battery summary used an indirect construction.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Normalized the integrated-versus-replaceable distinction."
+        },
+        {
+            "id": "hi-20260818-003",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The continuous-rating note omitted the ampere unit.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Added the unit-aware 20 A continuous rating."
+        },
+        {
+            "id": "hi-20260818-004",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison note omitted A and used machine-translated wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to natural unit-aware Hindi wording."
+        },
+        {
+            "id": "hi-20260818-005",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A and used awkward test wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 15 A exact-model test value."
+        },
+        {
+            "id": "hi-20260818-006",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tabless-revision note omitted A and weakened the pulse-rating warning.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 45 A continuous value and pulse-only distinction."
+        },
+        {
+            "id": "hi-20260818-007",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used a literal translation for actual value.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to a natural 36 A actual continuous value statement."
+        },
+        {
+            "id": "hi-20260818-008",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The preproduction note omitted A and used unnatural cell wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 40 A value and preproduction status."
+        },
+        {
+            "id": "hi-20260818-009",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The recommended-rating note omitted A and translated service life too literally.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 13 A recommendation and service-life limitation."
+        },
+        {
+            "id": "hi-20260818-010",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-limited note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Added units and clarified the preproduction status."
+        },
+        {
+            "id": "hi-20260818-011",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell comparison note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to a clear 40 A production-cell comparison statement."
+        },
+        {
+            "id": "hi-20260818-012",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper note omitted A and used awkward temperature notation.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Added units and normalized the 60 °C and EVE 40PL wording."
+        },
+        {
+            "id": "hi-20260818-013",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used inconsistent preproduction terminology.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to natural Hindi wording for 19 A and tested samples."
+        },
+        {
+            "id": "hi-20260818-014",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used incorrect production timing wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 40 A and 90 A temperature-limited values."
+        },
+        {
+            "id": "hi-20260818-015",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used an incomplete production-continuity phrase.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 40 A, 60 A, and unresolved continuity details."
+        },
+        {
+            "id": "hi-20260818-016",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used weak wording for capacity inconsistency.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 40 A value, inconsistent capacity, and CCC/CE marks."
+        },
+        {
+            "id": "hi-20260818-017",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used inconsistent preproduction wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 13 A value and tested-sample status."
+        },
+        {
+            "id": "hi-20260818-018",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tester-estimated note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Added units and clarified the 50 A temperature limitation."
+        },
+        {
+            "id": "hi-20260818-019",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-related batch note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to a clear 20 A batch value and 30 A limitation."
+        },
+        {
+            "id": "hi-20260818-020",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The continuous value omitted A and the pulse-only distinction was unclear.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to an unambiguous 12 A continuous and 20 A pulse-only statement."
+        },
+        {
+            "id": "hi-20260818-021",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-wrapper note omitted A and used awkward sourcing language.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 20 A value, tester recommendation, and later revisions."
+        },
+        {
+            "id": "hi-20260818-022",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A and used awkward rewrap wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to a clear 30 A exact-model and rewrap statement."
+        },
+        {
+            "id": "hi-20260818-023",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The five-leg revision note omitted A and used awkward structural wording.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Clarified the 30 A revision distinction and profile inheritance warning."
+        },
+        {
+            "id": "hi-20260818-024",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Low-drain was left as an English loanword and obscured the capability warning.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to Hindi wording for low discharge capability."
+        },
+        {
+            "id": "hi-20260818-025",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The regulated profile did not mention a control board and repeated the device phrase.",
+            "disposition": "resolved",
+            "evidence": ["Hindi source review identified the issue."],
+            "resolution": "Changed to a profile for a regulated vaping device or control board."
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "zh-Hans", "cycleId": "zh-Hans-20260819T185837971Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Simplified Chinese locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Simplified Chinese critique found five catalog action and metadata labels with incomplete UI context or overly literal wording." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Simplified Chinese human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "zh-hans-catalog-metadata", "translationId": "shared.encyclopedia.openEntry", "category": "translation-defect", "severity": "medium", "summary": "Five catalog labels did not clearly express their action, navigation, loading, or research context.", "disposition": "resolved", "evidence": ["The strings label an action, navigation, chart loading, and catalog documentation metadata."], "resolution": "Used natural Simplified Chinese UI and catalog terminology." }]
+}

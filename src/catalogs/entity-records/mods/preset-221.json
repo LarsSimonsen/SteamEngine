@@ -1,0 +1,36 @@
+{
+    "entityId": "voopoo-drag-6",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "VOOPOO DRAG 6",
+            "url": "https://www.voopoo.com/drag-series/drag-6",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-drag6-20260824",
+            "title": "VOOPOO DRAG 6 product page",
+            "url": "https://shop.voopoo.com/products/drag-6",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated"
+            }
+        ]
+    }
+}

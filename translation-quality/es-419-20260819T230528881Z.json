@@ -1,0 +1,73 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T230528881Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "A fresh independent machine pass checked the complete effective locale and the surrounding runtime presentation paths after the prior convergence run."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation metadata, type checking, tests, and the complete production build passed for the resolved locale-owned batch." },
+        "linguisticCritique": { "state": "completed", "summary": "The convergence pass found five locale-owned defects and twenty application-wide source i18n gaps." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Latin American Spanish human review was performed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "No publication or deployment was requested." }
+    },
+    "findings": [
+        {
+            "id": "es419-heat-capacity-heading", "translationId": "catalog.concepts.concept-heat-capacity.sections.3.title",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "The object-versus-material section had been mislabeled as phase changes.",
+            "evidence": ["The following section already owns the phase-change heading."],
+            "resolution": "Used Objeto frente a material."
+        },
+        {
+            "id": "es419-final-concept-wording", "translationId": "catalog.concepts.concept-joule-heating.sections.2.bullets.3",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Residual concept prose used hardware, an imprecise gauge instruction, and unnecessary sólo accents.",
+            "evidence": ["Affected Joule hardware wording, wire-gauge system instruction/description, and saved-data confirmation."],
+            "resolution": "Used componentes, Indica el sistema, and contemporary solo orthography."
+        },
+        {
+            "id": "es419-converter-route-title", "translationId": "metadata./converter.title",
+            "category": "terminology-disagreement", "severity": "low", "disposition": "resolved",
+            "summary": "Route metadata used Conversor while the calculator and home label used Convertidor.",
+            "evidence": ["The effective calculator title is Convertidor."],
+            "resolution": "Standardized the es-419 route title on Convertidor."
+        },
+        {
+            "id": "es419-shared-chrome-gaps", "translationId": "footer.privacy",
+            "category": "source-content-defect", "severity": "high", "disposition": "awaiting-owner",
+            "summary": "Shared footer, home out-of-scope links, catalog-manager help, and encyclopedia date formatting bypass the message/locale APIs.",
+            "evidence": ["Covers original findings R4-006, R4-007, R4-008, and R4-018."],
+            "ownerQuestion": "Should a separate application-wide i18n migration add shared semantic IDs and locale-aware routing/date formatting for every enabled locale?"
+        },
+        {
+            "id": "es419-catalog-editor-domain-gaps", "translationId": "catalogEditor.domainErrors",
+            "category": "source-content-defect", "severity": "high", "disposition": "awaiting-owner",
+            "summary": "Battery, material, and mod validation, persistence, repository, and blocked-delete messages are hard-coded English.",
+            "evidence": ["Covers original findings R4-009, R4-010, and R4-011 and requires typed IDs across all enabled locales."],
+            "ownerQuestion": "Should the shared message API be expanded for all catalog editor/domain errors in a dedicated multi-locale change?"
+        },
+        {
+            "id": "es419-calculator-domain-gaps", "translationId": "calculators.domainErrors",
+            "category": "source-content-defect", "severity": "high", "disposition": "awaiting-owner",
+            "summary": "Battery Drain, Coil, Converter, TCR, Wire Wizard, and shared parallel-resistance paths expose hard-coded English errors or reference labels.",
+            "evidence": ["Covers original findings R4-012 through R4-017."],
+            "ownerQuestion": "Should a dedicated application-wide calculator-domain i18n change introduce typed error/result IDs and update every locale?"
+        },
+        {
+            "id": "es419-entity-record-presentation-gaps", "translationId": "encyclopedia.entityRecordPresentation",
+            "category": "source-content-defect", "severity": "high", "disposition": "awaiting-owner",
+            "summary": "Material, battery, and mod entity-record prose, image text, enum labels, and some overview fields remain canonical English.",
+            "evidence": ["Covers original findings R4-019 through R4-022 and R4-024."],
+            "ownerQuestion": "Should locale-owned entity-record presentation dictionaries and typed enum/image labels be designed for every locale?"
+        },
+        {
+            "id": "es419-graph-and-number-formatting-gaps", "translationId": "encyclopedia.localizedFormatting",
+            "category": "source-content-defect", "severity": "high", "disposition": "awaiting-owner",
+            "summary": "The material TFR graph and encyclopedia numeric values bypass localized labels or Intl.NumberFormat.",
+            "evidence": ["Covers original findings R4-023 and R4-025."],
+            "ownerQuestion": "Should graph labels and encyclopedia numeric presentation be centralized through locale-aware formatters for all enabled locales?"
+        }
+    ]
+}

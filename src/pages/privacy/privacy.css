@@ -1,0 +1,36 @@
+.privacy-page {
+    max-width: 800px;
+}
+
+.privacy-page__header {
+    margin-bottom: 2rem;
+}
+
+.privacy-page__header h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.privacy-page__header p:last-child {
+    margin: 0;
+    color: var(--se-muted);
+}
+
+.privacy-page section {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--se-border);
+}
+
+.privacy-page section h2 {
+    margin-top: 0;
+    font-size: 1.35rem;
+}
+
+.privacy-page section p {
+    line-height: 1.65;
+}
+
+.privacy-page__error {
+    color: var(--se-danger);
+}

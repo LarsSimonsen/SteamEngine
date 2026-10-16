@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "vi", "cycleId": "vi-20260819T125747978Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Vietnamese source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Vietnamese critique confirmed interpolation works but found protected-name drift, chronology and catalog false friends, coil-lead errors, and e-liquid and volume defects." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Vietnamese human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "vi-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated as ordinary phrases.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored protected names across shared and calculator labels." },
+        { "id": "vi-catalog", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Available by used an agentive preposition, property became real estate, and board became a generic panel.", "disposition": "resolved", "evidence": ["These labels describe chronology and electronics catalog data."], "resolution": "Used an explicit upper bound and technical terms." },
+        { "id": "vi-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and their power loss became anatomical legs and loss of strength.", "disposition": "resolved", "evidence": ["The fields describe electrical lead wire."], "resolution": "Used dây dẫn consistently." },
+        { "id": "vi-juice", "translationId": "calculators.juice.nicStrength", "category": "factual-or-safety-risk", "severity": "high", "summary": "Nicotine concentration was rendered as strength, base as a foundation, and target as shooting.", "disposition": "resolved", "evidence": ["These fields define an e-liquid recipe."], "resolution": "Used explicit formulation terminology and rewrote the warning." },
+        { "id": "vi-volume", "translationId": "calculators.coil.wireVolume", "category": "translation-defect", "severity": "high", "summary": "Volume was translated as mass in the coil, juice, and Wire Wizard tools.", "disposition": "resolved", "evidence": ["Volume and mass are distinct physical quantities."], "resolution": "Used thể tích for volume." }
+    ]
+}

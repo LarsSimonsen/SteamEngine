@@ -1,0 +1,109 @@
+{
+    "entityId": "battery-1",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for AW IMR 14500.",
+        "description": "This researched draft preserves the calculator's 600mAh and 4A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "store-14500",
+            "title": "14500 batteries",
+            "url": "https://www.18650batterystore.com/collections/14500-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "intro-source",
+            "title": "AW IMR 14500 600mAh test",
+            "url": "https://budgetlightforum.com/t/test-review-aw-imr-14500-600mah-red/11334",
+            "publisher": "BudgetLightForum",
+            "limitations": "Establishes availability and the tested wrapper's observed dimensions and red appearance, not launch or universal later-batch identity."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves AW IMR 14500 600mAh 4A as a 600mAh preset with a 4A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The AW IMR 14500 600mAh sample tested in 2012 was listed as a red button-top wrapper and measured 14.07 mm diameter by 49.25 mm height, with the source's stated tolerance.",
+            "evidenceDate": "2012-09-14",
+            "confidence": "medium"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The AW IMR 14500 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "No reliable exact-model market-introduction date was established for AW IMR 14500 in the 2026-08-04 catalog-wide research pass.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "14500",
+            "nominalDiameterMm": 14,
+            "nominalLengthMm": 50
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": false,
+        "appearance": {
+            "wrapperColor": "red"
+        },
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "low",
+            "summary": "The exact wrapper is described as red in the historical test, but no manufacturer verification path or batch-specific authenticity evidence was identified. A retailer authenticity guarantee is not independent authentication.",
+            "checks": [
+                "Prefer an established specialist retailer and inspect the exact wrapper and markings.",
+                "Do not treat the red wrapper alone as proof of an authentic AW cell."
+            ]
+        }
+    }
+}

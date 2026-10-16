@@ -1,0 +1,293 @@
+{
+    "version": 1,
+    "runtime": {
+        "configTimeoutMs": 3000,
+        "totalWaterfallTimeoutMs": 8000,
+        "collapseWhenEmpty": true
+    },
+    "consent": {
+        "mode": "adsense-tcf",
+        "bootstrapProvider": "adsense"
+    },
+    "providers": {
+        "adsense": {
+            "adapter": "adsense",
+            "tcfVendorId": 755,
+            "client": "ca-pub-5496946968214683",
+            "scriptUrl": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            "defaultSlot": "8485098846",
+            "slotsByContext": {
+                "batt": "5252430842",
+                "coil": "3775697641",
+                "converter": "7863026042",
+                "juice": "8205897244",
+                "modrange": "9880128845",
+                "ohm": "9822231244",
+                "tcr": "9822231244",
+                "wirewiz": "8796310442"
+            },
+            "format": "auto",
+            "fullWidthResponsive": true
+        },
+        "house": {
+            "adapter": "house",
+            "label": "Sponsor spot",
+            "title": "Sponsor Steam Engine",
+            "body": "Reach over 20k monthly users of vaping calculators, battery references, and coil-building tools.",
+            "qualifier": "Relevant technical products and services only.",
+            "cta": "Ask about sponsoring this spot",
+            "translations": {
+                "en": {
+                    "label": "Sponsor spot",
+                    "title": "Sponsor Steam Engine",
+                    "body": "Reach over 20k monthly users of vaping calculators, battery references, and coil-building tools.",
+                    "qualifier": "Relevant technical products and services only.",
+                    "cta": "Ask about sponsoring this spot"
+                },
+                "nb": {
+                    "label": "Sponsorplass",
+                    "title": "Sponsorer Steam Engine",
+                    "body": "Nå ut til over 20 000 månedlige brukere av dampkalkulatorer, batterireferanser og verktøy for bygging av coiler.",
+                    "qualifier": "Kun relevante tekniske produkter og tjenester.",
+                    "cta": "Spør om sponsing av denne plassen"
+                },
+                "nn": {
+                    "label": "Sponsorplass",
+                    "title": "Spons Steam Engine",
+                    "body": "Nå ut til over 20 000 månadlege brukarar av dampkalkulatorar, batterireferansar og verktøy for bygging av coilar.",
+                    "qualifier": "Berre relevante tekniske produkt og tenester.",
+                    "cta": "Spør om sponsing av denne plassen"
+                },
+                "zh-Hans": {
+                    "label": "赞助位",
+                    "title": "赞助 Steam Engine",
+                    "body": "触达每月超过 2 万名使用电子烟计算器、电池资料和线圈制作工具的用户。",
+                    "qualifier": "仅限相关技术产品和服务。",
+                    "cta": "咨询此赞助位"
+                },
+                "ar": {
+                    "label": "مساحة رعاية",
+                    "title": "ادعم Steam Engine",
+                    "body": "يمكنك الوصول إلى أكثر من 20 ألف مستخدم شهريًا لحاسبات السجائر الإلكترونية ومراجع البطاريات وأدوات بناء الملفات.",
+                    "qualifier": "للمنتجات والخدمات التقنية ذات الصلة فقط.",
+                    "cta": "اسأل عن رعاية هذه المساحة"
+                },
+                "es": {
+                    "label": "Espacio patrocinado",
+                    "title": "Patrocina Steam Engine",
+                    "body": "Llega a más de 20 000 usuarios mensuales de calculadoras para vapeo, referencias de baterías y herramientas para construir resistencias.",
+                    "qualifier": "Solo productos y servicios técnicos relevantes.",
+                    "cta": "Pregunta por el patrocinio de este espacio"
+                },
+                "es-419": {
+                    "label": "Espacio patrocinado",
+                    "title": "Patrocina Steam Engine",
+                    "body": "Llega a más de 20 000 usuarios mensuales de calculadoras para vapeo, referencias de baterías y herramientas para construir resistencias.",
+                    "qualifier": "Solo productos y servicios técnicos relevantes.",
+                    "cta": "Pregunta por el patrocinio de este espacio"
+                },
+                "fr": {
+                    "label": "Espace sponsorisé",
+                    "title": "Sponsorisez Steam Engine",
+                    "body": "Touchez plus de 20 000 utilisateurs mensuels de calculateurs de vape, de références sur les batteries et d’outils de fabrication de coils.",
+                    "qualifier": "Uniquement des produits et services techniques pertinents.",
+                    "cta": "Demandez à sponsoriser cet espace"
+                },
+                "pl": {
+                    "label": "Miejsce sponsorskie",
+                    "title": "Sponsoruj Steam Engine",
+                    "body": "Dotrzyj do ponad 20 tys. użytkowników miesięcznie korzystających z kalkulatorów do e-papierosów, informacji o akumulatorach i narzędzi do budowy grzałek.",
+                    "qualifier": "Tylko odpowiednie produkty i usługi techniczne.",
+                    "cta": "Zapytaj o sponsorowanie tego miejsca"
+                },
+                "uk": {
+                    "label": "Місце для спонсора",
+                    "title": "Підтримайте Steam Engine",
+                    "body": "Охопіть понад 20 тисяч користувачів щомісяця, які користуються калькуляторами для вейпінгу, довідковими матеріалами про акумулятори та інструментами для виготовлення спіралей.",
+                    "qualifier": "Лише відповідні технічні товари та послуги.",
+                    "cta": "Дізнайтеся про спонсорство цього місця"
+                },
+                "it": {
+                    "label": "Spazio sponsorizzato",
+                    "title": "Sponsorizza Steam Engine",
+                    "body": "Raggiungi oltre 20.000 utenti mensili di calcolatori per il vaping, riferimenti sulle batterie e strumenti per la costruzione di coil.",
+                    "qualifier": "Solo prodotti e servizi tecnici pertinenti.",
+                    "cta": "Chiedi di sponsorizzare questo spazio"
+                },
+                "vi": {
+                    "label": "Vị trí tài trợ",
+                    "title": "Tài trợ cho Steam Engine",
+                    "body": "Tiếp cận hơn 20.000 người dùng mỗi tháng của các công cụ tính toán vaping, tài liệu tham khảo về pin và công cụ chế tạo coil.",
+                    "qualifier": "Chỉ dành cho các sản phẩm và dịch vụ kỹ thuật phù hợp.",
+                    "cta": "Hỏi về việc tài trợ vị trí này"
+                },
+                "de": {
+                    "label": "Sponsorenplatz",
+                    "title": "Steam Engine sponsern",
+                    "body": "Erreichen Sie monatlich über 20.000 Nutzer von Dampf-Rechnern, Batterie-Referenzen und Werkzeugen zum Coil-Bau.",
+                    "qualifier": "Nur relevante technische Produkte und Dienstleistungen.",
+                    "cta": "Fragen Sie nach der Sponsoring-Möglichkeit für diesen Platz"
+                },
+                "sv": {
+                    "label": "Sponsoryta",
+                    "title": "Sponsra Steam Engine",
+                    "body": "Nå över 20 000 användare per månad av vapingkalkylatorer, batterireferenser och verktyg för coilbygge.",
+                    "qualifier": "Endast relevanta tekniska produkter och tjänster.",
+                    "cta": "Fråga om att sponsra den här ytan"
+                },
+                "da": {
+                    "label": "Sponsorplads",
+                    "title": "Sponsorer Steam Engine",
+                    "body": "Nå ud til over 20.000 månedlige brugere af vapingberegnere, batterireferencer og værktøjer til coilbygning.",
+                    "qualifier": "Kun relevante tekniske produkter og tjenester.",
+                    "cta": "Spørg om at sponsorere denne plads"
+                },
+                "is": {
+                    "label": "Styrktarsvæði",
+                    "title": "Styrktu Steam Engine",
+                    "body": "Náðu til yfir 20.000 mánaðarlegra notenda gufureiknivéla, rafhlöðuupplýsinga og verkfæra til spólugerðar.",
+                    "qualifier": "Aðeins viðeigandi tæknilegar vörur og þjónusta.",
+                    "cta": "Spyrðu um styrkt þessa svæðis"
+                },
+                "hi": {
+                    "label": "प्रायोजक स्थान",
+                    "title": "Steam Engine को प्रायोजित करें",
+                    "body": "वेपिंग कैलकुलेटर, बैटरी संदर्भ और कॉइल बनाने वाले टूल इस्तेमाल करने वाले हर महीने 20,000 से अधिक उपयोगकर्ताओं तक पहुँचें।",
+                    "qualifier": "केवल प्रासंगिक तकनीकी उत्पाद और सेवाएँ।",
+                    "cta": "इस स्थान को प्रायोजित करने के बारे में पूछें"
+                },
+                "bn": {
+                    "label": "স্পনসর স্পট",
+                    "title": "Steam Engine স্পনসর করুন",
+                    "body": "ভ্যাপিং ক্যালকুলেটর, ব্যাটারি রেফারেন্স ও কয়েল তৈরির টুল ব্যবহারকারী প্রতি মাসে ২০,০০০-এর বেশি মানুষের কাছে পৌঁছান।",
+                    "qualifier": "শুধু প্রাসঙ্গিক প্রযুক্তিগত পণ্য ও পরিষেবা।",
+                    "cta": "এই স্পট স্পনসর করার বিষয়ে জিজ্ঞাসা করুন"
+                },
+                "pt": {
+                    "label": "Espaço patrocinado",
+                    "title": "Patrocine o Steam Engine",
+                    "body": "Alcance mais de 20 000 utilizadores mensais de calculadoras de vaping, referências de baterias e ferramentas para construir coils.",
+                    "qualifier": "Apenas produtos e serviços técnicos relevantes.",
+                    "cta": "Pergunte sobre o patrocínio deste espaço"
+                },
+                "pt-BR": {
+                    "label": "Espaço patrocinado",
+                    "title": "Patrocine o Steam Engine",
+                    "body": "Alcance mais de 20 mil usuários mensais de calculadoras de vaping, referências de baterias e ferramentas para construir coils.",
+                    "qualifier": "Somente produtos e serviços técnicos relevantes.",
+                    "cta": "Pergunte sobre o patrocínio deste espaço"
+                },
+                "ja": {
+                    "label": "スポンサー枠",
+                    "title": "Steam Engine をスポンサーする",
+                    "body": "ベイピング計算機、バッテリー資料、コイル製作用ツールを利用する月間2万人超のユーザーにリーチできます。",
+                    "qualifier": "関連性のある技術製品・サービスに限ります。",
+                    "cta": "この枠のスポンサーについて問い合わせる"
+                },
+                "ko": {
+                    "label": "스폰서 영역",
+                    "title": "Steam Engine 후원하기",
+                    "body": "베이핑 계산기, 배터리 자료, 코일 제작 도구를 사용하는 월 2만 명 이상의 사용자에게 도달하세요.",
+                    "qualifier": "관련 기술 제품 및 서비스만 가능합니다.",
+                    "cta": "이 영역의 후원 문의하기"
+                },
+                "el": {
+                    "label": "Χορηγούμενη θέση",
+                    "title": "Χορηγήστε το Steam Engine",
+                    "body": "Προσεγγίστε πάνω από 20.000 μηνιαίους χρήστες υπολογιστών ατμίσματος, αναφορών μπαταριών και εργαλείων κατασκευής coil.",
+                    "qualifier": "Μόνο σχετικά τεχνικά προϊόντα και υπηρεσίες.",
+                    "cta": "Ρωτήστε για τη χορηγία αυτής της θέσης"
+                },
+                "tr": {
+                    "label": "Sponsor alanı",
+                    "title": "Steam Engine'e sponsor olun",
+                    "body": "Vaping hesap makinelerini, pil referanslarını ve coil yapım araçlarını kullanan ayda 20 binden fazla kullanıcıya ulaşın.",
+                    "qualifier": "Yalnızca ilgili teknik ürünler ve hizmetler.",
+                    "cta": "Bu alanın sponsorluğu hakkında bilgi alın"
+                },
+                "id": {
+                    "label": "Ruang sponsor",
+                    "title": "Sponsori Steam Engine",
+                    "body": "Jangkau lebih dari 20.000 pengguna bulanan kalkulator vaping, referensi baterai, dan alat pembuatan coil.",
+                    "qualifier": "Hanya produk dan layanan teknis yang relevan.",
+                    "cta": "Tanyakan tentang mensponsori ruang ini"
+                },
+                "fi": {
+                    "label": "Sponsoripaikka",
+                    "title": "Sponsoroi Steam Engineä",
+                    "body": "Tavoita yli 20 000 kuukausittaista sähkösavukelaskinten, akkutietojen ja coilinrakennustyökalujen käyttäjää.",
+                    "qualifier": "Vain aiheeseen liittyvät tekniset tuotteet ja palvelut.",
+                    "cta": "Kysy tämän paikan sponsoroinnista"
+                }
+            }
+        }
+    },
+    "placements": {
+        "calculator-footer": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "home-footer": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "blog-article-inline": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "blog-index-sidebar": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "catalog-index-footer": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "catalog-battery-inline": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "catalog-mod-inline": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "catalog-material-inline": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "catalog-concept-inline": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "legacy-calculator-footer": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        },
+        "legacy-main-footer": {
+            "waterfall": [
+                { "provider": "adsense", "timeoutMs": 4000 },
+                { "provider": "house", "timeoutMs": 250 }
+            ]
+        }
+    }
+}

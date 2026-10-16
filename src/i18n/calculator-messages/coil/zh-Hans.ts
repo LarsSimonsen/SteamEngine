@@ -84,3 +84,11 @@ export const messages: CalculatorRouteMessages = {
     "setupSeries4": "四线圈（系列）",
     "setupSeriesParallel4": "四线圈（串并联）"
 };
+
+Object.assign(messages, {
+    "advanced": "高级",
+    "twistPitch": "绞距",
+    "legPowerLoss": "引线功率损耗",
+    "wireLengthWarning": "扣除引线后，没有足够的导线用于线圈。",
+    "targetResistance": "目标电阻"
+});

@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260818T235130332Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Danish source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Danish pass identified two additional power-versus-current terminology defects; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Danish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "da-20260819-006",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Danish paragraph called electrical power electrical energy.",
+            "disposition": "resolved",
+            "evidence": ["The previous text began Elektrisk energi, although the source defines a rate of energy transfer."],
+            "resolution": "Changed it to Elektrisk effekt and clarified varmeflux as the relevant heat-transfer term."
+        },
+        {
+            "id": "da-20260819-007",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The practical-checks sentence repeated strøm where the source requires power.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said den forventede strøm og strøm, omitting the distinction between current and power."],
+            "resolution": "Changed the pair to den forventede strøm og effekt and added a natural safety-margin phrase."
+        }
+    ]
+}

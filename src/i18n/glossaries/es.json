@@ -64,6 +64,42 @@
             "state": "machine",
             "provenance": { "kind": "machine", "method": "Contextual technical translation" },
             "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "conjunto de baterías",
+            "context": "Assembly of cells; distinguish per-cell inputs from pack totals.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Related Spanish variant comparison against canonical English",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "parallel-strings": {
+            "source": "parallel strings",
+            "preferred": "ramas en paralelo",
+            "context": "Parallel branches of the pack, each containing the selected number of series cells.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Related Spanish variant comparison against canonical English",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "runtime": {
+            "source": "runtime",
+            "preferred": "autonomía",
+            "context": "Battery operating duration, not software execution time.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Related Spanish variant comparison against canonical English",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

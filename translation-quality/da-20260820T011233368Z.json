@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260820T011233368Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Danish runtime entries, repository checks, and Danish dictionary and technical terminology sources were available."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation and TypeScript checking passed after every correction batch." },
+        "linguisticCritique": { "state": "completed", "summary": "Three complete-scope passes resolved 54 Unicode, electrical-current, UI, and terminology findings." },
+        "competentHumanReview": { "state": "pending", "summary": "The Danish corrections were machine-reviewed and still require competent human review." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment." }
+    },
+    "findings": [
+        {
+            "id": "da-literal-symbols",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Twenty-three concept strings displayed literal Unicode escape text instead of Ω, α, Δ, or °C, and two calculator labels remained untranslated.",
+            "disposition": "resolved",
+            "evidence": ["The effective runtime displayed text such as \\u03a9 and \\u00b0C.", "The affected strings included worked electrical formulas and TCR values."],
+            "resolution": "Restored visible symbols and preserved all formulas and numeric values; translated the two calculator labels."
+        },
+        {
+            "id": "da-current-and-ui-terms",
+            "translationId": "calculators.batt.caution",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Twenty-five entries confused electrical current with present-time wording or retained inconsistent UI and control-board terminology.",
+            "disposition": "resolved",
+            "evidence": ["Current limit was translated as the presently applicable limit.", "Several loading labels, reference-resistance labels, and multi-coil names were inconsistent."],
+            "resolution": "Corrected electrical-current meaning, ellipses, reference resistance, control-board wording, and calculator labels."
+        },
+        {
+            "id": "da-export-labels",
+            "translationId": "calculators.wirewiz.downloadCsv",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "Four result and export labels remained in English.",
+            "disposition": "resolved",
+            "evidence": ["Sweet spot, DNA 200 output, and two download labels were not localized."],
+            "resolution": "Replaced them with concise Danish UI labels."
+        }
+    ]
+}

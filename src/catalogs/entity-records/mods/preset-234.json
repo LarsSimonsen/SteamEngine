@@ -1,0 +1,96 @@
+{
+    "entityId": "vaporesso-gen-max",
+    "entityType": "mod",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A dual-18650 regulated box mod rated by VAPORESSO at 220 W.",
+        "description": "VAPORESSO documents the GEN MAX as a dual-18650 regulated mod with 5–220 W output. An exact-device Vaping360 review measured 215 W, 9.08 V at the 9 V setting, and a 37 A limit on its test load. The measured values are retained as sample-specific evidence and are not treated as manufacturer flat ratings.",
+        "highlights": [
+            "Exact identity and dual-18650 configuration are established.",
+            "Manufacturer power and manual resistance-protection limits are available.",
+            "Independent exact-device W/V/A measurements are available for later assessment.",
+            "Runtime admission is queued for the next completed mod batch."
+        ]
+    },
+    "sources": [
+        {
+            "id": "official",
+            "title": "GEN MAX and GEN SE official series specifications",
+            "url": "https://www.vaporesso.com/series-product/gen-series/gen-max",
+            "publisher": "VAPORESSO",
+            "limitations": "Manufacturer specifications establish identity, battery configuration, power, and dimensions but omit a flat output-current limit."
+        },
+        {
+            "id": "manual",
+            "title": "GEN MAX/GEN SE user manual mirror",
+            "url": "https://manuals.plus/m/bde892a41597623040bb3ee2ce6380702f03a5169bfad41a71226bdb8e8a9165.pdf",
+            "publisher": "Vaporesso",
+            "limitations": "A mirror hosts the manual; the manual gives protection thresholds but not a complete output-current profile."
+        },
+        {
+            "id": "review",
+            "title": "Vaporesso GEN MAX and GEN SE review",
+            "url": "https://vaping360.com/reviews/vaporesso-gen-max-gen-se-review/",
+            "publisher": "Vaping360",
+            "limitations": "Commercial editorial review and single-sample testing."
+        },
+        {
+            "id": "operating-features-gen-20260824",
+            "title": "VAPORESSO GEN manual",
+            "url": "https://www.vaporesso.com/hubfs/imgs/downloads/manual/Gen_Manual.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact marketed identity is VAPORESSO GEN MAX.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Future revision or regional naming changes remain possible."
+        },
+        {
+            "id": "manufacturer-profile",
+            "statement": "VAPORESSO specifies dual 18650 cells, 5–220 W output, and dimensions of 141.4 × 49.7 × 28.5 mm.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "The official page does not state maximum output current or a general resistance range."
+        },
+        {
+            "id": "resistance-envelope",
+            "statement": "The exact manual describes low-resistance protection below 0.1 Ω and high-resistance protection above 5 Ω.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium",
+            "limitations": "Protection thresholds are not necessarily a flat supported range in every operating mode."
+        },
+        {
+            "id": "measured-output",
+            "statement": "Vaping360 measured 215 W, 9.08 V at the 9 V setting, and a 37 A limit with a 0.11 Ω load on an exact GEN MAX sample.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium",
+            "limitations": "Single-sample test-load coverage; measured values should remain distinct from manufacturer ratings."
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact GEN MAX is reviewed as a regulated vaping mod with a 510 atomizer connection and dual removable cells.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Review coverage establishes product relevance, not population-level demand."
+        }
+    ],
+    "domainData": {
+        "deviceCategory": "box-mod",
+        "batterySystem": {
+            "configuration": "dual 18650"
+        },
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

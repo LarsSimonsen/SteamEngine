@@ -147,6 +147,188 @@
                     { "label": "Alter Ego: Αντίσταση ατμοποιητή", "url": "https://www.alterego.gr/blog/tips/ti-einai-i-antistasi-atmopoiiti-kai-pos-na-tin-epilexete-/" }
                 ]
             }
+        },
+        "wire": {
+            "source": "wire",
+            "preferred": "σύρμα",
+            "context": "Χρησιμοποιείται για το μεταλλικό σύρμα αντίστασης· το καλώδιο είναι διαφορετικός όρος.",
+            "discouraged": ["καλώδιο"],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Greek technical terminology audit using native vaping and electrical sources"
+            },
+            "confidence": "high",
+            "sources": [
+                { "label": "Golden Greek: Έλεγχος θερμοκρασίας", "url": "https://gg-goldengreek.com/el/the-temperature-control-tc-method-in-electronic-cigarettes-mods/" },
+                { "label": "Vapor Solutions: SS316L wire", "url": "https://www.vaporsolutions.gr/diy-wick-coil-mesh/3351-mythical-vapers-wires-ss316l-28ga-10m-wire--5211313016342.html" }
+            ]
+        },
+        "wire-gauge": {
+            "source": "wire gauge",
+            "preferred": "διαμέτρημα σύρματος",
+            "context": "Χρησιμοποιείται για AWG, SWG και BWG και όχι για γενικό καλώδιο.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek technical terminology audit" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Οι ελληνικές πηγές χρησιμοποιούν επίσης το αγγλικό gauge και τη λέξη διάμετρος· το διαμέτρημα είναι η συνεπής επιλογή για την αριθμητική κλίμακα.",
+                "sources": [
+                    { "label": "Vapor Solutions: SS316L wire", "url": "https://www.vaporsolutions.gr/diy-wick-coil-mesh/3351-mythical-vapers-wires-ss316l-28ga-10m-wire--5211313016342.html" }
+                ]
+            }
+        },
+        "ribbon-wire": {
+            "source": "ribbon wire",
+            "preferred": "επίπεδο σύρμα",
+            "context": "Σύρμα επίπεδης διατομής, γνωστό και ως flatwire ή ribbon wire.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek vaping terminology audit" },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Το flatwire και το ribbon wire παραμένουν επίσης σε αγγλική μορφή στην ελληνική αγορά.",
+                "sources": [
+                    { "label": "Vapor Solutions: SS316L wire", "url": "https://www.vaporsolutions.gr/diy-wick-coil-mesh/3351-mythical-vapers-wires-ss316l-28ga-10m-wire--5211313016342.html" }
+                ]
+            }
+        },
+        "strand-wire": {
+            "source": "strand wire",
+            "preferred": "πολύκλωνο σύρμα",
+            "context": "Σύρμα που αποτελείται από πολλούς κλώνους.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek electrical terminology audit" },
+            "confidence": "medium"
+        },
+        "coil-wrap": {
+            "source": "coil wrap",
+            "preferred": "περιέλιξη",
+            "context": "Μία πλήρης περιέλιξη σύρματος γύρω από τον οδηγό ή το πηνίο.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek vaping terminology audit" },
+            "confidence": "high"
+        },
+        "twist-pitch": {
+            "source": "twist pitch",
+            "preferred": "βήμα συστροφής",
+            "context": "Η αξονική απόσταση που αντιστοιχεί σε μία πλήρη συστροφή του σύρματος.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek engineering terminology audit" },
+            "confidence": "medium"
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "πυκνότητα θερμικής ροής",
+            "context": "Ρυθμός μεταφοράς θερμότητας ανά μονάδα επιφάνειας, σε W/m² ή W/mm².",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek heat-transfer terminology audit" },
+            "confidence": "high",
+            "sources": [
+                { "label": "ΕΑΠ: Πυκνότητα θερμορροής", "url": "https://apothesis.eap.gr/archive/download/b5eb8724-0bb5-4a13-853d-7fbca43a3ca6.pdf" },
+                { "label": "IUPAC Gold Book: heat flux", "url": "https://goldbook.iupac.org/terms/view/H02755" }
+            ]
+        },
+        "heat-capacity": {
+            "source": "heat capacity",
+            "preferred": "θερμοχωρητικότητα",
+            "context": "Η ενέργεια που απαιτείται για δεδομένη μεταβολή θερμοκρασίας.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek physics terminology audit" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Hellenic World: Θερμοχωρητικότητα", "url": "https://www.hellenicaworld.com/Science/Physics/gr/Thermochoritikotita.html" }
+            ]
+        },
+        "specific-resistance": {
+            "source": "resistivity",
+            "preferred": "ειδική αντίσταση",
+            "context": "Ιδιότητα υλικού που χρησιμοποιείται στη σχέση R = ρL/A, όχι η συνολική αντίσταση ενός σύρματος.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek electrical and coil-material terminology audit" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Golden Greek: Έλεγχος θερμοκρασίας", "url": "https://gg-goldengreek.com/el/the-temperature-control-tc-method-in-electronic-cigarettes-mods/" },
+                { "label": "Kanthal A-1 material data", "url": "https://www.kanthal.com/en/products/datasheets/material-datasheets/wire/resistance-heating-wire-and-resistance-wire/kanthal-a-1/" }
+            ]
+        },
+        "thermal-conductivity": {
+            "source": "thermal conductivity",
+            "preferred": "θερμική αγωγιμότητα",
+            "context": "Ιδιότητα υλικού που εμφανίζεται στους υπολογισμούς αγωγής θερμότητας.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek heat-transfer terminology audit" },
+            "confidence": "high",
+            "sources": [
+                { "label": "ΕΑΠ: Πυκνότητα θερμορροής", "url": "https://apothesis.eap.gr/archive/download/b5eb8724-0bb5-4a13-853d-7fbca43a3ca6.pdf" }
+            ]
+        },
+        "temperature-coefficient-of-resistance": {
+            "source": "temperature coefficient of resistance",
+            "preferred": "θερμοκρασιακός συντελεστής αντίστασης",
+            "context": "Ο συντελεστής TCR που περιγράφει τη μεταβολή της αντίστασης με τη θερμοκρασία.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek temperature-control terminology audit" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Golden Greek: Έλεγχος θερμοκρασίας", "url": "https://gg-goldengreek.com/el/the-temperature-control-tc-method-in-electronic-cigarettes-mods/" }
+            ]
+        },
+        "cell": {
+            "source": "cell",
+            "preferred": "κυψέλη",
+            "context": "Μεμονωμένη επαναφορτιζόμενη ηλεκτροχημική κυψέλη μπαταρίας, όχι ο γενικός όρος μπαταρία.",
+            "discouraged": ["κελί", "κύτταρο"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek battery terminology audit" },
+            "confidence": "high"
+        },
+        "continuous-discharge": {
+            "source": "continuous discharge",
+            "preferred": "συνεχής εκφόρτιση",
+            "context": "Συνεχής ικανότητα αποφόρτισης μπαταρίας, με όριο σε A ή βαθμό C.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek battery and electrical terminology audit" },
+            "confidence": "high"
+        },
+        "regulated-mod": {
+            "source": "regulated mod",
+            "preferred": "ρυθμιζόμενο mod",
+            "context": "Συσκευή ατμίσματος με ηλεκτρονικά ρυθμιζόμενη ισχύ ή τάση.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek vaping terminology audit" },
+            "confidence": "high"
+        },
+        "efficiency": {
+            "source": "efficiency",
+            "preferred": "απόδοση",
+            "context": "Λόγος χρήσιμης ισχύος ή ενέργειας προς την παρεχόμενη ισχύ ή ενέργεια.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek electrical terminology audit" },
+            "confidence": "high"
+        },
+        "runtime": {
+            "source": "runtime",
+            "preferred": "χρόνος λειτουργίας",
+            "context": "Εκτιμώμενος χρόνος συνεχούς λειτουργίας μιας συσκευής με δεδομένη μπαταρία και ισχύ.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek technical terminology audit" },
+            "confidence": "high"
+        },
+        "current-headroom": {
+            "source": "current headroom",
+            "preferred": "περιθώριο ρεύματος",
+            "context": "Διαφορά μεταξύ του ενεργού ορίου ρεύματος της μπαταρίας και της εκτιμώμενης αποφόρτισης.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek battery-calculator terminology audit" },
+            "confidence": "medium"
+        },
+        "median": {
+            "source": "median",
+            "preferred": "διάμεσος",
+            "context": "Η μεσαία τιμή ταξινομημένου συνόλου, όχι ο αριθμητικός μέσος.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Greek mathematical terminology audit" },
+            "confidence": "high"
         }
     }
 }

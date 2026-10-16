@@ -12,9 +12,9 @@ export const messages =  {
     "result": "Wynik",
     "millimetres": "Milimetry",
     "inches": "Cale",
-    "americanWireGauge": "Amerykański miernik drutu",
-    "needleGauge": "BWG (wskaźnik igły)",
-    "standardWireGauge": "Standardowy miernik drutu",
+    "americanWireGauge": "Amerykańska skala grubości drutu (AWG)",
+    "needleGauge": "BWG (skala grubości igieł)",
+    "standardWireGauge": "Brytyjska skala grubości drutu (SWG)",
     "fractionalInches": "Ułamkowe cale",
     "reset": "Zresetuj ustawienia domyślne",
     "calculating": "Obliczanie…",
@@ -25,5 +25,5 @@ export const messages =  {
     "outputSettings": "Ustawienia wyjściowe",
     "outputUnit": "Jednostka wyjściowa",
     "decimalPlaces": "Miejsca dziesiętne",
-    "precisionHelp": "Precyzja dotyczy wyników numerycznych. Tabele wskaźników pozostają przy opublikowanych wartościach."
+    "precisionHelp": "Precyzja dotyczy wyników liczbowych. Tabele rozmiarów drutu zachowują opublikowane wartości."
 } satisfies CalculatorRouteMessages;

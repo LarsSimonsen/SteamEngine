@@ -1,0 +1,36 @@
+{
+    "entityId": "battery-130",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Yichuan 40P - 40A/60A 4000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-yichuan-40p-40a-60a-4000mah-21700.995062/",
+            "limitations": "Complete exact-model report for two CCC-marked samples; tester-estimated rating."
+        },
+        {
+            "id": "market",
+            "title": "Yichuan INR21700-40P 4000mAh 40A 60@80C",
+            "url": "https://ch-ignitions.com/product/yichuan-inr21700-40p-4000mah-40a-6080c/",
+            "limitations": "Current exact product listing carries a seller warning excluding e-cigarette use."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

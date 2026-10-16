@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260818T204059851Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Greek source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Greek pass identified 25 remaining circuit, Joule-heating, TCR, trigonometry, thermal, SI, and wire-gauge wording issues; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Greek human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "el-20260818-101",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage definition omitted the natural Greek article.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Το V είναι τάση’."],
+            "resolution": "Changed it to ‘Το V είναι η τάση’."
+        },
+        {
+            "id": "el-20260818-102",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The power explanation used θερμική χωρητικότητα instead of the established θερμοχωρητικότητα term.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘θερμική χωρητικότητα’ for the component's heat capacity."],
+            "resolution": "Changed it to ‘θερμοχωρητικότητα’ and clarified the safety margin for removing heat."
+        },
+        {
+            "id": "el-20260818-103",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance relationship used a less direct production phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said doubling current ‘παράγει’ four times the thermal power."],
+            "resolution": "Changed it to the direct relation ‘τετραπλασιάζει τη θερμική ισχύ’."
+        },
+        {
+            "id": "el-20260818-104",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current relationship used an inconsistent θερμαντική ισχύ term.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘θερμαντική ισχύ’."],
+            "resolution": "Standardized it on ‘θερμική ισχύ’."
+        },
+        {
+            "id": "el-20260818-105",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage relationship used a less precise phrase for heat power.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet described ‘ισχύ θέρμανσης’ rather than the shared technical term."],
+            "resolution": "Changed it to ‘θερμική ισχύ’."
+        },
+        {
+            "id": "el-20260818-106",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating explanation used a less direct sentence structure for surface heat loss.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used a long literal clause around energy leaving the surface."],
+            "resolution": "Rewrote it with clear energy-rate, heat-capacity, and heat-flux-density terminology."
+        },
+        {
+            "id": "el-20260818-107",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The safety paragraph used an incomplete phrase for the required margin.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said ‘Χρησιμοποιήστε επαρκές περιθώριο’ without specifying safety."],
+            "resolution": "Changed it to ‘περιθώριο ασφαλείας’ and retained the component and battery limits."
+        },
+        {
+            "id": "el-20260818-108",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The node definition used παρέμβαση rather than an explicit intermediate component.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended ‘χωρίς παρέμβαση’."],
+            "resolution": "Changed it to ‘χωρίς ενδιάμεσο εξάρτημα’."
+        },
+        {
+            "id": "el-20260818-109",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell capacity statement used an overly literal equality phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said capacity remained ‘ίση με εκείνη μιας κυψέλης’."],
+            "resolution": "Clarified that ampere-hour capacity remains approximately equal to one cell's capacity."
+        },
+        {
+            "id": "el-20260818-110",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell statement used a literal προστίθενται construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said capacity and current ‘προστίθενται κατά προσέγγιση’."],
+            "resolution": "Changed it to the clearer ‘αθροίζονται περίπου’."
+        },
+        {
+            "id": "el-20260818-111",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-distribution sentence used κοινή χρήση ρεύματος, which was ambiguous.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Η κοινή χρήση ρεύματος’."],
+            "resolution": "Changed it to the technical term ‘Η κατανομή του ρεύματος’."
+        },
+        {
+            "id": "el-20260818-112",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-solving title did not emphasize analysis of real circuits.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Επίλυση πραγματικών κυκλωμάτων’."],
+            "resolution": "Changed it to ‘Ανάλυση πραγματικών κυκλωμάτων’."
+        },
+        {
+            "id": "el-20260818-113",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR limitation paragraph used the literal term κλίσεις θερμοκρασίας without clear technical context.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph listed ‘κλίσεις θερμοκρασίας’ in a less natural sequence."],
+            "resolution": "Rewrote it with ‘θερμοκρασιακές κλίσεις’ and clearer first-order-estimate wording."
+        },
+        {
+            "id": "el-20260818-114",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The temperature-scale instruction repeated μονάδες ambiguously.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet did not explicitly repeat that the same units are required."],
+            "resolution": "Changed it to explicitly require the same scale and units for T - T_0."
+        },
+        {
+            "id": "el-20260818-115",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angular-frequency bullet used μετριέται instead of a direct unit expression.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘μετριέται σε ακτίνια ανά δευτερόλεπτο’."],
+            "resolution": "Changed it to ‘εκφράζεται σε ακτίνια ανά δευτερόλεπτο’."
+        },
+        {
+            "id": "el-20260818-116",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-heating title used a longer phrase than the surrounding technical headings.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Θέρμανση με ηλεκτρικό ρεύμα’."],
+            "resolution": "Changed it to the concise title ‘Ηλεκτρική θέρμανση’."
+        },
+        {
+            "id": "el-20260818-117",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-conversion instruction used an inconsistent article and unit phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Μετατρέψτε το εμβαδόν ... το W/m²’."],
+            "resolution": "Changed it to the smoother instruction ‘Μετατρέψτε το εμβαδόν ... χρησιμοποιήσετε το W/m²’."
+        },
+        {
+            "id": "el-20260818-118",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-loss checklist used singular απώλεια despite listing multiple mechanisms.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘απώλεια θερμότητας’."],
+            "resolution": "Changed it to ‘απώλειες θερμότητας’."
+        },
+        {
+            "id": "el-20260818-119",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conductivity definition needed consistent article usage.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used an unintroduced θερμική αγωγιμότητα noun phrase."],
+            "resolution": "Changed it to ‘k είναι η θερμική αγωγιμότητα’."
+        },
+        {
+            "id": "el-20260818-120",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The layer temperature-difference definition did not identify the two sides.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet only said ‘σε όλο το στρώμα’."],
+            "resolution": "Clarified it as the difference between the two sides of the layer."
+        },
+        {
+            "id": "el-20260818-121",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.3.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The kelvin unit name remained in English in the SI table.",
+            "disposition": "resolved",
+            "evidence": ["The previous table cell was ‘kelvin’."],
+            "resolution": "Changed it to the Greek unit name ‘κέλβιν’."
+        },
+        {
+            "id": "el-20260818-122",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The pound-mass conversion localized the protected engineering units into prose.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘1 λίβρα ... kg’."],
+            "resolution": "Changed it to the unambiguous engineering notation ‘1 lb ≈ 0,45359237 kg’."
+        },
+        {
+            "id": "el-20260818-123",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The nominal-diameter instruction used μπερδευτούν, which was informal and ambiguous.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said systems might ‘μπερδευτούν’."],
+            "resolution": "Changed it to the technical verb ‘συγχέονται’."
+        },
+        {
+            "id": "el-20260818-124",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conductor-dimension instruction used uninflected engineering noun phrases.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet listed ‘γυμνός αγωγός, μονωμένη διάμετρος’ without consistent case."],
+            "resolution": "Rewrote it with consistent Greek case for bare conductor, insulated diameter, sheet thickness, and pipe-wall thickness."
+        },
+        {
+            "id": "el-20260818-125",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The layer-thickness definition used a less natural word order.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Το L είναι το πάχος του στρώματος σε μέτρα’ without a separating comma."],
+            "resolution": "Changed it to ‘Το L είναι το πάχος του στρώματος, σε μέτρα’."
+        }
+    ]
+}

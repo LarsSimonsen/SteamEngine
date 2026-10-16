@@ -1,0 +1,35 @@
+{
+    "entityId": "sigelei-100w",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Sigelei 100W product record",
+            "url": "https://www.levapelier.com/en/box-sigelei-100w-par-sigelei/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "YiHi SX330 V3 100W"
+            }
+        ]
+    }
+}

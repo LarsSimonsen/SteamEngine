@@ -53,3 +53,16 @@ export const messages: CalculatorRouteMessages = {
     "current": "当前的",
     "voltage": "电压"
 };
+
+Object.assign(messages, {
+    "eyebrow": "模组范围计算器",
+    "description": "根据可调模组的输出限值查找可用电阻范围。",
+    "presetIntro": "选择可调模组预设。",
+    "preset": "可调模组预设",
+    "optimalResistance": "最佳电阻",
+    "ampere": "安培",
+    "powerCurveDescriptionLong": "显示最大可实现功率与电阻的关系，并突出显示计算出的可用范围。",
+    "resistance": "电阻",
+    "power": "功率",
+    "current": "电流"
+});

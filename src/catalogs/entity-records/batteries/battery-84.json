@@ -1,0 +1,123 @@
+{
+    "entityId": "battery-84",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Research record for Reliance INR21700-RS50.",
+        "description": "Reliance lists INR21700-RS50 as a 5Ah 21700 cell with a 70A maximum continuous value subject to an 80°C cutoff. Its available specification states at least 4950mAh minimum capacity, and Battery Mooch retested March 2026 production cells and estimated 40A continuous current. Retain batch identity and distinguish the independent 40A catalog candidate from the manufacturer's temperature-limited maximum. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "The conservative 40A value is supported by the independent production-cell retest; 70A remains temperature-limited.",
+            "The exact-model retest covered production cells, but future batches and wrappers still require continuity checks.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "Reliance product matrix",
+            "url": "https://www.reliance-battery.com/products-en.html",
+            "publisher": "Reliance Energy",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "manufacturer-datasheet",
+            "title": "INR21700-RS50 Product Specification, Version A0",
+            "url": "https://manuals.plus/m/25641b0d89a05cc0f8b879f1eb52fcab8ca7032b89a10769bc7a32d40949503f",
+            "publisher": "Reliance Energy",
+            "limitations": "Reliance confidential specification copy hosted by a document mirror; it identifies the exact model, minimum capacity, and temperature-limited discharge conditions."
+        },
+        {
+            "id": "general-retailer",
+            "title": "Reliance INR21700-RS50 5000mAh - 70A",
+            "url": "https://www.nkon.nl/en/reliance-inr21700-rs50-4950mah-70a.html",
+            "publisher": "NKON",
+            "limitations": "Current retail listing supports exact-model availability, batch documentation, and displayed price; retailer specifications are not independent safety evidence."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Retest Results: Reliance RS50 - 70A 4950mAh full-tab 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-retest-results-reliance-rs50-70a-4950mah-full-tab-21700.994194/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; conclusions apply to tested samples and revisions."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is Reliance INR21700-RS50 (INR21700-RS50), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Reliance identifies INR21700-RS50 as a 5Ah 21700 cell; its available specification states minimum capacity of 4950mAh and a 70A maximum continuous discharge with an 80°C cutoff.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch retested March 2026 production cells and estimated 40A continuous current; 70A is temperature-limited and remains distinct from the conservative catalog candidate.",
+            "evidenceDate": "2026-05-21",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Reliance INR21700-RS50 has exact-model vaping test coverage.",
+            "evidenceDate": "2026-05-21",
+            "confidence": "high"
+        },
+        {
+            "id": "commercial-availability",
+            "statement": "A current European retailer lists the exact Reliance RS50 21700 cell individually and provides model-specific documentation links, supporting commercial availability.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact Reliance INR21700-RS50 identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The manufacturer specification and independent test distinguish the conservative 40A continuous candidate from the 70A maximum that requires temperature control.",
+            "runtimeImplication": "Use 40A as the catalog rating and do not present 70A as an unrestricted continuous value."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

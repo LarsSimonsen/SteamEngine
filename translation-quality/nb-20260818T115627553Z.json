@@ -1,0 +1,59 @@
+{
+    "schemaVersion": 1,
+    "locale": "nb",
+    "cycleId": "nb-20260818T115627553Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Norwegian Bokmål source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Norwegian Bokmål pass identified three actionable defects in integrated-battery, packaging, and low-drain wording; all three were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Norwegian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nb-20260818-001",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The integrated-battery summary omitted the distinction from a user-replaceable cell.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary only said that the battery pack was integrated."],
+            "resolution": "Added the user-replaceable-cell distinction."
+        },
+        {
+            "id": "nb-20260818-002",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The packaging term was an awkward literal translation.",
+            "disposition": "resolved",
+            "evidence": ["The previous note used the less natural term ‘omslag’."],
+            "resolution": "Changed to the clearer Norwegian term ‘innpakning’."
+        },
+        {
+            "id": "nb-20260818-003",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Low-drain was translated as low load, changing the battery capability warning.",
+            "disposition": "resolved",
+            "evidence": ["The previous warning said ‘lav belastning’ rather than low discharge capability."],
+            "resolution": "Changed to ‘lav utladningskapasitet’ and retained the vaping warning."
+        }
+    ]
+}

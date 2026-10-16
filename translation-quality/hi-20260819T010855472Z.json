@@ -1,0 +1,144 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260819T010855472Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Hindi pass identified thirteen notation, formula, unit-symbol, and terminology defects; all thirteen were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "hi-20260819-008",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example section and current example used awkward Hindi labels and a translated unit symbol.",
+            "disposition": "resolved",
+            "evidence": ["The effective Hindi presentation used काम के उदाहरण, वर्तमान खोजें, and ए for the ampere unit."],
+            "resolution": "Changed the headings to natural Hindi and restored the canonical A unit symbol."
+        },
+        {
+            "id": "hi-20260819-009",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.1",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The TCR power formula translated the protected variable names into Hindi text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was पी = वी^2 / आर = आई^2 × आर."],
+            "resolution": "Restored P, V, R, and I in the canonical formula."
+        },
+        {
+            "id": "hi-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle formulas retained English side labels in the Hindi section.",
+            "disposition": "resolved",
+            "evidence": ["The formulas used opposite, adjacent, and hypotenuse instead of Hindi side terminology."],
+            "resolution": "Localized the side labels as विपरीत भुजा, आसन्न भुजा, and कर्ण."
+        },
+        {
+            "id": "hi-20260819-011",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions contained opposite, adjacent, and hypotenuse."],
+            "resolution": "Localized the side labels while preserving sin^-1, cos^-1, and tan^-1 notation."
+        },
+        {
+            "id": "hi-20260819-012",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked trigonometry example retained English side labels and cm was inconsistent with the localized text.",
+            "disposition": "resolved",
+            "evidence": ["The previous formulas began with opposite and adjacent and used English labels in the Hindi example."],
+            "resolution": "Localized both side labels and kept the numerical expressions intact."
+        },
+        {
+            "id": "hi-20260819-013",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity worked-example heading was an unnatural literal translation.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was काम किया उदाहरण."],
+            "resolution": "Changed it to समाधान सहित उदाहरण."
+        },
+        {
+            "id": "hi-20260819-014",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The SI base-unit table translated protected unit symbols into Devanagari text.",
+            "disposition": "resolved",
+            "evidence": ["The symbols included एम, किग्रा, एस, के, ए, मोल, and सीडी instead of m, kg, s, K, A, mol, and cd."],
+            "resolution": "Restored the canonical SI symbols."
+        },
+        {
+            "id": "hi-20260819-015",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.bullets",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The derived-unit bullet list translated protected SI symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullets used वी, डब्ल्यू, जे, एन, पा, and हर्ट्ज as symbols."],
+            "resolution": "Restored V, W, J, N, Pa, and Hz and improved the Hindi label for power."
+        },
+        {
+            "id": "hi-20260819-016",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The decimal-prefix table translated protected prefix symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous symbols were के, एम, एम, μ, and एन instead of k, M, m, μ, and n."],
+            "resolution": "Restored the canonical SI prefix symbols."
+        },
+        {
+            "id": "hi-20260819-017",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.bullets",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The common-conversion list translated unit symbols and the Kelvin formula variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous list used किग्रा, एन, पा, and के instead of kg, N, Pa, and K."],
+            "resolution": "Restored canonical unit symbols and the formula K = °C + 273.15."
+        },
+        {
+            "id": "hi-20260819-018",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The explanation of pound mass and force used inconsistent translated abbreviations.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph mixed पौंड, एलबीएफ, and translated dimension terms."],
+            "resolution": "Clarified the distinction using lb and lbf and natural Hindi wording."
+        },
+        {
+            "id": "hi-20260819-019",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.0-2",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The AWG formulas translated protected variable names into Hindi text.",
+            "disposition": "resolved",
+            "evidence": ["The previous formulas contained d_इंच, एन, ए, and डी."],
+            "resolution": "Restored d_inch, d_mm, n, A, and d in the AWG formulas."
+        },
+        {
+            "id": "hi-20260819-020",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The wire-resistance formula translated protected variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was आर = ρ × एल / ए."],
+            "resolution": "Restored R, ρ, L, and A in the canonical expression."
+        }
+    ]
+}

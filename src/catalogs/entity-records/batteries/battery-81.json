@@ -1,0 +1,118 @@
+{
+    "entityId": "battery-81",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Research record for Tenpower INR18650-30XG.",
+        "description": "Tenpower identifies INR18650-30XG as a 3.0Ah 18650 cell with a 45A application-table maximum, while its available specification sheet states 40A maximum continuous discharge. Battery Mooch independently tested January 2026 cells and estimated about 40A continuous current, while noting the samples appeared pre-production because they lacked the CCC logo. The conservative 40A value is the defensible catalog candidate; treat the no-CCC samples and future production wrappers as separate evidence. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "The conservative 40A value is supported by both the available specification sheet and exact-model vaping testing.",
+            "The tested cells appeared pre-production because they lacked the CCC logo; production continuity remains a caveat.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "Tenpower application and cell data",
+            "url": "https://www.tenpowercell.com.cn/products/applications",
+            "publisher": "Tenpower",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "manufacturer-datasheet",
+            "title": "INR18650-30XG specification V0.1",
+            "url": "https://static.dianchi.cn/uploads/2025/08/14/dc24ug2qundv6vmnaf.pdf",
+            "publisher": "Tenpower",
+            "limitations": "Customer-facing specification copy hosted outside Tenpower's main domain; the document identifies the exact model and states 3000mAh nominal capacity and 40A maximum continuous discharge."
+        },
+        {
+            "id": "general-retailer",
+            "title": "Tenpower 30XG Tabless 18650 Battery Cells, Set of 6 with Holders",
+            "url": "https://mpandw.ca/products/tenpower-30xg-pre-production-tabless-18650-cells-set-of-6-with-holders",
+            "publisher": "Motion Power & Witt Supply Co.",
+            "limitations": "Current commercial listing supports exact-model market availability and displayed price; it is not vaping-specific safety evidence."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: Tenpower 30XG - 40A 3000mAh 18650",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-tenpower-30xg-no-ccc-40a-3000mah-18650.993416/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; conclusions apply to tested samples and revisions."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is Tenpower INR18650-30XG (INR18650-30XG), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Tenpower identifies INR18650-30XG as a 3.0Ah 18650 cell in its application data.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Tenpower's available specification sheet states 40A maximum continuous discharge, and Battery Mooch independently estimated about 40A continuous current from January 2026 cells; the manufacturer's current application table separately displays 45A for this model.",
+            "evidenceDate": "2026-03-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Tenpower INR18650-30XG has exact-model vaping test coverage.",
+            "evidenceDate": "2026-03-04",
+            "confidence": "high"
+        },
+        {
+            "id": "commercial-availability",
+            "statement": "A current retailer listing offers the exact Tenpower 30XG tabless 18650 cell in a six-cell set, supporting commercial availability of the model.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact Tenpower INR18650-30XG identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

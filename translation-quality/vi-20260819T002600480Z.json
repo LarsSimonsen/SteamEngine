@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "vi",
+    "cycleId": "vi-20260819T002600480Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Vietnamese source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Vietnamese pass identified three Kirchhoff terminology, protected-notation, and clarity defects; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Vietnamese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "vi-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading used a literal phrase instead of the standard Vietnamese electrical term.", "disposition": "resolved", "evidence": ["Định luật hiện hành Kirchhoff describes a current or present law rather than Kirchhoff's current law."], "resolution": "Changed it to Định luật dòng điện của Kirchhoff." },
+        { "id": "vi-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.0", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The current-law formula translated the protected variable I into Vietnamese text.", "disposition": "resolved", "evidence": ["The previous expression was Σ tôi = 0, while the notation contract preserves the electrical-current variable I."], "resolution": "Restored Σ I = 0." },
+        { "id": "vi-20260819-008", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0", "category": "translation-defect", "severity": "medium", "summary": "The current-law example used an awkward phrase for a branch carrying current away.", "disposition": "resolved", "evidence": ["The previous paragraph used mang 3 A đi, which is not natural technical Vietnamese for branch current."], "resolution": "Rewrote the example with natural Vietnamese branch-current wording and explicit sign interpretation." }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "entityId": "geekvape-l200-classic",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Geekvape L200 Classic specification sheet",
+            "url": "https://cn.geekvape.com/upload/download/L200-Spec.pdf",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-l200-20260824",
+            "title": "Geekvape L200 Classic manual",
+            "url": "https://www.ejuice.cz/data/files/N%C3%A1vod-GeekVape-L200-Classic-Mod.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "21700"
+            },
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

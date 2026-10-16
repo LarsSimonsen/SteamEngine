@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T131145777Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Bengali pass identified 25 actionable terminology, formula, punctuation, and unit defects across circuit, thermal, trigonometric, SI, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-power title used the Bengali word for energy rather than power.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘বৈদ্যুতিক শক্তি’ although the section defines P in watts."],
+            "resolution": "Changed it to ‘বৈদ্যুতিক ক্ষমতা’."
+        },
+        {
+            "id": "bn-20260818-027",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff display name used an English possessive construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous display name used ‘Kirchhoff এর আইন’."],
+            "resolution": "Changed it to the Bengali possessive ‘কির্শহফের সূত্রসমূহ’."
+        },
+        {
+            "id": "bn-20260818-028",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff description used an awkward literal conservation construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous text did not clearly identify node-current and loop-voltage conservation."],
+            "resolution": "Rewrote the description with precise circuit terminology."
+        },
+        {
+            "id": "bn-20260818-029",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-terms title was a literal translation of terms and sounded unnatural.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘সার্কিট শর্তাবলী’."],
+            "resolution": "Changed it to ‘সার্কিটের পরিভাষা’."
+        },
+        {
+            "id": "bn-20260818-030",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-resistance formula contained corrupted Bengali variable text.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used ‘আর_মোট’."],
+            "resolution": "Restored the protected R_total notation."
+        },
+        {
+            "id": "bn-20260818-031",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-resistance example formula localized its variable and decimal value.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used Bengali variable text and Bengali numerals."],
+            "resolution": "Restored ‘R_total = 0.40 Ω’."
+        },
+        {
+            "id": "bn-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law paragraph used an incorrect word for algebraic signs.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording described changing ‘লক্ষণ’ rather than mathematical signs."],
+            "resolution": "Rewrote the paragraph using চিহ্ন and consistent polarity terminology."
+        },
+        {
+            "id": "bn-20260818-033",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.1.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coefficient-sign bullet was grammatically incomplete.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence began ‘সহগ বিষয়ের চিহ্ন’."],
+            "resolution": "Rewrote the sentence explaining reversal caused by replacing a negative value with its absolute value."
+        },
+        {
+            "id": "bn-20260818-034",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR power paragraph mixed resistance capacity with electrical power terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous text repeatedly used প্রতিরোধ ক্ষমতা for resistance and শক্তি for power."],
+            "resolution": "Rewrote the paragraph with রোধ, কারেন্ট, and ক্ষমতা."
+        },
+        {
+            "id": "bn-20260818-035",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation was awkward and used unclear ratio wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph described sides as being ‘across’ and omitted clear ratio notation."],
+            "resolution": "Rewrote it with Bengali explanations and explicit SOH-CAH-TOA ratios."
+        },
+        {
+            "id": "bn-20260818-036",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula omitted spacing and used a localized label inconsistent with the contract.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘cos(θ) = সংলগ্ন/কর্ণ’."],
+            "resolution": "Restored ‘cos(θ) = adjacent / hypotenuse’."
+        },
+        {
+            "id": "bn-20260818-037",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-sine formula mixed Bengali labels with an inconsistent protected expression.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used localized text inside the inverse function formula."],
+            "resolution": "Restored ‘θ = sin^-1(opposite / hypotenuse)’."
+        },
+        {
+            "id": "bn-20260818-038",
+            "translationId": "catalog.concepts.concept-heat-capacity.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity display name was too literal and ambiguous with thermal power.",
+            "disposition": "resolved",
+            "evidence": ["The previous display name was ‘তাপ ক্ষমতা’."],
+            "resolution": "Changed it to ‘তাপধারণ ক্ষমতা’."
+        },
+        {
+            "id": "bn-20260818-039",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object-and-material paragraph used an unnatural material-property phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous text ended ‘একটি উপাদান সম্পত্তি.’ and mixed object terminology."],
+            "resolution": "Rewrote it with পদার্থের বৈশিষ্ট্য and consistent তাপধারণ ক্ষমতা."
+        },
+        {
+            "id": "bn-20260818-040",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-loss limitations paragraph used a literal and awkward real-versus-ideal construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence said a real result could ‘make’ different from the ideal."],
+            "resolution": "Rephrased it as causes that make the real result differ from the ideal."
+        },
+        {
+            "id": "bn-20260818-041",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The temperature-difference bullet used a literal phrase for equal size.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended ‘সমান আকার’."],
+            "resolution": "Changed it to the natural Bengali statement that the differences are equal."
+        },
+        {
+            "id": "bn-20260818-042",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux formula omitted spaces around the division operator.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘q'' = Q_dot/A’."],
+            "resolution": "Restored ‘q'' = Q_dot / A’."
+        },
+        {
+            "id": "bn-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘কাজের উদাহরণ’."],
+            "resolution": "Changed it to ‘সমাধানসহ উদাহরণ’."
+        },
+        {
+            "id": "bn-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-checks title used a loanword that sounded like a software check.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘ব্যবহারিক চেক’."],
+            "resolution": "Changed it to ‘ব্যবহারিক পরীক্ষা’."
+        },
+        {
+            "id": "bn-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The local-peak check used an unnatural phrase for distinguishing average and peak flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘স্থানীয় শিখর থেকে ... পার্থক্য করুন’."],
+            "resolution": "Rephrased it as distinguishing average heat flow from a local maximum."
+        },
+        {
+            "id": "bn-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final heat-flux check used an ambiguous reference to heat capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used তাপ ক্ষমতা after the display name was corrected."],
+            "resolution": "Changed it to তাপধারণ ক্ষমতা and clarified heat flux as a transfer rate."
+        },
+        {
+            "id": "bn-20260818-047",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The SI table mistranslated mole and candela.",
+            "disposition": "resolved",
+            "evidence": ["The previous rows used আঁচিল for mole and left candela in English."],
+            "resolution": "Corrected the rows to মোল/mol and ক্যান্ডেলা/cd."
+        },
+        {
+            "id": "bn-20260818-048",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The SI watt bullet labeled power as energy.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was ‘শক্তি: ওয়াট’."],
+            "resolution": "Changed it to ‘ক্ষমতা: ওয়াট’."
+        },
+        {
+            "id": "bn-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG paragraph mistranslated current-carrying capacity as breadth.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used প্রশস্ততা for ampacity."],
+            "resolution": "Rewrote it with কারেন্ট বহন ক্ষমতা and natural installation terminology."
+        },
+        {
+            "id": "bn-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-resistance paragraph used an unnatural phrase for a moderate diameter difference.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used শালীন ব্যাসের পার্থক্য."],
+            "resolution": "Changed it to a সামান্য ব্যাসের পার্থক্য and clarified the AWG relationship."
+        }
+    ]
+}

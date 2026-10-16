@@ -1,0 +1,40 @@
+name: Catalog suggestion
+description: Suggest a battery, coil material or mod for the Steam Engine catalogs.
+title: "[Catalog suggestion]: "
+labels:
+  - catalog
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        The catalogs are curated in a private research repository, so catalog files cannot be changed by pull
+        request. Accepted suggestions are researched and appear in a later catalog update.
+  - type: dropdown
+    id: catalog
+    attributes:
+      label: Catalog
+      options:
+        - Battery
+        - Coil material
+        - Mod or control board
+    validations:
+      required: true
+  - type: input
+    id: product
+    attributes:
+      label: Product
+      description: Manufacturer, model and variant, as exactly as you can identify them.
+    validations:
+      required: true
+  - type: textarea
+    id: specifications
+    attributes:
+      label: Specifications
+      description: The values you know, such as capacity and continuous current, or output limits.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to manufacturer pages, datasheets, independent tests or reviews.
+    validations:
+      required: true

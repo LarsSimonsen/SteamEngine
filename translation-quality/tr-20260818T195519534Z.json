@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "tr",
+    "cycleId": "tr-20260818T195519534Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Turkish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Turkish pass identified 25 actionable formula, terminology, grammar, formatting, and technical-clarity defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Turkish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle."
+        }
+    },
+    "findings": [
+        {
+            "id": "tr-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm-law section title was incorrectly lowercased.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was ilişki."
+            ],
+            "resolution": "Capitalized it as the Turkish heading İlişki."
+        },
+        {
+            "id": "tr-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage definition used the less consistent voltaj term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text defined V as voltaj."
+            ],
+            "resolution": "Changed it to the preferred electrical term gerilim."
+        },
+        {
+            "id": "tr-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current definition redundantly said amper or amper.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text contained amper veya amper."
+            ],
+            "resolution": "Reduced it to the standard amper term."
+        },
+        {
+            "id": "tr-20260818-029",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current formula translated the variable I as the Turkish word ben.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula began ben = 4,2 V."
+            ],
+            "resolution": "Restored the protected mathematical variable I."
+        },
+        {
+            "id": "tr-20260818-030",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The power paragraph translated heat dissipation as thermal capacity and clearance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used termal kapasiteye ve boşluk payına."
+            ],
+            "resolution": "Rewrote it with ısı yayma kapasitesi and güvenlik payı."
+        },
+        {
+            "id": "tr-20260818-031",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The milliampere conversion omitted spaces around the unit symbols.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous value was 1mA = 0,001A."
+            ],
+            "resolution": "Formatted it as 1 mA = 0,001 A."
+        },
+        {
+            "id": "tr-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example heading was a literal phrase rather than a natural Turkish technical heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Çalışılan örnek."
+            ],
+            "resolution": "Changed it to Hesaplama örneği."
+        },
+        {
+            "id": "tr-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The energy formula localized the SI second symbol as sn.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used 10 sn."
+            ],
+            "resolution": "Restored the stable SI symbol s."
+        },
+        {
+            "id": "tr-20260818-034",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph used physical clearance for safety margin.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text recommended boşluk payı."
+            ],
+            "resolution": "Changed it to the safety-specific term güvenlik payı."
+        },
+        {
+            "id": "tr-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit branch was translated as dal instead of the established Turkish term kol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous definition began Dal, iki düğüm arasındaki."
+            ],
+            "resolution": "Changed the circuit term to Kol and clarified that it carries current."
+        },
+        {
+            "id": "tr-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The loop definition used çevre, which was ambiguous in this circuit context.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous definition used Bir çevre."
+            ],
+            "resolution": "Used the clearer circuit term Çevrim."
+        },
+        {
+            "id": "tr-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-connection definition used an awkward literal phrase about giving current a path.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said akıma bileşenler arasında yalnızca bir yol verir."
+            ],
+            "resolution": "Rephrased it as providing one path for current."
+        },
+        {
+            "id": "tr-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The total-resistance formula translated the protected variable name into Turkish.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used R_toplam."
+            ],
+            "resolution": "Restored the stable calculation variable R_total."
+        },
+        {
+            "id": "tr-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-current formula translated the variable I into ben and used inconsistent decimal formatting.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used ben = 8,0 V / 0,40 Ω = 20 A."
+            ],
+            "resolution": "Restored I and kept the formula variables and SI units intact."
+        },
+        {
+            "id": "tr-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage example used a dot decimal despite the locale's comma decimal convention.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula began +8.0 V."
+            ],
+            "resolution": "Changed it to +8,0 V."
+        },
+        {
+            "id": "tr-20260818-041",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch annotation remained in English inside an otherwise Turkish formula.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous annotation ended with (parallel branches)."
+            ],
+            "resolution": "Changed the annotation to (paralel kollar)."
+        },
+        {
+            "id": "tr-20260818-042",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-analysis heading used solve literally instead of the natural Turkish analysis wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Gerçek devreleri çözme."
+            ],
+            "resolution": "Changed it to Gerçek devreleri analiz etme."
+        },
+        {
+            "id": "tr-20260818-043",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The checklist used branş, an inconsistent loanword for circuit branches.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used branş akımlarını."
+            ],
+            "resolution": "Changed it to kol akımlarını and made the instruction more direct."
+        },
+        {
+            "id": "tr-20260818-044",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistor relationship used voltaj instead of the preferred gerilim term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet said Direnç voltajını ve akımını."
+            ],
+            "resolution": "Rephrased it as Direnç üzerindeki gerilim ve akımı."
+        },
+        {
+            "id": "tr-20260818-045",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "critical",
+            "summary": "The TCR setup contained a malformed control character before the Celsius unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup rendered an invalid character in the temperature value."
+            ],
+            "resolution": "Replaced the malformed value with a clean 20 °C statement."
+        },
+        {
+            "id": "tr-20260818-046",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation contained awkward and incomplete definitions of the sides.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text ended with the malformed phrase teğet karşıt bitişik komşudur."
+            ],
+            "resolution": "Rewrote the paragraph with explicit Turkish definitions and a clear SOH-CAH-TOA reminder."
+        },
+        {
+            "id": "tr-20260818-047",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry setup used an unnatural literal description of an angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup said hipotenüs 30°'lik bir açıyla buluşuyor."
+            ],
+            "resolution": "Changed it to the natural statement that the hypotenuse makes a 30° angle."
+        },
+        {
+            "id": "tr-20260818-048",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "critical",
+            "summary": "The sine function was translated as the Turkish word for sin, corrupting the formula.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used günah(30°)."
+            ],
+            "resolution": "Restored the mathematical function sin(30°)."
+        },
+        {
+            "id": "tr-20260818-049",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity formula omitted the temperature difference symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula was C = Q / T."
+            ],
+            "resolution": "Restored the correct relation C = Q / ΔT."
+        },
+        {
+            "id": "tr-20260818-050",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR worked-example heading used a literal phrase rather than a natural Turkish technical heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Çalışılan örnek."
+            ],
+            "resolution": "Changed it to Hesaplama örneği."
+        }
+    ]
+}

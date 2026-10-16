@@ -1,0 +1,96 @@
+{
+    "entityId": "battery-30",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine integrated-battery preset for Innokin iTaste MVP 2.0.",
+        "description": "This researched draft preserves the calculator's 2600mAh and 3C compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "innokin-mvp-history",
+            "title": "MVP series retrospective",
+            "url": "https://support.innokin.com/hc/en-us/community/posts/4410346561555--GIVEAWAY-The-MVP-series-reshaped-vaping-as-we-know-it-What-s-in-store-next",
+            "publisher": "support.innokin.com",
+            "limitations": "Manufacturer retrospective from 2021; supports historical attention, not current retail availability."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-itaste-mvp",
+            "title": "iTaste MVP 2.0 user manual",
+            "url": "https://manualzilla.com/doc/5762182/itaste-mvp-2.0",
+            "publisher": "Innokin",
+            "limitations": "Manual mirror; it identifies the built-in polymer Li-ion battery but does not identify a cell supplier or exact electrode formulation."
+        },
+        {
+            "id": "intro-mvp20-2013",
+            "title": "Innokin iTaste MVP 2.0 added to the store",
+            "url": "https://www.e-cigarette-forum.com/threads/innokin-itaste-mvp-2-0-added-to-the-store.473655/",
+            "publisher": "E-Cigarette Forum",
+            "limitations": "A dated exact-model store listing establishes availability by this date, not the global launch date."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Innokin iTaste MVP 2.0 2600mAh 3C as a 2600mAh preset with a 3C runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Innokin iTaste MVP 2.0 manual identifies a built-in polymer lithium-ion rechargeable battery.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "high"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Innokin iTaste MVP 2.0 has reliable market-introduction evidence dated 2013-09-27 or earlier.",
+            "evidenceDate": "2013-09-27",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "Surviving evidence does not fully resolve the internal cell and current-limit interpretation.",
+            "runtimeImplication": "Retain compatibility data pending dedicated device research."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "integrated",
+        "formFactor": null,
+        "chemistry": "Lithium-ion polymer",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

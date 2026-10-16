@@ -1,0 +1,88 @@
+<p>A lot has happened since the last update. Most of the recent work has focused on making the calculators
+easier to use and connecting them more closely with the growing battery, mod, board, and material catalogs.</p>
+
+<h2>Battery packs and mod presets</h2>
+
+<p>The Battery Drain calculator now supports multi-cell configurations, including series and parallel
+arrangements. It calculates the load per cell and gives estimates for current, power, runtime, voltage sag,
+and safety headroom using more conservative voltage assumptions near the mod&#8217;s cutoff point.</p>
+
+<p>You can also select a mod as a preset. When its battery configuration is known, Steam Engine can fill in
+the number of cells, their arrangement, supported cell formats, power limits, and relevant operating mode.</p>
+
+<p>The presets include devices ranging from older ProVari models to newer regulated mods such as the Lost
+Vape Centaurus DNA250C. Control boards and the mods that use them are also linked together in the catalog.</p>
+
+<p>As always, presets are a convenient starting point&#8212;not a substitute for checking the device manual,
+cell specifications, and the condition of your batteries.</p>
+
+<h2>Better comparison tools</h2>
+
+<p>The catalog now includes dedicated comparison pages for batteries, materials, and mods.</p>
+
+<p>Battery comparisons make it easier to inspect capacity, discharge ratings, dimensions, weight, and other
+identifying details. Material comparisons include resistance and temperature-response curves, while mod
+comparisons show specifications and power curves where sufficient information is available.</p>
+
+<p>Catalog search has also become more forgiving. It can now find likely matches despite minor spelling
+differences, punctuation, spacing, or model-name variations.</p>
+
+<h2>A more useful mod catalog</h2>
+
+<p>Mod profiles can now describe more than their headline wattage. Where the information is available, they
+include battery configuration, supported cell formats, compatible control boards, input-voltage ranges,
+output modes, and operating features.</p>
+
+<p>This information is shared with the calculators rather than being copied into separate preset lists. That
+should make the catalog more consistent and allow future corrections to benefit several parts of the site
+at once.</p>
+
+<p>There is still plenty of research left to do, particularly for older or poorly documented devices. If you
+spot an incorrect specification or have a reliable source for missing information, please let me know.</p>
+
+<h2>Calculator improvements</h2>
+
+<p>The Mod Range calculator has received a clearer graph and a more compact layout. Its results can now be
+carried directly into Battery Drain, along with the selected mod and maximum power, making it easier to
+continue from a mod&#8217;s electrical limits to a battery-load estimate.</p>
+
+<p>There have also been many smaller usability improvements across the other calculators:</p>
+
+<ul>
+<li>Coil wrapping accepts sub-ohm values more naturally and presents its results more clearly.</li>
+<li>Ohm&#8217;s law has better field interactions, inline validation, and separate reset controls.</li>
+<li>Wire Wizard has improved desktop and mobile layouts, especially for composite wires and temperature
+points.</li>
+<li>E-liquid recipes preserve editable values more reliably.</li>
+<li>The converter has clearer input, result, and unit columns.</li>
+<li>Electrical inputs now use more consistent increments across calculators.</li>
+</ul>
+
+<p>Most of these are small changes on their own, but together they should make the site feel less
+awkward&#8212;particularly on phones.</p>
+
+<h2>More languages</h2>
+
+<p>Greek, Turkish, Indonesian, and Latin American Spanish have joined the languages already available on the
+site. The existing translations have also gone through a substantial round of corrections, with particular
+attention paid to technical terminology.</p>
+
+<p>Machine-assisted translation can still produce mistakes, so corrections from fluent speakers are very welcome.</p>
+
+<h2>Behind the scenes</h2>
+
+<p>Steam Engine&#8217;s frontend and calculation services have also moved to Cloudflare. The calculation
+interfaces are now versioned and validated, which provides a safer foundation for changing the
+implementation without unexpectedly changing saved or cached results.</p>
+
+<p>There is more work ahead, but the direction is becoming clearer: keep the calculators practical and
+familiar, improve the data behind them, and make the site easier to maintain and contribute to.</p>
+
+<p>I&#8217;ll be away for a few days, so I probably won&#8217;t be very active online in the immediate future. I
+expect to be back in less than two weeks and will catch up when I return.</p>
+
+<p>If you find a bug, an incorrect preset, or something that could be made clearer, you can join the
+discussion on the
+<a href="https://www.e-cigarette-forum.com/threads/i-made-an-update-to-steam-engine.995007/">E-Cigarette
+Forum</a> or
+<a href="https://www.reddit.com/user/Dampmaskin/comments/1vishsm/a_new_chapter_for_steam_engine/">Reddit</a>.</p>

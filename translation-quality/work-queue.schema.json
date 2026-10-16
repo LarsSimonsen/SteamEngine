@@ -1,0 +1,83 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://www.steam-engine.org/schemas/translation-critique-work-queue-v1.json",
+    "title": "Steam Engine translation critique work queue",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schemaVersion", "sourceLocale", "defaultLimits", "locales"],
+    "properties": {
+        "schemaVersion": { "const": 1 },
+        "sourceLocale": { "const": "en" },
+        "defaultLimits": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "localesPerRun",
+                "maxIterationsPerLocaleRun",
+                "maxActionableFindingsPerIteration",
+                "stopAfterConsecutiveNoImprovement"
+            ],
+            "properties": {
+                "localesPerRun": { "const": 1 },
+                "maxIterationsPerLocaleRun": { "type": "integer", "minimum": 1 },
+                "maxActionableFindingsPerIteration": { "type": "integer", "minimum": 1 },
+                "stopAfterConsecutiveNoImprovement": { "type": "integer", "minimum": 1 }
+            }
+        },
+        "locales": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/locale" }
+        }
+    },
+    "$defs": {
+        "signature": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "checkpoint": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "cycleId",
+                "startedAt",
+                "iterations",
+                "consecutiveWithoutImprovement",
+                "baselineSourceSignature",
+                "baselineContentSignature"
+            ],
+            "properties": {
+                "cycleId": { "type": "string", "minLength": 1 },
+                "startedAt": { "type": "string", "format": "date-time" },
+                "pausedAt": { "type": "string", "format": "date-time" },
+                "iterations": { "type": "integer", "minimum": 0 },
+                "consecutiveWithoutImprovement": { "type": "integer", "minimum": 0 },
+                "baselineSourceSignature": { "$ref": "#/$defs/signature" },
+                "baselineContentSignature": { "$ref": "#/$defs/signature" }
+            }
+        },
+        "locale": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "locale",
+                "priority",
+                "status",
+                "reason",
+                "iterationCount",
+                "lastCompletedCycle",
+                "resultSummary"
+            ],
+            "properties": {
+                "locale": { "type": "string", "minLength": 2 },
+                "priority": { "type": "integer", "minimum": 1 },
+                "status": { "enum": ["queued", "active", "needs-owner", "blocked", "stable"] },
+                "reason": { "type": "string", "minLength": 1 },
+                "iterationCount": { "type": "integer", "minimum": 0 },
+                "lastCompletedCycle": { "type": ["string", "null"] },
+                "resultSummary": { "type": "string" },
+                "lastOutcome": { "type": "string", "minLength": 1 },
+                "commitSignature": { "type": "string", "pattern": "^[a-f0-9]{7,64}$" },
+                "sourceSignature": { "$ref": "#/$defs/signature" },
+                "contentSignature": { "$ref": "#/$defs/signature" },
+                "checkpoint": { "$ref": "#/$defs/checkpoint" }
+            }
+        }
+    }
+}

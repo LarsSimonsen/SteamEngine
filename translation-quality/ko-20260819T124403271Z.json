@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "ko", "cycleId": "ko-20260819T124403271Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Korean source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Korean critique found protected-name drift, technical false friends, coil-lead errors, e-liquid terminology problems, and an export/import mistranslation." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Korean human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "ko-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated as ordinary phrases.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored protected names across shared and calculator labels." },
+        { "id": "ko-catalog", "translationId": "shared.encyclopediaDetail.property", "category": "translation-defect", "severity": "high", "summary": "Technical property became real estate, value became personal worth, and confidence became self-confidence.", "disposition": "resolved", "evidence": ["These labels describe catalog data and evidence."], "resolution": "Used technical data terminology." },
+        { "id": "ko-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and power loss were translated as anatomical legs and leg strength.", "disposition": "resolved", "evidence": ["The fields describe electrical lead wire."], "resolution": "Used 리드선 consistently." },
+        { "id": "ko-juice", "translationId": "calculators.juice.nicStrength", "category": "factual-or-safety-risk", "severity": "high", "summary": "Nicotine concentration, volume, grams, and target labels used ambiguous or unrelated senses.", "disposition": "resolved", "evidence": ["These fields define an e-liquid recipe."], "resolution": "Used explicit formulation terminology and rewrote the warning." },
+        { "id": "ko-wirewiz", "translationId": "calculators.wirewiz.export", "category": "translation-defect", "severity": "medium", "summary": "Export was translated as overseas trade and volume as audio volume.", "disposition": "resolved", "evidence": ["The controls export a file and report physical volume."], "resolution": "Used 내보내기 and 부피." }
+    ]
+}

@@ -1,0 +1,218 @@
+.tcr-page {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.tcr-page-header h1 {
+    max-width: 22ch;
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.tcr-page-header > div > p:last-child {
+    max-width: 70ch;
+    color: var(--se-muted);
+    line-height: 1.6;
+}
+
+.tcr-page-header__actions {
+    gap: 0;
+}
+
+#tcr-material-manager .catalog-manager {
+    margin-top: 0;
+}
+
+.tcr-validation {
+    color: var(--se-warning-text);
+}
+
+.tcr-layout {
+    display: grid;
+    grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 2.2fr);
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.tcr-panel,
+.tcr-about {
+    padding: 1.25rem;
+}
+
+.tcr-panel h2,
+.tcr-about h2 {
+    margin: 0 0 1rem;
+}
+
+.tcr-panel-heading p {
+    margin: -0.5rem 0 1rem;
+    color: var(--se-muted);
+}
+
+.tcr-field {
+    display: grid;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.tcr-field input,
+.tcr-field select,
+.tcr-table input,
+.tcr-export textarea {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid var(--se-border);
+    border-radius: 0.25rem;
+    background: var(--se-body-bg);
+    color: var(--se-text);
+    font: inherit;
+}
+
+.tcr-temperature-input {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.tcr-temperature-input input {
+    padding: var(--se-button-padding-block) var(--se-button-padding-inline);
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.tcr-temperature-input button {
+    min-width: 3.5rem;
+    padding: var(--se-button-padding-block) var(--se-button-padding-inline);
+    color: var(--se-button-passive-text);
+    font: inherit;
+    font-weight: var(--se-button-font-weight);
+    background: var(--se-button-passive);
+    border: 1px solid var(--se-button-passive);
+    border-left: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+}
+
+.tcr-temperature-input button:hover {
+    background: var(--se-button-passive-hover);
+    border-color: var(--se-button-passive-hover);
+}
+
+.tcr-temperature-input button[aria-pressed="true"] {
+    color: var(--se-button-active-text);
+    background: var(--se-button-active);
+    border-color: var(--se-button-active);
+}
+
+.tcr-temperature-input button[aria-pressed="true"]:hover {
+    background: var(--se-button-active-hover);
+    border-color: var(--se-button-active-hover);
+}
+
+.tcr-help,
+.tcr-empty,
+.tcr-export-message {
+    color: var(--se-muted);
+    line-height: 1.5;
+}
+
+.tcr-sensitivity {
+    min-width: 7rem;
+    text-align: right;
+}
+
+.tcr-sensitivity span,
+.tcr-sensitivity strong {
+    display: block;
+}
+
+.tcr-sensitivity span {
+    color: var(--se-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.tcr-sensitivity strong {
+    color: var(--se-link);
+    font-size: 1.7rem;
+}
+
+.tcr-table {
+    font-size: 0.86rem;
+    white-space: nowrap;
+}
+
+.tcr-table th,
+.tcr-table td {
+    padding: 0.6rem;
+    border: 1px solid var(--se-border);
+    text-align: right;
+}
+
+.tcr-table th:first-child {
+    min-width: 13rem;
+    text-align: left;
+}
+
+.tcr-table th small {
+    display: block;
+    color: var(--se-muted);
+    font-weight: 400;
+}
+
+.tcr-table input {
+    min-width: 6rem;
+    text-align: right;
+}
+
+.tcr-table tfoot {
+    font-weight: 700;
+}
+
+.tcr-export {
+    display: grid;
+    grid-template-columns: minmax(12rem, 0.8fr) minmax(18rem, 1.5fr) auto;
+    gap: 1rem;
+    align-items: start;
+}
+
+.tcr-export textarea {
+    resize: vertical;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.82rem;
+}
+
+.tcr-about > div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.tcr-about p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .tcr-layout,
+    .tcr-export {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 620px) {
+    .tcr-page-header,
+    .tcr-panel-heading,
+    .tcr-about > div {
+        display: block;
+    }
+
+    .tcr-page-header__actions {
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .tcr-sensitivity {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+}

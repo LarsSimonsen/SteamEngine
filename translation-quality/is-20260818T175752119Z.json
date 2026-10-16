@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "is",
+    "cycleId": "is-20260818T175752119Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Icelandic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Icelandic pass identified 25 actionable formula, terminology, grammar, and technical-clarity defects across electrical, trigonometric, thermal, heat-flux, unit-conversion, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Icelandic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "is-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The rearranged Ohm's-law formula used compressed division notation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was I = V/R."
+            ],
+            "resolution": "Restored the readable protected notation I = V / R."
+        },
+        {
+            "id": "is-20260818-077",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The resistance rearrangement used compressed division notation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was R = V/I."
+            ],
+            "resolution": "Restored the readable protected notation R = V / I."
+        },
+        {
+            "id": "is-20260818-078",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance definition used an inconsistent technical form.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet did not use the standard Icelandic term consistently."
+            ],
+            "resolution": "Changed it to R er viðnám, mælt í ohmum (Ω)."
+        },
+        {
+            "id": "is-20260818-079",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example heading was a literal translation with awkward agreement.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous heading was Unnið dæmi."
+            ],
+            "resolution": "Changed it to the natural technical heading Reiknidæmi."
+        },
+        {
+            "id": "is-20260818-080",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR name was less natural and did not clearly identify resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name used a literal coefficient phrase."
+            ],
+            "resolution": "Changed it to Hitastuðull viðnáms (TCR)."
+        },
+        {
+            "id": "is-20260818-081",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR example heading was a literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous heading was Unnið dæmi."
+            ],
+            "resolution": "Changed it to Reiknidæmi."
+        },
+        {
+            "id": "is-20260818-082",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The trigonometry example title was awkwardly literal.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title did not read naturally as an instruction."
+            ],
+            "resolution": "Changed it to Finndu eina hlið."
+        },
+        {
+            "id": "is-20260818-083",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry setup used an unnatural construction for the hypotenuse and angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was a literal rendering of the English sentence."
+            ],
+            "resolution": "Rephrased it as a 10 cm hypotenuse forming a 30° angle."
+        },
+        {
+            "id": "is-20260818-084",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity example heading was a literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous heading was Unnið dæmi."
+            ],
+            "resolution": "Changed it to Reiknidæmi."
+        },
+        {
+            "id": "is-20260818-085",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The electrical-heating setup was unclear about the ideal no-loss assumption.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup did not state the constant 100 W source and no-loss condition clearly."
+            ],
+            "resolution": "Rewrote it to specify 41,8 kJ, a constant 100 W source, and no losses."
+        },
+        {
+            "id": "is-20260818-086",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading was less natural in Icelandic.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title used a literal noun sequence."
+            ],
+            "resolution": "Changed it to Hlutur og efni."
+        },
+        {
+            "id": "is-20260818-087",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change heading omitted the practical-limit context.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was shorter and less precise."
+            ],
+            "resolution": "Changed it to Fasabreytingar og hagnýtar takmarkanir."
+        },
+        {
+            "id": "is-20260818-088",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux display name used a general heat-flow term instead of the per-area quantity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous name did not distinguish heat-flux density."
+            ],
+            "resolution": "Changed it to Varmaflæðisþéttleiki."
+        },
+        {
+            "id": "is-20260818-089",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux example heading was a literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous heading was Unnið dæmi."
+            ],
+            "resolution": "Changed it to Reiknidæmi."
+        },
+        {
+            "id": "is-20260818-090",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux setup did not clearly express the area over which the heater transfers heat.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was less direct about the 0,020 m² area."
+            ],
+            "resolution": "Rephrased it to state that a 100 W heater transfers heat through 0,020 m²."
+        },
+        {
+            "id": "is-20260818-091",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-checks heading was not idiomatic.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous heading used a less natural literal form."
+            ],
+            "resolution": "Changed it to Hagnýtar athuganir."
+        },
+        {
+            "id": "is-20260818-092",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI base-units heading was not idiomatic.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title used a literal plural construction."
+            ],
+            "resolution": "Changed it to SI-grunneiningar."
+        },
+        {
+            "id": "is-20260818-093",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The foot-to-metre conversion formula used a less consistent notation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula did not use the corrected Icelandic unit wording and spacing."
+            ],
+            "resolution": "Restored 1 fet = 12 tommur = 0,3048 m."
+        },
+        {
+            "id": "is-20260818-094",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The yard-to-metre conversion formula used a less consistent notation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula did not use the corrected Icelandic unit wording and spacing."
+            ],
+            "resolution": "Restored 1 yard = 3 fet = 0,9144 m."
+        },
+        {
+            "id": "is-20260818-095",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heading for additional unit conversions was awkwardly literal.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title did not read naturally as a section heading."
+            ],
+            "resolution": "Changed it to Fleiri algengir umreikningar."
+        },
+        {
+            "id": "is-20260818-096",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge display name used a less natural term for sizes.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous name used Vírmælar for the concept title."
+            ],
+            "resolution": "Changed it to Vírstærðir: AWG, SWG og BWG."
+        },
+        {
+            "id": "is-20260818-097",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-number guidance had incorrect grammar and inconsistent capitalization.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used Stærri venjulegt mælitala and an unnecessary capital after the semicolon."
+            ],
+            "resolution": "Rewrote it with correct agreement and consistent lowercase wording."
+        },
+        {
+            "id": "is-20260818-098",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG formula heading used an awkward compound.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title lacked a natural Icelandic compound for diameter and area."
+            ],
+            "resolution": "Changed it to AWG-þvermál og flatarmál."
+        },
+        {
+            "id": "is-20260818-099",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-resistance heading used a less precise term for wire size.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title began with Mál and was ambiguous in context."
+            ],
+            "resolution": "Changed it to Vírstærð, flatarmál og viðnám."
+        },
+        {
+            "id": "is-20260818-100",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-specification heading was a literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title used a less natural phrase for a practical specification."
+            ],
+            "resolution": "Changed it to Hagnýt lýsing."
+        }
+    ]
+}

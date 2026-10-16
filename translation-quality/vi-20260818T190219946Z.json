@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "vi",
+    "cycleId": "vi-20260818T190219946Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Vietnamese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Vietnamese pass identified 25 actionable capitalization, false-friend, grammar, electrical, circuit, thermal, and safety-clarity defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Vietnamese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "vi-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm-law display name was unnecessarily lowercased.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was định luật Ohm."
+            ],
+            "resolution": "Capitalized it as Định luật Ohm."
+        },
+        {
+            "id": "vi-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The first worked-example title translated current as the present moment.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Tìm hiện tại."
+            ],
+            "resolution": "Changed it to Tìm dòng điện."
+        },
+        {
+            "id": "vi-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance example setup had unnatural Vietnamese sentence structure and omitted unit spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup described a circuit with 12V and 2A as Một đoạn mạch có hiệu điện thế 12V chạy qua thì có dòng điện 2A."
+            ],
+            "resolution": "Rewrote it as a circuit with 12 V voltage and 2 A current."
+        },
+        {
+            "id": "vi-20260818-029",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The power paragraph translated thermal headroom as thermal power and space.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used công suất nhiệt và khoảng trống for safe heat dissipation."
+            ],
+            "resolution": "Rewrote it with sufficient heat-dissipation capability and an appropriate safety margin."
+        },
+        {
+            "id": "vi-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Joule-heating summary said current turned resistance into heat.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary was Làm thế nào dòng điện biến điện trở thành nhiệt."
+            ],
+            "resolution": "Changed it to electrical energy being converted to heat by current."
+        },
+        {
+            "id": "vi-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The existing correction still used a less precise literal heating term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous overlay title was Công suất gia nhiệt."
+            ],
+            "resolution": "Changed it to the standard thermal phrase Công suất tỏa nhiệt."
+        },
+        {
+            "id": "vi-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The setup used mang 3 A, which is less natural for current through a coil.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was Một cuộn dây 0,8 Ω mang 3 A."
+            ],
+            "resolution": "Rewrote it as a coil with 0.8 Ω resistance conducting 3 A."
+        },
+        {
+            "id": "vi-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heading was an awkward literal question about heating.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Điều gì ảnh hưởng đến sưởi ấm."
+            ],
+            "resolution": "Changed it to Các yếu tố ảnh hưởng đến sự tỏa nhiệt."
+        },
+        {
+            "id": "vi-20260818-034",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-transfer bullet used phần cứng for hardware.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text referred to heat transfer to không khí, chất lỏng và phần cứng."
+            ],
+            "resolution": "Changed phần cứng to the technically appropriate thiết bị."
+        },
+        {
+            "id": "vi-20260818-035",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The paragraph incorrectly called electrical power a rate of energy transfer while labeling it electrical energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph began Năng lượng điện là tốc độ truyền năng lượng."
+            ],
+            "resolution": "Rewrote it to distinguish electrical power, temperature, heat capacity, and heat-flux density."
+        },
+        {
+            "id": "vi-20260818-036",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph translated safety margin as physical empty space.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used khoảng không thích hợp for component safety."
+            ],
+            "resolution": "Changed it to biên độ an toàn thích hợp and clarified the equipment checks."
+        },
+        {
+            "id": "vi-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff display name was unnecessarily lowercased and singular.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was định luật Kirchhoff."
+            ],
+            "resolution": "Changed it to Các định luật Kirchhoff."
+        },
+        {
+            "id": "vi-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms heading omitted điện and was too generic.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Thuật ngữ mạch."
+            ],
+            "resolution": "Changed it to Thuật ngữ mạch điện."
+        },
+        {
+            "id": "vi-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The introductory sentence was an ungrammatical literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said the terms made a circuit diagram easier to reason about using dễ lý giải hơn về."
+            ],
+            "resolution": "Rewrote it as a natural introduction to analyzing an electrical schematic."
+        },
+        {
+            "id": "vi-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-resistor example title translated resistor as a current phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Dòng điện trở."
+            ],
+            "resolution": "Changed it to Các điện trở mắc nối tiếp."
+        },
+        {
+            "id": "vi-20260818-041",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor conclusion lacked a subject and read like a literal machine translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous conclusion was 20 A giống nhau đi qua cả hai điện trở."
+            ],
+            "resolution": "Rewrote it as the same 20 A current passing through both resistors."
+        },
+        {
+            "id": "vi-20260818-042",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cells heading used a literal word that is misleading for battery cells.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Các tế bào nối tiếp và song song."
+            ],
+            "resolution": "Changed it to Các cell mắc nối tiếp và song song."
+        },
+        {
+            "id": "vi-20260818-043",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-cell bullet called ampere-hour capacity power and used an unclear equal-cell phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used công suất ampe giờ and một ô bằng nhau."
+            ],
+            "resolution": "Rewrote it with dung lượng tính bằng ampe-giờ and a clear equivalent-cell reference."
+        },
+        {
+            "id": "vi-20260818-044",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The parallel-cell bullet translated capacity as power.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said công suất và dòng điện khả dụng tăng thêm xấp xỉ."
+            ],
+            "resolution": "Changed it to dung lượng and clarified approximate addition."
+        },
+        {
+            "id": "vi-20260818-045",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning was grammatically awkward and less specific about cell-level monitoring.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was Việc sạc lithium-ion nối tiếp yêu cầu giám sát ở cấp độ tế bào."
+            ],
+            "resolution": "Rewrote it as series charging of lithium-ion cells with per-cell monitoring and protection."
+        },
+        {
+            "id": "vi-20260818-046",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The circuit-limits paragraph mistranslated high-current circuitry as high-voltage circuitry.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous ending was mạch điện cao thế."
+            ],
+            "resolution": "Changed it to mạch dòng điện lớn and retained the omitted-behavior warning."
+        },
+        {
+            "id": "vi-20260818-047",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR display name used kháng nhiệt độ, a literal and misleading phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was Hệ số kháng nhiệt độ (TCR)."
+            ],
+            "resolution": "Changed it to Hệ số nhiệt độ của điện trở (TCR)."
+        },
+        {
+            "id": "vi-20260818-048",
+            "translationId": "catalog.concepts.concept-trigonometry.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The trigonometry display name was lowercased at the start.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was lượng giác."
+            ],
+            "resolution": "Capitalized it as Lượng giác."
+        },
+        {
+            "id": "vi-20260818-049",
+            "translationId": "catalog.concepts.concept-heat-capacity.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity display name was translated as thermal power.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was công suất nhiệt."
+            ],
+            "resolution": "Changed it to the correct Vietnamese term Nhiệt dung."
+        },
+        {
+            "id": "vi-20260818-050",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux display name omitted the per-area density meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was dòng nhiệt."
+            ],
+            "resolution": "Changed it to Mật độ dòng nhiệt."
+        }
+    ]
+}

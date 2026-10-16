@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "fr",
+    "cycleId": "fr-20260819T015758097Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and French source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded French pass identified abbreviated and untranslated side labels in the trigonometry formulas and worked example; all were aligned with the established French terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent French human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "fr-20260819-009",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle formulas used abbreviated side labels and one inconsistent gender form instead of the established French terminology.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory paragraph used côté opposé and côté adjacent, while the formulas displayed opposé and adjacent."],
+            "resolution": "Aligned all three formulas with côté opposé, côté adjacent, and hypoténuse."
+        },
+        {
+            "id": "fr-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels in the French presentation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed opposite, adjacent, and hypotenuse in an otherwise French section."],
+            "resolution": "Localized all three inverse formulas with the established French side terminology."
+        },
+        {
+            "id": "fr-20260819-011",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used shortened side labels instead of the terms used in the surrounding French explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example labels were opposé and adjacent while the section consistently described the sides as côté opposé and côté adjacent."],
+            "resolution": "Expanded both example labels to côté opposé and côté adjacent."
+        }
+    ]
+}

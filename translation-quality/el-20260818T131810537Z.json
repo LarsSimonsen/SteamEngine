@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260818T131810537Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Greek source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Greek pass identified 25 actionable terminology, formula, punctuation, and technical-clarity defects across circuit, trigonometric, thermal, SI, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Greek human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "el-20260818-026",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.3.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘parallel branches’."],
+            "resolution": "Translated the label as ‘παράλληλοι κλάδοι’."
+        },
+        {
+            "id": "el-20260818-027",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-cell formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The formula ended with ‘series’."],
+            "resolution": "Translated the label as ‘σειρά’."
+        },
+        {
+            "id": "el-20260818-028",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-cell formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The formula ended with ‘parallel’."],
+            "resolution": "Translated the label as ‘παράλληλα’."
+        },
+        {
+            "id": "el-20260818-029",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The degrees-to-radians formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘radians’."],
+            "resolution": "Translated it as ‘ακτίνια’."
+        },
+        {
+            "id": "el-20260818-030",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Δουλευμένο παράδειγμα’."],
+            "resolution": "Changed it to ‘Παράδειγμα υπολογισμού’."
+        },
+        {
+            "id": "el-20260818-031",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The water example title used an unnatural noun construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Νερό θέρμανσης’."],
+            "resolution": "Changed it to ‘Θέρμανση νερού’."
+        },
+        {
+            "id": "el-20260818-032",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conclusion used incorrect lowercase sentence punctuation.",
+            "disposition": "resolved",
+            "evidence": ["The previous text began a new sentence with lowercase ‘μια’."],
+            "resolution": "Rephrased it with a Greek semicolon and clear ideal-versus-real wording."
+        },
+        {
+            "id": "el-20260818-033",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Q definition used an ungrammatical passive construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Το Q μεταφέρεται θερμική ενέργεια’."],
+            "resolution": "Changed it to define Q as the transferred thermal energy."
+        },
+        {
+            "id": "el-20260818-034",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object-and-material paragraph omitted the article in the material-property phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘ιδιότητα υλικού’."],
+            "resolution": "Changed it to ‘ιδιότητα του υλικού’ and clarified the subject of capacity."
+        },
+        {
+            "id": "el-20260818-035",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating conclusion used lowercase punctuation after a period.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion began the second sentence with lowercase ‘με’."],
+            "resolution": "Replaced the punctuation with a semicolon and corrected the flow."
+        },
+        {
+            "id": "el-20260818-036",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Δουλευμένο παράδειγμα’."],
+            "resolution": "Changed it to ‘Παράδειγμα υπολογισμού’."
+        },
+        {
+            "id": "el-20260818-037",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle explanation used literal and unclear side descriptions.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said the adjacent side touched the angle ‘excluding’ the hypotenuse."],
+            "resolution": "Rewrote the explanation with natural Greek geometry wording and explicit ratios."
+        },
+        {
+            "id": "el-20260818-038",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The opposite-side formula mistranslated sin as a Greek word resembling a verb.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘αμαρτία(30°)’."],
+            "resolution": "Restored the protected sin notation."
+        },
+        {
+            "id": "el-20260818-039",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The adjacent-side example used an inconsistent noun form.",
+            "disposition": "resolved",
+            "evidence": ["The previous label was ‘γειτονικό’ rather than the feminine πλευρά form."],
+            "resolution": "Changed it to ‘διπλανή’."
+        },
+        {
+            "id": "el-20260818-040",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-examples title was a literal translation.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Δουλευμένα παραδείγματα’."],
+            "resolution": "Changed it to ‘Παραδείγματα με λύση’."
+        },
+        {
+            "id": "el-20260818-041",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Δουλευμένο παράδειγμα’."],
+            "resolution": "Changed it to ‘Παράδειγμα υπολογισμού’."
+        },
+        {
+            "id": "el-20260818-042",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inch conversion formula retained English text and decimal punctuation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘inch’ and decimal points in Greek content."],
+            "resolution": "Translated inch and normalized decimal commas."
+        },
+        {
+            "id": "el-20260818-043",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The foot conversion formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘foot’ and ‘inches’."],
+            "resolution": "Translated the length terms as πόδι and ίντσες."
+        },
+        {
+            "id": "el-20260818-044",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The yard conversion formula retained English text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘yard’ and ‘feet’."],
+            "resolution": "Translated the length terms as γιάρδα and πόδια."
+        },
+        {
+            "id": "el-20260818-045",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The area-and-volume conclusion used an unnatural literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said the length factor ‘increases’ to a power."],
+            "resolution": "Rephrased it as the length factor raised to the relevant power."
+        },
+        {
+            "id": "el-20260818-046",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The AWG paragraph mistranslated ampacity as power.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence said ‘Η ισχύς εξαρτάται’ after describing safe current."],
+            "resolution": "Changed it to ικανότητα μεταφοράς ρεύματος and preserved the safety caveat."
+        },
+        {
+            "id": "el-20260818-047",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction title used an awkward preposition and article combination.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Αγωγή μέσα από ένα επίπεδο στρώμα’."],
+            "resolution": "Changed it to ‘Αγωγή μέσω επίπεδου στρώματος’."
+        },
+        {
+            "id": "el-20260818-048",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The local-peak check needed clearer Greek wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence used a literal ‘separate ... from a peak’ construction."],
+            "resolution": "Rephrased it as distinguishing average flux density from a local maximum."
+        },
+        {
+            "id": "el-20260818-049",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR power paragraph used a repetitive and less direct constant-current construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence repeated αύξηση and used a long subordinate clause."],
+            "resolution": "Rephrased the constant-voltage and constant-current cases directly."
+        },
+        {
+            "id": "el-20260818-050",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.5.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm-law limits paragraph used an awkward phrase for series and parallel networks.",
+            "disposition": "resolved",
+            "evidence": ["The previous text referred to ‘σειρές και παράλληλα δίκτυα’."],
+            "resolution": "Changed it to the natural ‘κυκλώματα σε σειρά και παράλληλα’."
+        }
+    ]
+}

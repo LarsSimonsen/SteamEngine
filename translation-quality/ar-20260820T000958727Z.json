@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260820T000958727Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Arabic runtime entries, the Arabic glossary, prior review metadata, and technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, runtime escape scans, source comparison, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three complete-scope passes resolved 75 catalog, comparison, calculator, shared-interface, and concept findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Arabic corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-catalog-evidence-and-comparison",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five catalog and comparison entries obscured cycle life, tester attribution, exact selector identities, or profile availability.",
+            "disposition": "resolved",
+            "evidence": [
+                "Cycle life was rendered as general operating life.",
+                "The human tester was rendered as a test device.",
+                "Comparison selectors dropped the canonical A and B identities."
+            ],
+            "resolution": "Corrected evidence-note semantics, verified-profile language, product identity spacing, selector labels, and comparison guidance."
+        },
+        {
+            "id": "ar-runtime-units-and-prompts",
+            "translationId": "messages.catalogEditor.weightGrams",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Twenty-five calculator and shared-runtime entries altered engineering unit symbols or retained machine-literal prompts and status wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "Editor labels expanded g, mm, g/cm³, and °C into inconsistent localized abbreviations.",
+                "Preset and material selectors used less natural command wording.",
+                "Current headroom lacked its safety-margin meaning."
+            ],
+            "resolution": "Preserved unit notation and corrected voltage, preset, availability, catalog-search, and research-record language."
+        },
+        {
+            "id": "ar-concept-final-terminology",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five technical concept entries retained inaccurate resistance-heating semantics, topology calques, or inconsistent heat-transfer and SI terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The Joule summary omitted that current passes through resistance.",
+                "Series-cell capacity and lithium-ion charging explanations were imprecise.",
+                "Several SI and wire-gauge headings remained literal machine translations."
+            ],
+            "resolution": "Revised electrical topology, heating, TCR, trigonometry, heat-transfer, SI-prefix, and wire-gauge explanations."
+        }
+    ]
+}

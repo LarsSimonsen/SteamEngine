@@ -1,0 +1,3583 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20261012T121528848Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Selected Hindi after independent comparison of 16 common semantic IDs across all 24 target locales and focused checks of weaker candidates. Hindi combined wrong-sense technical labels, malformed instructions and a reversed battery pulse-rating warning. Full independent review covered 1115 canonical entries, 11 route records, glossary, eight optional fallbacks and six catalog nouns. Canonical English, effective-runtime extraction, Hindi glossary, calling UI and knowledge-base articles supplied context. NCERT thermal terminology was available through IIT Kanpur SATHEE.",
+        "limitations": [
+            "Selection is comparative screening, not an exhaustive global quality ranking.",
+            "Model review is not competent human language review or maintainer approval.",
+            "English source defects are documented separately; canonical English and other locales are unchanged.",
+            "Dynamic entity research prose outside canonical dictionary was not represented in the provided runtime extraction.",
+            "TI landing page was retrieved but its video transcript was unavailable; battery edits preserve existing canonical claims without new safety advice.",
+            "Juice mobile overflow from existing off-screen sr-only input positioning also reproduces unchanged in English; no unrelated layout change made."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "1115 canonical runtime signatures and 240 corrected strings verified; optional hooks, six catalog noun mappings, protected values and placeholders passed. Typecheck, metadata, full IIS build, 64 route cases, 737 internal links and 18 browser route/editor checks passed. Desktop/mobile checks passed for visible controls; juice has the same pre-existing off-screen sr-only input overflow as English (548px at 390px). All 573 tests across 85 test files passed after queue finalization. Full Cloudflare build and artifact validation also passed (64 route cases)."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "All 1115 canonical entries and optional UI/route scope reviewed. 246 distinct display entries corrected across 75 cause groups in three bounded iterations. Two stylistic suggestions rejected; unit symbols, interpolation markers and domain values preserved."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Hindi human review performed; the machine-draft notice remains visible."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User explicitly requested full translation review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "hi-001",
+            "translationId": "messages.navigation.about",
+            "category": "terminology-disagreement",
+            "severity": "low",
+            "summary": "[about-label] Standalone navigation label is an incomplete postposition. Optional register improvement only; existing menu wording is understandable and is not an actionable accuracy defect.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: About",
+                "Previous Hindi: के बारे में"
+            ],
+            "resolution": "Retained understandable existing wording; no accuracy defect established."
+        },
+        {
+            "id": "hi-002",
+            "translationId": "messages.error.cancel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Use an action instruction instead of an infinitive on buttons.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cancel",
+                "Previous Hindi: रद्द करना"
+            ],
+            "resolution": "रद्द करें"
+        },
+        {
+            "id": "hi-003",
+            "translationId": "messages.catalogManager.cancel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Use an action instruction instead of an infinitive on buttons.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cancel",
+                "Previous Hindi: रद्द करना"
+            ],
+            "resolution": "रद्द करें"
+        },
+        {
+            "id": "hi-004",
+            "translationId": "messages.catalogEditor.cancel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Use an action instruction instead of an infinitive on buttons.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cancel",
+                "Previous Hindi: रद्द करना"
+            ],
+            "resolution": "रद्द करें"
+        },
+        {
+            "id": "hi-005",
+            "translationId": "messages.error.hideDetails",
+            "category": "terminology-disagreement",
+            "severity": "low",
+            "summary": "[action-register] Avoid abrupt informal imperative among polite interface instructions. Optional register improvement only; existing menu wording is understandable and is not an actionable accuracy defect.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Hide details",
+                "Previous Hindi: विवरण छुपाओ"
+            ],
+            "resolution": "Retained understandable existing wording; no accuracy defect established."
+        },
+        {
+            "id": "hi-006",
+            "translationId": "messages.catalogManager.edit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Edit action is currently an infinitive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Edit",
+                "Previous Hindi: संपादन करना"
+            ],
+            "resolution": "संपादित करें"
+        },
+        {
+            "id": "hi-007",
+            "translationId": "messages.catalogManager.delete",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Delete action is currently an infinitive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Delete",
+                "Previous Hindi: मिटाना"
+            ],
+            "resolution": "हटाएँ"
+        },
+        {
+            "id": "hi-008",
+            "translationId": "messages.catalogManager.resetSavedMessage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Confirmation question currently uses an unfinished infinitive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This removes only the saved data. Continue?",
+                "Previous Hindi: यह केवल सहेजा गया डेटा हटाता है. जारी रखना?"
+            ],
+            "resolution": "इससे केवल सहेजा गया डेटा हटेगा। जारी रखें?"
+        },
+        {
+            "id": "hi-009",
+            "translationId": "messages.catalogEditor.clone",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[clone-order] Clone action must precede neither its object nor leave English word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Clone __SE_ARG_0__",
+                "Previous Hindi: क्लोन __SE_ARG_0__"
+            ],
+            "resolution": "__SE_ARG_0__ की प्रतिलिपि बनाएँ"
+        },
+        {
+            "id": "hi-010",
+            "translationId": "messages.catalogEditor.properties",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[property-genitive] Missing genitive relation between item and properties.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ properties",
+                "Previous Hindi: __SE_ARG_0__ गुण"
+            ],
+            "resolution": "__SE_ARG_0__ के गुण"
+        },
+        {
+            "id": "hi-011",
+            "translationId": "messages.catalogEditor.model",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[model-sense] Model identity is mistranslated as a sample.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Model",
+                "Previous Hindi: नमूना"
+            ],
+            "resolution": "मॉडल"
+        },
+        {
+            "id": "hi-012",
+            "translationId": "messages.catalogEditor.batteryAccess",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-access] Access indicates removable versus integrated, not battery use.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery access",
+                "Previous Hindi: बैटरी का उपयोग"
+            ],
+            "resolution": "बैटरी बदलने का विकल्प"
+        },
+        {
+            "id": "hi-013",
+            "translationId": "messages.encyclopediaDetail.batteryAccess",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-access] Access indicates removable versus integrated, not battery use.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery access",
+                "Previous Hindi: बैटरी का उपयोग"
+            ],
+            "resolution": "बैटरी बदलने का विकल्प"
+        },
+        {
+            "id": "hi-014",
+            "translationId": "messages.catalogEditor.formFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[form-factor] Form factor is mistranslated as a manufacturing factor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Form factor",
+                "Previous Hindi: बनाने का कारक"
+            ],
+            "resolution": "आकार-प्रकार"
+        },
+        {
+            "id": "hi-015",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.formFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[form-factor] Form factor is mistranslated as a manufacturing factor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Form factor",
+                "Previous Hindi: बनाने का कारक"
+            ],
+            "resolution": "आकार-प्रकार"
+        },
+        {
+            "id": "hi-016",
+            "translationId": "messages.catalogEditor.prismatic",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[prismatic] Prismatic cell shape is mistranslated with an unrelated adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Prismatic",
+                "Previous Hindi: सांक्षेत्रिक"
+            ],
+            "resolution": "प्रिज़्माकार"
+        },
+        {
+            "id": "hi-017",
+            "translationId": "messages.catalogEditor.markings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone label wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Markings",
+                "Previous Hindi: चिह्नों"
+            ],
+            "resolution": "चिह्न"
+        },
+        {
+            "id": "hi-018",
+            "translationId": "messages.encyclopediaDetail.markings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone label wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Markings",
+                "Previous Hindi: चिह्नों"
+            ],
+            "resolution": "चिह्न"
+        },
+        {
+            "id": "hi-019",
+            "translationId": "messages.catalogEditor.safetyWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[safety-heading] Safety warning has incorrect grammatical agreement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Safety warning",
+                "Previous Hindi: सुरक्षा के चेतावनी"
+            ],
+            "resolution": "सुरक्षा चेतावनी"
+        },
+        {
+            "id": "hi-020",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-help-meaning] Notes record as-sold dimensions; materially means substantially, not physically.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Hindi: कम से कम एक सतत डिस्चार्ज सीमा दर्ज करें। एकीकृत बैटरियां आंतरिक मॉड पैक हैं, इसलिए स्टैंडअलोन सेल आयामों की आवश्यकता नहीं है। हटाने योग्य-सेल आयाम नाममात्र हैं; बेचे गए आयामों को मापने के लिए नोट्स का उपयोग करें। जब दोनों डिस्चार्ज सीमाएं निर्धारित की जाती हैं, तो कैलकुलेटर सुरक्षित व्युत्पन्न सीमा का उपयोग करना जारी रखता है यदि वे भौतिक रूप से भिन्न होते हैं।"
+            ],
+            "resolution": "कम से कम एक सतत डिस्चार्ज सीमा दर्ज करें। एकीकृत बैटरियाँ मॉड के आंतरिक पैक हैं, इसलिए अलग सेल के आयामों की आवश्यकता नहीं है। हटाने योग्य सेल के आयाम नाममात्र हैं; बिक्री के समय मापे गए वास्तविक आयाम नोट्स में लिखें। यदि दोनों डिस्चार्ज सीमाएँ दी गई हों और उनमें पर्याप्त अंतर हो, तो कैलकुलेटर उनसे निकली अधिक सुरक्षित सीमा का उपयोग करता है।"
+        },
+        {
+            "id": "hi-021",
+            "translationId": "messages.catalogEditor.normalizationHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[saving-sense] Saving data is mistranslated as financial savings.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saving sorts the curve, inserts or derives the 20 °C reference, and normalizes all factors.",
+                "Previous Hindi: बचत वक्र को क्रमबद्ध करती है, 20 डिग्री सेल्सियस संदर्भ सम्मिलित करती है या प्राप्त करती है, और सभी कारकों को सामान्य करती है।"
+            ],
+            "resolution": "सहेजने पर वक्र क्रमबद्ध होता है, 20 °C का संदर्भ जोड़ा या निकाला जाता है और सभी कारक सामान्यीकृत होते हैं।"
+        },
+        {
+            "id": "hi-022",
+            "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[interpolation] Interpolation is incorrectly rendered as projection.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was interpolated and the curve was normalized.",
+                "Previous Hindi: 20 डिग्री सेल्सियस बिंदु को प्रक्षेपित किया गया और वक्र को सामान्यीकृत किया गया।"
+            ],
+            "resolution": " 20 °C बिंदु का अंतर्वेशन किया गया और वक्र को सामान्यीकृत किया गया।"
+        },
+        {
+            "id": "hi-023",
+            "translationId": "messages.home.blogEyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[up-to-date] Keep up to date is mistranslated literally as keeping to a date.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Keep up to date",
+                "Previous Hindi: तारीख तक रखना"
+            ],
+            "resolution": "नई जानकारी पाते रहें"
+        },
+        {
+            "id": "hi-024",
+            "translationId": "messages.home.tools.converter.label",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[convert-label] Calculator navigation needs a meaningful conversion label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert",
+                "Previous Hindi: बदलना"
+            ],
+            "resolution": "रूपांतरण"
+        },
+        {
+            "id": "hi-025",
+            "translationId": "messages.home.tools.old.label",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[legacy-site] Legacy site is mistranslated as a heritage place.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Legacy site",
+                "Previous Hindi: विरासत स्थल"
+            ],
+            "resolution": "पुरानी साइट"
+        },
+        {
+            "id": "hi-026",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-sentence] Concatenated sentence currently says this is a simple matter before law names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous Hindi: यह एक सरल बात है"
+            ],
+            "resolution": "यह"
+        },
+        {
+            "id": "hi-027",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-sentence] Complete the assembled Hindi sentence after the two linked law names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous Hindi: कैलकुलेटर."
+            ],
+            "resolution": "पर आधारित एक सरल कैलकुलेटर है।"
+        },
+        {
+            "id": "hi-028",
+            "translationId": "messages.encyclopedia.categoryLabels.concepts",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone category heading wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Concepts",
+                "Previous Hindi: अवधारणाओं"
+            ],
+            "resolution": "अवधारणाएँ"
+        },
+        {
+            "id": "hi-029",
+            "translationId": "messages.encyclopediaDetail.categoryLabels.concepts",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone category heading wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Concepts",
+                "Previous Hindi: अवधारणाओं"
+            ],
+            "resolution": "अवधारणाएँ"
+        },
+        {
+            "id": "hi-030",
+            "translationId": "messages.encyclopedia.categoryLabels.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone category heading wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Batteries",
+                "Previous Hindi: बैटरियों"
+            ],
+            "resolution": "बैटरियाँ"
+        },
+        {
+            "id": "hi-031",
+            "translationId": "messages.encyclopediaDetail.categoryLabels.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone category heading wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Batteries",
+                "Previous Hindi: बैटरियों"
+            ],
+            "resolution": "बैटरियाँ"
+        },
+        {
+            "id": "hi-032",
+            "translationId": "messages.encyclopediaDetail.availableBy",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[available-by] By a date is mistranslated as by an agent.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Available by __SE_ARG_0__",
+                "Previous Hindi: __SE_ARG_0__ द्वारा उपलब्ध"
+            ],
+            "resolution": "__SE_ARG_0__ तक उपलब्ध"
+        },
+        {
+            "id": "hi-033",
+            "translationId": "messages.encyclopediaDetail.sources",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[sources-sense] Sources heading is mistranslated as sources say.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Sources",
+                "Previous Hindi: सूत्रों का कहना है"
+            ],
+            "resolution": "स्रोत"
+        },
+        {
+            "id": "hi-034",
+            "translationId": "messages.encyclopediaDetail.property",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-property] Physical property is mistranslated as owned property.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Property",
+                "Previous Hindi: संपत्ति"
+            ],
+            "resolution": "गुण"
+        },
+        {
+            "id": "hi-035",
+            "translationId": "messages.encyclopediaDetail.additionalPropertyNotes",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-property] Physical properties are mistranslated as owned property.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Additional property notes",
+                "Previous Hindi: अतिरिक्त संपत्ति नोट"
+            ],
+            "resolution": "गुणों पर अतिरिक्त टिप्पणियाँ"
+        },
+        {
+            "id": "hi-036",
+            "translationId": "messages.encyclopediaDetail.unknownPropertyValue",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-property] Physical property and numeric value require technical senses.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog does not establish a value for this property.",
+                "Previous Hindi: कैटलॉग इस संपत्ति के लिए कोई मूल्य स्थापित नहीं करता है."
+            ],
+            "resolution": "कैटलॉग में इस गुण का मान स्थापित नहीं है।"
+        },
+        {
+            "id": "hi-037",
+            "translationId": "messages.encyclopediaDetail.value",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-value] Numeric value is mistranslated as price.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Value",
+                "Previous Hindi: कीमत"
+            ],
+            "resolution": "मान"
+        },
+        {
+            "id": "hi-038",
+            "translationId": "calculators.converter.value",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-value] Numeric value is mistranslated as price.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Value",
+                "Previous Hindi: कीमत"
+            ],
+            "resolution": "मान"
+        },
+        {
+            "id": "hi-039",
+            "translationId": "messages.encyclopediaDetail.limitation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[limitation-sense] Limitation is rendered as territorial delimitation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Limitation",
+                "Previous Hindi: परिसीमन"
+            ],
+            "resolution": "सीमा"
+        },
+        {
+            "id": "hi-040",
+            "translationId": "messages.encyclopediaDetail.confidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[confidence-sense] Evidence confidence is mistranslated as self-confidence.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Confidence",
+                "Previous Hindi: आत्मविश्वास"
+            ],
+            "resolution": "विश्वसनीयता"
+        },
+        {
+            "id": "hi-041",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[unit-symbols] Ampere symbol A is translated as the article one.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ A continuous-discharge rating.",
+                "Previous Hindi: कैटलॉग में __SE_ARG_0__ एक सतत-निर्वहन रेटिंग सूचीबद्ध है।"
+            ],
+            "resolution": "कैटलॉग में __SE_ARG_0__ A की सतत-डिस्चार्ज रेटिंग दी गई है।"
+        },
+        {
+            "id": "hi-042",
+            "translationId": "messages.encyclopediaDetail.unknownBatteryIntroductionNotice",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[superseded-sense] Superseded means replaced by newer models, not removed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The market introduction date for this cell is unknown, so its age and whether it has been superseded cannot be determined.",
+                "Previous Hindi: इस सेल की बाज़ार में शुरूआत की तारीख अज्ञात है, इसलिए इसकी उम्र और क्या इसे हटा दिया गया है, यह निर्धारित नहीं किया जा सकता है।"
+            ],
+            "resolution": "इस सेल के बाज़ार में आने की तारीख अज्ञात है, इसलिए इसकी उम्र और यह कि इसकी जगह नए मॉडल आ चुके हैं या नहीं, निर्धारित नहीं किया जा सकता।"
+        },
+        {
+            "id": "hi-043",
+            "translationId": "messages.encyclopediaDetail.protectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-sense] Electrical cell is mistranslated as a biological cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected cell.",
+                "Previous Hindi: संरक्षित कोशिका."
+            ],
+            "resolution": "संरक्षित सेल।"
+        },
+        {
+            "id": "hi-044",
+            "translationId": "messages.encyclopediaDetail.unprotectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-sense] Electrical cell is mistranslated as a biological cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unprotected cell.",
+                "Previous Hindi: असुरक्षित कोशिका."
+            ],
+            "resolution": "असंरक्षित सेल।"
+        },
+        {
+            "id": "hi-045",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.dimensions",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[untranslated-dimensions] Dimensions label is left in English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dimensions",
+                "Previous Hindi: DIMENSIONS"
+            ],
+            "resolution": "आयाम"
+        },
+        {
+            "id": "hi-046",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.specificHeatCapacity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[specific-heat] Use established technical phrase rather than generic capacity of warmth.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Specific heat capacity",
+                "Previous Hindi: विशिष्ट गर्मी की क्षमता",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "विशिष्ट ऊष्मा धारिता"
+        },
+        {
+            "id": "hi-047",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Hindi: बैटरी प्रीसेट"
+            ],
+            "resolution": "सेल प्रीसेट"
+        },
+        {
+            "id": "hi-048",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Hindi: Cell selection"
+            ],
+            "resolution": "सेल चयन"
+        },
+        {
+            "id": "hi-049",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Hindi: अंतर्निर्मित बैटरी प्रीसेट चुनें या नीचे अपना स्वयं का मान दर्ज करें।"
+            ],
+            "resolution": "पूरे पैक में इस्तेमाल होने वाला सेल चुनें या नीचे प्रति सेल मान दर्ज करें।"
+        },
+        {
+            "id": "hi-050",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Hindi: बैटरी प्रीसेट"
+            ],
+            "resolution": "सेल प्रीसेट"
+        },
+        {
+            "id": "hi-051",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Hindi: बैटरी मान"
+            ],
+            "resolution": "सेल और पैक"
+        },
+        {
+            "id": "hi-052",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Hindi: Battery configuration"
+            ],
+            "resolution": "बैटरी विन्यास"
+        },
+        {
+            "id": "hi-053",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Hindi: 1S — Single cell"
+            ],
+            "resolution": "1S — एक सेल"
+        },
+        {
+            "id": "hi-054",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Hindi: Custom configuration"
+            ],
+            "resolution": "कस्टम विन्यास"
+        },
+        {
+            "id": "hi-055",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Hindi: Cells in series"
+            ],
+            "resolution": "श्रृंखला में सेल"
+        },
+        {
+            "id": "hi-056",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Hindi: Parallel strings"
+            ],
+            "resolution": "समानांतर शाखाएँ"
+        },
+        {
+            "id": "hi-057",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous Hindi: cells"
+            ],
+            "resolution": "सेल"
+        },
+        {
+            "id": "hi-058",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous Hindi: cell"
+            ],
+            "resolution": "सेल"
+        },
+        {
+            "id": "hi-059",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Hindi: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "समान उम्र और स्थिति वाले एक जैसे, मिलान किए हुए सेल उपयोग करें। करंट का बँटवारा आदर्श माना गया है; पैक की सीमा सबसे कमजोर सेल तय करता है।"
+        },
+        {
+            "id": "hi-060",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Hindi: Battery pack"
+            ],
+            "resolution": "बैटरी पैक"
+        },
+        {
+            "id": "hi-061",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack interface is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Hindi: Estimated current per cell"
+            ],
+            "resolution": "प्रति सेल अनुमानित करंट"
+        },
+        {
+            "id": "hi-062",
+            "translationId": "calculators.batt.enterValue",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[field-prefix-order] Field label follows this prefix in validation output; initial के लिए gives reversed Hindi order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter a value for",
+                "Previous Hindi: के लिए एक मान दर्ज करें"
+            ],
+            "resolution": "इसका मान दर्ज करें:"
+        },
+        {
+            "id": "hi-063",
+            "translationId": "calculators.batt.safe",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[drain-sense] Electrical battery drain is mistranslated as discharge outlet.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The estimated drain is within the effective battery limit.",
+                "Previous Hindi: अनुमानित निकास प्रभावी बैटरी सीमा के भीतर है।"
+            ],
+            "resolution": "अनुमानित करंट खपत प्रभावी बैटरी सीमा के भीतर है।"
+        },
+        {
+            "id": "hi-064",
+            "translationId": "calculators.batt.danger",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[drain-sense] Electrical battery drain is mistranslated as discharge outlet.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The estimated drain exceeds the effective battery limit.",
+                "Previous Hindi: अनुमानित निकास प्रभावी बैटरी सीमा से अधिक है।"
+            ],
+            "resolution": "अनुमानित करंट खपत प्रभावी बैटरी सीमा से अधिक है।"
+        },
+        {
+            "id": "hi-065",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[current-sense] Electrical current is mistranslated as present/current-time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous Hindi: मौजूदा हेडरूम 20% से कम बचा हुआ है।"
+            ],
+            "resolution": "करंट रिज़र्व 20% से कम बचा है।"
+        },
+        {
+            "id": "hi-066",
+            "translationId": "calculators.coil.imperial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[imperial-sense] Imperial measurement system is mistranslated as royal units.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Imperial units",
+                "Previous Hindi: शाही इकाइयाँ"
+            ],
+            "resolution": "इम्पीरियल इकाइयाँ"
+        },
+        {
+            "id": "hi-067",
+            "translationId": "calculators.coil.buildDetails",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[build-noun] Build details heading is mistranslated as the command create details.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Build details",
+                "Previous Hindi: विवरण बनाएं"
+            ],
+            "resolution": "निर्माण का विवरण"
+        },
+        {
+            "id": "hi-068",
+            "translationId": "calculators.coil.legLength",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-leg] Coil legs need hardware term consistent with Wire Wizard, not anatomical feet.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Leg length",
+                "Previous Hindi: पैर की लंबाई"
+            ],
+            "resolution": "लेग की लंबाई"
+        },
+        {
+            "id": "hi-069",
+            "translationId": "calculators.coil.wireLengthWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-leg] Coil legs need hardware term and coil glossary term.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: There is not enough wire left for the coil after the legs.",
+                "Previous Hindi: पैरों के बाद कुंडल के लिए पर्याप्त तार नहीं बचा है।"
+            ],
+            "resolution": "लेग के बाद कॉइल के लिए पर्याप्त तार नहीं बचा है।"
+        },
+        {
+            "id": "hi-070",
+            "translationId": "calculators.coil.wireVolume",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-volume] Geometrical volume is mistranslated as an unspecified amount.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire volume",
+                "Previous Hindi: तार की मात्रा"
+            ],
+            "resolution": "तार का आयतन"
+        },
+        {
+            "id": "hi-071",
+            "translationId": "calculators.converter.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[fractional-inches] Fractional-inch measurement is expressed as partial inches.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert between millimetres, inches, AWG, BWG, SWG, and fractional inches.",
+                "Previous Hindi: मिलीमीटर, इंच, AWG, BWG, SWG और आंशिक इंच के बीच कनवर्ट करें।"
+            ],
+            "resolution": "मिलीमीटर, इंच, AWG, BWG, SWG और भिन्न के रूप में इंच के बीच रूपांतरण करें।"
+        },
+        {
+            "id": "hi-072",
+            "translationId": "calculators.converter.fractionalInches",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[fractional-inches] Fractional-inch measurement is expressed as partial inches.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Fractional inches",
+                "Previous Hindi: आंशिक इंच"
+            ],
+            "resolution": "भिन्न के रूप में इंच"
+        },
+        {
+            "id": "hi-073",
+            "translationId": "calculators.converter.outputSettings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[output-settings] Output settings is mistranslated as production environment.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Output settings",
+                "Previous Hindi: उत्पादन का वातावरण"
+            ],
+            "resolution": "आउटपुट सेटिंग्स"
+        },
+        {
+            "id": "hi-074",
+            "translationId": "calculators.converter.decimalPlaces",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-case] Standalone label wrongly uses an oblique plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Decimal places",
+                "Previous Hindi: दशमलव स्थानों"
+            ],
+            "resolution": "दशमलव स्थान"
+        },
+        {
+            "id": "hi-075",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-concentration] Strength/content should identify nicotine concentration and flavoring amount, not generic force or taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous Hindi: आपको अपना लक्ष्य निक, वीजी या पीजी सामग्री, या स्वाद कम करने की आवश्यकता हो सकती है। वैकल्पिक रूप से, एक मजबूत निक बेस या भिन्न वीजी/पीजी अनुपात वाले निक बेस का उपयोग करें। कृपया अपनी सेटिंग्स समायोजित करें जब तक कि सभी संख्याएँ शून्य से अधिक न हो जाएँ।"
+            ],
+            "resolution": "आपको लक्ष्य निकोटीन सांद्रता, VG या PG की मात्रा, या फ्लेवरिंग की मात्रा कम करनी पड़ सकती है। वैकल्पिक रूप से, अधिक सांद्र निकोटीन बेस या अलग VG/PG अनुपात वाला निकोटीन बेस उपयोग करें। सभी संख्याएँ शून्य से अधिक होने तक सेटिंग्स समायोजित करें।"
+        },
+        {
+            "id": "hi-076",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-concentration] Strength is concentration, not force; restore established term.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous Hindi: आपका लक्ष्य निक स्तर आपके निक आधार शक्ति से अधिक है। आपको या तो एक मजबूत निक आधार प्राप्त करना चाहिए, या अपने लक्ष्य निक ताकत को कम करना चाहिए।"
+            ],
+            "resolution": "आपकी लक्ष्य निकोटीन सांद्रता, निकोटीन बेस की सांद्रता से अधिक है। अधिक सांद्र निकोटीन बेस लें या लक्ष्य निकोटीन सांद्रता कम करें।"
+        },
+        {
+            "id": "hi-077",
+            "translationId": "calculators.juice.safetyText",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-warning-grammar] Current reflexive grammar literally suggests trying to mix oneself; preserve all safety claims.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Concentrated nicotine can harm or kill children, pets, or even adults. Please inform yourself of how to mitigate the dangers before you try mixing your own. If you want to be a hundred percent certain about your calculations, you should double check your results using other tools as well.",
+                "Previous Hindi: सांद्रित निकोटीन बच्चों, पालतू जानवरों या यहां तक ​​कि वयस्कों को नुकसान पहुंचा सकता है या मार सकता है। कृपया स्वयं को मिश्रण करने का प्रयास करने से पहले स्वयं को सूचित करें कि खतरों को कैसे कम किया जाए। यदि आप अपनी गणनाओं के बारे में सौ प्रतिशत निश्चित होना चाहते हैं, तो आपको अन्य उपकरणों का उपयोग करके भी अपने परिणामों की दोबारा जांच करनी चाहिए।"
+            ],
+            "resolution": "सांद्रित निकोटीन बच्चों, पालतू जानवरों या वयस्कों को भी नुकसान पहुँचा सकता है या उनकी जान ले सकता है। अपना मिश्रण बनाने से पहले खतरों को कम करने के तरीके जान लें। यदि आप अपनी गणनाओं के बारे में सौ प्रतिशत निश्चित होना चाहते हैं, तो अन्य उपकरणों से भी परिणामों की दोबारा जाँच करें।"
+        },
+        {
+            "id": "hi-078",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] English guidance label changed; Hindi still promises optimal resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Hindi: इष्टतम प्रतिरोध"
+            ],
+            "resolution": "प्रतिरोध संबंधी मार्गदर्शन"
+        },
+        {
+            "id": "hi-079",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] English crossover label changed; Hindi still says median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Hindi: माध्यिका प्रतिरोध"
+            ],
+            "resolution": "करंट/वोल्टेज सीमा का प्रतिच्छेद"
+        },
+        {
+            "id": "hi-080",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] English crossover label changed; Hindi still says median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Hindi: मंझला"
+            ],
+            "resolution": "करंट/वोल्टेज सीमा का प्रतिच्छेद"
+        },
+        {
+            "id": "hi-081",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] English upper-range midpoint label changed; Hindi is literal sweet place.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Hindi: प्यारी जगह"
+            ],
+            "resolution": "ऊपरी रेंज का मध्यबिंदु"
+        },
+        {
+            "id": "hi-082",
+            "translationId": "calculators.modrange.currentLimit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Electrical current is mistranslated as present-time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current limit",
+                "Previous Hindi: वर्तमान सीमा"
+            ],
+            "resolution": "करंट सीमा"
+        },
+        {
+            "id": "hi-083",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Electrical current is mistranslated as present-time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous Hindi: वर्तमान सीमा पहले पहुँच जाती है."
+            ],
+            "resolution": "करंट सीमा पहले पहुँचती है।"
+        },
+        {
+            "id": "hi-084",
+            "translationId": "calculators.modrange.current",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Electrical current is mistranslated as present-time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Hindi: मौजूदा"
+            ],
+            "resolution": "करंट"
+        },
+        {
+            "id": "hi-085",
+            "translationId": "calculators.modrange.at",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] Shared At fragment precedes number in JSX; Hindi postposition cannot be placed there.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: At",
+                "Previous Hindi: पर"
+            ],
+            "resolution": "पावर:"
+        },
+        {
+            "id": "hi-086",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] Rephrase as a complete label that can precede the appended voltage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous Hindi: वर्तमान सीमा की आवश्यकता है"
+            ],
+            "resolution": "करंट सीमा पर आवश्यक वोल्टेज:"
+        },
+        {
+            "id": "hi-087",
+            "translationId": "calculators.modrange.voltageLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] Rephrase as a complete label that can precede the appended current.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the voltage limit requires",
+                "Previous Hindi: वोल्टेज सीमा की आवश्यकता है"
+            ],
+            "resolution": "वोल्टेज सीमा पर आवश्यक करंट:"
+        },
+        {
+            "id": "hi-088",
+            "translationId": "calculators.modrange.adjustedGraph",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[upper-ceiling] Reduced ceiling is mistranslated as lower limit.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The configured maximum power does not produce a usable resistance range with the other recorded limits. This graph uses a reduced ceiling of",
+                "Previous Hindi: कॉन्फ़िगर की गई अधिकतम शक्ति अन्य रिकॉर्ड की गई सीमाओं के साथ प्रयोग करने योग्य प्रतिरोध सीमा उत्पन्न नहीं करती है। यह ग्राफ़ निम्न सीमा का उपयोग करता है"
+            ],
+            "resolution": "कॉन्फ़िगर की गई अधिकतम पावर से अन्य दर्ज सीमाओं के साथ उपयोगी प्रतिरोध रेंज नहीं बनती। इस ग्राफ़ में घटाई गई ऊपरी सीमा है:"
+        },
+        {
+            "id": "hi-089",
+            "translationId": "calculators.modrange.powerCurveLegend",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[legend-sense] Graph legend is mistranslated as a story.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power curve legend",
+                "Previous Hindi: शक्ति वक्र कथा"
+            ],
+            "resolution": "पावर वक्र की संकेत-सूची"
+        },
+        {
+            "id": "hi-090",
+            "translationId": "calculators.tcr.wireWizard",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wizard-name] Calculator name must match navigation, not literal wire magician.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire Wizard",
+                "Previous Hindi: तार जादूगर"
+            ],
+            "resolution": "वायर विज़ार्ड"
+        },
+        {
+            "id": "hi-091",
+            "translationId": "calculators.tcr.remove",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Remove action is an infinitive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Remove",
+                "Previous Hindi: निकालना"
+            ],
+            "resolution": "हटाएँ"
+        },
+        {
+            "id": "hi-092",
+            "translationId": "calculators.tcr.removeMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[action-infinitives] Remove action is an infinitive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Remove",
+                "Previous Hindi: निकालना"
+            ],
+            "resolution": "हटाएँ"
+        },
+        {
+            "id": "hi-093",
+            "translationId": "calculators.tcr.baseFor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[field-prefix-order] Following material name cannot grammatically follow के लिए आधार प्रतिरोध.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Base resistance for",
+                "Previous Hindi: के लिए आधार प्रतिरोध"
+            ],
+            "resolution": "आधार प्रतिरोध:"
+        },
+        {
+            "id": "hi-094",
+            "translationId": "calculators.wirewiz.table",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[table-sense] Data table is mistranslated as furniture.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Table",
+                "Previous Hindi: मेज़"
+            ],
+            "resolution": "तालिका"
+        },
+        {
+            "id": "hi-095",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wirewiz-sentence] Fragment is followed by material name; current Hindi reverses meaning of mod set to material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous Hindi: इसे मॉड सेट पर मैच करने के लिए"
+            ],
+            "resolution": "इसके समतुल्य तापमान के लिए मॉड में चुनी सामग्री:"
+        },
+        {
+            "id": "hi-096",
+            "translationId": "calculators.wirewiz.adjustTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wirewiz-sentence] Fragment must naturally precede appended temperature number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: adjust the temperature to approximately",
+                "Previous Hindi: तापमान को लगभग समायोजित करें"
+            ],
+            "resolution": "तापमान लगभग इतना सेट करें:"
+        },
+        {
+            "id": "hi-097",
+            "translationId": "calculators.wirewiz.staggeredClapton",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[staggered-sense] Staggered coil construction is mistranslated as vibrating.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Staggered Clapton",
+                "Previous Hindi: कंपित क्लैप्टन"
+            ],
+            "resolution": "स्टैगर्ड क्लैप्टन"
+        },
+        {
+            "id": "hi-098",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[find-value-grammar] Malformed ज्ञात करना वाला obscures which equation to choose.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use the version that puts the value you want to find on the left:",
+                "Previous Hindi: उस संस्करण का उपयोग करें जो आपको ज्ञात करना वाला मान बाईं ओर रखता है:"
+            ],
+            "resolution": "वह सूत्र चुनें जिसमें ज्ञात किया जाने वाला मान बाईं ओर हो:"
+        },
+        {
+            "id": "hi-099",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-sense] Electrical cells are mistranslated as biological cells.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series and parallel",
+                "Previous Hindi: कोशिकाएँ श्रृंखला और समानांतर में"
+            ],
+            "resolution": "श्रृंखला और समानांतर में सेल"
+        },
+        {
+            "id": "hi-100",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-sense] Electrical cells are mistranslated as biological cells.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel cells keep the same voltage while capacity and available current add approximately.",
+                "Previous Hindi: समानांतर कोशिकाएं समान वोल्टेज रखती हैं जबकि क्षमता और उपलब्ध धारा लगभग जुड़ जाती है।"
+            ],
+            "resolution": "समानांतर सेल का वोल्टेज समान रहता है, जबकि क्षमता और उपलब्ध करंट लगभग जुड़ जाते हैं।"
+        },
+        {
+            "id": "hi-101",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Current sharing is mistranslated as present sharing.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current sharing depends on internal resistance, contacts, wiring, and switches.",
+                "Previous Hindi: वर्तमान साझाकरण आंतरिक प्रतिरोध, संपर्क, वायरिंग और स्विच पर निर्भर करता है।"
+            ],
+            "resolution": "करंट का बँटवारा आंतरिक प्रतिरोध, संपर्कों, वायरिंग और स्विचों पर निर्भर करता है।"
+        },
+        {
+            "id": "hi-102",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Current direction is mistranslated as present direction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mark node voltages, branch currents, and assumed current directions.",
+                "Previous Hindi: नोड वोल्टेज, शाखा धाराओं और अनुमानित वर्तमान दिशाओं को चिह्नित करें।"
+            ],
+            "resolution": "नोड वोल्टेज, शाखाओं के करंट और करंट की मानी गई दिशाएँ चिह्नित करें।"
+        },
+        {
+            "id": "hi-103",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistor-sense] Resistor is mistranslated as someone who stops.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Relate resistor voltage and current with V = I × R.",
+                "Previous Hindi: रोकनेवाला वोल्टेज और करंट को V = I × R से संबंधित करें।"
+            ],
+            "resolution": "प्रतिरोधक के वोल्टेज और करंट को V = I × R से संबंधित करें।"
+        },
+        {
+            "id": "hi-104",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] High-current is mistranslated as high-present; materially means significantly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A simplified model may omit cell internal resistance, contact resistance, converter efficiency, temperature effects, transient behavior, protection circuits, and component tolerances. Include every omitted behavior that materially affects a high-current circuit.",
+                "Previous Hindi: एक सरलीकृत मॉडल सेल आंतरिक प्रतिरोध, संपर्क प्रतिरोध, कनवर्टर दक्षता, तापमान प्रभाव, क्षणिक व्यवहार, सुरक्षा सर्किट और घटक सहनशीलता को छोड़ सकता है। प्रत्येक छोड़े गए व्यवहार को शामिल करें जो उच्च-वर्तमान सर्किट को भौतिक रूप से प्रभावित करता है।"
+            ],
+            "resolution": "सरलीकृत मॉडल में सेल का आंतरिक प्रतिरोध, संपर्क प्रतिरोध, कनवर्टर दक्षता, तापमान के प्रभाव, क्षणिक व्यवहार, सुरक्षा परिपथ और घटकों की सहनशीलता छूट सकती है। उच्च करंट वाले परिपथ पर महत्वपूर्ण प्रभाव डालने वाले हर छूटे हुए व्यवहार को शामिल करें।"
+        },
+        {
+            "id": "hi-105",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.1.bullets.2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[near-zero-tcr] Over the range changes little is mistranslated as changes slightly beyond the range.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A TCR near zero means resistance changes little over the specified range.",
+                "Previous Hindi: शून्य के करीब टीसीआर का मतलब है कि प्रतिरोध निर्दिष्ट सीमा से थोड़ा अधिक बदलता है।"
+            ],
+            "resolution": "शून्य के करीब TCR का अर्थ है कि निर्दिष्ट तापमान रेंज में प्रतिरोध बहुत कम बदलता है।"
+        },
+        {
+            "id": "hi-106",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Constant-current source is mistranslated as constant-present source.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For a positive-TCR resistance driven at constant voltage, rising temperature increases resistance and tends to reduce current. For a constant-current source, the same resistance increase raises power.",
+                "Previous Hindi: निरंतर वोल्टेज पर संचालित सकारात्मक-TCR प्रतिरोध के लिए, बढ़ते तापमान से प्रतिरोध बढ़ता है और धारा कम हो जाती है। एक स्थिर-वर्तमान स्रोत के लिए, समान प्रतिरोध वृद्धि से शक्ति बढ़ती है।"
+            ],
+            "resolution": "स्थिर वोल्टेज पर चलने वाले धनात्मक TCR वाले प्रतिरोध का तापमान बढ़ने पर प्रतिरोध बढ़ता है और करंट घटने की प्रवृत्ति होती है। स्थिर करंट स्रोत के साथ प्रतिरोध में यही वृद्धि पावर बढ़ाती है।"
+        },
+        {
+            "id": "hi-107",
+            "translationId": "catalog.concepts.concept-trigonometry.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[phase-sense] Wave phase is mistranslated as procedural stage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Trigonometry relates angles and lengths, and is useful for vectors, phase relationships, and waveforms.",
+                "Previous Hindi: त्रिकोणमिति कोणों और लंबाई से संबंधित है, और वैक्टर, चरण संबंधों और तरंग रूपों के लिए उपयोगी है।"
+            ],
+            "resolution": "त्रिकोणमिति कोणों और लंबाइयों के बीच संबंध बताती है तथा सदिशों, कला-संबंधों और तरंगरूपों के लिए उपयोगी है।"
+        },
+        {
+            "id": "hi-108",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[phase-sense] Wave phase angle is mistranslated as procedural stage angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A is amplitude, f is frequency in hertz, t is time in seconds, and φ is phase angle.",
+                "Previous Hindi: A आयाम है, f हर्ट्ज़ में आवृत्ति है, t सेकंड में समय है, और φ चरण कोण है।"
+            ],
+            "resolution": "A आयाम है, f हर्ट्ज़ में आवृत्ति है, t सेकंड में समय है और φ कला कोण है।"
+        },
+        {
+            "id": "hi-109",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[phase-sense] Wave phase is mistranslated as procedural stage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Keep the sign and quadrant when direction or phase matters.",
+                "Previous Hindi: जब दिशा या चरण महत्वपूर्ण हो तो चिह्न और चतुर्थांश रखें।"
+            ],
+            "resolution": "दिशा या कला महत्वपूर्ण हो तो चिह्न और चतुर्थांश का ध्यान रखें।"
+        },
+        {
+            "id": "hi-110",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[identities-sense] Mathematical identities are mistranslated as recognition/identity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Waveforms and useful identities",
+                "Previous Hindi: तरंगरूप और उपयोगी पहचान"
+            ],
+            "resolution": "तरंगरूप और उपयोगी सर्वसमिकाएँ"
+        },
+        {
+            "id": "hi-111",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-variable] Current grammar says heat is transferred to Q, not that Q denotes heat.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Q is transferred heat energy in joules (J).",
+                "Previous Hindi: Q को ऊष्मा ऊर्जा जूल (J) में स्थानांतरित की जाती है।"
+            ],
+            "resolution": "Q स्थानांतरित ऊष्मा ऊर्जा है, जिसे जूल (J) में मापा जाता है।"
+        },
+        {
+            "id": "hi-112",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heater-energy] Current translation says more heater is required, omitting energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The ideal energy requirement is 41.8 kJ; a real heater needs more because of losses.",
+                "Previous Hindi: आदर्श ऊर्जा आवश्यकता 41.8 kJ है; घाटे के कारण एक वास्तविक हीटर की अधिक आवश्यकता होती है।"
+            ],
+            "resolution": "आदर्श ऊर्जा आवश्यकता 41.8 kJ है; हानियों के कारण वास्तविक हीटर को अधिक ऊर्जा चाहिए।"
+        },
+        {
+            "id": "hi-113",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[area-units] Current grammar says heat is transferred in square metres instead of area being measured in them.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A is the area through which heat is transferred in square metres (m²).",
+                "Previous Hindi: A वह क्षेत्र है जिसके माध्यम से वर्ग मीटर (m²) में ऊष्मा स्थानांतरित होती है।"
+            ],
+            "resolution": "A उस सतह का क्षेत्रफल है जिससे ऊष्मा स्थानांतरित होती है; इसे वर्ग मीटर (m²) में मापा जाता है।"
+        },
+        {
+            "id": "hi-114",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conduction-sense] Thermal conduction is mistranslated as operation/management.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Conduction through a flat layer",
+                "Previous Hindi: एक सपाट परत के माध्यम से संचालन"
+            ],
+            "resolution": "सपाट परत से ऊष्मा चालन"
+        },
+        {
+            "id": "hi-115",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[emissivity-sense] Emissivity is mistranslated as emission and absolute temperature as complete temperature.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convection uses a surface coefficient h. Radiation uses emissivity ε and the Stefan–Boltzmann constant σ; temperatures in the radiation equation must be absolute temperatures in kelvin.",
+                "Previous Hindi: संवहन एक सतह गुणांक h का उपयोग करता है। विकिरण उत्सर्जन ε और स्टीफ़न-बोल्ट्ज़मैन स्थिरांक σ का उपयोग करता है; विकिरण समीकरण में तापमान केल्विन में पूर्ण तापमान होना चाहिए।"
+            ],
+            "resolution": "संवहन में सतह गुणांक h का उपयोग होता है। विकिरण में उत्सर्जकता ε और स्टीफ़न–बोल्ट्ज़मैन नियतांक σ का उपयोग होता है; विकिरण समीकरण में तापमान केल्विन में परम ताप होना चाहिए।"
+        },
+        {
+            "id": "hi-116",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[imperial-sense] Imperial system is mistranslated as royal measurements.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The SI system and imperial measurements",
+                "Previous Hindi: एसआई प्रणाली और शाही माप"
+            ],
+            "resolution": "SI प्रणाली और इम्पीरियल माप"
+        },
+        {
+            "id": "hi-117",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[common-si] Common SI units is mistranslated as base SI units.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Common SI units",
+                "Previous Hindi: मूल एसआई इकाइयाँ"
+            ],
+            "resolution": "सामान्य SI इकाइयाँ"
+        },
+        {
+            "id": "hi-118",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.2.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[second-sense] Time unit second is mistranslated as ordinal second.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: second",
+                "Previous Hindi: दूसरा"
+            ],
+            "resolution": "सेकंड"
+        },
+        {
+            "id": "hi-119",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.5.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mole-sense] SI amount-of-substance unit is mistranslated as a skin mole/sesame.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: mole",
+                "Previous Hindi: तिल"
+            ],
+            "resolution": "मोल"
+        },
+        {
+            "id": "hi-120",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[exponent-sense] Power of length factor is mistranslated as physical power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Area and volume conversions use the length factor raised to the relevant power.",
+                "Previous Hindi: क्षेत्र और आयतन रूपांतरण प्रासंगिक शक्ति तक बढ़ाए गए लंबाई कारक का उपयोग करते हैं।"
+            ],
+            "resolution": "क्षेत्रफल और आयतन के रूपांतरण में लंबाई के रूपांतरण गुणक की संबंधित घात ली जाती है।"
+        },
+        {
+            "id": "hi-121",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rounding-sense] Round numerically is mistranslated as make circular.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Round only at the end so intermediate results retain useful precision.",
+                "Previous Hindi: केवल अंत में गोल करें ताकि मध्यवर्ती परिणाम उपयोगी सटीकता बनाए रखें।"
+            ],
+            "resolution": "संख्याओं को केवल अंत में राउंड करें, ताकि बीच के परिणामों की उपयोगी परिशुद्धता बनी रहे।"
+        },
+        {
+            "id": "hi-122",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-separators] Missing separator space merges gauge 00 and 000 into one apparent number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A larger ordinary gauge number generally means a smaller diameter; sizes above gauge 0 use 00, 000, or 0000.",
+                "Previous Hindi: एक बड़ी साधारण गेज संख्या का आम तौर पर मतलब छोटा व्यास होता है; गेज 0 से ऊपर के आकार 00,000, या 0000 का उपयोग करते हैं।"
+            ],
+            "resolution": "सामान्यतः बड़ी गेज संख्या का अर्थ छोटा व्यास होता है; गेज 0 से बड़े आकारों के लिए 00, 000 या 0000 का उपयोग होता है।"
+        },
+        {
+            "id": "hi-123",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-sense] Stranded wire is mistranslated as trapped wire.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: These values are nominal. Product tolerances, coatings, insulation, and stranded construction can change the measured or overall diameter.",
+                "Previous Hindi: ये मूल्य नाममात्र हैं. उत्पाद सहनशीलता, कोटिंग्स, इन्सुलेशन और फंसे हुए निर्माण मापा या समग्र व्यास को बदल सकते हैं।"
+            ],
+            "resolution": "ये मान नाममात्र हैं। उत्पाद की सहनशीलता, कोटिंग, इन्सुलेशन और कई तारों से बनी संरचना मापे गए या कुल व्यास को बदल सकती है।"
+        },
+        {
+            "id": "hi-124",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-sense] Stranded conductors are mistranslated as trapped conductors.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For stranded conductors, include strand construction when flexibility and overall diameter matter.",
+                "Previous Hindi: फंसे हुए कंडक्टरों के लिए, लचीलेपन और समग्र व्यास के मामले में स्ट्रैंड निर्माण शामिल करें।"
+            ],
+            "resolution": "कई तारों से बने चालकों में, जहाँ लचीलापन और कुल व्यास महत्वपूर्ण हों, वहाँ तारों की संरचना भी बताएँ।"
+        },
+        {
+            "id": "hi-125",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 20 A conservative independent comparison value; exact wrapper and production revision remain relevant.",
+                "Previous Hindi: 20 A रूढ़िवादी स्वतंत्र तुलना मूल्य; सटीक रैपर और उत्पादन संस्करण अभी भी प्रासंगिक हैं।"
+            ],
+            "resolution": "20 A सावधानीपूर्वक चुना गया स्वतंत्र तुलना मान; सटीक रैपर और उत्पादन संस्करण अभी भी प्रासंगिक हैं।"
+        },
+        {
+            "id": "hi-126",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 15 A conservative value from exact-model testing; tested CCC-marked revision remains relevant.",
+                "Previous Hindi: 15 A सटीक मॉडल के परीक्षण से प्राप्त रूढ़िवादी मूल्य; परीक्षण किया गया CCC-चिह्नित संस्करण अभी भी प्रासंगिक है।"
+            ],
+            "resolution": "15 A सटीक मॉडल के परीक्षण से प्राप्त सावधानीपूर्वक चुना गया मान; परीक्षण किया गया CCC-चिह्नित संस्करण अभी भी प्रासंगिक है।"
+        },
+        {
+            "id": "hi-127",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; tested cells appeared pre-production and lacked the CCC logo.",
+                "Previous Hindi: 40 A रूढ़िवादी मूल्य; परीक्षण की गई सेल प्री-प्रोडक्शन थीं और उन पर CCC लोगो नहीं था।"
+            ],
+            "resolution": "40 A सावधानीपूर्वक चुना गया मान; परीक्षण की गई सेल प्री-प्रोडक्शन थीं और उन पर CCC लोगो नहीं था।"
+        },
+        {
+            "id": "hi-128",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 70 A is temperature-limited and tested samples were pre-production.",
+                "Previous Hindi: 40 A रूढ़िवादी मूल्य; 70 A तापमान-सीमित है और परीक्षण किए गए नमूने प्री-प्रोडक्शन थे।"
+            ],
+            "resolution": "40 A सावधानीपूर्वक चुना गया मान; 70 A तापमान-सीमित है और परीक्षण किए गए नमूने प्री-प्रोडक्शन थे।"
+        },
+        {
+            "id": "hi-129",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 19 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Hindi: 19 A रूढ़िवादी मूल्य; सटीक परीक्षण किए गए नमूने प्री-प्रोडक्शन थे और उन पर CCC चिह्न नहीं थे।"
+            ],
+            "resolution": "19 A सावधानीपूर्वक चुना गया मान; सटीक परीक्षण किए गए नमूने प्री-प्रोडक्शन थे और उन पर CCC चिह्न नहीं थे।"
+        },
+        {
+            "id": "hi-130",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 90 A is temperature-limited and tested cells appeared pre-production.",
+                "Previous Hindi: 40 A रूढ़िवादी मूल्य; 90 A तापमान-सीमित है और परीक्षण की गई सेल प्री-प्रोडक्शन थीं।"
+            ],
+            "resolution": "40 A सावधानीपूर्वक चुना गया मान; 90 A तापमान-सीमित है और परीक्षण की गई सेल प्री-प्रोडक्शन थीं।"
+        },
+        {
+            "id": "hi-131",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 60 A is temperature-limited and production continuity remains unresolved.",
+                "Previous Hindi: 40 A रूढ़िवादी मूल्य; 60 A तापमान-सीमित है और उत्पादन की निरंतरता अभी अनसुलझी है।"
+            ],
+            "resolution": "40 A सावधानीपूर्वक चुना गया मान; 60 A तापमान-सीमित है और उत्पादन की निरंतरता अभी अनसुलझी है।"
+        },
+        {
+            "id": "hi-132",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; tested samples had inconsistent capacity and lacked CCC/CE marks.",
+                "Previous Hindi: 40 A रूढ़िवादी मूल्य; परीक्षण किए गए नमूनों की क्षमता असंगत थी और उन पर CCC/CE चिह्न नहीं थे।"
+            ],
+            "resolution": "40 A सावधानीपूर्वक चुना गया मान; परीक्षण किए गए नमूनों की क्षमता असंगत थी और उन पर CCC/CE चिह्न नहीं थे।"
+        },
+        {
+            "id": "hi-133",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[conservative-sense] Conservative engineering value is mistranslated as socially conservative value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 13 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Hindi: 13 A रूढ़िवादी मूल्य; सटीक परीक्षण किए गए नमूने प्री-प्रोडक्शन थे और उन पर CCC चिह्न नहीं थे।"
+            ],
+            "resolution": "13 A सावधानीपूर्वक चुना गया मान; सटीक परीक्षण किए गए नमूने प्री-प्रोडक्शन थे और उन पर CCC चिह्न नहीं थे।"
+        },
+        {
+            "id": "hi-134",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[pulse-warning-reversed] Hindi reverses the prohibition: it says do not use the continuous value instead of pulse ratings.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous Hindi: 45 A परीक्षण किए गए टैबलेस संस्करण का स्वतंत्र निरंतर मूल्य; इसे पल्स रेटिंग का विकल्प न मानें।"
+            ],
+            "resolution": "परीक्षण किए गए टैबलेस संस्करण के लिए स्वतंत्र परीक्षण से प्राप्त सतत करंट मान 45 A है; इसकी जगह पल्स रेटिंग का उपयोग न करें।"
+        },
+        {
+            "id": "hi-135",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[profile-scope] Translation adds control boards although this source template says device only.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A regulated vaping device profile for __SE_ARG_0__.",
+                "Previous Hindi: नियंत्रित वेपिंग डिवाइस या कंट्रोल बोर्ड के लिए प्रोफ़ाइल: __SE_ARG_0__."
+            ],
+            "resolution": "__SE_ARG_0__ के लिए एक विनियमित वेपिंग डिवाइस प्रोफ़ाइल।"
+        },
+        {
+            "id": "hi-136",
+            "translationId": "catalogText.mod.preset-238.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[squonk-profile] Broken sentence reverses adaptation and profile attachment, uses biological cell and loses unit tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell regulated squonk mod for 21700, 20700, or adapted 18650 cells with a conservative 95 W, 6 V, 34 A profile.",
+                "Previous Hindi: 21700, 20700 के लिए एकल-कोशिका विनियमित स्क्वॉंक मॉड, या एक रूढ़िवादी 95 डब्लू, 6 वी, 34 ए प्रोफ़ाइल के साथ 18650 कोशिकाओं को अनुकूलित किया गया।"
+            ],
+            "resolution": "21700, 20700 या एडाप्टर के साथ 18650 सेल के लिए एक सेल वाला विनियमित स्क्वॉंक मॉड, जिसकी सावधानीपूर्वक चुनी गई प्रोफ़ाइल 95 W, 6 V, 34 A है।"
+        },
+        {
+            "id": "hi-137",
+            "translationId": "messages.home.tools.wirewiz.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Combine different wires to shape a coil and its temperature curve.",
+                "Previous Hindi: एक कुंडली और उसके तापमान वक्र को आकार देने के लिए विभिन्न तारों को मिलाएं।"
+            ],
+            "resolution": "एक कॉइल और उसके तापमान वक्र को आकार देने के लिए विभिन्न तारों को मिलाएं।"
+        },
+        {
+            "id": "hi-138",
+            "translationId": "messages.encyclopediaDetail.materialCatalog",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil material catalog",
+                "Previous Hindi: कुंडल सामग्री सूची"
+            ],
+            "resolution": "कॉइल सामग्री सूची"
+        },
+        {
+            "id": "hi-139",
+            "translationId": "calculators.coil.perCoil",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: per coil",
+                "Previous Hindi: प्रति कुंडल"
+            ],
+            "resolution": "प्रति कॉइल"
+        },
+        {
+            "id": "hi-140",
+            "translationId": "calculators.coil.coilDimensions",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil dimensions",
+                "Previous Hindi: कुंडल आयाम"
+            ],
+            "resolution": "कॉइल आयाम"
+        },
+        {
+            "id": "hi-141",
+            "translationId": "calculators.coil.wireLengthInCoil",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire length in coil",
+                "Previous Hindi: कुंडल में तार की लंबाई"
+            ],
+            "resolution": "कॉइल में तार की लंबाई"
+        },
+        {
+            "id": "hi-142",
+            "translationId": "calculators.coil.coilWidth",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil width",
+                "Previous Hindi: कुंडल की चौड़ाई"
+            ],
+            "resolution": "कॉइल की चौड़ाई"
+        },
+        {
+            "id": "hi-143",
+            "translationId": "calculators.coil.coilArea",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil area",
+                "Previous Hindi: कुंडल क्षेत्र"
+            ],
+            "resolution": "कॉइल क्षेत्र"
+        },
+        {
+            "id": "hi-144",
+            "translationId": "calculators.tcr.needModel",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Need a complete coil model?",
+                "Previous Hindi: एक पूर्ण कुंडल मॉडल की आवश्यकता है?"
+            ],
+            "resolution": "एक पूर्ण कॉइल मॉडल की आवश्यकता है?"
+        },
+        {
+            "id": "hi-145",
+            "translationId": "calculators.tcr.needModelText",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: for wire geometry, complex constructions, and coil calculations. This focused tool remains useful for comparing and combining resistance curves.",
+                "Previous Hindi: तार ज्यामिति, जटिल निर्माण और कुंडल गणना के लिए। यह केंद्रित उपकरण प्रतिरोध वक्रों की तुलना और संयोजन के लिए उपयोगी रहता है।"
+            ],
+            "resolution": "तार ज्यामिति, जटिल निर्माण और कॉइल गणना के लिए। यह केंद्रित उपकरण प्रतिरोध वक्रों की तुलना और संयोजन के लिए उपयोगी रहता है।"
+        },
+        {
+            "id": "hi-146",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Hindi: एक 0.8 Ω कुंडल में 3 A धारा बहती है।"
+            ],
+            "resolution": "एक 0.8 Ω कॉइल में 3 A धारा बहती है।"
+        },
+        {
+            "id": "hi-147",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "[coil-glossary] Vaping coil wording conflicts with the explicit Hindi hardware glossary.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The coil converts energy to heat at 7.2 joules per second, or 72 J over 10 seconds.",
+                "Previous Hindi: कुंडल ऊर्जा को 7.2 W की शक्ति से ऊष्मा में बदलता है, अर्थात 10 सेकंड में 72 J।"
+            ],
+            "resolution": "कॉइल ऊर्जा को 7.2 जूल प्रति सेकंड की दर से ऊष्मा में बदलती है, अर्थात 10 सेकंड में 72 J।"
+        },
+        {
+            "id": "hi-148",
+            "translationId": "messages.catalogEditor.nominalDiameter",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal diameter (mm)",
+                "Previous Hindi: नाममात्र व्यास (मिमी)"
+            ],
+            "resolution": "नाममात्र व्यास (mm)"
+        },
+        {
+            "id": "hi-149",
+            "translationId": "messages.catalogEditor.nominalLength",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal length (mm)",
+                "Previous Hindi: नाममात्र लंबाई (मिमी)"
+            ],
+            "resolution": "नाममात्र लंबाई (mm)"
+        },
+        {
+            "id": "hi-150",
+            "translationId": "messages.catalogEditor.length",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Length (mm)",
+                "Previous Hindi: लंबाई (मिमी)"
+            ],
+            "resolution": "लंबाई (mm)"
+        },
+        {
+            "id": "hi-151",
+            "translationId": "messages.catalogEditor.width",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Width (mm)",
+                "Previous Hindi: चौड़ाई (मिमी)"
+            ],
+            "resolution": "चौड़ाई (mm)"
+        },
+        {
+            "id": "hi-152",
+            "translationId": "messages.catalogEditor.thickness",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Thickness (mm)",
+                "Previous Hindi: मोटाई (मिमी)"
+            ],
+            "resolution": "मोटाई (mm)"
+        },
+        {
+            "id": "hi-153",
+            "translationId": "messages.catalogEditor.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity (mAh)",
+                "Previous Hindi: रेटेड क्षमता (एमएएच)"
+            ],
+            "resolution": "रेटेड क्षमता (mAh)"
+        },
+        {
+            "id": "hi-154",
+            "translationId": "messages.catalogEditor.continuousCurrent",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous discharge current (A)",
+                "Previous Hindi: सतत् निर्वहन धारा (ए)"
+            ],
+            "resolution": "सतत् निर्वहन धारा (A)"
+        },
+        {
+            "id": "hi-155",
+            "translationId": "messages.catalogEditor.continuousC",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous discharge C rating",
+                "Previous Hindi: सतत् निर्वहन सी रेटिंग"
+            ],
+            "resolution": "सतत् निर्वहन C रेटिंग"
+        },
+        {
+            "id": "hi-156",
+            "translationId": "messages.catalogEditor.nominalVoltage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage (V)",
+                "Previous Hindi: नाममात्र वोल्टेज (वी)"
+            ],
+            "resolution": "नाममात्र वोल्टेज (V)"
+        },
+        {
+            "id": "hi-157",
+            "translationId": "messages.catalogEditor.density",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Density (g/cm³)",
+                "Previous Hindi: घनत्व (ग्राम/सेमी³)"
+            ],
+            "resolution": "घनत्व (g/cm³)"
+        },
+        {
+            "id": "hi-158",
+            "translationId": "messages.catalogEditor.tcrPerDegree",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: TCR (per °C)",
+                "Previous Hindi: टीसीआर (प्रति डिग्री सेल्सियस)"
+            ],
+            "resolution": "TCR (प्रति °C)"
+        },
+        {
+            "id": "hi-159",
+            "translationId": "messages.catalogEditor.temperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature (°C)",
+                "Previous Hindi: तापमान (डिग्री सेल्सियस)"
+            ],
+            "resolution": "तापमान (°C)"
+        },
+        {
+            "id": "hi-160",
+            "translationId": "messages.catalogEditor.normalizationExtrapolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens. Leading separator required by saved-message concatenation in material-editor.tsx.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was extrapolated and the curve was normalized.",
+                "Previous Hindi: 20 डिग्री सेल्सियस बिंदु को एक्सट्रपलेशन किया गया और वक्र को सामान्यीकृत किया गया।"
+            ],
+            "resolution": " 20 °C बिंदु को एक्सट्रपलेशन किया गया और वक्र को सामान्यीकृत किया गया।"
+        },
+        {
+            "id": "hi-161",
+            "translationId": "messages.catalogEditor.normalizationExisting",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens. Leading separator required by saved-message concatenation in material-editor.tsx.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The TFR curve was normalized at 20 °C.",
+                "Previous Hindi: टीएफआर वक्र को 20 डिग्री सेल्सियस पर सामान्यीकृत किया गया।"
+            ],
+            "resolution": " TFR वक्र को 20 °C पर सामान्यीकृत किया गया।"
+        },
+        {
+            "id": "hi-162",
+            "translationId": "messages.catalogEditor.maxOutputVoltage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum output voltage (V)",
+                "Previous Hindi: अधिकतम आउटपुट वोल्टेज (वी)"
+            ],
+            "resolution": "अधिकतम आउटपुट वोल्टेज (V)"
+        },
+        {
+            "id": "hi-163",
+            "translationId": "messages.catalogEditor.maxOutputPower",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum output power (W)",
+                "Previous Hindi: अधिकतम आउटपुट पावर (डब्ल्यू)"
+            ],
+            "resolution": "अधिकतम आउटपुट पावर (W)"
+        },
+        {
+            "id": "hi-164",
+            "translationId": "messages.catalogEditor.maxOutputCurrent",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum output current (A)",
+                "Previous Hindi: अधिकतम आउटपुट करंट (ए)"
+            ],
+            "resolution": "अधिकतम आउटपुट करंट (A)"
+        },
+        {
+            "id": "hi-165",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.resistivity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Electrical resistivity at 20 °C",
+                "Previous Hindi: 20 डिग्री सेल्सियस पर विद्युत प्रतिरोधकता"
+            ],
+            "resolution": "20 °C पर विद्युत प्रतिरोधकता"
+        },
+        {
+            "id": "hi-166",
+            "translationId": "calculators.modrange.watt",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: W",
+                "Previous Hindi: डब्ल्यू"
+            ],
+            "resolution": "W"
+        },
+        {
+            "id": "hi-167",
+            "translationId": "calculators.modrange.ampere",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A",
+                "Previous Hindi: ए"
+            ],
+            "resolution": "A"
+        },
+        {
+            "id": "hi-168",
+            "translationId": "calculators.tcr.help",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",
+                "Previous Hindi: इन मानों को संपादित करने से चयनित सामग्री साफ़ हो जाती है। डीएनए 200 आउटपुट 2-8 अंक स्वीकार करता है और 70 डिग्री फ़ारेनहाइट (लगभग 21 डिग्री सेल्सियस) के करीब एक बिंदु की आवश्यकता होती है।"
+            ],
+            "resolution": "इन मानों को संपादित करने से चयनित सामग्री साफ़ हो जाती है। DNA 200 आउटपुट 2–8 बिंदु स्वीकार करता है और 70 °F (लगभग 21 °C) के करीब एक बिंदु की आवश्यकता होती है।"
+        },
+        {
+            "id": "hi-169",
+            "translationId": "calculators.tcr.baseAt20",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Base resistance is measured at 20 °C.",
+                "Previous Hindi: आधार प्रतिरोध 20 डिग्री सेल्सियस पर मापा जाता है।"
+            ],
+            "resolution": "आधार प्रतिरोध 20 °C पर मापा जाता है।"
+        },
+        {
+            "id": "hi-170",
+            "translationId": "calculators.tcr.exportHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The curve is normalized to its calculated resistance at exactly 20 °C.",
+                "Previous Hindi: वक्र को उसके परिकलित प्रतिरोध के ठीक 20 डिग्री सेल्सियस पर सामान्यीकृत किया जाता है।"
+            ],
+            "resolution": "वक्र को उसके परिकलित प्रतिरोध के ठीक 20 °C पर सामान्यीकृत किया जाता है।"
+        },
+        {
+            "id": "hi-171",
+            "translationId": "calculators.tcr.aboutTwo",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Multiple selected materials are treated as parallel resistances. Sensitivity compares the combined resistance change from 160–260 °C with the legacy Ni200 reference curve.",
+                "Previous Hindi: एकाधिक चयनित सामग्रियों को समानांतर प्रतिरोधों के रूप में माना जाता है। संवेदनशीलता 160-260 डिग्री सेल्सियस के संयुक्त प्रतिरोध परिवर्तन की तुलना पुराने Ni200 संदर्भ वक्र से करती है।"
+            ],
+            "resolution": "एकाधिक चयनित सामग्रियों को समानांतर प्रतिरोधों के रूप में माना जाता है। संवेदनशीलता 160–260 °C के संयुक्त प्रतिरोध परिवर्तन की तुलना पुराने Ni200 संदर्भ वक्र से करती है।"
+        },
+        {
+            "id": "hi-172",
+            "translationId": "calculators.wirewiz.temperaturePoints",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature points (°C, comma separated)",
+                "Previous Hindi: तापमान बिंदु (डिग्री सेल्सियस, अल्पविराम से अलग)"
+            ],
+            "resolution": "तापमान बिंदु (°C, अल्पविराम से अलग)"
+        },
+        {
+            "id": "hi-173",
+            "translationId": "calculators.wirewiz.temperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature (°C)",
+                "Previous Hindi: तापमान (डिग्री सेल्सियस)"
+            ],
+            "resolution": "तापमान (°C)"
+        },
+        {
+            "id": "hi-174",
+            "translationId": "calculators.wirewiz.celsius",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Celsius (°C)",
+                "Previous Hindi: सेल्सियस (डिग्री सेल्सियस)"
+            ],
+            "resolution": "सेल्सियस (°C)"
+        },
+        {
+            "id": "hi-175",
+            "translationId": "calculators.wirewiz.tcrExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The relative change in resistance between 20 °C and 300 °C.",
+                "Previous Hindi: 20 डिग्री सेल्सियस और 300 डिग्री सेल्सियस के बीच प्रतिरोध में सापेक्ष परिवर्तन।"
+            ],
+            "resolution": "20 °C और 300 °C के बीच प्रतिरोध में सापेक्ष परिवर्तन।"
+        },
+        {
+            "id": "hi-176",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Hindi: 1 एम\\u03a9 = 1,000,000 \\u03a9"
+            ],
+            "resolution": "1 MΩ = 1,000,000 Ω"
+        },
+        {
+            "id": "hi-177",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 mA = 0.001 A",
+                "Previous Hindi: 1 एमए = 0.001 ए"
+            ],
+            "resolution": "1 mA = 0.001 A"
+        },
+        {
+            "id": "hi-178",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: With equal branch resistance, each branch carries 10 A.",
+                "Previous Hindi: समान शाखा प्रतिरोध के साथ, प्रत्येक शाखा 10 ए वहन करती है।"
+            ],
+            "resolution": "समान शाखा प्रतिरोध के साथ, प्रत्येक शाखा 10 A वहन करती है।"
+        },
+        {
+            "id": "hi-179",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 10 cm hypotenuse meets an angle of 30°.",
+                "Previous Hindi: 10 सेमी लंबा कर्ण 30° का कोण बनाता है।"
+            ],
+            "resolution": "10 cm लंबा कर्ण 30° का कोण बनाता है।"
+        },
+        {
+            "id": "hi-180",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat 0.20 kg of water from 20 °C to 70 °C using c = 4,180 J/(kg·K).",
+                "Previous Hindi: c = 4,180 J/(kg·K) का उपयोग करके 0.20 किलोग्राम पानी को 20 डिग्री सेल्सियस से 70 डिग्री सेल्सियस तक गर्म करें।"
+            ],
+            "resolution": "c = 4,180 J/(kg·K) का उपयोग करके 0.20 kg पानी को 20 °C से 70 °C तक गर्म करें।"
+        },
+        {
+            "id": "hi-181",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert 0.1 inch to millimetres and 5 mm to inches.",
+                "Previous Hindi: 0.1 इंच को मिलीमीटर और 5 मिमी को इंच में बदलें।"
+            ],
+            "resolution": "0.1 इंच को मिलीमीटर और 5 mm को इंच में बदलें।"
+        },
+        {
+            "id": "hi-182",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.1 inch × 25.4 = 2.54 mm",
+                "Previous Hindi: 0.1 इंच × 25.4 = 2.54 मिमी"
+            ],
+            "resolution": "0.1 इंच × 25.4 = 2.54 mm"
+        },
+        {
+            "id": "hi-183",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 5 mm / 25.4 ≈ 0.19685 inch",
+                "Previous Hindi: 5 मिमी / 25.4 ≈ 0.19685 इंच"
+            ],
+            "resolution": "5 mm / 25.4 ≈ 0.19685 इंच"
+        },
+        {
+            "id": "hi-184",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 2.588 mm",
+                "Previous Hindi: 2.588 मिमी"
+            ],
+            "resolution": "2.588 mm"
+        },
+        {
+            "id": "hi-185",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 3.251 mm",
+                "Previous Hindi: 3.251 मिमी"
+            ],
+            "resolution": "3.251 mm"
+        },
+        {
+            "id": "hi-186",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 3.404 mm",
+                "Previous Hindi: 3.404 मिमी"
+            ],
+            "resolution": "3.404 mm"
+        },
+        {
+            "id": "hi-187",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.1.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.8128 mm",
+                "Previous Hindi: 0.8128 मिमी"
+            ],
+            "resolution": "0.8128 mm"
+        },
+        {
+            "id": "hi-188",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.1.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.9144 mm",
+                "Previous Hindi: 0.9144 मिमी"
+            ],
+            "resolution": "0.9144 mm"
+        },
+        {
+            "id": "hi-189",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.1.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.8890 mm",
+                "Previous Hindi: 0.8890 मिमी"
+            ],
+            "resolution": "0.8890 mm"
+        },
+        {
+            "id": "hi-190",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.2.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.2540 mm",
+                "Previous Hindi: 0.2540 मिमी"
+            ],
+            "resolution": "0.2540 mm"
+        },
+        {
+            "id": "hi-191",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.2.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.3150 mm",
+                "Previous Hindi: 0.3150 मिमी"
+            ],
+            "resolution": "0.3150 mm"
+        },
+        {
+            "id": "hi-192",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.2.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.3048 mm",
+                "Previous Hindi: 0.3048 मिमी"
+            ],
+            "resolution": "0.3048 mm"
+        },
+        {
+            "id": "hi-193",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous Hindi: प्रतिरोध कंडक्टर की लंबाई एल, क्रॉस-अनुभागीय क्षेत्र ए और सामग्री प्रतिरोधकता ρ पर निर्भर करता है। क्योंकि क्षेत्रफल व्यास के वर्ग के साथ बदलता रहता है, व्यास का मामूली अंतर प्रतिरोध में पर्याप्त अंतर ला सकता है। एडब्ल्यूजी में, गेज को तीन आकारों तक बढ़ाने से क्षेत्र लगभग आधा हो जाता है और समान सामग्री और तापमान के लिए प्रति इकाई लंबाई में प्रतिरोध दोगुना हो जाता है।"
+            ],
+            "resolution": "प्रतिरोध कंडक्टर की लंबाई L, क्रॉस-अनुभागीय क्षेत्र A और सामग्री प्रतिरोधकता ρ पर निर्भर करता है। क्योंकि क्षेत्रफल व्यास के वर्ग के साथ बदलता रहता है, व्यास का मामूली अंतर प्रतिरोध में पर्याप्त अंतर ला सकता है। AWG में, गेज को तीन आकारों तक बढ़ाने से क्षेत्र लगभग आधा हो जाता है और समान सामग्री और तापमान के लिए प्रति इकाई लंबाई में प्रतिरोध दोगुना हो जाता है।"
+        },
+        {
+            "id": "hi-194",
+            "translationId": "catalogText.mod.preset-234.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-18650 regulated mod; VAPORESSO rates it 220 W; testing measured 215 W, 9.08 V, and 37 A.",
+                "Previous Hindi: डुअल-18650 विनियमित मॉड; VAPORESSO ने इसे 220 W रेट किया है; परीक्षण में 215 डब्लू, 9.08 वी, और 37 ए मापा गया।"
+            ],
+            "resolution": "डुअल-18650 विनियमित मॉड; VAPORESSO ने इसे 220 W रेट किया है; परीक्षण में 215 W, 9.08 V, और 37 A मापा गया।"
+        },
+        {
+            "id": "hi-195",
+            "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in-battery regulated mod rated at 100 W; testing measured 101 W, 29 A, and at least 7.97 V.",
+                "Previous Hindi: 100 वॉट पर रेटेड बिल्ट-इन-बैटरी विनियमित मॉड; परीक्षण में 101 डब्ल्यू, 29 ए और कम से कम 7.97 वी मापा गया।"
+            ],
+            "resolution": "100 W पर रेटेड बिल्ट-इन-बैटरी विनियमित मॉड; परीक्षण में 101 W, 29 A और कम से कम 7.97 V मापा गया।"
+        },
+        {
+            "id": "hi-196",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Preserve canonical unit symbols and mathematical variable tokens.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell 21700/18650-adapter mod; Eleaf specifies 100 W, 9 V, 0.05–3.5 Ω; testing identified 30 A.",
+                "Previous Hindi: सिंगल-सेल 21700/18650-एडेप्टर मॉड; एलिफ़ 100 डब्ल्यू, 9 वी, 0.05-3.5 Ω निर्दिष्ट करता है; परीक्षण से 30 ए की पहचान हुई।"
+            ],
+            "resolution": "सिंगल-सेल 21700/18650-एडेप्टर मॉड; Eleaf 100 W, 9 V, 0.05–3.5 Ω निर्दिष्ट करता है; परीक्षण से 30 A की पहचान हुई।"
+        },
+        {
+            "id": "hi-197",
+            "translationId": "messages.home.intro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Preserve Steam Engine brand identity, not a translated steam locomotive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine is a suite of practical calculators for building coils, checking battery drain, mixing e-liquid, and understanding the numbers behind your setup.",
+                "Previous Hindi: स्टीम इंजन कॉइल बनाने, बैटरी ड्रेन की जांच करने, ई-लिक्विड मिश्रण करने और आपके सेटअप के पीछे की संख्याओं को समझने के लिए व्यावहारिक कैलकुलेटर का एक सूट है।"
+            ],
+            "resolution": "Steam Engine कॉइल बनाने, बैटरी ड्रेन की जांच करने, ई-लिक्विड मिश्रण करने और आपके सेटअप के पीछे की संख्याओं को समझने के लिए व्यावहारिक कैलकुलेटर का एक सूट है।"
+        },
+        {
+            "id": "hi-198",
+            "translationId": "messages.home.blogTitle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Preserve Steam Engine brand identity, not a translated steam locomotive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine blog",
+                "Previous Hindi: स्टीम इंजन ब्लॉग"
+            ],
+            "resolution": "Steam Engine ब्लॉग"
+        },
+        {
+            "id": "hi-199",
+            "translationId": "messages.home.blogDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Preserve Steam Engine brand identity, not a translated steam locomotive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find updates and calculator tips on the Steam Engine blog.",
+                "Previous Hindi: स्टीम इंजन ब्लॉग पर अपडेट और कैलकुलेटर युक्तियाँ प्राप्त करें।"
+            ],
+            "resolution": "Steam Engine ब्लॉग पर अपडेट और कैलकुलेटर युक्तियाँ प्राप्त करें।"
+        },
+        {
+            "id": "hi-200",
+            "translationId": "messages.home.catalogDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Preserve Steam Engine brand identity, not a translated steam locomotive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Learn the concepts and look up the materials, batteries, mods, and boards used by Steam Engine.",
+                "Previous Hindi: अवधारणाओं को जानें और स्टीम इंजन द्वारा उपयोग की जाने वाली सामग्रियों, बैटरी, मॉड और बोर्ड को देखें।"
+            ],
+            "resolution": "अवधारणाओं को जानें और Steam Engine द्वारा उपयोग की जाने वाली सामग्रियों, बैटरी, मॉड और बोर्ड को देखें।"
+        },
+        {
+            "id": "hi-201",
+            "translationId": "messages.encyclopedia.kicker",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Preserve Steam Engine brand identity, not a translated steam locomotive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine reference",
+                "Previous Hindi: भाप इंजन संदर्भ"
+            ],
+            "resolution": "Steam Engine संदर्भ"
+        },
+        {
+            "id": "hi-202",
+            "translationId": "messages.encyclopediaDetail.basedOnArticle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Preserve Steam Engine brand identity, not a translated steam locomotive.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Based on the Steam Engine knowledge-base article",
+                "Previous Hindi: स्टीम इंजन ज्ञान-आधारित लेख पर आधारित"
+            ],
+            "resolution": "Steam Engine ज्ञान-आधारित लेख पर आधारित"
+        },
+        {
+            "id": "hi-203",
+            "translationId": "calculators.tcr.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve DNA product name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Compare TCR and TFR materials, combine wire resistances in parallel, and export a normalized DNA 200 resistance curve.",
+                "Previous Hindi: टीसीआर और टीएफआर सामग्रियों की तुलना करें, तार प्रतिरोधों को समानांतर में संयोजित करें, और एक सामान्यीकृत डीएनए 200 प्रतिरोध वक्र निर्यात करें।"
+            ],
+            "resolution": "टीसीआर और टीएफआर सामग्रियों की तुलना करें, तार प्रतिरोधों को समानांतर में संयोजित करें, और एक सामान्यीकृत DNA 200 प्रतिरोध वक्र निर्यात करें।"
+        },
+        {
+            "id": "hi-204",
+            "translationId": "calculators.tcr.export",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve DNA product name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 output",
+                "Previous Hindi: डीएनए 200 आउटपुट"
+            ],
+            "resolution": "DNA 200 आउटपुट"
+        },
+        {
+            "id": "hi-205",
+            "translationId": "calculators.tcr.csvOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve DNA product name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 CSV output",
+                "Previous Hindi: डीएनए 200 सीएसवी आउटपुट"
+            ],
+            "resolution": "DNA 200 सीएसवी आउटपुट"
+        },
+        {
+            "id": "hi-206",
+            "translationId": "calculators.wirewiz.dna200",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve DNA product name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA200",
+                "Previous Hindi: डीएनए200"
+            ],
+            "resolution": "DNA200"
+        },
+        {
+            "id": "hi-207",
+            "translationId": "catalogText.mod.preset-9.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve exact product and revision identity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Billet Box Rev. 3a with a bead-blasted, bright-dipped anodized aluminum finish; introduced in May 2014.",
+                "Previous Hindi: बीड-ब्लास्टेड, ब्राइट-डिप्ड एनोडाइज्ड एल्यूमीनियम फिनिश के साथ बिलेट बॉक्स रेव. 3ए; मई 2014 में पेश किया गया।"
+            ],
+            "resolution": "Billet Box Rev. 3a, बीड-ब्लास्टेड और ब्राइट-डिप्ड एनोडाइज्ड एल्यूमीनियम फिनिश के साथ; मई 2014 में पेश किया गया।"
+        },
+        {
+            "id": "hi-208",
+            "translationId": "catalogText.mod.preset-10.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve exact manufacturer name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A Cloupor 30 W device using a third-party DNA30-style clone chipset, not an authentic Evolv DNA-30D board.",
+                "Previous Hindi: तृतीय-पक्ष DNA30-शैली क्लोन चिपसेट का उपयोग करने वाला क्लूपर 30 W डिवाइस, प्रामाणिक Evolv DNA-30D बोर्ड नहीं।"
+            ],
+            "resolution": "तृतीय-पक्ष DNA30-शैली क्लोन चिपसेट का उपयोग करने वाला Cloupor 30 W डिवाइस, प्रामाणिक Evolv DNA-30D बोर्ड नहीं।"
+        },
+        {
+            "id": "hi-209",
+            "translationId": "catalogText.mod.preset-236.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Preserve chipset identity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-18650 regulated mod using AS Chip 4.0; manufacturer profile is 100 W, 7.5 V, 32 A, 0.1–3 Ω.",
+                "Previous Hindi: एएस चिप 4.0 का उपयोग करके सिंगल-18650 विनियमित मॉड; निर्माता प्रोफ़ाइल 100 W, 7.5 V, 32 A, 0.1–3 Ω है।"
+            ],
+            "resolution": "AS Chip 4.0 का उपयोग करके सिंगल-18650 विनियमित मॉड; निर्माता प्रोफ़ाइल 100 W, 7.5 V, 32 A, 0.1–3 Ω है।"
+        },
+        {
+            "id": "hi-210",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Hindi: R प्रतिरोध है, जिसे ओम (Ω) में मापा जाता है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-211",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous Hindi: शून्य \\u03a9 का प्रतिरोध एक आदर्श शॉर्ट सर्किट है और इसे अलग से संभाला जाना चाहिए।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-262; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-212",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Hindi: एक 4.2 V स्रोत 1.0 \\u03a9 लोड से जुड़ा है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-263; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-213",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Hindi: I = 4.2 V / 1.0 Ω = 4.2 A",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-214",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Hindi: R = 12 V / 2 A = 6 Ω",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-215",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Hindi: सर्किट प्रतिरोध 6 \\u03a9 है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-264; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-216",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Hindi: 10 \\u03a9 प्रतिरोध से 0.5 A धारा प्रवाहित होती है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-265; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-217",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Hindi: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-266; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-218",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Hindi: 1 एम\\u03a9 = 1,000,000 \\u03a9",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-176; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-219",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Hindi: एक 0.8 Ω कुंडल में 3 A धारा बहती है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-146; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-220",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Hindi: श्रृंखला में दो 0.20 \\u03a9 प्रतिरोधक 8.0 V से जुड़े हुए हैं।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-267; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-221",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Hindi: R_total = 0.40 Ω",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-222",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Hindi: दो बराबर 0.40 \\u03a9 शाखाएँ 4.0 V से जुड़ी हैं।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-268; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-223",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Hindi: R_total = 0.20 Ω",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-224",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous Hindi: α सामग्री का तापमान गुणांक है, जिसे 1/°C या ppm/°C में व्यक्त किया जाता है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-225",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 1.00 \\u03a9 resistance is specified at 20 \\u00b0C, with a TCR of 400 ppm/\\u00b0C.",
+                "Previous Hindi: 1.00 Ω प्रतिरोध 20 °C पर निर्दिष्ट है, 400 ppm/°C की TCR के साथ।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-226",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Hindi: α = 400 × 10^-6 / °C = 0.0004 / °C",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-227",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Hindi: ΔT = 100 - 20 = 80 °C",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-228",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Hindi: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 Ω",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-229",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Hindi: अनुमानित प्रतिरोध 1.032 Ω है, जो 20 °C पर इसके मान से लगभग 3.2% अधिक है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-230",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Hindi: प्रतिरोध: ओम (Ω)।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "No additional Hindi correction required; existing target rendering retained. English source issue recorded."
+        },
+        {
+            "id": "hi-231",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical English contains literal Unicode escape text. Repair English and parity separately; Hindi strings that already render the symbol are not defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Hindi: उदाहरण के लिए, 2.2 k\\u03a9 2,200 \\u03a9 के बराबर है, और 15 mA 0.015 A के बराबर है। सूत्र का उपयोग करने से पहले मानों को संगत इकाइयों में परिवर्तित करें।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "Hindi display corrected in hi-269; canonical English issue remains outside this locale cycle."
+        },
+        {
+            "id": "hi-232",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[joule-source-summary] English says current turns resistance into heat; physically electrical energy is converted to heat. Hindi follows the source.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: How electrical current turns resistance into heat.",
+                "Previous Hindi: विद्युत धारा किस प्रकार प्रतिरोध को ऊष्मा में बदल देती है।",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work."
+            ],
+            "resolution": "विद्युत धारा बहने पर विद्युत ऊर्जा ऊष्मा में कैसे बदलती है।"
+        },
+        {
+            "id": "hi-233",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing Hindi optional link label exposes English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous Hindi: Joule's law"
+            ],
+            "resolution": "जूल के नियम"
+        },
+        {
+            "id": "hi-234",
+            "translationId": "calculators.wirewiz.sourceFactorSuffix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing Hindi suffix exposes English; test full sourceFactor sentence assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: at this temperature.",
+                "Previous Hindi: at this temperature."
+            ],
+            "resolution": "इस तापमान पर।"
+        },
+        {
+            "id": "hi-235",
+            "translationId": "messages.catalogEditor.sizeCodePlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Battery editor placeholder falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, e.g. 18650",
+                "Previous Hindi: Optional, e.g. 18650"
+            ],
+            "resolution": "वैकल्पिक, जैसे 18650"
+        },
+        {
+            "id": "hi-236",
+            "translationId": "messages.catalogEditor.wrapperColorPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Battery editor placeholder falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, descriptive",
+                "Previous Hindi: Optional, descriptive"
+            ],
+            "resolution": "वैकल्पिक, वर्णनात्मक"
+        },
+        {
+            "id": "hi-237",
+            "translationId": "messages.catalogEditor.markingsPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Battery editor placeholder falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional; one wrapper marking per line",
+                "Previous Hindi: Optional; one wrapper marking per line"
+            ],
+            "resolution": "वैकल्पिक; प्रत्येक पंक्ति में रैपर का एक चिह्न"
+        },
+        {
+            "id": "hi-238",
+            "translationId": "messages.catalogEditor.currentWithCRatingPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Battery editor placeholder falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when C rating is set",
+                "Previous Hindi: Optional when C rating is set"
+            ],
+            "resolution": "C रेटिंग दी हो तो वैकल्पिक"
+        },
+        {
+            "id": "hi-239",
+            "translationId": "messages.catalogEditor.cRatingWithCurrentPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Battery editor placeholder falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when current is set",
+                "Previous Hindi: Optional when current is set"
+            ],
+            "resolution": "करंट दिया हो तो वैकल्पिक"
+        },
+        {
+            "id": "hi-240",
+            "translationId": "messages.catalogManager.customItemsDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Missing optional message exposes hardcoded English descriptions; map noun input before interpolating.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __SE_ARG_0__ are always shown in calculator selectors.",
+                "Previous Hindi: Custom __SE_ARG_0__ are always shown in calculator selectors."
+            ],
+            "resolution": "कस्टम __SE_ARG_0__ कैलकुलेटर के चयन विकल्पों में हमेशा दिखाई देते हैं।"
+        },
+        {
+            "id": "hi-241",
+            "translationId": "runtime.catalogNouns.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Manager/editor noun is hardcoded English; translate canonical entity kind before interpolation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: material",
+                "Previous Hindi: material"
+            ],
+            "resolution": "सामग्री"
+        },
+        {
+            "id": "hi-242",
+            "translationId": "runtime.catalogNouns.materials",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Manager plural noun is hardcoded English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: materials",
+                "Previous Hindi: materials"
+            ],
+            "resolution": "सामग्री"
+        },
+        {
+            "id": "hi-243",
+            "translationId": "runtime.catalogNouns.battery",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Manager/editor noun is hardcoded English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: battery",
+                "Previous Hindi: battery"
+            ],
+            "resolution": "बैटरी"
+        },
+        {
+            "id": "hi-244",
+            "translationId": "runtime.catalogNouns.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Manager plural noun is hardcoded English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: batteries",
+                "Previous Hindi: batteries"
+            ],
+            "resolution": "बैटरियाँ"
+        },
+        {
+            "id": "hi-245",
+            "translationId": "runtime.catalogNouns.mod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Manager/editor noun is hardcoded English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: mod",
+                "Previous Hindi: mod"
+            ],
+            "resolution": "मॉड"
+        },
+        {
+            "id": "hi-246",
+            "translationId": "runtime.catalogNouns.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Manager plural noun is hardcoded English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: mods",
+                "Previous Hindi: mods"
+            ],
+            "resolution": "मॉड"
+        },
+        {
+            "id": "hi-247",
+            "translationId": "messages.catalogManager.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] New masculine adjective disagrees with feminine battery/material nouns after localization.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous Hindi: नया कस्टम __SE_ARG_0__"
+            ],
+            "resolution": "कस्टम प्रविष्टि बनाएँ: __SE_ARG_0__"
+        },
+        {
+            "id": "hi-248",
+            "translationId": "messages.catalogEditor.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] New masculine adjective disagrees with feminine battery/material nouns after localization.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous Hindi: नया कस्टम __SE_ARG_0__"
+            ],
+            "resolution": "कस्टम प्रविष्टि बनाएँ: __SE_ARG_0__"
+        },
+        {
+            "id": "hi-249",
+            "translationId": "messages.catalogManager.visibility",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Avoid masculine agreement for battery/material nouns.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Visibility changes save immediately. Hidden __se_arg_0__ remain available for cloning.",
+                "Previous Hindi: दृश्यता में किए गए बदलाव तुरंत सहेजे जाते हैं। छिपे हुए __SE_ARG_0__ क्लोन करने के लिए उपलब्ध रहते हैं।"
+            ],
+            "resolution": "दृश्यता में किए गए बदलाव तुरंत सहेजे जाते हैं। छिपी प्रविष्टियों (__SE_ARG_0__) की प्रतिलिपि बनाई जा सकती है।"
+        },
+        {
+            "id": "hi-250",
+            "translationId": "messages.catalogManager.noneYet",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Keep no-items sentence grammatical for plural Hindi nouns.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No custom __se_arg_0__ yet.",
+                "Previous Hindi: अभी तक कोई कस्टम __SE_ARG_0__ नहीं है।"
+            ],
+            "resolution": "अभी तक कोई कस्टम प्रविष्टि नहीं है (__SE_ARG_0__)।"
+        },
+        {
+            "id": "hi-251",
+            "translationId": "messages.catalogEditor.saved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-argument-localization] Use neutral status construction for all item kinds.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ saved.",
+                "Previous Hindi: __SE_ARG_0__ सहेजा गया."
+            ],
+            "resolution": "सहेजा गया: __SE_ARG_0__।"
+        },
+        {
+            "id": "hi-252",
+            "translationId": "calculators.tcr.aboutOne",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[interpolation] Interpolation is not projection; constant coefficient is fixed rather than continuous in time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: TFR materials use their resistance-factor tables with linear interpolation between data points. Materials without a TFR table use their constant TCR value.",
+                "Previous Hindi: टीएफआर सामग्रियां डेटा बिंदुओं के बीच रैखिक प्रक्षेप के साथ अपने प्रतिरोध-कारक तालिकाओं का उपयोग करती हैं। टीएफआर तालिका के बिना सामग्री अपने निरंतर टीसीआर मूल्य का उपयोग करती है।"
+            ],
+            "resolution": "TFR सामग्री में प्रतिरोध-कारक तालिकाओं के डेटा बिंदुओं के बीच रैखिक अंतर्वेशन किया जाता है। TFR तालिका न होने पर सामग्री के स्थिर TCR मान का उपयोग होता है।"
+        },
+        {
+            "id": "hi-253",
+            "translationId": "calculators.coil.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Heat flux is transfer per unit area, distinct from undivided heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous Hindi: गर्मी का प्रवाह",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "ताप-प्रवाह घनत्व"
+        },
+        {
+            "id": "hi-254",
+            "translationId": "calculators.wirewiz.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Heat flux is transfer per unit area, distinct from undivided heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous Hindi: गर्मी का प्रवाह",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "ताप-प्रवाह घनत्व"
+        },
+        {
+            "id": "hi-255",
+            "translationId": "calculators.coil.targetHeatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Target heat flux is transfer per unit area.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Target heat flux",
+                "Previous Hindi: लक्ष्य ताप प्रवाह",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "लक्षित ताप-प्रवाह घनत्व"
+        },
+        {
+            "id": "hi-256",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Retain the area-density distinction used by the concept heading and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Electrical power is a rate of energy transfer, not a temperature. Heat capacity and heat flux determine how that energy changes temperature and how quickly it leaves the surface.",
+                "Previous Hindi: विद्युत शक्ति ऊर्जा स्थानांतरण की दर है, तापमान नहीं। ऊष्मा क्षमता और ऊष्मा प्रवाह यह निर्धारित करते हैं कि वह ऊर्जा तापमान को कैसे बदलती है और कितनी जल्दी सतह को छोड़ देती है।",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "विद्युत शक्ति ऊर्जा स्थानांतरण की दर है, तापमान नहीं। ऊष्मा क्षमता और ऊष्मा प्रवाह घनत्व यह निर्धारित करते हैं कि वह ऊर्जा तापमान को कैसे बदलती है और कितनी जल्दी सतह को छोड़ देती है।"
+        },
+        {
+            "id": "hi-257",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Retain the area-density distinction used by the concept heading and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux is different from heat capacity: heat capacity describes stored energy per temperature change, while heat flux describes the rate at which heat crosses a surface.",
+                "Previous Hindi: ऊष्मा प्रवाह ऊष्मा क्षमता से भिन्न होता है: ऊष्मा क्षमता प्रति तापमान परिवर्तन के अनुसार संग्रहीत ऊर्जा का वर्णन करती है, जबकि ऊष्मा प्रवाह उस दर का वर्णन करता है जिस पर ऊष्मा किसी सतह को पार करती है।",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "ऊष्मा प्रवाह घनत्व ऊष्मा क्षमता से भिन्न होता है: ऊष्मा क्षमता प्रति तापमान परिवर्तन के अनुसार संग्रहीत ऊर्जा का वर्णन करती है, जबकि ऊष्मा प्रवाह घनत्व उस दर का वर्णन करता है जिस पर ऊष्मा किसी सतह को पार करती है।"
+        },
+        {
+            "id": "hi-258",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Retain the area-density distinction used by the concept heading and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Average heater flux",
+                "Previous Hindi: औसत हीटर प्रवाह",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "हीटर का औसत ताप-प्रवाह घनत्व"
+        },
+        {
+            "id": "hi-259",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Retain the area-density distinction used by the concept heading and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The average heat flux is 5,000 W/m², or 0.5 W/cm².",
+                "Previous Hindi: औसत ताप प्रवाह 5,000 W/m², या 0.5 W/cm² है।",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "औसत ताप-प्रवाह घनत्व 5,000 W/m², या 0.5 W/cm² है।"
+        },
+        {
+            "id": "hi-260",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Retain the area-density distinction used by the concept heading and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Distinguish average heat flux from a local peak; heating may be uneven.",
+                "Previous Hindi: स्थानीय शिखर से औसत ताप प्रवाह को अलग करें; हीटिंग असमान हो सकता है.",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "स्थानीय शिखर से औसत ताप-प्रवाह घनत्व को अलग करें; हीटिंग असमान हो सकता है."
+        },
+        {
+            "id": "hi-261",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Retain the area-density distinction used by the concept heading and definition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux is a transfer rate, not a temperature; use heat capacity for temperature change.",
+                "Previous Hindi: ऊष्मा प्रवाह एक स्थानांतरण दर है, तापमान नहीं; तापमान परिवर्तन के लिए ताप क्षमता का उपयोग करें।",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "ऊष्मा प्रवाह घनत्व एक स्थानांतरण दर है, तापमान नहीं; तापमान परिवर्तन के लिए ताप क्षमता का उपयोग करें।"
+        },
+        {
+            "id": "hi-262",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous Hindi: शून्य \\u03a9 का प्रतिरोध एक आदर्श शॉर्ट सर्किट है और इसे अलग से संभाला जाना चाहिए।"
+            ],
+            "resolution": "शून्य Ω का प्रतिरोध एक आदर्श शॉर्ट सर्किट है और इसे अलग से संभाला जाना चाहिए।"
+        },
+        {
+            "id": "hi-263",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Hindi: एक 4.2 V स्रोत 1.0 \\u03a9 लोड से जुड़ा है।"
+            ],
+            "resolution": "एक 4.2 V स्रोत 1.0 Ω लोड से जुड़ा है।"
+        },
+        {
+            "id": "hi-264",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Hindi: सर्किट प्रतिरोध 6 \\u03a9 है।"
+            ],
+            "resolution": "सर्किट प्रतिरोध 6 Ω है।"
+        },
+        {
+            "id": "hi-265",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Hindi: 10 \\u03a9 प्रतिरोध से 0.5 A धारा प्रवाहित होती है।"
+            ],
+            "resolution": "10 Ω प्रतिरोध से 0.5 A धारा प्रवाहित होती है।"
+        },
+        {
+            "id": "hi-266",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Hindi: 1 k\\u03a9 = 1,000 \\u03a9"
+            ],
+            "resolution": "1 kΩ = 1,000 Ω"
+        },
+        {
+            "id": "hi-267",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Hindi: श्रृंखला में दो 0.20 \\u03a9 प्रतिरोधक 8.0 V से जुड़े हुए हैं।"
+            ],
+            "resolution": "श्रृंखला में दो 0.20 Ω प्रतिरोधक 8.0 V से जुड़े हुए हैं।"
+        },
+        {
+            "id": "hi-268",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Hindi: दो बराबर 0.40 \\u03a9 शाखाएँ 4.0 V से जुड़ी हैं।"
+            ],
+            "resolution": "दो बराबर 0.40 Ω शाखाएँ 4.0 V से जुड़ी हैं।"
+        },
+        {
+            "id": "hi-269",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Literal Unicode escape is exposed instead of the mathematical symbol; restore presentation while tracking the same English defect separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Hindi: उदाहरण के लिए, 2.2 k\\u03a9 2,200 \\u03a9 के बराबर है, और 15 mA 0.015 A के बराबर है। सूत्र का उपयोग करने से पहले मानों को संगत इकाइयों में परिवर्तित करें।"
+            ],
+            "resolution": "उदाहरण के लिए, 2.2 kΩ 2,200 Ω के बराबर है, और 15 mA 0.015 A के बराबर है। सूत्र का उपयोग करने से पहले मानों को संगत इकाइयों में परिवर्तित करें।"
+        },
+        {
+            "id": "hi-270",
+            "translationId": "messages.catalogEditor.heatCapacity",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[specific-heat] English heat capacity label has mass-normalized J/g·K units and represents specific heat capacity; resolve English/source parity separately. Hindi can name the intended specific quantity using the existing mass-normalized unit and material field context, without changing calculations.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat capacity (J/g·K)",
+                "Previous Hindi: ताप क्षमता (J/g·K)",
+                "Source discrepancy checked against calling UI, the Steam Engine Joule heating reference and the Steam Engine heat capacity reference. English repair requires separate locale parity work.",
+                "NCERT Thermal Properties of Matter, accessed 2026-10-12 via https://sathee.iitk.ac.in/hi/ncert-books/jee-ncert-books/jee-nb-phy-11/phy-11-chapter-10-thermal-properties-of-matter/; physical terminology and per-mass distinction."
+            ],
+            "resolution": "विशिष्ट ऊष्मा धारिता (J/g·K)"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "locale": "is",
+    "cycleId": "is-20260819T123341963Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Icelandic source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue and findings validation, TypeScript type checking, focused tests, the production IIS build, route-contract validation, and generated internal-link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Icelandic critique found chronology, protected identity, nicotine-safety fluency, and coil-lead terminology defects." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Icelandic human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        {
+            "id": "is-available-by", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high",
+            "summary": "Available by was rendered as available at/from, losing the upper date bound.", "disposition": "resolved",
+            "evidence": ["The canonical label expresses an upper date bound."], "resolution": "Used an explicit í síðasta lagi construction."
+        },
+        {
+            "id": "is-product-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high",
+            "summary": "Wire Wizard was translated as a generic wire helper.", "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."], "resolution": "Restored Wire Wizard in shared, TCR, and Wire Wizard labels."
+        },
+        {
+            "id": "is-coil-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high",
+            "summary": "Coil leads were described as anatomical feet.", "disposition": "resolved",
+            "evidence": ["The fields describe the electrical lead portions of resistance wire."], "resolution": "Used tengivírar consistently in Coil and Wire Wizard."
+        },
+        {
+            "id": "is-nicotine-safety", "translationId": "calculators.juice.safetyText", "category": "factual-or-safety-risk", "severity": "medium",
+            "summary": "The warning was awkward and referred vaguely to mixing one's own rather than e-liquid.", "disposition": "resolved",
+            "evidence": ["The canonical warning explicitly concerns mixing e-liquid and independent calculation checking."], "resolution": "Rewrote the warning in concise, explicit Icelandic."
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+@import "./site-chrome.css";
+@import "./components.css";
+
+.page-content {
+    width: min(100% - 2rem, 1120px);
+    margin: 0 auto;
+}
+
+.page-content {
+    flex: 1;
+    padding: 3rem 0;
+}
+
+html[dir="rtl"] {
+    direction: rtl;
+}
+
+html[dir="rtl"] .notice {
+    border-right: 0.3rem solid var(--se-info);
+    border-left: 0;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea {
+    text-align: right;
+}
+
+.app-shell .page-content input[type="number"] {
+    text-align: right;
+}
+
+.preview-card {
+    max-width: 760px;
+    padding: 2rem;
+}
+
+.preview-card h1 {
+    margin: 0 0 1rem;
+    color: var(--se-text);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.preview-card p {
+    max-width: 65ch;
+    line-height: 1.6;
+}
+
+.eyebrow {
+    margin: 0 0 0.75rem;
+    color: var(--se-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.notice {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgb(52 152 219 / 15%);
+    border-left: 0.3rem solid var(--se-info);
+}
+
+@media (max-width: 720px) {
+    .page-content {
+        padding: 1.25rem 0;
+    }
+
+    .preview-card {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .page-content {
+        width: min(100% - 1.25rem, 1120px);
+        padding: 1rem 0;
+    }
+}

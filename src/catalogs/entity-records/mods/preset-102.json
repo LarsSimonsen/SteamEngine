@@ -1,0 +1,48 @@
+{
+    "entityId": "provari-p3-beta",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "ProVari P3 beta review",
+            "url": "https://www.levapelier.com/en/provari-p3-beta-per-ProVape/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-provari-p3-20260824",
+            "title": "ProVari P3 owner manual",
+            "url": "https://www.manualslib.com/manual/908830/Provape-Provari-P3.html",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18490",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18500",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

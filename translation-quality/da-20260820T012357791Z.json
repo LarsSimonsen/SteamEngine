@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260820T012357791Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all 1,071 effective Danish runtime entries, repository checks, and Danish dictionary and technical terminology sources were available."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Complete-runtime placeholder, Unicode, untranslated-label, numeric-parity, and targeted-language scans passed." },
+        "linguisticCritique": { "state": "completed", "summary": "One correction pass resolved 17 findings, followed by two consecutive zero-finding complete-scope audits." },
+        "competentHumanReview": { "state": "pending", "summary": "The Danish translation remains visibly pending competent human review." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment." }
+    },
+    "findings": [
+        {
+            "id": "da-final-naturalness",
+            "translationId": "calculators.coil.eyebrow",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Seventeen calculator, shared-label, circuit-example, mod-profile, and worked-example strings retained literal or ambiguous wording.",
+            "disposition": "resolved",
+            "evidence": ["Coil wrapping was translated as packaging.", "A current-limit message still meant the currently applicable limit.", "Several worked-example and mod-profile labels retained English or machine-literal syntax."],
+            "resolution": "Applied natural Danish calculator, circuit, battery-wrapper, mod-profile, and worked-example wording."
+        }
+    ]
+}

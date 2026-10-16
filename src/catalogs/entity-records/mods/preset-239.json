@@ -1,0 +1,47 @@
+{
+    "entityId": "preset-239",
+    "entityType": "mod-device",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "catalog-identity"
+    },
+    "summary": {
+        "shortDescription": "A regulated Geekvape vaping device with a manufacturer-stated 100 W, 35 A and 7.5 V output profile.",
+        "description": "Exact-product official documentation identifies an integrated 3000 mAh battery, 100 W maximum output, 35 A maximum output current, 7.5 V maximum output voltage, and 0.1 ? minimum resistance. Independent vaping editorial sources establish exact-product vaping use, but do not replace the manufacturer profile with an independently measured ceiling.",
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Geekvape E100i (Aegis Eteno I) exact specifications",
+            "url": "https://us.geekvape.com/product/geekvape-e100.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-e100i-20260824",
+            "title": "Geekvape E100 manual",
+            "url": "https://verify.geekvape.com/upload/download/E100-kit-manuals.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "safetyFindings": [
+        {
+            "id": "legacy-safety-note",
+            "title": "Research safety note",
+            "summary": "The candidate profile is an electrical calculator input proposal, not a safety certification.",
+            "appliesTo": "This catalog profile",
+            "status": "review-required"
+        }
+    ],
+    "domainData": {
+        "deviceCategory": "pod",
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 3000
+            }
+        ]
+    }
+}

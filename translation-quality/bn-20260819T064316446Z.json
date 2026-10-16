@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260819T064316446Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Bengali pass identified an incorrect side-related example title and inconsistent side labels in the worked example; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "bn-20260819-011",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Bengali worked-example title used দিক, which means direction, instead of the established term for a triangle side.",
+            "disposition": "resolved",
+            "evidence": ["The title একটি দিক খুঁজুন did not match the section's use of বাহু for a geometric side."],
+            "resolution": "Changed the title to একটি বাহু নির্ণয় করুন."
+        },
+        {
+            "id": "bn-20260819-012",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Bengali worked example used abbreviated and inconsistent side labels instead of the established terminology.",
+            "disposition": "resolved",
+            "evidence": ["The example used বিপরীত and সংলগ্ন while the trigonometry explanation used বিপরীত বাহু and সন্নিহিত বাহু."],
+            "resolution": "Aligned both example formulas with বিপরীত বাহু and সন্নিহিত বাহু."
+        }
+    ]
+}

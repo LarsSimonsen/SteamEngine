@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "locale": "uk",
+    "cycleId": "uk-20260819T071836093Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Ukrainian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, TypeScript typecheck, production build, route checks, and generated internal-link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Ukrainian pass identified abbreviated and inconsistent side labels in the trigonometry worked example; both were aligned with the established Ukrainian terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Ukrainian human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "uk-20260819-019",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ukrainian worked trigonometry example used abbreviated side labels that differed from the full terms used in the formulas and explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example used протилежна and прилегла while the section used протилежна сторона and прилегла сторона."],
+            "resolution": "Aligned both example formulas with протилежна сторона and прилегла сторона."
+        }
+    ]
+}

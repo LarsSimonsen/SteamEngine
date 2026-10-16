@@ -1,0 +1,36 @@
+{
+    "entityId": "smok-x-cube-ii",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-124",
+            "title": "New Vaping Product Releases Roundup – August 2015",
+            "url": "https://ecigarettereviewed.com/new-vaping-product-releases-roundup-august-2015/",
+            "limitations": "Exact X Cube II release roundup is month-level evidence and does not establish the first worldwide sale."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Smok X Cube II review",
+            "url": "https://vaperanks.com/reviews/smok-x-cube-2-review/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

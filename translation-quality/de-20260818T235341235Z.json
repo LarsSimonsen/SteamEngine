@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260818T235341235Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded German pass identified two additional Kirchhoff terminology and sentence-register defects; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "de-20260819-006",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law heading used the literal adjective aktuelles instead of the electrical term Stromgesetz.",
+            "disposition": "resolved",
+            "evidence": ["Kirchhoffs aktuelles Gesetz is not the established German name for Kirchhoff's current law."],
+            "resolution": "Changed the heading to Kirchhoffs Stromgesetz."
+        },
+        {
+            "id": "de-20260819-007",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law paragraph used literal wegtragen wording and capitalized a clause after a semicolon.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ein Zweig ... wegträgt and Ein negatives Ergebnis after a semicolon."],
+            "resolution": "Used the natural electrical verb abführen and corrected German sentence register."
+        }
+    ]
+}

@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "sv",
+    "cycleId": "sv-20260818T184013713Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Swedish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Swedish pass identified 25 actionable terminology, grammar, technical-clarity, heat-flux, SI, and wire-gauge defects across electrical, circuit, thermal, and engineering content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Swedish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "sv-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current example title used the adjective current instead of the electrical quantity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Hitta aktuell."
+            ],
+            "resolution": "Changed it to Hitta strömmen."
+        },
+        {
+            "id": "sv-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-power heading used kraft, meaning force, instead of effekt.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Elektrisk kraft."
+            ],
+            "resolution": "Changed it to Elektrisk effekt."
+        },
+        {
+            "id": "sv-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The power paragraph used utrymme instead of a safety margin and repeated power terminology awkwardly.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph described thermal capacity and space rather than engineering margin."
+            ],
+            "resolution": "Rewrote it with säkerhetsmarginal and natural power wording."
+        },
+        {
+            "id": "sv-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating summary said current transforms resistance into heat rather than electrical energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary was Hur elektrisk ström förvandlar motstånd till värme."
+            ],
+            "resolution": "Changed it to electrical energy being converted to heat."
+        },
+        {
+            "id": "sv-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coil setup used bär for electrical current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup said the coil carries 3 A."
+            ],
+            "resolution": "Changed it to a coil conducting 3 A."
+        },
+        {
+            "id": "sv-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current bullet used awkward Swedish word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began Vid konstant ström fördubblar det dubbla motståndet."
+            ],
+            "resolution": "Rephrased it with a doubling of resistance doubling heating power."
+        },
+        {
+            "id": "sv-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heating bullet used the English loanword hårdvara.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text referred to air, liquid, and hardware."
+            ],
+            "resolution": "Changed it to utrustning."
+        },
+        {
+            "id": "sv-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-heating paragraph used physical space instead of a safety margin.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph instructed the reader to use suitable space."
+            ],
+            "resolution": "Rewrote it with a safety-margin warning and clear continuous-current limits."
+        },
+        {
+            "id": "sv-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The KCL heading used nuvarande, meaning current/present, instead of the electrical term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Kirchhoffs nuvarande lag."
+            ],
+            "resolution": "Changed it to Kirchhoffs strömlag."
+        },
+        {
+            "id": "sv-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL paragraph used aktuella riktningar instead of current directions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used aktuella riktningar before solving."
+            ],
+            "resolution": "Rewrote it with strömriktningar and natural node-flow wording."
+        },
+        {
+            "id": "sv-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-connection definition omitted the dative form needed for natural Swedish.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet said a series connection gives current only one path."
+            ],
+            "resolution": "Changed it to give the current one path through the components."
+        },
+        {
+            "id": "sv-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The voltage-law paragraph had incorrect Swedish grammar for the algebraic sum of voltage rises and drops.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous sentence began Den algebraiska summan av spänningen stiger och sjunker."
+            ],
+            "resolution": "Rewrote it with explicit voltage rises and drops and clearer series-resistance wording."
+        },
+        {
+            "id": "sv-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series-cell formula localized the protected series note.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression ended with (serie)."
+            ],
+            "resolution": "Restored the protected (series) notation."
+        },
+        {
+            "id": "sv-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning used an awkward noun phrase for series charging.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began Serie litiumjonladdning."
+            ],
+            "resolution": "Rephrased it as charging lithium-ion cells in series with cell-level monitoring."
+        },
+        {
+            "id": "sv-20260818-040",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR heading used kraft, meaning force, instead of effekt.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was TCR, kraft och praktiska gränser."
+            ],
+            "resolution": "Changed it to TCR, effekt och praktiska gränser."
+        },
+        {
+            "id": "sv-20260818-041",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The TCR current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was I = V/R."
+            ],
+            "resolution": "Restored I = V / R."
+        },
+        {
+            "id": "sv-20260818-042",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux display name omitted the density/per-area meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous name was Värmeflöde."
+            ],
+            "resolution": "Changed it to Värmeflödestäthet."
+        },
+        {
+            "id": "sv-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The final heat-flux checklist item used an infinitive where a direct imperative was needed.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text ended with använda värmekapacitet."
+            ],
+            "resolution": "Changed it to use värmekapacitet for the temperature change."
+        },
+        {
+            "id": "sv-20260818-044",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.0.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The SI length row used mätare, meaning a gauge or measuring device, instead of the unit metre.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used mätare."
+            ],
+            "resolution": "Changed it to meter."
+        },
+        {
+            "id": "sv-20260818-045",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The length-conversion heading used the English word Inches.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Inches och metrisk längd."
+            ],
+            "resolution": "Changed it to Tum och metrisk längd."
+        },
+        {
+            "id": "sv-20260818-046",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge display name used a gauge-reading term rather than wire dimensions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous name was Trådmätare."
+            ],
+            "resolution": "Changed it to Tråddimensioner: AWG, SWG och BWG."
+        },
+        {
+            "id": "sv-20260818-047",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-number guidance used awkward and inconsistent gauge terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used spårtal and spårvidd."
+            ],
+            "resolution": "Rewrote it with natural Swedish wording for gauge number and 00/000/0000 sizes."
+        },
+        {
+            "id": "sv-20260818-048",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The AWG formula localized the protected inch variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression used d_tum."
+            ],
+            "resolution": "Restored d_inch = 0.005 × 92^((36 - n) / 39)."
+        },
+        {
+            "id": "sv-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The wire-resistance formula omitted spaces around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was R = ρ × L/A."
+            ],
+            "resolution": "Restored R = ρ × L / A."
+        },
+        {
+            "id": "sv-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical wire specification used aktuell kapacitet, which means current/recent capacity rather than current-carrying capacity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used aktuell kapacitet."
+            ],
+            "resolution": "Changed it to strömkapaciteten."
+        }
+    ]
+}

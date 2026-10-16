@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260818T174136994Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded German pass identified 25 remaining technical wording, terminology, and notation defects across Ohm's law, Joule heating, TCR, trigonometry, thermal concepts, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Ohm-law section title used an overly literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Rechenbeispiele."
+        },
+        {
+            "id": "de-20260818-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The rearranged-formula instruction used the awkward verb einfügt.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a natural instruction to place the sought value on the left."
+        },
+        {
+            "id": "de-20260818-053",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule-heating description did not clearly state that current flows through a resistor.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with precise German technical wording."
+        },
+        {
+            "id": "de-20260818-054",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule example section title used Ausgearbeitetes Beispiel.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Rechenbeispiel."
+        },
+        {
+            "id": "de-20260818-055",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR section title used an awkward literal adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Beispielrechnung."
+        },
+        {
+            "id": "de-20260818-056",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The triangle example title used a bare imperative.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Eine Seite bestimmen."
+        },
+        {
+            "id": "de-20260818-057",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The triangle setup used an unnatural construction for forming an angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a natural German geometry statement."
+        },
+        {
+            "id": "de-20260818-058",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity section title retained Ausgearbeitetes Beispiel.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Beispielrechnung."
+        },
+        {
+            "id": "de-20260818-059",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object/material title used kontra rather than the clearer conjunction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Objekt und Material."
+        },
+        {
+            "id": "de-20260818-060",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The phase-change title was less direct than the standard German term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Phasenänderungen und praktische Grenzen."
+        },
+        {
+            "id": "de-20260818-061",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux display name remained Wärmefluss after the content was localized as Wärmestromdichte.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed the display name to Wärmestromdichte for consistency."
+        },
+        {
+            "id": "de-20260818-062",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-checks title used a less precise label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Praktische Prüfungen."
+        },
+        {
+            "id": "de-20260818-063",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux setup was less concise and did not foreground the heating element.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a clear 100 W heat-transfer statement."
+        },
+        {
+            "id": "de-20260818-064",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI title said common units rather than base units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to SI-Basiseinheiten."
+        },
+        {
+            "id": "de-20260818-065",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.headers.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI table header Menge was too vague for physical quantities.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Größe."
+        },
+        {
+            "id": "de-20260818-066",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The first length example retained mixed unit wording and formatting.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Localized it with Zoll, millimetres, and German decimal notation."
+        },
+        {
+            "id": "de-20260818-067",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The second length example retained mixed unit wording and formatting.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Localized it with German decimal notation and Zoll."
+        },
+        {
+            "id": "de-20260818-068",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge description used Feinheitsnummer, which is not the clearest term here.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with Drahtstärkennummer and an explicit named-system condition."
+        },
+        {
+            "id": "de-20260818-069",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge summary used an indirect compound.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with clear German terminology for wire-gauge numbers."
+        },
+        {
+            "id": "de-20260818-070",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The gauge-number bullet capitalized a clause after a semicolon and used Stärke inconsistently.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with correct German capitalization and consistent wording."
+        },
+        {
+            "id": "de-20260818-071",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance title did not name wire gauge clearly.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Drahtstärke, Fläche und Widerstand."
+        },
+        {
+            "id": "de-20260818-072",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to R = ρ × L / A."
+        },
+        {
+            "id": "de-20260818-073",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-specification title used a generic noun.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Praktische Angabe."
+        },
+        {
+            "id": "de-20260818-074",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The comparison title used a less natural word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Warum der Systemname wichtig ist."
+        },
+        {
+            "id": "de-20260818-075",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conversion title used Andere where Weitere is more natural in this list.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous German presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Weitere häufige Umrechnungen."
+        }
+    ]
+}

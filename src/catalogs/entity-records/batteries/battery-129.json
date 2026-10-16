@@ -1,0 +1,36 @@
+{
+    "entityId": "battery-129",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Linkdata 65P - 52A 6500mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-linkdata-65p-52a-6500mah-21700.994761/",
+            "limitations": "Complete exact-model report; 25A is the conservative thermal recommendation and tested samples lacked full production continuity evidence."
+        },
+        {
+            "id": "market",
+            "title": "Linkdata 21700S-65P Battery Cell - 6500mAh 52A",
+            "url": "https://diy500amp.com/products/linkdata-21700s-65p-battery-cell-6500mah-52a-high-capacity-high-power-cell",
+            "limitations": "Exact product listing and 30A independent load test; not a safety certification."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T213841320Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete effective es-419 locale, canonical English scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata validation, TypeScript typecheck, the full test suite, and the production build passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh pass identified five grouped areas for improvement in the remaining calculator, Wire Wizard, catalog-manager, route-metadata, and comparison wording."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Latin American Spanish human review was performed; the locale remains machine-reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested continued improvement, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "es419-calculator-residual-machine-terms",
+            "translationId": "calculators.converter.*;calculators.juice.*;calculators.modrange.*;calculators.tcr.*",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Several remaining calculator strings used literal, inconsistent, or semantically incorrect Spanish terms.",
+            "disposition": "resolved",
+            "evidence": [
+                "Converter, juice, mod-range, and TCR drafts still contained formal register fragments, Aporte, Ahorrar, fuerza for power, and actual for current.",
+                "The TCR title omitted de la resistencia and several controls mixed infinitives with formal imperatives."
+            ],
+            "resolution": "Standardized the affected calculator wording, register, electrical terminology, and TCR title and controls."
+        },
+        {
+            "id": "es419-wirewiz-terminology-residuals",
+            "translationId": "calculators.wirewiz.*;messages.home.tools.wirewiz;routes./wirewiz",
+            "category": "terminology-disagreement",
+            "severity": "high",
+            "summary": "Wire Wizard still mixed cable, hilo, bobina, and the English product title despite the locale policy preferring alambre and resistencia.",
+            "disposition": "resolved",
+            "evidence": [
+                "The effective title and route metadata disagreed between Wire Wizard, Asistente de hilos, and Asistente de cables.",
+                "Wire Wizard labels still used cable, Mesa, and other literal or misleading terms in the remaining draft values."
+            ],
+            "resolution": "Standardized the localized title on Asistente de alambres and corrected the remaining alambre, resistencia, vuelta, and current/physical-label wording."
+        },
+        {
+            "id": "es419-catalog-manager-agreement",
+            "translationId": "messages.catalogManager.choose;messages.catalogManager.builtIn;messages.catalogManager.custom;messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Generic catalog-manager functions produced agreement errors when item names were batteries, materials, or mods.",
+            "disposition": "resolved",
+            "evidence": [
+                "Patterns such as `${item} integrados` and `${item} personalizados` could produce mismatched gender and number in Spanish.",
+                "The button-top label used a literal noun phrase rather than describing a terminal with a button."
+            ],
+            "resolution": "Rephrased generic messages around elementos to avoid agreement errors and changed the terminal label to Terminal con botón."
+        },
+        {
+            "id": "es419-route-and-product-metadata",
+            "translationId": "routes./wirewiz;routes./tcr;messages.home.tools.wirewiz",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Route metadata and the home-page Wire Wizard entry were inconsistent with the calculator terminology policy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The route title was still Wire Wizard while the rest of the locale translated the function inconsistently.",
+                "The TCR route description referred to a generic temperature coefficient instead of the resistance temperature coefficient."
+            ],
+            "resolution": "Aligned route metadata and home-page presentation with Asistente de alambres and coeficiente de temperatura de la resistencia."
+        },
+        {
+            "id": "es419-comparison-residual-messages",
+            "translationId": "comparisons.mods.atomizerRange;comparisons.mods.platformUnknown;comparisons.mods.noSafetyFindings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The mods comparer retained a few machine-like or register-inconsistent fallback messages after the first correction batch.",
+            "disposition": "resolved",
+            "evidence": [
+                "Fallback messages still used stiff or formal phrasing such as no se registran hallazgos and no se puede comparar completamente.",
+                "The comparer draft used Gama de atomizadores while the locale otherwise uses rango for technical ranges."
+            ],
+            "resolution": "Rewrote the fallback messages and standardized the atomizer-range label as Rango del atomizador."
+        }
+    ]
+}

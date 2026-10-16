@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T200649890Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Nynorsk pass identified 25 remaining mixed-language and terminology issues across trigonometry, heat capacity, heat flux, SI conversions, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-151",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle explanation needed a more consistent Nynorsk rendering of the trigonometric relationships.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph mixed otherwise correct Nynorsk with a less consistent explanatory phrasing."],
+            "resolution": "Rewrote the paragraph with consistent terms for the opposite side, adjacent side, hypotenuse, and SOH-CAH-TOA."
+        },
+        {
+            "id": "nn-20260818-152",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The example title used the less precise generic noun side.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Finn ei side’."],
+            "resolution": "Changed it to the clearer Nynorsk title ‘Finn ei sidelengd’."
+        },
+        {
+            "id": "nn-20260818-153",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The waveform notation bullet used uninflected or mixed forms for the named quantities.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘A er amplitude, f er frekvens ... t er tid ... φ er fasevinkel’."],
+            "resolution": "Changed it to ‘A er amplituden, f er frekvensen i hertz, t er tida i sekund, og φ er fasevinkelen’."
+        },
+        {
+            "id": "nn-20260818-154",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The direction-and-phase instruction retained Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘Behold fortegn’."],
+            "resolution": "Changed it to the Nynorsk wording ‘Behald forteikn’."
+        },
+        {
+            "id": "nn-20260818-155",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity definition omitted the natural Nynorsk definite form.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘C er varmekapasitet’."],
+            "resolution": "Changed it to ‘C er varmekapasiteten’."
+        },
+        {
+            "id": "nn-20260818-156",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-energy definition was underspecified.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet only said ‘Q er overført varmeenergi’."],
+            "resolution": "Clarified it as ‘Q er tilført eller overført varmeenergi i joule (J)’."
+        },
+        {
+            "id": "nn-20260818-157",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The mass and specific-heat definition mixed indefinite and definite forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘m er masse ... c er spesifikk varmekapasitet’."],
+            "resolution": "Changed it to consistent Nynorsk: ‘m er massen ... c er den spesifikke varmekapasiteten’."
+        },
+        {
+            "id": "nn-20260818-158",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked example used Bokmål forms for water, temperature change, and the imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup said ‘Varm opp ... vann fra ...’."],
+            "resolution": "Changed it to ‘Varm opp 0,20 kg vatn frå 20 °C til 70 °C ...’."
+        },
+        {
+            "id": "nn-20260818-159",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The section title was unnecessarily long and less direct.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Oppvarming med elektrisk effekt’."],
+            "resolution": "Changed it to the concise title ‘Elektrisk oppvarming’."
+        },
+        {
+            "id": "nn-20260818-160",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object/material contrast used the less natural Bokmål-style connector kontra.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Objekt kontra materiale’."],
+            "resolution": "Changed it to the clearer Nynorsk title ‘Objekt og materiale’."
+        },
+        {
+            "id": "nn-20260818-161",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux density term used the Bokmål form tetthet.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘varmestrømstetthet’."],
+            "resolution": "Changed it to the Nynorsk technical term ‘varmestrømtettleik’."
+        },
+        {
+            "id": "nn-20260818-162",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-transfer-rate definition used an inconsistent adjective form.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘samlet varmeoverføringsrate’."],
+            "resolution": "Changed it to ‘samla varmeoverføringsrate’."
+        },
+        {
+            "id": "nn-20260818-163",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The area definition used an incomplete passive construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘arealet som varmen overføres gjennom’."],
+            "resolution": "Clarified it as ‘arealet som varmen blir overført gjennom’."
+        },
+        {
+            "id": "nn-20260818-164",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The definition paragraph used the less natural distinction between stored energy and heat flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘lagret energi’ and mixed ‘beskriver’ with the surrounding Nynorsk."],
+            "resolution": "Rewrote it with ‘lagra energi’ and consistent Nynorsk technical wording."
+        },
+        {
+            "id": "nn-20260818-165",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example conclusion used the Bokmål form gjennomsnittlige and tetthet.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion said ‘Den gjennomsnittlige varmestrømstettheten’."],
+            "resolution": "Changed it to ‘Den gjennomsnittlege varmestrømtettleiken’."
+        },
+        {
+            "id": "nn-20260818-166",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conductivity definition used the Bokmål compound varmeledningsevne.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘k er varmeledningsevne’."],
+            "resolution": "Changed it to ‘k er varmeleiingsevna’."
+        },
+        {
+            "id": "nn-20260818-167",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-difference definition used the Bokmål form temperaturforskjellen.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘ΔT er temperaturforskjellen over laget’."],
+            "resolution": "Changed it to ‘ΔT er temperaturskilnaden over laget’."
+        },
+        {
+            "id": "nn-20260818-168",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-conversion instruction retained the Bokmål imperative and verb.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Konverter arealet ... før du bruker W/m²’."],
+            "resolution": "Changed it to ‘Gjer om arealet ... før du brukar W/m²’."
+        },
+        {
+            "id": "nn-20260818-169",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The localized conversion formula used a decimal point instead of the locale's decimal comma.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula was ‘1 in² = 645.16 mm²’."],
+            "resolution": "Changed it to ‘1 in² = 645,16 mm²’."
+        },
+        {
+            "id": "nn-20260818-170",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length-conversion setup used Bokmål imperative and plural forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup began ‘Konverter ...’ and ended ‘5 mm til tommer’."],
+            "resolution": "Changed it to ‘Gjer om ... og 5 mm til tommar’."
+        },
+        {
+            "id": "nn-20260818-171",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length-conversion title used the Bokmål plural tommer.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Tommer og metrisk lengd’."],
+            "resolution": "Changed it to ‘Tommar og metrisk lengd’."
+        },
+        {
+            "id": "nn-20260818-172",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The AWG history bullet used the Bokmål adverb også.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘også historisk kjent’."],
+            "resolution": "Changed it to ‘òg historisk kjent’."
+        },
+        {
+            "id": "nn-20260818-173",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SWG description used the Bokmål compound platetykkelse.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended ‘for tråd- og platetykkelse’."],
+            "resolution": "Changed it to ‘for tråd- og platetjukkleik’."
+        },
+        {
+            "id": "nn-20260818-174",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The system-comparison title used the Bokmål form Hvorfor.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Hvorfor systemnavnet er viktig’."],
+            "resolution": "Changed it to ‘Kvifor systemnamnet er viktig’."
+        },
+        {
+            "id": "nn-20260818-175",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The nominal-dimensions note retained multiple Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘Disse’, ‘verdiene’, ‘flertrådet’, and ‘oppbygning’."],
+            "resolution": "Rewrote it with consistent Nynorsk: ‘Desse verdiane’, ‘fleirtråda’, and ‘oppbygging’."
+        }
+    ]
+}

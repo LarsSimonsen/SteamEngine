@@ -1,0 +1,55 @@
+{
+    "entityId": "lost-vape-therion-dna-166",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-185",
+            "title": "New Lost Vape Therion DNA 166W",
+            "url": "https://www.e-cigarette-forum.com/threads/new-lost-vape-therion-dna-166w.775417/",
+            "limitations": "Exact-device discussion says the Therion 166 was hitting the market; this is an upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Lost Vape Therion DNA 166 listing",
+            "url": "https://forum.planetofthevapes.co.uk/threads/price-lowered-on-urvapin-for-therion-dna-166w-tc-mod.128558/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "battery-followup-20260824",
+            "title": "Lost Vape Therion DNA166 user manual mirror",
+            "url": "https://www.scribd.com/document/806497963/Therion-DNA166",
+            "limitations": "The Lost Vape user manual, accessed through a Scribd mirror, labels the dual 18650 cells as series. A contemporary Planet of the Vapes review incorrectly labels installation as parallel; the issuer manual and the DNA250 two-cell profile are retained as decisive while the conflicting review claim remains documented."
+        },
+        {
+            "id": "operating-features-dna250-20260824",
+            "title": "Evolv DNA 250 datasheet",
+            "url": "https://downloads.evolvapor.com/dna250.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Evolv DNA-250 (2 cells, DNA-166)"
+            }
+        ]
+    }
+}

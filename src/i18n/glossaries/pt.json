@@ -109,20 +109,15 @@
         },
         "output-power": {
             "source": "output power",
-            "preferred": "potência emitida pelo atomizador",
-            "context": "‘Output’ refere-se à potência elétrica emitida pelo atomizador, não a uma interface ou a um campo genérico de saída.",
-            "state": "needs-review",
-            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Portuguese (Portugal) vaping terminology" },
-            "confidence": "medium",
-            "uncertainty": {
-                "reason": "Fontes portuguesas usam tanto ‘potência de saída’ como descrições centradas na emissão; é importante manter explícito que o valor é potência emitida pelo atomizador.",
-                "bestCurrentTranslation": "potência emitida pelo atomizador",
-                "alternatives": ["potência de saída do atomizador", "potência de saída"],
-                "sources": [
-                    { "label": "Vaping360 Portugal atomizer guide", "url": "https://vaping360.com/pt/learn/atomizers-clearomizers-cartomizers/" },
-                    { "label": "DGS: Cigarros eletrónicos", "url": "https://www.dgs.pt/programa-nacional-para-a-prevencao-e-controlo-do-tabagismo/cigarros-eletronicos.aspx" }
-                ]
-            }
+            "preferred": "potência de saída",
+            "context": "Potência elétrica de saída fornecida pelo mod ao atomizador, medida em watts. Não confundir com saída genérica, que pode incluir tensão e corrente.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent European Portuguese technical terminology review",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

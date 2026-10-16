@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T141647990Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Bengali pass identified 25 actionable formula, terminology, loanword, and technical-clarity defects across electrical, heating, trigonometric, thermal, and unit-check content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘I = V/R’."],
+            "resolution": "Restored the standard protected spacing in ‘I = V / R’."
+        },
+        {
+            "id": "bn-20260818-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance formula omitted spacing around the equality and division operators.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘R=V/I’."],
+            "resolution": "Restored ‘R = V / I’."
+        },
+        {
+            "id": "bn-20260818-053",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage example conclusion was less consistent than the protected formula notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used a prose-only voltage result."],
+            "resolution": "Changed it to the concise ‘ভোল্টেজ হল 5 V।’"
+        },
+        {
+            "id": "bn-20260818-054",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating title used an unnatural literal word order.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘কি গরম প্রভাবিত করে’."],
+            "resolution": "Changed it to the natural Bengali title ‘উত্তাপকে কী প্রভাবিত করে’."
+        },
+        {
+            "id": "bn-20260818-055",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance bullet used the vague phrase গরম করার শক্তি.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet described ‘গরম করার শক্তি’ rather than heating power."],
+            "resolution": "Changed it to the precise term উত্তাপের ক্ষমতা and stated the fourfold relationship."
+        },
+        {
+            "id": "bn-20260818-056",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current bullet used inconsistent resistance and heating terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet mixed প্রবাহ and প্রতিরোধ ক্ষমতা with heating power."],
+            "resolution": "Rewrote it with কারেন্ট, রোধ, and উত্তাপের ক্ষমতা."
+        },
+        {
+            "id": "bn-20260818-057",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage bullet used the awkward phrase তাপ শক্তি for heating power.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘তাপ শক্তি বৃদ্ধি পায়’."],
+            "resolution": "Changed it to the precise statement that heating power increases when resistance falls."
+        },
+        {
+            "id": "bn-20260818-058",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The safety paragraph retained the English loanword headroom.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph instructed the reader to use ‘হেডরুম’."],
+            "resolution": "Changed it to the clearer Bengali phrase নিরাপত্তা মার্জিন."
+        },
+        {
+            "id": "bn-20260818-059",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule example conclusion used an awkward rate construction and mixed unit styles.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘কুণ্ডলী প্রতি সেকেন্ডে 7.2 জুল’."],
+            "resolution": "Rewrote it with the rate 7.2 J per second and the protected 72 J and 10 s notation."
+        },
+        {
+            "id": "bn-20260818-060",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula used English side terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / hypotenuse’."],
+            "resolution": "Changed it to ‘বিপরীত বাহু / কর্ণ’."
+        },
+        {
+            "id": "bn-20260818-061",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula mixed English adjacent terminology with Bengali prose.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘adjacent / hypotenuse’."],
+            "resolution": "Changed it to ‘সন্নিহিত বাহু / কর্ণ’."
+        },
+        {
+            "id": "bn-20260818-062",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula used English side terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / adjacent’."],
+            "resolution": "Changed it to ‘বিপরীত বাহু / সন্নিহিত বাহু’."
+        },
+        {
+            "id": "bn-20260818-063",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-sine formula retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / hypotenuse’."],
+            "resolution": "Changed it to Bengali labels for বিপরীত বাহু and কর্ণ."
+        },
+        {
+            "id": "bn-20260818-064",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-cosine formula retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘adjacent / hypotenuse’."],
+            "resolution": "Changed it to Bengali labels for সন্নিহিত বাহু and কর্ণ."
+        },
+        {
+            "id": "bn-20260818-065",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-tangent formula retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / adjacent’."],
+            "resolution": "Changed it to Bengali labels for বিপরীত বাহু and সন্নিহিত বাহু."
+        },
+        {
+            "id": "bn-20260818-066",
+            "translationId": "catalog.concepts.concept-heat-capacity.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity description described a relationship rather than defining heat capacity directly.",
+            "disposition": "resolved",
+            "evidence": ["The previous description said heat capacity connects transferred energy with temperature change."],
+            "resolution": "Rewrote it as the energy required to change an object’s temperature."
+        },
+        {
+            "id": "bn-20260818-067",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Q definition used an ungrammatical passive construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was ‘Q হল জুলে (J) তাপ শক্তি স্থানান্তরিত হয়।’"],
+            "resolution": "Changed it to an explicit definition of transferred heat energy measured in joules."
+        },
+        {
+            "id": "bn-20260818-068",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The specific-heat definition used an imprecise literal term.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘নির্দিষ্ট তাপ ক্ষমতা’."],
+            "resolution": "Standardized it to বিশিষ্ট তাপধারণ ক্ষমতা and retained J/(kg·K)."
+        },
+        {
+            "id": "bn-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The ideal-heating setup used awkward punctuation and an unnatural loss clause.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup ended with ‘কোনও ক্ষতি নেই৷’."],
+            "resolution": "Rephrased it as heating the example with a constant source without losses."
+        },
+        {
+            "id": "bn-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-time conclusion spelled out the protected seconds unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with ‘523 সেকেন্ড’."],
+            "resolution": "Restored the protected 523 s notation."
+        },
+        {
+            "id": "bn-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area definition had an ungrammatical subject and object order.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘A হল সেই এলাকা যার মাধ্যমে তাপ বর্গ মিটার ... স্থানান্তরিত হয়’."],
+            "resolution": "Rewrote it as the area through which heat is transferred, in m²."
+        },
+        {
+            "id": "bn-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example title omitted the technical concept of flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘গড় হিটার প্রবাহ’."],
+            "resolution": "Changed it to ‘হিটারের গড় তাপ প্রবাহ ঘনত্ব’."
+        },
+        {
+            "id": "bn-20260818-073",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conduction title used an incorrect Bengali postposition and noun form.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘একটি সমতল স্তর মাধ্যমে পরিবাহী’."],
+            "resolution": "Changed it to ‘সমতল স্তরের মধ্য দিয়ে পরিবাহন’."
+        },
+        {
+            "id": "bn-20260818-074",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The radiation paragraph used an unclear Bengali rendering of emissivity.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘নির্গততা ε’."],
+            "resolution": "Changed it to the clearer term নিঃসরণ ক্ষমতা."
+        },
+        {
+            "id": "bn-20260818-075",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final unit-check instruction was grammatically incomplete.",
+            "disposition": "resolved",
+            "evidence": ["The previous instruction was ‘শুধুমাত্র শেষে বৃত্তাকার তাই মধ্যবর্তী ফলাফল ...’."],
+            "resolution": "Rewrote it as a complete instruction to round only at the end."
+        }
+    ]
+}

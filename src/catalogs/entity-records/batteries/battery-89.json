@@ -1,0 +1,81 @@
+{
+    "entityId": "battery-89",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Provisional research record for Great Power 50Q.",
+        "description": "Battery Mooch tested cells identified as Great Power 50Q and reported a 5000mAh nominal datasheet rating. The exact test supports a conservative 40A continuous value; higher 100A/125A figures are temperature-limited or otherwise unsuitable as the default runtime value.",
+        "highlights": [
+            "Exact marketed identity is documented in an exact-model vaping test and its referenced datasheet.",
+            "Discovery value is 5000mAh and 40A continuous; higher figures are temperature-limited or pulse-oriented.",
+            "The tested cells lacked CCC and CE marks, so production and wrapper continuity remain unresolved.",
+            "Runtime admission is recorded as battery-89.",
+            "Runtime admission is recorded separately from editorial visibility."
+        ]
+    },
+    "sources": [
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: Great Power 50Q - 50A 5000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-great-power-50q-50a-5000mah-21700.994348/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model test; samples lacked CCC and CE marks and the report notes unusually inconsistent measured capacity."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact tested identity is Great Power 50Q, as named in the test report and referenced datasheet.",
+            "evidenceDate": "2026-06-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "capacity",
+            "statement": "The referenced datasheet lists 4950mAh minimum and 5000mAh nominal capacity for the tested Great Power 50Q.",
+            "evidenceDate": "2026-06-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch estimated 40A true continuous current from the exact test; 100A was temperature-limited and the datasheet's 125A/180A figures are not conservative runtime values.",
+            "evidenceDate": "2026-06-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Great Power 50Q has an eligible exact-model vaping battery test.",
+            "evidenceDate": "2026-06-04",
+            "confidence": "high"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current Steam Engine battery catalog contains no exact Great Power 50Q preset.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not established in this pass.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

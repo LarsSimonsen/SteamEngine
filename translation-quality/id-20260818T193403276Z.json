@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "id",
+    "cycleId": "id-20260818T193403276Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Indonesian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Indonesian pass identified 25 actionable literal, register, circuit, thermal, and technical-clarity defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Indonesian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "id-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example heading used an awkward literal phrase meaning a successful example.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Contoh yang berhasil."
+            ],
+            "resolution": "Changed it to the natural technical heading Contoh perhitungan."
+        },
+        {
+            "id": "id-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The power paragraph translated thermal dissipation capability as thermal capacity and free space.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used kapasitas termal dan ruang kepala."
+            ],
+            "resolution": "Rewrote it with kemampuan membuang panas and margin keamanan."
+        },
+        {
+            "id": "id-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The unit-conversion instruction used an English technical noun instead of the established Indonesian term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Jaga konsistensi unit sebelum menghitung."
+            ],
+            "resolution": "Changed unit to the standard Indonesian term satuan."
+        },
+        {
+            "id": "id-20260818-029",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The limits paragraph used jaringan where the surrounding electrical terminology consistently refers to circuits.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous sentence referred to jaringan seri dan paralel."
+            ],
+            "resolution": "Changed it to rangkaian seri dan paralel for consistent technical usage."
+        },
+        {
+            "id": "id-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power heading used a less precise noun for the heating process.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Daya pemanas."
+            ],
+            "resolution": "Changed it to Daya pemanasan."
+        },
+        {
+            "id": "id-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule-heating worked-example heading used an awkward literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Contoh yang berhasil."
+            ],
+            "resolution": "Changed it to Contoh perhitungan."
+        },
+        {
+            "id": "id-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heading used a literal question structure that was less natural as a technical section title.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Apa yang mempengaruhi pemanasan."
+            ],
+            "resolution": "Changed it to Faktor yang memengaruhi pemanasan."
+        },
+        {
+            "id": "id-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-squared relationship was stated with an awkward noun phrase for doubling current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used penggandaan arus menghasilkan daya pemanasan empat kali lipat."
+            ],
+            "resolution": "Rephrased it as melipatgandakan arus and four times greater heating power."
+        },
+        {
+            "id": "id-20260818-034",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph translated safety margin as physical clearance and used a less precise power-source term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used ruang kepala and catu daya."
+            ],
+            "resolution": "Rewrote it with margin keamanan and sumber daya while preserving the continuous-current warning."
+        },
+        {
+            "id": "id-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The node definition left the central circuit term in English.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began Node adalah."
+            ],
+            "resolution": "Changed Node to the standard Indonesian electrical term Simpul."
+        },
+        {
+            "id": "id-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The branch definition referred to two nodes with an untranslated English term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet ended dengan dua node."
+            ],
+            "resolution": "Changed it to dua simpul."
+        },
+        {
+            "id": "id-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The loop definition needed a more natural Indonesian description of a closed path.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used jalur tertutup yang kembali ke titik awalnya."
+            ],
+            "resolution": "Rephrased it as lintasan tertutup yang kembali ke titik awalnya."
+        },
+        {
+            "id": "id-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-connection definition used an awkward verb phrase for providing a current path.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Sambungan seri hanya memberikan arus satu jalur melalui komponen."
+            ],
+            "resolution": "Changed it to Rangkaian seri menyediakan satu jalur arus melalui komponen."
+        },
+        {
+            "id": "id-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law example left node untranslated in an otherwise Indonesian explanation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous sentence used masuk ke sebuah node."
+            ],
+            "resolution": "Changed node to simpul."
+        },
+        {
+            "id": "id-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The cell heading used an unnecessary secara construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Sel secara seri dan paralel."
+            ],
+            "resolution": "Changed it to the concise Sel seri dan paralel."
+        },
+        {
+            "id": "id-20260818-041",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell statement placed kira-kira awkwardly and made the capacity increase unclear.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet ended kapasitas dan arus yang tersedia bertambah kira-kira."
+            ],
+            "resolution": "Rewrote it to state that voltage remains fixed while available capacity and current approximately increase."
+        },
+        {
+            "id": "id-20260818-042",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heading used memecahkan, which is less idiomatic for analyzing an electrical circuit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Memecahkan rangkaian nyata."
+            ],
+            "resolution": "Changed it to Menganalisis rangkaian nyata."
+        },
+        {
+            "id": "id-20260818-043",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The analysis checklist used an overly literal imperative for assigning circuit quantities.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began Tandai tegangan simpul."
+            ],
+            "resolution": "Changed it to the clearer imperative Tentukan tegangan simpul."
+        },
+        {
+            "id": "id-20260818-044",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL checklist used node in English even though the circuit terminology was being localized.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet said Terapkan KCL pada node independen."
+            ],
+            "resolution": "Changed it to Terapkan KCL pada simpul independen."
+        },
+        {
+            "id": "id-20260818-045",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR worked-example heading used the same awkward literal phrase as other examples.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Contoh yang berhasil."
+            ],
+            "resolution": "Changed it to Contoh perhitungan."
+        },
+        {
+            "id": "id-20260818-046",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation used awkward literal geometry wording and an unclear SOH-CAH-TOA explanation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said sisi yang berlawanan berhadapan dengannya and sisi yang berdekatan menyentuhnya tidak termasuk sisi miring."
+            ],
+            "resolution": "Rewrote the paragraph with explicit Indonesian definitions of opposite, adjacent, and hypotenuse sides."
+        },
+        {
+            "id": "id-20260818-047",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The example heading was an incomplete literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Temukan sisinya."
+            ],
+            "resolution": "Changed it to Menentukan panjang sisi."
+        },
+        {
+            "id": "id-20260818-048",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity worked-example heading used an awkward literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Contoh yang berhasil."
+            ],
+            "resolution": "Changed it to Contoh perhitungan."
+        },
+        {
+            "id": "id-20260818-049",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object-versus-material heading was a literal contrast that sounded unnatural in Indonesian.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Objek versus material."
+            ],
+            "resolution": "Changed it to Benda dan material."
+        },
+        {
+            "id": "id-20260818-050",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux worked-example heading used an awkward literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Contoh yang berhasil."
+            ],
+            "resolution": "Changed it to Contoh perhitungan."
+        }
+    ]
+}

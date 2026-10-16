@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "locale": "fr",
+    "cycleId": "fr-20260818T160840902Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and French source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded French pass identified 25 actionable technical translation, notation, and SI terminology defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent French human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {"id":"fr-20260818-026","translationId":"concept-ohms-law.relationship.bullets.1","category":"translation-defect","severity":"low","summary":"The current definition repeated ampères unnecessarily.","disposition":"resolved","evidence":["The source defines I as current measured in amperes."],"resolution":"Rewrote the sentence with one unit name."},
+        {"id":"fr-20260818-027","translationId":"concept-ohms-law.worked-examples.1.formulas.0","category":"factual-or-safety-risk","severity":"high","summary":"The resistance example contained the invalid result 6 = 9.","disposition":"resolved","evidence":["12 V / 2 A equals 6 Ω."],"resolution":"Restored R = 12 V / 2 A = 6 Ω."},
+        {"id":"fr-20260818-028","translationId":"concept-ohms-law.worked-examples.1.conclusion","category":"factual-or-safety-risk","severity":"high","summary":"The resistance conclusion repeated the invalid 6 = 9 result.","disposition":"resolved","evidence":["The calculated circuit resistance is 6 Ω."],"resolution":"Restored the correct numerical conclusion."},
+        {"id":"fr-20260818-029","translationId":"concept-joule-heating.worked-example.formulas.0","category":"translation-defect","severity":"low","summary":"The power formula used spaces around exponent operators unlike the rest of the technical notation.","disposition":"resolved","evidence":["The expression is P = I^2 × R."],"resolution":"Standardized the expression to P = I^2 × R."},
+        {"id":"fr-20260818-030","translationId":"concept-joule-heating.worked-example.conclusion","category":"factual-or-safety-risk","severity":"medium","summary":"The conclusion expressed power as joules per second without clearly separating power and energy.","disposition":"resolved","evidence":["The calculation gives 7.2 W and 72 J over 10 seconds."],"resolution":"Separated the 7.2 W power result from the 72 J energy result."},
+        {"id":"fr-20260818-031","translationId":"concept-joule-heating.what-affects-heating.bullets.3","category":"translation-defect","severity":"low","summary":"Matériel was less precise than équipement for the heat-transfer recipient.","disposition":"resolved","evidence":["The source refers to heat transfer to air, liquid, and equipment."],"resolution":"Changed the term to équipement."},
+        {"id":"fr-20260818-032","translationId":"concept-joule-heating.what-affects-heating.paragraphs.0","category":"translation-defect","severity":"low","summary":"The paragraph used an awkward construction for changing temperature.","disposition":"resolved","evidence":["The sentence distinguishes energy-transfer rate from temperature."],"resolution":"Rewrote it with modifier la température."},
+        {"id":"fr-20260818-033","translationId":"concept-kirchhoffs-laws.circuit-terms.bullets.1","category":"translation-defect","severity":"low","summary":"The branch definition used a literal current-path phrase.","disposition":"resolved","evidence":["A branch is a current path between two nodes."],"resolution":"Used chemin de courant."},
+        {"id":"fr-20260818-034","translationId":"concept-kirchhoffs-laws.current-law.title","category":"translation-defect","severity":"low","summary":"The current-law title was mistranslated as a law about what is current.","disposition":"resolved","evidence":["The section is Kirchhoff's current law."],"resolution":"Changed it to la loi des courants de Kirchhoff."},
+        {"id":"fr-20260818-035","translationId":"concept-kirchhoffs-laws.current-law.paragraphs.0","category":"translation-defect","severity":"low","summary":"The KCL example used a less natural phrase for a branch carrying current away from a node.","disposition":"resolved","evidence":["One branch carries 3 A away and the remaining branches carry 5 A away."],"resolution":"Used évacue for both current flows."},
+        {"id":"fr-20260818-036","translationId":"concept-kirchhoffs-laws.voltage-law.formulas.1","category":"translation-defect","severity":"low","summary":"The KVL example used decimal-point notation in a French decimal-comma context.","disposition":"resolved","evidence":["The source value is 8.0 V."],"resolution":"Changed the expression to +8,0 V."},
+        {"id":"fr-20260818-037","translationId":"concept-kirchhoffs-laws.voltage-law.formulas.2","category":"translation-defect","severity":"low","summary":"The parallel-branch label remained in English inside a French formula.","disposition":"resolved","evidence":["The formula identifies parallel branches."],"resolution":"Changed it to branches parallèles."},
+        {"id":"fr-20260818-038","translationId":"concept-kirchhoffs-laws.cells.formulas","category":"translation-defect","severity":"low","summary":"The cell formulas needed stable French series and parallel labels.","disposition":"resolved","evidence":["The equations distinguish series voltage addition from parallel capacity addition."],"resolution":"Used série and parallèle."},
+        {"id":"fr-20260818-039","translationId":"concept-trigonometry.degrees-and-radians.formulas.0","category":"translation-defect","severity":"low","summary":"The radians label remained in English.","disposition":"resolved","evidence":["The formula labels the unit radians."],"resolution":"Changed the label to radians."},
+        {"id":"fr-20260818-040","translationId":"concept-trigonometry.waveforms-and-identities.title","category":"translation-defect","severity":"low","summary":"The waveform heading was less natural than the standard French technical phrase.","disposition":"resolved","evidence":["The section contains waveforms and useful identities."],"resolution":"Changed it to Formes d'onde et identités utiles."},
+        {"id":"fr-20260818-041","translationId":"concept-heat-capacity.summary","category":"translation-defect","severity":"low","summary":"The summary was phrased as a question and did not match the concise catalog style.","disposition":"resolved","evidence":["The summary describes the energy required for temperature change."],"resolution":"Changed it to a concise technical summary."},
+        {"id":"fr-20260818-042","translationId":"concept-heat-capacity.worked-example.examples.0.title","category":"translation-defect","severity":"low","summary":"The worked-example title was less direct than the French infinitive construction.","disposition":"resolved","evidence":["The example heats water."],"resolution":"Changed it to Chauffer de l'eau."},
+        {"id":"fr-20260818-043","translationId":"concept-heat-capacity.electrical-heating.title","category":"translation-defect","severity":"low","summary":"The heading used chauffage in a way that could suggest a building-heating context.","disposition":"resolved","evidence":["The section models heating using electrical energy."],"resolution":"Changed it to Chauffage par énergie électrique."},
+        {"id":"fr-20260818-044","translationId":"concept-heat-capacity.phase-changes-and-limits.title","category":"translation-defect","severity":"low","summary":"The phase-change heading needed the standard French technical wording.","disposition":"resolved","evidence":["The section covers phase changes and practical limits."],"resolution":"Changed the heading accordingly."},
+        {"id":"fr-20260818-045","translationId":"concept-heat-flux.summary","category":"factual-or-safety-risk","severity":"medium","summary":"The summary did not explicitly communicate the per-area nature of heat flux.","disposition":"resolved","evidence":["Heat flux is a transfer quantity per unit area."],"resolution":"Changed it to transfer thermique par unité de surface."},
+        {"id":"fr-20260818-046","translationId":"concept-heat-flux.definition.bullets.0","category":"factual-or-safety-risk","severity":"medium","summary":"q'' was labeled as heat flux rather than heat-flux density.","disposition":"resolved","evidence":["q'' is measured in W/m²."],"resolution":"Used densité de flux thermique."},
+        {"id":"fr-20260818-047","translationId":"concept-heat-flux.worked-example.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The worked formula needed explicit SI units and consistent French spacing.","disposition":"resolved","evidence":["The example divides 100 W by 0.020 m²."],"resolution":"Restored q'' = 100 W / 0,020 m² = 5 000 W/m²."},
+        {"id":"fr-20260818-048","translationId":"concept-si-system-and-imperial-units.base-units.rows.0-2","category":"factual-or-safety-risk","severity":"high","summary":"The first SI rows were reviewed for correct French names and symbols for metre, kilogram, and second.","disposition":"resolved","evidence":["The required rows are mètre/m, kilogramme/kg, and seconde/s."],"resolution":"Corrected the affected names and symbols."},
+        {"id":"fr-20260818-049","translationId":"concept-si-system-and-imperial-units.base-units.rows.4-5","category":"factual-or-safety-risk","severity":"high","summary":"The ampere and mole rows needed stable French SI names and symbols.","disposition":"resolved","evidence":["The symbols are A and mol."],"resolution":"Corrected the affected rows."},
+        {"id":"fr-20260818-050","translationId":"concept-si-system-and-imperial-units.base-units.rows.6","category":"factual-or-safety-risk","severity":"high","summary":"The candela row used a non-SI symbol.","disposition":"resolved","evidence":["The SI symbol for candela is cd."],"resolution":"Restored cd."}
+    ]
+}

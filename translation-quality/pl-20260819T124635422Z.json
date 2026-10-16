@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1, "locale": "pl", "cycleId": "pl-20260819T124635422Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Polish source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Polish critique found protected-name drift, reversed chronology, coil-lead errors, and awkward nicotine-safety copy." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Polish human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "pl-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated as ordinary phrases.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored protected names across shared and calculator labels." },
+        { "id": "pl-date", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Available by was rendered as available through/via.", "disposition": "resolved", "evidence": ["The canonical label expresses an upper date bound."], "resolution": "Used najpóźniej." },
+        { "id": "pl-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and power loss were translated as trouser legs and anatomical legs.", "disposition": "resolved", "evidence": ["The fields describe electrical wire leads."], "resolution": "Used wyprowadzenia consistently." },
+        { "id": "pl-safety", "translationId": "calculators.juice.safetyText", "category": "factual-or-safety-risk", "severity": "medium", "summary": "The warning referred vaguely to mixing concoctions and used awkward wording.", "disposition": "resolved", "evidence": ["The canonical warning concerns mixing e-liquid."], "resolution": "Rewrote the warning explicitly and concisely." }
+    ]
+}

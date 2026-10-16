@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "it",
+    "cycleId": "it-20260818T210544122Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Italian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Italian pass identified 25 remaining grammar, terminology, notation, and unit-clarity defects across Ohm's law, Joule heating, Kirchhoff's laws, TCR, trigonometry, heat capacity, heat flux, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Italian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "it-20260818-101",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rearranged-formula instruction used an awkward literal construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said Utilizza la versione che mette il valore che vuoi trovare a sinistra."],
+            "resolution": "Rewrote it as Usa la versione che mette a sinistra il valore che vuoi trovare."
+        },
+        {
+            "id": "it-20260818-102",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-examples heading was a literal phrase rather than the standard Italian term.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used Esempi realizzati."],
+            "resolution": "Changed it to Esempi svolti."
+        },
+        {
+            "id": "it-20260818-103",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description used an imprecise phrase for a resistive component.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said quando la corrente scorre attraverso la resistenza."],
+            "resolution": "Rewrote it with riscaldamento per effetto Joule and un resistore."
+        },
+        {
+            "id": "it-20260818-104",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power introduction used an unnatural adjective order.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said La potenza elettrica riscaldante è."],
+            "resolution": "Changed it to La potenza di riscaldamento elettrico è."
+        },
+        {
+            "id": "it-20260818-105",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The paragraph incorrectly described electrical energy as a rate of energy transfer.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said L'energia elettrica è una velocità di trasferimento di energia."],
+            "resolution": "Corrected the subject to La potenza elettrica and retained the temperature distinction."
+        },
+        {
+            "id": "it-20260818-106",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Kirchhoff description used circuiti chiusi where the concept is conservation along closed loops.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation described conservation attorno ai circuiti chiusi."],
+            "resolution": "Rewrote it with conservation of charge at nodes and energy along closed loops."
+        },
+        {
+            "id": "it-20260818-107",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Kirchhoff summary used a less direct sentence structure.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation began Come si comportano la corrente e la tensione."],
+            "resolution": "Changed it to Il comportamento della corrente e della tensione nei circuiti collegati."
+        },
+        {
+            "id": "it-20260818-108",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction used an overly literal phrase about reasoning over a diagram.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said rendono più facile ragionare su uno schema elettrico."],
+            "resolution": "Changed it to I termini di base facilitano l'analisi di uno schema elettrico."
+        },
+        {
+            "id": "it-20260818-109",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The branch definition omitted the preposition needed before corrente.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said Un ramo è un percorso corrente tra due nodi."],
+            "resolution": "Changed it to Un ramo è un percorso per la corrente tra due nodi."
+        },
+        {
+            "id": "it-20260818-110",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The loop definition used the English loanword loop instead of an Italian technical phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation began Un loop è."],
+            "resolution": "Changed it to Un percorso chiuso ritorna al punto di partenza."
+        },
+        {
+            "id": "it-20260818-111",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR example setup used an unnatural passive sentence structure.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said A 20 °C è specificata una resistenza di 1,00 Ω."],
+            "resolution": "Rewrote it as Una resistenza da 1,00 Ω è specificata a 20 °C."
+        },
+        {
+            "id": "it-20260818-112",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR unit guidance used temperatures as the grammatical subject of using a scale.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said Le temperature devono utilizzare la stessa scala."],
+            "resolution": "Changed it to Usa la stessa scala e le stesse unità di temperatura."
+        },
+        {
+            "id": "it-20260818-113",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR applicability paragraph used a literal translation for thermal gradients and material changes.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used Gradienti di temperatura and cambiamenti di materiale."],
+            "resolution": "Rewrote it with Gradienti termici and modifiche del materiale."
+        },
+        {
+            "id": "it-20260818-114",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry explanation used awkward wording for the opposite and adjacent sides.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation described the sine as opposto all'ipotenusa rather than defining the ratio."],
+            "resolution": "Rewrote the explanation with explicit seno = opposto/ipotenusa, coseno = adiacente/ipotenusa, and tangente = opposto/adiacente."
+        },
+        {
+            "id": "it-20260818-115",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.degrees-and-radians.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The radians formula localized the protected degree-variable name.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used θ_gradi instead of the canonical θ_deg variable."],
+            "resolution": "Changed it to θ_rad = θ_deg × π / 180."
+        },
+        {
+            "id": "it-20260818-116",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading used contro where the section compares two related concepts.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used Oggetto contro materiale."],
+            "resolution": "Changed it to Oggetto e materiale."
+        },
+        {
+            "id": "it-20260818-117",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The material-property paragraph used a plural where the concept refers to the material in the example.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said La capacità termica specifica è una proprietà dei materiali."],
+            "resolution": "Changed it to una proprietà del materiale and clarified the mass relationship."
+        },
+        {
+            "id": "it-20260818-118",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The total heat-transfer-rate definition had a redundant word order.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation said la velocità di trasferimento del calore totale in watt."],
+            "resolution": "Rewrote it as la velocità totale di trasferimento del calore, misurata in watt."
+        },
+        {
+            "id": "it-20260818-119",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table heading said common units rather than base units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used Unità SI comuni for the seven base units."],
+            "resolution": "Changed it to Unità di base SI."
+        },
+        {
+            "id": "it-20260818-120",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.3.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI base-unit table capitalized the unit name kelvin inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used Kelvin in the unit-name cell."],
+            "resolution": "Changed the unit name to lowercase kelvin while preserving symbol K."
+        },
+        {
+            "id": "it-20260818-121",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.4.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The nano prefix used an uppercase N instead of the SI symbol n.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation listed nano with symbol N, which denotes a different SI prefix."],
+            "resolution": "Corrected the symbol to lowercase n."
+        },
+        {
+            "id": "it-20260818-122",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG formula localized the protected inch-diameter variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation used d_pollici instead of the canonical d_inch variable."],
+            "resolution": "Changed it to d_inch while retaining Italian decimal formatting."
+        },
+        {
+            "id": "it-20260818-123",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The nominal-diameter instruction used an infinitive while the surrounding checklist uses direct instructions.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation began Includere il diametro nominale."],
+            "resolution": "Changed it to Includi il diametro nominale."
+        },
+        {
+            "id": "it-20260818-124",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The dimension-type instruction was an incomplete literal fragment.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation began Indicare se la dimensione è conduttore nudo."],
+            "resolution": "Rewrote it as Indica se la dimensione è quella del conduttore nudo, del diametro isolato, della lamiera o della parete del tubo."
+        },
+        {
+            "id": "it-20260818-125",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The final wire-gauge bullet translated gauge number as manometer number.",
+            "disposition": "resolved",
+            "evidence": ["The previous Italian presentation ended with dal numero del manometro, which refers to a pressure instrument."],
+            "resolution": "Changed it to dal numero del calibro and retained the instruction to use product data and electrical standards."
+        }
+    ]
+}

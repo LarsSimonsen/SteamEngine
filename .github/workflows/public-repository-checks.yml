@@ -1,0 +1,55 @@
+name: Public repository checks
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  catalog-data-guard:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reject pull-request changes to generated catalog data
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          OWNER: ${{ github.repository_owner }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          changed="$(git diff --name-only "$BASE_SHA"...HEAD -- \
+            src/catalogs/batteries/defaults.ts \
+            src/catalogs/materials/defaults.ts \
+            src/catalogs/mods/presets.json \
+            src/catalogs/entity-records)"
+          if [ -z "$changed" ]; then
+            echo "No generated catalog data changed."
+            exit 0
+          fi
+          if [ "$AUTHOR" = "$OWNER" ] && [[ "$HEAD_REF" == catalog/* ]]; then
+            echo "Generated catalog update from a maintainer catalog branch."
+            exit 0
+          fi
+          echo "::error::Generated catalog data cannot be changed by pull request. See CONTRIBUTING.md#catalog-data."
+          echo "$changed"
+          exit 1
+
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:public
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build:cloudflare

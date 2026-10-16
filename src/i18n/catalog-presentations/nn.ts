@@ -1,20 +1,145 @@
 /* Machine-materialized draft. Human review may edit string values. */
 
 import type { CatalogPresentationSet } from "../catalog-presentations";
+import { batteryPresentationsFor, type BatteryTextDictionary } from "../battery-presentation-text";
 import { normalizeNynorsk } from "../nynorsk-normalization";
+import { modPresentationsFor, type ModTextDictionary } from "../mod-presentation-text";
+import {
+    materialPresentationsFor,
+    type MaterialDisplayNames,
+    type MaterialTextDictionary,
+} from "../material-presentation-text";
+
+export const batteryTexts: BatteryTextDictionary = {
+    "battery.summary.removable": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
+    "battery.summary.integrated": "Ei intern batteripakke i eininga, ikkje ei celle brukaren kan byte.",
+    "battery.note.approvedResearch": "Godkjend 2026-08-13; sjå den tilhøyrande forskingsoppføringa.",
+    "battery.note.capacityBelowLabel": "Den faktiske kapasiteten er lågare enn etiketten antyder.",
+    "battery.note.battery-71.evidence": "20 A kontinuerleg verdi; pulsverdiar blir ikkje brukte.",
+    "battery.note.battery-77.evidence":
+        "20 A som konservativ, uavhengig samanlikningsverdi; nøyaktig "
+        + "omslag og produksjonsrevisjon er framleis relevante.",
+    "battery.note.battery-78.evidence":
+        "15 A som konservativ verdi frå testing av nøyaktig modell; den "
+        + "testa CCC-merkte revisjonen er framleis relevant.",
+    "battery.note.battery-79.evidence":
+        "45 A uavhengig kontinuerleg verdi for den testa revisjonen utan kontaktfaner "
+        + "(tabless); ikkje erstatt denne med pulsverdiar.",
+    "battery.note.battery-80.evidence": "36 A faktisk kontinuerleg verdi; 56 A-verdien er temperaturavgrensa.",
+    "battery.note.battery-81.evidence":
+        "40 A konservativ verdi; dei testa cellene såg ut til å "
+        + "vere førproduksjon og mangla CCC-logo.",
+    "battery.note.battery-82.evidence":
+        "13 A anbefalt kontinuerleg verdi; 16,8 A er eit absolutt "
+        + "maksimum som ikkje er meint for lang levetid.",
+    "battery.note.battery-83.evidence":
+        "40 A konservativ verdi; 70 A er temperaturavgrensa, og dei "
+        + "testa prøvene var førproduksjon.",
+    "battery.note.battery-84.evidence":
+        "40 A samanlikningsverdi for produksjonscelle; 70 A krev "
+        + "temperaturkontroll.",
+    "battery.note.battery-85.evidence":
+        "40 A verdi for nøyaktig omslag; 70 A er avgrensa til 60 "
+        + "°C, og cella blei testa som ei ompakka EVE 40PL-celle.",
+    "battery.note.battery-86.evidence":
+        "19 A konservativ verdi; dei nøyaktig testa prøvene såg ut "
+        + "til å vere førproduksjon og mangla CCC-merke.",
+    "battery.note.battery-87.evidence":
+        "40 A konservativ verdi; 90 A er temperaturavgrensa, og dei "
+        + "testa cellene såg ut til å vere førproduksjon.",
+    "battery.note.battery-88.evidence":
+        "40 A konservativ verdi; 60 A er temperaturavgrensa, og "
+        + "produksjonskontinuiteten er framleis uavklart.",
+    "battery.note.battery-89.evidence":
+        "40 A konservativ verdi; dei testa prøvene hadde ujamn "
+        + "kapasitet og mangla CCC-/CE-merke.",
+    "battery.note.battery-90.evidence":
+        "13 A konservativ verdi; dei nøyaktig testa prøvene såg ut "
+        + "til å vere førproduksjon og mangla CCC-merke.",
+    "battery.note.battery-91.evidence":
+        "30 A kontinuerleg verdi anslått av testaren; Reliance sitt "
+        + "maksimum på 50 A er temperaturavgrensa.",
+    "battery.note.battery-92.evidence":
+        "20 A kontinuerleg verdi frå to produksjonsrelaterte "
+        + "testparti; 30 A er temperaturavgrensa.",
+    "battery.note.battery-93.evidence":
+        "12 A kontinuerleg; 20 A er berre puls. Det nøyaktig "
+        + "testa omslaget er registrert som SA110 / INR18650/40.",
+    "battery.note.battery-94.evidence":
+        "20 A verdi for nøyaktig omslag; testaren tilrår under "
+        + "15 A kontinuerleg. Vapehuset oppgir 25 A i tittelen, og "
+        + "seinare kjelder til ompakka celler eller omslagsrevisjonar kan avvike.",
+    "battery.note.battery-95.evidence":
+        "30 A verdi for nøyaktig modell; dette er ei ompakka celle, og "
+        + "seinare omslagsrevisjonar eller underliggjande kjelde kan "
+        + "avvike.",
+    "battery.note.battery-96.evidence":
+        "30 A verdi for nøyaktig revisjon med fem kontaktbein; revisjonar med fire "
+        + "kontaktbein og seinare revisjonar med same omslag er vesentleg "
+        + "ulike og må ikkje arve denne profilen.",
+    "battery.safety.lowDrain":
+        "Batteri med låg utladingsstraum; ikkje eigna for damping.",
+};
+
+const nynorskMaterialNames: MaterialDisplayNames = {
+    ti1: "Titan 1",
+    ti2: "Titan 2 (R50400)",
+    w: "Wolfram",
+    nio: "Niobiumlegering",
+    ni200: "Nikkel 200 / Ni200 (UNS N02200)",
+    zr: "Zirkonium (rent)",
+};
+export const materialTexts: MaterialTextDictionary = {
+    "material.profile": (displayName) => "Katalogprofil for " + displayName + ".",
+    "material.safety.verifiedProfile":
+        "Bruk ein verifisert materialprofil, og følg temperatur- og "
+        + "driftsgrensene til eininga.",
+};
+export const modTexts: ModTextDictionary = {
+    "mod.profile.regulated": (displayName) => "Profil for ei regulert eining eller eit styrekort: "
+        + displayName + ".",
+    "mod.preset-9.profile":
+        "Billet Box Rev. 3a med perleblåst, blankdyppa anodisert "
+        + "aluminiumsfinish; introdusert i mai 2014.",
+    "mod.preset-10.profile":
+        "Ei Cloupor-eining på 30 W med eit tredjeparts "
+        + "klonebrikkesett i DNA30-stil, ikkje eit autentisk Evolv "
+        + "DNA-30D-kort.",
+    "mod.preset-231.profile":
+        "Regulert mod med to 21700-celler og 18650-adapterar; "
+        + "VAPORESSO oppgir 220 W; testing målte 208 W, 8,979 V og 39 "
+        + "A.",
+    "mod.preset-234.profile":
+        "Regulert mod med to 18650-celler; VAPORESSO oppgir 220 W; "
+        + "testing målte 215 W, 9,08 V og 37 A.",
+    "mod.preset-235.profile":
+        "Regulert mod med innebygd batteri, oppgitt til 100 W; "
+        + "testing målte 101 W, 29 A og minst 7,97 V.",
+    "mod.preset-236.profile":
+        "Regulert mod med éi 18650-celle og AS Chip 4.0; "
+        + "produsentprofilen er 100 W, 7,5 V, 32 A og 0,1–3 Ω.",
+    "mod.preset-237.profile":
+        "Mod for éi 21700-celle eller ei tilpassa 18650-celle; "
+        + "Eleaf oppgir 100 W, 9 V og 0,05–3,5 Ω; testing "
+        + "identifiserte 30 A.",
+    "mod.preset-238.profile":
+        "Regulert squonk-mod for éi 21700-, 20700- eller tilpassa "
+        + "18650-celle, med ein konservativ profil på 95 W, 6 V og 34 "
+        + "A.",
+};
 
 export const presentations: CatalogPresentationSet = normalizeNynorsk({
     "concepts": {
         "concept-ohms-law": {
             "displayName": "Ohms lov",
-            "description": "Ohms lov knytter sammen spenning, straum og motstand i en elektrisk krets.",
+            "description": "Ohms lov knyter saman spenning, straum og motstand i ein elektrisk krins.",
             "summary": "Forholdet mellom spenning, straum og motstand.",
             "sections": [
                 {
                     "id": "relationship",
-                    "title": "Sammenhengen",
+                    "title": "Samanhengen",
                     "paragraphs": [
-                        "Den grunnleggende sammenhengen er nyttig når motstanden i en komponent er omtrent konstant."
+                        "Den grunnleggjande samanhengen er nyttig når motstanden i ein komponent er omtrent konstant."
                     ],
                     "formulas": [
                         {
@@ -44,7 +169,7 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                     "bullets": [
                         "Når motstanden er uendret, øker strømmen når spenningen øker.",
                         "Når spenningen er uendret, synker strømmen når motstanden øker.",
-                        "En motstand på null Ω er en ideell kortslutning og må behandles separat."
+                        "Ein motstand på null Ω er ei ideell kortslutning og må handsamast separat."
                     ]
                 },
                 {
@@ -52,24 +177,24 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                     "title": "Regneeksempler",
                     "examples": [
                         {
-                            "title": "Finn strømmen",
-                            "setup": "En kilde på 4,2 V er koblet til en belastning på 1,0 Ω.",
+                            "title": "Finn straumen",
+                            "setup": "Ei kjelde på 4,2 V er kopla til ei belastning på 1,0 Ω.",
                             "formulas": [
                                 "I = 4.2 V / 1.0 Ω = 4.2 A"
                             ],
-                            "conclusion": "Strømmen i belastningen er 4,2 A."
+                            "conclusion": "Straumen i belastninga er 4,2 A."
                         },
                         {
                             "title": "Finn motstanden",
-                            "setup": "En krets har 12 V over seg og trekker 2 A.",
+                            "setup": "Ein krins har 12 V over seg og trekkjer 2 A.",
                             "formulas": [
                                 "R = 12 V / 2 A = 6 Ω"
                             ],
                             "conclusion": "Motstanden i kretsen er 6 Ω."
                         },
                         {
-                            "title": "Finn spenningen",
-                            "setup": "En straum på 0,5 A går gjennom en motstand på 10 Ω.",
+                            "title": "Finn spenninga",
+                            "setup": "Ein straum på 0,5 A går gjennom ein motstand på 10 Ω.",
                             "formulas": [
                                 "V = 0.5 A × 10 Ω = 5 V"
                             ],
@@ -86,7 +211,7 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                         }
                     ],
                     "paragraphs": [
-                        "Ohms lov kombineres med sammenhengen for effekt, P = V × I. Effekt P måles i watt (W). For en kilde på 4,2 V og en belastning på 1,0 Ω er den ideelle effekten 17,64 W. Komponenten må ha tilstrekkelig varmekapasitet og reserve til å lede bort varmen som oppstår, på en trygg måte."
+                        "Ohms lov kan kombinerast med samanhengen for effekt, P = V × I. Effekt P blir målt i watt (W). For ei kjelde på 4,2 V og ei belastning på 1,0 Ω er den ideelle effekten 17,64 W. Komponenten må ha tilstrekkeleg varmekapasitet og reserve til å leie bort varmen som oppstår, på ein trygg måte."
                     ]
                 },
                 {
@@ -106,7 +231,7 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                     "id": "limits",
                     "title": "Modellens begrensninger",
                     "paragraphs": [
-                        "Ohms lov er en idealisert modell. Virkelige komponenter kan være ikkje-ohmske: Motstanden kan endre seg med temperatur, spenning, straum, frekvens eller driftstilstand. For serie- og parallellkretser bruker du Kirchhoffs lover sammen med Ohms lov."
+                        "Ohms lov er ein idealisert modell. Verkelege komponentar kan vere ikkje-ohmske: Motstanden kan endre seg med temperatur, spenning, straum, frekvens eller driftstilstand. For serie- og parallellkrinsar brukar du Kirchhoffs lover saman med Ohms lov."
                     ]
                 }
             ],
@@ -114,7 +239,7 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
         },
         "concept-joule-heating": {
             "displayName": "Joule-oppvarming",
-            "description": "Joule-oppvarming beskriver hvordan elektrisk energi blir til varme når straum går gjennom motstand.",
+            "description": "Joule-oppvarming skildrar korleis elektrisk energi blir til varme når straum går gjennom motstand.",
             "summary": "Korleis elektrisk straum omdannar motstand til varme.",
             "sections": [
                 {
@@ -145,27 +270,27 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                     "title": "Regneeksempel",
                     "examples": [
                         {
-                            "title": "En resistiv belastning",
-                            "setup": "En spole på 0,8 Ω fører 3 A.",
+                            "title": "Ei resistiv belastning",
+                            "setup": "Ei spole på 0,8 Ω fører 3 A.",
                             "formulas": [
                                 "P = I^2 × R = 3^2 × 0,8 = 7,2 W",
                                 "E = P × t = 7,2 W × 10 s = 72 J"
                             ],
-                            "conclusion": "Spolen omdanner energi til varme med 7,2 joule per sekund, eller 72 J på 10 sekunder."
+                            "conclusion": "Spolen omdannar energi til varme med 7,2 joule per sekund, eller 72 J på 10 sekund."
                         }
                     ]
                 },
                 {
                     "id": "what-affects-heating",
-                    "title": "Hva påverkar oppvarmingen",
+                    "title": "Kva påverkar oppvarminga",
                     "bullets": [
-                        "Ved konstant motstand gir en dobling av strømmen fire ganger så stor oppvarmingseffekt.",
-                        "Ved konstant straum dobler en dobling av motstanden oppvarmingseffekten.",
+                        "Ved konstant motstand gir ei dobling av straumen fire gonger så stor oppvarmingseffekt.",
+                        "Ved konstant straum gjer ei dobling av motstanden at oppvarmingseffekten blir dobla.",
                         "Ved konstant spenning øker oppvarmingseffekten når motstanden reduseres.",
                         "Varmeoverføring til luft, væske og maskinvare bestemmer den faktiske temperaturen."
                     ],
                     "paragraphs": [
-                        "Elektrisk effekt er en energioverføringsrate, ikkje en temperatur. Varmekapasitet og varmestrøm bestemmer hvordan energien endrer temperaturen, og hvor raskt den forlater overflaten."
+                        "Elektrisk effekt er ein energioverføringsrate, ikkje ein temperatur. Varmekapasitet og varmestraum bestemmer korleis energien endrar temperaturen, og kor raskt han forlèt overflata."
                     ]
                 },
                 {
@@ -180,21 +305,22 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
         },
         "concept-kirchhoffs-laws": {
             "displayName": "Kirchhoffs lover",
-            "description": "Kirchhoffs straum- og spenningslover beskriver bevaring i kretsknutepunkter og lukkede sløyfer.",
+            "description": "Kirchhoffs straum- og spenningslover skildrar bevaring av straum i krinsknutepunkt og av "
+                + "spenning i lukka sløyfer.",
             "summary": "Korleis straum og spenning oppfører seg i samankopla krinsar.",
             "sections": [
                 {
                     "id": "circuit-terms",
-                    "title": "Kretstermer",
+                    "title": "Krinstermar",
                     "paragraphs": [
-                        "De grunnleggende termene gjør det enklere å tolke et kretsskjema:"
+                        "Dei grunnleggjande termane gjer det enklare å tolke eit krinsskjema:"
                     ],
                     "bullets": [
-                        "En node er et sett ledere som er koblet sammen utan en komponent mellom dem.",
-                        "En gren er en strømvei mellom to noder.",
-                        "En sløyfe er en lukket vei som kommer tilbake til utgangspunktet.",
-                        "En seriekobling gir strømmen berre én vei gjennom komponentene.",
-                        "En parallellkobling kobler grener til de samme to nodene."
+                        "Ein node er eit sett leiarar som er kopla saman utan ein komponent mellom dei.",
+                        "Ei grein er ein straumveg mellom to nodar.",
+                        "Ei sløyfe er ein lukka veg som kjem tilbake til utgangspunktet.",
+                        "Ei seriekopling gir straumen berre éin veg gjennom komponentane.",
+                        "Ei parallellkopling koplar greinene til dei same to nodane."
                     ]
                 },
                 {
@@ -209,12 +335,14 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                         }
                     ],
                     "paragraphs": [
-                        "Viss 8 A går inn i en node og én gren fører 3 A ut, må de resterende grenene føre til sammen 5 A ut. Vel strømretninger før du regner; et negativt resultat betyr at den virkelige strømmen går motsatt vei av den antatte retningen."
+                        "Viss 8 A går inn i ein node og éi grein fører 3 A ut, må dei resterande greinene føre til "
+                            + "saman 5 A ut. Vel straumretningar før du reknar; eit negativt resultat betyr at den "
+                            + "verkelege straumen går motsett veg av den antatte retninga."
                     ]
                 },
                 {
                     "id": "series-and-parallel",
-                    "title": "Serie- og parallellkretser",
+                    "title": "Serie- og parallellkrinsar",
                     "formulas": [
                         {
                             "expression": "I_total = I_1 = I_2 = ..."
@@ -231,22 +359,22 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                     ],
                     "examples": [
                         {
-                            "title": "Seriekoblede motstander",
-                            "setup": "To motstander på 0,20 Ω i serie kobles til 8,0 V.",
+                            "title": "Seriekopla motstandar",
+                            "setup": "To motstandar på 0,20 Ω blir kopla i serie til 8,0 V.",
                             "formulas": [
                                 "R_total = 0,40 Ω",
                                 "I = 8,0 V / 0,40 Ω = 20 A"
                             ],
-                            "conclusion": "Den samme strømmen på 20 A går gjennom begge motstandene."
+                            "conclusion": "Den same straumen på 20 A går gjennom begge motstandane."
                         },
                         {
-                            "title": "Parallellkoblede motstander",
-                            "setup": "To like grener på 0,40 Ω kobles til 4,0 V.",
+                            "title": "Parallellkopla motstandar",
+                            "setup": "To like greiner på 0,40 Ω blir kopla til 4,0 V.",
                             "formulas": [
                                 "R_total = 0,20 Ω",
                                 "I_total = 4,0 V / 0,20 Ω = 20 A"
                             ],
-                            "conclusion": "Når grenmotstandene er like, fører hver gren 10 A."
+                            "conclusion": "Når greinmotstandane er like, fører kvar grein 10 A."
                         }
                     ]
                 },
@@ -265,7 +393,10 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                         }
                     ],
                     "paragraphs": [
-                        "Den algebraiske summen av spenningsøkninger og spenningsfall rundt en lukket sløyfe er null. Vel én sløyferetning og hold polaritetene konsekvente. Viss du snur retningen, endres fortegnene, ikkje den fysiske løsningen. En større seriemotstand får et større spenningsfall fordi den samme strømmen går gjennom alle seriekoblede komponenter."
+                        "Den algebraiske summen av spenningsaukar og spenningsfall rundt ei lukka sløyfe er null. "
+                            + "Vel éi sløyferetning og hald polaritetane konsekvente. Viss du snur retninga, "
+                            + "endrar fortegna seg, ikkje den fysiske løysinga. Ein større seriemotstand gir eit "
+                            + "større spenningsfall fordi den same straumen går gjennom alle seriekopla komponentane."
                     ]
                 },
                 {
@@ -280,23 +411,28 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                         }
                     ],
                     "bullets": [
-                        "Seriekoblede celler legger sammen spenningen, mens kapasiteten i amperetimer tilsvarer én lik celle.",
-                        "Parallellkoblede celler beholder samme spenning, mens kapasitet og tilgjengelig straum omtrent summeres.",
-                        "Strømfordelingen avhenger av indre motstand, kontakter, ledninger og brytere.",
-                        "Seriekoblede litiumioneceller krever overvåking på cellenivå og egnet balansering eller beskyttelse."
+                        "Seriekopla celler legg saman spenninga, medan kapasiteten i amperetimar svarar til éi "
+                            + "tilsvarande celle.",
+                        "Parallellkopla celler held på same spenning, medan kapasitet og tilgjengeleg straum om lag "
+                            + "blir summert.",
+                        "Straumfordelinga avheng av indre motstand, kontaktar, leidningar og brytarar.",
+                        "Seriekopla litiumioneceller krev overvaking på cellenivå og eigna balansering eller vern."
                     ]
                 },
                 {
                     "id": "solving-and-limits",
-                    "title": "Løsning av virkelige kretser",
+                    "title": "Løysing av verkelege krinsar",
                     "bullets": [
-                        "Merk nodenes spenninger, grenstrømmer og antatte strømretninger.",
-                        "Bruk KCL i uavhengige noder og KVL rundt uavhengige sløyfer.",
-                        "Knytt spenning og straum i motstander sammen med V = I × R.",
-                        "Løs de samtidige ligningene og kontroller effektbalansen."
+                        "Merk spenningane i nodane, greinstraumane og dei antatte straumretningane.",
+                        "Bruk KCL i uavhengige nodar og KVL rundt uavhengige sløyfer.",
+                        "Knyt spenning og straum i motstandar saman med V = I × R.",
+                        "Løys dei samtidige likningane og kontroller effektbalansen."
                     ],
                     "paragraphs": [
-                        "En forenklet modell kan utelate cellens indre motstand, kontaktmotstand, omformerens virkningsgrad, temperatureffekter, transient oppførsel, beskyttelseskretser og komponenttoleranser. Ta med all utelatt oppførsel som påverkar en sterkstrømskrets vesentlig."
+                        "Ein forenkla modell kan utelate den indre motstanden i cella, kontaktmotstand, verknadsgraden "
+                            + "til omformaren, temperatureffektar, transient åtferd, vernkrinsar og "
+                            + "komponenttoleransar. Ta med all utelaten åtferd som påverkar ein krins med høg straum "
+                            + "vesentleg."
                     ]
                 }
             ],
@@ -304,14 +440,15 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
         },
         "concept-temperature-coefficient-of-resistance": {
             "displayName": "Temperaturkoeffisient for motstand (TCR)",
-            "description": "Temperaturkoeffisienten beskriver hvordan en leders motstand endrer seg med temperaturen.",
+            "description": "Temperaturkoeffisienten skildrar korleis motstanden i ein leiar endrar seg med "
+                + "temperaturen.",
             "summary": "Korleis temperatur endrar motstanden i ein leiar.",
             "sections": [
                 {
                     "id": "linear-model",
                     "title": "Den lineære modellen",
                     "paragraphs": [
-                        "Ved en liten eller moderat temperaturendring bruker vi dette førsteordensforholdet:"
+                        "Ved ei lita eller moderat temperaturendring brukar vi dette førsteordensforholdet:"
                     ],
                     "formulas": [
                         {
@@ -322,38 +459,41 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                         "R_0 er motstanden ved referansetemperaturen T_0.",
                         "R_T er den estimerte motstanden ved temperaturen T.",
                         "α er materialets temperaturkoeffisient, uttrykt i 1/°C eller ppm/°C.",
-                        "Temperaturene må bruke samme skala og einingar for differansen T - T_0."
+                        "Temperaturane må bruke same skala og einingar for differansen T - T_0."
                     ]
                 },
                 {
                     "id": "positive-and-negative",
                     "title": "Positiv og negativ TCR",
                     "bullets": [
-                        "En positiv TCR betyr at motstanden øker når temperaturen stiger; mange metaller oppfører seg slik.",
-                        "En negativ TCR betyr at motstanden synker når temperaturen stiger.",
-                        "En TCR nær null betyr at motstanden endrer seg lite innenfor det angitte området.",
-                        "Fortegnet til koeffisienten er viktig; viss en negativ verdi erstattes med absoluttverdien, snus forutsigelsen."
+                        "Ein positiv TCR tyder at motstanden aukar når temperaturen stig; mange metall oppfører seg "
+                            + "slik.",
+                        "Ein negativ TCR tyder at motstanden søkk når temperaturen stig.",
+                        "Ein TCR nær null tyder at motstanden endrar seg lite innanfor det oppgitte området.",
+                        "Forteiknet til koeffisienten er viktig; viss ein negativ verdi blir erstatta med "
+                            + "absoluttverdien, blir føreseiinga snudd."
                     ]
                 },
                 {
                     "id": "worked-example",
-                    "title": "Regneeksempel",
+                    "title": "Rekneeksempel",
                     "examples": [
                         {
-                            "title": "En oppvarmet motstand",
-                            "setup": "En motstand på 1,00 Ω er spesifisert ved 20 °C, med en TCR på 400 ppm/°C.",
+                            "title": "Ein oppvarma motstand",
+                            "setup": "Ein motstand på 1,00 Ω er spesifisert ved 20 °C, med ein TCR på 400 ppm/°C.",
                             "formulas": [
                                 "α = 400 × 10^-6 / °C = 0,0004 / °C",
                                 "ΔT = 100 - 20 = 80 °C",
                                 "R_T = 1,00 [1 + 0,0004 × 80] = 1,032 Ω"
                             ],
-                            "conclusion": "Den estimerte motstanden er 1,032 Ω, omtrent 3,2 % høgare enn verdien ved 20 °C."
+                            "conclusion": "Den estimerte motstanden er 1,032 Ω, om lag 3,2 % høgare enn "
+                                + "verdien ved 20 °C."
                         }
                     ]
                 },
                 {
                     "id": "power-and-limits",
-                    "title": "TCR, effekt og praktiske begrensninger",
+                    "title": "TCR, effekt og praktiske avgrensingar",
                     "formulas": [
                         {
                             "expression": "I = V / R"
@@ -363,8 +503,12 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
                         }
                     ],
                     "paragraphs": [
-                        "For en motstand med positiv TCR som drives med konstant spenning, øker motstanden når temperaturen stiger, og strømmen har en tendens til å synke. For en konstantstrømkilde øker effekten når den samme motstanden øker.",
-                        "Produsentens TCR gjelder normalt for et angitt temperatur- og motstandsområde. Temperaturgradienter, materialendringer, kontakter, mekanisk belastning og selvoppvarming kan gjøre at et virkelig resultat avviker fra førsteordensestimatet."
+                        "For ein motstand med positiv TCR som blir driven med konstant spenning, aukar motstanden når "
+                            + "temperaturen stig, og straumen har ein tendens til å søkkje. For ei "
+                            + "konstantstraumskjelde aukar effekten når den same motstanden aukar.",
+                        "Produsenten sin TCR gjeld normalt for eit oppgitt temperatur- og motstandsområde. "
+                            + "Temperaturgradientar, materialendringar, kontaktar, mekanisk belastning og "
+                            + "sjølvoppvarming kan gjere at eit verkeleg resultat avvik frå førsteordensestimatet."
                     ]
                 }
             ],
@@ -372,50 +516,54 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
         },
         "concept-trigonometry": {
             "displayName": "Trigonometri",
-            "description": "Trigonometri knytter sammen vinkler, lengder og forhold i geometriske modeller.",
+            "description": "Trigonometri knyter saman vinklar, lengder og forhold i geometriske modellar.",
             "summary": "Vinkler, lengder og nyttige geometriske forhold.",
             "sections": [
                 {
                     "id": "right-triangles",
-                    "title": "Rettvinklede trekanter",
+                    "title": "Rettvinkla trekantar",
                     "paragraphs": [
-                        "Relativt til en vinkel θ ligger den motstående siden på andre siden av vinkelen, den hosliggende siden berører vinkelen utan å være hypotenusen, og hypotenusen ligger mot den rette vinkelen. SOH-CAH-TOA er en huskeregel: sinus er motstående side delt på hypotenusen, cosinus er hosliggende side delt på hypotenusen, og tangens er motstående side delt på hosliggende side."
+                        "I høve til ein vinkel θ ligg den motståande sida på andre sida av vinkelen, den hosliggjande "
+                            + "sida rører ved vinkelen utan å vere hypotenusen, og hypotenusen ligg mot den rette vinkelen. "
+                            + "SOH-CAH-TOA er ein hugseregel: sinus er motståande side delt på hypotenusen, cosinus er "
+                            + "hosliggjande side delt på hypotenusen, og tangens er motståande side delt på "
+                            + "hosliggjande side."
                     ],
                     "formulas": [
                         {
-                            "expression": "sin(θ) = motstående / hypotenuse"
+                            "expression": "sin(θ) = motståande / hypotenuse"
                         },
                         {
-                            "expression": "cos(θ) = hosliggende / hypotenuse"
+                            "expression": "cos(θ) = hosliggjande / hypotenuse"
                         },
                         {
-                            "expression": "tan(θ) = motstående / hosliggende"
+                            "expression": "tan(θ) = motståande / hosliggjande"
                         }
                     ]
                 },
                 {
                     "id": "finding-sides-and-angles",
-                    "title": "Finn ukjente sider og vinkler",
+                    "title": "Finn ukjende sider og vinklar",
                     "examples": [
                         {
-                            "title": "Finn en side",
-                            "setup": "En hypotenus på 10 cm danner en vinkel på 30°.",
+                            "title": "Finn ei side",
+                            "setup": "Ein hypotenus på 10 cm dannar ein vinkel på 30°.",
                             "formulas": [
                                 "motstående = 10 × sin(30°) = 5 cm",
                                 "hosliggende = 10 × cos(30°) ≈ 8,66 cm"
                             ],
-                            "conclusion": "Bruk en invers trigonometrisk funksjon når sidelengdene er kjente."
+                            "conclusion": "Bruk ein invers trigonometrisk funksjon når sidelengdene er kjende."
                         }
                     ],
                     "formulas": [
                         {
-                            "expression": "θ = sin^-1(motstående / hypotenuse)"
+                            "expression": "θ = sin^-1(motståande / hypotenuse)"
                         },
                         {
-                            "expression": "θ = cos^-1(hosliggende / hypotenuse)"
+                            "expression": "θ = cos^-1(hosliggjande / hypotenuse)"
                         },
                         {
-                            "expression": "θ = tan^-1(motstående / hosliggende)"
+                            "expression": "θ = tan^-1(motståande / hosliggjande)"
                         }
                     ]
                 },
@@ -888,2088 +1036,7 @@ export const presentations: CatalogPresentationSet = normalizeNynorsk({
             "wikipediaUrl": "https://en.wikipedia.org/wiki/Wire_gauge"
         }
     },
-    "materials": {
-        "ka1": {
-            "displayName": "Kanthal A1 / APM",
-            "description": "Katalogprofil for Kanthal A1 / APM, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Kanthal A1 / APM.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ka": {
-            "displayName": "Kanthal A / AE / AF",
-            "description": "Katalogprofil for Kanthal A / AE / AF, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Kanthal A / AE / AF.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "kd": {
-            "displayName": "Kanthal D",
-            "description": "Katalogprofil for Kanthal D, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Kanthal D.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "n20": {
-            "displayName": "Nichrome N20",
-            "description": "Katalogprofil for Nichrome N20, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nichrome N20.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "n40": {
-            "displayName": "Nichrome N40",
-            "description": "Katalogprofil for Nichrome N40, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nichrome N40.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "n60": {
-            "displayName": "Nichrome N60 (C)",
-            "description": "Katalogprofil for Nichrome N60 (C), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nichrome N60 (C).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "n70": {
-            "displayName": "Nichrome N70 (B)",
-            "description": "Katalogprofil for Nichrome N70 (B), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nichrome N70 (B).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "n80": {
-            "displayName": "Nichrome N80 (A)",
-            "description": "Katalogprofil for Nichrome N80 (A), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nichrome N80 (A).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ss304": {
-            "displayName": "SS 304",
-            "description": "Katalogprofil for SS 304, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: SS 304.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ss316": {
-            "displayName": "SS 316",
-            "description": "Katalogprofil for SS 316, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: SS 316.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ss316l": {
-            "displayName": "SS 316L / Elite",
-            "description": "Katalogprofil for SS 316L / Elite, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: SS 316L / Elite.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ss317l": {
-            "displayName": "SS 317L / Haywire",
-            "description": "Katalogprofil for SS 317L / Haywire, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: SS 317L / Haywire.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ss430": {
-            "displayName": "SS 430",
-            "description": "Katalogprofil for SS 430, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: SS 430.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ti1": {
-            "displayName": "Titan 1",
-            "description": "Katalogprofil for Titan 1, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Titan 1.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ti2": {
-            "displayName": "Titan 2 (R50400)",
-            "description": "Katalogprofil for Titan 2 (R50400), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Titan 2 (R50400).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "tie": {
-            "displayName": "Titanium ready (e-SG)",
-            "description": "Katalogprofil for Titanium ready (e-SG), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Titanium ready (e-SG).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "w": {
-            "displayName": "Wolfram",
-            "description": "Katalogprofil for Wolfram, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Wolfram.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "nio": {
-            "displayName": "Niobiumlegering",
-            "description": "Katalogprofil for Niobiumlegering, med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Niobiumlegering.",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ni200": {
-            "displayName": "Nikkel 200 / Ni200 (UNS N02200)",
-            "description": "Katalogprofil for Nikkel 200 / Ni200 (UNS N02200), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nikkel 200 / Ni200 (UNS N02200).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "nife30": {
-            "displayName": "NiFe30 (Resistherm - TFR)",
-            "description": "Katalogprofil for NiFe30 (Resistherm - TFR), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: NiFe30 (Resistherm - TFR).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "dicodes": {
-            "displayName": "NiFe30 (Resistherm - TCR)",
-            "description": "Katalogprofil for NiFe30 (Resistherm - TCR), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: NiFe30 (Resistherm - TCR).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "reactor": {
-            "displayName": "NiFe (Reactor Wire)",
-            "description": "Katalogprofil for NiFe (Reactor Wire), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: NiFe (Reactor Wire).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "nife30stealth": {
-            "displayName": "NiFe30 (StealthVape)",
-            "description": "Katalogprofil for NiFe30 (StealthVape), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: NiFe30 (StealthVape).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "nft70": {
-            "displayName": "Nifethal 70 (Alloy120)",
-            "description": "Katalogprofil for Nifethal 70 (Alloy120), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nifethal 70 (Alloy120).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "nft52": {
-            "displayName": "Nifethal 52 (Alloy52)",
-            "description": "Katalogprofil for Nifethal 52 (Alloy52), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nifethal 52 (Alloy52).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "zr": {
-            "displayName": "Zirkonium (rent)",
-            "description": "Katalogprofil for Zirkonium (rent), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Zirkonium (rent).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "n90": {
-            "displayName": "Nichrome N90 (Ni90Cr10)",
-            "description": "Katalogprofil for Nichrome N90 (Ni90Cr10), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: Nichrome N90 (Ni90Cr10).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        },
-        "ss904l": {
-            "displayName": "SS 904L (UNS N08904)",
-            "description": "Katalogprofil for SS 904L (UNS N08904), med data for motstandstråd og temperaturkontroll.",
-            "summary": "Eit katalogmateriale for motstandstråd og temperaturkontroll: SS 904L (UNS N08904).",
-            "safetyText": "Bruk ein verifisert materialprofil, og følg temperatur- og driftsgrensene til eininga."
-        }
-    },
-    "batteries": {
-        "battery-1": {
-            "displayName": "AW IMR 14500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-2": {
-            "displayName": "AW IMR 14500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-3": {
-            "displayName": "AW IMR 16340",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-4": {
-            "displayName": "AW IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-5": {
-            "displayName": "AW IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-6": {
-            "displayName": "AW IMR 18490",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-7": {
-            "displayName": "AW IMR 18490",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-8": {
-            "displayName": "AW IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-9": {
-            "displayName": "AW IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-10": {
-            "displayName": "AW IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-11": {
-            "displayName": "AWT 26650 4500mAh 75A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-12": {
-            "displayName": "EH IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-13": {
-            "displayName": "EH IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-14": {
-            "displayName": "EH IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-15": {
-            "displayName": "EH IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-16": {
-            "displayName": "Efest IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-17": {
-            "displayName": "Efest IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-18": {
-            "displayName": "Efest IMR 18490",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-19": {
-            "displayName": "Efest IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-20": {
-            "displayName": "Efest IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-21": {
-            "displayName": "Efest IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-22": {
-            "displayName": "Efest IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-23": {
-            "displayName": "Efest IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-24": {
-            "displayName": "Efest IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-25": {
-            "displayName": "Efest IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-26": {
-            "displayName": "Efest IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-27": {
-            "displayName": "Efest IMR 18650 35A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-28": {
-            "displayName": "Efest IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-29": {
-            "displayName": "Efest IMR 26650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-30": {
-            "displayName": "Innokin iTaste MVP 2.0",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei integrert batteripakke i eininga.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-31": {
-            "displayName": "Innokin iTaste VV v3",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei integrert batteripakke i eininga.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-32": {
-            "displayName": "Keeppower IMR26650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-33": {
-            "displayName": "LG 18650HB6",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-34": {
-            "displayName": "LG 18650HE2",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-35": {
-            "displayName": "LG 18650HG2",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-36": {
-            "displayName": "MNKE IMR 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-37": {
-            "displayName": "MNKE IMR 26650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-38": {
-            "displayName": "MXJO IMR 18650 35A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-39": {
-            "displayName": "MXJO IMR 18650 20A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-40": {
-            "displayName": "Nitecore NL188",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-41": {
-            "displayName": "Orbtronic 18650 PD2900",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-42": {
-            "displayName": "Orbtronic 18650 SX22",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-43": {
-            "displayName": "Orbtronic 18650 SX30",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-44": {
-            "displayName": "Orbtronic 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-45": {
-            "displayName": "Orbtronic CGR18650CH",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-46": {
-            "displayName": "Orbtronic NCR18650A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-47": {
-            "displayName": "Panasonic CGR18650CH",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-48": {
-            "displayName": "Panasonic NCR18650A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-49": {
-            "displayName": "Panasonic NCR18650B",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-50": {
-            "displayName": "Panasonic NCR18650BD",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-51": {
-            "displayName": "Panasonic NCR18650PF",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-52": {
-            "displayName": "Panasonic CGR26650A",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-53": {
-            "displayName": "Samsung ICR18650-26F",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-54": {
-            "displayName": "Panasonic NCR18650PD",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-55": {
-            "displayName": "Samsung INR18650-20R",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-56": {
-            "displayName": "Samsung INR18650-25R",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-57": {
-            "displayName": "Samsung INR18650-20Q",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-58": {
-            "displayName": "Samsung INR18650-30Q",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-59": {
-            "displayName": "Sanyo UR16650ZTA",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-60": {
-            "displayName": "Sanyo UR18650EX",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-61": {
-            "displayName": "Sanyo UR18650F",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "Batteri for lav belastning; egner seg ikkje for damping."
-            ],
-            "safetyText": "Bruk berre batteriet innanfor dei oppgitte grensene, og ikkje i ei eining som krev høgare belastning."
-        },
-        "battery-62": {
-            "displayName": "Sibeile IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-63": {
-            "displayName": "Sibeile IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-64": {
-            "displayName": "Sony US18650VTC3",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-65": {
-            "displayName": "Sony US18650VTC4",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-66": {
-            "displayName": "Sony US18650VTC5",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-67": {
-            "displayName": "Sony US18650v3",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-68": {
-            "displayName": "Sony US26650VT",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-69": {
-            "displayName": "Torchy IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-70": {
-            "displayName": "Vappower IMR 26650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-71": {
-            "displayName": "Vamped 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "20 A kontinuerlig verdi; pulsverdier brukes ikkje."
-            ],
-            "safetyText": undefined
-        },
-        "battery-72": {
-            "displayName": "UltraFire BRC 18650 4000mAh li-ion",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "Den faktiske kapasiteten er lågare enn etiketten antyder."
-            ],
-            "safetyText": undefined
-        },
-        "battery-73": {
-            "displayName": "UltraFire XSL 18350 1200mAh",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "Den faktiske kapasiteten er lågare enn etiketten antyder."
-            ],
-            "safetyText": undefined
-        },
-        "battery-74": {
-            "displayName": "Vamped 26650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-75": {
-            "displayName": "Xtar IMR 18350",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-76": {
-            "displayName": "Xtar IMR 18500",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": undefined,
-            "safetyText": undefined
-        },
-        "battery-77": {
-            "displayName": "EVE INR18650/30P",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "20 A konservativ, uavhengig sammenligningsverdi; nøyaktig omslag og produksjonsrevisjon er fortsatt relevante."
-            ],
-            "safetyText": undefined
-        },
-        "battery-78": {
-            "displayName": "EVE INR18650/25P",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "15 A konservativ verdi fra testing av nøyaktig modell; den testede CCC-merkede revisjonen er fortsatt relevant."
-            ],
-            "safetyText": undefined
-        },
-        "battery-79": {
-            "displayName": "EVE INR18650/30PL",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "45 A uavhengig kontinuerlig verdi for den testede tabless-revisjonen; ikkje erstatt den med pulsverdier."
-            ],
-            "safetyText": undefined
-        },
-        "battery-80": {
-            "displayName": "Ampace JP30P1",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "36 A faktisk kontinuerlig verdi; 56 A-verdien er temperaturbegrenset."
-            ],
-            "safetyText": undefined
-        },
-        "battery-81": {
-            "displayName": "Tenpower INR18650-30XG",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A konservativ verdi; de testede cellene så ut til å være førproduksjon og manglet CCC-logo."
-            ],
-            "safetyText": undefined
-        },
-        "battery-82": {
-            "displayName": "EVE INR21700/58E",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "13 A anbefalt kontinuerlig verdi; 16,8 A er et absolutt maksimum som ikkje er ment for lang levetid."
-            ],
-            "safetyText": undefined
-        },
-        "battery-83": {
-            "displayName": "Reliance INR21700-RS40",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A konservativ verdi; 70 A er temperaturbegrenset og de testede prøvene var førproduksjon."
-            ],
-            "safetyText": undefined
-        },
-        "battery-84": {
-            "displayName": "Reliance INR21700-RS50",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A sammenligningsverdi for produksjonscelle; 70 A krever temperaturkontroll."
-            ],
-            "safetyText": undefined
-        },
-        "battery-85": {
-            "displayName": "Vapcell S41",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A verdi for nøyaktig omslag; 70 A er begrenset til 60 °C og testet som en EVE 40PL-rewrap."
-            ],
-            "safetyText": undefined
-        },
-        "battery-86": {
-            "displayName": "BAK 21700-65E",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "19 A konservativ verdi; de nøyaktig testede prøvene så ut til å være førproduksjon og manglet CCC-merker."
-            ],
-            "safetyText": undefined
-        },
-        "battery-87": {
-            "displayName": "Tenpower INR21700-50XG",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A konservativ verdi; 90 A er temperaturbegrenset og de testede cellene så ut til å være førproduksjon."
-            ],
-            "safetyText": undefined
-        },
-        "battery-88": {
-            "displayName": "Tenpower INR21700-60XG",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A konservativ verdi; 60 A er temperaturbegrenset og produksjonskontinuiteten er fortsatt uavklart."
-            ],
-            "safetyText": undefined
-        },
-        "battery-89": {
-            "displayName": "Great Power 50Q",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "40 A konservativ verdi; de testede prøvene hadde ujevn kapasitet og manglet CCC-/CE-merker."
-            ],
-            "safetyText": undefined
-        },
-        "battery-90": {
-            "displayName": "FEB 21700-68E",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "13 A konservativ verdi; de nøyaktig testede prøvene så ut til å være førproduksjon og manglet CCC-merker."
-            ],
-            "safetyText": undefined
-        },
-        "battery-91": {
-            "displayName": "Reliance INR21700-RS60",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "30 A kontinuerlig verdi anslått av tester; Reliances maksimum på 50 A er temperaturbegrenset."
-            ],
-            "safetyText": undefined
-        },
-        "battery-92": {
-            "displayName": "Reliance INR21700-RH60",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "20 A kontinuerlig verdi fra to produksjonsrelaterte testpartier; 30 A er temperaturbegrenset."
-            ],
-            "safetyText": undefined
-        },
-        "battery-93": {
-            "displayName": "Amprius INR18650/40 (SA110)",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "12 A kontinuerlig; 20 A er berre puls. Det nøyaktig testede omslaget er registrert som SA110 / INR18650/40."
-            ],
-            "safetyText": undefined
-        },
-        "battery-94": {
-            "displayName": "Vapcell B30 18650",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "20 A verdi for nøyaktig omslag; testeren anbefaler under 15 A kontinuerlig. Vapehuset oppgir 25 A i tittelen, og senere rewrap-kilder eller omslagsrevisjoner kan avvike."
-            ],
-            "safetyText": undefined
-        },
-        "battery-95": {
-            "displayName": "Golisi S35 21700",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "30 A verdi for nøyaktig modell; dette er en rewrap, og senere omslagsrevisjoner eller underliggende kilde kan avvike."
-            ],
-            "safetyText": undefined
-        },
-        "battery-96": {
-            "displayName": "iJoy 20700 3000mAh five-leg",
-            "description": "Ei oppladbar celle eller batteripakke for kompatible einingar.",
-            "summary": "Ei utskiftbar, oppladbar celle for kompatible einingar.",
-            "notes": [
-                "30 A verdi for nøyaktig fembeinsrevisjon; firebeins- og senere revisjoner med samme omslag er vesentlig forskjellige og må ikkje arve denne profilen."
-            ],
-            "safetyText": undefined
-        }
-    },
-    "mods": {
-        "preset-1": {
-            "displayName": "AceSmok Ace 50",
-            "description": "Profil for ei regulert eining eller eit styrekort: AceSmok Ace 50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-2": {
-            "displayName": "Ante Meridiem Axis",
-            "description": "Profil for ei regulert eining eller eit styrekort: Ante Meridiem Axis.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-3": {
-            "displayName": "Anyvape AnyMOD",
-            "description": "Profil for ei regulert eining eller eit styrekort: Anyvape AnyMOD.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-4": {
-            "displayName": "Arrow 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Arrow 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-5": {
-            "displayName": "Artisan Supermax",
-            "description": "Profil for ei regulert eining eller eit styrekort: Artisan Supermax.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-6": {
-            "displayName": "Asmodus Snow Wolf 200W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Asmodus Snow Wolf 200W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-7": {
-            "displayName": "Aspire CF Sub Ohm",
-            "description": "Profil for ei regulert eining eller eit styrekort: Aspire CF Sub Ohm.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-8": {
-            "displayName": "Beastmode Industries BMI 100 Watt V.1",
-            "description": "Profil for ei regulert eining eller eit styrekort: Beastmode Industries BMI 100 Watt V.1.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-9": {
-            "displayName": "Billet Box rev. 3a",
-            "description": "Profil for ei regulert eining eller eit styrekort: Billet Box rev. 3a.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-10": {
-            "displayName": "Cloupor DNA-30",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor DNA-30.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-11": {
-            "displayName": "Cloupor DNA-50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor DNA-50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-12": {
-            "displayName": "Cloupor GT",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor GT.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-13": {
-            "displayName": "Cloupor Mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor Mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-14": {
-            "displayName": "Cloupor T5",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor T5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-15": {
-            "displayName": "Cloupor T6",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor T6.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-16": {
-            "displayName": "Cloupor T8",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor T8.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-17": {
-            "displayName": "Cloupor ZNA50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cloupor ZNA50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-18": {
-            "displayName": "C-Tratech Smart Box 50W",
-            "description": "Profil for ei regulert eining eller eit styrekort: C-Tratech Smart Box 50W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-19": {
-            "displayName": "Dicodes Dani Extreme",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dicodes Dani Extreme.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-20": {
-            "displayName": "Dicodes Dani Extreme v2 / Pipeline Pro v2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dicodes Dani Extreme v2 / Pipeline Pro v2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-21": {
-            "displayName": "DJK Wood Mods The Nerd VV",
-            "description": "Profil for ei regulert eining eller eit styrekort: DJK Wood Mods The Nerd VV.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-22": {
-            "displayName": "Dovpo DT-50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dovpo DT-50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-23": {
-            "displayName": "Dovpo E-LVT",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dovpo E-LVT.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-24": {
-            "displayName": "Dovpo E-Mech",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dovpo E-Mech.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-25": {
-            "displayName": "Dovpo TC 50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dovpo TC 50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-26": {
-            "displayName": "eGo Twist",
-            "description": "Profil for ei regulert eining eller eit styrekort: eGo Twist.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-27": {
-            "displayName": "eGo-V V3",
-            "description": "Profil for ei regulert eining eller eit styrekort: eGo-V V3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-28": {
-            "displayName": "Evod V v3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evod V v3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-29": {
-            "displayName": "Evolv DNA-20D",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-20D.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-30": {
-            "displayName": "Evolv DNA-30D",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-30D.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-31": {
-            "displayName": "Evolv DNA-40 (std. wire)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-40 (std. wire).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-32": {
-            "displayName": "Evolv DNA-40 (Ni 200)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-40 (Ni 200).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-33": {
-            "displayName": "Evolv DNA60 (non-color)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA60 (non-color).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-34": {
-            "displayName": "Evolv DNA-75",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-75.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-35": {
-            "displayName": "Evolv DNA-200 (2 cells, DNA-133)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-200 (2 cells, DNA-133).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-36": {
-            "displayName": "Evolv DNA-200 (3 cells)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-200 (3 cells).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-37": {
-            "displayName": "Evolv DNA-200 (TC mode)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-200 (TC mode).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-38": {
-            "displayName": "Evolv DNA-250 (2 cells, DNA-166)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-250 (2 cells, DNA-166).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-39": {
-            "displayName": "Evolv DNA-250 (3 cells)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA-250 (3 cells).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-40": {
-            "displayName": "Evolv Kick 2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv Kick 2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-41": {
-            "displayName": "Eleaf iStick",
-            "description": "Profil for ei regulert eining eller eit styrekort: Eleaf iStick.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-42": {
-            "displayName": "Eleaf iStick 30W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Eleaf iStick 30W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-43": {
-            "displayName": "Eleaf iStick 40W TC",
-            "description": "Profil for ei regulert eining eller eit styrekort: Eleaf iStick 40W TC.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-44": {
-            "displayName": "Eleaf iStick 50W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Eleaf iStick 50W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-45": {
-            "displayName": "Eleaf iStick 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Eleaf iStick 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-46": {
-            "displayName": "Gossmods The Duke",
-            "description": "Profil for ei regulert eining eller eit styrekort: Gossmods The Duke.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-47": {
-            "displayName": "Grand Innovations GI2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Grand Innovations GI2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-48": {
-            "displayName": "Heatvape Invader Mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Heatvape Invader Mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-49": {
-            "displayName": "Heatvape Invader Mini (TC mode)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Heatvape Invader Mini (TC mode).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-50": {
-            "displayName": "iJoy A160",
-            "description": "Profil for ei regulert eining eller eit styrekort: iJoy A160.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-51": {
-            "displayName": "Innokin Cool Fire II",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin Cool Fire II.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-52": {
-            "displayName": "Innokin Cool Fire IV",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin Cool Fire IV.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-53": {
-            "displayName": "Innokin Disrupter",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin Disrupter.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-54": {
-            "displayName": "Innokin iTaste 134 / iTaste 134 mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste 134 / iTaste 134 mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-55": {
-            "displayName": "Innokin iTaste MVP 2.0",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste MVP 2.0.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-56": {
-            "displayName": "Innokin iTaste MVP 20 Watt",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste MVP 20 Watt.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-57": {
-            "displayName": "Innokin iTaste MVP 3.0",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste MVP 3.0.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-58": {
-            "displayName": "Innokin iTaste MVP 3 Pro",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste MVP 3 Pro.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-59": {
-            "displayName": "Innokin iTaste SVD",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste SVD.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-60": {
-            "displayName": "Innokin iTaste SVD2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste SVD2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-61": {
-            "displayName": "Innokin iTaste VTR",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste VTR.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-62": {
-            "displayName": "Innokin iTaste VV V3.0",
-            "description": "Profil for ei regulert eining eller eit styrekort: Innokin iTaste VV V3.0.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-63": {
-            "displayName": "Joy4life Beyang 30W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Joy4life Beyang 30W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-64": {
-            "displayName": "Joyetech eCom Supreme",
-            "description": "Profil for ei regulert eining eller eit styrekort: Joyetech eCom Supreme.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-65": {
-            "displayName": "Joyetech eVic",
-            "description": "Profil for ei regulert eining eller eit styrekort: Joyetech eVic.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-66": {
-            "displayName": "Joyetech eVic VT",
-            "description": "Profil for ei regulert eining eller eit styrekort: Joyetech eVic VT.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-67": {
-            "displayName": "Joyetech eVic VT (TC mode)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Joyetech eVic VT (TC mode).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-68": {
-            "displayName": "Joyetech eVic Supreme",
-            "description": "Profil for ei regulert eining eller eit styrekort: Joyetech eVic Supreme.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-69": {
-            "displayName": "J Well Alesia",
-            "description": "Profil for ei regulert eining eller eit styrekort: J Well Alesia.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-70": {
-            "displayName": "J Well Troca",
-            "description": "Profil for ei regulert eining eller eit styrekort: J Well Troca.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-71": {
-            "displayName": "Kanger e-Power v3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kanger e-Power v3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-72": {
-            "displayName": "Kanger IPOW 2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kanger IPOW 2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-73": {
-            "displayName": "Kanger KBOX",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kanger KBOX.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-74": {
-            "displayName": "Kanger KBOX Mini / SUBOX Mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kanger KBOX Mini / SUBOX Mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-75": {
-            "displayName": "Kanger K-Simar 20",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kanger K-Simar 20.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-76": {
-            "displayName": "Kangside e-Huge",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kangside e-Huge.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-77": {
-            "displayName": "Kamry 20",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kamry 20.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-78": {
-            "displayName": "Kamry 60W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kamry 60W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-79": {
-            "displayName": "Kamry God Box",
-            "description": "Profil for ei regulert eining eller eit styrekort: Kamry God Box.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-80": {
-            "displayName": "KangXin VF clone v3",
-            "description": "Profil for ei regulert eining eller eit styrekort: KangXin VF clone v3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-81": {
-            "displayName": "KangXin KX5-50W",
-            "description": "Profil for ei regulert eining eller eit styrekort: KangXin KX5-50W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-82": {
-            "displayName": "Koopor Mini KP60",
-            "description": "Profil for ei regulert eining eller eit styrekort: Koopor Mini KP60.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-83": {
-            "displayName": "Koopor Mini KP60 (TC)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Koopor Mini KP60 (TC).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-84": {
-            "displayName": "KSD 30",
-            "description": "Profil for ei regulert eining eller eit styrekort: KSD 30.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-85": {
-            "displayName": "KSD Kmax (single battery)",
-            "description": "Profil for ei regulert eining eller eit styrekort: KSD Kmax (single battery).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-86": {
-            "displayName": "KSD Kmax (stacked)",
-            "description": "Profil for ei regulert eining eller eit styrekort: KSD Kmax (stacked).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-87": {
-            "displayName": "L-Rider Lambo 6.0",
-            "description": "Profil for ei regulert eining eller eit styrekort: L-Rider Lambo 6.0.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-88": {
-            "displayName": "L-Rider Lavatube",
-            "description": "Profil for ei regulert eining eller eit styrekort: L-Rider Lavatube.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-89": {
-            "displayName": "Lotus Jellyfish",
-            "description": "Profil for ei regulert eining eller eit styrekort: Lotus Jellyfish.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-90": {
-            "displayName": "Lotus LE80",
-            "description": "Profil for ei regulert eining eller eit styrekort: Lotus LE80.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-91": {
-            "displayName": "Luxyoun Smaug",
-            "description": "Profil for ei regulert eining eller eit styrekort: Luxyoun Smaug.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-92": {
-            "displayName": "Majesty 150W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Majesty 150W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-93": {
-            "displayName": "Megatron 260",
-            "description": "Profil for ei regulert eining eller eit styrekort: Megatron 260.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-94": {
-            "displayName": "Naos Raptor 10A",
-            "description": "Profil for ei regulert eining eller eit styrekort: Naos Raptor 10A.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-95": {
-            "displayName": "Naos Raptor 20A",
-            "description": "Profil for ei regulert eining eller eit styrekort: Naos Raptor 20A.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-96": {
-            "displayName": "Nivel V3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Nivel V3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-97": {
-            "displayName": "Notcigs VV",
-            "description": "Profil for ei regulert eining eller eit styrekort: Notcigs VV.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-98": {
-            "displayName": "OKL2-T/20-W12",
-            "description": "Profil for ei regulert eining eller eit styrekort: OKL2-T/20-W12.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-99": {
-            "displayName": "OKR-T10",
-            "description": "Profil for ei regulert eining eller eit styrekort: OKR-T10.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-100": {
-            "displayName": "Pioneer4You/Green Leaf P-Max",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf P-Max.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-101": {
-            "displayName": "ProVari 2, ProVari 2.5",
-            "description": "Profil for ei regulert eining eller eit styrekort: ProVari 2, ProVari 2.5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-102": {
-            "displayName": "ProVari P3 beta",
-            "description": "Profil for ei regulert eining eller eit styrekort: ProVari P3 beta.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-103": {
-            "displayName": "ProVari P35",
-            "description": "Profil for ei regulert eining eller eit styrekort: ProVari P35.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-104": {
-            "displayName": "Psmoke GI2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Psmoke GI2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-105": {
-            "displayName": "RainbowHeaven Arrow",
-            "description": "Profil for ei regulert eining eller eit styrekort: RainbowHeaven Arrow.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-106": {
-            "displayName": "Robbot Tech ZNA50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Robbot Tech ZNA50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-107": {
-            "displayName": "Sigelei 20W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei 20W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-108": {
-            "displayName": "Sigelei 50W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei 50W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-109": {
-            "displayName": "Sigelei 75W TC",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei 75W TC.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-110": {
-            "displayName": "Sigelei 150W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei 150W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-111": {
-            "displayName": "Sigelei Fuchai 213 Plus",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Fuchai 213 Plus.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-112": {
-            "displayName": "Sigelei Kick",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Kick.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-113": {
-            "displayName": "Sigelei Legend v2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Legend v2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-114": {
-            "displayName": "Sigelei Vmax",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Vmax.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-115": {
-            "displayName": "Sigelei Zmax V3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Zmax V3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-116": {
-            "displayName": "Sigelei Zmax V5",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Zmax V5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-117": {
-            "displayName": "Simeiyue God 180",
-            "description": "Profil for ei regulert eining eller eit styrekort: Simeiyue God 180.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-118": {
-            "displayName": "Simeiyue God 180s",
-            "description": "Profil for ei regulert eining eller eit styrekort: Simeiyue God 180s.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-119": {
-            "displayName": "Simeiyue God 260",
-            "description": "Profil for ei regulert eining eller eit styrekort: Simeiyue God 260.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-120": {
-            "displayName": "Smok Ace",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok Ace.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-121": {
-            "displayName": "Smok BEC Pro",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok BEC Pro.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-122": {
-            "displayName": "Smok G-Priv 220W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok G-Priv 220W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-123": {
-            "displayName": "Smok Sid",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok Sid.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-124": {
-            "displayName": "Smok X Cube II",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok X Cube II.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-125": {
-            "displayName": "Smok X Pro BT50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok X Pro BT50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-126": {
-            "displayName": "Smok X Pro M36",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok X Pro M36.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-127": {
-            "displayName": "Smok X Pro M50",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok X Pro M50.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-128": {
-            "displayName": "Smok X Pro M80",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok X Pro M80.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-129": {
-            "displayName": "Smok Zmax",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok Zmax.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-130": {
-            "displayName": "Smok Zmax Mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Smok Zmax Mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-131": {
-            "displayName": "SMY 260W",
-            "description": "Profil for ei regulert eining eller eit styrekort: SMY 260W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-132": {
-            "displayName": "SMY 50TC",
-            "description": "Profil for ei regulert eining eller eit styrekort: SMY 50TC.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-133": {
-            "displayName": "SMY GOD 180",
-            "description": "Profil for ei regulert eining eller eit styrekort: SMY GOD 180.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-134": {
-            "displayName": "Steam STM-1 / STM-2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Steam STM-1 / STM-2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-135": {
-            "displayName": "Sunzip Vapmod Deezel",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sunzip Vapmod Deezel.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-136": {
-            "displayName": "Taifun The Eye",
-            "description": "Profil for ei regulert eining eller eit styrekort: Taifun The Eye.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-137": {
-            "displayName": "Taifun The Eye (updated)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Taifun The Eye (updated).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-138": {
-            "displayName": "Tesla",
-            "description": "Profil for ei regulert eining eller eit styrekort: Tesla.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-139": {
-            "displayName": "Tesla 120W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Tesla 120W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-140": {
-            "displayName": "Tesla 2 Sub Mod",
-            "description": "Profil for ei regulert eining eller eit styrekort: Tesla 2 Sub Mod.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-141": {
-            "displayName": "Tesla Spider",
-            "description": "Profil for ei regulert eining eller eit styrekort: Tesla Spider.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-142": {
-            "displayName": "Tobeco ZNA 36",
-            "description": "Profil for ei regulert eining eller eit styrekort: Tobeco ZNA 36.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-143": {
-            "displayName": "Vamo 35W (clone)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vamo 35W (clone).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-144": {
-            "displayName": "Vamo V1 / V2 / V3 / V5",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vamo V1 / V2 / V3 / V5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-145": {
-            "displayName": "Vamo V7",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vamo V7.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-146": {
-            "displayName": "VaporFi Vox II",
-            "description": "Profil for ei regulert eining eller eit styrekort: VaporFi Vox II.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-147": {
-            "displayName": "Vicious Ant VariAnt 120W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vicious Ant VariAnt 120W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-148": {
-            "displayName": "Vicious Ant VariAnt 250W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vicious Ant VariAnt 250W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-149": {
-            "displayName": "Vision Spinner / Spinner II",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vision Spinner / Spinner II.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-150": {
-            "displayName": "Vision X.Fir/X.Gun",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vision X.Fir/X.Gun.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-151": {
-            "displayName": "Volcano Lavatube",
-            "description": "Profil for ei regulert eining eller eit styrekort: Volcano Lavatube.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-152": {
-            "displayName": "Volcano Lavatube v2.5",
-            "description": "Profil for ei regulert eining eller eit styrekort: Volcano Lavatube v2.5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-153": {
-            "displayName": "Wismec Reuleaux RX200S (4.10)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Wismec Reuleaux RX200S (4.10).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-154": {
-            "displayName": "YiHi SX130",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX130.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-155": {
-            "displayName": "YiHi SX130 v1.5",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX130 v1.5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-156": {
-            "displayName": "YiHi SX130H",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX130H.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-157": {
-            "displayName": "YiHi SX220",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX220.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-158": {
-            "displayName": "YiHi SX300",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX300.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-159": {
-            "displayName": "YiHi SX330 V1 35W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V1 35W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-160": {
-            "displayName": "YiHi SX330 V2 50W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V2 50W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-161": {
-            "displayName": "YiHi SX330 V2C 70W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V2C 70W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-162": {
-            "displayName": "YiHi SX330 V2 S 60W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V2 S 60W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-163": {
-            "displayName": "YiHi SX330 V3 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V3 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-164": {
-            "displayName": "YiHi SX330 V3 150W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V3 150W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-165": {
-            "displayName": "YiHi SX330 V3S 150W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V3S 150W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-166": {
-            "displayName": "YiHi SX330-V3Si 200W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330-V3Si 200W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-167": {
-            "displayName": "YiHi SX330 V4S 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX330 V4S 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-168": {
-            "displayName": "YiHi SX350 30W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX350 30W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-169": {
-            "displayName": "YiHi SX350 50W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX350 50W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-170": {
-            "displayName": "YiHi SX350 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX350 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-171": {
-            "displayName": "YiHi SX350J VJ mode",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX350J VJ mode.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-172": {
-            "displayName": "YiHi SX350J VW/single batt mode",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX350J VW/single batt mode.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-173": {
-            "displayName": "YiHi SX350J VW/dual batt mode",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX350J VW/dual batt mode.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-174": {
-            "displayName": "YiHi SX470",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX470.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-175": {
-            "displayName": "YiHi SX450",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX450.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-176": {
-            "displayName": "YiHi SXMini",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SXMini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-177": {
-            "displayName": "Beyond Vape Solara",
-            "description": "Profil for ei regulert eining eller eit styrekort: Beyond Vape Solara.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-178": {
-            "displayName": "Cana Modz",
-            "description": "Profil for ei regulert eining eller eit styrekort: Cana Modz.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-179": {
-            "displayName": "Craving Vapor HexOhm",
-            "description": "Profil for ei regulert eining eller eit styrekort: Craving Vapor HexOhm.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-180": {
-            "displayName": "Craving Vapor HexOhm V2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Craving Vapor HexOhm V2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-181": {
-            "displayName": "Hana Modz V3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Hana Modz V3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-182": {
-            "displayName": "Hana Modz DNA 40",
-            "description": "Profil for ei regulert eining eller eit styrekort: Hana Modz DNA 40.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-183": {
-            "displayName": "Lost Vape Therion DNA 75",
-            "description": "Profil for ei regulert eining eller eit styrekort: Lost Vape Therion DNA 75.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-184": {
-            "displayName": "Lost Vape Therion DNA 133",
-            "description": "Profil for ei regulert eining eller eit styrekort: Lost Vape Therion DNA 133.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-185": {
-            "displayName": "Lost Vape Therion DNA 166",
-            "description": "Profil for ei regulert eining eller eit styrekort: Lost Vape Therion DNA 166.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-186": {
-            "displayName": "Notcigs Buzz Pro",
-            "description": "Profil for ei regulert eining eller eit styrekort: Notcigs Buzz Pro.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-187": {
-            "displayName": "Pioneer4You/Green Leaf Seven 22",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf Seven 22.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-188": {
-            "displayName": "Pioneer4You/Green Leaf Seven 30W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf Seven 30W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-189": {
-            "displayName": "Pioneer4You/Green Leaf IPV",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-190": {
-            "displayName": "Pioneer4You/Green Leaf IPV D2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV D2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-191": {
-            "displayName": "Pioneer4You/Green Leaf IPV Mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV Mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-192": {
-            "displayName": "Pioneer4You/Green Leaf IPV Mini 2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV Mini 2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-193": {
-            "displayName": "Pioneer4You/Green Leaf IPV V2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV V2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-194": {
-            "displayName": "Pioneer4You/Green Leaf IPV V2S",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV V2S.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-195": {
-            "displayName": "Pioneer4You/Green Leaf IPV V3 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV V3 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-196": {
-            "displayName": "Pioneer4You/Green Leaf IPV V3 150W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV V3 150W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-197": {
-            "displayName": "Pioneer4You/Green Leaf IPV V3 200W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV V3 200W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-198": {
-            "displayName": "Pioneer4You/Green Leaf IPV V4 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Pioneer4You/Green Leaf IPV V4 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-199": {
-            "displayName": "Protovapor XPV DNA-20D",
-            "description": "Profil for ei regulert eining eller eit styrekort: Protovapor XPV DNA-20D.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-200": {
-            "displayName": "Protovapor XPV DNA-30D",
-            "description": "Profil for ei regulert eining eller eit styrekort: Protovapor XPV DNA-30D.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-201": {
-            "displayName": "Protovapor XPV DNA-40D",
-            "description": "Profil for ei regulert eining eller eit styrekort: Protovapor XPV DNA-40D.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-202": {
-            "displayName": "Raffmods Ranger",
-            "description": "Profil for ei regulert eining eller eit styrekort: Raffmods Ranger.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-203": {
-            "displayName": "Reo VV Grand/Woodvil",
-            "description": "Profil for ei regulert eining eller eit styrekort: Reo VV Grand/Woodvil.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-204": {
-            "displayName": "Sigelei 30W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei 30W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-205": {
-            "displayName": "Sigelei Raptor",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Raptor.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-206": {
-            "displayName": "Sigelei 100W",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei 100W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-207": {
-            "displayName": "Sigelei Mini",
-            "description": "Profil for ei regulert eining eller eit styrekort: Sigelei Mini.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-208": {
-            "displayName": "SvoëMesto Semovar",
-            "description": "Profil for ei regulert eining eller eit styrekort: SvoëMesto Semovar.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-209": {
-            "displayName": "Vapor Flask v1/v2 DNA 30",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vapor Flask v1/v2 DNA 30.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-210": {
-            "displayName": "Vapor Flask v2 DNA 40",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vapor Flask v2 DNA 40.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-211": {
-            "displayName": "Vapor Shark DNA",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vapor Shark DNA.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-212": {
-            "displayName": "Vapor Shark DNA/rDNA 30",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vapor Shark DNA/rDNA 30.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-213": {
-            "displayName": "Vapor Shark rDNA 40",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vapor Shark rDNA 40.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-214": {
-            "displayName": "Geekvape Aegis Legend 5",
-            "description": "Profil for ei regulert eining eller eit styrekort: Geekvape Aegis Legend 5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-215": {
-            "displayName": "Evolv DNA60C",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA60C.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-216": {
-            "displayName": "Evolv DNA100C",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA100C.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-217": {
-            "displayName": "Evolv DNA250C (2S)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA250C (2S).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-218": {
-            "displayName": "Evolv DNA250C (3S, US firmware)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA250C (3S, US firmware).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-219": {
-            "displayName": "Evolv DNA250C (3S, international firmware)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA250C (3S, international firmware).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-220": {
-            "displayName": "Evolv DNA250C (4S)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA250C (4S).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-221": {
-            "displayName": "VOOPOO DRAG 6",
-            "description": "Profil for ei regulert eining eller eit styrekort: VOOPOO DRAG 6.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-222": {
-            "displayName": "YiHi SXmini MQ Class",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SXmini MQ Class.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-223": {
-            "displayName": "Evolv DNA80C",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA80C.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-224": {
-            "displayName": "Evolv DNA75C",
-            "description": "Profil for ei regulert eining eller eit styrekort: Evolv DNA75C.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-225": {
-            "displayName": "YiHi SX600H",
-            "description": "Profil for ei regulert eining eller eit styrekort: YiHi SX600H.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-226": {
-            "displayName": "Craving Vapor HexOhm V3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Craving Vapor HexOhm V3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-227": {
-            "displayName": "VOOPOO VINCI Spark220",
-            "description": "Profil for ei regulert eining eller eit styrekort: VOOPOO VINCI Spark220.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-228": {
-            "displayName": "Dovpo x TVC Topside Dual",
-            "description": "Profil for ei regulert eining eller eit styrekort: Dovpo x TVC Topside Dual.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-229": {
-            "displayName": "VOOPOO DRAG 5",
-            "description": "Profil for ei regulert eining eller eit styrekort: VOOPOO DRAG 5.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-230": {
-            "displayName": "Geekvape L200 Classic",
-            "description": "Profil for ei regulert eining eller eit styrekort: Geekvape L200 Classic.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-231": {
-            "displayName": "VAPORESSO ARMOUR MAX",
-            "description": "Profil for ei regulert eining eller eit styrekort: VAPORESSO ARMOUR MAX.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-232": {
-            "displayName": "Geekvape Aegis Legend 2 (L200)",
-            "description": "Profil for ei regulert eining eller eit styrekort: Geekvape Aegis Legend 2 (L200).",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-233": {
-            "displayName": "ProVape ProVari Radius 40 W",
-            "description": "Profil for ei regulert eining eller eit styrekort: ProVape ProVari Radius 40 W.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-234": {
-            "displayName": "VAPORESSO GEN MAX",
-            "description": "Profil for ei regulert eining eller eit styrekort: VAPORESSO GEN MAX.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-235": {
-            "displayName": "VAPORESSO ARMOUR ULTRA",
-            "description": "Profil for ei regulert eining eller eit styrekort: VAPORESSO ARMOUR ULTRA.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-236": {
-            "displayName": "Geekvape Aegis Solo 3",
-            "description": "Profil for ei regulert eining eller eit styrekort: Geekvape Aegis Solo 3.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-237": {
-            "displayName": "Eleaf iStick Pico 21700",
-            "description": "Profil for ei regulert eining eller eit styrekort: Eleaf iStick Pico 21700.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        },
-        "preset-238": {
-            "displayName": "Vandy Vape Pulse V2",
-            "description": "Profil for ei regulert eining eller eit styrekort: Vandy Vape Pulse V2.",
-            "summary": "En profil for en regulert eining eller et styrekort."
-        }
-    }
+    materials: materialPresentationsFor(materialTexts, nynorskMaterialNames),
+    batteries: batteryPresentationsFor(batteryTexts),
+    mods: modPresentationsFor(modTexts)
 });

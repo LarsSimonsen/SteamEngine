@@ -1,0 +1,123 @@
+{
+    "entityId": "battery-77",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "Research record for EVE INR18650/30P.",
+        "description": "The manufacturer specification identifies EVE-30P/INR18650-30P as a 3000mAh nominal 18650 lithium-ion cell. The exact EVE 30P is sold for replaceable 18650 vaporizer and vape-starter-kit use; independent testing supports a 20A comparison value. The cell is an unprotected OEM cell; warnings require protected-pack/device safeguards. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "Independent comparison current is preserved with its limitations.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "EVE-30P instruction manual and specification mirror",
+            "url": "https://ae-pic-a1.aliexpress-media.com/kf/S195e9fe6ae98412787e7596087813b8fR.pdf",
+            "publisher": "EVE Energy",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "mooch-test",
+            "title": "Bench Test Results: EVE 30P - 30A 3000mAh 18650",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-eve-30p-30a-3000mah-18650.989554/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; the full report was identified but some page content was browser-gated during this pass."
+        },
+        {
+            "id": "vape-retailer",
+            "title": "Eve 30P - 3000 mAh 18650 Battery for Vaporizers",
+            "url": "https://magicvaporizers.co.uk/eve-30p-3000-mah-18650-battery",
+            "publisher": "Magic Vaporizers",
+            "limitations": "Specialist vaporizer retailer; technical-current and authenticity claims are vendor claims or attributions to independent testing."
+        },
+        {
+            "id": "foggfather",
+            "title": "EVE 18650 Battery 30P",
+            "url": "https://www.foggfather.co.uk/eve-18650-battery-30p.htm",
+            "publisher": "Fogg Father",
+            "limitations": "Current specialist-vape listing; the page identifies the model as EVE 30P but its manufacturer field says Sony, which conflicts with the product identity evidence and is treated as metadata error until resolved."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is EVE INR18650/30P (INR18650/30P), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "The manufacturer specification identifies EVE-30P/INR18650-30P as a 3000mAh nominal 18650 lithium-ion cell.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "The exact-model Battery Mooch test is identified as a 30A 3000mAh EVE 30P test; current application guidance in specialist-vape retail pages attributes a conservative 20A continuous comparison value to independent testing.",
+            "evidenceDate": "2026-07-28",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact EVE INR18650/30P has an exact-model Battery Mooch test and current specialist-vape retail coverage.",
+            "evidenceDate": "2026-07-28",
+            "confidence": "high"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact EVE INR18650/30P identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "identity-conflict",
+            "statement": "A current Fogg Father listing labels the EVE 30P manufacturer as Sony even though the model identity and manufacturer documentation identify EVE Energy; this is retained as an unresolved retailer metadata conflict.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "retail-price",
+            "statement": "Fogg Father listed one EVE 30P cell at £7.99 in the UK on 2026-08-04.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

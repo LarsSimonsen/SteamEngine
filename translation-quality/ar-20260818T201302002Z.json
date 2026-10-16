@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260818T201302002Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Arabic pass identified 25 remaining unit-formatting, terminology, and technical-clarity defects across Ohm's law, Joule heating, Kirchhoff laws, TCR, trigonometry, thermal concepts, SI conversions, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-20260818-101",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The kilo-ohm conversion used inconsistent localized symbols and grouping.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used localized kΩ and an ungrouped 1000."],
+            "resolution": "Changed it to the unambiguous engineering form ‘1 kΩ = 1,000 Ω’."
+        },
+        {
+            "id": "ar-20260818-102",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The mega-ohm conversion localized the unit inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used Arabic unit text and inconsistent digit grouping."],
+            "resolution": "Changed it to ‘1 MΩ = 1,000,000 Ω’."
+        },
+        {
+            "id": "ar-20260818-103",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The milliampere conversion mixed Arabic abbreviations with the SI unit expression.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used Arabic text for mA and A."],
+            "resolution": "Changed it to ‘1 mA = 0.001 A’."
+        },
+        {
+            "id": "ar-20260818-104",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The watt conversion incorrectly described mW as megawatts.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet rendered 1 W = 1000 mW with wording meaning megawatts."],
+            "resolution": "Corrected it to the unambiguous relation ‘1 W = 1,000 mW’."
+        },
+        {
+            "id": "ar-20260818-105",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating setup used an ambiguous Arabic ampere abbreviation and awkward verb.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup said ‘ملف 0.8 Ω يحمل 3 أ’."],
+            "resolution": "Rewrote it as ‘يمر تيار قدره 3 A في ملف مقاومته 0.8 Ω’."
+        },
+        {
+            "id": "ar-20260818-106",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell explanation was awkward and did not clearly distinguish voltage from ampere-hour capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘بقدر خلية واحدة متساوية’."],
+            "resolution": "Rewrote it to state that series cells add voltage while capacity remains approximately that of one cell."
+        },
+        {
+            "id": "ar-20260818-107",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell explanation used an awkward verb for combining available capacity and current.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said the quantities ‘تضيف’ without a clear technical construction."],
+            "resolution": "Rewrote it to state that parallel cells keep the same voltage while capacity and available current approximately combine."
+        },
+        {
+            "id": "ar-20260818-108",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage TCR explanation used an imprecise construction for a resistor with positive TCR.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘بالنسبة لمقاومة TCR موجبة’ and a literal current clause."],
+            "resolution": "Rewrote it with clear positive-TCR, constant-voltage, and constant-current relationships."
+        },
+        {
+            "id": "ar-20260818-109",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The manufacturer-range limitation paragraph used repetitive and less precise technical phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph listed effects without clearly separating the specified range from real-world deviations."],
+            "resolution": "Rewrote it to distinguish the manufacturer's range from thermal gradients, material changes, contacts, stress, and self-heating."
+        },
+        {
+            "id": "ar-20260818-110",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angular-frequency bullet used a passive construction that was less direct.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘يتم قياس التردد الزاوي’."],
+            "resolution": "Changed it to the direct technical wording ‘يقاس التردد الزاوي ω بالراديان لكل ثانية’."
+        },
+        {
+            "id": "ar-20260818-111",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sign-and-quadrant instruction used المرحلة for phase and an incomplete imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended ‘عندما يكون الاتجاه أو المرحلة مهمًا’."],
+            "resolution": "Changed it to ‘حافظ على إشارة العدد والربع عندما يكون الاتجاه أو الطور مهمًا’."
+        },
+        {
+            "id": "ar-20260818-112",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-difference formula localized the degree unit in prose rather than preserving the standard symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula ended with ‘50 درجة مئوية’."],
+            "resolution": "Changed it to ‘ΔT = 70 - 20 = 50 °C’."
+        },
+        {
+            "id": "ar-20260818-113",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The limitation paragraph called specific heat simply heat and used an imprecise result phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘الحرارة النوعية ثابتة’ and repeated النتيجة الحقيقية/المثالية."],
+            "resolution": "Rewrote it using ‘السعة الحرارية النوعية’ and a clearer distinction between actual and ideal results."
+        },
+        {
+            "id": "ar-20260818-114",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The area-conversion instruction was a noun fragment rather than a direct instruction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘حول المساحة’."],
+            "resolution": "Changed it to the complete imperative ‘حوّل المساحة إلى m² قبل استخدام W/m²’."
+        },
+        {
+            "id": "ar-20260818-115",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.headers.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table header used a corrupted Arabic rendering of SI unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous header was ‘وحدة سي’."],
+            "resolution": "Changed it to ‘وحدة SI’."
+        },
+        {
+            "id": "ar-20260818-116",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI length row localized the standard symbol m into Arabic text.",
+            "disposition": "resolved",
+            "evidence": ["The previous row used ‘م’ for the SI symbol."],
+            "resolution": "Changed the row to ‘الطول / متر / m’."
+        },
+        {
+            "id": "ar-20260818-117",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI temperature row used an Arabic letter instead of the standard kelvin symbol K.",
+            "disposition": "resolved",
+            "evidence": ["The previous row ended with ‘ك’."],
+            "resolution": "Changed the row to ‘درجة الحرارة / كلفن / K’."
+        },
+        {
+            "id": "ar-20260818-118",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI current row used an Arabic letter instead of the standard ampere symbol A.",
+            "disposition": "resolved",
+            "evidence": ["The previous row ended with ‘أ’."],
+            "resolution": "Changed the row to ‘التيار الكهربائي / أمبير / A’."
+        },
+        {
+            "id": "ar-20260818-119",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The watt bullet labeled power as energy.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘الطاقة: واط’."],
+            "resolution": "Corrected the physical quantity to ‘القدرة: واط (W)’."
+        },
+        {
+            "id": "ar-20260818-120",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The newton bullet used a localized symbol rather than the standard N.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘ن’."],
+            "resolution": "Changed it to ‘القوة: نيوتن (N)’."
+        },
+        {
+            "id": "ar-20260818-121",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.bullets.5",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The pascal bullet used a localized symbol rather than the standard Pa.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used Arabic text for the pascal symbol."],
+            "resolution": "Changed it to ‘الضغط: باسكال (Pa)’."
+        },
+        {
+            "id": "ar-20260818-122",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The foot conversion formula retained the English word foot.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began ‘1 foot = ...’."],
+            "resolution": "Changed it to ‘1 قدم = 12 بوصة = 0.3048 m’."
+        },
+        {
+            "id": "ar-20260818-123",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The yard conversion formula retained English unit names and feet.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began ‘1 yard = 3 feet’."],
+            "resolution": "Changed it to ‘1 ياردة = 3 أقدام = 0.9144 m’."
+        },
+        {
+            "id": "ar-20260818-124",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.bullets.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The pound-force conversion was translated with the same ambiguous label as pound mass.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘1 رطل ≈ 4.44822 ن’."],
+            "resolution": "Changed it to the unambiguous relation ‘1 lbf ≈ 4.44822 N’."
+        },
+        {
+            "id": "ar-20260818-125",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.table.headers.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The wire-gauge comparison table corrupted the AWG header into unrelated Arabic wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous header was ‘الفريق العامل المخصص’."],
+            "resolution": "Restored the technical system name ‘AWG’."
+        }
+    ]
+}

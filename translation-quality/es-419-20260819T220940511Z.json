@@ -1,0 +1,204 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T220940511Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, the complete effective es-419 locale, UI context, glossary, protected-token rules, and an independent linguistic pass were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation metadata, queue validation, type checking, all tests, and the complete production build passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh independent machine critique reviewed the complete published locale and identified 25 actionable findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Latin American Spanish human review was performed; corrections remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested continued translation improvement, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "es419-normalization-spacing", "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "Three normalization suffixes omitted the leading space required when appended to a save notice.",
+            "evidence": ["The source suffixes include a leading space and are concatenated directly."],
+            "resolution": "Restored one leading space in all three normalization suffixes."
+        },
+        {
+            "id": "es419-weight-unit-symbol", "translationId": "messages.catalogEditor.weightGrams",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The stable gram symbol was expanded to a word.",
+            "evidence": ["Unit symbols are protected presentation tokens."],
+            "resolution": "Used Peso (g)."
+        },
+        {
+            "id": "es419-protection-status", "translationId": "messages.catalogEditor.protectedStatus",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The label described a protected state instead of the protection-status field.",
+            "evidence": ["The field distinguishes protected and unprotected cells."],
+            "resolution": "Used Estado de protección."
+        },
+        {
+            "id": "es419-entry-count", "translationId": "messages.encyclopedia.entriesLabel",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The entry count always used a plural noun.",
+            "evidence": ["A count of one requires entrada."],
+            "resolution": "Added singular and plural count handling."
+        },
+        {
+            "id": "es419-category-count", "translationId": "messages.encyclopedia.browseCategory",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The category count always used a plural noun.",
+            "evidence": ["A category containing one entry requires entrada."],
+            "resolution": "Added singular and plural count handling."
+        },
+        {
+            "id": "es419-available-by", "translationId": "messages.encyclopediaDetail.availableBy",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The date connector failed for year-only catalog values.",
+            "evidence": ["The placeholder may be a year rather than a full date."],
+            "resolution": "Used a neutral availability label before the date value."
+        },
+        {
+            "id": "es419-continuous-rating", "translationId": "messages.encyclopediaDetail.noContinuousDischarge",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "A generic continuous-discharge rating was narrowed to current even though C ratings are supported.",
+            "evidence": ["The catalog represents continuous-discharge ratings in amperes or C."],
+            "resolution": "Used clasificación de descarga continua in the empty state and property label."
+        },
+        {
+            "id": "es419-chemistry-field", "translationId": "messages.encyclopediaDetail.chemistry",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The classification field was narrowed to chemical composition.",
+            "evidence": ["The source field is Chemistry and contains classifications."],
+            "resolution": "Used Clasificación química."
+        },
+        {
+            "id": "es419-old-battery-warning", "translationId": "messages.encyclopediaDetail.oldBatteryWarning",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "The likely supersession warning was weakened to a mere possibility.",
+            "evidence": ["Probably is materially stronger than may have been."],
+            "resolution": "Restored probablemente ha sido sustituido."
+        },
+        {
+            "id": "es419-wirewiz-home-purpose", "translationId": "messages.home.tools.wirewiz.description",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The home description omitted combining wires and the temperature-curve purpose.",
+            "evidence": ["Both functions are named in the canonical description."],
+            "resolution": "Restored the combined-wire and temperature-curve meaning."
+        },
+        {
+            "id": "es419-eliquid-term", "translationId": "messages.home.tools.juice.label",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "The label conflicted with the locale glossary's preferred term.",
+            "evidence": ["The es-419 glossary prefers líquido para vapear."],
+            "resolution": "Used Líquido para vapear."
+        },
+        {
+            "id": "es419-battery-estimate", "translationId": "calculators.batt.description",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Estimate was rendered as the more certain calculate.",
+            "evidence": ["The calculator output is an engineering estimate."],
+            "resolution": "Used Estima."
+        },
+        {
+            "id": "es419-joule-example-numbers", "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.formulas.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "English decimal separators remained in two Spanish technical formulas.",
+            "evidence": ["Decimal points are ambiguous against the locale's established numeric convention."],
+            "resolution": "Localized 0,8 and 7,2 while preserving every symbol and unit."
+        },
+        {
+            "id": "es419-joule-safety", "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "The paragraph substituted different components and omitted insulation, uneven heating, resistance change, and continuous-current limits.",
+            "evidence": ["The canonical safety paragraph explicitly covers all of those constraints."],
+            "resolution": "Retranslated the complete source paragraph faithfully."
+        },
+        {
+            "id": "es419-kirchhoff-title", "translationId": "catalog.concepts.concept-kirchhoffs-laws.displayName",
+            "category": "translation-defect", "severity": "low", "disposition": "resolved",
+            "summary": "The proper name and title were incorrectly lowercased.",
+            "evidence": ["Kirchhoff is a proper name."],
+            "resolution": "Used Leyes de Kirchhoff."
+        },
+        {
+            "id": "es419-current-sharing", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.2",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Current sharing was rendered as an exchange of current.",
+            "evidence": ["Parallel paths distribute or share current; they do not exchange it."],
+            "resolution": "Used reparto de corriente."
+        },
+        {
+            "id": "es419-cell-balancing", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.3",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "Battery balancing was rendered as a static equilibrium.",
+            "evidence": ["Equilibrado is the process used during series-cell charging."],
+            "resolution": "Used equilibrado adecuado."
+        },
+        {
+            "id": "es419-informal-register", "translationId": "catalog.concepts.concept-ohms-law.sections.1.paragraphs.0",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Seventeen instructional strings used formal imperatives in an informal-tú locale.",
+            "evidence": ["The surrounding application consistently addresses the visitor with tú."],
+            "resolution": "Normalized the affected concept and material-safety instructions to informal imperatives."
+        },
+        {
+            "id": "es419-si-magnitude", "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "The SI physical-quantity header used the generic word for amount.",
+            "evidence": ["Magnitud is the established Spanish metrology term for physical quantity."],
+            "resolution": "Used Magnitud."
+        },
+        {
+            "id": "es419-inch-formulas", "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.formulas.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Two inch-conversion formulas retained English decimal separators and unit wording.",
+            "evidence": ["The article otherwise uses Spanish decimal notation."],
+            "resolution": "Localized the decimal separators and pulgada wording without changing the calculations."
+        },
+        {
+            "id": "es419-heating-time-number", "translationId": "catalog.concepts.concept-heat-capacity.sections.2.examples.0.formulas.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "The joule value used an ambiguous English thousands separator.",
+            "evidence": ["The preceding corrected formula establishes 41.800 J."],
+            "resolution": "Used 41.800 J consistently."
+        },
+        {
+            "id": "es419-heat-flux-term", "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "The concept title conflicted with the runtime calculator terminology.",
+            "evidence": ["The article and calculators already use flujo de calor."],
+            "resolution": "Used Flujo de calor consistently."
+        },
+        {
+            "id": "es419-heat-flux-instruction", "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.3",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "An infinitive after a semicolon left the instruction grammatically disconnected.",
+            "evidence": ["The clause directly instructs the visitor how to compute temperature change."],
+            "resolution": "Used an informal imperative with usa."
+        },
+        {
+            "id": "es419-battery-71", "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The evidence note had malformed word order and incorrect capitalization after a semicolon.",
+            "evidence": ["The source states a 20 A continuous rating and excludes pulse ratings."],
+            "resolution": "Rewrote the note as a grammatical rating statement."
+        },
+        {
+            "id": "es419-mod-profile-relations", "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "Two profiles incorrectly made a battery the regulator or made the mod itself an adapter.",
+            "evidence": ["The source describes a regulated mod with an integrated battery and a mod accepting an adapted 18650 cell."],
+            "resolution": "Restored both device-to-battery and device-to-adapter relationships."
+        }
+    ]
+}

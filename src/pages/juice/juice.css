@@ -1,0 +1,413 @@
+.juice-page-content {
+    position: relative;
+}
+
+.juice-page-header {
+    margin-bottom: 1.5rem;
+}
+
+.juice-page-header h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.juice-page-header p {
+    margin: 0;
+    color: var(--se-muted);
+}
+
+.juice-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: max-content minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+}
+
+.juice-panel {
+    min-width: 0;
+    overflow: hidden;
+    border-top: 0.25rem solid var(--se-primary);
+    border-radius: 0.35rem;
+}
+
+.juice-panel--success {
+    border-top-color: #00bc8c;
+}
+
+.juice-panel--warning {
+    border-top-color: #f39c12;
+}
+
+.juice-panel--info {
+    border-top-color: #3498db;
+}
+
+.juice-panel--batch {
+    grid-column: 1;
+    grid-row: 1;
+    padding-bottom: 1rem;
+}
+
+.juice-panel--flavor {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.juice-panel--base {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.juice-panel--target {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.juice-recipe-panel {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+}
+
+.juice-panel h2 {
+    margin: 0;
+    padding: 0.85rem 1rem;
+    font-size: 1.15rem;
+}
+
+.juice-panel h2 small {
+    color: var(--se-muted);
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+.juice-panel > .juice-field,
+.juice-panel > .juice-composition,
+.juice-panel > .juice-details-button,
+.juice-panel > .juice-details {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.juice-field {
+    display: grid;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.juice-field > span:first-child,
+.juice-composition > span {
+    color: var(--se-muted);
+    font-size: 0.9rem;
+}
+
+.juice-input-with-unit {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: stretch;
+}
+
+.juice-input-with-unit input,
+.juice-composition input,
+.juice-flavor-table input {
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
+    color: var(--se-text);
+    background: var(--se-surface-raised);
+    border: 1px solid var(--se-border);
+    border-radius: 0.2rem;
+}
+
+.juice-input-with-unit input {
+    border-radius: 0.2rem 0 0 0.2rem;
+    text-align: right;
+}
+
+.juice-input-with-unit > span {
+    display: flex;
+    align-items: center;
+    padding: 0 0.55rem;
+    color: var(--se-muted);
+    background: var(--se-subtle-bg);
+    border: 1px solid var(--se-border);
+    border-left: 0;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.juice-link-button {
+    margin: 0.45rem 0.65rem 0 0;
+}
+
+.juice-flavor-table th,
+.juice-flavor-table td,
+.juice-recipe-table th,
+.juice-recipe-table td,
+.juice-details th,
+.juice-details td {
+    padding: 0.5rem;
+    border-top: 1px solid var(--se-border);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.juice-flavor-table th,
+.juice-flavor-table td {
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+.juice-flavor-table th:last-child,
+.juice-flavor-table td:last-child {
+    padding-left: 0;
+}
+
+.juice-flavor-table th:nth-child(2),
+.juice-flavor-table td:nth-child(2),
+.juice-recipe-table th:first-child,
+.juice-recipe-table td:first-child,
+.juice-details th:first-child,
+.juice-details td:first-child {
+    text-align: left;
+}
+
+.juice-flavor-input-headings,
+.juice-flavor-input-group {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 5.5rem;
+}
+
+.juice-flavor-input-headings span:last-child {
+    text-align: right;
+}
+
+.juice-flavor-input-group input:first-child {
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.juice-flavor-input-group input:last-child {
+    border-left: 0;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.juice-flavor-table th:first-child,
+.juice-flavor-table td:first-child {
+    width: 2.3rem;
+}
+
+.juice-icon-button {
+    padding: 0.3rem;
+    color: var(--se-muted);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.juice-icon-button:hover {
+    color: #e74c3c;
+}
+
+.juice-carrier-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--se-surface-raised);
+    border: 1px solid var(--se-border);
+    border-radius: 0.25rem;
+}
+
+.juice-carrier-options label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2rem 0.35rem;
+    color: var(--se-muted);
+    cursor: pointer;
+}
+
+.juice-carrier-options input.sr-only {
+    left: 0;
+}
+
+.juice-carrier-options label + label {
+    border-top: 1px solid var(--se-border);
+}
+
+.juice-carrier-options .juice-carrier-option--selected {
+    color: #fff;
+    background: var(--se-primary);
+}
+
+.juice-recipe-table tfoot th,
+.juice-details tfoot th {
+    font-weight: 700;
+}
+
+.juice-negative {
+    color: #e74c3c;
+    background: rgb(231 76 60 / 12%);
+}
+
+.juice-italic {
+    font-style: italic;
+}
+
+.juice-composition {
+    display: grid;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.juice-composition label {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+}
+
+.juice-composition label span {
+    padding: 0 0.4rem;
+    color: var(--se-muted);
+}
+
+.juice-details-button {
+    margin-top: 0.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--se-muted);
+    font-size: 0.85rem;
+}
+
+.juice-details {
+    margin-bottom: 1rem;
+    color: var(--se-muted);
+    font-size: 0.85rem;
+}
+
+.juice-details p {
+    margin: 0.5rem 0 0;
+    text-align: right;
+}
+
+.juice-status {
+    padding: 0.85rem 1rem 1rem;
+    line-height: 1.5;
+}
+
+.juice-status--ok {
+    color: #00bc8c;
+}
+
+.juice-status--error {
+    color: #e74c3c;
+}
+
+.juice-status--error span {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.juice-mix-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    color: #ffb4ae;
+    background: rgb(231 76 60 / 14%);
+    border: 1px solid rgb(231 76 60 / 55%);
+    border-radius: 0.35rem;
+    line-height: 1.45;
+}
+
+.juice-mix-warning svg {
+    flex: 0 0 auto;
+    margin-top: 0.2rem;
+}
+
+.juice-safety {
+    max-width: 70ch;
+    margin-top: 2rem;
+    color: var(--se-muted);
+}
+
+.juice-safety h2 {
+    color: var(--se-text);
+}
+
+@media (max-width: 1050px) {
+    .juice-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: none;
+    }
+
+    .juice-panel--batch,
+    .juice-panel--flavor,
+    .juice-panel--base,
+    .juice-panel--target,
+    .juice-recipe-panel {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .juice-page-header {
+        display: block;
+    }
+
+    .juice-page-header .se-page-header__actions {
+        justify-content: flex-start;
+    }
+
+    .se-menu {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    .juice-page-header .se-menu__items {
+        right: auto;
+        left: 0;
+    }
+
+    .se-menu summary,
+    .se-menu__items button,
+    .juice-link-button,
+    .juice-details-button,
+    .juice-icon-button,
+    .juice-carrier-options label {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .juice-input-with-unit input,
+    .juice-composition input,
+    .juice-flavor-table td > input {
+        min-height: 44px;
+    }
+
+    .juice-icon-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .juice-carrier-options label {
+        justify-content: center;
+    }
+
+    .juice-mix-warning {
+        position: sticky;
+        z-index: 5;
+        top: 0.5rem;
+    }
+
+    .juice-grid {
+        grid-template-columns: 1fr;
+    }
+}

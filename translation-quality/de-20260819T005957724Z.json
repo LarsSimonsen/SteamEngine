@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260819T005957724Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded German pass identified three terminology defects in worked-example and power headings; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "de-20260819-008", "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.title", "category": "translation-defect", "severity": "medium", "summary": "The Ohm-law worked-example title was a literal and unnatural rendering of finding current.", "disposition": "resolved", "evidence": ["The previous title was Aktuelles finden, which does not mean determining electrical current naturally in German."], "resolution": "Changed it to Stromstärke bestimmen." },
+        { "id": "de-20260819-009", "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.title", "category": "translation-defect", "severity": "medium", "summary": "The electrical-power heading used Energie instead of the technical term Leistung.", "disposition": "resolved", "evidence": ["The previous title was Elektrische Energie while the section defines P and discusses measured power."], "resolution": "Changed it to Elektrische Leistung." },
+        { "id": "de-20260819-010", "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.title", "category": "translation-defect", "severity": "low", "summary": "The TCR example title used hitziger, which sounds colloquial and person-like rather than technical.", "disposition": "resolved", "evidence": ["The previous title was Ein hitziger Widerstand."], "resolution": "Changed it to Ein erwärmter Widerstand." }
+    ]
+}

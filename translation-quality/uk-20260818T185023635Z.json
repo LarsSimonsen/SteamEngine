@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "uk",
+    "cycleId": "uk-20260818T185023635Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Ukrainian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Ukrainian pass identified 25 actionable terminology, grammar, technical-clarity, circuit, thermal, and wire-gauge defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Ukrainian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "uk-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The relationship heading was rendered as a literal relationship rather than a natural Ukrainian technical heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Відносини."
+            ],
+            "resolution": "Changed it to Співвідношення."
+        },
+        {
+            "id": "uk-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heading used an unnatural calque for rearranged formulas.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Переставлені формули."
+            ],
+            "resolution": "Changed it to Перетворені формули."
+        },
+        {
+            "id": "uk-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The zero-resistance warning used an awkward literal construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Опір нуль Ω and used звертатися окремо."
+            ],
+            "resolution": "Rewrote it with numeric 0 Ω and natural Ukrainian safety wording."
+        },
+        {
+            "id": "uk-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power introduction used an unnatural compound for electrical heating.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was Потужність електронагріву становить."
+            ],
+            "resolution": "Changed it to Потужність електричного нагрівання становить."
+        },
+        {
+            "id": "uk-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The worked-example heading was a false-friend translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Спрацьований приклад."
+            ],
+            "resolution": "Changed it to Опрацьований приклад."
+        },
+        {
+            "id": "uk-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The setup used несе for current through a coil, which is not the clearest electrical wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup said Котушка 0,8 Ω несе 3 А."
+            ],
+            "resolution": "Rewrote it as current passing through a coil with 0.8 Ω resistance."
+        },
+        {
+            "id": "uk-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The dative and instrumental forms in the heat-transfer sentence were incorrect.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used Теплопередача повітрю, рідині та обладнанням."
+            ],
+            "resolution": "Changed it to natural heat transfer to air, liquid, and equipment."
+        },
+        {
+            "id": "uk-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph described heat leaving a surface with awkward and ambiguous wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used literal energy-transfer wording and did not clearly distinguish heat-flux density."
+            ],
+            "resolution": "Rewrote it to distinguish power, temperature, heat capacity, and heat-flux density."
+        },
+        {
+            "id": "uk-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-terms heading was too generic in Ukrainian.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Терміни схеми."
+            ],
+            "resolution": "Changed it to Терміни електричної схеми."
+        },
+        {
+            "id": "uk-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The loop definition used a hyphenated calque and the wrong noun for a circuit loop.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began Петля - це замкнутий шлях."
+            ],
+            "resolution": "Changed it to a natural definition using Контур and Ukrainian punctuation."
+        },
+        {
+            "id": "uk-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-and-parallel heading was less natural than the standard connection terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Послідовні та паралельні кола."
+            ],
+            "resolution": "Changed it to Послідовне та паралельне з’єднання."
+        },
+        {
+            "id": "uk-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The battery-cell heading used Клітини, which is a misleading literal translation in this context.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Клітини послідовно і паралельно."
+            ],
+            "resolution": "Changed it to Елементи послідовно та паралельно."
+        },
+        {
+            "id": "uk-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-cell capacity sentence used awkward agreement and an unclear reference to an equal cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous sentence ended with як у однієї рівної клітини."
+            ],
+            "resolution": "Rewrote it with standard Ukrainian battery-element terminology and clear capacity wording."
+        },
+        {
+            "id": "uk-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning used серійне and described monitoring less precisely.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text referred to Серійне заряджання літій-іонних батарей and monitoring at element level."
+            ],
+            "resolution": "Changed it to послідовне charging of lithium-ion elements with per-element voltage control."
+        },
+        {
+            "id": "uk-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-solving step used a literal word for simultaneous equations.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Розв’яжіть симультанні рівняння."
+            ],
+            "resolution": "Changed it to Розв’яжіть систему рівнянь."
+        },
+        {
+            "id": "uk-20260818-041",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR worked-example heading repeated the false-friend translation Спрацьований.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Спрацьований приклад."
+            ],
+            "resolution": "Changed it to Опрацьований приклад."
+        },
+        {
+            "id": "uk-20260818-042",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR paragraph used the unnatural phrase позитивного опору TCR.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph described Для позитивного опору TCR."
+            ],
+            "resolution": "Rewrote it with додатний TCR and clearer constant-voltage wording."
+        },
+        {
+            "id": "uk-20260818-043",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The triangle setup used перетинає кут, which is not a meaningful geometric relation here.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was Гіпотенуза 10 см перетинає кут 30°."
+            ],
+            "resolution": "Rewrote it to state that the 10 cm hypotenuse is opposite the 30° angle."
+        },
+        {
+            "id": "uk-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity worked-example heading used the same false-friend translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Спрацьований приклад."
+            ],
+            "resolution": "Changed it to Опрацьований приклад."
+        },
+        {
+            "id": "uk-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object-versus-material heading used a literal против construction that sounds adversarial rather than comparative.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Об'єкт проти матеріалу."
+            ],
+            "resolution": "Changed it to Об’єкт і матеріал."
+        },
+        {
+            "id": "uk-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph used відноситься for a technical relationship and an awkward object phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Теплоємність відноситься до всього об'єкта."
+            ],
+            "resolution": "Rewrote it with стосується and natural Ukrainian grammar."
+        },
+        {
+            "id": "uk-20260818-047",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The display name omitted that heat flux is an areal density, which can be confused with total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was Тепловий потік."
+            ],
+            "resolution": "Changed it to Густина теплового потоку."
+        },
+        {
+            "id": "uk-20260818-048",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical check used an infinitive fragment instead of an instruction and used the less precise heat-flow term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began Відрізнити середній тепловий потік."
+            ],
+            "resolution": "Changed it to a direct instruction using average heat-flux density and local peak."
+        },
+        {
+            "id": "uk-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The gauge-number explanation had unnatural word order and an unclear phrase for sizes above zero gauge.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began Більше звичайне калібрувальне число."
+            ],
+            "resolution": "Rewrote it with standard Ukrainian gauge-number terminology."
+        },
+        {
+            "id": "uk-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The wire-sizing check called current capacity поточна потужність and used the wrong term for gauge number.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text asked readers to determine поточну потужність by номером датчика."
+            ],
+            "resolution": "Changed it to допустимий струм and номер калібру."
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T234922112Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Bengali pass identified two additional terminology and technical-register defects; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "bn-20260819-006",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating heading was a literal and ungrammatical Bengali rendering.",
+            "disposition": "resolved",
+            "evidence": ["The previous title used কি গরম প্রভাবিত করে, which does not naturally express factors affecting heating."],
+            "resolution": "Changed it to যে বিষয়গুলো উত্তাপকে প্রভাবিত করে."
+        },
+        {
+            "id": "bn-20260819-007",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The explanatory paragraph confused electrical power with electrical energy.",
+            "disposition": "resolved",
+            "evidence": ["The previous Bengali term শক্তি did not distinguish the power rate described by the English source."],
+            "resolution": "Used বৈদ্যুতিক ক্ষমতা and clarified the heat-capacity and heat-flux relationship."
+        }
+    ]
+}

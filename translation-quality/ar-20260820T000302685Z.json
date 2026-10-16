@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260820T000302685Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Arabic runtime entries, the Arabic glossary, prior review metadata, and technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation and TypeScript checking passed after all three iterations."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three further complete-scope passes resolved 75 calculator and shared-interface findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Arabic corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-calculator-language",
+            "translationId": "calculators.converter.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Twenty-five converter, liquid-mixing, coil, and TCR entries used malformed plurals, literal action phrasing, or incorrect reference-resistance wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "Converter units and gauge-system names had incorrect singular or gender forms.",
+                "Coil geometry used loop terminology where the interface describes an individual turn.",
+                "Base resistance was rendered as basic resistance rather than reference resistance."
+            ],
+            "resolution": "Rewrote calculator prompts, unit names, saved-state notices, coil geometry, and TCR reference labels in natural Arabic."
+        },
+        {
+            "id": "ar-wirewiz-tcr-terminology",
+            "translationId": "calculators.wirewiz.temperaturePoints",
+            "category": "terminology-disagreement",
+            "severity": "high",
+            "summary": "Twenty-five TCR and Wire Wizard entries inconsistently translated strands, heat flux, temperature notation, and construction labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "Temperature labels expanded or altered protected °C and °F notation.",
+                "Heat flux disagreed with the established Arabic concept and calculator terminology.",
+                "Strands were called threads instead of wire strands."
+            ],
+            "resolution": "Standardized symbols and engineering vocabulary and replaced machine-literal action and explanation text."
+        },
+        {
+            "id": "ar-shared-ui-naturalness",
+            "translationId": "messages.catalogManager.choose",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Twenty-five shared UI and encyclopedia entries had unsafe placeholder agreement, missing sentence structure, and inconsistent catalog terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "Generic catalog item placeholders were embedded in gendered or ungrammatical phrases.",
+                "The home introduction omitted the Arabic copula needed for a complete sentence.",
+                "Control-board and source-backed-record labels varied across the same catalog view."
+            ],
+            "resolution": "Made placeholder sentences gender-neutral and corrected homepage, catalog, review-date, vaping, and control-board wording."
+        }
+    ]
+}

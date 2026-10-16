@@ -1,0 +1,137 @@
+{
+    "entityId": "battery-48",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for Panasonic NCR18650A.",
+        "description": "This researched draft preserves the calculator's 3100mAh and 2C compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "vapingvibe-2026",
+            "title": "Best 18650 Batteries for Vaping",
+            "url": "https://vapingvibe.com/best-18650-batteries/",
+            "publisher": "vapingvibe.com",
+            "limitations": "Bounded five-cell editorial list; commercial links may influence selection."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "spec-panasonic-catalog",
+            "title": "Panasonic cylindrical battery catalog",
+            "url": "https://www.mouser.com/datasheet/2/315/Panasonic-Battery-Energy_catalog-182686.pdf",
+            "publisher": "Panasonic catalog mirror",
+            "limitations": "Historical catalog mirror; it establishes bare-cell specifications, not wrapper appearance or retail authenticity."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-panasonic-nca",
+            "title": "Panasonic NCR18650A/B/PD/PF chemistry references",
+            "url": "https://www.diva-portal.org/smash/get/diva2%3A946064/FULLTEXT01.pdf",
+            "publisher": "Academic battery research",
+            "limitations": "Academic and engineering literature identifies these Panasonic models as NCA-family cells; manufacturer datasheets commonly state only lithium-ion."
+        },
+        {
+            "id": "intro-panasonic-ncr18650a-2012",
+            "title": "Panasonic NCR18650A 3100mAh comparison",
+            "url": "https://budgetlightforum.com/t/panasonic-ncr18650a-3100mah-v-senybor-and-xtar-3100mah-protected-18650-18700/9358",
+            "publisher": "BudgetLightForum",
+            "limitations": "Exact-model comparison establishes availability by this date, not launch."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-panasonic-ncr-a",
+            "statement": "Panasonic's catalog identifies NCR18650A as a bare 18650 cell, approximately 18.6 mm x 65.2 mm; aggregate records identify it as flat-top and unprotected.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "high"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Panasonic NCR18650A 3100mAh 2C as a 3100mAh preset with a 2C runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "Panasonic NCR18650A is identified in academic battery literature as an NCA-family lithium-ion cell.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Panasonic NCR18650A has reliable market-introduction evidence dated 2012-06-17 or earlier.",
+            "evidenceDate": "2012-06-17",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion — NCA",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

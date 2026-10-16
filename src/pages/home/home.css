@@ -1,0 +1,173 @@
+.home-content {
+    padding-top: 2rem;
+}
+
+.home-hero {
+    max-width: 760px;
+    padding: 0 0 2rem;
+}
+
+.home-intro {
+    margin: 1.5rem 0 0;
+    color: var(--se-muted);
+    font-size: 1.2rem;
+    line-height: 1.65;
+}
+
+.tool-section {
+    padding: 2rem 0 4rem;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: var(--se-text);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.tool-card {
+    display: grid;
+    grid-template-columns: 2.75rem 1fr auto;
+    align-items: center;
+    gap: 0.9rem;
+    min-height: 8rem;
+    padding: 1rem;
+    color: var(--se-text);
+    background: var(--se-surface);
+    border: 1px solid var(--se-border);
+    border-radius: 0.4rem;
+    text-decoration: none;
+    transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+}
+
+.tool-card:hover,
+.tool-card:focus-visible {
+    color: var(--se-text);
+    background: var(--se-surface-raised);
+    border-color: var(--se-link);
+    transform: translateY(-2px);
+}
+
+.tool-card__icon {
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    color: var(--se-link);
+    background: rgb(0 188 140 / 10%);
+    border-radius: 50%;
+}
+
+.tool-card__body {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.tool-card__title {
+    font-weight: 700;
+}
+
+.tool-card__description {
+    color: var(--se-muted);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.tool-card__arrow {
+    color: var(--se-muted);
+    font-size: 1.35rem;
+}
+
+.home-resources {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.home-encyclopedia {
+    display: flex;
+    padding: 1.25rem;
+    background: var(--se-surface);
+    border: 1px solid var(--se-border);
+    border-radius: 0.4rem;
+}
+
+.home-encyclopedia {
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    color: var(--se-text);
+    text-decoration: none;
+    transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+}
+
+.home-encyclopedia:hover,
+.home-encyclopedia:focus-visible {
+    color: var(--se-text);
+    background: var(--se-surface-raised);
+    border-color: var(--se-link);
+    transform: translateY(-2px);
+}
+
+.home-encyclopedia h2 {
+    margin: 0;
+    color: var(--se-text);
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.home-encyclopedia p:not(.eyebrow) {
+    max-width: 55ch;
+    margin: 0.6rem 0 0;
+    color: var(--se-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+    .home-content {
+        padding-top: 1.5rem;
+    }
+
+    .home-hero {
+        padding-bottom: 1.5rem;
+    }
+
+    .tool-grid,
+    .home-resources {
+        grid-template-columns: 1fr;
+    }
+
+    .home-encyclopedia {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-card {
+        grid-template-columns: 2.5rem 1fr;
+    }
+
+    .tool-card__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .tool-card__arrow {
+        display: none;
+    }
+
+}

@@ -1,0 +1,6 @@
+# Generated curated catalog data is produced from a private research repository.
+# See CONTRIBUTING.md#catalog-data.
+/src/catalogs/batteries/defaults.ts @LarsSimonsen
+/src/catalogs/materials/defaults.ts @LarsSimonsen
+/src/catalogs/mods/presets.json @LarsSimonsen
+/src/catalogs/entity-records/ @LarsSimonsen

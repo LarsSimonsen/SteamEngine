@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "id", "cycleId": "id-20260819T190601891Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Indonesian locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Indonesian critique found two research metadata labels with legal-evidence or note-taking senses." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Indonesian human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "id-record-metadata", "translationId": "shared.encyclopediaDetail.evidenceDate", "category": "translation-defect", "severity": "low", "summary": "Evidence date and record status used legal-evidence and note-taking senses rather than documentation data.", "disposition": "resolved", "evidence": ["The fields describe supporting documentation and the status of a structured catalog record."], "resolution": "Used Indonesian documentation and data terminology." }]
+}

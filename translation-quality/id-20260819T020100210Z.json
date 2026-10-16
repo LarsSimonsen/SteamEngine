@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "id",
+    "cycleId": "id-20260819T020100210Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Indonesian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Indonesian pass identified untranslated English side labels in the trigonometry formulas and abbreviated labels in the worked example; all were aligned with the established Indonesian terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Indonesian human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "id-20260819-008",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle formulas retained English side labels in the Indonesian presentation.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory paragraph used sisi berlawanan, sisi berdekatan, and sisi miring while the formulas displayed opposite, adjacent, and hypotenuse."],
+            "resolution": "Localized all three formulas with the established Indonesian side terminology."
+        },
+        {
+            "id": "id-20260819-009",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels in the Indonesian presentation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed opposite, adjacent, and hypotenuse in an otherwise Indonesian section."],
+            "resolution": "Localized all three inverse formulas with the established Indonesian side terminology."
+        },
+        {
+            "id": "id-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used shortened side labels instead of the terms used in the surrounding Indonesian explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example labels were berlawanan and berdekatan while the section consistently described the sides as sisi berlawanan and sisi berdekatan."],
+            "resolution": "Expanded both example labels to sisi berlawanan and sisi berdekatan."
+        }
+    ]
+}

@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260818T174639397Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Greek source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Greek pass identified 25 remaining technical wording, terminology, and notation defects across Ohm's law, Joule heating, trigonometry, thermal concepts, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Greek human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "el-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance definition retained the English plural ohms.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the Greek unit name ωμ with Ω."
+        },
+        {
+            "id": "el-20260818-077",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current example title used a bare imperative.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Βρείτε την ένταση του ρεύματος."
+        },
+        {
+            "id": "el-20260818-078",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance example title used an incomplete phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Βρείτε την αντίσταση."
+        },
+        {
+            "id": "el-20260818-079",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule example section title used the literal Δουλευμένο παράδειγμα.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Παράδειγμα υπολογισμού."
+        },
+        {
+            "id": "el-20260818-080",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The triangle example title used a bare imperative.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Εύρεση μιας πλευράς."
+        },
+        {
+            "id": "el-20260818-081",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The triangle setup used συναντά for forming an angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a natural statement that the hypotenuse forms a 30° angle."
+        },
+        {
+            "id": "el-20260818-082",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-function conclusion was less direct than the source concept.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with the standard Greek technical phrasing."
+        },
+        {
+            "id": "el-20260818-083",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The waveform variable definition used repetitive sentence structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with consistent Greek variable definitions and units."
+        },
+        {
+            "id": "el-20260818-084",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating setup used an awkward literal reference to the example.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a clear 41.8 kJ heating instruction."
+        },
+        {
+            "id": "el-20260818-085",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material title used a literal versus construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Αντικείμενο και υλικό."
+        },
+        {
+            "id": "el-20260818-086",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The phase-change title was less natural than the standard Greek phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Αλλαγές φάσης και πρακτικά όρια."
+        },
+        {
+            "id": "el-20260818-087",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux setup used σε εμβαδόν rather than a clear through-area construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as heat transfer through a 0.020 m² surface."
+        },
+        {
+            "id": "el-20260818-088",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-checks title used a less direct label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Πρακτικοί έλεγχοι."
+        },
+        {
+            "id": "el-20260818-089",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI title said common units rather than base units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Βασικές μονάδες SI."
+        },
+        {
+            "id": "el-20260818-090",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The length example retained English unit wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Localized it with ίντσα and Greek decimal notation."
+        },
+        {
+            "id": "el-20260818-091",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The second length example retained inconsistent unit wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Localized it with Greek unit wording and decimal notation."
+        },
+        {
+            "id": "el-20260818-092",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The imperial-unit paragraph used an imprecise literal rendering of pound and inch forms.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with clear Greek mass, force, and dimensional terms."
+        },
+        {
+            "id": "el-20260818-093",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge description used a less precise phrase for nominal dimension.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with ονομαστική διάσταση and an explicit named-system condition."
+        },
+        {
+            "id": "el-20260818-094",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge summary used an awkward compound.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with clearer Greek terminology for wire-gauge numbers."
+        },
+        {
+            "id": "el-20260818-095",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The gauge-system title was generic and did not explain the diameter context.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Συστήματα μέτρησης διαμέτρου."
+        },
+        {
+            "id": "el-20260818-096",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance title did not clearly name gauge, area, and resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Διαμέτρημα, εμβαδόν και αντίσταση."
+        },
+        {
+            "id": "el-20260818-097",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to R = ρ × L / A."
+        },
+        {
+            "id": "el-20260818-098",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-specification title used a generic label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Πρακτική προδιαγραφή."
+        },
+        {
+            "id": "el-20260818-099",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The first wire-specification bullet used an overly literal phrasing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a direct Greek instruction to name the system."
+        },
+        {
+            "id": "el-20260818-100",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final wire-specification bullet used an imprecise term for ampacity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Greek presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with ικανότητα μεταφοράς ρεύματος and preserved the source warning."
+        }
+    ]
+}

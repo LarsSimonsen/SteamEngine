@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "is",
+    "cycleId": "is-20260819T000026038Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Icelandic source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Icelandic pass identified three additional unit-spacing and imperative-register defects; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Icelandic human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "is-20260819-006", "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.conclusion", "category": "translation-defect", "severity": "low", "summary": "The Icelandic voltage example omitted the space before the unit symbol.", "disposition": "resolved", "evidence": ["The previous text displayed 5V."], "resolution": "Changed it to the standard 5 V presentation." },
+        { "id": "is-20260819-007", "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1", "category": "translation-defect", "severity": "medium", "summary": "A practical-check bullet used an infinitive where Icelandic requires an imperative instruction.", "disposition": "resolved", "evidence": ["The previous bullet began Aðgreina."], "resolution": "Changed it to the direct imperative Greindu." },
+        { "id": "is-20260819-008", "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.3", "category": "translation-defect", "severity": "medium", "summary": "A practical-check bullet used an infinitive instead of the imperative and omitted the calculation context.", "disposition": "resolved", "evidence": ["The previous bullet used nota hitagetu without an imperative subject."], "resolution": "Rephrased it with notaðu and an explicit temperature-change calculation." }
+    ]
+}

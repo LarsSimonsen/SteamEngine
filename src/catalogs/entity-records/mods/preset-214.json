@@ -1,0 +1,36 @@
+{
+    "entityId": "geekvape-aegis-legend-5",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Geekvape Legend 5 product page",
+            "url": "https://us.geekvape.com/product/LEGEND-5.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-legend5-20260824",
+            "title": "Geekvape Aegis Legend 5 Kit 200W",
+            "url": "https://store.geekvape.com/products/geekvape-aegis-legend-5-kit-200w",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

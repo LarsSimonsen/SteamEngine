@@ -1,0 +1,597 @@
+.wirewiz-page {
+    padding: 2rem 0 4rem;
+}
+.wirewiz-header {
+    margin-bottom: 1.5rem;
+}
+
+.wirewiz-import-input {
+    display: none;
+}
+
+.wirewiz-persistence-message {
+    margin-top: 1rem;
+}
+.wirewiz-header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.4rem;
+}
+.wirewiz-header p {
+    max-width: 60rem;
+    margin: 0;
+    color: var(--se-muted);
+    line-height: 1.5;
+}
+.wirewiz-header__actions {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+}
+#wirewiz-material-manager,
+#wirewiz-converter {
+    margin-bottom: 1.5rem;
+}
+#wirewiz-material-manager .catalog-manager,
+#wirewiz-converter .se-embedded-tool {
+    margin-top: 0;
+}
+.wirewiz-converter .converter-layout {
+    margin-top: 1rem;
+}
+.wirewiz-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+.wirewiz-mobile-summary {
+    display: none;
+}
+.wirewiz-temperature {
+    --wirewiz-depth-scale: 1;
+}
+.wirewiz-temperature__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.wirewiz-temperature__header h2 {
+    margin: 0;
+}
+.wirewiz-temperature__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+.wirewiz-temperature__controls .wirewiz-tabs {
+    display: inline-flex;
+    gap: 0;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    background: transparent;
+}
+.wirewiz-temperature__controls .wirewiz-tabs .se-button {
+    border-radius: 0;
+}
+.wirewiz-temperature__controls .wirewiz-tabs .se-button + .se-button {
+    margin-left: -1px;
+}
+.wirewiz-temperature__controls .wirewiz-tabs .se-button:first-child {
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+.wirewiz-temperature__controls .wirewiz-tabs .se-button:last-child {
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+.wirewiz-scale-toggle {
+    display: inline-flex;
+}
+.wirewiz-scale-toggle .se-button {
+    border-radius: 0;
+}
+.wirewiz-scale-toggle .se-button:first-child {
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+.wirewiz-scale-toggle .se-button:last-child {
+    margin-left: -1px;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+.wirewiz-scale-toggle .se-button[aria-pressed="true"] {
+    background: var(--se-button-active);
+    border-color: var(--se-button-active);
+    color: var(--se-button-active-text);
+}
+.wirewiz-temperature__graph-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+.wirewiz-temperature__graph-controls .wirewiz-note {
+    flex: 1;
+    margin: 0;
+}
+.wirewiz-temperature__graph-controls .wirewiz-scale-toggle {
+    margin-left: auto;
+}
+.wirewiz-design {
+    --wirewiz-depth-scale: 1;
+}
+.wirewiz-design__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.wirewiz-design__header h2 {
+    margin: 0;
+}
+.wirewiz-design__results-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: auto;
+    color: var(--se-muted);
+}
+.wirewiz-design__results-toggle input {
+    margin: 0;
+}
+.wirewiz-panel {
+    padding: 1.25rem;
+}
+.wirewiz-panel h2,
+.wirewiz-panel h3 {
+    margin-top: 0;
+}
+.wirewiz-coil-parameters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+    align-items: end;
+}
+.wirewiz-coil-parameters > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+.wirewiz-coil-parameters > label {
+    display: grid;
+    gap: 0.35rem;
+    margin-bottom: 0;
+}
+.wirewiz-coil-parameters > label > span:first-child {
+    color: var(--se-muted);
+    font-size: 0.9rem;
+}
+.wirewiz-coil-parameters > label > input {
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
+    color: var(--se-text);
+    background: var(--se-surface-raised);
+    border: 1px solid var(--se-border);
+    border-radius: 0.2rem;
+    text-align: right;
+}
+.wirewiz-field {
+    display: block;
+    margin: calc(0.8rem * var(--wirewiz-depth-scale)) 0;
+}
+.wirewiz-field > span {
+    display: block;
+    margin-bottom: calc(0.3rem * var(--wirewiz-depth-scale));
+    font-weight: 700;
+}
+.wirewiz-field input,
+.wirewiz-field select,
+.wirewiz-panel textarea {
+    width: 100%;
+    padding: calc(0.55rem * var(--wirewiz-depth-scale));
+    color: var(--se-text);
+    font: inherit;
+    background: var(--se-body-bg);
+    border: 1px solid var(--se-border);
+    border-radius: 0.25rem;
+}
+.wirewiz-field input[type="checkbox"] {
+    width: auto;
+}
+.wirewiz-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: calc(0.75rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+.wirewiz-tabs button[aria-selected="true"] {
+    background: var(--se-button-active);
+    border-color: var(--se-button-active);
+    color: var(--se-button-active-text);
+}
+.wirewiz-wire-card {
+    display: grid;
+    grid-template-columns: minmax(10rem, 0.45fr) minmax(0, 1fr);
+    column-gap: calc(1rem * var(--wirewiz-depth-scale));
+    padding: calc(0.9rem * var(--wirewiz-depth-scale));
+    padding-right: 0;
+    font-size: calc(1rem * var(--wirewiz-depth-scale));
+    border: 1px solid var(--se-border);
+    border-right: none;
+    border-bottom: none;
+    border-radius: calc(0.3rem * var(--wirewiz-depth-scale));
+    background: var(--se-surface-raised);
+    transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+.wirewiz-child .wirewiz-wire-card:hover:not(:has(.wirewiz-wire-card:hover)) {
+    border-color: var(--se-border);
+    box-shadow: 0 0 0.65rem var(--se-border);
+    background-color: var(--se-subtle-bg);
+}
+.wirewiz-wire-card > header {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(0.5rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-wire-card__results {
+    grid-column: 1;
+    align-self: start;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0;
+    padding: calc(0.6rem * var(--wirewiz-depth-scale));
+    background: var(--se-subtle-bg);
+    border: 1px solid var(--se-border);
+    border-radius: calc(0.25rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-wire-card__results h4 {
+    margin: 0 0 calc(0.4rem * var(--wirewiz-depth-scale));
+    color: var(--se-muted);
+    font-size: 0.9em;
+}
+.wirewiz-wire-card__results dl {
+    margin: 0;
+}
+.wirewiz-wire-card__results dl > div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: calc(0.75rem * var(--wirewiz-depth-scale));
+    align-items: baseline;
+}
+.wirewiz-wire-card__results dt {
+    color: var(--se-muted);
+}
+.wirewiz-wire-card__results dd {
+    margin: 0;
+    text-align: right;
+}
+.wirewiz-wire-card__summary {
+    padding-bottom: calc(0.45rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-wire-card__results details {
+    border-top: 1px solid var(--se-border);
+}
+.wirewiz-wire-card__results summary {
+    padding: calc(0.45rem * var(--wirewiz-depth-scale)) 0;
+    color: var(--se-muted);
+    font-size: 0.85em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.wirewiz-wire-card__results details[open] dl {
+    padding-bottom: calc(0.45rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-wire-card__body {
+    grid-column: 2;
+    min-width: 0;
+}
+.wirewiz-wire-card--without-results > .wirewiz-wire-card__body {
+    grid-column: 1 / -1;
+}
+.wirewiz-wire-type {
+    min-width: 0;
+    margin: 0;
+}
+.wirewiz-wire-type select {
+    max-width: 100%;
+    padding: calc(0.55rem * var(--wirewiz-depth-scale));
+    color: var(--se-text);
+    font: inherit;
+    background: var(--se-body-bg);
+    border: 1px solid var(--se-border);
+    border-radius: 0.25rem;
+}
+.wirewiz-wire-card__actions {
+    display: flex;
+    align-items: center;
+    gap: calc(0.35rem * var(--wirewiz-depth-scale));
+    margin-left: auto;
+}
+.wirewiz-wire-card__count {
+    color: var(--se-muted);
+    font-weight: 600;
+}
+.wirewiz-wire-card .se-button {
+    padding: calc(0.5rem * var(--wirewiz-depth-scale))
+        calc(0.7rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-wire-card__add-parallel {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: calc(0.75rem * var(--wirewiz-depth-scale));
+}
+.wirewiz-design > .wirewiz-wire-card {
+    padding-right: calc(0.9rem * var(--wirewiz-depth-scale));
+    border-right: 1px solid var(--se-border);
+    border-bottom: 1px solid var(--se-border);
+}
+.wirewiz-child-list {
+    --wirewiz-child-depth-scale: calc(var(--wirewiz-depth-scale) * 0.9);
+    margin-left: calc(1rem * var(--wirewiz-child-depth-scale));
+    padding-left: calc(0.75rem * var(--wirewiz-child-depth-scale));
+}
+.wirewiz-child {
+    --wirewiz-depth-scale: var(--wirewiz-child-depth-scale);
+}
+.wirewiz-child__role {
+    margin: calc(0.75rem * var(--wirewiz-depth-scale)) 0
+        calc(-0.5rem * var(--wirewiz-depth-scale));
+    color: var(--se-muted);
+    font-size: calc(0.85rem * var(--wirewiz-depth-scale));
+    font-weight: 600;
+}
+.wirewiz-note,
+.wirewiz-warning {
+    margin: 0.75rem 0;
+    color: var(--se-muted);
+    line-height: 1.45;
+}
+.wirewiz-warning {
+    color: #f39c12;
+}
+.wirewiz-temperature-editor {
+    display: grid;
+    gap: 0.75rem;
+}
+.wirewiz-temperature-editor .wirewiz-field,
+.wirewiz-temperature-editor .wirewiz-note,
+.wirewiz-temperature-editor .wirewiz-warning,
+.wirewiz-temperature-error {
+    margin: 0;
+}
+.wirewiz-temperature-editor input[aria-invalid="true"] {
+    border-color: var(--se-danger-text);
+    outline-color: var(--se-danger-text);
+}
+.wirewiz-temperature-error {
+    color: var(--se-danger-text);
+    line-height: 1.45;
+}
+.wirewiz-temperature-editor .se-button {
+    justify-self: start;
+}
+.wirewiz-equivalents {
+    padding: 0.25rem 0;
+}
+.wirewiz-equivalents__fields {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(12rem, 0.6fr);
+    gap: 1rem;
+    align-items: end;
+}
+.wirewiz-equivalents__fields fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.wirewiz-equivalents__temperature {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 0.5rem;
+    align-items: end;
+}
+.wirewiz-equivalents__temperature > span {
+    padding-bottom: 0.6rem;
+    color: var(--se-muted);
+}
+.wirewiz-equivalents .wirewiz-field {
+    margin: 0;
+}
+.wirewiz-equivalents__result {
+    padding: 0.75rem;
+    background: var(--se-subtle-bg);
+    border-left: 0.25rem solid #00bc8c;
+}
+.wirewiz-graph {
+    margin: 0;
+    padding: 0.75rem;
+    background: var(--se-body-bg);
+    border: 1px solid var(--se-border);
+    border-radius: 0.3rem;
+}
+.wirewiz-graph__curve {
+    stroke: #00bc8c;
+    stroke-width: 2;
+    opacity: 0.45;
+}
+.wirewiz-graph__curve--root {
+    stroke: #00bc8c;
+    stroke-width: 3;
+    opacity: 1;
+}
+.wirewiz-graph figcaption {
+    margin-top: 0.5rem;
+    color: var(--se-muted);
+    font-size: 0.85rem;
+}
+.wirewiz-dna {
+    min-height: 14rem;
+    resize: vertical;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace !important;
+    background: var(--se-subtle-bg) !important;
+    border-color: var(--se-border) !important;
+}
+.wirewiz-table th,
+.wirewiz-table td {
+    padding: 0.45rem;
+    border-bottom: 1px solid var(--se-border);
+    text-align: right;
+}
+.wirewiz-table th:first-child,
+.wirewiz-table td:first-child {
+    text-align: left;
+}
+@media (max-width: 800px) {
+    .wirewiz-mobile-summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        background: var(--se-subtle-bg);
+        border: 1px solid var(--se-border);
+        border-radius: 0.35rem;
+    }
+    .wirewiz-mobile-summary dl {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        gap: 0.35rem 1rem;
+        margin: 0;
+    }
+    .wirewiz-mobile-summary dl > div {
+        display: grid;
+        gap: 0.1rem;
+    }
+    .wirewiz-mobile-summary dt {
+        color: var(--se-muted);
+        font-size: 0.75rem;
+    }
+    .wirewiz-mobile-summary dd {
+        margin: 0;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+    }
+    .wirewiz-mobile-summary .se-button {
+        flex: 0 0 auto;
+        min-height: 44px;
+    }
+    .wirewiz-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .wirewiz-header__actions {
+        justify-content: flex-start;
+    }
+    .wirewiz-coil-parameters {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .wirewiz-temperature__header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .wirewiz-temperature__controls {
+        width: 100%;
+        margin-left: 0;
+    }
+    .wirewiz-temperature__controls .wirewiz-tabs {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .wirewiz-temperature__controls .wirewiz-tabs .se-button {
+        grid-column: span 2;
+        min-height: 44px;
+        border-radius: 0.25rem;
+    }
+    .wirewiz-temperature__controls .wirewiz-tabs .se-button + .se-button {
+        margin-left: 0;
+    }
+    .wirewiz-temperature__controls .wirewiz-tabs .se-button:nth-last-child(-n + 2) {
+        grid-column: span 3;
+    }
+    .wirewiz-temperature__controls .wirewiz-tabs .se-button:first-child,
+    .wirewiz-temperature__controls .wirewiz-tabs .se-button:last-child {
+        border-radius: 0.25rem;
+    }
+    .wirewiz-temperature-editor .se-button {
+        width: 100%;
+        min-height: 44px;
+    }
+    .wirewiz-equivalents__fields {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+    }
+    .wirewiz-wire-card {
+        grid-template-columns: minmax(0, 1fr);
+        padding-right: calc(0.9rem * var(--wirewiz-depth-scale));
+        border-right: 1px solid var(--se-border);
+        border-bottom: 1px solid var(--se-border);
+    }
+    .wirewiz-wire-card > header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .wirewiz-wire-card__body,
+    .wirewiz-wire-card--without-results > .wirewiz-wire-card__body {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .wirewiz-wire-card__results {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: none;
+    }
+    .wirewiz-child-list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .wirewiz-child {
+        --wirewiz-depth-scale: 1;
+    }
+}
+@media (max-width: 480px) {
+    .wirewiz-temperature__header {
+        gap: 0.75rem;
+    }
+    .wirewiz-temperature__controls .wirewiz-tabs {
+        gap: 0.4rem;
+    }
+    .wirewiz-equivalents__temperature {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .wirewiz-equivalents__temperature > span {
+        padding-bottom: 0;
+        text-align: center;
+    }
+    .wirewiz-temperature__graph-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .wirewiz-temperature__graph-controls .wirewiz-scale-toggle {
+        width: 100%;
+        margin-left: 0;
+    }
+    .wirewiz-scale-toggle .se-button {
+        flex: 1;
+        min-height: 44px;
+    }
+}

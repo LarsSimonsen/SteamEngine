@@ -1,0 +1,37 @@
+.material-tfr-graph {
+    margin: 1rem 0 0;
+    padding: 0.75rem;
+    background: var(--se-body-bg);
+    border: 1px solid var(--se-border);
+    border-radius: 0.3rem;
+}
+
+.material-tfr-graph__svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.material-tfr-graph__grid {
+    stroke: var(--se-border);
+    stroke-dasharray: 3 4;
+}
+
+.material-tfr-graph__axis {
+    stroke: var(--se-muted);
+}
+
+.material-tfr-graph__curve {
+    stroke: #00bc8c;
+    stroke-width: 3;
+    fill: none;
+}
+
+.material-tfr-graph__label {
+    fill: var(--se-muted);
+    font-size: 12px;
+}
+
+.material-tfr-graph__axis-label {
+    fill: var(--se-text);
+}

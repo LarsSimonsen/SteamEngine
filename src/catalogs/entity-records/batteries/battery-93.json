@@ -1,0 +1,76 @@
+{
+    "entityId": "battery-93",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A 4000mAh silicon-anode 18650 energy and mid-power cell with a 12A continuous rating.",
+        "description": "Amprius's SA110 is a distinct 18650 cell with 4000mAh typical capacity, 12A maximum continuous discharge, and 20A pulse capability. Battery Mooch published an exact-model vaping test, making the product relevant to a catalog that currently lacks a 4000mAh 18650 identity.",
+        "highlights": [
+            "4000mAh typical capacity",
+            "12A maximum continuous",
+            "20A is pulse-only",
+            "Silicon-anode identity",
+            "Exact vaping test"
+        ]
+    },
+    "sources": [
+        {
+            "id": "spec",
+            "title": "Amprius product catalog and SA110 technical data",
+            "url": "https://amprius.com/documents/Amprius_Product_Catalog.pdf",
+            "publisher": "Amprius Technologies",
+            "limitations": "Manufacturer product specification."
+        },
+        {
+            "id": "ecf",
+            "title": "Bench Test Results: Amprius INR18650/40 (SA110) - 12A 4000mAh 18650",
+            "url": "https://www.e-cigarette-forum.com/feeds/hot?page=30",
+            "publisher": "E-Cigarette Forum",
+            "limitations": "Full exact-model report text was retrieved through the ECF feed and reviewed; the feed is a presentation of the original forum report."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "Amprius identifies SA110 as its exact 4Ah energy and mid-power 18650 product.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "The SA110 data sheet gives 4000mAh typical and 3850mAh minimum capacity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "rating",
+            "statement": "Amprius specifies 12A maximum continuous and 20A pulse discharge.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "test",
+            "statement": "The retrieved exact-model vaping report measured 4165–4181mAh, found 12A reasonable, and preferred operation at 9A or below.",
+            "evidenceDate": "2026-03-22",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The manufacturer separates the 12A maximum continuous rating from the 20A pulse value.",
+            "runtimeImplication": "Use 12A as the proposed calculator limit."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "chemistry": "Silicon-anode lithium-ion",
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

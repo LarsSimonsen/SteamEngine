@@ -1,0 +1,4 @@
+interface:
+  display_name: "URL Rewrite Maintenance"
+  short_description: "Keep deployed and IIS routes in sync"
+  default_prompt: "Use $url-rewrite-maintenance to coordinate a safe URL-routing change across the deployed site and local IIS."

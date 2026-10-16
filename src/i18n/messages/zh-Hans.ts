@@ -77,6 +77,7 @@ export const messages: SharedMessages = {
         "manufacturer": "制造商",
         "model": "模型",
         "variant": "变体",
+        "weightGrams": "重量 (g)",
         "optional": "选修的",
         "unknown": "未知",
         "batteryAccess": "电池接入",
@@ -317,6 +318,21 @@ export const messages: SharedMessages = {
         "noDefinedCurve": (tcr) => "该材料没有定义的 TFR 曲线点。其 TCR 为每 °C __SE_ARG_0__。".replaceAll("__SE_ARG_0__", String(tcr)),
         "noUsableResistanceRange": "无法根据目录限值计算出可用的电阻范围。",
         "modBoardCatalog": "模组板和设备目录",
+        "supportedModesAndCapabilities": "支持的模式和功能",
+        "outputControlModes": "输出控制模式",
+        "additionalCapabilities": "其他功能",
+        "operatingFeatureLabels": {
+            "voltage": "电压调节",
+            "power": "功率调节",
+            "current": "电流调节",
+            "temperatureControl": "温度控制",
+            "bypass": "旁路",
+            "powerCurve": "功率曲线",
+            "temperatureCurve": "温度曲线",
+            "configurableTcr": "可配置 TCR",
+            "preheat": "预热",
+            "replay": "Replay",
+        },
         "batteryCatalog": "电池目录",
         "materialCatalog": "卷材材料目录",
         "overview": "概述",
@@ -334,6 +350,9 @@ export const messages: SharedMessages = {
             "continuousDischarge": "连续放电额定值",
             "maximumPower": "最大功率",
             "maximumVoltage": "最大电压",
+            "minimumInputVoltage": "最低输入电压",
+            "typicalInputVoltage": "典型输入电压",
+            "maximumInputVoltage": "最高输入电压",
             "maximumCurrent": "最大电流",
             "resistanceRange": "电阻范围",
             "boardController": "板卡/控制器",
@@ -348,3 +367,93 @@ export const messages: SharedMessages = {
         }
     }
 };
+
+Object.assign(messages.catalogEditor, {
+    "batteryHelp": "请输入至少一个持续放电限值。内置电池是设备内部的电池组，因此不需要单独填写电芯尺寸。可拆卸电芯的尺寸为标称值；如需查看电芯售出状态下的实测尺寸，请参阅备注。设置两个放电限值后，如果两者差异较大，计算器将继续采用更安全的计算限值。",
+    "normalizationHelp": "保存时会对曲线排序，插入或推算 20 °C 参考值，并将所有因子归一化。",
+    "terminalStyle": "端子类型",
+    "buttonTop": "凸点顶"
+});
+
+Object.assign(messages.home, {
+    "intro": "Steam Engine 是一组实用计算器，可用于制作线圈、检查电池放电、调配电子烟液，并了解设备设置背后的数据。",
+    "catalogDescription": "了解 Steam Engine 使用的原理，并查找其中的材料、电池、模组和控制板。"
+});
+
+Object.assign(messages.home.tools, {
+    "coil": {
+        ...messages.home.tools.coil,
+        "label": "线圈制作",
+        "description": "设计可重建雾化器的线圈，并探索其电气特性。"
+    },
+    "batt": {
+        ...messages.home.tools.batt,
+        "label": "电池放电"
+    },
+    "modrange": {
+        ...messages.home.tools.modrange,
+        "description": "查找可调功率设备的可用电阻范围。"
+    },
+    "converter": {
+        ...messages.home.tools.converter,
+        "label": "单位转换"
+    }
+});
+
+Object.assign(messages.ohm.fields, {
+    "resistance": "电阻",
+    "current": "电流",
+    "power": "功率"
+});
+
+Object.assign(messages.encyclopedia.categoryLabels, {
+    "mods": "模组和控制板"
+});
+
+Object.assign(messages.encyclopedia.categoryDescriptions, {
+    "mods": "可调输出设备和控制板配置文件。"
+});
+
+Object.assign(messages.encyclopediaDetail, {
+    "property": "属性",
+    "value": "数值",
+    "appearance": "外观",
+    "confidence": "置信度",
+    "breadcrumb": "导航路径",
+    "openEntry": "打开条目",
+    "sourceBackedEntity": "有来源支持的实体记录",
+    "noSourceBackedRecord": "此条目没有可用的有来源支持的研究记录。",
+    "researchSummary": "研究摘要",
+    "evidenceNotes": "证据备注",
+    "status": "状态",
+    "unit": "单位",
+    "catalogNote": "目录备注",
+    "chemistry": "化学体系",
+    "materialCatalog": "线圈材料目录",
+    "inVaping": "电子烟使用",
+    "modBoardCatalog": "模组和控制板目录",
+    "builtIntoModProfile": "此电池配置文件内置于模组配置文件中：",
+    "unknownPropertyValue": "目录未为此属性指定值。",
+    "noContinuousDischarge": "目录未指定持续放电电流。",
+    "continuousDischargeCurrent": (current: number) => `目录列出的持续放电电流为 ${current} A。`,
+    "continuousDischargeC": (cRate: number) => `目录列出的持续放电倍率为 ${cRate} C。`,
+    "batteryInternal": "该电池是设备内置的电池组，不是用户可更换的电芯。",
+    "rewrapExplanation": "该标签被视为重新包装品牌；仅凭外包装无法确定底层电芯制造商。",
+    "oldBatteryWarning": "这是较旧的电池型号，可能已被更合适的型号替代。",
+    "unknownBatteryIntroductionNotice": "该电芯的上市日期未知，因此无法确定其使用年限，也无法判断是否已被替代。",
+    "unknownChemistry": "研究记录未为此条目确认化学体系。",
+    "nonRemovableBatteryProfile": "该模组使用不可拆卸电池，其配置如下：",
+    "batteryAccess": "电池仓",
+    "protectedCell": "带保护板的电芯。",
+    "unprotectedCell": "不带保护板的电芯。",
+    "wrapperColor": "外包装颜色"
+});
+
+Object.assign(messages.encyclopediaDetail.propertyLabels, {
+    "dimensions": "尺寸",
+    "continuousDischarge": "持续放电电流",
+    "boardController": "控制板/控制器",
+    "fullResistanceCurve": "完整电阻曲线",
+    "temperatureCoefficient": "电阻温度系数",
+    "maximumRecommendedTemperature": "最高建议使用温度"
+});

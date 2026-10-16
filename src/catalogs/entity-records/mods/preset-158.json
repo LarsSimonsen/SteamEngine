@@ -1,0 +1,29 @@
+{
+    "entityId": "yihi-sx300",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "YiHi SX board-family technical discussion",
+            "url": "https://www.ecigtalk.org/forum/f126/t50133.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "battery-followup-20260824",
+            "title": "Specs of YiHi SX300 30W Yihiecigar",
+            "url": "https://p.globalsources.com/IMAGES/PDT/SPEC/776/K1086266776.pdf",
+            "limitations": "A contemporary SX300 specification sheet mirrored by Global Sources gives minimum, typical, and maximum input voltage and explicitly identifies one 3.7 V lithium-ion cell. It also lists 7-30 W output, 4.0-8.5 V output, 10 A maximum output current, 0.5-3.0 ohm resistance, and 92% typical efficiency."
+        }
+    ],
+    "claims": []
+}

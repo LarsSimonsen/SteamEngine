@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "it",
+    "cycleId": "it-20260818T133539624Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Italian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Italian pass identified 25 actionable protected-formula, terminology, and technical-clarity defects across electrical, circuit, TCR, trigonometric, thermal, and heat-flux content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Italian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "it-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Ohm-law formula localized I as the Italian word io.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘V = io × R’."],
+            "resolution": "Restored ‘V = I × R’."
+        },
+        {
+            "id": "it-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current definition repeated ampere unnecessarily.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘ampere o ampere’."],
+            "resolution": "Changed it to a concise definition of I in ampere."
+        },
+        {
+            "id": "it-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The rearranged current formula used the Italian pronoun io.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘Io = V/R’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "it-20260818-029",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current worked formula localized the variable name.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began ‘io =’."],
+            "resolution": "Restored the protected current expression."
+        },
+        {
+            "id": "it-20260818-030",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-power title used energia rather than potenza.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Energia elettrica’ although the section defines P in watts."],
+            "resolution": "Changed it to ‘Potenza elettrica’."
+        },
+        {
+            "id": "it-20260818-031",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-power paragraph retained the English loan headroom.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘headroom’ for a safety margin."],
+            "resolution": "Rewrote it with margine di sicurezza and clear thermal-capacity wording."
+        },
+        {
+            "id": "it-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Joule summary said current transforms resistance into heat.",
+            "disposition": "resolved",
+            "evidence": ["Electrical energy, not resistance, is converted into heat."],
+            "resolution": "Changed it to electrical energy converting into heat."
+        },
+        {
+            "id": "it-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Esempio lavorato’."],
+            "resolution": "Changed it to ‘Esempio risolto’."
+        },
+        {
+            "id": "it-20260818-034",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Joule worked formula had a corrupted watt unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended ‘7,2 L’."],
+            "resolution": "Restored the protected W unit."
+        },
+        {
+            "id": "it-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law title used the English current adjective.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘L'attuale legge di Kirchhoff’."],
+            "resolution": "Changed it to ‘La legge della corrente di Kirchhoff’."
+        },
+        {
+            "id": "it-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current-law formula omitted spacing and was inconsistent with the contract.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘ΣI = 0’."],
+            "resolution": "Restored ‘Σ I = 0’."
+        },
+        {
+            "id": "it-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.formulas",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-and-parallel formulas localized protected variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions used I_totale and R_totale."],
+            "resolution": "Restored I_total and R_total across the formula set."
+        },
+        {
+            "id": "it-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-cell formula localized V_pack.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘V_pacco’."],
+            "resolution": "Restored ‘V_pack = V_1 + V_2 + ... (serie)’."
+        },
+        {
+            "id": "it-20260818-039",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR power formula localized I as Io.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘Io = V/R’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "it-20260818-040",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR example title used an incorrect literal translation for heated.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Una resistenza accesa’."],
+            "resolution": "Changed it to ‘Una resistenza riscaldata’."
+        },
+        {
+            "id": "it-20260818-041",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR conclusion used a decimal point in Italian prose.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘1.032 Ω’."],
+            "resolution": "Normalized it to ‘1,032 Ω’."
+        },
+        {
+            "id": "it-20260818-042",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.formulas.2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The identity formula mistranslated sin as the Italian word peccato.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began ‘peccato^2’."],
+            "resolution": "Restored ‘sin^2(θ) + cos^2(θ) = 1’."
+        },
+        {
+            "id": "it-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity formula omitted spaces around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘C = Q/ΔT’."],
+            "resolution": "Restored ‘C = Q / ΔT’."
+        },
+        {
+            "id": "it-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Esempio lavorato’."],
+            "resolution": "Changed it to ‘Esempio risolto’."
+        },
+        {
+            "id": "it-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.3.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The object-and-material formula localized C_total.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘C_totale’."],
+            "resolution": "Restored ‘C_total = Σ m_i × c_i’."
+        },
+        {
+            "id": "it-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The latent-heat formula omitted spaces around multiplication.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘Q = m×L’."],
+            "resolution": "Restored ‘Q = m × L’."
+        },
+        {
+            "id": "it-20260818-047",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux formula localized Q_dot into an invalid identifier.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘q'' = Q_punto / A’."],
+            "resolution": "Restored ‘q'' = Q_dot / A’."
+        },
+        {
+            "id": "it-20260818-048",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The conduction formula localized Q_dot and hot/cold variables.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used Q_punto, T_caldo, and T_freddo."],
+            "resolution": "Restored the protected Q_dot, T_hot, and T_cold notation."
+        },
+        {
+            "id": "it-20260818-049",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux worked-example title was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Esempio lavorato’."],
+            "resolution": "Changed it to ‘Esempio risolto’."
+        },
+        {
+            "id": "it-20260818-050",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The first practical check used an infinitive rather than an instruction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Convertire’."],
+            "resolution": "Changed it to the imperative ‘Converti’."
+        }
+    ]
+}

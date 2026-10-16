@@ -1,0 +1,44 @@
+{
+    "entityId": "simeiyue-god-180",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-117",
+            "title": "SMY God 180",
+            "url": "https://www.elmonovapeador.com/tag/smy-god-180",
+            "limitations": "Exact-model page establishes a dated upper bound; the 180 and GOD 180 profiles represent the same device identity."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Sigelei Zmax V3 exact-model record",
+            "url": "https://godofsteam.wordpress.com/2013/07/20/getting-started-regulated-apvs/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "battery-followup-20260824",
+            "title": "SMY GOD 180W short-circuit teardown discussion",
+            "url": "https://www.dampfertreff.ch/t133530f636-Warnung-Kurzschluss-moeglich-SMY-GOD-W.html",
+            "limitations": "The exact-device teardown discussion shows three cells and explicitly describes the cells as connected in series. The Simeiyue/SMY naming duplicates the same GOD 180 identity represented by preset-133."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 3,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Steam Engine Add Locale"
+  short_description: "Add and publish a machine-drafted locale"
+  default_prompt: "Use $steam-engine-add-locale to add a complete new locale from the English source."

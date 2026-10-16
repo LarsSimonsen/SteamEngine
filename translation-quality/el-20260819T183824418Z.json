@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260819T183824418Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Greek locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Greek critique found one catalog action using the wrong sense of entry." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Greek human review was performed; the correction remains machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{
+        "id": "el-open-entry", "translationId": "shared.encyclopedia.openEntry", "category": "translation-defect", "severity": "medium",
+        "summary": "The action used the entrance/admission sense of entry instead of a catalog record.", "disposition": "resolved",
+        "evidence": ["The control opens an encyclopedia catalog record."], "resolution": "Used the Greek term for opening a record."
+    }]
+}

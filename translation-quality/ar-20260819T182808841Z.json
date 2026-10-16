@@ -1,0 +1,42 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T182808841Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, the complete Arabic source scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue validation, type checking, focused tests, the production build, route checks, and generated-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh complete-scope Arabic critique found three related catalog-action labels using the wrong noun or nonstandard imperative spelling."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The changed entries were corrected by machine review and still require competent Arabic human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-catalog-entry-actions",
+            "translationId": "messages.encyclopedia.openEntry",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Open entry and related entry used دخول, which denotes entering or access rather than a catalog record, and See also used a nonstandard imperative spelling.",
+            "disposition": "resolved",
+            "evidence": [
+                "The surrounding catalog consistently names a record إدخال.",
+                "The standard imperative of نظر is انظر, and أيضًا requires the hamza and tanwin spelling."
+            ],
+            "resolution": "Used فتح الإدخال, إدخال ذو صلة, and انظر أيضًا."
+        }
+    ]
+}

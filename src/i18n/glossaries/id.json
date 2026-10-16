@@ -1,0 +1,352 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "id",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "vaping",
+            "context": "Electronic-cigarette use; retain established Indonesian usage.",
+            "discouraged": [
+                "merokok"
+            ],
+            "state": "needs-review",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Native-speaker review remains pending for retaining the loanword vaping in Indonesian calculator copy; it must not imply combustible smoking."
+            }
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "baterai",
+            "context": "Rechargeable cell or battery pack.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian technical terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "coil",
+            "context": "Vaping heating coil; retain the common loanword.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian vaping terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizer",
+            "context": "Vaping hardware component that heats liquid.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian vaping terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "medium"
+        },
+        "liquid": {
+            "source": "e-liquid",
+            "preferred": "liquid",
+            "context": "Vaping liquid; retain the common product term.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian vaping terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "resistansi",
+            "context": "Electrical resistance.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian electrical terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "tegangan",
+            "context": "Electrical potential difference.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian electrical terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "arus",
+            "context": "Electrical current.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian electrical terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "daya",
+            "context": "Electrical power.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian electrical terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "temperature": {
+            "source": "temperature",
+            "preferred": "suhu",
+            "context": "Temperature and temperature-control calculations.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian technical terminology draft",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "material": {
+            "source": "material",
+            "preferred": "material",
+            "context": "Catalog material and temperature-control material.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian technical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "density": {
+            "source": "density",
+            "preferred": "massa jenis",
+            "context": "Physical density expressed as mass per unit volume.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian physics terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "continuous-discharge": {
+            "source": "continuous discharge",
+            "preferred": "pengosongan kontinu",
+            "context": "Battery discharge-current and C-rate ratings.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian battery terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "regulated": {
+            "source": "regulated (mod)",
+            "preferred": "teregulasi",
+            "context": "Vaping devices whose electronics regulate output.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian vaping terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "wire-gauge": {
+            "source": "wire gauge",
+            "preferred": "gauge kawat",
+            "context": "Named wire-size systems such as AWG, SWG, and BWG.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian wire-terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium"
+        },
+        "temperature-coefficient-of-resistance": {
+            "source": "temperature coefficient of resistance",
+            "preferred": "koefisien suhu resistansi",
+            "context": "TCR terminology and calculations.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "coil-wrap": {
+            "source": "coil wrap",
+            "preferred": "lilitan",
+            "context": "A turn or wrap in a coil build.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian vaping terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "heat-capacity": {
+            "source": "heat capacity",
+            "preferred": "kapasitas kalor",
+            "context": "Thermal property shown for wire and coil calculations.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian physics terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "fluks kalor",
+            "context": "Heat-flow density used in coil calculations.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian physics terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "default": {
+            "source": "default",
+            "preferred": "bawaan",
+            "context": "Built-in settings and values.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian UI readability review",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "preset": {
+            "source": "preset",
+            "preferred": "prasetel",
+            "context": "Selectable built-in battery or mod configurations.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Indonesian UI readability review",
+                "model": "active Codex model"
+            },
+            "confidence": "high"
+        },
+        "cell": {
+            "source": "cell",
+            "preferred": "sel",
+            "context": "One electrochemical cell, distinct from a complete battery pack.",
+            "discouraged": [
+                "baterai (for per-cell input)"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full-locale critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "paket baterai",
+            "context": "Complete cell assembly used by the device.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full-locale critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "runtime": {
+            "source": "runtime",
+            "preferred": "waktu pengoperasian",
+            "context": "Estimated battery operating duration.",
+            "discouraged": [
+                "waktu proses"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full-locale critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "rated-capacity": {
+            "source": "rated capacity",
+            "preferred": "kapasitas nominal",
+            "context": "Manufacturer-rated capacity, distinct from measured capacity.",
+            "discouraged": [
+                "kapasitas terukur"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full-locale critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "stranded-wire": {
+            "source": "stranded wire",
+            "preferred": "kawat serabut",
+            "context": "Conductor composed of multiple strands.",
+            "discouraged": [
+                "kawat terdampar"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full-locale critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "mechanical-strain": {
+            "source": "mechanical strain",
+            "preferred": "regangan mekanis",
+            "context": "Deformation affecting resistance, distinct from pressure.",
+            "discouraged": [
+                "tekanan mekanis"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full-locale critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        }
+    }
+}

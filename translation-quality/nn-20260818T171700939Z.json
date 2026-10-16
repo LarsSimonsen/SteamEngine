@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T171700939Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Nynorsk pass identified 25 remaining Bokmål residues and mixed-language technical explanations across Ohm's law, Joule heating, Kirchhoff terminology, heat flux, SI conversions, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-126",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The section title used the Bokmål forms Omformede formler.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Omformede formler’."],
+            "resolution": "Changed it to the Nynorsk title ‘Omforma formlar’."
+        },
+        {
+            "id": "nn-20260818-127",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The instruction used the Bokmål verb setter.",
+            "disposition": "resolved",
+            "evidence": ["The previous instruction said ‘Bruk versjonen som setter verdien du vil finne på venstre side:’."],
+            "resolution": "Rewrote it as natural Nynorsk: ‘Bruk den forma som set verdien du vil finne, på venstresida:’."
+        },
+        {
+            "id": "nn-20260818-128",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The power explanation mixed a less natural formulation with the Nynorsk surrounding text.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘samanhengen for effekt’ and mixed phrasing around the component's thermal reserve."],
+            "resolution": "Recast the paragraph with the clearer Nynorsk term ‘effektformelen’ and consistent technical wording."
+        },
+        {
+            "id": "nn-20260818-129",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The description omitted the Nynorsk article before motstand.",
+            "disposition": "resolved",
+            "evidence": ["The previous description ended ‘når straum går gjennom motstand’."],
+            "resolution": "Changed it to ‘når straum går gjennom ein motstand’."
+        },
+        {
+            "id": "nn-20260818-130",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example title used the Bokmål form Regneeksempel.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Regneeksempel’."],
+            "resolution": "Changed it to ‘Rekneeksempel’."
+        },
+        {
+            "id": "nn-20260818-131",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The safety paragraph retained multiple Bokmål forms including komponenter, tilkoblinger, forventet, and virkelige.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph mixed Bokmål and Nynorsk in its component, margin, and battery wording."],
+            "resolution": "Rewrote the paragraph with consistent Nynorsk safety terminology."
+        },
+        {
+            "id": "nn-20260818-132",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The compound Krinstermar was less natural than a plain Nynorsk description of the section.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Krinstermar’."],
+            "resolution": "Changed it to the clearer title ‘Omgrep i krinsar’."
+        },
+        {
+            "id": "nn-20260818-133",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example title used the Bokmål forms Gjennomsnittlig and varmeovn.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Gjennomsnittlig varmestrømstetthet fra en varmeovn’."],
+            "resolution": "Changed it to ‘Gjennomsnittleg varmestrømtettleik frå ein varmeomn’."
+        },
+        {
+            "id": "nn-20260818-134",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conduction title used the Bokmål form Ledning.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Ledning gjennom et flatt lag’."],
+            "resolution": "Changed it to ‘Leiing gjennom eit flatt lag’."
+        },
+        {
+            "id": "nn-20260818-135",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The convection explanation mixed Bokmål verbs, nouns, and the phrase strålingsligningen.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘bruker’, ‘temperaturene’, and ‘strålingsligningen’."],
+            "resolution": "Rewrote it with ‘brukar’, ‘temperaturane’, and ‘strålingslikninga’."
+        },
+        {
+            "id": "nn-20260818-136",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-conversion instruction used the Bokmål forms Konverter and bruker.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Konverter arealet til m² før du bruker W/m²’."],
+            "resolution": "Changed it to ‘Gjer arealet om til m² før du brukar W/m²’."
+        },
+        {
+            "id": "nn-20260818-137",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux distinction ended with the Bokmål article en.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended ‘ikkje en temperatur’."],
+            "resolution": "Changed it to consistent Nynorsk and clarified the purpose of varmekapasitet."
+        },
+        {
+            "id": "nn-20260818-138",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conversion paragraph mixed Bokmål til slutt forms such as For eksempel, Konverter, and bruker.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said ‘For eksempel ... Konverter verdier ... før du bruker en formel’."],
+            "resolution": "Rewrote it with the consistent Nynorsk wording ‘Til dømes’, ‘Gjer om’, and ‘brukar’."
+        },
+        {
+            "id": "nn-20260818-139",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-and-volume conversion conclusion used the Bokmål compound omregning and bruker.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion said ‘Areal- og volumomregning bruker lengdefaktoren ...’."],
+            "resolution": "Changed it to ‘Areal- og volumsomrekning brukar lengdefaktoren ...’."
+        },
+        {
+            "id": "nn-20260818-140",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge description used the Bokmål compound systemer.",
+            "disposition": "resolved",
+            "evidence": ["The previous description began ‘Tråddimensjonssystemer beskriver ...’."],
+            "resolution": "Changed it to the Nynorsk compound ‘Tråddimensjonssystem’."
+        },
+        {
+            "id": "nn-20260818-141",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The gauge-section title retained a Bokmål plural form.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Dimensjonssystemer’."],
+            "resolution": "Changed it to ‘Dimensjonssystem’."
+        },
+        {
+            "id": "nn-20260818-142",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-number bullet mixed Et, vanlig, størrelser, and bruker with Nynorsk wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Et høgare vanlig dimensjonstall’ and ended ‘størrelser ... bruker’."],
+            "resolution": "Rewrote it with ‘Eit’, ‘vanleg’, ‘storleikar’, and ‘brukar’."
+        },
+        {
+            "id": "nn-20260818-143",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-system paragraph mixed beregnes, det samme, and systemene.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘skal ikkje beregnes’, ‘Det samme tallet’, and ‘systemene’."],
+            "resolution": "Rewrote it with ‘reknast ut’, ‘Det same talet’, and ‘systema’."
+        },
+        {
+            "id": "nn-20260818-144",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG paragraph retained Bokmål bruker, lederstørrelsen, avhenger, and gjeldende regler.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph mixed Bokmål forms throughout the AWG safety qualification."],
+            "resolution": "Rewrote it with ‘brukar’, ‘leidarstorleiken’, ‘kjem an på’, and ‘gjeldande elektriske reglar’."
+        },
+        {
+            "id": "nn-20260818-145",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The system-comparison title used the Bokmål form Hvorfor.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Hvorfor systemnavnet er viktig’."],
+            "resolution": "Changed it to ‘Kvifor systemnamnet er viktig’."
+        },
+        {
+            "id": "nn-20260818-146",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance explanation mixed avhenger, en, gi, betydelig, same, and dobler.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph contained several Bokmål forms in the diameter and resistance explanation."],
+            "resolution": "Rewrote it with consistent Nynorsk vocabulary and preserved the AWG relationship."
+        },
+        {
+            "id": "nn-20260818-147",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The specification instruction used Oppgi and for eksempel.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Oppgi systemet, for eksempel ...’."],
+            "resolution": "Changed it to ‘Oppgje systemet, til dømes ...’."
+        },
+        {
+            "id": "nn-20260818-148",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The diameter-specification bullet used the Bokmål plural systemene and kan forveksles.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘når systemene kan forveksles’."],
+            "resolution": "Changed it to ‘når systema kan forvekslast’."
+        },
+        {
+            "id": "nn-20260818-149",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conductor-description bullet used Oppgi, gjelder, leder, platetykkelse, and rørveggens tykkelse.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet mixed Bokmål terminology in every main noun and verb."],
+            "resolution": "Rewrote it with ‘Oppgje’, ‘gjeld’, ‘leiar’, ‘platetjukkleik’, and ‘tjukkleiken på røyrveggen’."
+        },
+        {
+            "id": "nn-20260818-150",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The stranded-conductor bullet retained Bokmål forms flertrådede, ledere, må oppgi, and samlet.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘For flertrådede ledere må du oppgi ... samlet diameter’."],
+            "resolution": "Changed it to consistent Nynorsk: ‘For fleirtrådige leidarar må du oppgje ... samla diameter’."
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260819T122348206Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English and the complete Danish source, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue and findings validation, TypeScript type checking, 12 focused tests, the production IIS build, route-contract validation, and generated internal-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh bounded Danish critique found broken interpolation, protected product-name loss, safety wording defects, and literal electrical terminology."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Danish human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested correction commits, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "da-interpolation-case",
+            "translationId": "shared.catalogManager.manage",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Sixteen shared message functions emitted literal placeholder tokens because lowercase placeholders were replaced with uppercase keys.",
+            "disposition": "resolved",
+            "evidence": ["The source templates contained __se_arg_n__ while replaceAll searched for __SE_ARG_n__."],
+            "resolution": "Added typed Danish corrections that interpolate arguments directly for catalog management and Ohm lock messages."
+        },
+        {
+            "id": "da-wire-wizard-identity",
+            "translationId": "calculators.wirewiz.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Wire Wizard was translated or shortened in shared, TCR, and Wire Wizard labels.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."],
+            "resolution": "Restored Wire Wizard in navigation, TCR, title, and design-import messages."
+        },
+        {
+            "id": "da-juice-safety-terminology",
+            "translationId": "calculators.juice.safetyText",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The nicotine warning omitted e-liquid and several recipe labels used slang, English, or misleading literal wording.",
+            "disposition": "resolved",
+            "evidence": ["The canonical warning explicitly concerns mixing one's own e-liquid."],
+            "resolution": "Rewrote the warning and standardized nicotine, quantity, target, flavoring, and VG labels."
+        },
+        {
+            "id": "da-coil-wire-terminology",
+            "translationId": "calculators.coil.legPowerLoss",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Coil leg power loss became loss of leg strength, loop length became onion length, and multiple wire labels were literal or English.",
+            "disposition": "resolved",
+            "evidence": ["The affected labels describe electrical leads and wire geometry."],
+            "resolution": "Applied Danish lead, winding, loop, helix, strand, physical-property, and twist-pitch terminology."
+        },
+        {
+            "id": "da-shared-catalog-labels",
+            "translationId": "shared.encyclopediaDetail.propertyLabels.boardController",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Board/controller used the word for a governing board, available-by used the wrong preposition, and several catalog labels were literal.",
+            "disposition": "resolved",
+            "evidence": ["These are technical catalog and chronology labels."],
+            "resolution": "Used kort/controller, a by-date construction, and natural Danish evidence and property labels."
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T234117518Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Arabic runtime entries, the Arabic glossary, prior review metadata, UI context, and web terminology references were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, effective-runtime inspection, queue validation, diff checks, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three complete-scope passes resolved 75 shared-interface, calculator, terminology, grammar, and source-fidelity findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Arabic corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-shared-interface-semantics",
+            "translationId": "messages.calculatorVisibility.label",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five shared-interface entries had incorrect gender, literal machine phrasing, omitted runtime labels, or changed catalog and battery meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "The Ohm page fell back to the English label Joule's law because Arabic omitted the optional runtime message.",
+                "The Arabic glossary specifies الكويل for coil, while the home text used ملف, meaning file.",
+                "Several catalog labels used الملكية, meaning ownership, where the source means a technical property."
+            ],
+            "resolution": "Corrected visibility, editor, home, Ohm, catalog-property, introduction, source-record, and battery semantics while preserving placeholders."
+        },
+        {
+            "id": "ar-coil-and-battery-calculators",
+            "translationId": "calculators.batt.title",
+            "category": "terminology-disagreement",
+            "severity": "high",
+            "summary": "Twenty-five battery and coil calculator entries conflicted with the locale glossary or used malformed preset and coil-configuration wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The glossary requires استهلاك البطارية for battery drain and الكويل for the vaping coil.",
+                "Multiple visible coil labels used ملف, the ordinary Arabic word for a file."
+            ],
+            "resolution": "Standardized battery-drain labels, repaired preset prompts, and rewrote the visible coil and multi-coil configuration cluster."
+        },
+        {
+            "id": "ar-technical-calculator-terminology",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five mod-range, TCR, Wire Wizard, heat-flux, and concept entries mistranslated median, coil, reference material, or technical construction labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "المتوسطة means average, not the statistical median requested by the source.",
+                "The affected coil and heat-flux terms disagreed with the Arabic glossary and surrounding corrected UI."
+            ],
+            "resolution": "Corrected regulated-mod and median terminology, TCR selection wording, Wire Wizard construction labels, heat-flux labels, and Joule example coil wording."
+        }
+    ]
+}

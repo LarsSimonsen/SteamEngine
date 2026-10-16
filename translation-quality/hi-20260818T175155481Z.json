@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260818T175155481Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Hindi pass identified 25 remaining technical wording, terminology, notation, and factual-clarity defects across Ohm's law, TCR, trigonometry, thermal concepts, heat flux, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "hi-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Ohm-law display name used an unnatural Hindi phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to ओम का नियम."
+        },
+        {
+            "id": "hi-20260818-077",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The relationship title used the colloquial का रिश्ता.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to संबंध."
+        },
+        {
+            "id": "hi-20260818-078",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance definition used inconsistent variable and unit wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with R and the Hindi unit name ओम."
+        },
+        {
+            "id": "hi-20260818-079",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The rearranged-formula instruction used an awkward literal construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a direct Hindi instruction."
+        },
+        {
+            "id": "hi-20260818-080",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power title used a less precise literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to तापन शक्ति."
+        },
+        {
+            "id": "hi-20260818-081",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR description used अनुमान लगाता rather than a definition verb.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to बताता है and clarified the subject."
+        },
+        {
+            "id": "hi-20260818-082",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR title transliterated the sign terms and acronym inconsistently.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to धनात्मक और ऋणात्मक TCR."
+        },
+        {
+            "id": "hi-20260818-083",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The positive-TCR bullet used an inconsistent transliteration.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with TCR and natural Hindi terminology."
+        },
+        {
+            "id": "hi-20260818-084",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR section title was an ungrammatical literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to समाधान सहित उदाहरण."
+        },
+        {
+            "id": "hi-20260818-085",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The right-triangle explanation misstated the sine and cosine ratios.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with explicit opposite, adjacent, and hypotenuse definitions."
+        },
+        {
+            "id": "hi-20260818-086",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked example used पक्ष rather than the geometric term भुजा.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to एक भुजा ज्ञात करें."
+        },
+        {
+            "id": "hi-20260818-087",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The triangle setup used an awkward literal phrase for forming an angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a clear 10 cm hypotenuse statement."
+        },
+        {
+            "id": "hi-20260818-088",
+            "translationId": "catalog.concepts.concept-heat-capacity.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity display name was a literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to ऊष्मा धारिता."
+        },
+        {
+            "id": "hi-20260818-089",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The basic-relationships title used the colloquial बुनियादी रिश्ते.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to बुनियादी संबंध."
+        },
+        {
+            "id": "hi-20260818-090",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heating setup used awkward loss wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a clear 41.8 kJ, 100 W, no-loss example."
+        },
+        {
+            "id": "hi-20260818-091",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material title used a literal contrast.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to वस्तु और पदार्थ."
+        },
+        {
+            "id": "hi-20260818-092",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change title used a literal translation of phase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to प्रावस्था परिवर्तन और व्यावहारिक सीमाएँ."
+        },
+        {
+            "id": "hi-20260818-093",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux display name omitted the per-area density concept.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to ऊष्मा प्रवाह घनत्व."
+        },
+        {
+            "id": "hi-20260818-094",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux description did not clearly state the per-area quantity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with प्रति इकाई क्षेत्रफल and the density concept."
+        },
+        {
+            "id": "hi-20260818-095",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The q'' definition called heat-flux density simply heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to ऊष्मा-प्रवाह घनत्व and retained W/m²."
+        },
+        {
+            "id": "hi-20260818-096",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example title used the literal काम किया उदाहरण.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to समाधान सहित उदाहरण."
+        },
+        {
+            "id": "hi-20260818-097",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux setup localized the area unit into an awkward phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to a protected 0.020 m² area."
+        },
+        {
+            "id": "hi-20260818-098",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The layer-thickness definition localized the protected L variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to L and preserved metres."
+        },
+        {
+            "id": "hi-20260818-099",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI title said common units rather than base units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to मूल एसआई इकाइयाँ."
+        },
+        {
+            "id": "hi-20260818-100",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The AWG paragraph used the loanword एम्पैसिटी for ampacity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Hindi presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with धारा-वहन क्षमता and retained the electrical-safety qualification."
+        }
+    ]
+}

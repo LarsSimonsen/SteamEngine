@@ -1,0 +1,44 @@
+{
+    "formatVersion": 1,
+    "date": null,
+    "sourceLocale": "en",
+    "targetLocales": [],
+    "scope": {
+        "prefixes": [],
+        "pages": [],
+        "inspectedIdsByLocale": {},
+        "excludedSurfaces": []
+    },
+    "review": {
+        "reviewer": null,
+        "editor": null,
+        "sameAgentReviewedAndEdited": null,
+        "independent": {
+            "status": "not-performed",
+            "reviewer": null,
+            "date": null,
+            "checkedPairs": [],
+            "conclusions": [],
+            "unavailableReason": null
+        },
+        "human": {
+            "status": "not-performed",
+            "reviewer": null,
+            "date": null,
+            "checkedPairs": []
+        }
+    },
+    "signatureMethod": "SHA-256 of UTF-8 JSON.stringify([semanticId, text]); no aggregate signature",
+    "entries": [],
+    "findings": [],
+    "unresolvedQuestions": [],
+    "validation": [],
+    "renderedChecks": [],
+    "limitations": [],
+    "counts": {
+        "inspectedLocaleIdPairs": 0,
+        "changedLocaleIdPairs": 0,
+        "independentErrors": 0,
+        "renderedOccurrencesChecked": 0
+    }
+}

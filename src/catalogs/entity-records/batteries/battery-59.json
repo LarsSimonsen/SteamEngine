@@ -1,0 +1,95 @@
+{
+    "entityId": "battery-59",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for Sanyo UR16650ZTA.",
+        "description": "This researched draft preserves the calculator's 2500mAh and 5A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "spec-sanyo-records",
+            "title": "Sanyo UR16650ZTA battery record",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "CQham battery test database mirror",
+            "limitations": "Aggregated historical database; supporting evidence for terminal and protection fields, not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-sanyo",
+            "title": "Sanyo cylindrical lithium-ion cell specifications",
+            "url": "https://www.tokojelek.com/download/document/datasheet/battery/sanyo/Sanyo_F_Specification_Sheet.pdf",
+            "publisher": "Sanyo specification mirror",
+            "limitations": "Surviving Sanyo datasheets identify lithium-ion cells but do not disclose an exact cathode for every listed model."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-sanyo-16650",
+            "statement": "The aggregated battery record identifies Sanyo UR16650ZTA as a flat-top, unprotected 16650 cell.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Sanyo UR16650ZTA 2500mAh 5A as a 2500mAh preset with a 5A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "Sanyo UR16650ZTA is documented as a lithium-ion cell, but the exact cathode chemistry was not established in this pass.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "No reliable exact-model market-introduction date was established for Sanyo UR16650ZTA in the 2026-08-04 catalog-wide research pass.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "16650",
+            "nominalDiameterMm": 16,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry not established)",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

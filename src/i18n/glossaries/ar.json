@@ -62,6 +62,33 @@
             "state": "machine",
             "provenance": { "kind": "machine", "method": "Contextual translation" },
             "confidence": "high"
+        },
+        "mod": {
+            "source": "mod",
+            "preferred": "المود",
+            "context": "A regulated or unregulated vaping device, not a modification or operating mode.",
+            "discouraged": ["تعديل", "الوضع"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual translation" },
+            "confidence": "high"
+        },
+        "coil-leg": {
+            "source": "coil leg",
+            "preferred": "طرف التوصيل",
+            "context": "The uncoiled terminal portion of resistance wire, not an anatomical leg.",
+            "discouraged": ["الساق", "الرجل"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Electrical context" },
+            "confidence": "high"
+        },
+        "strand": {
+            "source": "strand",
+            "preferred": "خيط",
+            "context": "An individual wire within a multi-strand construction.",
+            "discouraged": ["فرع"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Wire-construction context" },
+            "confidence": "high"
         }
     }
 }

@@ -1,0 +1,3 @@
+# steam-engine-ad:start managed-records
+google.com, pub-5496946968214683, DIRECT, f08c47fec0942fa0
+# steam-engine-ad:end managed-records

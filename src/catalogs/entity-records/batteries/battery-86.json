@@ -1,0 +1,128 @@
+{
+    "entityId": "battery-86",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "Provisional research record for BAK 21700-65E.",
+        "description": "BAK identifies N21700CX-65E as a 21700 cell with 6350mAh rated capacity, 6500mAh typical capacity, and a 19050mA maximum discharge in its Version A/00 specification. Battery Mooch tested the exact model and estimated about 20A true continuous current; the safer runtime recommendation is 19A, while the 25.4A/4C figures remain higher manufacturer or temperature-limited context.",
+        "highlights": [
+            "Exact model identity is supported by BAK documentation and an exact-model vaping test.",
+            "The recommended runtime value is 6500mAh and 19A continuous; the manufacturer datasheet lists 6350mAh rated capacity and 19.05A maximum discharge.",
+            "Mooch's exact-sample estimate is about 20A, while the 25.4A/4C figures are not used as the conservative runtime value.",
+            "The tested cells lacked CCC marks and may be pre-production; production continuity remains unresolved.",
+            "Catalog fit was confirmed before admission; the runtime preset is battery-86.",
+            "Runtime admission is recorded separately from editorial visibility."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "N21700CX-65E product page",
+            "url": "https://product.bakpower.com/document/237",
+            "publisher": "BAK Battery",
+            "limitations": "Manufacturer product information establishes identity and stated application limits, not standalone vaping approval."
+        },
+        {
+            "id": "manufacturer-datasheet",
+            "title": "N21700CX-65E lithium-ion cell specification, Version A/00",
+            "url": "https://convoylight.com/uploads/72553/cart/resources/20250901/e7772d4426c2842dadb5e9466e077fbc.pdf",
+            "publisher": "ZhengZhou BAK Battery Co., Ltd.",
+            "limitations": "Manufacturer specification copy hosted by Convoy Light; it identifies the exact cell, gives 6350mAh rated/6500mAh typical capacity, 19050mA maximum discharge, and an 80C maximum surface temperature."
+        },
+        {
+            "id": "manufacturer-news",
+            "title": "BAK 6.5Ah Energy Capsule: Unlocking Boundless Applications for Robotics",
+            "url": "https://www.bakthbattery.com/news/bak-6-5ah-energy-capsule-unlocking-boundless-applications-for-robotics-279739.html",
+            "publisher": "BAK Battery",
+            "limitations": "Manufacturer news establishes launch/activity context and intended industrial applications, not vaping relevance or independent performance."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: BAK 65E - 25.4A 6500mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-bak-65e-25-4a-6500mah-21700.993668/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model test; samples lacked CCC marks and may be pre-production."
+        },
+        {
+            "id": "current-retailer",
+            "title": "Current battery-cell storefront",
+            "url": "https://diy500amp.com/",
+            "publisher": "DIY500AMP",
+            "limitations": "Current specialist battery-builder storefront lists BAK 65E as a limited-quantity new arrival; this is cross-market availability, not vape-retail breadth or sales evidence."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "BAK's exact model is N21700CX-65E, marketed as the BAK 21700-65E or 65E.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "The Version A/00 datasheet lists 6350mAh rated capacity and 6500mAh typical capacity for the exact N21700CX-65E 21700 cell.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "The manufacturer datasheet gives 19050mA maximum discharge, while Battery Mooch estimated about 20A true continuous current from the exact tested samples.",
+            "evidenceDate": "2026-03-29",
+            "confidence": "medium"
+        },
+        {
+            "id": "runtime-recommendation",
+            "statement": "For a conservative Steam Engine runtime profile, use 19A continuous and 6500mAh typical capacity; retain 6350mAh rated capacity and the approximately 20A test estimate as supporting context.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact BAK 21700-65E has an eligible exact-model vaping battery test.",
+            "evidenceDate": "2026-03-29",
+            "confidence": "high"
+        },
+        {
+            "id": "availability",
+            "statement": "DIY500AMP currently lists the exact BAK 65E as a limited-quantity new arrival, providing current cross-market availability evidence.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "lifecycle",
+            "statement": "BAK publicly announced the N21700CX-65E on January 8, 2026 for industrial and robotics applications.",
+            "evidenceDate": "2026-01-08",
+            "confidence": "medium"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current Steam Engine battery catalog contains no exact BAK 21700-65E preset.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "High-nickel lithium-ion cell according to BAK; exact cathode formulation is not further specified here.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "entityId": "innokin-itaste-mvp-3-0",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Innokin iTaste MVP 3.0 product specification",
+            "url": "https://www.3fvape.com/vv-vw-mod/27670-authentic-innokin-itaste-mvp-v30-3800mah-vv-vw-variable-voltage-wattage-mod-silver-39v-630w.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 3800
+            }
+        ]
+    }
+}

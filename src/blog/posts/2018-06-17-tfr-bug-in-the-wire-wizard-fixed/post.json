@@ -1,0 +1,8 @@
+{
+    "slug": "tfr-bug-in-the-wire-wizard-fixed",
+    "title": "TFR bug in the Wire Wizard (fixed)",
+    "published": "2018-06-17T18:43:25+00:00",
+    "updated": "2019-10-23T20:09:41+00:00",
+    "excerpt": "When combining different materials in parallel, the Wire Wizard sometimes failed to fetch the temperature data for the materials of the individual strands correctly, resulting in an inaccurate TCR /TFR output. To be more precise, some tempe",
+    "featuredImage": "blog/assets/uploads/2018/06/alien-bug-125-176x176.jpg"
+}

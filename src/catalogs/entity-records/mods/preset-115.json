@@ -1,0 +1,42 @@
+{
+    "entityId": "sigelei-zmax-v3",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Sigelei Legend V2 retailer record",
+            "url": "https://vardex.ru/nabor-sigelei-legend-v2/comments.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-sigelei-zmax-20260824",
+            "title": "Sigelei Zmax V5 manual",
+            "url": "https://www.ecig-privee.fr/content/39-le-manuel-du-zmax-v5-de-sigelei-voltage-et-puissance-variable",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18350"
+            },
+            {
+                "format": "18500"
+            },
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

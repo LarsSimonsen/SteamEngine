@@ -1,0 +1,95 @@
+{
+    "entityId": "battery-88",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Provisional research record for Tenpower INR21700-60XG.",
+        "description": "Tenpower identifies INR21700-60XG as a 6000mAh 21700 cell. Its specification distinguishes 40A without temperature cutoff from 60A with a 75C cutoff, and Battery Mooch tested the exact model in July 2026.",
+        "highlights": [
+            "Exact model identity is supported by Tenpower data and an exact-model vaping test.",
+            "Discovery value is 6000mAh and 40A continuous; 60A is temperature-limited.",
+            "The model is newly available and its production/revision continuity should be rechecked.",
+            "Runtime admission is recorded as battery-88.",
+            "Runtime admission is recorded separately from editorial visibility."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "Tenpower cell application table",
+            "url": "https://www.tenpowercell.com.cn/products/applications",
+            "publisher": "Tenpower",
+            "limitations": "The table establishes exact model identity and nominal capacity; displayed current figures remain manufacturer claims."
+        },
+        {
+            "id": "manufacturer-datasheet",
+            "title": "INR21700-60XG product specification",
+            "url": "https://www.nkon.nl/de/amfile/file/download/file/1843/product/6073/",
+            "publisher": "Tenpower",
+            "limitations": "Manufacturer specification copy hosted by a distributor; it identifies the exact model and distinguishes 40A continuous from 60A at a temperature cutoff."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: Tenpower 60XG - 40A/60A 6000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-tenpower-60xg-40a-60a-6000mah-21700.994796/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model test; batch consistency and production continuity remain relevant."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is Tenpower INR21700-60XG.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Tenpower specifies 6000mAh nominal capacity for INR21700-60XG.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "The manufacturer specification states 40A continuous without temperature cutoff and 60A with a 75C cutoff; the conservative discovery value is 40A.",
+            "evidenceDate": "2026-07-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Tenpower INR21700-60XG has an eligible exact-model vaping battery test.",
+            "evidenceDate": "2026-07-03",
+            "confidence": "high"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current Steam Engine battery catalog contains no exact Tenpower INR21700-60XG preset.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

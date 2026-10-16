@@ -1,0 +1,149 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260819T105912397Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "English and Hindi sources, runtime corrections, review data, and terminology were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Hindi tests, translation checks, typecheck, full tests, build, routes, and links passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh full-scope Hindi sanity pass found and corrected interpolation and wording defects."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Hindi human review was performed; the corrected entries remain machine-reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "The user requested corrections and a commit, but did not request publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "hi-20260819-sanity-001",
+            "translationId": "shared.catalogManager.interpolations",
+            "category": "translation-defect",
+            "severity": "critical",
+            "summary": "Eleven catalog-manager templates exposed lower-cased machine placeholder tokens.",
+            "disposition": "resolved",
+            "evidence": ["The draft used __se_arg_0__ while replacement code matched __SE_ARG_0__."],
+            "resolution": "Replaced the affected runtime templates with direct typed Hindi interpolation functions."
+        },
+        {
+            "id": "hi-20260819-sanity-002",
+            "translationId": "shared.catalogEditor.interpolations",
+            "category": "translation-defect",
+            "severity": "critical",
+            "summary": "Four catalog-editor templates exposed lower-cased machine placeholder tokens.",
+            "disposition": "resolved",
+            "evidence": ["Edit, new-custom, and save labels retained unresolved __se_arg_0__ text."],
+            "resolution": "Added direct Hindi interpolation functions and replaced the mistranslated रिवाज wording."
+        },
+        {
+            "id": "hi-20260819-sanity-003",
+            "translationId": "shared.ohm.interpolations",
+            "category": "translation-defect",
+            "severity": "critical",
+            "summary": "The Ohm adjusting and lock-summary templates exposed lower-cased placeholder tokens.",
+            "disposition": "resolved",
+            "evidence": ["The affected templates could render __se_arg_0__ or __se_arg_1__ to visitors."],
+            "resolution": "Replaced both templates with typed Hindi interpolation functions."
+        },
+        {
+            "id": "hi-20260819-sanity-004",
+            "translationId": "calculators.juice.nicStrength",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Nicotine strength was mistranslated as good strength.",
+            "disposition": "resolved",
+            "evidence": ["The draft label अच्छी ताकत does not identify nicotine concentration."],
+            "resolution": "Changed the relevant labels to निकोटीन की सांद्रता."
+        },
+        {
+            "id": "hi-20260819-sanity-005",
+            "translationId": "calculators.juice.percentage",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Percentage label contained residual English marker text.",
+            "disposition": "resolved",
+            "evidence": ["The published draft read को PERCENTAGE."],
+            "resolution": "Changed the label to प्रतिशत."
+        },
+        {
+            "id": "hi-20260819-sanity-006",
+            "translationId": "calculators.juice.actions-and-ingredients",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Juice actions and ingredient labels used literal or contextually wrong machine wording.",
+            "disposition": "resolved",
+            "evidence": ["Examples included भार for Load and स्वादिष्ट बनाने का मसाला for Flavoring."],
+            "resolution": "Rewrote the affected action, flavor, amount, and recipe labels in natural Hindi."
+        },
+        {
+            "id": "hi-20260819-sanity-007",
+            "translationId": "calculators.juice.units",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Protected ml and g unit symbols were transliterated.",
+            "disposition": "resolved",
+            "evidence": ["The draft used एमएल and जी instead of the canonical unit symbols."],
+            "resolution": "Restored ml and g."
+        },
+        {
+            "id": "hi-20260819-sanity-008",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Wraps label remained untranslated English.",
+            "disposition": "resolved",
+            "evidence": ["The Hindi bundle rendered wraps."],
+            "resolution": "Changed the label to रैप्स."
+        },
+        {
+            "id": "hi-20260819-sanity-009",
+            "translationId": "calculators.wirewiz.powerDissipated",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Power dissipated used an ungrammatical phrase that obscured the electrical result.",
+            "disposition": "resolved",
+            "evidence": ["The draft read नष्ट हुई शक्ति हो गई."],
+            "resolution": "Changed the result label to शक्ति क्षय."
+        },
+        {
+            "id": "hi-20260819-sanity-010",
+            "translationId": "calculators.wirewiz.coil-and-wire-terms",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Wire Wizard labels mixed translated product identity and inconsistent coil terminology.",
+            "disposition": "resolved",
+            "evidence": ["The title was तार जादूगर and the import label duplicated वायर."],
+            "resolution": "Restored Wire Wizard identity and standardized the corrected coil, wire, and strand labels."
+        },
+        {
+            "id": "hi-20260819-sanity-011",
+            "translationId": "calculators.coil.geometry",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Outer diameter and cross-sectional area used incorrect or malformed geometry terms.",
+            "disposition": "resolved",
+            "evidence": ["The draft used बहरी घेरा and संकर अनुभागीय क्षेत्र."],
+            "resolution": "Changed the labels to बाहरी व्यास and अनुप्रस्थ काट का क्षेत्रफल."
+        },
+        {
+            "id": "hi-20260819-sanity-012",
+            "translationId": "calculators.coil.coil-terminology",
+            "category": "terminology-disagreement",
+            "severity": "medium",
+            "summary": "Coil setup labels mixed कुंडल, क्वायल, and कॉइल inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The locale glossary prefers the established vaping term कॉइल."],
+            "resolution": "Standardized the corrected calculator heading, setup labels, and result labels on कॉइल."
+        }
+    ]
+}

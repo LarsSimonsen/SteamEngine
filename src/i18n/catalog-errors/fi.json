@@ -1,0 +1,334 @@
+{
+    "manufacturerRequired": {
+        "en": "Enter a manufacturer.",
+        "fi": "Syötä valmistaja."
+    },
+    "modelRequired": {
+        "en": "Enter a model.",
+        "fi": "Syötä malli."
+    },
+    "materialName": {
+        "en": "Enter a material name.",
+        "fi": "Syötä materiaalin nimi."
+    },
+    "batteryAccess": {
+        "en": "Battery access must be integrated or removable.",
+        "fi": "Valitse kiinteä tai irrotettava akku."
+    },
+    "integratedForm": {
+        "en": "Integrated batteries must not specify a standalone cell form factor.",
+        "fi": "Kiinteälle akulle ei voi määrittää erillisen kennon muotoa."
+    },
+    "form": {
+        "en": "Select a cylindrical or prismatic form factor.",
+        "fi": "Valitse lieriömäinen tai prismaattinen kenno."
+    },
+    "dimensions": {
+        "en": "Enter valid form-factor dimensions.",
+        "fi": "Syötä kennon kelvolliset mitat."
+    },
+    "size": {
+        "en": "Legacy battery size must be blank or contain text.",
+        "fi": "Vanhan kokomerkinnän on oltava tyhjä tai tekstiä."
+    },
+    "protected": {
+        "en": "Protected status must be true, false, or blank.",
+        "fi": "Valitse suojattu, suojaamaton tai tuntematon."
+    },
+    "appearance": {
+        "en": "Enter valid appearance and marking details.",
+        "fi": "Tarkista ulkonäkö- ja merkintätiedot."
+    },
+    "rating": {
+        "en": "Enter a continuous discharge current or C rating.",
+        "fi": "Syötä jatkuva purkuvirta tai C-arvo."
+    },
+    "notes": {
+        "en": "Notes must be blank or contain text.",
+        "fi": "Huomautusten on oltava tyhjät tai tekstiä."
+    },
+    "manufacturer": {
+        "en": "Manufacturer must be blank or contain text.",
+        "fi": "Valmistajan on oltava tyhjä tai tekstiä."
+    },
+    "variant": {
+        "en": "Variant must be blank or contain text.",
+        "fi": "Version on oltava tyhjä tai tekstiä."
+    },
+    "resistanceOrder": {
+        "en": "Maximum resistance must not be less than minimum resistance.",
+        "fi": "Suurin resistanssi ei saa olla pienintä resistanssia pienempi."
+    },
+    "preset": {
+        "en": "The based-on preset is unavailable.",
+        "fi": "Pohjana käytettyä esiasetusta ei ole saatavilla."
+    },
+    "features": {
+        "en": "Operating modes and capabilities are invalid.",
+        "fi": "Toimintatilojen tai ominaisuuksien tiedot ovat virheelliset."
+    },
+    "tcrOrTfr": {
+        "en": "Choose either TCR or TFR, not both.",
+        "fi": "Valitse joko TCR tai TFR. Molempia ei voi käyttää yhtä aikaa."
+    },
+    "tfrPoints": {
+        "en": "TFR needs at least two temperature points.",
+        "fi": "TFR-käyrä tarvitsee vähintään kaksi lämpötilapistettä."
+    },
+    "tfrRow": {
+        "en": "Every TFR row needs a temperature and resistance factor.",
+        "fi": "Jokaisella TFR-rivillä on oltava lämpötila ja resistanssisuhde."
+    },
+    "tfrTemperature": {
+        "en": "Every TFR temperature must be a finite number.",
+        "fi": "Jokaisen TFR-lämpötilan on oltava äärellinen luku."
+    },
+    "tfrFactor": {
+        "en": "Every TFR resistance factor must be greater than zero.",
+        "fi": "Jokaisen TFR-resistanssisuhteen on oltava suurempi kuin nolla."
+    },
+    "tfrUnique": {
+        "en": "TFR temperatures must be unique.",
+        "fi": "TFR-lämpötilat eivät saa toistua."
+    },
+    "tfrReference": {
+        "en": "The TFR curve does not produce a positive resistance factor at 20 °C.",
+        "fi": "TFR-käyrän resistanssisuhde ei ole positiivinen 20 °C:ssa."
+    },
+    "RatedcapacityPositive": {
+        "en": "Rated capacity must be greater than zero.",
+        "fi": "Nimelliskapasiteetin on oltava suurempi kuin nolla."
+    },
+    "ResistivityPositive": {
+        "en": "Resistivity must be greater than zero.",
+        "fi": "Resistiivisyyden on oltava suurempi kuin nolla."
+    },
+    "TCRPositive": {
+        "en": "TCR must be greater than zero.",
+        "fi": "TCR-arvon on oltava suurempi kuin nolla."
+    },
+    "MaximumoutputvoltagePositive": {
+        "en": "Maximum output voltage must be greater than zero.",
+        "fi": "Suurimman lähtöjännitteen on oltava suurempi kuin nolla."
+    },
+    "MaximumoutputpowerPositive": {
+        "en": "Maximum output power must be greater than zero.",
+        "fi": "Suurimman lähtötehon on oltava suurempi kuin nolla."
+    },
+    "MaximumoutputcurrentPositive": {
+        "en": "Maximum output current must be greater than zero.",
+        "fi": "Suurimman lähtövirran on oltava suurempi kuin nolla."
+    },
+    "WeightOptional": {
+        "en": "Weight must be blank or greater than zero.",
+        "fi": "Massan on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "ContinuousdischargecurrentOptional": {
+        "en": "Continuous discharge current must be blank or greater than zero.",
+        "fi": "Jatkuvan purkuvirran on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "ContinuousdischargeCratingOptional": {
+        "en": "Continuous discharge C rating must be blank or greater than zero.",
+        "fi": "Jatkuvan purkauksen C-arvon on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "NominalvoltageOptional": {
+        "en": "Nominal voltage must be blank or greater than zero.",
+        "fi": "Nimellisjännitteen on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "HeatcapacityOptional": {
+        "en": "Heat capacity must be blank or greater than zero.",
+        "fi": "Ominaislämpökapasiteetin on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "DensityOptional": {
+        "en": "Density must be blank or greater than zero.",
+        "fi": "Tiheyden on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "MinimumatomizerresistanceOptional": {
+        "en": "Minimum atomizer resistance must be blank or greater than zero.",
+        "fi": "Höyrystimen pienimmän resistanssin on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "MaximumatomizerresistanceOptional": {
+        "en": "Maximum atomizer resistance must be blank or greater than zero.",
+        "fi": "Höyrystimen suurimman resistanssin on oltava tyhjä tai suurempi kuin nolla."
+    },
+    "batteryobject": {
+        "en": "The custom battery must be an object.",
+        "fi": "Oman kohteen (akku) tietorakenne on virheellinen."
+    },
+    "batteryid": {
+        "en": "The custom battery needs an ID.",
+        "fi": "Omalta kohteelta (akku) puuttuu tunniste."
+    },
+    "batteryprotectedId": {
+        "en": "A custom battery ID cannot replace a built-in battery.",
+        "fi": "Oman kohteen (akku) tunniste ei saa korvata valmista kohdetta."
+    },
+    "batteryclone": {
+        "en": "The cloned-from battery is unavailable.",
+        "fi": "Kopioinnin lähteenä ollutta kohdetta (akku) ei ole saatavilla."
+    },
+    "batteryinUse": {
+        "en": "The battery is currently in use.",
+        "fi": "Kohde (akku) on parhaillaan käytössä."
+    },
+    "batteryresetFirst": {
+        "en": "Reset malformed battery data before editing it.",
+        "fi": "Nollaa virheelliset akun tiedot ennen muokkaamista."
+    },
+    "batterybuiltInMissing": {
+        "en": "The built-in battery is unavailable.",
+        "fi": "Valmista kohdetta (akku) ei ole saatavilla."
+    },
+    "batterycustomMissing": {
+        "en": "The custom battery is unavailable.",
+        "fi": "Omaa kohdetta (akku) ei ole saatavilla."
+    },
+    "batteryformat": {
+        "en": "Saved battery data has an unsupported or malformed format.",
+        "fi": "Tallennettujen tietojen (akku) muoto on virheellinen tai sitä ei tueta."
+    },
+    "batteryvisibility": {
+        "en": "Saved default-battery visibility is invalid.",
+        "fi": "Valmiiden kohteiden (akku) tallennetut näkyvyystiedot ovat virheelliset."
+    },
+    "batteryunique": {
+        "en": "Saved custom battery IDs must be unique.",
+        "fi": "Omien kohteiden (akku) tallennetut tunnisteet eivät saa toistua."
+    },
+    "batteryjson": {
+        "en": "Saved battery data is not valid JSON.",
+        "fi": "Tallennetut tiedot (akku) eivät ole kelvollista JSON-muotoa."
+    },
+    "batteryread": {
+        "en": "Saved battery data could not be read.",
+        "fi": "Tallennettujen tietojen (akku) lukeminen epäonnistui."
+    },
+    "batterywrite": {
+        "en": "Battery changes could not be saved.",
+        "fi": "Muutosten (akku) tallentaminen epäonnistui."
+    },
+    "batteryreset": {
+        "en": "Saved battery data could not be reset.",
+        "fi": "Tallennettujen tietojen (akku) nollaaminen epäonnistui."
+    },
+    "materialobject": {
+        "en": "The custom material must be an object.",
+        "fi": "Oman kohteen (materiaali) tietorakenne on virheellinen."
+    },
+    "materialid": {
+        "en": "The custom material needs an ID.",
+        "fi": "Omalta kohteelta (materiaali) puuttuu tunniste."
+    },
+    "materialprotectedId": {
+        "en": "A custom material ID cannot replace a built-in material.",
+        "fi": "Oman kohteen (materiaali) tunniste ei saa korvata valmista kohdetta."
+    },
+    "materialclone": {
+        "en": "The cloned-from material is unavailable.",
+        "fi": "Kopioinnin lähteenä ollutta kohdetta (materiaali) ei ole saatavilla."
+    },
+    "materialinUse": {
+        "en": "The material is currently in use.",
+        "fi": "Kohde (materiaali) on parhaillaan käytössä."
+    },
+    "materialresetFirst": {
+        "en": "Reset malformed material data before editing it.",
+        "fi": "Nollaa virheelliset materiaalin tiedot ennen muokkaamista."
+    },
+    "materialbuiltInMissing": {
+        "en": "The built-in material is unavailable.",
+        "fi": "Valmista kohdetta (materiaali) ei ole saatavilla."
+    },
+    "materialcustomMissing": {
+        "en": "The custom material is unavailable.",
+        "fi": "Omaa kohdetta (materiaali) ei ole saatavilla."
+    },
+    "materialformat": {
+        "en": "Saved material data has an unsupported or malformed format.",
+        "fi": "Tallennettujen tietojen (materiaali) muoto on virheellinen tai sitä ei tueta."
+    },
+    "materialvisibility": {
+        "en": "Saved default-material visibility is invalid.",
+        "fi": "Valmiiden kohteiden (materiaali) tallennetut näkyvyystiedot ovat virheelliset."
+    },
+    "materialunique": {
+        "en": "Saved custom material IDs must be unique.",
+        "fi": "Omien kohteiden (materiaali) tallennetut tunnisteet eivät saa toistua."
+    },
+    "materialjson": {
+        "en": "Saved material data is not valid JSON.",
+        "fi": "Tallennetut tiedot (materiaali) eivät ole kelvollista JSON-muotoa."
+    },
+    "materialread": {
+        "en": "Saved material data could not be read.",
+        "fi": "Tallennettujen tietojen (materiaali) lukeminen epäonnistui."
+    },
+    "materialwrite": {
+        "en": "Material changes could not be saved.",
+        "fi": "Muutosten (materiaali) tallentaminen epäonnistui."
+    },
+    "materialreset": {
+        "en": "Saved material data could not be reset.",
+        "fi": "Tallennettujen tietojen (materiaali) nollaaminen epäonnistui."
+    },
+    "modobject": {
+        "en": "The custom mod must be an object.",
+        "fi": "Oman kohteen (modi) tietorakenne on virheellinen."
+    },
+    "modid": {
+        "en": "The custom mod needs an ID.",
+        "fi": "Omalta kohteelta (modi) puuttuu tunniste."
+    },
+    "modprotectedId": {
+        "en": "A custom mod ID cannot replace a built-in mod.",
+        "fi": "Oman kohteen (modi) tunniste ei saa korvata valmista kohdetta."
+    },
+    "modclone": {
+        "en": "The cloned-from mod is unavailable.",
+        "fi": "Kopioinnin lähteenä ollutta kohdetta (modi) ei ole saatavilla."
+    },
+    "modinUse": {
+        "en": "The mod is currently in use.",
+        "fi": "Kohde (modi) on parhaillaan käytössä."
+    },
+    "modresetFirst": {
+        "en": "Reset malformed mod data before editing it.",
+        "fi": "Nollaa virheelliset modin tiedot ennen muokkaamista."
+    },
+    "modbuiltInMissing": {
+        "en": "The built-in mod is unavailable.",
+        "fi": "Valmista kohdetta (modi) ei ole saatavilla."
+    },
+    "modcustomMissing": {
+        "en": "The custom mod is unavailable.",
+        "fi": "Omaa kohdetta (modi) ei ole saatavilla."
+    },
+    "modformat": {
+        "en": "Saved mod data has an unsupported or malformed format.",
+        "fi": "Tallennettujen tietojen (modi) muoto on virheellinen tai sitä ei tueta."
+    },
+    "modvisibility": {
+        "en": "Saved default-mod visibility is invalid.",
+        "fi": "Valmiiden kohteiden (modi) tallennetut näkyvyystiedot ovat virheelliset."
+    },
+    "modunique": {
+        "en": "Saved custom mod IDs must be unique.",
+        "fi": "Omien kohteiden (modi) tallennetut tunnisteet eivät saa toistua."
+    },
+    "modjson": {
+        "en": "Saved mod data is not valid JSON.",
+        "fi": "Tallennetut tiedot (modi) eivät ole kelvollista JSON-muotoa."
+    },
+    "modread": {
+        "en": "Saved mod data could not be read.",
+        "fi": "Tallennettujen tietojen (modi) lukeminen epäonnistui."
+    },
+    "modwrite": {
+        "en": "Mod changes could not be saved.",
+        "fi": "Muutosten (modi) tallentaminen epäonnistui."
+    },
+    "modreset": {
+        "en": "Saved mod data could not be reset.",
+        "fi": "Tallennettujen tietojen (modi) nollaaminen epäonnistui."
+    }
+}

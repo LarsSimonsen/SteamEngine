@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5496946968214683"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://www.steam-engine.org/wirewiz" />
+    <meta property="og:url" content="https://www.steam-engine.org/wirewiz" />
+    <title>Wire wizard | Steam Engine | free vaping calculators</title>
+    <meta property="og:title" content="Wire wizard | Steam Engine | free vaping calculators" />
+    <meta name="description" content="Build your wire from the ground up. Combine materials, twist, clapton, go crazy. Detailed results including TCR, equivalents for Ni200 mods, and CSV export." />
+    <meta property="og:description" content="Build your wire from the ground up. Combine materials, twist, clapton, go crazy. Detailed results including TCR, equivalents for Ni200 mods, and CSV export." />
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <link href="wirewiz2.css?v=0" rel="stylesheet" />
+    <link id="bscss" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="se.css?v=8" rel="stylesheet" />
+<script defer src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script defer src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="steam-engine.js?v=19"></script>
+<script defer src="analytics.js?v=1"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Lars Olaf Simonsen">
+<meta property="og:image" content="https://www.steam-engine.org/static/Hi-Res-Icon444.png" />
+<meta property="og:site_name" content="Steam Engine" />
+<meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" sizes="192x192" href="/static/icon192x192.png" />
+<link rel="icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/static/icon128x128.png" />
+<base target="_parent" />
+</head>
+<body id="wirewiz">
+    <nav id="toppnav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#setoppmeny" aria-expanded="false" style="margin-bottom:0px;">
+                <span style="display:inline-block;margin-right:0.5em;">Menu</span>
+                <span style="display:inline-block;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </button>
+            <a href="https://www.steam-engine.org" rel="bookmark">
+                <img src="static/logo.png" alt="Steam Engine logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="setoppmeny">
+            <ul class="nav navbar-nav" id="choo-topnav">
+                <li class="tnf" id="navtab-main">
+                    <a class="tnf" href="https://www.steam-engine.org">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-ohm">
+                    <a class="tnf" href="ohm">
+                        Ohm's law
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-coil">
+                    <a class="tnf" href="coil">
+                        Coil wrapping
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-wirewiz">
+                    <a class="tnf" href="wirewiz">
+                        Wire Wizard
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-batt">
+                    <a class="tnf" href="batt">
+                        Battery drain
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-modrange">
+                    <a class="tnf" href="modrange">
+                        Mod range
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-juice">
+                    <a class="tnf" href="juice">
+                        E-liquid
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-converter">
+                    <a class="tnf" href="converter">
+                        Convert
+                    </a>
+                </li>
+
+                <li class="tnf" id="navtab-new-site">
+                    <a class="tnf" href="..">
+                        New version!
+                    </a>
+                </li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navtab-about" class="tnf">
+                    <a class="tnf" href="about" rel="author license">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+        <div class="container">
+            <a class="legacy-new-notice" href="../wirewiz"><strong>Try the new Wire Wizard here.</strong></a>
+        </div>
+<div class="sebackto"></div>
+    <div class="container">
+        <main>
+            <h1>
+                Wire wizard
+                <small>building from the ground up</small>
+            </h1>
+            <div class="row" id="toppdel">
+                <div class="col col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Coil setup <small>the shape of the finished coil</small></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-horizontal" style="padding-right:0.5em;">
+                                <div class="form-group form-group-sm" title="The inner diameter of the coil">
+                                    <label class="col-xs-6 control-label">Inner diameter</label>
+                                    <div class="fractioninputdiv" id="innerdiadiv">
+                                        <div class="col-xs-6 input-group">
+                                            <input class="text-right form-control" id="innerdia" type="number" step="0.1" min="0.1" value="2" />
+                                            <span class="input-group-addon btn" id="innerdiadiv-fractionbtn">mm</span>
+                                        </div>
+                                        <div class="fracholder"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm" title="The number of wraps in the coil. Half wraps mean that the coil legs are pointing in the same direction. Whole numbers mean that the legs are pointing in the opposite direction.">
+                                    <label class="col-xs-6 control-label">Wraps</label>
+                                    <div class="col-xs-6 input-group">
+                                        <input class="text-right form-control" id="wraps" type="number" step="0.5" min="1" value="8" />
+                                        <span class="input-group-addon">&nbsp;&nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm" title="The combined length of the wire between the coil and the atomizer's terminal/post">
+                                    <label class="col-xs-6 control-label">Leg length</label>
+                                    <div class="col-xs-6 input-group">
+                                        <input class="text-right form-control" id="leglength" type="number" step="0.5" min="0" value="5" />
+                                        <span class="input-group-addon">mm</span>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm" title="The average gap between each wrap in the coil">
+                                    <label class="col-xs-6 control-label">Wrap spacing</label>
+                                    <div class="col-xs-6 input-group">
+                                        <input class="text-right form-control" id="wrapspacing" type="number" step="0.01" min="0.01" value="0.05" />
+                                        <span class="input-group-addon">mm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Temperature control <small>results</small></h3>
+                        </div>
+                        <div class="panel-body" id="notcresults" style="display:none;">
+                            <span class="help-block">
+                                TC related results could not be calculated, 
+                                because temperature data (TCR/TFR) is lacking for one or more of the selected wire materials.
+                            </span>
+                        </div>
+                        <div class="panel-body" style="padding-left:0.5em;" id="tcresults">
+                            <div class="tabbable" id="tfrinfo">
+                                <div id="tfrleft">
+                                    <ul class="nav nav-stacked" id="tfrnav">
+                                        <li role="presentation" title="Temperature factors of resistance: Edit temperature points"><a id="showtfrmain" href="#"><b>TFR</b></a></li>
+                                        <li role="presentation" title="Show TFR graph" class="active"><a id="showtfrchart" href="#">Graph</a></li>
+                                        <li role="presentation" title="Show TFR table"><a id="showtfrtable" href="#">Table</a></li>
+                                        <li role="presentation" title="Equivalent temperature settings for other alloys"><a id="showtfrequiv" href="#">Equivalents</a></li>
+                                        <li role="presentation" title="Download the TFR curve as a CSV file for ESCribe and the DNA200"><a id="showtfrdna200" href="#">DNA200</a></li>
+                                    </ul>
+                                </div><div id="tfrright">
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="tfrmain">
+                                            <div id="temppointsdiv">
+                                                <div class="form-group">
+                                                    <label>Edit temperature points</label>
+                                                    <div class="input-group">
+                                                        <input class="form-control" id="temppoints" />
+                                                        <span class="input-group-addon">&deg;C</span>
+                                                    </div>
+                                                </div>
+                                                <span class="help-block">
+                                                    Enter temperature points in &deg;C, in ascending order and separated by commas.
+                                                    A temperature point of 20 &deg;C should be included.
+                                                </span>
+                                                <span class="btn btn-default" id="usetemppoints">Use</span>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane active" id="tfrchart">
+                                            <canvas id="mainchart"></canvas>
+                                        </div>
+                                        <div class="tab-pane" id="tfrtable"></div>
+                                        <div class="tab-pane" id="tfrequiv">
+                                            <div class="row">
+                                                <div class="col col-md-6">
+                                                    <label>Temperature</label>
+                                                    <div class="input-group">
+                                                        <input type="number" step="5" min="0" max="1000" class="form-control text-right" value="210" id="tfrequivc" />
+                                                        <span class="input-group-addon">&deg;C=</span>
+                                                        <input type="number" step="10" min="0" max="1000" class="form-control text-right" value="410" id="tfrequivf" />
+                                                        <span class="input-group-addon">&deg;F</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-6">
+                                                    <label>Material</label>
+                                                    <select class="form-control" id="tfrequivmat"></select>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>The wire you have built has a resistance factor of <span id="tfrfactorattemp" class="label label-default"></span> at this temperature.</p>
+                                                <p id="tfrequivres">To match it on a mod set to <span id="tfradjustmat"></span>, adjust the temperature to <strong>~<span id="tfradjustc"></span>&deg;C or ~<span id="tfradjustf"></span>&deg;F</strong>.</p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tfrdna200">
+                                            <textarea class="form-control" rows="5"></textarea>
+                                            <div class="downloadlink"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-2" id="topphoyre">
+                    <label>View</label>
+                    <div>
+                        <div class="radio" id="tempscales">
+                            <label for="tempscale-c">
+                                <input type="radio" name="tempscale" id="tempscale-c" checked="checked" data-tempscale="C" />
+                                Celsius
+                            </label>
+                            <label for="tempscale-f">
+                                <input type="radio" name="tempscale" id="tempscale-f" data-tempscale="F" />
+                                Fahrenheit
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="showsuboutput" title="Show details about all subslots">
+                                <input type="checkbox" id="showsuboutput" />
+                                Show results for all components
+                            </label>
+                        </div>
+                        <a class="btn btn-link" href="customdata#mat" title="Manage your custom presets">Custom materials</a>
+                    </div>
+                    <div>
+                        <span id="dna200link"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="menumsg">
+                <div class="menumsg-inner"></div>
+            </div>
+            <div style="position:relative">
+                <label style="position:absolute;z-index:999;top:-0.75em;left:1em;text-shadow:1px 1px 2px white, -1px -1px 2px white;" class="text-muted">Wire builder</label>
+            </div>
+            <div id="workbench" class="hidesuboutputs"></div>
+        </main>
+        <!-- steam-engine-ad:start provider="steam-engine-waterfall" placement="primary-banner" -->
+        <div class="ad-slot se-ad-placement text-center" aria-label="Advertisement"
+            data-ad-context="wirewiz" data-ad-placement="legacy-calculator-footer"
+            style="margin:1.5em auto;min-height:250px"></div>
+        <script async src="/advertising/runtime.js"></script>
+        <!-- steam-engine-ad:end -->
+
+        <div class="row">
+            <div class="howdoesitwork">
+                <div class="col col-md-4">
+
+                    <h2>Get started</h2>
+                    <h3>Single wire build</h3>
+                    <p>
+                        You start with one slot.
+                        If you're only going to use one wire, that's all you need.
+                        Select the material, gauge and other values, and you're good to go.
+                    </p>
+                    <p>
+                        <strong class="text-success">Temperature control tip:</strong> If you're not mixing materials, and all you want is a CSV file for the DNA 200, the only thing you have to choose is the material.
+                        The other parameters, like the number of wraps or the gauge, do not affect the temperature curve, unless you use two ore more different materials in the same build.
+                    </p>
+                    <h3>Multiple wire build</h3>
+                    <p>
+                        The first dropdown menu in the slot is "Wire". Change it to "Parallel".
+                        Now you have two wires in parallel. If you want three or more wires in parallel, click the <span class="btn btn-default btn-xs">+</span> button below the second slot.
+                    </p>
+                    <p>
+                        If you choose "Clapton" you'll get two sub slots.
+                        No more, no less.
+                        However, there's nothing wrong with choosing "Parallel" or even "Clapton" again in one or both of these slots.
+                    </p>
+                    <h3>Results</h3>
+                    <p>
+                        The blue box on the left tells you about your resulting wire.
+                        If you want to see the details about any part of your wire, check the box "Show results for all components".
+                    </p>
+                    <h3>TCR</h3>
+                    <p>
+                        If you want to download the TCR profile as a CSV file to your DNA 200, click the DNA200 tab.
+                        This function is only available if all your selected materials have an associated TFR/TCR profile.
+                        Materials that lack a TFR/TCR profile are marked with an asterisk in the dropdown menu.
+                        Please note that the download function does not work in Microsoft Internet Explorer. The solution is to use any other browser, or manually create a new csv file on your computer and copy the text from the text box.
+                    </p>
+                    <p>
+                        Warning:
+                        The more complex your wire build, the less accurate the results are probably going to be.
+                        Especially if your build involves many levels (goes far to the right on the screen, a wire that is part of a wire that is part of a wire, etc.).
+                        Errors tend to accumulate.
+                    </p>
+                </div>
+                <div class="col col-md-4">
+                    <h2>Example <small>to <em>really</em> get you started</small></h2>
+                    <p>
+                        Let's say you want to build a fancy coil: A clapton that has three thick, parallel wires in the core, and is wrapped with two thin, parallel wires.
+                    </p>
+                    <ul>
+                        <li>
+                            Choose "Clapton" in the first slot.
+                            You get two new slots to the right of the clapton.
+                            One for the core, and another one for the wrap.
+                        </li>
+                        <li>
+                            Under "Core" choose "Parallel", and click the plus button.
+                            You now have three parallel wires in the core.
+                        </li>
+                        <li>
+                            Under "Wrap", choose "Parallel".
+                            You now have two parallel wires in the wrap.
+                        </li>
+                        <li>
+                            Choose the materials for each of your five wires.
+                        </li>
+                        <li>
+                            Choose some thick gauges for the core, and some thinner ones for the wrap.
+                        </li>
+                    </ul>
+                    <h2>Why should I use it?</h2>
+                    <p>
+                        First of all:
+                        If you just want a calculator that is simple to use, and you don't make mixed wires, the old <a href="coil">coil wrapping calculator</a> is probably a better choice for you.
+                        It is a much more polished piece of software, and designed to be (almost) as simple as possible to use, while still giving accurate results and a handful of more advanced options.
+                    </p>
+                    <p>
+                        I designed this calculator with two distinct groups of vapers in mind:
+                    </p>
+                    <ul>
+                        <li>Those who use temperature control, and want to combine different materials with different temperature coefficients of resistance.</li>
+                        <li>Those who wrap fancy coils, and want to better understand the flow of the current and heat in the various parts of the coil.</li>
+                    </ul>
+                    <p>
+                        Even if you don't belong to either group, I hope you find this calculator helpful, that it helps you better understand what goes on in the coil, and that it ultimately enables you to build better coils.
+                    </p>
+                </div>
+                <div class="col col-md-4">
+                    <h2>Tips & tricks</h2>
+                    <ul>
+                        <li>If you want to input the wire length manually, set the "Number of wraps" to 0, and enter your desired wire length in the "Leg length" box.</li>
+                        <li>
+                            For dual/triple/quad coils, choose "Parallel" in the first slot, and treat each sub-slot as a separate coil.
+                            Check the box "Show results for all components" to see the stats for each coil.
+                            This even allows you to build different coils to use in parallel in the same atomizer, if you're so inclined.
+                            As long as you match the heat flux and heat capacity of the coils, and a decent vape should be possible &ndash; at least in theory.
+                        </li>
+                        <li>
+                            If you want to use a mixed or otherwise non-Ni200 coil on a Ni200 only mod, you can click the "Ni 200 equiv." tab next to the chart on the upper right.
+                            The temperatures displayed here will tell you what temperature setting to adjust your mod to, in order to get the temperatures printed in the table header.
+                            If you want to know the equivalent of a specific temperature not already in the table, you can click the topmost tab labeled "TFR, to set the temperature point(s) of your choice.
+                        </li>
+                    </ul>
+                    <!--
+                    <h2>Future features <small>in no particular order</small></h2>
+                    <p>
+                        Stuff I may or may not add to the calculator at some point in the future.
+                    </p>
+                    <ul>
+                        <li><s>Add twisted wires</s> &check;</li>
+                        <li><s>Add staggered claptons.</s> &check;</li>
+                        <li>Special calculation for claptons around parallel, similar to claptons around ribbon.</li>
+                        <li><s>Add inputs for the coil itself; Inner diameter and wrap count, to calculate total length, and subsequently everything else, from that.</s> &check;</li>
+                        <li>One slot type for "Parallel, flat" and another one for "Parallel, bundle"?</li>
+                        <li><s>Improve layout - make everything easier on the eye.</s></li>
+                        <li><s>Suggest temp setting(s) for Ni200 only mods.</s> &check;</li>
+                    </ul>
+                    -->
+                </div>
+            </div>
+        </div>
+        </div>
+    <footer id="sefooter" class="container-fluid">
+    <hr />
+    <div class="row">
+        
+        
+        
+        <div class="col col-md-3 col-sm-12 text-center">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="col col-md-2 col-sm-12 text-right">
+            <a id="seaddr" href="https://www.steam-engine.org">www.steam-engine.org</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+</script>
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/x-handlebars-template" id="template-slot-twist" >
+        <label>Twisted wires</label>
+        <div class="slothead">
+            <div class="row">
+                <div class="col col-md-6">
+                    <div class="form-group">
+                        <label>Number of wires</label>
+                        <input type="number" class="form-control text-right strands" value="2" min="2" max="4" step="1" placeholder="Wires" />
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="form-group">
+                        <label>Twist pitch</label>
+                        <div class="input-group" style="max-width:14em;" title="The distance between each ridge.">
+                            <input type="number" class="form-control text-right twistpitch" value="0.5" min="0.1" step="0.1" placeholder="Pitch" />
+                            <span class="input-group-addon">mm</span>
+                        </div>
+                        <div class="twistpitchtoosmall text-danger" style="display:none;">Too small; overlapping.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slot"></div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template-slot-paral">
+        <label>Parallel wires</label>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <span class="btn btn-default btn-xs addwire">+</span>
+    </script>
+    
+    <script type="text/x-handlebars-template" id="template-slot-clapt">
+        <span class="btn btn-xs showadvancedslothead"><i class="glyphicon glyphicon-cog"></i></span>
+        <label>Clapton wire</label>
+        <div class="slothead">
+            <div class="advancedslothead" style="display:none;">
+                <div class="form-group">
+                    <label>Wrap spacing</label>
+                    <div class="input-group" style="max-width:14em;">
+                        <input type="number" value="0.05" min="0" step="0.01" class="text-right wrapspacing form-control" />
+                        <span class="input-group-addon">mm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label>Core</label>
+        <div class="slot"></div>
+        <label>Wrap</label>
+        <div class="slot"></div>
+    </script>
+    
+    <script type="text/x-handlebars-template" id="template-slot-staggclapt">
+        <span class="btn btn-xs showadvancedslothead"><i class="glyphicon glyphicon-cog"></i></span>
+        <label>Staggered Clapton wire</label>
+        <div class="slothead">
+            <div class="advancedslothead" style="display:none;">
+                <div class="form-group">
+                    <label>Wrap spacing</label>
+                    <div class="input-group" style="max-width:14em;">
+                        <input type="number" value="0.05" min="0" step="0.01" class="text-right wrapspacing form-control" />
+                        <span class="input-group-addon">mm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label>Cores (two of them)</label>
+        <div class="slot"></div>
+        <label>Primary wrap (one around each core)</label>
+        <div class="slot"></div>
+        <label>Secondary wrap (around both cores)</label>
+        <div class="slot"></div>
+    </script>
+    
+    <script type="text/x-handlebars-template" id="template-slot-singl">
+        <div class="singl form-group form-group-sm">
+            <select class="mat form-control">
+            {{#each materials}}
+                <option value="{{id}}">
+                    {{nm}}
+                    {{#if showStar}} *{{/if}}
+                </option>
+            {{/each}}
+            </select>
+            <div class="form-group form-group-sm">
+                <select class="wireprofile form-control">
+                    <option value="{{round}}">Round</option>
+                    <option value="{{ribbon}}">Ribbon</option>
+                </select>
+            </div>
+            <div>
+                <div class="round form-group form-group-sm">
+                    <div class="input-group">
+                        <input type="number" min="-10" max="100" step="1" value="30" class="awg text-right form-control" placeholder="AWG" />
+                        <span class="input-group-addon">AWG</span>
+                        <input type="number" min="0.001" max="5" step="0.001" value="0.255" class="dia text-right form-control" placeholder="Diameter" />
+                        <span class="input-group-addon">mm</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="ribbon form-group form-group-sm" style="display:none;">
+                        <div class="input-group">
+                            <input type="number" min="0.001" max="1000" step="0.01" class="width text-right form-control" placeholder="Width" value="0.5" />
+                            <span class="input-group-addon">mm &times;</span>
+                            <input type="number" min="0.0001" max="100" step="0.001" class="thick text-right form-control" placeholder="Thickness" value="0.1" />
+                            <span class="input-group-addon">mm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template-slot-leftpart">
+        {{#if showRemove}}
+        <a class="closeslot" title="Remove"><i class="glyphicon glyphicon-remove"></i></a>
+        {{/if}}
+        <div class="leftpart">
+            <div class="slottyp">
+                <select class="typ form-control">
+                    <option value="{{single}}">Single wire</option>
+                    {{#if showParallel}}
+                    <option value="{{parallel}}">Parallel</option>
+                    {{/if}}
+                    <option value="{{twisted}}">Twisted</option>
+                    <option value="{{clapton}}">Clapton</option>
+                    <option value="{{staggeredclapton}}">Staggered Clapton</option>
+                </select>
+            </div>
+            <div class="slotinfo"></div>
+        </div>
+        <div class="rightpart">
+            <div class="slottypoptions"></div>
+            <div class="subslots"></div>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template-slot-info">
+        {{#if mainslot}}
+        <label class="resov">Results</label>
+        {{/if}}
+        <div class="results {{#if mainslot}}hovedoutput alert alert-info{{else}}suboutput{{/if}} {{#if singleoutput}}singleoutput{{/if}}">
+            <table class="results-el">
+                <tr class="results-res">
+                    <td>Resistance</td>
+                    <td class="text-right">{{res}}</td>
+                    <td>&ohm;</td>
+                </tr>
+                <tr>
+                    <td>
+                        ... per unit length
+                    </td>
+                    <td class="text-right">{{rstv}}</td>
+                    <td>
+                        <sup>&ohm;</sup>/<sub>m</sub>
+                    </td>
+                </tr>
+            </table>
+            <table class="results-heat">
+                <tr class="results-sensitivity" title="The relative change in resistance between 20 °C (68 °F) and 300 °C (572 °F).">
+                    <td class="tablelabel">
+                        TCR <small>in vaping range</small>
+                    </td>
+                    {{#if tcrsensitivity}}
+                    <td class="tablevalue text-right">{{tcrsensitivity}}</td>
+                    <td class="unit">
+                        &times;10<sup>-6</sup>
+                    </td>
+                    {{else}}
+                    <td class="text-right">?</td>
+                    <td></td>
+                    {{/if}}
+                </tr>
+                <tr class="results-sensitivity2" title="Experimental value, at the moment calculated by multiplying TCR * R * 1.000.000">
+                    <td class="tablelabel">TC precision</td>
+                    {{#if tcprecision}}
+                    <td class="tablevalue text-right">{{tcprecision}}</td>
+                    <td class="unit"></td>
+                    {{else}}
+                    <td class="text-right">?</td>
+                    <td></td>
+                    {{/if}}
+                </tr>
+                <tr class="results-heatflux">
+                    <td class="tablelabel">
+                        Heat flux <small>per Watt</small>
+                    </td>
+                    <td class="tablevalue text-right">{{heatfluxperwatt}}</td>
+                    <td><sup>mW</sup>/<sub>mm&sup2;</sub></td>
+                </tr>
+                <tr>
+                    <td>Heat capacity</td>
+                    <td class="text-right">{{hc}}</td>
+                    <td><sup>mJ</sup>/<sub>K</sub></td>
+                </tr>
+                <tr>
+                    <td>Current <small>per Volt</small></td>
+                    {{#if superamp}}
+                    <td class="text-right">{{ampspervolt}}</td>
+                    <td>A</td>
+                    {{else}}
+                    <td class="text-right">{{milliampspervolt}}</td>
+                    <td>mA</td>
+                    {{/if}}
+                </tr>
+                <tr>
+                    <td>Power dissipated</td>
+                    <td class="text-right">{{powerdissipated}}</td>
+                    <td>%</td>
+                </tr>
+            </table>
+            <table class="results-mech">
+                {{#if profileround}}
+                <tr>
+                    <td>Diameter</td>
+                    <td class="text-right">{{dia}}</td>
+                    <td>mm</td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td>Width</td>
+                    <td class="text-right">{{width}}</td>
+                    <td>mm</td>
+                </tr>
+                <tr>
+                    <td>Thickness</td>
+                    <td class="text-right">{{thick}}</td>
+                    <td>mm</td>
+                </tr>
+                {{/if}}
+                <tr>
+                    <td>Length</td>
+                    <td class="text-right">{{length}}</td>
+                    <td>mm</td>
+                </tr>
+                <tr>
+                    <td>Surface area</td>
+                    <td class="text-right">{{surface}}</td>
+                    <td>mm&sup2;</td>
+                </tr>
+                <tr>
+                    <td>Cross section area</td>
+                    <td class="text-right">{{xarea}}</td>
+                    <td>mm&sup2;</td>
+                </tr>
+                <tr>
+                    <td>Volume</td>
+                    <td class="text-right">{{volume}}</td>
+                    <td>mm&sup3;</td>
+                </tr>
+                <tr>
+                    <td>Mass</td>
+                    <td class="text-right">{{mass}}</td>
+                    <td>mg</td>
+                </tr>
+                <tr>
+                    <td>Density</td>
+                    <td class="text-right">{{dens}}</td>
+                    <td><sup>g</sup>/<sub>ccm</sub></td>
+                </tr>
+            </table>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template-tfr-table">
+        {{#if data}}
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th class="text-right">Temp. &deg;C</th>
+                    {{#each c}}
+                    <th class="text-right">{{this}}</th>
+                    {{/each}}
+                </tr>
+                <tr>
+                    <th class="text-right">Temp. &deg;F</th>
+                    {{#each f}}
+                    <th class="text-right">{{this}}</th>
+                    {{/each}}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-right">Res. factor</td>
+                    {{#each tfr}}
+                    <td class="text-right">{{this}}</td>
+                    {{/each}}
+                </tr>
+            </tbody>
+        </table>
+        {{else}}
+        <span class="help-block">No TFR data for selected material(s)</span>
+        {{/if}}
+    </script>
+
+</body>
+</html>

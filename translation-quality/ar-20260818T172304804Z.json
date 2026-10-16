@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260818T172304804Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Arabic pass identified 25 remaining technical wording, unit-formatting, and terminology defects across TCR, trigonometry, thermal concepts, heat flux, and SI conversions; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-20260818-076",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR description used the verb يقدر in a way that sounded like estimation rather than definition.",
+            "disposition": "resolved",
+            "evidence": ["The previous description began ‘يقدر معامل درجة حرارة المقاومة كيفية تغير المقاومة...’."],
+            "resolution": "Changed it to the clearer technical wording ‘يصف معامل درجة حرارة المقاومة كيفية تغير المقاومة...’."
+        },
+        {
+            "id": "ar-20260818-077",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The linear-model introduction used an awkward literal phrase for the first-order relationship.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said ‘استخدم علاقة الدرجة الأولى’."],
+            "resolution": "Changed it to ‘استخدم العلاقة الخطية من الدرجة الأولى’."
+        },
+        {
+            "id": "ar-20260818-078",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coefficient-unit explanation spelled out units inconsistently and did not preserve the standard ppm notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘1/درجة مئوية أو جزء في المليون/درجة مئوية’."],
+            "resolution": "Changed it to the compact technical notation ‘1/°C أو ppm/°C’."
+        },
+        {
+            "id": "ar-20260818-079",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR title used feminine agreement that was less natural for the technical values being discussed.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘TCR الإيجابية والسلبية’."],
+            "resolution": "Changed it to ‘قيم TCR الموجبة والسالبة’."
+        },
+        {
+            "id": "ar-20260818-080",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The positive-TCR bullet used an awkward verbal construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘يعني TCR الإيجابي زيادة المقاومة...’."],
+            "resolution": "Rewrote it as ‘تؤدي قيمة TCR موجبة إلى زيادة المقاومة...’."
+        },
+        {
+            "id": "ar-20260818-081",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR example setup contained a corrupted degree unit and an unclear coefficient unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup used ‘20 درجة مئوية’ and ‘400 جزء في المليون / 0 درجة مئوية’."],
+            "resolution": "Replaced it with protected units: ‘20 °C’ and ‘400 ppm/°C’."
+        },
+        {
+            "id": "ar-20260818-082",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry title translated sides as الجوانب rather than the geometric term الأضلاع.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘إيجاد الجوانب والزوايا المجهولة’."],
+            "resolution": "Changed it to ‘إيجاد الأضلاع والزوايا المجهولة’."
+        },
+        {
+            "id": "ar-20260818-083",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example title used an imperative phrase rather than a concise example label.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘ابحث عن جانب’."],
+            "resolution": "Changed it to ‘إيجاد ضلع’."
+        },
+        {
+            "id": "ar-20260818-084",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The waveform variable definition used الوقت instead of the more precise technical term الزمن.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet described t as ‘الوقت بالثواني’."],
+            "resolution": "Changed the definition to use ‘الزمن بالثواني’."
+        },
+        {
+            "id": "ar-20260818-085",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity unit definition used the colloquial بـ construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘C هي السعة الحرارية بـ J/K أو J/°C’."],
+            "resolution": "Changed it to the clearer unit phrase ‘بوحدة J/K أو J/°C’."
+        },
+        {
+            "id": "ar-20260818-086",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity setup spelled out measurement units instead of retaining the standard protected symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup used kilogram and درجة مئوية in prose."],
+            "resolution": "Changed it to the compact engineering form ‘0.20 kg ... 20 °C ... 70 °C’."
+        },
+        {
+            "id": "ar-20260818-087",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating title used التدفئة, which is less suitable for the technical process described.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘التدفئة بالطاقة الكهربائية’."],
+            "resolution": "Changed it to ‘التسخين بالطاقة الكهربائية’."
+        },
+        {
+            "id": "ar-20260818-088",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating setup localized protected energy and power units inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup used كيلوجول and واط in prose."],
+            "resolution": "Changed it to ‘41.8 kJ’ and ‘100 W’ while retaining the loss-free condition."
+        },
+        {
+            "id": "ar-20260818-089",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object/material title used the literal word كائن rather than the engineering term الجسم.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘كائن مقابل المادة’."],
+            "resolution": "Changed it to the natural technical title ‘الجسم والمادة’."
+        },
+        {
+            "id": "ar-20260818-090",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change title used a literal translation of phase as المرحلة.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘تغييرات المرحلة والحدود العملية’."],
+            "resolution": "Changed it to the technical phrase ‘تغيرات الطور والحدود العملية’."
+        },
+        {
+            "id": "ar-20260818-091",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change explanation used a less precise phrase for specific latent heat.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended ‘L هي الحرارة الكامنة المحددة بـ J/kg’."],
+            "resolution": "Changed it to ‘الحرارة الكامنة النوعية بوحدة J/kg’."
+        },
+        {
+            "id": "ar-20260818-092",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux definition called q'' heat flow instead of heat-flux density, obscuring the per-area meaning.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘q'' هو تدفق الحرارة بوحدة W/m²’."],
+            "resolution": "Changed it to ‘q'' هي كثافة التدفق الحراري بوحدة W/m²’."
+        },
+        {
+            "id": "ar-20260818-093",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux area definition localized m² inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘بالمتر المربع (م²)’."],
+            "resolution": "Changed it to the consistent protected unit ‘بوحدة m²’."
+        },
+        {
+            "id": "ar-20260818-094",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction bullet used علامة الطرح rather than the clearer term for a negative sign.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘تشير علامة الطرح...’."],
+            "resolution": "Changed it to ‘تشير الإشارة السالبة...’."
+        },
+        {
+            "id": "ar-20260818-095",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The convection/radiation paragraph needed smoother Arabic syntax and an explicit absolute-temperature condition.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used short repeated sentences and ended with ‘بالكلفن’ without the absolute qualifier."],
+            "resolution": "Rewrote it with connected prose and the explicit requirement that radiation temperatures be absolute and in kelvin."
+        },
+        {
+            "id": "ar-20260818-096",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI base-unit title used المشتركة rather than الأساسية.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘وحدات SI المشتركة’."],
+            "resolution": "Changed it to the accurate title ‘وحدات SI الأساسية’."
+        },
+        {
+            "id": "ar-20260818-097",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The decimal-prefix example localized mA and A into inconsistent Arabic words and letters.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘مللي أمبير’ and ‘أ’ in the conversion equation."],
+            "resolution": "Changed it to protected engineering units: ‘15 mA’ and ‘0.015 A’."
+        },
+        {
+            "id": "ar-20260818-098",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inch conversion formula retained the English word inch.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began ‘1 inch = ...’."],
+            "resolution": "Changed it to the Arabic unit name while preserving mm and m symbols: ‘1 بوصة = 25.4 mm = 0.0254 m’."
+        },
+        {
+            "id": "ar-20260818-099",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The pound-to-kilogram conversion localized the protected units into ambiguous Arabic words.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘1 رطل ≈ ... كجم’."],
+            "resolution": "Changed it to the unambiguous technical notation ‘1 lb ≈ 0.45359237 kg’."
+        },
+        {
+            "id": "ar-20260818-100",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The unit-check bullet was a fragment rather than a direct instruction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘تحويل قبل الضرب أو القسمة’."],
+            "resolution": "Changed it to the complete imperative ‘حوّل الوحدات قبل الضرب أو القسمة’."
+        }
+    ]
+}

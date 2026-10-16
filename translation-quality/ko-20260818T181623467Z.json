@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "ko",
+    "cycleId": "ko-20260818T181623467Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Korean source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Korean pass identified 25 actionable formula, terminology, grammar, technical-clarity, and SI-unit defects across circuit, TCR, trigonometric, thermal, and unit content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Korean human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ko-20260818-026",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The KCL heading mistranslated current law as a current/present law.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 키르히호프의 현행법칙."
+            ],
+            "resolution": "Changed it to 키르히호프의 전류 법칙."
+        },
+        {
+            "id": "ko-20260818-027",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KCL formula localized the protected current variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was Σ 나는 = 0."
+            ],
+            "resolution": "Restored Σ I = 0."
+        },
+        {
+            "id": "ko-20260818-028",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL paragraph used current-direction wording that was not natural Korean.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used 현재 방향 and 전달 for current flow."
+            ],
+            "resolution": "Rewrote it with 전류의 방향 and natural current-flow wording."
+        },
+        {
+            "id": "ko-20260818-029",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series-current formula localized the protected total variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was I_총계 = I_1 = I_2 = ...."
+            ],
+            "resolution": "Restored I_total = I_1 = I_2 = ...."
+        },
+        {
+            "id": "ko-20260818-030",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series-resistance formula localized the protected total variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was R_총계 = R_1 + R_2 + ...."
+            ],
+            "resolution": "Restored R_total = R_1 + R_2 + ...."
+        },
+        {
+            "id": "ko-20260818-031",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KVL formula omitted spacing around the summation variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was ΣV = 0."
+            ],
+            "resolution": "Restored Σ V = 0."
+        },
+        {
+            "id": "ko-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KVL example omitted spacing between voltage and unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was +8.0V - V_1 - V_2 = 0."
+            ],
+            "resolution": "Restored +8.0 V - V_1 - V_2 = 0."
+        },
+        {
+            "id": "ko-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series-cell formula localized the protected series note.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression ended with (시리즈)."
+            ],
+            "resolution": "Restored the protected (series) notation."
+        },
+        {
+            "id": "ko-20260818-034",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The TCR power formula localized the current variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was 나는 = V / R."
+            ],
+            "resolution": "Restored I = V / R."
+        },
+        {
+            "id": "ko-20260818-035",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR coefficient units omitted conventional spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used 1/°C and ppm/°C."
+            ],
+            "resolution": "Changed it to 1 / °C and ppm / °C."
+        },
+        {
+            "id": "ko-20260818-036",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation used imprecise side descriptions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph mixed opposite/adjacent descriptions and used an awkward mnemonic explanation."
+            ],
+            "resolution": "Rewrote the definitions and SOH-CAH-TOA explanation in natural Korean."
+        },
+        {
+            "id": "ko-20260818-037",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The identity heading used an English abbreviation instead of the Korean mathematical term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 파형 및 유용한 ID."
+            ],
+            "resolution": "Changed it to 파형 및 항등식."
+        },
+        {
+            "id": "ko-20260818-038",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity worked-example heading was too literal.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 실제 사례."
+            ],
+            "resolution": "Changed it to 풀이 예제."
+        },
+        {
+            "id": "ko-20260818-039",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading used an awkward contrast construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 물체 대 재료."
+            ],
+            "resolution": "Changed it to 물체와 재료."
+        },
+        {
+            "id": "ko-20260818-040",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The convection formula localized the infinity subscript.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression used T_무한대."
+            ],
+            "resolution": "Restored q'' = h × (T_s - T_∞)."
+        },
+        {
+            "id": "ko-20260818-041",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical heat-flux checklist mixed an explanatory declarative form with imperative instructions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet ended with 구분합니다."
+            ],
+            "resolution": "Changed it to direct Korean instruction wording."
+        },
+        {
+            "id": "ko-20260818-042",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.0.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI metre symbol was translated as a Korean word.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used 엠."
+            ],
+            "resolution": "Corrected the symbol to m."
+        },
+        {
+            "id": "ko-20260818-043",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.6.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The candela symbol used uppercase letters.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used CD instead of cd."
+            ],
+            "resolution": "Corrected the symbol to cd."
+        },
+        {
+            "id": "ko-20260818-044",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.0.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The kilo prefix symbol was translated as a Korean word.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used 케이."
+            ],
+            "resolution": "Corrected the symbol to k."
+        },
+        {
+            "id": "ko-20260818-045",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.2.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The milli prefix symbol was translated as a Korean word.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used 엠."
+            ],
+            "resolution": "Corrected the symbol to m."
+        },
+        {
+            "id": "ko-20260818-046",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.4.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The nano prefix symbol was translated as a Korean word.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used 엔."
+            ],
+            "resolution": "Corrected the symbol to n."
+        },
+        {
+            "id": "ko-20260818-047",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The inch conversion formula localized protected unit names and removed spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used Korean unit words and concatenated values."
+            ],
+            "resolution": "Restored 1 inch = 25.4 mm = 0.0254 m."
+        },
+        {
+            "id": "ko-20260818-048",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The foot conversion formula localized protected unit names and removed spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used Korean unit words and concatenated values."
+            ],
+            "resolution": "Restored 1 foot = 12 inches = 0.3048 m."
+        },
+        {
+            "id": "ko-20260818-049",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The yard conversion formula localized protected unit names and removed spacing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula used Korean unit words and concatenated values."
+            ],
+            "resolution": "Restored 1 yard = 3 feet = 0.9144 m."
+        },
+        {
+            "id": "ko-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.0.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The AWG formula localized the protected inch variable.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression used d_인치."
+            ],
+            "resolution": "Restored d_inch = 0.005 × 92^((36 - n) / 39)."
+        }
+    ]
+}

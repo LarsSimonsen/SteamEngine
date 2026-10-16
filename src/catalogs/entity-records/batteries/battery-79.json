@@ -1,0 +1,111 @@
+{
+    "entityId": "battery-79",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Research record for EVE INR18650/30PL.",
+        "description": "EVE identifies the 30PL as a 3.0Ah, 3.65V tabless 18650 cell with a temperature-limited maximum discharge. Battery Mooch tested the exact EVE 30PL and estimated about 45A true continuous current, distinct from the 60A temperature-limited maximum. Exact vape-market retail evidence exists in Japan, while the manufacturer presents the cell for power tools and other industrial applications; preserve temperature and no-vape-approval caveats. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "Independent comparison current is preserved with its limitations.",
+            "Exact vaping relevance is supported by a vape-market listing and vaping-focused testing.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "18650 30PL product page",
+            "url": "https://www.evemall.com/consumer-battery/cylindrical-cell/18650-30pl",
+            "publisher": "EVE Energy",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: EVE 30PL - 60A 3000mAh tabless 18650 with CCC logo",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-eve-30pl-60a-3000mah-tabless-18650-with-ccc-logo.991749/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; conclusions apply to tested samples and revisions."
+        },
+        {
+            "id": "vape-retailer",
+            "title": "EVE 30PL 3000mAh 45A flat-top vape battery, two-cell set",
+            "url": "https://store.shopping.yahoo.co.jp/edgejp/eve30pl.html",
+            "publisher": "Yahoo! Shopping Japan / Office Edge",
+            "limitations": "Retail listing identifies electronic-cigarette/vape use and the exact 30PL model; retailer marketing and availability are not manufacturer approval or independent safety evidence."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is EVE INR18650/30PL (INR18650/30PL), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "EVE identifies the 30PL as a 3.0Ah, 3.65V 18650 cell with a temperature-limited maximum discharge.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch tested the exact EVE 30PL and estimated about 45A true continuous current, distinct from the 60A temperature-limited maximum.",
+            "evidenceDate": "2025-09-22",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact EVE INR18650/30PL has exact-model vaping test coverage.",
+            "evidenceDate": "2025-09-22",
+            "confidence": "high"
+        },
+        {
+            "id": "vape-retail",
+            "statement": "A current Japanese retail listing identifies EVE 30PL as a flat-top 18650 battery sold for electronic-cigarette and vape use.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact EVE INR18650/30PL identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

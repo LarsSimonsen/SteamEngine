@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "ko", "cycleId": "ko-20260819T184646988Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Korean locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Korean critique found four catalog metadata labels with static, vague, or unnatural wording." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Korean human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "ko-catalog-metadata", "translationId": "shared.encyclopediaDetail.loadingPowerCurve", "category": "translation-defect", "severity": "medium", "summary": "Chart loading and catalog record labels did not clearly express their UI and research context.", "disposition": "resolved", "evidence": ["The labels identify an in-progress chart load and catalog research metadata."], "resolution": "Used natural Korean UI and record terminology." }]
+}

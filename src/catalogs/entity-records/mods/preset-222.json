@@ -1,0 +1,38 @@
+{
+    "entityId": "yihi-sxmini-mq-class",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "SXmini MQ Class product page",
+            "url": "https://www.yihisxmini.com/products/sxmini-mq-class.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-mq-class-20260824",
+            "title": "SXmini MQ Class owner review",
+            "url": "https://www.e-cigarette-forum.com/threads/yihi-sxmini-mq-class-mod-review-by-hittman.989147/latest",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

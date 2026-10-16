@@ -1,0 +1,4 @@
+interface:
+  display_name: "Steam Engine i18n Migration"
+  short_description: "Maintain static application i18n architecture"
+  default_prompt: "Use $steam-engine-i18n-migration for a bounded application i18n infrastructure phase."

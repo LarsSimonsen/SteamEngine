@@ -1,0 +1,38 @@
+{
+    "entityId": "asmodus-snow-wolf-200w",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Asmodus Snow Wolf 200W review",
+            "url": "https://www.myvapingreviews.co.uk/2015/08/review-of-asmodus-snow-wolf-200w-from.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "battery-followup-20260824",
+            "title": "Snow Wolf 200w owner discussion",
+            "url": "https://forum.planetofthevapes.co.uk/threads/snow-wolf-200w.80266/",
+            "limitations": "An exact owner report states that the cells are in series; an exact listing independently records two 18650 cells and a 6.2-8.4 V battery range. The wiring statement remains community evidence."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

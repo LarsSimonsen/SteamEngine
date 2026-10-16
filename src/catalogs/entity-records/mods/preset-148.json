@@ -1,0 +1,32 @@
+{
+    "entityId": "vicious-ant-variant-250w",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Vicious Ant VariAnt 120W discussion",
+            "url": "https://forum.planetofthevapes.co.uk/threads/vicious-ant-the-variant.40986/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "pouch",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

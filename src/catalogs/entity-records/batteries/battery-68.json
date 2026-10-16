@@ -1,0 +1,109 @@
+{
+    "entityId": "battery-68",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for Sony US26650VT.",
+        "description": "This researched draft preserves the calculator's 3500mAh and 50A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "store-26650",
+            "title": "26650 batteries",
+            "url": "https://www.18650batterystore.com/collections/26650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "spec-samsung-records",
+            "title": "Sony US26650VT battery record",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "CQham battery test database mirror",
+            "limitations": "Aggregated historical database; supporting evidence for terminal and protection fields, not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-sony-vt",
+            "title": "Sony announces 26650VT cylindrical lithium-ion battery",
+            "url": "https://www.sony.com/en/SonyInfo/News/Press/200412/04-060E/index.html",
+            "publisher": "Sony",
+            "limitations": "Historical manufacturer announcement; it identifies a nickel/manganese positive-electrode mixture but not a full modern shorthand formulation."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-sony-26650",
+            "statement": "The aggregated battery record identifies Sony US26650VT as a flat-top, unprotected 26650 cell.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Sony US26650VT 3500mAh 50A as a 3500mAh preset with a 50A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "Sony's announcement for the 26650VT identifies a lithium-ion cell using a nickel/manganese mixture in the positive electrode.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Sony US26650VT has reliable market-introduction evidence dated 2005-01 or earlier.",
+            "evidenceDate": "2005-01",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "26650",
+            "nominalDiameterMm": 26,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion — nickel/manganese cathode; exact formulation not stated",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

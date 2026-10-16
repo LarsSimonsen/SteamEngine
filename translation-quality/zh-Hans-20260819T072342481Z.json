@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "locale": "zh-Hans",
+    "cycleId": "zh-Hans-20260819T072342481Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Simplified Chinese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, TypeScript typecheck, production build, route checks, and generated internal-link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Simplified Chinese pass identified an inconsistent side label in the trigonometry worked example; it was aligned with the established terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Simplified Chinese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "zh-Hans-20260819-016",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Simplified Chinese worked trigonometry example used a side label that differed from the established term used by the section formulas.",
+            "disposition": "resolved",
+            "evidence": ["The example used 相邻 while the effective trigonometry formulas used 邻边."],
+            "resolution": "Aligned the cosine example formula with 邻边."
+        }
+    ]
+}

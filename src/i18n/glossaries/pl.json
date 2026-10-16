@@ -68,29 +68,65 @@
         "output-power": {
             "source": "output power",
             "preferred": "moc wyjściowa",
-            "context": "Moc oddawana przez atomizer; w kontekście atomizera chodzi o emisję mocy, nie o interfejs.",
-            "discouraged": ["interfejs wyjściowy", "port wyjściowy"],
-            "state": "needs-review",
-            "provenance": { "kind": "machine", "method": "Polskie źródła terminologii vape i tłumaczenie kontekstowe" },
-            "confidence": "medium",
-            "uncertainty": {
-                "reason": "Moc wyjściowa jest standardowym terminem elektrycznym, ale atomizer-output wymaga rozróżnienia między mocą na grzałce a emisją aerozolu.",
-                "bestCurrentTranslation": "moc oddawana przez atomizer",
-                "alternatives": ["moc wyjściowa atomizera", "moc na atomizerze"],
-                "sources": [
-                    { "label": "Wojewódzka Stacja Sanitarno-Epidemiologiczna w Poznaniu", "url": "https://www.gov.pl/web/wsse-poznan/e-papierosy" },
-                    { "label": "EUR-Lex, klasyfikacja atomizera", "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/PDF/?uri=CELEX:32023R0808" }
-                ]
-            }
+            "context": "Moc elektryczna dostarczana przez urządzenie do atomizera lub grzałki; nie oznacza ilości wytwarzanego aerozolu.",
+            "discouraged": [
+                "interfejs wyjściowy",
+                "port wyjściowy"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "GPT-6 independent Polish critique and verification against battery-calculator UI and calculation context"
+            },
+            "confidence": "high"
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "gęstość strumienia ciepła",
+            "context": "Moc cieplna przypadająca na jednostkę powierzchni, np. W/m² lub mW/mm².",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "model": "GPT-6",
+                "method": "English-source review; Polish heat-transfer terminology verified in Politechnika Wrocławska teaching material"
+            },
+            "confidence": "high"
+        },
+        "specific-heat-capacity": {
+            "source": "specific heat capacity",
+            "preferred": "ciepło właściwe",
+            "context": "Energia potrzebna do ogrzania jednostki masy o jeden kelwin; wielkość na jednostkę masy, np. J/g·K.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "model": "GPT-6",
+                "method": "English-source review; terminology attested by GUM thermometry laboratory: https://kampus.gum.gov.pl/laboratoria/termometrii/"
+            },
+            "confidence": "high"
+        },
+        "resistivity": {
+            "source": "electrical resistivity",
+            "preferred": "rezystywność",
+            "context": "Właściwość materiału określająca opór właściwy, np. w Ω mm²/m; odróżniać od rezystancji gotowego drutu.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "model": "GPT-6",
+                "method": "English-source review and distinction from electrical resistance in the calculator material model"
+            },
+            "confidence": "high"
         },
         "resistance": {
             "source": "resistance",
             "preferred": "opór",
-            "context": "Wielkość elektryczna mierzona dla grzałki; oporność jest również powszechna w polskich materiałach vape.",
-            "discouraged": ["rezystancja"],
+            "context": "Wielkość elektryczna mierzona dla grzałki; opór elektryczny i rezystancja są poprawnymi terminami.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Polska terminologia elektryczna i vape" },
-            "confidence": "medium"
+            "provenance": {
+                "kind": "machine",
+                "model": "GPT-6",
+                "method": "English-source review; GUM national resistance standard uses rezystancja and opór elektryczny: https://www.gum.gov.pl/pl/wiedza/wzorce-pomiarowe-gum/rezystancji/5787,Panstwowy-wzorzec-jednostki-miary-rezystancji.html"
+            },
+            "confidence": "high"
         }
     }
 }

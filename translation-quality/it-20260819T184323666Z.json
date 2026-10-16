@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "it", "cycleId": "it-20260819T184323666Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Italian locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Italian critique found five catalog metadata labels translated in culinary, charging, legal, or overly literal senses." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Italian human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "it-catalog-metadata", "translationId": "shared.encyclopediaDetail.breadcrumb", "category": "translation-defect", "severity": "medium", "summary": "Five catalog labels used unrelated literal senses, including breadcrumbs as food and loading as electrical charging.", "disposition": "resolved", "evidence": ["The labels describe navigation, an in-progress chart load, and research-record metadata."], "resolution": "Used idiomatic Italian UI and catalog terminology." }]
+}

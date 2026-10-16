@@ -1,0 +1,213 @@
+.power-curve-graph {
+    margin-top: 2.5rem;
+}
+
+.power-curve-graph--mod-range {
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+}
+
+.power-curve-graph__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.power-curve-graph__header h2 {
+    margin: 0;
+}
+
+.power-curve-graph__header p {
+    margin: 0.35rem 0 0;
+    color: var(--se-muted);
+}
+
+.power-curve-graph__svg {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    overflow: visible;
+}
+
+.power-curve-graph__grid {
+    opacity: 0.55;
+}
+
+.power-curve-graph__axis-label {
+    font-size: 13px;
+}
+
+.power-curve-graph__usable {
+    fill: var(--se-primary);
+    opacity: 0.12;
+}
+
+.power-curve-graph__curve {
+    stroke-width: 2.5;
+}
+
+.power-curve-graph__curve--combined {
+    stroke: var(--se-primary);
+    stroke-width: 3.5;
+}
+
+.power-curve-graph__hover-target {
+    pointer-events: all;
+}
+
+.power-curve-graph__hover-tooltip rect {
+    fill: var(--se-surface-raised);
+    stroke: var(--se-border);
+}
+
+.power-curve-graph__hover-tooltip text {
+    fill: var(--se-text);
+    font-size: 12px;
+}
+
+.power-curve-graph__inspection-line {
+    stroke: var(--se-text);
+    stroke-width: 1.5;
+    stroke-dasharray: 2 4;
+    opacity: 0.85;
+    vector-effect: non-scaling-stroke;
+}
+
+.power-curve-graph__inspection-point {
+    fill: var(--se-text);
+    stroke: var(--se-surface);
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+}
+
+.power-curve-graph__marker {
+    stroke-width: 1.5;
+    stroke-dasharray: 2 4;
+    opacity: 0.85;
+    vector-effect: non-scaling-stroke;
+}
+
+.power-curve-graph__marker-value {
+    stroke: var(--se-surface);
+    stroke-width: 4px;
+    paint-order: stroke fill;
+    font-size: 12px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.power-curve-graph__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+    margin-top: 0.75rem;
+    color: var(--se-muted);
+    font-size: 0.8rem;
+}
+
+.power-curve-graph__legend span {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+}
+
+.power-curve-graph__legend-toggle {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--se-border);
+    border-radius: 0.35rem;
+    color: var(--se-muted);
+    background: var(--se-surface-raised);
+    font: inherit;
+    cursor: pointer;
+}
+
+.power-curve-graph__legend-toggle:hover,
+.power-curve-graph__legend-toggle:focus-visible {
+    color: var(--se-text);
+}
+
+.power-curve-graph__legend-toggle--inactive {
+    opacity: 0.55;
+}
+
+.power-curve-graph__legend-line,
+.power-curve-graph__legend-area,
+.power-curve-graph__legend-marker {
+    display: inline-block;
+    width: 1.1rem;
+    height: 0.15rem;
+    background: var(--se-primary);
+}
+
+.power-curve-graph__legend-area {
+    height: 0.65rem;
+    background: var(--se-primary);
+    opacity: 0.3;
+}
+
+.power-curve-graph__inspector {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.15rem 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.power-curve-graph__legend-marker {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+}
+
+.power-curve-graph__inspector label {
+    grid-column: 1;
+    color: var(--se-muted);
+    font-size: 0.85rem;
+}
+
+.power-curve-graph__inspector input[type="range"] {
+    grid-column: 1;
+    min-height: 2.75rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.power-curve-graph__inspector output {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    min-width: 9.5rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+.power-curve-graph__unavailable {
+    color: var(--se-warning-text);
+}
+
+.power-curve-graph__adjustment-note {
+    margin-bottom: -1.75rem;
+}
+
+@media (max-width: 800px) {
+    .power-curve-graph__header {
+        display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .power-curve-graph__inspector {
+        grid-template-columns: 1fr;
+    }
+
+    .power-curve-graph__inspector output {
+        grid-column: 1;
+        grid-row: auto;
+        text-align: left;
+    }
+}

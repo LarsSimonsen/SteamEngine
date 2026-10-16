@@ -1,0 +1,31 @@
+.se-svg-graph {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.se-svg-graph__grid {
+    stroke: var(--se-border);
+    stroke-width: 1;
+}
+
+.se-svg-graph__axis {
+    stroke: var(--se-muted);
+    stroke-width: 1.2;
+}
+
+.se-svg-graph__boundary {
+    stroke: var(--se-warning-text);
+    stroke-dasharray: 5 4;
+    stroke-width: 1.5;
+}
+
+.se-svg-graph__label {
+    fill: var(--se-muted);
+    font-size: 12px;
+}
+
+.se-svg-graph__curve {
+    fill: none;
+    vector-effect: non-scaling-stroke;
+}

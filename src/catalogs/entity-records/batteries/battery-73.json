@@ -1,0 +1,110 @@
+{
+    "entityId": "battery-73",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "unresolved"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for UltraFire XSL 18350 1200mAh.",
+        "description": "This researched draft preserves the calculator's 750mAh and 1.2A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "store-18350",
+            "title": "18350 batteries",
+            "url": "https://www.18650batterystore.com/collections/18350-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "spec-ultrafire-records",
+            "title": "UltraFire XSL18350 battery record",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "CQham battery test database mirror",
+            "limitations": "Aggregated historical database; useful for the exact orange wrapper record, not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "intro-ultrafire-xsl-2013",
+            "title": "UltraFire 18350s discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/ultrafire-18350s.435610/",
+            "publisher": "E-Cigarette Forum",
+            "limitations": "Dated exact-model user discussion establishes availability by this date, not launch."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-ultrafire-xsl",
+            "statement": "The aggregated record identifies UltraFire XSL18350 1200mAh as an orange, unprotected button-top 18350; the catalog's lower measured capacity is retained separately as runtime evidence.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves UltraFire XSL 18350 1200mAh 750mAh 1.2A as a 750mAh preset with a 1.2A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The UltraFire XSL 18350 1200mAh catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry UltraFire XSL 18350 1200mAh has reliable market-introduction evidence dated 2013-06-27 or earlier.",
+            "evidenceDate": "2013-06-27",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18350",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 35
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

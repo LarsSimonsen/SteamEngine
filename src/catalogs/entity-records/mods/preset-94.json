@@ -1,0 +1,23 @@
+{
+    "entityId": "naos-raptor-10a",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Naos Raptor 10A datasheet",
+            "url": "https://www.digikey.in/en/htmldatasheets/production/215507/0/0/1/naos-raptor-10a-datasheet.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": []
+}

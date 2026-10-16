@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T234229067Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Nynorsk pass identified four additional actionable decimal, terminology, and register defects; all four were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260819-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The first Ohm-law formula used English decimal punctuation in Nynorsk content.",
+            "disposition": "resolved",
+            "evidence": ["The surrounding Nynorsk text uses comma decimals, while the formula displayed 4.2 and 1.0."],
+            "resolution": "Changed the visible formula to consistent Nynorsk decimal punctuation."
+        },
+        {
+            "id": "nn-20260819-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The unit-conversion heading used a Bokmål form.",
+            "disposition": "resolved",
+            "evidence": ["Enhetsomregning is not the Nynorsk form expected in the locale."],
+            "resolution": "Changed the heading to Einingomrekningar."
+        },
+        {
+            "id": "nn-20260819-053",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unit-conversion introduction remained in Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used Hold enhetene and regner instead of Nynorsk forms."],
+            "resolution": "Rephrased it as Hald einingane konsekvente før du reknar."
+        },
+        {
+            "id": "nn-20260819-054",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "A heating-effect bullet used a Bokmål verb in an otherwise Nynorsk section.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence used øker rather than the Nynorsk aukar."],
+            "resolution": "Changed the sentence to established Nynorsk wording."
+        }
+    ]
+}

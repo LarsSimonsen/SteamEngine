@@ -1,0 +1,124 @@
+{
+    "schemaVersion": 1,
+    "locale": "vi",
+    "cycleId": "vi-20260819T014356708Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Vietnamese source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Vietnamese pass identified eleven remaining trigonometry, circuit, and imperial-unit terminology defects; all eleven were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Vietnamese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "vi-20260819-009",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Vietnamese right-triangle formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The formulas used opposite, adjacent, and hypotenuse instead of Vietnamese side terminology."],
+            "resolution": "Localized all three side labels as cạnh đối, cạnh kề, and cạnh huyền."
+        },
+        {
+            "id": "vi-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions contained opposite, adjacent, and hypotenuse."],
+            "resolution": "Localized the side labels while preserving inverse-function notation."
+        },
+        {
+            "id": "vi-20260819-011",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-cell formula retained the English word series in a Vietnamese annotation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (series)."],
+            "resolution": "Changed the annotation to (nối tiếp)."
+        },
+        {
+            "id": "vi-20260819-012",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch voltage formula retained an English annotation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (parallel branches)."],
+            "resolution": "Changed it to (các nhánh song song)."
+        },
+        {
+            "id": "vi-20260819-013",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length-conversion heading used a literal Vietnamese phrase for metric length.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Inch và chiều dài số liệu, where số liệu does not mean metric."],
+            "resolution": "Changed it to Inch và chiều dài hệ mét."
+        },
+        {
+            "id": "vi-20260819-014",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The foot conversion used an English plural-form fragment inconsistent with the localized formula style.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula mixed foot, inch, and Vietnamese text."],
+            "resolution": "Normalized the formula to the technical Vietnamese unit forms used in the section."
+        },
+        {
+            "id": "vi-20260819-015",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The yard conversion retained the English plural feet fragment.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula was 1 yard = 3 feet = 0,9144 m."],
+            "resolution": "Changed feet to the Vietnamese technical foot form."
+        },
+        {
+            "id": "vi-20260819-016",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle section mixed Vietnamese prose with English formula terminology.",
+            "disposition": "resolved",
+            "evidence": ["The paragraph defined Vietnamese side terms while the displayed formulas retained English labels."],
+            "resolution": "Aligned all displayed ratios with the Vietnamese explanation."
+        },
+        {
+            "id": "vi-20260819-017",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angle-finding section was inconsistent across inverse formulas and the surrounding Vietnamese prose.",
+            "disposition": "resolved",
+            "evidence": ["The inverse formulas did not reuse the Vietnamese side terminology from the preceding explanation."],
+            "resolution": "Applied one consistent Vietnamese terminology set throughout the section."
+        },
+        {
+            "id": "vi-20260819-018",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The imperial-length subsection mixed Vietnamese text with English unit fragments.",
+            "disposition": "resolved",
+            "evidence": ["The formulas and heading followed inconsistent localization conventions."],
+            "resolution": "Normalized the heading and remaining foot-unit forms."
+        },
+        {
+            "id": "vi-20260819-019",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch annotation was the remaining English label in the circuit formulas.",
+            "disposition": "resolved",
+            "evidence": ["The surrounding Vietnamese voltage-law section used Vietnamese terminology while this annotation remained English."],
+            "resolution": "Changed the annotation to các nhánh song song."
+        }
+    ]
+}

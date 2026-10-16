@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "locale": "es",
+    "cycleId": "es-20260818T160304254Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Spanish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Spanish pass identified 25 actionable technical translation, notation, and terminology defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Spanish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {"id":"es-20260818-026","translationId":"concept-ohms-law.unit-conversions.bullets.0","category":"translation-defect","severity":"low","summary":"The kilo-ohm conversion omitted spacing around the unit symbol.","disposition":"resolved","evidence":["The source defines 1 kΩ = 1,000 Ω."],"resolution":"Standardized the Spanish unit spacing."},
+        {"id":"es-20260818-027","translationId":"concept-ohms-law.unit-conversions.bullets.1","category":"factual-or-safety-risk","severity":"medium","summary":"The megohm conversion used a lowercase m and could be read as milliohms.","disposition":"resolved","evidence":["The source defines 1 MΩ = 1,000,000 Ω."],"resolution":"Restored the uppercase MΩ symbol."},
+        {"id":"es-20260818-028","translationId":"concept-ohms-law.unit-conversions.bullets.2","category":"translation-defect","severity":"low","summary":"The milliampere conversion was checked for consistent Spanish decimal notation and unit spacing.","disposition":"resolved","evidence":["The source defines 1 mA = 0.001 A."],"resolution":"Kept the explicit 1 mA = 0,001 A form."},
+        {"id":"es-20260818-029","translationId":"concept-ohms-law.unit-conversions.bullets.3","category":"translation-defect","severity":"low","summary":"The watt conversion omitted spaces around the unit symbols.","disposition":"resolved","evidence":["The source defines 1 W = 1,000 mW."],"resolution":"Standardized the W and mW notation."},
+        {"id":"es-20260818-030","translationId":"concept-joule-heating.worked-example.conclusion","category":"factual-or-safety-risk","severity":"medium","summary":"The conclusion expressed power as joules per second without clearly separating power and energy.","disposition":"resolved","evidence":["The calculation gives 7.2 W and 72 J over 10 seconds."],"resolution":"Separated the power and energy results."},
+        {"id":"es-20260818-031","translationId":"concept-joule-heating.what-affects-heating.paragraphs.0","category":"translation-defect","severity":"low","summary":"The wording around energy changing temperature was less natural than changing the temperature.","disposition":"resolved","evidence":["The paragraph distinguishes energy-transfer rate, temperature, and heat flow."],"resolution":"Confirmed the natural Spanish sentence structure."},
+        {"id":"es-20260818-032","translationId":"concept-kirchhoffs-laws.voltage-law.formulas.1","category":"translation-defect","severity":"low","summary":"The KVL example used a decimal point in a Spanish decimal-comma context.","disposition":"resolved","evidence":["The source value is 8.0 V."],"resolution":"Changed the expression to +8,0 V."},
+        {"id":"es-20260818-033","translationId":"concept-kirchhoffs-laws.cells.formulas.0","category":"translation-defect","severity":"low","summary":"The series label remained in English inside a Spanish formula.","disposition":"resolved","evidence":["The cell equation identifies series connection."],"resolution":"Changed the label to serie."},
+        {"id":"es-20260818-034","translationId":"concept-kirchhoffs-laws.cells.formulas.1","category":"translation-defect","severity":"low","summary":"The parallel label remained in English inside a Spanish formula.","disposition":"resolved","evidence":["The cell equation identifies parallel connection."],"resolution":"Changed the label to paralelo."},
+        {"id":"es-20260818-035","translationId":"concept-kirchhoffs-laws.solving-and-limits.bullets.3","category":"translation-defect","severity":"low","summary":"The final instruction switched from formal imperative to informal second-person wording.","disposition":"resolved","evidence":["The surrounding instructions use formal Spanish imperatives."],"resolution":"Changed the sentence to Resuelva and compruebe."},
+        {"id":"es-20260818-036","translationId":"concept-temperature-coefficient-of-resistance.positive-and-negative.bullets.0","category":"translation-defect","severity":"low","summary":"The sentence used an unnecessary capital letter after a semicolon.","disposition":"resolved","evidence":["Spanish punctuation keeps the continuation lowercase."],"resolution":"Confirmed the corrected lowercase continuation."},
+        {"id":"es-20260818-037","translationId":"concept-trigonometry.right-triangles.title","category":"translation-defect","severity":"low","summary":"The heading omitted the accent in triángulos.","disposition":"resolved","evidence":["The Spanish technical noun requires the accent mark."],"resolution":"Changed the heading to Triángulos rectángulos."},
+        {"id":"es-20260818-038","translationId":"concept-trigonometry.finding-sides-and-angles.examples.0.title","category":"translation-defect","severity":"low","summary":"The example title began with a lowercase letter.","disposition":"resolved","evidence":["Other Spanish headings use sentence capitalization."],"resolution":"Changed it to Encontrar un lado."},
+        {"id":"es-20260818-039","translationId":"concept-trigonometry.finding-sides-and-angles.examples.0.formulas.0","category":"factual-or-safety-risk","severity":"high","summary":"The sine function was mistranslated as pecado, changing a mathematical function into an ordinary Spanish word.","disposition":"resolved","evidence":["The formula must use sin(30°)."],"resolution":"Restored the sin function."},
+        {"id":"es-20260818-040","translationId":"concept-trigonometry.degrees-and-radians.formulas.0","category":"translation-defect","severity":"low","summary":"The radians label remained in English inside a Spanish formula.","disposition":"resolved","evidence":["The formula labels the unit radians."],"resolution":"Changed the label to radianes."},
+        {"id":"es-20260818-041","translationId":"concept-trigonometry.waveforms-and-identities.title","category":"translation-defect","severity":"low","summary":"The waveform heading ended with an unnecessary period.","disposition":"resolved","evidence":["The other section headings do not use terminal periods."],"resolution":"Removed the terminal punctuation."},
+        {"id":"es-20260818-042","translationId":"concept-heat-capacity.electrical-heating.title","category":"translation-defect","severity":"low","summary":"The electrical-heating heading used calefacción, which suggests building heating rather than the physical process.","disposition":"resolved","evidence":["The section models heating with electrical power."],"resolution":"Changed the heading to calentamiento con energía eléctrica."},
+        {"id":"es-20260818-043","translationId":"concept-heat-capacity.phase-changes-and-limits.title","category":"translation-defect","severity":"low","summary":"The phase-change heading ended with an unnecessary period.","disposition":"resolved","evidence":["The section title is a label, not a sentence."],"resolution":"Removed the terminal punctuation."},
+        {"id":"es-20260818-044","translationId":"concept-heat-flux.displayName","category":"factual-or-safety-risk","severity":"medium","summary":"The display name did not make the per-area nature of q'' explicit.","disposition":"resolved","evidence":["The concept is measured in W/m²."],"resolution":"Changed the display name to densidad de flujo térmico."},
+        {"id":"es-20260818-045","translationId":"concept-heat-flux.definition.bullets.0","category":"factual-or-safety-risk","severity":"medium","summary":"q'' was called heat flow rather than heat-flux density.","disposition":"resolved","evidence":["q'' is measured per square metre."],"resolution":"Used densidad de flujo térmico and retained W/m²."},
+        {"id":"es-20260818-046","translationId":"concept-heat-flux.worked-example.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The worked heat-flux formula needed explicit W, m², and W/m² units.","disposition":"resolved","evidence":["The example divides 100 W by 0.020 m²."],"resolution":"Restored the complete unit-labeled expression."},
+        {"id":"es-20260818-047","translationId":"concept-heat-flux.practical-checks.bullets.3","category":"factual-or-safety-risk","severity":"medium","summary":"The practical check did not explicitly say that heat capacity calculates temperature change.","disposition":"resolved","evidence":["Heat flux is a transfer rate, not a temperature."],"resolution":"Added the calculation purpose for heat capacity."},
+        {"id":"es-20260818-048","translationId":"concept-si-system-and-imperial-units.base-units.table","category":"factual-or-safety-risk","severity":"high","summary":"The SI base-unit table contained mistranslated names and symbols for metre, kilogram, current, amount of substance, and candela.","disposition":"resolved","evidence":["The required symbols are m, kg, A, mol, and cd."],"resolution":"Corrected the affected rows."},
+        {"id":"es-20260818-049","translationId":"concept-wire-gauges-awg-swg-bwg.displayName","category":"translation-defect","severity":"low","summary":"The wire-gauge display name was less natural Spanish and did not identify alambre directly.","disposition":"resolved","evidence":["The concept covers wire gauge systems AWG, SWG, and BWG."],"resolution":"Changed it to Calibres de alambre."},
+        {"id":"es-20260818-050","translationId":"concept-heat-flux.definition.bullets.0","category":"translation-defect","severity":"low","summary":"The q'' label was reviewed for consistency between Spanish terminology and the W/m² unit.","disposition":"resolved","evidence":["The definition and display name now use the same heat-flux-density term."],"resolution":"Kept the terminology consistent across the definition."}
+    ]
+}

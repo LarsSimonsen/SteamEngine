@@ -1,0 +1,272 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "fi",
+    "entries": {
+        "battery": {
+            "source": "battery",
+            "preferred": "akku",
+            "context": "Ladattava sähköenergian lähde.",
+            "discouraged": [
+                "paristo"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "kenno",
+            "context": "Yksittäinen akkukenno erotuksena koko akkupaketista.",
+            "discouraged": [
+                "solu"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "akkupaketti",
+            "context": "Sarjaan ja/tai rinnan kytkettyjen kennojen kokonaisuus.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "resistanssi",
+            "context": "Suure R, yksikkö Ω; vastus voi tarkoittaa komponenttia.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://sfs.fi/wp-content/uploads/2020/10/SI-opas.pdf"
+                ],
+                "conclusion": "Retain resistanssi for quantity R, distinguish component vastus."
+            }
+        },
+        "resistivity": {
+            "source": "resistivity",
+            "preferred": "resistiivisyys",
+            "context": "Materiaalin ominaisuus ρ, erotettava resistanssista.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://sfs.fi/wp-content/uploads/2020/10/SI-opas.pdf"
+                ],
+                "conclusion": "Retain resistiivisyys for material property rho."
+            }
+        },
+        "power": {
+            "source": "power",
+            "preferred": "teho",
+            "context": "Energian siirtymisnopeus, yksikkö W.",
+            "discouraged": [
+                "energia"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "energy": {
+            "source": "energy",
+            "preferred": "energia",
+            "context": "Yksikkö J tai Wh; ei sama asia kuin teho.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "coili",
+            "context": "Höyrystimen langasta kierretty lämmityselementti; vastus on mahdollinen selittävä nimitys. Sähköinen suure on resistanssi.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "discouraged": [
+                "kela (vaping UI; valid in other engineering contexts)"
+            ],
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://bbs.io-tech.fi/threads/sahkotupakka.582/"
+                ],
+                "conclusion": "Established community form; do not substitute for electrical resistance."
+            }
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "höyrystin",
+            "context": "Sähkösavukkeen nestettä höyrystävä osa.",
+            "discouraged": [
+                "sumutin"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://www.vaperoom.fi/",
+                    "https://bbs.io-tech.fi/threads/sahkotupakka.582/"
+                ],
+                "conclusion": "Retain höyrystin; atomisaattori is attested but may also mean a replaceable head."
+            }
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "lämpövirran tiheys",
+            "context": "Teho pinta-alayksikköä kohti, W/m².",
+            "discouraged": [
+                "lämpövirta"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://sfs.fi/wp-content/uploads/2020/10/SI-opas.pdf",
+                    "https://aaltodoc.aalto.fi/server/api/core/bitstreams/46200217-4738-44ca-a012-89d19f47e2ff/content"
+                ],
+                "conclusion": "Prefer SFS lämpövirran tiheys for W/m²; lämpövuo also occurs in engineering texts."
+            }
+        },
+        "heat-capacity": {
+            "source": "heat capacity",
+            "preferred": "lämpökapasiteetti",
+            "context": "Kappaleen lämpökapasiteetti, J/K.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://sfs.fi/wp-content/uploads/2020/10/SI-opas.pdf"
+                ],
+                "conclusion": "Retain lämpökapasiteetti for J/K."
+            }
+        },
+        "specific-heat-capacity": {
+            "source": "specific heat capacity",
+            "preferred": "ominaislämpökapasiteetti",
+            "context": "Massayksikköä kohti ilmoitettu lämpökapasiteetti, J/(g·K).",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high",
+            "research": {
+                "date": "2026-10-13",
+                "resources": [
+                    "https://sfs.fi/wp-content/uploads/2020/10/SI-opas.pdf",
+                    "https://aaltodoc.aalto.fi/server/api/core/bitstreams/46200217-4738-44ca-a012-89d19f47e2ff/content"
+                ],
+                "conclusion": "Retain ominaislämpökapasiteetti for J/(kg K)."
+            }
+        },
+        "regulated-mod": {
+            "source": "regulated mod",
+            "preferred": "säädelty modi",
+            "context": "Sähköisesti säädelty laite; ei pelkästään säädettävä laite.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "control-board": {
+            "source": "control board",
+            "preferred": "ohjauskortti",
+            "context": "Laitteen sähköistä toimintaa ohjaava piirilevy.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "current": {
+            "source": "electric current",
+            "preferred": "virta",
+            "context": "Sähkövirta, yksikkö A.",
+            "discouraged": [
+                "nykyinen"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "wire-gauge": {
+            "source": "wire gauge",
+            "preferred": "lankakoko",
+            "context": "AWG/SWG-järjestelmän kokoluku; halkaisija on erillinen mitta.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source Finnish terminology reconciliation",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        }
+    }
+}

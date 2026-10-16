@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "nb",
+    "cycleId": "nb-20260819T015015793Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bokmål source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Bokmål pass identified untranslated English side labels in trigonometry formulas and inconsistent labels in the worked example; all were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Bokmål human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "nb-20260819-008",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The three visible right-triangle formulas retained English side labels in the Bokmål presentation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed opposite, adjacent, and hypotenuse while the surrounding explanation used Norwegian terminology."],
+            "resolution": "Localized the formula labels to motstående side, hosliggende side, and hypotenusen."
+        },
+        {
+            "id": "nb-20260819-009",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels in the Bokmål presentation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed opposite, adjacent, and hypotenuse in an otherwise Norwegian section."],
+            "resolution": "Applied the same established Bokmål side terminology to all three inverse formulas."
+        },
+        {
+            "id": "nb-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used abbreviated side labels that did not match the established terminology in the explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example used motstående and hosliggende, while the surrounding text identified the terms as motstående side and hosliggende side."],
+            "resolution": "Expanded both visible example labels to motstående side and hosliggende side."
+        }
+    ]
+}

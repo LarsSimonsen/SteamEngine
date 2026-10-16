@@ -1,0 +1,204 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T214754537Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, the complete effective es-419 locale, UI context, glossary, protected-token rules, and an independent linguistic pass were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation metadata, queue validation, type checking, all 464 tests, and the complete production build passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh independent machine critique reviewed the complete published locale and identified 25 actionable findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Latin American Spanish human review was performed; corrections remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested continued translation improvement, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "es419-home-battery-power", "translationId": "messages.home.tools.batt.description",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Power drain was mistranslated as energy consumption.",
+            "evidence": ["Power and energy are distinct electrical quantities."],
+            "resolution": "Used consumo de corriente y potencia."
+        },
+        {
+            "id": "es419-home-juice-register", "translationId": "messages.home.tools.juice.description",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The home card retained formal address in an informal-tú locale.",
+            "evidence": ["Neighboring home actions use informal imperatives."],
+            "resolution": "Rewrote the description with Mezcla and deseas."
+        },
+        {
+            "id": "es419-introduced-date", "translationId": "messages.encyclopediaDetail.introduced",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Introducido omitted a date connector and forced masculine agreement.",
+            "evidence": ["The template is reused for entities of different grammatical genders."],
+            "resolution": "Used the neutral label Fecha de introducción and aligned the date-range variant."
+        },
+        {
+            "id": "es419-introduced-no-earlier", "translationId": "messages.encyclopediaDetail.introducedNoEarlier",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "No antes del failed for date values that do not take del.",
+            "evidence": ["The placeholder can contain several date forms."],
+            "resolution": "Used Fecha de introducción: no antes de."
+        },
+        {
+            "id": "es419-rewrap-evidence", "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "The translation changed an evidence assumption into an impossibility claim.",
+            "evidence": ["Not assumed from the wrapper does not mean impossible to determine."],
+            "resolution": "Preserved the source's limited claim with no se da por supuesto."
+        },
+        {
+            "id": "es419-chemistry-label", "translationId": "messages.encyclopediaDetail.unknownChemistry",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "A missing chemistry label was rendered as unconfirmed composition.",
+            "evidence": ["The research record lacks a classification, not necessarily compositional evidence."],
+            "resolution": "Used no establece una clasificación química."
+        },
+        {
+            "id": "es419-battery-preset-scope", "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "Built-in preset became integrated battery, incorrectly narrowing the catalog scope.",
+            "evidence": ["The selector includes removable and integrated battery presets."],
+            "resolution": "Used preajuste de batería incluido."
+        },
+        {
+            "id": "es419-battery-enter-value", "translationId": "calculators.batt.enterValue",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The action used formal Introduzca in an informal-tú interface.",
+            "evidence": ["The calculator consistently uses Elige and Ingresa."],
+            "resolution": "Used Ingresa un valor para."
+        },
+        {
+            "id": "es419-resistance-per-coil", "translationId": "calculators.coil.resistancePerCoil",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "Bobina conflicted with the locale's vaping-facing coil terminology.",
+            "evidence": ["The glossary prefers resistencia for the heating assembly."],
+            "resolution": "Used the concise label Resistencia individual."
+        },
+        {
+            "id": "es419-loop-circumference", "translationId": "calculators.coil.loopCircumference",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Loop was rendered as the software term bucle in coil geometry.",
+            "evidence": ["The value describes one physical turn of the wound resistance."],
+            "resolution": "Used Circunferencia de la vuelta."
+        },
+        {
+            "id": "es419-loop-length", "translationId": "calculators.coil.loopLength",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Loop length used the software-loop term bucle.",
+            "evidence": ["The value describes a physical winding turn."],
+            "resolution": "Used Longitud de la vuelta."
+        },
+        {
+            "id": "es419-converter-wire", "translationId": "calculators.converter.eyebrow",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "Cables conflicted with the calculator and glossary term alambre.",
+            "evidence": ["The converter handles resistance-wire gauges."],
+            "resolution": "Used Conversión de alambres y dimensiones."
+        },
+        {
+            "id": "es419-tcr-clear-selection", "translationId": "calculators.tcr.noticeCleared",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Eliminar could imply deleting materials rather than clearing a selection.",
+            "evidence": ["The operation removes selected rows only; it does not alter the catalog."],
+            "resolution": "Clarified that materials were removed from the list."
+        },
+        {
+            "id": "es419-wirewiz-wrap-spacing", "translationId": "calculators.wirewiz.wrapSpacing",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Espaciado de envoltura described packaging rather than winding turns.",
+            "evidence": ["The control sets spacing between coil turns."],
+            "resolution": "Used Separación entre vueltas."
+        },
+        {
+            "id": "es419-wirewiz-temperature-wire", "translationId": "calculators.wirewiz.temperatureDataExtrapolationUnavailable",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "Diseño del cable conflicted with the established alambre terminology.",
+            "evidence": ["The locale glossary and surrounding calculator use alambre."],
+            "resolution": "Used diseño del alambre and normalized the related standalone factor label."
+        },
+        {
+            "id": "es419-mod-missing-selection", "translationId": "comparisons.mods.invalidSelection",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "The plural translation asserted that both a mod and board were missing.",
+            "evidence": ["The source says one referenced mod or board could not be found."],
+            "resolution": "Rephrased the message around the singular referenced item."
+        },
+        {
+            "id": "es419-ohm-current-unit", "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.1",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The current definition duplicated amperios.",
+            "evidence": ["The intended definition includes the A symbol once."],
+            "resolution": "Used I es la corriente, medida en amperios (A)."
+        },
+        {
+            "id": "es419-joule-power-rate", "translationId": "catalog.concepts.concept-joule-heating.sections.2.paragraphs.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Electrical power was mistranslated as electrical energy in a rate definition.",
+            "evidence": ["Power is the rate of energy transfer."],
+            "resolution": "Restored potencia eléctrica and clarified the heat-transfer explanation and summary."
+        },
+        {
+            "id": "es419-joule-headroom", "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "terminology-disagreement", "severity": "high", "disposition": "resolved",
+            "summary": "Electrical headroom became physical free space.",
+            "evidence": ["The paragraph concerns safe current and power margins."],
+            "resolution": "Used margen de seguridad and informal imperative wording."
+        },
+        {
+            "id": "es419-kirchhoff-current-directions", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.paragraphs.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Current directions were mistranslated as present directions.",
+            "evidence": ["The procedure assigns assumed electrical-current directions before solving."],
+            "resolution": "Used sentidos de corriente and preserved the negative-result interpretation."
+        },
+        {
+            "id": "es419-trigonometry-ratios", "translationId": "catalog.concepts.concept-trigonometry.sections.0.paragraphs.0",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "The prose definitions omitted divided by from the trigonometric ratios.",
+            "evidence": ["Sine, cosine, and tangent are ratios, not simple side associations."],
+            "resolution": "Restored dividido entre in all three definitions."
+        },
+        {
+            "id": "es419-heat-capacity-power", "translationId": "catalog.concepts.concept-heat-capacity.sections.2.title",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Heating with electrical power became heating with electrical energy.",
+            "evidence": ["The section computes heating duration from watts."],
+            "resolution": "Used Calentamiento con potencia eléctrica."
+        },
+        {
+            "id": "es419-heat-capacity-number-format", "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.formulas.1",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "English decimal and thousands separators made the formula ambiguous in Spanish.",
+            "evidence": ["0.20 and 4,180 are read differently under Spanish number conventions."],
+            "resolution": "Used Q = 0,20 × 4.180 × 50 = 41.800 J."
+        },
+        {
+            "id": "es419-wire-gauge-title", "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.displayName",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "Calibres de cables conflicted with the glossary term alambre.",
+            "evidence": ["The concept covers AWG, SWG, and BWG resistance-wire gauges."],
+            "resolution": "Used Calibres de alambre: AWG, SWG y BWG."
+        },
+        {
+            "id": "es419-low-drain-agreement", "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "The battery safety note used masculine apto with feminine batería.",
+            "evidence": ["Spanish adjective agreement requires apta."],
+            "resolution": "Used Batería de baja descarga; no apta para vapear."
+        }
+    ]
+}

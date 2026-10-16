@@ -1,0 +1,50 @@
+{
+    "entityId": "lost-vape-centaurus-dna250c",
+    "entityType": "finished-device",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A Lost Vape dual-cell mod using the Evolv DNA250C board.",
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "centaurus-v360-product-20260824",
+            "title": "Lost Vape Centaurus DNA250C product database entry",
+            "url": "https://vaping360.com/vape-products/lost-vape-centaurus-dna250c/",
+            "limitations": "Commercial product database; rating and product presence are not sales or market-share evidence."
+        },
+        {
+            "id": "centaurus-ecigclick-review-20260824",
+            "title": "Lost Vape Centaurus DNA250C mod review",
+            "url": "https://www.ecigclick.co.uk/lost-vape-centaurus-dna250c-review/",
+            "limitations": "Historical supplied-product review; it is not an instrumented electrical test."
+        },
+        {
+            "id": "centaurus-evolv-owner-20260824",
+            "title": "Lost Vape Centaurus DNA250C owner settings discussion",
+            "url": "https://forum.evolvapor.com/topic/76115-lost-vape-centaurus-dna250c-original/",
+            "limitations": "One exact-owner settings thread on a board-specific forum; not a population estimate."
+        },
+        {
+            "id": "centaurus-ecf-sale-20260824",
+            "title": "Closed/sold Lost Vape Centaurus DNA250C classified listing",
+            "url": "https://www.e-cigarette-forum.com/threads/bnib-og-lost-vape-centaurus-dna250c-cowhide-carbon-fiber-50.989404/",
+            "limitations": "One exact-device classified sale; historical context outside the current 180-day scoring window."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

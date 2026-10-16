@@ -1,0 +1,37 @@
+name: Catalog correction
+description: Report an error in a Steam Engine catalog or encyclopedia entry.
+title: "[Catalog correction]: "
+labels:
+  - catalog
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        The catalogs are curated in a private research repository, so catalog files cannot be changed by pull
+        request. Accepted corrections appear in a later catalog update.
+  - type: input
+    id: entry
+    attributes:
+      label: Catalog entry
+      description: The entry's name or its encyclopedia page address.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current value or text
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links that support the correction.
+    validations:
+      required: true

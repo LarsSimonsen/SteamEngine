@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260820T003702056Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Bengali runtime entries, prior review metadata, and Bengali technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, runtime inspection, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three complete-scope passes resolved 75 formula, calculator, shared-interface, and technical-concept findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Bengali corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-formulas-and-units",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Twenty-five concept entries exposed literal Unicode escapes, altered formula digits or unit symbols, and confused electrical power with energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "Sixteen visible entries displayed literal escape text such as \\u03a9.",
+                "A Kirchhoff formula replaced Latin digits with Bengali digits.",
+                "The electrical-heating heading rendered power as energy."
+            ],
+            "resolution": "Restored symbols, formula notation, SI units, TCR values, heat-flux terminology, and exact electrical meaning."
+        },
+        {
+            "id": "bn-battery-and-modrange",
+            "translationId": "calculators.modrange.description",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five battery and mod-range entries confused mod with mode, power with energy, or left incomplete and ungrammatical limit labels.",
+            "disposition": "resolved",
+            "evidence": [
+                "The regulated-mod calculator repeatedly used the Bengali word for mode.",
+                "Several no-limit messages were noun fragments rather than complete statuses.",
+                "Battery runtime guidance used a literal device-overhead calque."
+            ],
+            "resolution": "Added effective Bengali calculator corrections for battery safety, runtime, regulated mods, resistance limits, power curves, and median labels."
+        },
+        {
+            "id": "bn-current-and-battery-semantics",
+            "translationId": "messages.encyclopediaDetail.nonRemovableBatteryProfile",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Twenty-five shared and concept entries translated electric current as present-time current and reversed a non-removable battery warning.",
+            "disposition": "resolved",
+            "evidence": [
+                "The non-removable battery profile was described as removable.",
+                "Several circuit explanations used বর্তমান, meaning present/current-in-time, for electric current.",
+                "Control boards and mods used inconsistent, ambiguous labels."
+            ],
+            "resolution": "Corrected battery access, electric-current terminology, mod and control-board labels, and Ohm/Kirchhoff explanations."
+        }
+    ]
+}

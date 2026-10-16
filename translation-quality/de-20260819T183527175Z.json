@@ -1,0 +1,39 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260819T183527175Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, the complete German locale, prior critique, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue validation, type checking, focused tests, and the production preview build passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh German critique found six literal or wrong-sense catalog metadata labels."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested correction commits, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-catalog-metadata-labels",
+            "translationId": "shared.encyclopediaDetail.breadcrumb",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Six catalog metadata labels used literal compounds or the wrong domain sense.",
+            "disposition": "resolved",
+            "evidence": ["The labels describe UI navigation, chart loading, review dates, evidence currency, records, and catalog decisions."],
+            "resolution": "Replaced them with idiomatic German UI and research-record terminology in a correction layer."
+        }
+    ]
+}

@@ -43,7 +43,7 @@ export const messages = {
     "adjustMix": "Möglicherweise müssen Sie Ihren angestrebten Nic-, VG- oder PG-Gehalt oder Geschmack reduzieren. Alternativ können Sie eine stärkere Nic-Basis oder eine Nic-Basis mit einem anderen VG/PG-Verhältnis verwenden. Bitte passen Sie Ihre Einstellungen an, bis alle Zahlen größer als Null sind.",
     "targetNicWarning": "Ihr Ziel-Nic-Level ist höher als Ihre Nic-Basisstärke. Sie sollten entweder eine stärkere Nic-Basis erhalten oder Ihre angestrebte Nic-Stärke verringern.",
     "safety": "Sicherheit",
-    "safetyText": "Konzentriertes Nikotin kann Kindern, Haustieren und sogar Erwachsenen schaden oder sogar zum Tod führen. Bitte informieren Sie sich darüber, wie Sie die Gefahren mindern können, bevor Sie versuchen, Ihr eigenes Gemisch zu mischen. Wenn Sie hundertprozentige Sicherheit bei Ihren Berechnungen haben möchten, sollten Sie Ihre Ergebnisse auch mit anderen Tools überprüfen.",
+    "safetyText": "Konzentriertes Nikotin kann Kinder, Haustiere und Erwachsene schwer verletzen oder töten. Informieren Sie sich über die Risikominderung, bevor Sie Ihre eigene E-Flüssigkeit mischen. Prüfen Sie die Berechnungen zur Sicherheit zusätzlich mit einem anderen Werkzeug.",
     "saved": "Einstellungen wurden gespeichert.",
     "saveFailed": "Die Einstellungen konnten in diesem Browser nicht gespeichert werden.",
     "noSaved": "Es wurden keine gespeicherten Einstellungen gefunden.",

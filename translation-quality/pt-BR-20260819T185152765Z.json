@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "pt-BR", "cycleId": "pt-BR-20260819T185152765Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Brazilian Portuguese locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Brazilian Portuguese critique found four catalog labels using food, charging, or overly literal terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Brazilian Portuguese human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "pt-br-catalog-metadata", "translationId": "shared.encyclopediaDetail.breadcrumb", "category": "translation-defect", "severity": "medium", "summary": "Four navigation and catalog metadata labels used unrelated or overly literal senses.", "disposition": "resolved", "evidence": ["The strings label navigation, chart loading, and catalog documentation metadata in Brazilian Portuguese."], "resolution": "Used idiomatic Brazilian Portuguese UI and record terminology." }]
+}

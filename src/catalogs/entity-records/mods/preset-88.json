@@ -1,0 +1,48 @@
+{
+    "entityId": "l-rider-lavatube",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-88",
+            "title": "Volcano Lavatube E-Cigarette Review",
+            "url": "https://vapegrl.com/volcano-lavatube-e-cigarette-review/",
+            "limitations": "The exact Lavatube review dates the product family to the end of 2011 and attributes development to L-Rider; precision is limited to the year."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "L-Rider Lavatube review",
+            "url": "https://forum.planetofthevapes.co.uk/threads/lavatube-1-aka-the-nightrider-review.33530/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18350",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18500",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

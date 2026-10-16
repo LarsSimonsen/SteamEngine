@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "ja",
+    "cycleId": "ja-20260818T211132183Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Japanese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Japanese pass identified 25 remaining spacing, terminology, grammar, notation, and unit-clarity defects across Ohm's law, Joule heating, Kirchhoff's laws, TCR, trigonometry, heat capacity, heat flux, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Japanese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ja-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The load-current conclusion omitted spaces around the value and unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation displayed 負荷電流は4.2Aです。"],
+            "resolution": "Changed it to 負荷電流は 4.2 A です。"
+        },
+        {
+            "id": "ja-20260818-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance conclusion omitted spaces around the numerical value and unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation displayed 回路抵抗は6 Ωです。"],
+            "resolution": "Changed it to 回路抵抗は 6 Ω です。"
+        },
+        {
+            "id": "ja-20260818-053",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage formula removed spaces from the protected variables and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used V = 0.5A × 10Ω = 5V."],
+            "resolution": "Changed it to V = 0.5 A × 10 Ω = 5 V."
+        },
+        {
+            "id": "ja-20260818-054",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The kilo-ohm conversion omitted spaces between the value, prefix, and unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation displayed 1kΩ = 1,000 Ω."],
+            "resolution": "Changed it to 1 kΩ = 1,000 Ω."
+        },
+        {
+            "id": "ja-20260818-055",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description used 抵抗 for a component where 抵抗器 is clearer.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation said 電流が抵抗を流れるとき."],
+            "resolution": "Changed it to 電流が抵抗器を流れるとき and clarified the conversion sentence."
+        },
+        {
+            "id": "ja-20260818-056",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power introduction used the unnatural term 電気加熱能力.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation began 電気加熱能力は次のとおりです。"],
+            "resolution": "Changed it to 電気による加熱電力は次の式で表されます。"
+        },
+        {
+            "id": "ja-20260818-057",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-effects title was mistranslated as a title about home heating.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 暖房に影響を与えるもの."],
+            "resolution": "Changed it to 加熱に影響する要因."
+        },
+        {
+            "id": "ja-20260818-058",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Kirchhoff description referred vaguely to conservation around nodes and loops.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 回路ノードおよび閉ループ周辺での保存を説明します。"],
+            "resolution": "Rewrote it with charge conservation at nodes and energy conservation along closed loops."
+        },
+        {
+            "id": "ja-20260818-059",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff summary used an unnatural literal expression for circuit behavior.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation said 電流と電圧がどのように動作するか。"],
+            "resolution": "Changed it to 接続された回路における電流と電圧の振る舞い。"
+        },
+        {
+            "id": "ja-20260818-060",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction used a literal phrase about reasoning over a diagram.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation said 回路図の推論が容易になります。"],
+            "resolution": "Changed it to 回路図を分析しやすくなります。"
+        },
+        {
+            "id": "ja-20260818-061",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor formula localized the protected total-resistance variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used R_合計 rather than R_total."],
+            "resolution": "Changed it to R_total = 0.20 Ω."
+        },
+        {
+            "id": "ja-20260818-062",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR worked-example heading used the generic 作業例.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 作業例 for a numerical worked calculation."],
+            "resolution": "Changed it to 計算例."
+        },
+        {
+            "id": "ja-20260818-063",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR example title omitted the noun for a resistance component.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 加熱された抵抗, which can read as resistance rather than a resistor."],
+            "resolution": "Changed it to 加熱された抵抗器."
+        },
+        {
+            "id": "ja-20260818-064",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The trigonometry heading translated sides as physical surfaces.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 未知の側面と角度を見つける."],
+            "resolution": "Changed it to 未知の辺と角度を求める."
+        },
+        {
+            "id": "ja-20260818-065",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity paragraph used the loanword オブジェクト for a physical object.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 熱容量はオブジェクト全体に属し."],
+            "resolution": "Changed it to 物体全体 and retained the material-property explanation."
+        },
+        {
+            "id": "ja-20260818-066",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The total heat-transfer-rate definition used a redundant parenthetical unit phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation said 総熱伝達率 (ワット (W) 単位)."],
+            "resolution": "Rewrote it as 熱の総移動率で、ワット (W) 単位で表します。"
+        },
+        {
+            "id": "ja-20260818-067",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table title said general SI units rather than base units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 一般的なSI単位 for the seven base units."],
+            "resolution": "Changed it to SI基本単位."
+        },
+        {
+            "id": "ja-20260818-068",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.headers.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI table header used the loanword シンボル instead of the standard Japanese term.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese table header was シンボル."],
+            "resolution": "Changed it to 記号."
+        },
+        {
+            "id": "ja-20260818-069",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The decimal-prefix heading used an awkward spaced phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used 10 進数の接頭辞."],
+            "resolution": "Changed it to 10進接頭辞."
+        },
+        {
+            "id": "ja-20260818-070",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.headers.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The decimal-prefix table used the loanword プレフィックス.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese table header was プレフィックス."],
+            "resolution": "Changed it to 接頭辞."
+        },
+        {
+            "id": "ja-20260818-071",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inch-to-length formula localized the protected metre unit name instead of using m.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation ended the formula with 0.0254 メートル."],
+            "resolution": "Changed it to 0.0254 m."
+        },
+        {
+            "id": "ja-20260818-072",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The foot-to-length formula localized the protected metre unit name instead of using m.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation ended the formula with 0.3048 メートル."],
+            "resolution": "Changed it to 0.3048 m."
+        },
+        {
+            "id": "ja-20260818-073",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The yard-to-length formula localized the protected metre unit name instead of using m.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation ended the formula with 0.9144 メートル."],
+            "resolution": "Changed it to 0.9144 m."
+        },
+        {
+            "id": "ja-20260818-074",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.bullets.5",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Celsius-to-kelvin conversion used the nonstandard ℃ notation in the formula variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation stated K = ℃ + 273.15。"],
+            "resolution": "Changed it to K = °C + 273.15。"
+        },
+        {
+            "id": "ja-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG formula localized the protected inch-diameter variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Japanese presentation used d_インチ instead of the canonical d_inch variable."],
+            "resolution": "Changed it to d_inch."
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "entityId": "battery-131",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "wrapper-variable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Vapcell F60 - 12.5A 6000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-vapcell-f60-12-5a-6000mah-21700.983709/",
+            "limitations": "Complete exact-model report; underlying OEM attribution is unresolved and Vapcell wrapper variants exist."
+        },
+        {
+            "id": "official",
+            "title": "Vapcell F60 21700 6000mah 12.5A PCB",
+            "url": "https://vapcelltech.com/en/h-pd-217.html",
+            "limitations": "Official page is the protected PCB variant; the exact tested flat-top wrapper is a separate marketed variant."
+        },
+        {
+            "id": "retail",
+            "title": "Vapcell F60 21700 12.5A Flat Top 6000mAh Battery",
+            "url": "https://liionwholesale.com/collections/batteries/products/vapcell-f60-21700-12-5a-flat-top-6000mah-battery-genuine",
+            "limitations": "Exact flat-top retailer listing; underlying OEM attribution remains unresolved."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

@@ -1,0 +1,201 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T202909385Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, the complete effective es-419 locale, UI context, glossary, protected-token rules, and an independent linguistic pass were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, type checking, tests, and the complete production build passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent machine critique reviewed shared UI, all calculators, catalogs, and comparison pages."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Latin American Spanish human review was performed; corrections remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested translation improvement, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "es419-si-prefix-symbols",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table",
+            "category": "factual-or-safety-risk", "severity": "critical",
+            "summary": "The symbols M, m, and n were translated as words.", "disposition": "resolved",
+            "evidence": ["SI symbols are case-sensitive and must not be translated."],
+            "resolution": "Restored M, m, μ, and n and normalized the nano factor."
+        },
+        {
+            "id": "es419-megaohm-symbol",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "factual-or-safety-risk", "severity": "critical",
+            "summary": "The draft changed 1 MΩ to 1 mΩ.", "disposition": "resolved",
+            "evidence": ["Megaohms and milliohms differ by a factor of one billion."],
+            "resolution": "Restored 1 MΩ = 1.000.000 Ω and normalized the related conversion formatting."
+        },
+        {
+            "id": "es419-kelvin-symbol",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.3.2",
+            "category": "factual-or-safety-risk", "severity": "high",
+            "summary": "The Kelvin symbol K was lowercased.", "disposition": "resolved",
+            "evidence": ["K is the case-sensitive SI symbol for kelvin."], "resolution": "Restored K."
+        },
+        {
+            "id": "es419-pound-force-symbol",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.bullets.1",
+            "category": "factual-or-safety-risk", "severity": "high",
+            "summary": "The lbf force symbol was replaced by the mass word libra.", "disposition": "resolved",
+            "evidence": ["The source explicitly distinguishes lb mass from lbf force."],
+            "resolution": "Restored 1 lbf ≈ 4,44822 N and the °C symbol in the Kelvin conversion."
+        },
+        {
+            "id": "es419-wire-gauge-decimals",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table",
+            "category": "factual-or-safety-risk", "severity": "high",
+            "summary": "Gauge diameters mixed decimal conventions and expanded the mm symbol.", "disposition": "resolved",
+            "evidence": ["2.588 milímetros can be read as 2,588 millimetres in Spanish notation."],
+            "resolution": "Used decimal commas and preserved mm throughout the table."
+        },
+        {
+            "id": "es419-retry-action",
+            "translationId": "messages.error.retry", "category": "translation-defect", "severity": "medium",
+            "summary": "Retry was rendered as Rever.", "disposition": "resolved",
+            "evidence": ["Rever is not the intended Spanish retry action."], "resolution": "Changed it to Reintentar."
+        },
+        {
+            "id": "es419-catalog-manager",
+            "translationId": "messages.catalogManager.choose", "category": "translation-defect", "severity": "medium",
+            "summary": "Catalog-manager labels had broken agreement and literal word order.", "disposition": "resolved",
+            "evidence": ["Dynamic nouns were inserted into adjective positions that produced ungrammatical labels."],
+            "resolution": "Rephrased manager actions with neutral element wording, natural de constructions, and consistent informal address."
+        },
+        {
+            "id": "es419-battery-editor-help",
+            "translationId": "messages.catalogEditor.batteryHelp", "category": "translation-defect", "severity": "high",
+            "summary": "The help text mistranslated mod and obscured the safer-limit rule.", "disposition": "resolved",
+            "evidence": ["The text explains safety-relevant battery limits and package dimensions."],
+            "resolution": "Rewrote the guidance in clear Latin American Spanish while preserving the safer derived-limit behavior."
+        },
+        {
+            "id": "es419-home-catalog-terms",
+            "translationId": "messages.home.catalogDescription", "category": "translation-defect", "severity": "medium",
+            "summary": "Mods and control boards were translated as modifications and plates.", "disposition": "resolved",
+            "evidence": ["These are vaping-device and electronics product terms."],
+            "resolution": "Used mods and tarjetas de control and improved surrounding home-page fluency."
+        },
+        {
+            "id": "es419-vaping-label",
+            "translationId": "messages.encyclopediaDetail.inVaping", "category": "translation-defect", "severity": "medium",
+            "summary": "The label en vapear was ungrammatical.", "disposition": "resolved",
+            "evidence": ["A section heading requires a noun phrase."], "resolution": "Changed it to En el vapeo."
+        },
+        {
+            "id": "es419-battery-drain-term",
+            "translationId": "calculators.batt.batteryDrain", "category": "terminology-disagreement", "severity": "medium",
+            "summary": "Drenaje de batería contradicted the locale glossary.", "disposition": "resolved",
+            "evidence": ["The glossary prefers consumo de batería."], "resolution": "Used Consumo de batería."
+        },
+        {
+            "id": "es419-current-headroom-warning",
+            "translationId": "calculators.batt.caution", "category": "translation-defect", "severity": "high",
+            "summary": "Current headroom became margen actual, meaning present margin.", "disposition": "resolved",
+            "evidence": ["Current refers to electrical current in this battery warning."],
+            "resolution": "Used margen de corriente and preserved the 20 % threshold."
+        },
+        {
+            "id": "es419-runtime-help",
+            "translationId": "calculators.batt.runtimeHelp", "category": "translation-defect", "severity": "medium",
+            "summary": "Continuous output and device overhead were mistranslated.", "disposition": "resolved",
+            "evidence": ["Producción and sobrecarga change the electrical meaning."],
+            "resolution": "Used salida continua, autonomía, and consumo del dispositivo."
+        },
+        {
+            "id": "es419-coil-description",
+            "translationId": "calculators.coil.description", "category": "translation-defect", "severity": "medium",
+            "summary": "The coil workflow description was machine-literal and unclear.", "disposition": "resolved",
+            "evidence": ["The calculator estimates wraps, resistance, and heating from wire and build parameters."],
+            "resolution": "Rewrote the description with alambre, parámetros de construcción, and vueltas."
+        },
+        {
+            "id": "es419-coil-heading",
+            "translationId": "calculators.coil.eyebrow", "category": "translation-defect", "severity": "medium",
+            "summary": "Envoltura de bobinas suggested packaging rather than winding.", "disposition": "resolved",
+            "evidence": ["The page is a coil-wrapping calculator."],
+            "resolution": "Used Calculadora de bobinado de resistencias."
+        },
+        {
+            "id": "es419-needle-gauge",
+            "translationId": "calculators.converter.needleGauge", "category": "translation-defect", "severity": "medium",
+            "summary": "Needle gauge was rendered as a measuring instrument.", "disposition": "resolved",
+            "evidence": ["BWG names a gauge system."], "resolution": "Used BWG (calibre de aguja)."
+        },
+        {
+            "id": "es419-decimal-places",
+            "translationId": "calculators.converter.decimalPlaces", "category": "translation-defect", "severity": "low",
+            "summary": "Lugares decimales was an unnatural calque.", "disposition": "resolved",
+            "evidence": ["Decimales is the concise UI label."], "resolution": "Used Decimales."
+        },
+        {
+            "id": "es419-juice-remediation",
+            "translationId": "calculators.juice.adjustMix", "category": "translation-defect", "severity": "high",
+            "summary": "The infeasible-mixture remediation was grammatically broken.", "disposition": "resolved",
+            "evidence": ["The original obscured which nicotine, VG, PG, and flavor values to change."],
+            "resolution": "Rewrote the full remediation with explicit adjustment options."
+        },
+        {
+            "id": "es419-gram-symbol",
+            "translationId": "calculators.juice.grams", "category": "factual-or-safety-risk", "severity": "medium",
+            "summary": "The compact unit symbol g was expanded to gramos.", "disposition": "resolved",
+            "evidence": ["Unit identity and compact table layout require the symbol."], "resolution": "Restored g."
+        },
+        {
+            "id": "es419-mod-current-limit",
+            "translationId": "calculators.modrange.currentLimitRequires", "category": "translation-defect", "severity": "high",
+            "summary": "Electrical current was mistranslated as current-in-time.", "disposition": "resolved",
+            "evidence": ["The constraint is an amperage limit."],
+            "resolution": "Used límite de corriente and restored the W unit without punctuation."
+        },
+        {
+            "id": "es419-reference-resistance",
+            "translationId": "calculators.tcr.baseResistance", "category": "terminology-disagreement", "severity": "medium",
+            "summary": "Resistencia básica was misleading for the 20 °C reference value.", "disposition": "resolved",
+            "evidence": ["The value normalizes the temperature-resistance curve."],
+            "resolution": "Used resistencia de referencia across all three related labels."
+        },
+        {
+            "id": "es419-wirewiz-single-wraps",
+            "translationId": "calculators.wirewiz.single", "category": "translation-defect", "severity": "high",
+            "summary": "Single became Soltero and wraps became Envolturas.", "disposition": "resolved",
+            "evidence": ["The labels describe a wire construction and coil turns, not a person or packaging."],
+            "resolution": "Used Simple and Vueltas."
+        },
+        {
+            "id": "es419-battery-comparison-labels",
+            "translationId": "comparisons.batteries.compareSwap", "category": "translation-defect", "severity": "medium",
+            "summary": "The swap action lacked accents and authenticity labels used the wrong grammatical form.", "disposition": "resolved",
+            "evidence": ["The authenticity values describe a feminine batería."],
+            "resolution": "Used Intercambiar baterías, Sospechosa, and Falsificada."
+        },
+        {
+            "id": "es419-mod-comparison-board",
+            "translationId": "comparisons.mods.invalidSelection", "category": "terminology-disagreement", "severity": "medium",
+            "summary": "Tablero was an awkward rendering of an electronics control board.", "disposition": "resolved",
+            "evidence": ["The site wording identifies control-board products as tarjetas de control."],
+            "resolution": "Used tarjeta de control in the affected comparison messages."
+        },
+        {
+            "id": "es419-material-electrical-accent",
+            "translationId": "comparisons.materials.electricalProperties", "category": "translation-defect", "severity": "low",
+            "summary": "Eléctricas was missing its accent.", "disposition": "resolved",
+            "evidence": ["Spanish orthography requires the accent."], "resolution": "Used Propiedades eléctricas."
+        }
+    ]
+}

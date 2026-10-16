@@ -1,0 +1,112 @@
+{
+    "entityId": "battery-85",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "Research record for Vapcell S41.",
+        "description": "Vapcell markets the S41 as a 4100mAh 21700 cell with 45A continuous and 70A temperature-limited figures. Battery Mooch tested the exact S41 wrapper, identified the tested sample as an EVE 40PL rewrap, and estimated 40A continuous with 70A limited to 60°C. Treat this as a variable rewrap; underlying cell attribution and performance remain revision-specific. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "The conservative 40A value is supported by exact-wrapper vaping testing; 70A is temperature-limited.",
+            "The tested S41 was attributed to an EVE 40PL underlying cell; future S41 batches may differ.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "VapCell 21700 S41 product page",
+            "url": "https://vapcelltech.com/en/h-pd-257.html",
+            "publisher": "Vapcell",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: Vapcell S41 - 45A/70A 4100mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-vapcell-s41-45a-70a-4100mah-21700.990589/latest",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; conclusions apply to tested samples and revisions."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is Vapcell S41 (S41), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Vapcell markets the S41 as a 4100mAh 21700 cell with 45A maximum continuous discharge and 70A maximum discharge with a 60°C temperature cutoff.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch tested the exact S41 wrapper, identified it as performing like an EVE 40PL rewrap, and estimated 40A continuous with 70A temperature-limited to 60°C.",
+            "evidenceDate": "2025-06-19",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Vapcell S41 has exact-model vaping test coverage.",
+            "evidenceDate": "2025-06-19",
+            "confidence": "high"
+        },
+        {
+            "id": "commercial-availability",
+            "statement": "Vapcell's current official store lists the exact S41 model for sale, supporting commercial availability of the rewrapped product.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact Vapcell S41 identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "Mooch identified the tested S41 as an EVE 40PL rewrap, but Vapcell's current product identity does not guarantee that all S41 batches use the same underlying cell.",
+            "runtimeImplication": "Retain the S41 identity and conservative 40A value, but do not present the EVE 40PL attribution as universal across all S41 batches."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

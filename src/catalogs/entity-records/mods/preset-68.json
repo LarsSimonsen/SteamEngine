@@ -1,0 +1,42 @@
+{
+    "entityId": "joyetech-evic-supreme",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-68",
+            "title": "JoyeTech eVic Supreme Review",
+            "url": "https://spinfuel.com/joyetech-evic-supreme-review/",
+            "limitations": "Exact-device review states that the eVic Supreme was available and in stock; this is an upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Joyetech eVic Supreme specification",
+            "url": "https://www.joyetech.com/evic-supreme/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-joyetech-supreme-20260824",
+            "title": "Joyetech eVic Supreme manual",
+            "url": "https://www.joyetech.com/wp-content/uploads/2015/06/pdf/eVicSupremeManual.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated"
+            }
+        ]
+    }
+}

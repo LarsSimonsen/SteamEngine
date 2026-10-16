@@ -1,0 +1,55 @@
+{
+    "entityId": "lost-vape-therion-dna-133",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-184",
+            "title": "Therion DNA 133",
+            "url": "https://forum.planetofthevapes.co.uk/threads/therion-dna-133.117174/",
+            "limitations": "Exact-device discussion identifies the new Therion 133 and establishes an upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Lost Vape Therion DNA 133 discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/sold-on-tc-what-to-buy.764941/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "battery-followup-20260824",
+            "title": "Lost Vape Therion DNA133 vendor announcement",
+            "url": "https://forum.planetofthevapes.co.uk/threads/lost-vape-therion-dna133-%E2%80%93-you-asked-for-it-and-we-delivered.117336/",
+            "limitations": "An exact contemporary vendor announcement explicitly specifies dual high-amp 18650 cells in series."
+        },
+        {
+            "id": "operating-features-dna200-20260824",
+            "title": "Evolv DNA 200 datasheet",
+            "url": "https://downloads.evolvapor.com/dna200.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Evolv DNA-200 (2 cells, DNA-133)"
+            }
+        ]
+    }
+}

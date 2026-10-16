@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "locale": "da",
+  "cycleId": "da-20260818T224351549Z",
+  "resourceProfile": { "classification": "standard", "assessment": "The complete English and Danish source scope, review metadata, glossary, and project concept references were available locally." },
+  "review": {
+    "automatedQuality": { "state": "passed", "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed." },
+    "linguisticCritique": { "state": "completed", "summary": "A bounded Danish pass identified 5 actionable terminology and formula defects; all 5 were corrected." },
+    "competentHumanReview": { "state": "pending", "summary": "No competent Danish human review was performed in this cycle; changed IDs remain machine-drafted." },
+    "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+  },
+  "findings": [
+    { "id": "da-20260819-001", "translationId": "catalog.concepts.concept-kirchhoffs-laws.description", "category": "translation-defect", "severity": "high", "summary": "The Kirchhoff description did not state charge and energy conservation precisely.", "disposition": "resolved", "evidence": ["The previous description referred generally to current and voltage behavior."], "resolution": "Specified charge conservation at nodes and energy conservation in closed loops." },
+    { "id": "da-20260819-002", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The voltage example used a dot decimal in a comma-decimal locale.", "disposition": "resolved", "evidence": ["The previous formula began +8.0 V."], "resolution": "Changed it to +8,0 V." },
+    { "id": "da-20260819-003", "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description", "category": "translation-defect", "severity": "medium", "summary": "The TCR description used a less specific subject for resistance.", "disposition": "resolved", "evidence": ["The previous text did not identify the component whose resistance changes."], "resolution": "Rephrased it as a component's resistance changing with temperature." },
+    { "id": "da-20260819-004", "translationId": "catalog.concepts.concept-heat-flux.displayName", "category": "terminology-disagreement", "severity": "high", "summary": "The heat-flux name did not distinguish density from total heat flow.", "disposition": "resolved", "evidence": ["The previous display name omitted the per-area qualifier."], "resolution": "Changed it to Varmefluxdensitet." },
+    { "id": "da-20260819-005", "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4", "category": "factual-or-safety-risk", "severity": "high", "summary": "The current-capacity instruction was not explicit about current-carrying capacity.", "disposition": "resolved", "evidence": ["The previous wording could be read as a generic current value."], "resolution": "Used strømføringsevnen and retained the product-data and electrical-rules warning." }
+  ]
+}
