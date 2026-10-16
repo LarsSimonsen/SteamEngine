@@ -1,0 +1,20 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260819T004622348Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Nynorsk pass identified six trigonometry formulas with an untranslated or inconsistent hypotenuse term; all six were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "nn-20260819-010", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0", "category": "translation-defect", "severity": "medium", "summary": "The sine formula retained the English hypotenuse label in the Nynorsk formula.", "disposition": "resolved", "evidence": ["The previous expression was sin(θ) = motståande / hypotenuse."], "resolution": "Changed the label to hypotenusen." },
+        { "id": "nn-20260819-011", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The cosine formula retained the English hypotenuse label in the Nynorsk formula.", "disposition": "resolved", "evidence": ["The previous expression was cos(θ) = hosliggjande / hypotenuse."], "resolution": "Changed the label to hypotenusen." },
+        { "id": "nn-20260819-012", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2", "category": "translation-defect", "severity": "medium", "summary": "The tangent formula set did not use the inflected Nynorsk hypotenuse term consistently with the surrounding explanation.", "disposition": "resolved", "evidence": ["The formula set used the bare English label hypotenuse elsewhere in the same section."], "resolution": "Normalized the formula set to Nynorsk side terminology." },
+        { "id": "nn-20260819-013", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0", "category": "translation-defect", "severity": "medium", "summary": "The inverse-sine formula retained the English hypotenuse label.", "disposition": "resolved", "evidence": ["The previous expression was θ = sin^-1(motståande / hypotenuse)."], "resolution": "Changed the label to hypotenusen." },
+        { "id": "nn-20260819-014", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The inverse-cosine formula retained the English hypotenuse label.", "disposition": "resolved", "evidence": ["The previous expression was θ = cos^-1(hosliggjande / hypotenuse)."], "resolution": "Changed the label to hypotenusen." },
+        { "id": "nn-20260819-015", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2", "category": "translation-defect", "severity": "medium", "summary": "The inverse-tangent formula retained the English hypotenuse label in the formula set context.", "disposition": "resolved", "evidence": ["The inverse formula family used the English hypotenuse label instead of the Nynorsk inflected term."], "resolution": "Normalized the inverse formula family to Nynorsk side terminology." }
+    ]
+}

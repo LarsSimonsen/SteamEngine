@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T103947503Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Bengali translation defects in core electrical concept text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-20260818-001",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current symbol I was translated as the Bengali first-person pronoun.",
+            "disposition": "resolved",
+            "evidence": ["Before: আমি কারেন্ট, অ্যাম্পিয়ার ..."],
+            "resolution": "Changed to: I হল কারেন্ট, অ্যাম্পিয়ারে (A) মাপা হয়।"
+        },
+        {
+            "id": "bn-20260818-002",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance definition mixed English unit wording with an untranslated plural.",
+            "disposition": "resolved",
+            "evidence": ["Before: R হল রোধ, ohms ..."],
+            "resolution": "Changed to: R হল রোধ, ওহমে (Ω) মাপা হয়।"
+        },
+        {
+            "id": "bn-20260818-003",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-examples title was a literal phrase rather than a natural Bengali heading.",
+            "disposition": "resolved",
+            "evidence": ["Before: কাজের উদাহরণ."],
+            "resolution": "Changed to: সমাধানসহ উদাহরণ."
+        },
+        {
+            "id": "bn-20260818-004",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current example title used an imperative translation that did not fit the heading.",
+            "disposition": "resolved",
+            "evidence": ["Before: বর্তমান খুঁজুন."],
+            "resolution": "Changed to: কারেন্ট নির্ণয়."
+        },
+        {
+            "id": "bn-20260818-005",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The formula retained a machine-materialized escaped ohm symbol instead of a readable unit expression.",
+            "disposition": "resolved",
+            "evidence": ["Before: I = 4.2 V / 1.0 \\u03a9 = 4.2 A."],
+            "resolution": "Changed to: I = 4.2 V / 1.0 Ω = 4.2 A."
+        },
+        {
+            "id": "bn-20260818-006",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current conclusion used a less precise machine-drafted phrasing.",
+            "disposition": "resolved",
+            "evidence": ["Before: লোড কারেন্ট হল 4.2 A।"],
+            "resolution": "Changed to: লোডের কারেন্ট হল 4.2 A।"
+        },
+        {
+            "id": "bn-20260818-007",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance example title used an awkward literal imperative.",
+            "disposition": "resolved",
+            "evidence": ["Before: প্রতিরোধের সন্ধান করুন."],
+            "resolution": "Changed to: রোধ নির্ণয়."
+        },
+        {
+            "id": "bn-20260818-008",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance example setup was missing a clear subject for the 2 A current.",
+            "disposition": "resolved",
+            "evidence": ["Before: একটি সার্কিট জুড়ে 12 V এবং 2 A আঁকে."],
+            "resolution": "Rewrote the setup to state that 2 A current flows in a circuit with 12 V."
+        },
+        {
+            "id": "bn-20260818-009",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The resistance formula used an escaped unit representation in the runtime text.",
+            "disposition": "resolved",
+            "evidence": ["Before: R = 12 V / 2 A = 6 \\u03a9."],
+            "resolution": "Changed to: R = 12 V / 2 A = 6 Ω."
+        },
+        {
+            "id": "bn-20260818-010",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance conclusion used an unnatural noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: সার্কিট রেজিস্ট্যান্স হল 6 Ω।"],
+            "resolution": "Changed to: সার্কিটের রোধ হল 6 Ω।"
+        },
+        {
+            "id": "bn-20260818-011",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage example title used a less consistent imperative form.",
+            "disposition": "resolved",
+            "evidence": ["Before: ভোল্টেজ খুঁজুন."],
+            "resolution": "Changed to: ভোল্টেজ নির্ণয়."
+        },
+        {
+            "id": "bn-20260818-012",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage formula mixed translated unit names and abbreviations.",
+            "disposition": "resolved",
+            "evidence": ["Before: V = 0.5 A × 10 Ω = 5 V was represented with mixed unit wording."],
+            "resolution": "Changed to the consistent expression V = 0.5 A × 10 Ω = 5 V."
+        },
+        {
+            "id": "bn-20260818-013",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-power paragraph used awkward wording for the power relationship and headroom.",
+            "disposition": "resolved",
+            "evidence": ["Before: আদর্শ শক্তি ... যথেষ্ট তাপ ক্ষমতা এবং হেডরুম."],
+            "resolution": "Rewrote the paragraph to distinguish power from energy and express safe thermal margin naturally."
+        },
+        {
+            "id": "bn-20260818-014",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description used an untranslated English term and awkward syntax.",
+            "disposition": "resolved",
+            "evidence": ["Before: জুল হিটিং বর্ণনা করে ..."],
+            "resolution": "Changed to Bengali জুল উত্তাপ terminology and a clear conversion sentence."
+        },
+        {
+            "id": "bn-20260818-015",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating summary used an awkward literal phrase for resistance heating.",
+            "disposition": "resolved",
+            "evidence": ["Before: কিভাবে বৈদ্যুতিক প্রবাহ প্রতিরোধ ক্ষমতাকে তাপে পরিণত করে."],
+            "resolution": "Changed to a direct Bengali summary of current producing heat in resistance."
+        },
+        {
+            "id": "bn-20260818-016",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power title used an awkward word order.",
+            "disposition": "resolved",
+            "evidence": ["Before: গরম করার শক্তি."],
+            "resolution": "Changed to: উত্তাপের ক্ষমতা."
+        },
+        {
+            "id": "bn-20260818-017",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power introduction repeated the awkward literal wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: বৈদ্যুতিক গরম করার ক্ষমতা হল:"],
+            "resolution": "Changed to: বৈদ্যুতিক উত্তাপের ক্ষমতা হল:"
+        },
+        {
+            "id": "bn-20260818-018",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The definition of P used an incorrect Bengali word order for power.",
+            "disposition": "resolved",
+            "evidence": ["Before: P হল ওয়াটের শক্তি (W)."],
+            "resolution": "Changed to: P হল ওয়াটে (W) মাপা ক্ষমতা।"
+        },
+        {
+            "id": "bn-20260818-019",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current symbol I was again translated as a Bengali first-person pronoun.",
+            "disposition": "resolved",
+            "evidence": ["Before: আমি অ্যাম্পিয়ারে বর্তমান (A)."],
+            "resolution": "Changed to: I হল অ্যাম্পিয়ারে (A) মাপা কারেন্ট।"
+        },
+        {
+            "id": "bn-20260818-020",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example title was inconsistent with the corrected Ohm section.",
+            "disposition": "resolved",
+            "evidence": ["Before: কাজের উদাহরণ."],
+            "resolution": "Changed to: সমাধানসহ উদাহরণ."
+        },
+        {
+            "id": "bn-20260818-021",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-checks title was a direct English loan rather than a natural heading.",
+            "disposition": "resolved",
+            "evidence": ["Before: ব্যবহারিক চেক."],
+            "resolution": "Changed to: ব্যবহারিক পরীক্ষা."
+        },
+        {
+            "id": "bn-20260818-022",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The practical-safety paragraph needed clearer Bengali wording for thermal margin and continuous-current limits.",
+            "disposition": "resolved",
+            "evidence": ["Before: হেডরুম ... ব্যাটারি এবং পাওয়ার সাপ্লাইয়ের সীমা."],
+            "resolution": "Rewrote the paragraph with clear component, thermal-margin, and continuous-current language."
+        },
+        {
+            "id": "bn-20260818-023",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law title used an inconsistent untranslated English term.",
+            "disposition": "resolved",
+            "evidence": ["Before: Kirchhoff এর নিয়ম for current context."],
+            "resolution": "Changed to: কির্শহফের কারেন্টের সূত্র."
+        },
+        {
+            "id": "bn-20260818-024",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current-law example needed clearer Bengali wording for current entering and leaving a branch.",
+            "disposition": "resolved",
+            "evidence": ["Before: the machine draft described branch current with an awkward literal construction."],
+            "resolution": "Rewrote the example to state the 8 A entering, 3 A leaving, and 5 A remaining-current relation clearly."
+        },
+        {
+            "id": "bn-20260818-025",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.3.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branches formula retained English prose in the Bengali locale.",
+            "disposition": "resolved",
+            "evidence": ["Before: (parallel branches)."],
+            "resolution": "Changed to: (সমান্তরাল শাখা)."
+        }
+    ]
+}

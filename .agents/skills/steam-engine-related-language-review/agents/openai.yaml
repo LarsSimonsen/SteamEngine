@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compare Steam Engine translations"
+  short_description: "Review related languages against canonical English"
+  default_prompt: "Use $steam-engine-related-language-review to compare an existing language pair or group, correct clear errors, and report uncertainty."

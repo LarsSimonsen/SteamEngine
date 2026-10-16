@@ -1,0 +1,49 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260819T121710129Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, the complete Nynorsk source scope, glossary, review metadata, UI context, and the locale normalization layer were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue and findings validation, TypeScript type checking, 12 focused tests, the production IIS build, route-contract validation, and generated internal-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A fresh bounded Nynorsk critique found residual Bokmål in battery-safety help and source-backed battery evidence."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested correction commits, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-battery-help-bokmal",
+            "translationId": "shared.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The battery-safety help remained predominantly Bokmål rather than Nynorsk.",
+            "disposition": "resolved",
+            "evidence": ["The locale is independent Nynorsk and its glossary and surrounding UI use Nynorsk forms."],
+            "resolution": "Rewrote the complete help text in idiomatic Nynorsk while preserving its safety meaning."
+        },
+        {
+            "id": "nn-battery-evidence-bokmal",
+            "translationId": "catalog.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The pooled battery evidence dictionary contained repeated Bokmål morphology and vocabulary across nineteen safety-relevant notes.",
+            "disposition": "resolved",
+            "evidence": ["The affected shared dictionary fans out to the corresponding battery catalog entries."],
+            "resolution": "Converted the affected evidence notes to Nynorsk and retained every rating, protected unit, model identifier, and qualification."
+        }
+    ]
+}

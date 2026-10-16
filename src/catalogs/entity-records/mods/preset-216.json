@@ -1,0 +1,34 @@
+{
+    "entityId": "dna100c",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "DNA 100C product page",
+            "url": "https://wholesale.evolvapor.com/shop/dna-100c-7069",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "input-voltage-20260824",
+            "title": "DNA100C datasheet",
+            "url": "https://wholesale.evolvapor.com/shop/dna-100c-7069/document/28"
+        },
+        {
+            "id": "operating-features-dna100c-20260824",
+            "title": "Evolv DNA100C product page",
+            "url": "https://www.evolvapor.com/products/evolv-dna-100-color",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": []
+}

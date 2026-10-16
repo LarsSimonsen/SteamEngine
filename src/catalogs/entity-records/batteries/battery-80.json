@@ -1,0 +1,111 @@
+{
+    "entityId": "battery-80",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Research record for Ampace JP30P1.",
+        "description": "Ampace lists the JP30 family as a 3.0Ah 18650 cell and distinguishes maximum continuous full-discharge current from its higher temperature-limited maximum. Battery Mooch tested the exact JP30P1 revision and estimated 36A true continuous current; 56A is temperature-limited. A current Japanese vape retailer lists the exact flat-top JP30 for electronic-cigarette and vape use. Keep JP30P1 separate from LT 19660A and other rewraps; pulse claims are not continuous ratings. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "Independent comparison current is preserved with its limitations.",
+            "Exact vaping relevance is supported by a vape-market listing and vaping-focused testing.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "JP30 cylindrical-cell product page",
+            "url": "https://en.ampace.com/products/power-tools-product-matrix/jp/67",
+            "publisher": "Ampace",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: Ampace JP30P1 - 36A/56A 3000mAh 18650",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-ampace-jp30p1-36a-56a-3000mah-18650-with-ccc-logo.992958/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; conclusions apply to tested samples and revisions."
+        },
+        {
+            "id": "vape-retailer",
+            "title": "Ampace JP30 family 18650 3000mAh 36A flat-top vape battery, two-cell set",
+            "url": "https://item.rakuten.co.jp/officeedge/ampacejp30/",
+            "publisher": "Rakuten / Office Edge",
+            "limitations": "Retail listing identifies electronic-cigarette/vape use and the JP30 identity; retailer marketing is not manufacturer approval or independent safety evidence."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is Ampace JP30P1 (JP30P1), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Ampace lists the JP30 family as a 3.0Ah 18650 cell and distinguishes maximum continuous full-discharge current from its higher temperature-limited maximum.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch tested the exact JP30P1 revision and estimated 36A true continuous current; 56A is temperature-limited.",
+            "evidenceDate": "2025-12-01",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Ampace JP30P1 has exact-model vaping test coverage.",
+            "evidenceDate": "2025-12-01",
+            "confidence": "high"
+        },
+        {
+            "id": "vape-retail",
+            "statement": "A current Japanese retail listing identifies the Ampace JP30 family as a flat-top 18650 battery sold for electronic-cigarette and vape use; the exact JP30P1 revision is established separately by the manufacturer and test sources.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact Ampace JP30P1 identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

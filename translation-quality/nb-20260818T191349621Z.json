@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "nb",
+    "cycleId": "nb-20260818T191705017Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Norwegian Bokmål source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Norwegian Bokmål pass identified 25 actionable terminology, grammar, technical-clarity, heat-flux, and safety-wording defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Norwegian Bokmål human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nb-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example formula used decimal points inside otherwise Norwegian prose and units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula was I = 4.2 V / 1.0 Ω = 4.2 A."
+            ],
+            "resolution": "Changed it to Norwegian decimal commas: I = 4,2 V / 1,0 Ω = 4,2 A."
+        },
+        {
+            "id": "nb-20260818-027",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The summary said electrical current converted resistance to heat rather than electrical energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary was Hvordan elektrisk strøm omdanner motstand til varme."
+            ],
+            "resolution": "Rewrote it to describe electrical energy becoming heat when current passes through resistance."
+        },
+        {
+            "id": "nb-20260818-028",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power heading used an awkward literal form.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Oppvarmingseffekt."
+            ],
+            "resolution": "Changed it to the more precise Varmeeffekt."
+        },
+        {
+            "id": "nb-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coil setup used fører for current in a way that is less natural in technical Norwegian.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was En spole på 0,8 Ω fører 3 A."
+            ],
+            "resolution": "Changed it to a coil conducting a current of 3 A."
+        },
+        {
+            "id": "nb-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-transfer bullet used maskinvare for hardware.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text referred to varmeoverføring til luft, væske og maskinvare."
+            ],
+            "resolution": "Changed maskinvare to the technical term utstyr."
+        },
+        {
+            "id": "nb-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph used varmestrøm instead of the more precise heat-flux-density term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text paired Varmekapasitet og varmestrøm with energy leaving a surface."
+            ],
+            "resolution": "Rewrote it with varmeflukstetthet and clearer transfer-rate wording."
+        },
+        {
+            "id": "nb-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph used a generic margin rather than explicitly naming a safety margin.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Legg inn tilstrekkelig margin."
+            ],
+            "resolution": "Changed it to a sufficient sikkerhetsmargin and clarified the safety instruction."
+        },
+        {
+            "id": "nb-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-terms heading was a compressed compound that is less clear to readers.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Kretstermer."
+            ],
+            "resolution": "Changed it to Termer i elektriske kretser."
+        },
+        {
+            "id": "nb-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current-law example used regner rather than explicitly describing solving the circuit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said Velg strømretninger før du regner."
+            ],
+            "resolution": "Changed it to before solving the circuit while retaining the sign interpretation."
+        },
+        {
+            "id": "nb-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor conclusion was understandable but less explicit about branch current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was Når grenmotstandene er like, fører hver gren 10 A."
+            ],
+            "resolution": "Changed it to state that each branch has a current of 10 A."
+        },
+        {
+            "id": "nb-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law paragraph used a less direct construction for the relationship between series resistance and voltage drop.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said En større seriemotstand får et større spenningsfall."
+            ],
+            "resolution": "Changed it to the clearer En større seriemotstand gir et større spenningsfall."
+        },
+        {
+            "id": "nb-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cell heading did not use the most natural Norwegian compound for series and parallel cells.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Celler i serie og parallell."
+            ],
+            "resolution": "Changed it to Serie- og parallellkoblede celler."
+        },
+        {
+            "id": "nb-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell capacity sentence was ambiguous about which cell capacity is retained.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said kapasiteten i amperetimer tilsvarer én lik celle."
+            ],
+            "resolution": "Clarified that it matches one cell with the same capacity."
+        },
+        {
+            "id": "nb-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The charging warning used a compound without the standard hyphenated lithium-ion spelling.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was Seriekoblede litiumioneceller."
+            ],
+            "resolution": "Changed it to Seriekoblede litium-ion-celler."
+        },
+        {
+            "id": "nb-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The limits paragraph used sterkstrømskrets, which is less direct for this context.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text ended with en sterkstrømskrets."
+            ],
+            "resolution": "Changed it to a circuit with high current."
+        },
+        {
+            "id": "nb-20260818-041",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR summary narrowed the concept to a conductor even though the content is about materials generally.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary was Hvordan temperatur endrer motstanden i en leder."
+            ],
+            "resolution": "Changed it to temperature changing resistance in a material."
+        },
+        {
+            "id": "nb-20260818-042",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR limitations paragraph used reelt resultat instead of the more natural faktiske resultatet.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said et virkelig resultat avviker fra førsteordensestimatet."
+            ],
+            "resolution": "Rewrote it with faktiske resultatet and retained the uncertainty factors."
+        },
+        {
+            "id": "nb-20260818-043",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The triangle explanation was technically correct but overly repetitive and could be clearer in Norwegian.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text repeated relative-side descriptions across a long sentence."
+            ],
+            "resolution": "Rewrote it with concise definitions for opposite, adjacent, hypotenuse, and SOH-CAH-TOA."
+        },
+        {
+            "id": "nb-20260818-044",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The setup used danner en vinkel, which is less precise for a hypotenuse lying opposite an angle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous overlay text was En hypotenuse på 10 cm danner en vinkel på 30°."
+            ],
+            "resolution": "Changed it to state that the hypotenuse lies opposite a 30° angle."
+        },
+        {
+            "id": "nb-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading used kontra, which sounds adversarial rather than comparative.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Objekt kontra materiale."
+            ],
+            "resolution": "Changed it to Objekt og materiale."
+        },
+        {
+            "id": "nb-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux display name did not make the per-area density explicit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was Varmefluks."
+            ],
+            "resolution": "Changed it to Varmeflukstetthet."
+        },
+        {
+            "id": "nb-20260818-047",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The definition did not explicitly include the time dimension in heat-flux density.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text described heat transfer per area but not per time."
+            ],
+            "resolution": "Rewrote it as heat transfer per time and area."
+        },
+        {
+            "id": "nb-20260818-048",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-power paragraph used termisk kapasitet where heat-dissipation capability was intended.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used tilstrekkelig termisk kapasitet and sikkerhetsmargin for a component that must dissipate heat."
+            ],
+            "resolution": "Changed it to tilstrekkelig varmeavledningsevne with a clear safety-margin statement."
+        },
+        {
+            "id": "nb-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The gauge-number sentence used a slightly awkward phrasing for sizes above gauge zero.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous corrected text said størrelser over dimensjon 0 bruker 00, 000 eller 0000."
+            ],
+            "resolution": "Changed it to say those sizes are written as 00, 000, or 0000."
+        },
+        {
+            "id": "nb-20260818-050",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The latent-heat sentence needed a natural definite form in Norwegian.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was L er spesifikk latent varme i J/kg."
+            ],
+            "resolution": "Changed it to L er den spesifikke latente varmen i J/kg."
+        }
+    ]
+}

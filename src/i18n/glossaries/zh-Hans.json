@@ -46,8 +46,8 @@
         },
         "temperature-coefficient": {
             "source": "temperature coefficient",
-            "preferred": "温度系数",
-            "context": "A material's resistance temperature coefficient.",
+            "preferred": "电阻温度系数",
+            "context": "A material's resistance temperature coefficient, abbreviated TCR.",
             "state": "machine",
             "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
             "confidence": "medium"
@@ -88,34 +88,20 @@
         "atomizer": {
             "source": "atomizer",
             "preferred": "雾化器",
-            "context": "The heating/output component of a vaping device.",
-            "state": "needs-review",
-            "uncertainty": {
-                "reason": "The best Mainland Chinese term depends on whether the context means the complete atomizer assembly or only its heating element.",
-                "sources": [
-                    { "label": "Google Translate", "url": "https://translate.googleapis.com/" },
-                    { "label": "MyMemory (rate-limited during drafting)", "url": "https://api.mymemory.translated.net/" }
-                ]
-            },
+            "context": "The complete atomizer assembly in vaping UI; use 雾化芯 only when the source specifically means the heating element.",
+            "state": "machine",
             "alternatives": ["雾化芯", "发热组件"],
             "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
-            "confidence": "low"
+            "confidence": "medium"
         },
         "regulated-mod": {
             "source": "regulated mod",
-            "preferred": "调压设备",
+            "preferred": "可调输出设备",
             "context": "A vaping device with regulated voltage or power output.",
-            "state": "needs-review",
-            "uncertainty": {
-                "reason": "Chinese vaping communities use several overlapping terms for regulated mods and the preferred consumer-facing term may vary by audience.",
-                "sources": [
-                    { "label": "Google Translate", "url": "https://translate.googleapis.com/" },
-                    { "label": "MyMemory (rate-limited during drafting)", "url": "https://api.mymemory.translated.net/" }
-                ]
-            },
-            "alternatives": ["调压电子烟", "稳压设备"],
+            "state": "machine",
+            "alternatives": ["可调功率模组", "可调电压模组"],
             "provenance": { "kind": "machine", "method": "Google Translate machine draft" },
-            "confidence": "low"
+            "confidence": "medium"
         }
     }
 }

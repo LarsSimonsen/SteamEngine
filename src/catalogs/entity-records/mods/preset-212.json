@@ -1,0 +1,52 @@
+{
+    "entityId": "vapor-shark-dna-rdna-30",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-212",
+            "title": "Vapor Shark DNA 30 review",
+            "url": "https://vapingunderground.com/threads/vapor-shark-dna-30-review-using-their-nana-banana-e-juice.3210/",
+            "limitations": "Exact DNA30 review establishes a dated upper bound; the generic DNA profile is not treated as a separate launch."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "VaporShark rDNA discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/vaporshark-rdna.583070/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "board-input-series-deduction-20260824",
+            "title": "Evolv DNA 30D datasheet",
+            "url": "https://downloads.evolvapor.com/dna30.pdf"
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "pouch",
+                "seriesCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Evolv DNA-30D"
+            }
+        ]
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260818T123151108Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Danish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Danish pass identified 25 actionable defects in electrical, thermal, circuit, and unit terminology; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Danish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "da-20260818-001",
+            "translationId": "concept-ohms-law.worked-examples.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current example title used an adjective instead of the Danish noun for current.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Find aktuelle’."],
+            "resolution": "Changed it to ‘Find strømmen’."
+        },
+        {
+            "id": "da-20260818-002",
+            "translationId": "concept-ohms-law.electrical-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Electrical power was translated as electrical current.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Elektrisk strøm’ although the section describes power P."],
+            "resolution": "Changed it to ‘Elektrisk effekt’."
+        },
+        {
+            "id": "da-20260818-003",
+            "translationId": "concept-ohms-law.limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series and parallel instruction used an awkward comma construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘For serie- og parallelle netværk, brug’."],
+            "resolution": "Rephrased it for Danish series and parallel circuits."
+        },
+        {
+            "id": "da-20260818-004",
+            "translationId": "concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating summary said that current transforms resistance into heat.",
+            "disposition": "resolved",
+            "evidence": ["Resistance is not the energy being transformed; electrical energy is."],
+            "resolution": "Changed the summary to electrical energy being converted to heat by current."
+        },
+        {
+            "id": "da-20260818-005",
+            "translationId": "concept-joule-heating.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power title used an unnatural literal term.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Varmekraft’, which suggests force rather than power."],
+            "resolution": "Changed it to ‘Varmeeffekt’."
+        },
+        {
+            "id": "da-20260818-006",
+            "translationId": "concept-joule-heating.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The paragraph called electrical energy a rate of transfer.",
+            "disposition": "resolved",
+            "evidence": ["The source distinguishes electrical power as a rate, not energy itself."],
+            "resolution": "Corrected the term to electrical power and retained the thermal explanation."
+        },
+        {
+            "id": "da-20260818-007",
+            "translationId": "concept-joule-heating.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The practical check repeated current where the source requires current and power.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘den forventede strøm og strøm’."],
+            "resolution": "Changed the pair to the expected current and power."
+        },
+        {
+            "id": "da-20260818-008",
+            "translationId": "concept-kirchhoffs-laws.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Conservation was translated with a false cognate.",
+            "disposition": "resolved",
+            "evidence": ["The previous description used ‘konservering’ rather than Danish ‘bevarelse’."],
+            "resolution": "Changed the wording to conservation at circuit nodes and loops."
+        },
+        {
+            "id": "da-20260818-009",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-terms title was an unnatural literal translation.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Kredsvilkår’."],
+            "resolution": "Changed it to ‘Kredsløbsbegreber’."
+        },
+        {
+            "id": "da-20260818-010",
+            "translationId": "concept-kirchhoffs-laws.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The introductory circuit sentence used an unnatural Danish idiom.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said a diagram was easier ‘at ræsonnere om’."],
+            "resolution": "Changed it to say the concepts make a diagram easier to understand."
+        },
+        {
+            "id": "da-20260818-011",
+            "translationId": "concept-kirchhoffs-laws.current-law.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law title used ‘nuværende’, meaning present or current in time.",
+            "disposition": "resolved",
+            "evidence": ["Kirchhoff's current law requires the electrical-current term ‘strøm’."],
+            "resolution": "Changed it to ‘Kirchhoffs strømlov’."
+        },
+        {
+            "id": "da-20260818-012",
+            "translationId": "concept-kirchhoffs-laws.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law paragraph used ‘aktuelle’ for current directions.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording was ‘Vælg aktuelle retninger’."],
+            "resolution": "Changed it to specify the directions of current."
+        },
+        {
+            "id": "da-20260818-013",
+            "translationId": "concept-kirchhoffs-laws.series-and-parallel.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-resistor title separated the compound noun incorrectly.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Serie modstande’."],
+            "resolution": "Changed it to ‘Seriemodstande’."
+        },
+        {
+            "id": "da-20260818-014",
+            "translationId": "concept-kirchhoffs-laws.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law paragraph used an ungrammatical description of voltage rises and falls.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording said ‘summen af spændingen stiger og falder’."],
+            "resolution": "Rephrased it as the algebraic sum of voltage rises and drops."
+        },
+        {
+            "id": "da-20260818-015",
+            "translationId": "concept-kirchhoffs-laws.cells.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The cells title had incorrect plural agreement.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Celler i serie og parallelle’."],
+            "resolution": "Changed it to ‘Celler i serie og parallel’."
+        },
+        {
+            "id": "da-20260818-016",
+            "translationId": "concept-kirchhoffs-laws.cells.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-sharing bullet repeated the word for contacts and omitted switches.",
+            "disposition": "resolved",
+            "evidence": ["The previous text ended with ‘kontakter, ledninger og kontakter’."],
+            "resolution": "Changed the final item to switches."
+        },
+        {
+            "id": "da-20260818-017",
+            "translationId": "concept-trigonometry.right-triangles.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle title used an incorrect Danish adjective.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Retrette trekanter’."],
+            "resolution": "Changed it to ‘Retvinklede trekanter’."
+        },
+        {
+            "id": "da-20260818-018",
+            "translationId": "concept-trigonometry.right-triangles.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The cosine formula used the wrong grammatical form for hypotenuse.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used ‘hypotenuse’ rather than ‘hypotenusen’."],
+            "resolution": "Changed the formula label to the definite Danish form."
+        },
+        {
+            "id": "da-20260818-019",
+            "translationId": "concept-heat-capacity.basic-relationships.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity formula omitted the temperature-difference symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘C = Q/AT’ rather than C = Q / ΔT."],
+            "resolution": "Restored the canonical heat-capacity relationship."
+        },
+        {
+            "id": "da-20260818-020",
+            "translationId": "concept-heat-flux.definition.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux title was a direct English loan where Danish technical wording is clearer.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Varmeflux’."],
+            "resolution": "Changed it to ‘Varmestrømstæthed’."
+        },
+        {
+            "id": "da-20260818-021",
+            "translationId": "concept-heat-flux.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux check used an infinitive instead of an imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Skelne’."],
+            "resolution": "Changed it to the imperative ‘Skeln’."
+        },
+        {
+            "id": "da-20260818-022",
+            "translationId": "concept-heat-flux.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final heat-flux check used an infinitive and a missing object.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘bruge varmekapacitet til temperaturændring’."],
+            "resolution": "Rephrased it as using heat capacity for temperature changes."
+        },
+        {
+            "id": "da-20260818-023",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI table mistranslated mass as ‘messe’.",
+            "disposition": "resolved",
+            "evidence": ["The previous Danish row used ‘messe’ instead of ‘masse’."],
+            "resolution": "Corrected the mass quantity label."
+        },
+        {
+            "id": "da-20260818-024",
+            "translationId": "concept-si-system-and-imperial-units.base-units.table.rows.5",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table mistranslated amount of substance as ‘muldvarp’.",
+            "disposition": "resolved",
+            "evidence": ["‘Muldvarp’ means mole as an animal, not amount of substance."],
+            "resolution": "Changed the row to ‘Stofmængde’."
+        },
+        {
+            "id": "da-20260818-025",
+            "translationId": "concept-si-system-and-imperial-units.unit-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "One unit-check bullet remained in English.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was ‘Convert before multiplying or dividing.’"],
+            "resolution": "Translated it as ‘Konvertér enheder, før du ganger eller dividerer.’"
+        }
+    ]
+}

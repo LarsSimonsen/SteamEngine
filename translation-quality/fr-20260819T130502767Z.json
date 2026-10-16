@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1, "locale": "fr", "cycleId": "fr-20260819T130502767Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete French source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh French critique found protected-name drift, an exclusive rather than inclusive date bound, coil-lead errors, and severe nicotine false friends." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent French human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "fr-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated as ordinary phrases.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored protected names across shared and calculator labels." },
+        { "id": "fr-date", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Available by was rendered as before, excluding the named date.", "disposition": "resolved", "evidence": ["The canonical upper bound includes the named date."], "resolution": "Used au plus tard le." },
+        { "id": "fr-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and their power loss became anatomical legs.", "disposition": "resolved", "evidence": ["The fields describe electrical connection legs."], "resolution": "Used pattes de connexion consistently." },
+        { "id": "fr-juice", "translationId": "calculators.juice.nicStrength", "category": "factual-or-safety-risk", "severity": "critical", "summary": "Nicotine concentration became the city Nice and the target warning referred to a network interface card.", "disposition": "resolved", "evidence": ["These fields define nicotine concentration in an e-liquid recipe."], "resolution": "Used concentration en nicotine and rewrote the warning and safety text." }
+    ]
+}

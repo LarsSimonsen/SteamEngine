@@ -1,0 +1,47 @@
+{
+    "entityId": "beyond-vape-solara",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-177",
+            "title": "Beyond Vape Solara DNA30",
+            "url": "https://forum.planetofthevapes.co.uk/threads/beyond-vape-solara-dna30.67076/",
+            "limitations": "Exact-device community listing establishes a dated upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Beyond Vape Solara exact product discussion",
+            "url": "https://forum.planetofthevapes.co.uk/threads/beyond-vape-solara-this-is-the-unreleased-luna-but-all-specs-are-the-same.54268/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "board-input-series-deduction-20260824",
+            "title": "Evolv DNA 30D datasheet",
+            "url": "https://downloads.evolvapor.com/dna30.pdf"
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "pouch",
+                "seriesCount": 1
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Evolv DNA-30D"
+            }
+        ]
+    }
+}

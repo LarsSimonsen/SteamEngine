@@ -1,0 +1,117 @@
+{
+    "entityId": "preset-236",
+    "entityType": "mod",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A single-external-18650 regulated box mod rated at 100W and 32A.",
+        "description": "Geekvape documents the Aegis Solo 3 as a single external 18650 regulated mod using AS Chip 4.0. The manufacturer store gives a complete 5–100W, 7.5V, 32A, 0.1–3Ω operating envelope. An exact ECF review confirms the marketed device identity and vaping use; no independent load trace was found that would replace the stated ceiling.",
+        "highlights": [
+            "Single removable 18650",
+            "100W / 7.5V / 32A profile",
+            "0.1–3Ω stated resistance envelope",
+            "IP68 and AS Chip 4.0 features",
+            "Exact vaping review"
+        ]
+    },
+    "sources": [
+        {
+            "id": "store",
+            "title": "Aegis Solo 3 Mod 100W/3000mAh",
+            "url": "https://store.geekvape.com/products/geekvape-aegis-solo-3-mod-100w-3000mah",
+            "publisher": "Geekvape",
+            "limitations": "Manufacturer-operated commercial page; figures are manufacturer claims."
+        },
+        {
+            "id": "manual",
+            "title": "Aegis Solo III Kit user manual",
+            "url": "https://device.report/manual/15504747",
+            "publisher": "Geekvape",
+            "limitations": "Secondary manual host; the document identity and revision are preserved, but the host is not the manufacturer archive."
+        },
+        {
+            "id": "ecf",
+            "title": "GeekVape Aegis Solo III 3 Mod review",
+            "url": "https://www.e-cigarette-forum.com/threads/geekvape-aegis-solo-iii-3-mod-by-sourcemore-review-by-frenkyou.987277/",
+            "publisher": "E-Cigarette Forum",
+            "limitations": "Exact-device review of a supplied sample; numeric limits are specification-led."
+        },
+        {
+            "id": "v360",
+            "title": "Geekvape Aegis Solo 3 product record",
+            "url": "https://vaping360.com/vape-products/geekvape-aegis-solo-3/",
+            "publisher": "Vaping360",
+            "limitations": "Commercial product record with purchase links; release data is not sales evidence."
+        },
+        {
+            "id": "operating-features-solo3-20260824",
+            "title": "Geekvape Aegis Solo 3 official FAQ",
+            "url": "https://store.geekvape.com/blogs/faq-products/faq-geekvape-aegis-solo-3-kit-100w-3000mah",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact marketed identity is Geekvape Aegis Solo 3, also styled Aegis Solo III.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Regional kit names can differ."
+        },
+        {
+            "id": "profile",
+            "statement": "The manufacturer profile is one external 18650, 5–100W, 7.5V maximum, and 0.1–3Ω.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Manufacturer and manual values are not independent certification."
+        },
+        {
+            "id": "current",
+            "statement": "The exact device has a defensible 32A maximum output-current ceiling.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium",
+            "limitations": "No controlled independent load trace was recovered; do not inherit limits from other Aegis devices."
+        },
+        {
+            "id": "relevance",
+            "statement": "The exact device is a regulated vaping mod with a 510 connection and removable 18650 cell.",
+            "evidenceDate": "2025-01-09",
+            "confidence": "high",
+            "limitations": "Product relevance is not a safety or quality endorsement."
+        }
+    ],
+    "lifecycleEvents": [
+        {
+            "id": "release",
+            "summary": "Vaping360 records the exact product as released in December 2025.",
+            "date": "2025-12",
+            "relation": "no-later-than",
+            "confidence": "medium"
+        }
+    ],
+    "safetyFindings": [
+        {
+            "id": "external-cell",
+            "title": "Single removable 18650 operating context",
+            "summary": "The device uses one external cell and its maximum output profile must not be used to infer a battery CDR recommendation.",
+            "appliesTo": "Exact device",
+            "status": "open"
+        }
+    ],
+    "domainData": {
+        "deviceCategory": "box-mod",
+        "batterySystem": {
+            "configuration": "single 18650"
+        },
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

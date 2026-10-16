@@ -1,0 +1,36 @@
+{
+    "entityId": "battery-125",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Tenpower 50SG - 20A/50A 5000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-tenpower-50sg-20a-50a-5000mah-21700.995125/",
+            "limitations": "Two March 2026 samples without CCC marks; possible pre-production or export-only status."
+        },
+        {
+            "id": "retail",
+            "title": "Tenpower 21700 50SG 5000mAh 20A 50@80C",
+            "url": "https://ch-ampx.com/product/tenpower-21700-50sg-5000mah-20a-5080c/",
+            "limitations": "Industrial retail availability only; explicitly not for e-cigarettes."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

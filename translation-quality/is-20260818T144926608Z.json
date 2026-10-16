@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "is",
+    "cycleId": "is-20260818T144926608Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Icelandic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Icelandic pass identified 25 actionable formula, terminology, grammar, and technical-clarity defects across electrical, circuit, trigonometric, thermal, heat-flux, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Icelandic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "is-20260818-051",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heating-power title used a less natural Icelandic compound.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Hitaafl."],
+            "resolution": "Changed it to Hitunarafl."
+        },
+        {
+            "id": "is-20260818-052",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule example described power as joules per second without stating watts clearly.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used 7,2 joule á sekúndu."],
+            "resolution": "Clarified the result as 7,2 W or 72 J in 10 seconds."
+        },
+        {
+            "id": "is-20260818-053",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current heat-power bullet had awkward Icelandic word order.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used a literal doubling construction."],
+            "resolution": "Rephrased it as doubling resistance doubles heating power."
+        },
+        {
+            "id": "is-20260818-054",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage bullet used heat energy where heating power was intended.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with hitaorku."],
+            "resolution": "Changed it to hitunarafl and clarified the lower-resistance relationship."
+        },
+        {
+            "id": "is-20260818-055",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor conclusion used an inconsistent word for resistors.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used mótstöðurnar after the source used viðnám."],
+            "resolution": "Aligned the conclusion with the technical term viðnám."
+        },
+        {
+            "id": "is-20260818-056",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell description used an awkward phrase for ampere-hour capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used afkastageta amperstunda in an unnatural construction."],
+            "resolution": "Rewrote the sentence with natural Icelandic wording for ampere-hour capacity."
+        },
+        {
+            "id": "is-20260818-057",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell description used an overly literal translation of parallel connection.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used a less natural phrase for cells in parallel."],
+            "resolution": "Changed it to the standard Icelandic hliðtenging wording."
+        },
+        {
+            "id": "is-20260818-058",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The limits paragraph used an ungrammatical phrase for omitted model behavior.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said to include all behavior that had been omitted with incorrect case and agreement."],
+            "resolution": "Rewrote the paragraph with correct Icelandic grammar and a clear high-current warning."
+        },
+        {
+            "id": "is-20260818-059",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR power formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was I = V/R."],
+            "resolution": "Restored I = V / R."
+        },
+        {
+            "id": "is-20260818-060",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR limitation paragraph used a literal first-degree phrase and imprecise temperature wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph ended with fyrstu gráðu mati."],
+            "resolution": "Rewrote it with first-order and temperature-range terminology."
+        },
+        {
+            "id": "is-20260818-061",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-sine formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used öfugt and undirstúka inside the formula."],
+            "resolution": "Restored θ = sin^-1(opposite / hypotenuse)."
+        },
+        {
+            "id": "is-20260818-062",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-cosine formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used aðliggjandi and undirstúka inside the formula."],
+            "resolution": "Restored θ = cos^-1(adjacent / hypotenuse)."
+        },
+        {
+            "id": "is-20260818-063",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-tangent formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used öfugt and aðliggjandi inside the formula."],
+            "resolution": "Restored θ = tan^-1(opposite / adjacent)."
+        },
+        {
+            "id": "is-20260818-064",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The trigonometry worked formula localized the opposite-side label.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began with gagnstæða rather than the protected formula label."],
+            "resolution": "Restored opposite = 10 × sin(30°) = 5 cm."
+        },
+        {
+            "id": "is-20260818-065",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The second trigonometry worked formula localized the adjacent-side label.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began with aðliggjandi rather than the protected formula label."],
+            "resolution": "Restored adjacent = 10 × cos(30°) ≈ 8,66 cm."
+        },
+        {
+            "id": "is-20260818-066",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The waveform glossary used the English loanword amplitude.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said amplitude in otherwise Icelandic text."],
+            "resolution": "Changed it to the Icelandic technical term sveifluvídd."
+        },
+        {
+            "id": "is-20260818-067",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The kelvin/Celsius comparison lacked clear unit spacing and phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet rendered 1°C without the standard space."],
+            "resolution": "Rephrased it as equal 1 K and 1 °C temperature differences."
+        },
+        {
+            "id": "is-20260818-068",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating conclusion spelled out the validated seconds result.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with 523 sekúndur rather than the protected 523 s notation."],
+            "resolution": "Changed it to approximately 523 s."
+        },
+        {
+            "id": "is-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change paragraph used a literal phrase for phase and latent heat.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph referred to the material's state and hidden heat with less precise terminology."],
+            "resolution": "Aligned it with fasi efnisins and eðlisbundinn dulinn varmi."
+        },
+        {
+            "id": "is-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change limitations used varmahitun instead of the term for convection.",
+            "disposition": "resolved",
+            "evidence": ["The previous list used an inaccurate heat-heating term."],
+            "resolution": "Changed it to varmaburður and corrected agreement throughout the paragraph."
+        },
+        {
+            "id": "is-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux description used the general heat-flow term rather than heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous description used Varmaflæði without identifying the per-area quantity."],
+            "resolution": "Aligned the description with Varmaflæðisþéttleiki."
+        },
+        {
+            "id": "is-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux summary did not state the per-area relationship directly.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary used a literal area-unit phrase."],
+            "resolution": "Changed it to the rate of heat transfer per area unit."
+        },
+        {
+            "id": "is-20260818-073",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux definition called q'' heat flow rather than heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said q'' er hitaflæði."],
+            "resolution": "Defined q'' as varmaflæðisþéttleiki in W/m²."
+        },
+        {
+            "id": "is-20260818-074",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge comparison used an awkward phrase for stranded construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used strandað smíði."],
+            "resolution": "Changed it to fjölþátta uppbygging."
+        },
+        {
+            "id": "is-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-resistance formula omitted spaces around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was R = ρ × L/A."],
+            "resolution": "Restored R = ρ × L / A."
+        }
+    ]
+}

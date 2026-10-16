@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "fr",
+    "cycleId": "fr-20260818T192659535Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and French source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded French pass identified 25 actionable false-friend, grammar, register, thermal, circuit, and technical-clarity defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent French human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "fr-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The power paragraph translated heat-dissipation capability as thermal capacity and free space.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used capacité thermique et espace libre."
+            ],
+            "resolution": "Rewrote it with capacité de dissipation thermique and a marge de sécurité."
+        },
+        {
+            "id": "fr-20260818-027",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power heading used a less precise heating term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Puissance de chauffage."
+            ],
+            "resolution": "Changed it to Puissance thermique."
+        },
+        {
+            "id": "fr-20260818-028",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coil setup used transporte for electrical current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was Une bobine de 0,8 Ω transporte 3 A."
+            ],
+            "resolution": "Changed it to a coil conducting a 3 A current."
+        },
+        {
+            "id": "fr-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heading was an awkward literal question about heating.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Qu'est-ce qui affecte le chauffage."
+            ],
+            "resolution": "Changed it to Facteurs qui influencent le chauffage."
+        },
+        {
+            "id": "fr-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph needed the more precise areal heat-flow term and clearer surface-transfer wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used flux thermique and described heat leaving the surface."
+            ],
+            "resolution": "Rewrote it with densité de flux thermique and natural French."
+        },
+        {
+            "id": "fr-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph translated safety margin as physical clearance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used espace libre adéquat."
+            ],
+            "resolution": "Rewrote it with marge de sécurité suffisante."
+        },
+        {
+            "id": "fr-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor conclusion used transporte for current through a branch.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was chaque branche transporte 10 A."
+            ],
+            "resolution": "Changed it to a 10 A current circulating in each branch."
+        },
+        {
+            "id": "fr-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The cell heading could state the connection relationship more naturally.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Cellules en série et en parallèle."
+            ],
+            "resolution": "Changed it to Cellules connectées en série et en parallèle."
+        },
+        {
+            "id": "fr-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell bullet used an unclear equivalent-cell phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text ended with celle d'une cellule identique."
+            ],
+            "resolution": "Changed it to celle d'une cellule équivalente."
+        },
+        {
+            "id": "fr-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning used an awkward literal phrase for series charging.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was La charge des ions lithium en série."
+            ],
+            "resolution": "Rewrote it as series charging of lithium-ion cells with per-cell monitoring."
+        },
+        {
+            "id": "fr-20260818-036",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The triangle explanation needed clearer and less repetitive definitions of the sides and SOH-CAH-TOA.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used au-dessus de l'hypoténuse and similar literal phrasing."
+            ],
+            "resolution": "Rewrote it with precise opposite, adjacent, hypotenuse, sine, cosine, and tangent definitions."
+        },
+        {
+            "id": "fr-20260818-037",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The setup used rencontre un angle, which is not a meaningful geometric relation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was Une hypoténuse de 10 cm rencontre un angle de 30°."
+            ],
+            "resolution": "Changed it to state that the hypotenuse is opposite a 30° angle."
+        },
+        {
+            "id": "fr-20260818-038",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example title used an unnatural literal phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Eau de chauffage."
+            ],
+            "resolution": "Changed it to Exemple de chauffage de l'eau."
+        },
+        {
+            "id": "fr-20260818-039",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity conclusion used vrai radiateur, which is not the intended generic real heater.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said un vrai radiateur a besoin de plus."
+            ],
+            "resolution": "Changed it to un chauffage réel en nécessite davantage."
+        },
+        {
+            "id": "fr-20260818-040",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-heating heading was longer and less idiomatic than necessary.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Chauffage à l'énergie électrique."
+            ],
+            "resolution": "Changed it to Chauffage électrique."
+        },
+        {
+            "id": "fr-20260818-041",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading used contre, which sounds adversarial rather than comparative.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Objet contre matériau."
+            ],
+            "resolution": "Changed it to Objet et matériau."
+        },
+        {
+            "id": "fr-20260818-042",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph used appartient à l'objet rather than a clearer technical reference.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began La capacité thermique appartient à l’objet entier."
+            ],
+            "resolution": "Rewrote it with se rapporte à l'objet entier and natural grammar."
+        },
+        {
+            "id": "fr-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux definition heading did not make the per-area density explicit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Définition."
+            ],
+            "resolution": "Changed it to Définition de la densité de flux thermique."
+        },
+        {
+            "id": "fr-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The definition bullet called q'' simply heat flux instead of heat-flux density.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was q'' est le flux thermique."
+            ],
+            "resolution": "Changed it to q'' est la densité de flux thermique."
+        },
+        {
+            "id": "fr-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The radiation paragraph used an inconsistent space in Stefan–Boltzmann and singular kelvin.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used Stefan – Boltzmann and températures absolues en kelvin."
+            ],
+            "resolution": "Standardized Stefan-Boltzmann and changed the unit wording to kelvins."
+        },
+        {
+            "id": "fr-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical check used an infinitive fragment instead of a direct instruction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began Distinguer le flux thermique moyen."
+            ],
+            "resolution": "Changed it to the formal instruction Distinguez."
+        },
+        {
+            "id": "fr-20260818-047",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final practical check also used an infinitive instead of an instruction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet ended utiliser la capacité thermique."
+            ],
+            "resolution": "Changed it to utilisez la capacité thermique and clarified temperature changes."
+        },
+        {
+            "id": "fr-20260818-048",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR conclusion omitted the customary space before the percentage sign.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used 3,2% au-dessus."
+            ],
+            "resolution": "Changed it to 3,2 % au-dessus."
+        },
+        {
+            "id": "fr-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The wire specification bullet translated current capacity as capacité actuelle.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used Déterminez la capacité actuelle."
+            ],
+            "resolution": "Changed it to capacité de courant."
+        },
+        {
+            "id": "fr-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge heading used jauge, which is less consistent with the locale's established calibre terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Systèmes de jauge."
+            ],
+            "resolution": "Changed it to Systèmes de calibres."
+        }
+    ]
+}

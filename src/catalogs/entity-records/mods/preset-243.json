@@ -1,0 +1,48 @@
+{
+    "entityId": "preset-243",
+    "entityType": "finished-device",
+    "recordStatus": "admitted",
+    "updatedAt": "",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "v360",
+            "title": "Early Bird Harrier DNA60C Box Mod",
+            "url": "https://vaping360.com/vape-products/early-bird-harrier-dna60c-box-mod/",
+            "limitations": "Commercial exact-product record."
+        },
+        {
+            "id": "retail",
+            "title": "Harrier DNA60C 21700/18650 - Early Bird",
+            "url": "https://epipe.it/prodotto/harrier-dna60c/",
+            "limitations": "Retail specifications and availability only."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "21700",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18500",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260818T141111358Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Arabic pass identified 25 actionable formula, unit, terminology, and technical-clarity defects across electrical, circuit, trigonometric, thermal, and heat-flux content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm-law voltage conclusion spelled out the unit without retaining the protected symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion was ‘الجهد هو 5 فولت.’"],
+            "resolution": "Changed it to ‘الجهد هو 5 فولت (5 V).’"
+        },
+        {
+            "id": "ar-20260818-052",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Joule-heating power formula localized the protected watt unit into Arabic text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘7.2 واط’."],
+            "resolution": "Restored the protected W unit."
+        },
+        {
+            "id": "ar-20260818-053",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating conclusion mixed spelled-out units and inconsistent time notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘جول في الثانية’ and ‘72 جول خلال 10 ثوانٍ’."],
+            "resolution": "Normalized the result to 7.2 W, 72 J, and 10 s."
+        },
+        {
+            "id": "ar-20260818-054",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The parallel-resistance current formula localized V, Ω, and A into inconsistent Arabic unit words.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘I_total = 4.0 فولت / 0.20 أوم = 20 أ’."],
+            "resolution": "Restored ‘I_total = 4.0 V / 0.20 Ω = 20 A’."
+        },
+        {
+            "id": "ar-20260818-055",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-branch conclusion used the ambiguous Arabic abbreviation أ for ampere.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with ‘10 أ’."],
+            "resolution": "Restored the protected A symbol."
+        },
+        {
+            "id": "ar-20260818-056",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula used English side labels in the Arabic presentation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / hypotenuse’."],
+            "resolution": "Changed the labels to ‘المقابل / الوتر’."
+        },
+        {
+            "id": "ar-20260818-057",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula used English side labels in the Arabic presentation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘adjacent / hypotenuse’."],
+            "resolution": "Changed the labels to ‘المجاور / الوتر’."
+        },
+        {
+            "id": "ar-20260818-058",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula used English side labels in the Arabic presentation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / adjacent’."],
+            "resolution": "Changed the labels to ‘المقابل / المجاور’."
+        },
+        {
+            "id": "ar-20260818-059",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked sine formula retained the English word opposite.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began ‘opposite =’."],
+            "resolution": "Changed it to the Arabic label المقابل."
+        },
+        {
+            "id": "ar-20260818-060",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked cosine formula retained the English word adjacent.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began ‘adjacent =’."],
+            "resolution": "Changed it to the Arabic label المجاور."
+        },
+        {
+            "id": "ar-20260818-061",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-sine formula retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / hypotenuse’."],
+            "resolution": "Changed it to ‘المقابل / الوتر’."
+        },
+        {
+            "id": "ar-20260818-062",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-cosine formula retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘adjacent / hypotenuse’."],
+            "resolution": "Changed it to ‘المجاور / الوتر’."
+        },
+        {
+            "id": "ar-20260818-063",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-tangent formula retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘opposite / adjacent’."],
+            "resolution": "Changed it to ‘المقابل / المجاور’."
+        },
+        {
+            "id": "ar-20260818-064",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.degrees-and-radians.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The degrees-to-radians formula used the English unit word radians.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘180° = π radians’."],
+            "resolution": "Changed it to the Arabic unit name راديان."
+        },
+        {
+            "id": "ar-20260818-065",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity variable definition omitted Q and described the unit relationship unclearly.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet was ‘يتم نقل الطاقة الحرارية بالجول (J).’"],
+            "resolution": "Defined Q explicitly as transferred thermal energy in joules."
+        },
+        {
+            "id": "ar-20260818-066",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The mass unit was written as a spaced colloquial form and the c definition lacked clear unit phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘كيلو جرام’."],
+            "resolution": "Standardized the wording to الكيلوغرام and J/(kg·K)."
+        },
+        {
+            "id": "ar-20260818-067",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity worked formula localized Q and J into Arabic letters.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began ‘س =’ and ended with ‘ج’."],
+            "resolution": "Restored ‘Q = 0.20 × 4,180 × 50 = 41,800 J’."
+        },
+        {
+            "id": "ar-20260818-068",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heating-time formula localized t, J, W, and s into prose words or Arabic letters.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression began ‘ر =’ and used ‘جول’ and ‘وات’."],
+            "resolution": "Restored ‘t = 41,800 J / 100 W = 418 s’."
+        },
+        {
+            "id": "ar-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-time conclusion used a less precise time noun and omitted the protected seconds symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘الوقت المثالي’ and ‘523 ثانية’."],
+            "resolution": "Rephrased it with الزمن and the protected s unit."
+        },
+        {
+            "id": "ar-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux definition used an awkward Arabic clause for heat crossing a surface.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended with ‘المعدل الذي تعبر به الحرارة السطح’."],
+            "resolution": "Changed it to the clear construction ‘معدل عبور الحرارة للسطح’."
+        },
+        {
+            "id": "ar-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example title omitted the technical concept of flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘متوسط تدفق السخان’."],
+            "resolution": "Changed it to ‘متوسط كثافة تدفق الحرارة من سخان’."
+        },
+        {
+            "id": "ar-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example conclusion used spelled-out units and omitted thousands grouping.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘5000 واط/م²’ and ‘0.5 واط/سم²’."],
+            "resolution": "Normalized it to 5,000 W/m² and 0.5 W/cm²."
+        },
+        {
+            "id": "ar-20260818-073",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical heat-flux bullet was a fragment rather than an instruction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘وتشمل مقاومة الاتصال’."],
+            "resolution": "Changed it to the direct imperative ‘أدرج مقاومة التلامس ...’."
+        },
+        {
+            "id": "ar-20260818-074",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final heat-flux check used infinitives and lacked a clear distinction between rate and temperature.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘استخدام السعة الحرارية لتغيير درجة الحرارة’."],
+            "resolution": "Rewrote it as a direct reminder to use heat capacity for temperature change."
+        },
+        {
+            "id": "ar-20260818-075",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux worked formula localized W, m², and W/m² into Arabic unit words.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘وات’ and ‘م²’ in the formula body."],
+            "resolution": "Restored the protected expression ‘q'' = 100 W / 0.020 m² = 5,000 W/m²’."
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "schemaVersion": 1,
+    "locale": "ko",
+    "cycleId": "ko-20260819T000723138Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Korean source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Korean pass identified four additional protected-variable, unit-spacing, and terminology defects; all four were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Korean human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "ko-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading used the literal 현행법칙 rather than the standard Korean electrical term.", "disposition": "resolved", "evidence": ["현행법칙 means a current rule or law in general usage, not Kirchhoff's electric-current law."], "resolution": "Changed it to 키르히호프의 전류 법칙." },
+        { "id": "ko-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.0", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The current-law formula translated the protected variable I into Korean text.", "disposition": "resolved", "evidence": ["The previous expression was Σ 나는 = 0."], "resolution": "Restored Σ I = 0." },
+        { "id": "ko-20260819-008", "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.0", "category": "translation-defect", "severity": "medium", "summary": "The Joule-heating power formula omitted spaces around values and units.", "disposition": "resolved", "evidence": ["The previous expression displayed 3A, 7.2W, and similar unspaced unit forms."], "resolution": "Normalized the visible formula to standard SI spacing." },
+        { "id": "ko-20260819-009", "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The Joule-heating energy formula omitted spaces around values and units.", "disposition": "resolved", "evidence": ["The previous expression displayed 10s and 72J without the expected SI spacing."], "resolution": "Normalized the visible formula to standard SI spacing." }
+    ]
+}

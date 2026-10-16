@@ -1,0 +1,24 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260818T235553268Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Greek source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Greek pass identified one additional power-versus-energy terminology defect; it was corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Greek human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "el-20260819-006",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Greek paragraph used ενέργεια where the source describes electrical power.",
+            "disposition": "resolved",
+            "evidence": ["The previous text began Η ηλεκτρική ενέργεια είναι ένας ρυθμός, conflating energy with its transfer rate."],
+            "resolution": "Changed the term to ηλεκτρική ισχύς and retained the heat-capacity and heat-flux explanation."
+        }
+    ]
+}

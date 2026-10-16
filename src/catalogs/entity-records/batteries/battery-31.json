@@ -1,0 +1,89 @@
+{
+    "entityId": "battery-31",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine integrated-battery preset for Innokin iTaste VV v3.",
+        "description": "This researched draft preserves the calculator's 800mAh and 4C compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-itaste-vv",
+            "title": "iTaste VV v3 user manual",
+            "url": "https://www.atomiccrunch.com/user-manuals/itaste-VV3-0.pdf",
+            "publisher": "Innokin",
+            "limitations": "Manual mirror; it identifies an internal Li-ion battery. Polymer construction is reported in a contemporaneous manual variant, not a surviving cell specification."
+        },
+        {
+            "id": "intro-vv3-2013",
+            "title": "Innokin iTaste VV 3.0 review",
+            "url": "https://www.e-cigarette-forum.com/blog/innokin-itaste-vv-3-0-review.5502/",
+            "publisher": "E-Cigarette Forum product review",
+            "limitations": "The page states a release date; the page is a secondary product review rather than a manufacturer release notice."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Innokin iTaste VV v3 800mAh 4C as a 800mAh preset with a 4C runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Innokin iTaste VV v3 documentation identifies an internal lithium-ion battery; a contemporaneous manual variant describes it as polymer.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Innokin iTaste VV v3 has reliable market-introduction evidence dated 2013-05-25 or earlier.",
+            "evidenceDate": "2013-05-25",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "Surviving evidence does not fully resolve the internal cell and current-limit interpretation.",
+            "runtimeImplication": "Retain compatibility data pending dedicated device research."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "integrated",
+        "formFactor": null,
+        "chemistry": "Lithium-ion polymer",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

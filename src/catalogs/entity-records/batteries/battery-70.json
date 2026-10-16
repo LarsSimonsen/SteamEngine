@@ -1,0 +1,117 @@
+{
+    "entityId": "battery-70",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for Vappower IMR 26650.",
+        "description": "This researched draft preserves the calculator's 4200mAh and 40A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "store-26650",
+            "title": "26650 batteries",
+            "url": "https://www.18650batterystore.com/collections/26650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "test-vappower-26650",
+            "title": "Vappower IMR26650 4200mAh green test",
+            "url": "https://forum.fonarevka.ru/showthread.php?t=28627",
+            "publisher": "Fonarevka / HKJ",
+            "limitations": "Exact tested sample and historical wrapper revision; later batches or counterfeit cells may differ."
+        },
+        {
+            "id": "spec-vappower-26650",
+            "title": "Vappower IMR26650 4200mAh specification",
+            "url": "https://www.evva-tech.com/uploads/VAPPOWER%20IMR26650%204200mAh%20spec.pdf",
+            "publisher": "Vappower",
+            "limitations": "Specification mirror; exact wrapper continuity and authenticity of a retail sample remain unresolved."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-vappower-26650",
+            "statement": "Vappower IMR26650 4200mAh is documented as a green, unprotected raised/button-top cell; historical test discussion reports approximately 67.2 mm length, longer than a bare 26650.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "high"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Vappower IMR 26650 4200mAh 40A as a 4200mAh preset with a 40A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Vappower IMR 26650 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Vappower IMR 26650 has reliable market-introduction evidence dated 2015-07-31 or earlier.",
+            "evidenceDate": "2015-07-31",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "26650",
+            "nominalDiameterMm": 26,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

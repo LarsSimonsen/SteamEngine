@@ -1,0 +1,81 @@
+.battery-page-header { margin-bottom: 2rem; }
+.battery-page-header h1 { margin: 0 0 0.75rem; font-size: 2.5rem; }
+.battery-page-header > div > p:last-child { max-width: 50rem; margin: 0; color: var(--se-muted); line-height: 1.5; }
+.battery-page-header__actions { gap: 0.35rem; }
+.battery-manager-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: rgb(0 0 0 / 70%);
+}
+.battery-manager-dialog {
+    width: min(72rem, 100%);
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+    background: var(--se-surface);
+    border: 1px solid var(--se-border);
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 45%);
+}
+#battery-manager .catalog-manager, #battery-mod-manager .catalog-manager { margin-top: 0; }
+.battery-layout { --se-sidebar-column: minmax(18rem, 0.9fr); --se-main-column: minmax(0, 1.45fr); }
+.battery-card, .battery-result { padding: 1.5rem; }
+.battery-card h2 { margin: 0 0 1.25rem; font-size: 1.6rem; }
+.battery-choice { display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem; margin: 0 0 1rem;
+    padding: 0.75rem;
+    border: 1px solid var(--se-border); }
+.battery-choice legend { padding: 0 0.3rem; color: var(--se-muted); font-size: 0.85rem; }
+.battery-choice label { display: inline-flex; align-items: center; gap: 0.35rem; }
+.battery-input input { text-align: right; }
+.battery-input input[aria-invalid="true"] { border-color: var(--se-danger-text); outline-color: var(--se-danger-text); }
+.battery-input input:disabled { color: var(--se-muted); background: var(--se-surface-raised); cursor: not-allowed; }
+.battery-input em { min-width: 2rem; }
+.battery-field-error { display: block; margin-top: 0.35rem; color: var(--se-danger-text); }
+.battery-preset-controls { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.75rem; align-items: end; }
+.battery-preset-controls .battery-field { margin-bottom: 0; }
+.battery-manage-button { min-height: 2.75rem; }
+.battery-voltage-help { margin: -0.5rem 0 1rem; line-height: 1.45; }
+.battery-configuration-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+.battery-configuration-summary { margin: 0.25rem 0 1rem; font-weight: 700; }
+.battery-configuration-source { display: block; margin-top: 0.5rem; color: var(--se-text-muted); }
+.battery-custom-configuration { margin-top: 0.5rem; }
+.battery-matched-cells { margin: 0 0 1rem; }
+.battery-rating-method { flex-direction: row; flex-wrap: wrap; gap: 0.75rem 1.25rem; margin-top: 1.25rem; }
+.battery-encyclopedia-link { display: block; margin-top: 0.5rem; font-size: 0.9rem; }
+.battery-preset-status, .battery-preset-help { display: block; font-size: 0.9rem; }
+.battery-preset-status { margin-top: -0.5rem; }
+.battery-preset-help { margin-top: 0.5rem; }
+.battery-preset-status, .battery-preset-help { color: var(--se-muted); }
+.battery-mod-configuration { margin-top: 1rem; }
+.battery-mod-profile { display: grid; gap: 0.25rem; margin: 1rem 0; }
+.battery-mod-status, .battery-mod-limits { margin: 0.75rem 0 1rem; }
+.battery-mod-limits { list-style: none; }
+.battery-mod-limits li + li { margin-top: 0.35rem; }
+.battery-result--safe { border-color: #2ecc71; }
+.battery-result--caution { border-color: #f39c12; }
+.battery-result--danger { border-color: #e74c3c; }
+.battery-result--placeholder { border-style: dashed; }
+.battery-result h3 { margin: 0 0 1rem; }
+.battery-result p { line-height: 1.5; }
+.battery-safety-summary { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap;
+    gap: 0.4rem 1rem; margin: 0 0 0.75rem; }
+.battery-safety-summary strong { font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.15; }
+.battery-safety-summary span { color: var(--se-muted); font-weight: 700; }
+.battery-runtime-value { margin: 0 0 0.75rem; }
+.battery-runtime-value strong { font-size: 1.5rem; }
+.battery-validation, .battery-warning, .battery-stale-results { margin: 0 0 1rem; }
+@media (max-width: 760px) {
+    .battery-manager-overlay { place-items: stretch; padding: 0; }
+    .battery-manager-dialog { width: 100%; height: 100%; max-height: none; border: 0; border-radius: 0; }
+    #battery-manager .catalog-manager { min-height: 100%; }
+}
+@media (max-width: 560px) {
+    .battery-configuration-fields { grid-template-columns: 1fr; }
+    .battery-preset-controls { grid-template-columns: 1fr; }
+    .battery-manage-button { width: 100%; }
+    .battery-page-header { display: block; }
+    .battery-page-header__actions { justify-content: flex-start; margin-top: 1rem; }
+}

@@ -57,7 +57,7 @@ export const messages: CalculatorRouteMessages = {
     loopCircumference: "Løkkeomkrets",
     helixAngle: "Helningsvinkel",
     loopLength: "Løkkelengd",
-    coilWidth: "Spolebredde",
+    coilWidth: "Spolebreidd",
     surfaceArea: "Overflateareal",
     coilArea: "Spoleareal",
     crossSectionalArea: "Tverrsnittsareal",

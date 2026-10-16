@@ -8,7 +8,7 @@ export const messages = {
     "description": "Vergleichen Sie TCR- und TFR-Materialien, kombinieren Sie Drahtwiderstände parallel und exportieren Sie eine normalisierte DNA 200-Widerstandskurve.",
     "manageMaterials": "Materialien verwalten",
     "needModel": "Benötigen Sie ein komplettes Spulenmodell?",
-    "wireWizard": "Draht-Assistent",
+    "wireWizard": "Wire Wizard",
     "needModelText": "für Drahtgeometrie, komplexe Konstruktionen und Spulenberechnungen. Dieses fokussierte Werkzeug bleibt nützlich zum Vergleichen und Kombinieren von Widerstandskurven.",
     "controls": "Temperaturpunkte",
     "reset": "Zurücksetzen",

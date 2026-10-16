@@ -1,0 +1,19 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260819T005316512Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Bengali pass identified five protected-variable, unit, and SI-symbol defects; all five were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "bn-20260819-006", "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.1", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The Ohm-law variable I was translated as the Bengali pronoun আমি.", "disposition": "resolved", "evidence": ["The previous bullet was আমি কারেন্ট, which changes the protected variable in the explanation."], "resolution": "Restored I and clarified the Bengali sentence." },
+        { "id": "bn-20260819-007", "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.3", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The watt conversion used megawatts instead of milliwatts.", "disposition": "resolved", "evidence": ["The previous bullet was 1 ওয়াট = 1,000 মেগাওয়াট, which is dimensionally wrong."], "resolution": "Restored 1 W = 1,000 mW." },
+        { "id": "bn-20260819-008", "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.bullets.2", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The Joule-heating power explanation translated the protected variable I as আমি.", "disposition": "resolved", "evidence": ["The previous bullet was আমি অ্যাম্পিয়ারে বর্তমান (A)."], "resolution": "Restored I and used clear Bengali current terminology." },
+        { "id": "bn-20260819-009", "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.bullets", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The SI-unit bullet list translated several protected unit symbols into Bengali words or letters.", "disposition": "resolved", "evidence": ["The previous list displayed symbols such as ভি, জে, এন, পা, and সিডি instead of V, J, N, Pa, and cd."], "resolution": "Restored the canonical SI symbols throughout the list." },
+        { "id": "bn-20260819-010", "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The decimal-prefix table translated the protected mega and milli symbols.", "disposition": "resolved", "evidence": ["The previous table used এম for mega and মি for milli."], "resolution": "Restored M and m in the prefix-symbol column." }
+    ]
+}

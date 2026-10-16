@@ -1,0 +1,2614 @@
+{
+    "schemaVersion": 1,
+    "locale": "tr",
+    "cycleId": "tr-20261012T125549325Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Comparative screening of all remaining locales selected Turkish for repeated protected-unit corruption, mistranslated battery notes and product identity. Full review covered 1115 canonical entries, optional hooks, catalog nouns, glossary and route metadata. Primary Turkish terminology checked against TUBITAK and MEB; existing canonical numerical claims retained. Resources: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/defterim/10/fizik/files/basic-html/page14.html; https://akts.bau.edu.tr/bilgipaketi/index/ders/ders_id/45832/program_kodu/04062101/h/0/s/4/st/M/ln/tr; https://odsgm.meb.gov.tr/meb_iys_dosyalar/2017_10/10182732_7._GRUP_ELEKTRYK-ELEKTRONYK_MYHENDYSY_B.pdf; the Steam Engine Joule heating reference; the Steam Engine SI and imperial units reference; the Steam Engine vaping batteries reference Additional references checked on 2026-10-12: https://interaktif.ume.tubitak.gov.tr/yayinlar/turetilmis_si_birimleri.htm (watt W only; its ohm symbol rendering is not relied on); https://bilimgenc.tubitak.gov.tr/makale/eski-ve-yeni-uluslararasi-birim-sistemi?v=1.0.23 (amper A); https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/calisma_defteri/f7/9/fizik/files/basic-html/page6.html (specific heat versus heat capacity).",
+        "limitations": [
+            "Comparative screening is not an exhaustive global ranking.",
+            "Model critique is not competent human review.",
+            "Shared application strings outside locale dictionaries are documented separately; no unrelated multi-locale architecture changes.",
+            "Independent machine critique is not human approval.",
+            "Dynamic entity research prose not represented by canonical dictionary extraction was outside the supplied corpus.",
+            "Hardcoded English outside existing optional locale hooks is reported separately for future shared i18n work.",
+            "Specific manufacturer battery-rating claims were not independently revalidated; correction preserves English values and qualifiers.",
+            "Juice has pre-existing mobile horizontal overflow caused by off-screen sr-only inputs, identical in unchanged English; no unrelated layout change made."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "All 1115 runtime signatures, 163 corrected strings, optional hooks, catalog noun interpolation, protected values and 20 changed catalog consumers verified. Typecheck, metadata and full IIS build passed with 64 route cases and 737 generated links. 18 browser route/editor checks passed; desktop/mobile layouts inspected. Existing English juice off-screen sr-only input overflow also occurs in Turkish; visible controls fit. All 573 tests across 85 files passed. Staged full IIS and Cloudflare builds passed; Cloudflare artifact, generated tags, language and changed page metadata verified."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Reviewed all 1115 canonical entries, 13 glossary entries, 13 route records, eight optional fallback hooks and six catalog nouns. Corrected 163 strings and five noun mappings in 61 coherent groups across three bounded iterations. Seven shared hardcoded UI strings and canonical source defects are recorded separately."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Turkish human review performed; existing unaffected approval attribution preserved, changed text returned to machine review."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User requested review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "tr-001",
+            "translationId": "messages.theme.switchToLight",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[theme-light] Light color theme is translated as an illumination mode.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Switch to light mode",
+                "Previous Turkish: Işık moduna geç"
+            ],
+            "resolution": "Açık moda geç"
+        },
+        {
+            "id": "tr-002",
+            "translationId": "messages.catalogManager.manage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Fixed accusative suffix does not agree with all localized plural nouns; use a suffix-neutral construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Manage __se_arg_0__",
+                "Previous Turkish: __SE_ARG_0__'ı yönet"
+            ],
+            "resolution": "Yönet: __SE_ARG_0__"
+        },
+        {
+            "id": "tr-003",
+            "translationId": "messages.catalogManager.resetSavedMessage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[confirmation-question] Confirmation question is an infinitive fragment instead of a question.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This removes only the saved data. Continue?",
+                "Previous Turkish: Bu yalnızca kayıtlı verileri kaldırır. Devam etmek?"
+            ],
+            "resolution": "Bu yalnızca kayıtlı verileri kaldırır. Devam edilsin mi?"
+        },
+        {
+            "id": "tr-004",
+            "translationId": "messages.catalogEditor.editCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Fixed yi suffix fails vowel harmony for pil/mod and noun input currently remains English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Edit custom __se_arg_0__",
+                "Previous Turkish: Özel __SE_ARG_0__'yi düzenleyin"
+            ],
+            "resolution": "Özel kaydı düzenle: __SE_ARG_0__"
+        },
+        {
+            "id": "tr-005",
+            "translationId": "messages.catalogEditor.clone",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[clone-action] Action is translated as a noun with English word order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Clone __SE_ARG_0__",
+                "Previous Turkish: Klon __SE_ARG_0__"
+            ],
+            "resolution": "Klonla: __SE_ARG_0__"
+        },
+        {
+            "id": "tr-006",
+            "translationId": "messages.catalogEditor.properties",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[property-sense] Physical/item properties are mistranslated as owned real estate.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ properties",
+                "Previous Turkish: __SE_ARG_0__ mülkler"
+            ],
+            "resolution": "__SE_ARG_0__ özellikleri"
+        },
+        {
+            "id": "tr-007",
+            "translationId": "messages.catalogEditor.model",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-inflection] Standalone model field wrongly carries a possessive/accusative suffix.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Model",
+                "Previous Turkish: Modeli"
+            ],
+            "resolution": "Model"
+        },
+        {
+            "id": "tr-008",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[button-top] Cell terminal style is mistranslated as upper button.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous Turkish: Üst düğme"
+            ],
+            "resolution": "Düğme başlı"
+        },
+        {
+            "id": "tr-009",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[notes-entry] Editor help says consult notes instead of use notes to record measured dimensions.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Turkish: En az bir sürekli deşarj limiti girin. Entegre piller dahili mod paketleri olduğundan bağımsız hücre boyutları gerekli değildir. Çıkarılabilir hücre boyutları nominaldir; satıldığı hâliyle ölçülen boyutlar için notlara bakın. Her iki deşarj limiti de ayarlandığında, hesaplayıcı, aralarında önemli bir fark olması durumunda daha güvenli olan türetilmiş limiti kullanmaya devam eder."
+            ],
+            "resolution": "En az bir sürekli deşarj limiti girin. Entegre piller modun içindeki pil paketleri olduğundan ayrı hücre boyutları gerekli değildir. Çıkarılabilir hücre boyutları nominaldir; satıldığı hâliyle ölçülen boyutları notlara yazın. Her iki deşarj limiti de ayarlandığında, aralarında önemli bir fark varsa hesaplayıcı türetilen daha güvenli limiti kullanmaya devam eder."
+        },
+        {
+            "id": "tr-010",
+            "translationId": "messages.catalogEditor.resistivity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistivity] Resistivity is conflated with resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistivity (Ω mm²/m)",
+                "Previous Turkish: Direnç (Ω mm²/m)"
+            ],
+            "resolution": "Öz direnç (Ω mm²/m)"
+        },
+        {
+            "id": "tr-011",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.resistivity",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistivity] Resistivity is conflated with resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Electrical resistivity at 20 °C",
+                "Previous Turkish: 20 °C'de elektriksel direnç"
+            ],
+            "resolution": "20 °C'de elektriksel öz direnç"
+        },
+        {
+            "id": "tr-012",
+            "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-concatenation] Leading separator is required when appended directly to saved status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was interpolated and the curve was normalized.",
+                "Previous Turkish: 20 °C noktası enterpole edildi ve eğri normalleştirildi."
+            ],
+            "resolution": " 20 °C noktası enterpole edildi ve eğri normalleştirildi."
+        },
+        {
+            "id": "tr-013",
+            "translationId": "messages.catalogEditor.normalizationExtrapolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-concatenation] Restore separator and distinguish extrapolation from an unspecified estimate.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was extrapolated and the curve was normalized.",
+                "Previous Turkish: 20 °C noktası tahmin edildi ve eğri normalleştirildi."
+            ],
+            "resolution": " 20 °C noktası ekstrapolasyonla hesaplandı ve eğri normalleştirildi."
+        },
+        {
+            "id": "tr-014",
+            "translationId": "messages.catalogEditor.normalizationExisting",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-concatenation] Leading separator is required when appended directly to saved status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The TFR curve was normalized at 20 °C.",
+                "Previous Turkish: TFR eğrisi 20 °C'de normalleştirildi."
+            ],
+            "resolution": " TFR eğrisi 20 °C'de normalleştirildi."
+        },
+        {
+            "id": "tr-015",
+            "translationId": "messages.home.tools.juice.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-strength] Strength means concentration rather than total amount.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mix a recipe to your target nicotine strength and VG/PG ratio.",
+                "Previous Turkish: Bir tarifi hedef nikotin miktarınıza ve VG/PG oranına göre karıştırın."
+            ],
+            "resolution": "Bir tarifi hedef nikotin derişiminize ve VG/PG oranına göre karıştırın."
+        },
+        {
+            "id": "tr-016",
+            "translationId": "messages.encyclopedia.entriesLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[count-grammar] Turkish nouns after cardinal counts are singular, not plural.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ entries",
+                "Previous Turkish: __SE_ARG_0__ girişler"
+            ],
+            "resolution": "__SE_ARG_0__ kayıt"
+        },
+        {
+            "id": "tr-017",
+            "translationId": "messages.encyclopedia.browseCategory",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[count-grammar] Case suffix is misplaced inside count parenthesis; count also requires singular noun.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Browse __SE_ARG_0__ (__SE_ARG_1__ entries)",
+                "Previous Turkish: __SE_ARG_0__ (__SE_ARG_1__ girişlerine) göz atın"
+            ],
+            "resolution": "__SE_ARG_0__ kategorisine göz atın (__SE_ARG_1__ kayıt)"
+        },
+        {
+            "id": "tr-018",
+            "translationId": "messages.encyclopediaDetail.introduced",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-assembly] Date is presented as the item introduced; use a date label with no dynamic suffix assumption.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Introduced __SE_ARG_0__",
+                "Previous Turkish: __SE_ARG_0__ tanıtıldı"
+            ],
+            "resolution": "Tanıtım tarihi: __SE_ARG_0__"
+        },
+        {
+            "id": "tr-019",
+            "translationId": "messages.encyclopediaDetail.reviewed",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-assembly] Date is presented as the object reviewed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reviewed __SE_ARG_0__",
+                "Previous Turkish: __SE_ARG_0__ incelendi"
+            ],
+            "resolution": "İnceleme tarihi: __SE_ARG_0__"
+        },
+        {
+            "id": "tr-020",
+            "translationId": "messages.encyclopediaDetail.temperatureResistanceCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-resistance] Compound currently means temperature resistance rather than resistance versus temperature.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature resistance curve",
+                "Previous Turkish: Sıcaklık direnci eğrisi"
+            ],
+            "resolution": "Sıcaklığa bağlı direnç eğrisi"
+        },
+        {
+            "id": "tr-021",
+            "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rewrap-identity] Current sentence says manufacturer is taken from wrapper instead of not inferred from it.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The label is treated as a rewrap brand; the underlying cell manufacturer is not assumed from the wrapper.",
+                "Previous Turkish: Etiket, yeniden ambalajlanmış bir marka olarak değerlendirilir; temel hücre üreticisinin ambalajdan alındığı varsayılmaz."
+            ],
+            "resolution": "Etiket, başka bir üreticinin hücresini yeniden ambalajlayarak satan bir markaya ait kabul edilir; asıl hücre üreticisi yalnızca ambalajdan çıkarılmaz."
+        },
+        {
+            "id": "tr-022",
+            "translationId": "messages.encyclopediaDetail.oldBatteryWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[superseded] Already superseded is wrongly changed to future replacement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is an old battery model and is probably superseded by more suitable models.",
+                "Previous Turkish: Bu eski bir pil modelidir ve yerini muhtemelen daha uygun modeller alacaktır."
+            ],
+            "resolution": "Bu eski bir pil modelidir ve muhtemelen yerini daha uygun modeller almıştır."
+        },
+        {
+            "id": "tr-023",
+            "translationId": "messages.encyclopediaDetail.unknownBatteryIntroductionNotice",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[superseded] Superseded by newer models is not updated in place.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The market introduction date for this cell is unknown, so its age and whether it has been superseded cannot be determined.",
+                "Previous Turkish: Bu hücrenin piyasaya çıkış tarihi bilinmediğinden yaşı ve güncellenip güncellenmediği belirlenemiyor."
+            ],
+            "resolution": "Bu hücrenin piyasaya çıkış tarihi bilinmediğinden yaşı ve yerini daha yeni modellerin alıp almadığı belirlenemiyor."
+        },
+        {
+            "id": "tr-024",
+            "translationId": "messages.encyclopediaDetail.noAuthenticityAssessment",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[authenticity] Authenticity assessment is conflated with originality.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No entry-specific authenticity assessment has been recorded.",
+                "Previous Turkish: Girişe özel hiçbir özgünlük değerlendirmesi kaydedilmemiştir."
+            ],
+            "resolution": "Bu kayda özgü bir orijinallik değerlendirmesi kaydedilmemiştir."
+        },
+        {
+            "id": "tr-025",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Turkish: Pil ön ayarları"
+            ],
+            "resolution": "Hücre ön ayarı"
+        },
+        {
+            "id": "tr-026",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Turkish: Cell selection"
+            ],
+            "resolution": "Hücre seçimi"
+        },
+        {
+            "id": "tr-027",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Turkish: Yerleşik bir pil ön ayarı seçin veya aşağıya kendi değerlerinizi girin."
+            ],
+            "resolution": "Paketin tamamında kullanılan hücreyi seçin veya aşağıya hücre başına değerleri girin."
+        },
+        {
+            "id": "tr-028",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Turkish: Pil ön ayarı"
+            ],
+            "resolution": "Hücre ön ayarı"
+        },
+        {
+            "id": "tr-029",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Turkish: Pil değerleri"
+            ],
+            "resolution": "Hücre ve pil paketi"
+        },
+        {
+            "id": "tr-030",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Turkish: Battery configuration"
+            ],
+            "resolution": "Pil yapılandırması"
+        },
+        {
+            "id": "tr-031",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Turkish: 1S — Single cell"
+            ],
+            "resolution": "1S — Tek hücre"
+        },
+        {
+            "id": "tr-032",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Turkish: Custom configuration"
+            ],
+            "resolution": "Özel yapılandırma"
+        },
+        {
+            "id": "tr-033",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Turkish: Cells in series"
+            ],
+            "resolution": "Seri bağlı hücreler"
+        },
+        {
+            "id": "tr-034",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Turkish: Parallel strings"
+            ],
+            "resolution": "Paralel kollar"
+        },
+        {
+            "id": "tr-035",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous Turkish: cells"
+            ],
+            "resolution": "hücre"
+        },
+        {
+            "id": "tr-036",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous Turkish: cell"
+            ],
+            "resolution": "hücre"
+        },
+        {
+            "id": "tr-037",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Turkish: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "Aynı yaş ve durumda olan, birbirinin aynısı ve eşleştirilmiş hücreler kullanın. Akım paylaşımı ideal kabul edilir; paketin sınırını en zayıf hücre belirler."
+        },
+        {
+            "id": "tr-038",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Turkish: Battery pack"
+            ],
+            "resolution": "Pil paketi"
+        },
+        {
+            "id": "tr-039",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-parity] New cell/pack scope is untranslated or retains obsolete single-battery wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Turkish: Estimated current per cell"
+            ],
+            "resolution": "Hücre başına tahmini akım"
+        },
+        {
+            "id": "tr-040",
+            "translationId": "calculators.batt.enterValue",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[field-prefix] Field label follows the text in JSX; initial için reverses Turkish order.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter a value for",
+                "Previous Turkish: için bir değer girin"
+            ],
+            "resolution": "Şu alan için bir değer girin:"
+        },
+        {
+            "id": "tr-041",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[headroom-percentage] Current wording means less than 20% of the headroom, not headroom itself below 20%.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous Turkish: Akım payının %20'sinden azı kaldı."
+            ],
+            "resolution": "Kalan akım payı %20'den az."
+        },
+        {
+            "id": "tr-042",
+            "translationId": "calculators.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[build-noun] Build parameters is mistranslated as an instruction to create parameters.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose your wire and build parameters to estimate wraps, resistance, and heat.",
+                "Previous Turkish: Sargıyı, direnci ve ısıyı tahmin etmek için telinizi seçin ve parametreleri oluşturun."
+            ],
+            "resolution": "Sarım sayısını, direnci ve ısıyı tahmin etmek için telinizi ve yapım parametrelerini seçin."
+        },
+        {
+            "id": "tr-043",
+            "translationId": "calculators.coil.buildDetails",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[build-noun] Build details is mistranslated as create details.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Build details",
+                "Previous Turkish: Ayrıntıları oluştur"
+            ],
+            "resolution": "Yapım ayrıntıları"
+        },
+        {
+            "id": "tr-044",
+            "translationId": "calculators.coil.targetHeatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Heat flux must remain distinct from general heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Target heat flux",
+                "Previous Turkish: Hedef ısı akışı"
+            ],
+            "resolution": "Hedef ısı akısı"
+        },
+        {
+            "id": "tr-045",
+            "translationId": "calculators.converter.inputUnit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[measurement-unit] Measurement unit is mistranslated as a hardware module.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Input unit",
+                "Previous Turkish: Giriş ünitesi"
+            ],
+            "resolution": "Giriş birimi"
+        },
+        {
+            "id": "tr-046",
+            "translationId": "calculators.converter.outputUnit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[measurement-unit] Measurement unit is mistranslated as a hardware module.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Output unit",
+                "Previous Turkish: Çıkış ünitesi"
+            ],
+            "resolution": "Çıkış birimi"
+        },
+        {
+            "id": "tr-047",
+            "translationId": "calculators.converter.americanWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge system is mistranslated as a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: American Wire Gauge",
+                "Previous Turkish: Amerikan Tel Ölçer"
+            ],
+            "resolution": "Amerikan tel ölçü sistemi"
+        },
+        {
+            "id": "tr-048",
+            "translationId": "calculators.converter.needleGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Needle gauge is mistranslated as an indicator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG (needle gauge)",
+                "Previous Turkish: BWG (iğne göstergesi)"
+            ],
+            "resolution": "BWG (iğne kalınlık ölçüsü)"
+        },
+        {
+            "id": "tr-049",
+            "translationId": "calculators.converter.standardWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge system is mistranslated as a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Standard Wire Gauge",
+                "Previous Turkish: Standart Tel Ölçer"
+            ],
+            "resolution": "Standart tel ölçü sistemi"
+        },
+        {
+            "id": "tr-050",
+            "translationId": "calculators.converter.precisionHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge tables are mistranslated as dashboard indicators.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Precision applies to numeric results. Gauge tables remain at their published values.",
+                "Previous Turkish: Kesinlik sayısal sonuçlar için geçerlidir. Gösterge tabloları yayınlanmış değerlerinde kalır."
+            ],
+            "resolution": "Hassasiyet sayısal sonuçlar için geçerlidir. Tel ölçüsü tabloları yayımlanmış değerlerini korur."
+        },
+        {
+            "id": "tr-051",
+            "translationId": "calculators.juice.load",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[load-action] Load saved data is mistranslated as the noun load.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Load",
+                "Previous Turkish: Yük"
+            ],
+            "resolution": "Yükle"
+        },
+        {
+            "id": "tr-052",
+            "translationId": "calculators.juice.batch",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[batch-noun] Heading for a batch amount is an adjective meaning bulk.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Batch",
+                "Previous Turkish: Toplu"
+            ],
+            "resolution": "Karışım partisi"
+        },
+        {
+            "id": "tr-053",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-strength] Untranslated nic shorthand and generic strength obscure concentration and ingredient quantities.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous Turkish: Hedef nic, VG veya PG içeriğinizi veya aromanızı azaltmanız gerekebilir. Alternatif olarak daha güçlü bir nic baz veya farklı VG/PG oranına sahip bir nic baz kullanın. Lütfen ayarlarınızı tüm sayılar sıfırdan büyük olana kadar düzenleyin."
+            ],
+            "resolution": "Hedef nikotin derişimini, VG veya PG içeriğini ya da aroma miktarını azaltmanız gerekebilir. Alternatif olarak daha yüksek nikotin derişimli bir baz veya farklı VG/PG oranına sahip bir nikotin bazı kullanın. Lütfen tüm sayılar sıfırdan büyük olana kadar ayarlarınızı düzenleyin."
+        },
+        {
+            "id": "tr-054",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-strength] Base is mistranslated as a foundation and strength as power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous Turkish: Hedef nic seviyeniz nic temel gücünüzden daha yüksek. Ya daha güçlü bir nic temeli elde etmeli ya da hedef nic gücünüzü düşürmelisiniz."
+            ],
+            "resolution": "Hedef nikotin derişiminiz, nikotin bazınızın derişiminden yüksek. Daha yüksek nikotin derişimli bir baz kullanmalı veya hedef nikotin derişiminizi düşürmelisiniz."
+        },
+        {
+            "id": "tr-055",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] Source now offers guidance; target still claims an optimum resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Turkish: Optimum direnç"
+            ],
+            "resolution": "Direnç seçimi için rehber"
+        },
+        {
+            "id": "tr-056",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] Crossover label retains obsolete median terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Turkish: Medyan direnç"
+            ],
+            "resolution": "Akım/gerilim sınırlarının kesişimi"
+        },
+        {
+            "id": "tr-057",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] Crossover label retains obsolete median terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Turkish: Medyan"
+            ],
+            "resolution": "Akım/gerilim sınırlarının kesişimi"
+        },
+        {
+            "id": "tr-058",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-stale] Updated midpoint label retains literal sweet spot.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Turkish: Tatlı nokta"
+            ],
+            "resolution": "Üst aralığın orta noktası"
+        },
+        {
+            "id": "tr-059",
+            "translationId": "calculators.modrange.at",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] At a power is mistranslated as at a date; this fragment precedes the number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: At",
+                "Previous Turkish: Şu tarihte:"
+            ],
+            "resolution": "Güç:"
+        },
+        {
+            "id": "tr-060",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] Rephrase to allow the appended voltage to complete a grammatical label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous Turkish: akım sınırı gerektirir"
+            ],
+            "resolution": "akım sınırında gerekli gerilim:"
+        },
+        {
+            "id": "tr-061",
+            "translationId": "calculators.modrange.voltageLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] Rephrase to allow the appended current to complete a grammatical label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the voltage limit requires",
+                "Previous Turkish: voltaj sınırı gerektirir"
+            ],
+            "resolution": "gerilim sınırında gerekli akım:"
+        },
+        {
+            "id": "tr-062",
+            "translationId": "calculators.modrange.adjustedGraph",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-sentence] Append numeric ceiling to a grammatical Turkish label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The configured maximum power does not produce a usable resistance range with the other recorded limits. This graph uses a reduced ceiling of",
+                "Previous Turkish: Yapılandırılan maksimum güç, kaydedilen diğer limitlerle kullanılabilir bir direnç aralığı üretmez. Bu grafik azaltılmış bir tavan kullanır"
+            ],
+            "resolution": "Yapılandırılan maksimum güç, kaydedilen diğer sınırlarla kullanılabilir bir direnç aralığı sağlamıyor. Bu grafikte kullanılan azaltılmış üst sınır:"
+        },
+        {
+            "id": "tr-063",
+            "translationId": "calculators.modrange.watt",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[unit-symbols] Watt symbol is incorrectly translated to K.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: W",
+                "Previous Turkish: K"
+            ],
+            "resolution": "W"
+        },
+        {
+            "id": "tr-064",
+            "translationId": "calculators.modrange.ampere",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[unit-symbols] Ampere symbol is incorrectly translated as the article one.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A",
+                "Previous Turkish: bir"
+            ],
+            "resolution": "A"
+        },
+        {
+            "id": "tr-065",
+            "translationId": "calculators.tcr.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-resistance] Current heading describes a calculator with wire rather than calculator for temperature-control wire.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature-control wire calculator",
+                "Previous Turkish: Sıcaklık kontrol telli hesaplayıcı"
+            ],
+            "resolution": "Sıcaklık kontrolü için tel hesaplayıcısı"
+        },
+        {
+            "id": "tr-066",
+            "translationId": "calculators.tcr.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-resistance] TCR is resistance temperature coefficient, not temperature-resistance coefficient.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature coefficient of resistance",
+                "Previous Turkish: Sıcaklık direnci katsayısı"
+            ],
+            "resolution": "Direncin sıcaklık katsayısı"
+        },
+        {
+            "id": "tr-067",
+            "translationId": "calculators.tcr.baseFor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[field-prefix] Following material name needs a separator, not an unmarked noun collision.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Base resistance for",
+                "Previous Turkish: Temel direnç"
+            ],
+            "resolution": "Temel direnç:"
+        },
+        {
+            "id": "tr-068",
+            "translationId": "calculators.wirewiz.strandWire",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[strand-role] Twisted-wire component label repeats tel nonsensically rather than identifying one strand.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Strand wire",
+                "Previous Turkish: Tel tel"
+            ],
+            "resolution": "Tekil tel"
+        },
+        {
+            "id": "tr-069",
+            "translationId": "calculators.wirewiz.resetPersistence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[reset-object] Current wording says reset a valid design instead of reset existing data or import a valid design.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset or import a valid design to replace the saved data.",
+                "Previous Turkish: Kaydedilen verileri değiştirmek için geçerli bir tasarımı sıfırlayın veya içe aktarın."
+            ],
+            "resolution": "Kaydedilen verileri değiştirmek için sıfırlama yapın veya geçerli bir tasarımı içe aktarın."
+        },
+        {
+            "id": "tr-070",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wraps-noun] Wrap count is mistranslated as the verb it wraps.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wraps",
+                "Previous Turkish: sarar"
+            ],
+            "resolution": "Sarım sayısı"
+        },
+        {
+            "id": "tr-071",
+            "translationId": "calculators.wirewiz.sourceFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wirewiz-equivalence] Move temperature context into the prefix so the optional suffix can terminate a natural sentence.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The wire you have built has a resistance factor of",
+                "Previous Turkish: Yaptığınız telin direnç faktörü"
+            ],
+            "resolution": "Oluşturduğunuz telin bu sıcaklıktaki direnç faktörü:"
+        },
+        {
+            "id": "tr-072",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wirewiz-equivalence] Set to a material is mistranslated as a set of mods; material name follows in JSX.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous Turkish: Bir mod setinde eşleştirmek için"
+            ],
+            "resolution": "Aynı sonucu elde etmek için modda seçilen malzeme:"
+        },
+        {
+            "id": "tr-073",
+            "translationId": "calculators.wirewiz.adjustTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wirewiz-equivalence] Fragment precedes temperature number, which otherwise follows an already completed predicate unnaturally.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: adjust the temperature to approximately",
+                "Previous Turkish: sıcaklığı yaklaşık olarak ayarlayın"
+            ],
+            "resolution": "sıcaklık ayarını yaklaşık şu değere getirin:"
+        },
+        {
+            "id": "tr-074",
+            "translationId": "calculators.wirewiz.clapton",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-inflection] Wire construction label wrongly carries a possessive suffix.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Clapton",
+                "Previous Turkish: Clapton'un"
+            ],
+            "resolution": "Clapton"
+        },
+        {
+            "id": "tr-075",
+            "translationId": "calculators.wirewiz.vapingRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-range] Temperature interval is mistranslated as distance/range of a device.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: in vaping range",
+                "Previous Turkish: elektronik sigara menzilinde"
+            ],
+            "resolution": "elektronik sigara kullanım sıcaklığı aralığında"
+        },
+        {
+            "id": "tr-076",
+            "translationId": "comparisons.mods.platform",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[standalone-inflection] Standalone heading carries an unjustified possessive/accusative suffix.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Platform",
+                "Previous Turkish: platformu"
+            ],
+            "resolution": "Platform"
+        },
+        {
+            "id": "tr-077",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-sense] Electrical current is mistranslated as the currently valid thing.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find current",
+                "Previous Turkish: Geçerli olanı bul"
+            ],
+            "resolution": "Akımı bulun"
+        },
+        {
+            "id": "tr-078",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[materially-sense] Circuit becomes era/revolution, and materially becomes financially instead of substantially.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A simplified model may omit cell internal resistance, contact resistance, converter efficiency, temperature effects, transient behavior, protection circuits, and component tolerances. Include every omitted behavior that materially affects a high-current circuit.",
+                "Previous Turkish: Basitleştirilmiş bir model, hücre iç direncini, temas direncini, dönüştürücü verimliliğini, sıcaklık etkilerini, geçici davranışı, koruma devrelerini ve bileşen toleranslarını göz ardı edebilir. Yüksek akımlı bir devri maddi olarak etkileyebilecek her ihmal edilen davranışı modele dahil edin."
+            ],
+            "resolution": "Basitleştirilmiş bir model hücre iç direncini, temas direncini, dönüştürücü verimliliğini, sıcaklık etkilerini, geçici davranışı, koruma devrelerini ve bileşen toleranslarını göz ardı edebilir. Yüksek akımlı bir devreyi önemli ölçüde etkileyen, modele alınmamış tüm davranışları dahil edin."
+        },
+        {
+            "id": "tr-079",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-conditions] Spatial temperature gradients and mechanical strain are reduced to generic temperature changes and mechanical stress.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A manufacturer's TCR normally applies to a stated temperature and resistance range. Temperature gradients, material changes, contacts, mechanical strain, and self-heating can make a real result differ from the first-order estimate.",
+                "Previous Turkish: Üreticinin belirttiği TCR normalde belirli bir sıcaklık ve direnç aralığı için geçerlidir. Sıcaklık değişimleri, malzeme farklılıkları, temaslar, mekanik gerilim ve kendi kendine ısınma gerçek sonucun birinci dereceden modelden farklı olmasına neden olabilir."
+            ],
+            "resolution": "Üreticinin belirttiği TCR normalde belirli bir sıcaklık ve direnç aralığı için geçerlidir. Sıcaklık gradyanları, malzeme değişimleri, temaslar, mekanik gerinim ve kendi kendine ısınma, gerçek sonucun birinci dereceden tahminden farklı olmasına neden olabilir."
+        },
+        {
+            "id": "tr-080",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[right-triangle] Right-angle triangles are mistranslated as right-hand-side triangles.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Right triangles",
+                "Previous Turkish: Sağ üçgenler"
+            ],
+            "resolution": "Dik üçgenler"
+        },
+        {
+            "id": "tr-081",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[triangle-side] Geometric side is mistranslated as choosing a side/party.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a side",
+                "Previous Turkish: Bir taraf bul"
+            ],
+            "resolution": "Bir kenarı bulun"
+        },
+        {
+            "id": "tr-082",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[math-identities] Mathematical identities are mistranslated as identity credentials.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Waveforms and useful identities",
+                "Previous Turkish: Dalga formları ve kullanışlı kimlikler"
+            ],
+            "resolution": "Dalga şekilleri ve kullanışlı özdeşlikler"
+        },
+        {
+            "id": "tr-083",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[math-quadrant] Coordinate quadrant is mistranslated as a generic quarter.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Keep the sign and quadrant when direction or phase matters.",
+                "Previous Turkish: Yön veya faz önemli olduğunda işareti ve çeyreği koruyun."
+            ],
+            "resolution": "Yön veya faz önemli olduğunda işareti ve açının bulunduğu bölgeyi koruyun."
+        },
+        {
+            "id": "tr-084",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heating-water] The action of heating water is mistranslated as water for heating.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heating water",
+                "Previous Turkish: Isıtma suyu"
+            ],
+            "resolution": "Suyu ısıtma"
+        },
+        {
+            "id": "tr-085",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[numeric-separators] Mixed separators read specific heat as 4.180 instead of 4180 in Turkish.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat 0.20 kg of water from 20 °C to 70 °C using c = 4,180 J/(kg·K).",
+                "Previous Turkish: c = 4,180 J/(kg·K) değerini kullanarak 0,20 kg suyu 20 °C'den 70 °C'ye ısıtın."
+            ],
+            "resolution": "c = 4.180 J/(kg·K) değerini kullanarak 0,20 kg suyu 20 °C'den 70 °C'ye ısıtın."
+        },
+        {
+            "id": "tr-086",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[numeric-separators] Mixed decimal/thousands separators make the displayed multiplication incorrect by a factor of 1000.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Q = 0.20 × 4,180 × 50 = 41,800 J",
+                "Previous Turkish: Q = 0,20 × 4,180 × 50 = 41.800 J"
+            ],
+            "resolution": "Q = 0,20 × 4.180 × 50 = 41.800 J"
+        },
+        {
+            "id": "tr-087",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.0.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Use the same Turkish decimal and thousands conventions as the surrounding examples, preserving the exact number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1,000 = 10^3",
+                "Previous Turkish: 1,000 = 10^3"
+            ],
+            "resolution": "1.000 = 10^3"
+        },
+        {
+            "id": "tr-088",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.1.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Use the same Turkish decimal and thousands conventions as the surrounding examples, preserving the exact number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1,000,000 = 10^6",
+                "Previous Turkish: 1,000,000 = 10^6"
+            ],
+            "resolution": "1.000.000 = 10^6"
+        },
+        {
+            "id": "tr-089",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.2.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Use the same Turkish decimal and thousands conventions as the surrounding examples, preserving the exact number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.001 = 10^-3",
+                "Previous Turkish: 0.001 = 10^-3"
+            ],
+            "resolution": "0,001 = 10^-3"
+        },
+        {
+            "id": "tr-090",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.3.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Use the same Turkish decimal and thousands conventions as the surrounding examples, preserving the exact number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.000001 = 10^-6",
+                "Previous Turkish: 0.000001 = 10^-6"
+            ],
+            "resolution": "0,000001 = 10^-6"
+        },
+        {
+            "id": "tr-091",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.4.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Use the same Turkish decimal and thousands conventions as the surrounding examples, preserving the exact number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 0.000000001 = 10^-9",
+                "Previous Turkish: 0.000000001 = 10^-9"
+            ],
+            "resolution": "0,000000001 = 10^-9"
+        },
+        {
+            "id": "tr-092",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Neighboring cells use Turkish decimal commas; a decimal dot is ambiguous with the thousands convention.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 3.251 mm",
+                "Previous Turkish: 3.251 mm"
+            ],
+            "resolution": "3,251 mm"
+        },
+        {
+            "id": "tr-093",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.rows.0.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[numeric-separators] Neighboring cells use Turkish decimal commas; a decimal dot is ambiguous with the thousands convention.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 3.404 mm",
+                "Previous Turkish: 3.404 mm"
+            ],
+            "resolution": "3,404 mm"
+        },
+        {
+            "id": "tr-094",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[power-energy] Electrical power is mistranslated as energy in a section about time from power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heating with electrical power",
+                "Previous Turkish: Elektrik enerjisiyle ısıtma"
+            ],
+            "resolution": "Elektrik gücüyle ısıtma"
+        },
+        {
+            "id": "tr-095",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Flux is mislabeled as general heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: q'' is heat flux in W/m².",
+                "Previous Turkish: q'' W/m² cinsinden ısı akışıdır."
+            ],
+            "resolution": "q'', W/m² cinsinden ısı akısıdır."
+        },
+        {
+            "id": "tr-096",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Flux is mislabeled as general heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The average heat flux is 5,000 W/m², or 0.5 W/cm².",
+                "Previous Turkish: Ortalama ısı akışı 5.000 W/m² veya 0,5 W/cm²'dir."
+            ],
+            "resolution": "Ortalama ısı akısı 5.000 W/m² veya 0,5 W/cm²'dir."
+        },
+        {
+            "id": "tr-097",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] Flux is mislabeled as general heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Distinguish average heat flux from a local peak; heating may be uneven.",
+                "Previous Turkish: Ortalama ısı akışını yerel bir zirveden ayırt edin; ısıtma eşit olmayabilir."
+            ],
+            "resolution": "Ortalama ısı akısını yerel bir tepe değerinden ayırt edin; ısıtma eşit olmayabilir."
+        },
+        {
+            "id": "tr-098",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[emissivity] Emissivity is a dimensionless surface coefficient, not emission itself.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convection uses a surface coefficient h. Radiation uses emissivity ε and the Stefan–Boltzmann constant σ; temperatures in the radiation equation must be absolute temperatures in kelvin.",
+                "Previous Turkish: Konveksiyon, h yüzey katsayısını kullanır. Radyasyon, emisyon ε ve Stefan-Boltzmann sabiti σ'yi kullanır; Radyasyon denklemindeki sıcaklıklar kelvin cinsinden mutlak sıcaklıklar olmalıdır."
+            ],
+            "resolution": "Konveksiyon, h yüzey katsayısını kullanır. Radyasyon, yayma katsayısı ε ve Stefan–Boltzmann sabiti σ kullanılarak hesaplanır; radyasyon denklemindeki sıcaklıklar kelvin cinsinden mutlak sıcaklıklar olmalıdır."
+        },
+        {
+            "id": "tr-099",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Quantity column lists physical quantities, not amounts.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quantity",
+                "Previous Turkish: miktar"
+            ],
+            "resolution": "Büyüklük"
+        },
+        {
+            "id": "tr-100",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[math-power] Exponent is mistranslated as physical power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Area and volume conversions use the length factor raised to the relevant power.",
+                "Previous Turkish: Alan ve hacim dönüşümleri, ilgili güce yükseltilmiş uzunluk faktörünü kullanır."
+            ],
+            "resolution": "Alan ve hacim dönüşümlerinde uzunluk dönüşüm çarpanının ilgili kuvveti alınır."
+        },
+        {
+            "id": "tr-101",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rounding] Round at the end is mistranslated as round the end/tip of an object.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Round only at the end so intermediate results retain useful precision.",
+                "Previous Turkish: Yalnızca ucu yuvarlayın, böylece ara sonuçlar yararlı kesinliği korur."
+            ],
+            "resolution": "Ara sonuçların hassasiyetini korumak için yalnızca en son aşamada yuvarlayın."
+        },
+        {
+            "id": "tr-102",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge is mistranslated as a display indicator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge systems",
+                "Previous Turkish: Gösterge sistemleri"
+            ],
+            "resolution": "Tel ölçü sistemleri"
+        },
+        {
+            "id": "tr-103",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge system is mistranslated as a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: SWG is Standard Wire Gauge, the historical British wire and sheet-thickness system.",
+                "Previous Turkish: SWG, tarihi İngiliz tel ve levha kalınlığı sistemi olan Standart Tel Ölçer'dir."
+            ],
+            "resolution": "SWG, tarihî İngiliz tel ve levha kalınlığı sistemi olan Standart Tel Ölçü Sistemidir."
+        },
+        {
+            "id": "tr-104",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge system is mistranslated as a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG is Birmingham Wire Gauge, historically used for iron wire, tubing, and sheet thickness.",
+                "Previous Turkish: BWG, tarihsel olarak demir tel, boru ve sac kalınlığı için kullanılan Birmingham Tel Ölçer'dir."
+            ],
+            "resolution": "BWG, tarihsel olarak demir tel, boru ve sac kalınlığı için kullanılan Birmingham Tel Ölçü Sistemidir."
+        },
+        {
+            "id": "tr-105",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge designation column is mistranslated as a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous Turkish: Ölçer"
+            ],
+            "resolution": "Tel ölçüsü"
+        },
+        {
+            "id": "tr-106",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge is mistranslated as an indicator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge, area, and resistance",
+                "Previous Turkish: Gösterge, alan ve direnç"
+            ],
+            "resolution": "Tel ölçüsü, alan ve direnç"
+        },
+        {
+            "id": "tr-107",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistivity] Resistivity is conflated with resistance; AWG number is mislabeled as a gauge instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous Turkish: Direnç iletken uzunluğu L'ye, kesit alanına A ve malzeme direncine ρ bağlıdır. Alan çapın karesine göre değiştiğinden, küçük bir çap farkı önemli bir direnç farkı yaratabilir. AWG'de göstergeyi üç boyut artırmak, alanı yaklaşık olarak yarıya indirir ve aynı malzeme ve sıcaklık için birim uzunluk başına direnci iki katına çıkarır."
+            ],
+            "resolution": "Direnç, iletkenin uzunluğuna L, kesit alanına A ve malzemenin öz direncine ρ bağlıdır. Alan çapın karesiyle değiştiğinden, küçük bir çap farkı önemli bir direnç farkı yaratabilir. AWG numarasını üç artırmak, aynı malzeme ve sıcaklık için alanı yaklaşık yarıya indirir ve birim uzunluk başına direnci iki katına çıkarır."
+        },
+        {
+            "id": "tr-108",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Name the system means state its identity, not invent a name for it.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Name the system, such as 24 AWG or 24 British SWG.",
+                "Previous Turkish: Sisteme 24 AWG veya 24 British SWG gibi bir ad verin."
+            ],
+            "resolution": "24 AWG veya 24 İngiliz SWG gibi, ölçü sistemini açıkça belirtin."
+        },
+        {
+            "id": "tr-109",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge number is mistranslated as an indicator number.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Determine current capacity from product data and electrical rules, not from gauge number alone.",
+                "Previous Turkish: Akım kapasitesini yalnızca gösterge numarasına göre değil, ürün verilerine ve elektrik kurallarına göre belirleyin."
+            ],
+            "resolution": "Akım kapasitesini yalnızca tel ölçüsü numarasına göre değil, ürün verilerine ve elektrik kurallarına göre belirleyin."
+        },
+        {
+            "id": "tr-110",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ampacity] Ampacity is reduced to unspecified capacity; retain current-carrying meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For 1/0, 2/0, 3/0, and 4/0, use n = 0, -1, -2, and -3. AWG determines conductor size, not a universal safe current; ampacity also depends on material, insulation, cooling, installation, and applicable electrical rules.",
+                "Previous Turkish: 1/0, 2/0, 3/0 ve 4/0 için n = 0, -1, -2 ve -3'ü kullanın. AWG, evrensel güvenli akımı değil, iletken boyutunu belirler; kapasite aynı zamanda malzemeye, izolasyona, soğutmaya, kuruluma ve geçerli elektrik kurallarına da bağlıdır."
+            ],
+            "resolution": "1/0, 2/0, 3/0 ve 4/0 için n = 0, -1, -2 ve -3 kullanın. AWG, evrensel bir güvenli akımı değil, iletken boyutunu belirler; akım taşıma kapasitesi ayrıca malzemeye, yalıtıma, soğutmaya, kuruluma ve geçerli elektrik kurallarına bağlıdır."
+        },
+        {
+            "id": "tr-111",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[pulse-sense] Electrical pulse ratings are mistranslated as heartbeat ratings.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 20 A continuous rating; pulse ratings are not used.",
+                "Previous Turkish: 20 A sürekli derecelendirme; nabız değerleri kullanılmaz."
+            ],
+            "resolution": "20 A sürekli deşarj değeri; darbe akımı değerleri kullanılmaz."
+        },
+        {
+            "id": "tr-112",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 20 A conservative independent comparison value; exact wrapper and production revision remain relevant.",
+                "Previous Turkish: 20 Muhafazakar bir bağımsız karşılaştırma değeri; tam ambalaj ve üretim revizyonu geçerliliğini koruyor."
+            ],
+            "resolution": "20 A temkinli bağımsız karşılaştırma değeri; hücrenin tam ambalajı ve üretim revizyonu önemini korur."
+        },
+        {
+            "id": "tr-113",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 15 A conservative value from exact-model testing; tested CCC-marked revision remains relevant.",
+                "Previous Turkish: 15 Tam model testinden elde edilen muhafazakar bir değer; test edilmiş CCC işaretli revizyon geçerliliğini koruyor."
+            ],
+            "resolution": "Tam model testinden alınan temkinli değer 15 A; test edilen CCC işaretli revizyon önemini korur."
+        },
+        {
+            "id": "tr-114",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers. Also restore tabless identity and correct reversed pulse-substitution warning.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous Turkish: 45 Test edilen tabloların revizyonu için bağımsız bir sürekli değer; nabız değerlerinin yerini almayın."
+            ],
+            "resolution": "Test edilen tabless revizyon için bağımsız testten alınan sürekli deşarj değeri 45 A; bunun yerine darbe akımı değerlerini kullanmayın."
+        },
+        {
+            "id": "tr-115",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 36 A true continuous value; the 56 A figure is temperature-limited.",
+                "Previous Turkish: 36 Gerçek bir sürekli değer; 56 A rakamı sıcaklıkla sınırlıdır."
+            ],
+            "resolution": "Gerçek sürekli deşarj değeri 36 A; 56 A değeri sıcaklıkla sınırlıdır."
+        },
+        {
+            "id": "tr-116",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; tested cells appeared pre-production and lacked the CCC logo.",
+                "Previous Turkish: 40 Muhafazakar bir değer; test edilen hücreler üretim öncesi görünüyordu ve CCC logosu yoktu."
+            ],
+            "resolution": "Temkinli değer 40 A; test edilen hücreler üretim öncesi örnekler gibi görünüyordu ve CCC logosu taşımıyordu."
+        },
+        {
+            "id": "tr-117",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 13 A recommended continuous value; 16.8 A is an absolute maximum not intended for cycle life.",
+                "Previous Turkish: 13 Önerilen bir sürekli değer; 16,8 A, çevrim ömrü için amaçlanmayan mutlak bir maksimum değerdir."
+            ],
+            "resolution": "Önerilen sürekli deşarj değeri 13 A; 16,8 A, çevrim ömrünü korumak için önerilmeyen mutlak maksimum değerdir."
+        },
+        {
+            "id": "tr-118",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 70 A is temperature-limited and tested samples were pre-production.",
+                "Previous Turkish: 40 Muhafazakâr bir değer; 70 A sıcaklık sınırlıdır ve test edilen numuneler üretim öncesidir."
+            ],
+            "resolution": "Temkinli değer 40 A; 70 A sıcaklıkla sınırlıdır ve test edilen numuneler üretim öncesi örneklerdi."
+        },
+        {
+            "id": "tr-119",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A production-cell comparison value; 70 A requires temperature control.",
+                "Previous Turkish: 40 Bir üretim hücresi karşılaştırma değeri; 70 A sıcaklık kontrolü gerektirir."
+            ],
+            "resolution": "Üretim hücresi karşılaştırma değeri 40 A; 70 A sıcaklık kontrolü gerektirir."
+        },
+        {
+            "id": "tr-120",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 19 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Turkish: 19 Muhafazakar bir değer; tam olarak test edilen numuneler üretim öncesi görünüyordu ve CCC işaretleri yoktu."
+            ],
+            "resolution": "Temkinli değer 19 A; test edilen belirli numuneler üretim öncesi örnekler gibi görünüyordu ve CCC işareti taşımıyordu."
+        },
+        {
+            "id": "tr-121",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 90 A is temperature-limited and tested cells appeared pre-production.",
+                "Previous Turkish: 40 Muhafazakar bir değer; 90 A sıcaklık sınırlıdır ve test edilen hücreler üretim öncesi ortaya çıkmıştır."
+            ],
+            "resolution": "Temkinli değer 40 A; 90 A sıcaklıkla sınırlıdır ve test edilen hücreler üretim öncesi örnekler gibi görünüyordu."
+        },
+        {
+            "id": "tr-122",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 60 A is temperature-limited and production continuity remains unresolved.",
+                "Previous Turkish: 40 Muhafazakar bir değer; 60 A sıcaklık sınırlıdır ve üretim sürekliliği çözümsüz kalır."
+            ],
+            "resolution": "Temkinli değer 40 A; 60 A sıcaklıkla sınırlıdır ve üretimin devamlılığı hâlâ belirsizdir."
+        },
+        {
+            "id": "tr-123",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; tested samples had inconsistent capacity and lacked CCC/CE marks.",
+                "Previous Turkish: 40 Muhafazakar bir değer; test edilen numunelerin kapasitesi tutarsızdı ve CCC/CE işaretleri yoktu."
+            ],
+            "resolution": "Temkinli değer 40 A; test edilen numunelerin kapasiteleri tutarsızdı ve CCC/CE işareti taşımıyordu."
+        },
+        {
+            "id": "tr-124",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 13 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Turkish: 13 Muhafazakar bir değer; tam olarak test edilen numuneler üretim öncesi görünüyordu ve CCC işaretleri yoktu."
+            ],
+            "resolution": "Temkinli değer 13 A; test edilen belirli numuneler üretim öncesi örnekler gibi görünüyordu ve CCC işareti taşımıyordu."
+        },
+        {
+            "id": "tr-125",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 30 A tester-estimated continuous value; Reliance's 50 A maximum is temperature-limited.",
+                "Previous Turkish: 30 Test uzmanının tahmin ettiği sürekli bir değer; Reliance'ın maksimum 50 A değeri sıcaklıkla sınırlıdır."
+            ],
+            "resolution": "Test uzmanının tahmin ettiği sürekli deşarj değeri 30 A; Reliance'ın 50 A maksimum değeri sıcaklıkla sınırlıdır."
+        },
+        {
+            "id": "tr-126",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 20 A continuous value from two tested production-related batches; 30 A is temperature-limited.",
+                "Previous Turkish: 20 Üretimle ilgili test edilmiş iki partiden alınan sürekli bir değer; 30 A sıcaklık sınırlıdır."
+            ],
+            "resolution": "Test edilen, üretimle ilgili iki partiden alınan sürekli deşarj değeri 20 A; 30 A sıcaklıkla sınırlıdır."
+        },
+        {
+            "id": "tr-127",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-ampere-article] Ampere A was misread as an English article and disappeared; retain exact rating and qualifiers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 30 A exact-model value; this is a rewrap and later wrapper revisions or underlying sourcing may differ.",
+                "Previous Turkish: 30 Tam model değeri; bu bir yeniden sarma işlemidir ve daha sonraki paket revizyonları veya temel kaynak kullanımı farklılık gösterebilir."
+            ],
+            "resolution": "Tam modele ait değer 30 A; bu hücre yeniden ambalajlanmıştır ve sonraki ambalaj revizyonları veya asıl hücrenin tedarik kaynağı farklı olabilir."
+        },
+        {
+            "id": "tr-128",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wrapper-identity] Exact wrapper means identifying markings/revision, not the packaging material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 12 A continuous; 20 A is pulse-only. Exact tested wrapper is recorded as SA110 / INR18650/40.",
+                "Previous Turkish: 12 A sürekli; 20 A yalnızca darbelidir. Tam olarak test edilen ambalaj malzemesi SA110 / INR18650/40 olarak kaydedilmiştir."
+            ],
+            "resolution": "12 A sürekli deşarj; 20 A yalnızca darbe akımı içindir. Test edilen hücrenin tam ambalaj kimliği SA110 / INR18650/40 olarak kaydedilmiştir."
+        },
+        {
+            "id": "tr-129",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[low-drain] Low-drain is low discharge capability, not low energy consumption.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Low-drain battery; not suited for vaping.",
+                "Previous Turkish: Düşük enerji tüketen pil; vaping için uygun değildir."
+            ],
+            "resolution": "Düşük deşarj akımı kapasiteli pil; elektronik sigara kullanımı için uygun değildir."
+        },
+        {
+            "id": "tr-130",
+            "translationId": "catalogText.mod.preset-9.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Billet Box product name is mistranslated as a literal timber box.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Billet Box Rev. 3a with a bead-blasted, bright-dipped anodized aluminum finish; introduced in May 2014.",
+                "Previous Turkish: Boncuk püskürtmeli, parlak daldırmalı anodize alüminyum kaplamalı Kütük Kutusu Rev. 3a; Mayıs 2014'te tanıtıldı."
+            ],
+            "resolution": "Boncuk püskürtme ve parlak daldırma işlemleri uygulanmış, eloksallı alüminyum yüzeyli Billet Box Rev. 3a; Mayıs 2014'te tanıtıldı."
+        },
+        {
+            "id": "tr-131",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing locale-owned optional hook exposes English at runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous Turkish: Joule's law"
+            ],
+            "resolution": "Joule yasası"
+        },
+        {
+            "id": "tr-132",
+            "translationId": "calculators.wirewiz.sourceFactorSuffix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wirewiz-equivalence] Complete the sourceFactor + numeric factor sentence without English fallback.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: at this temperature.",
+                "Previous Turkish: at this temperature."
+            ],
+            "resolution": "olarak hesaplanmıştır."
+        },
+        {
+            "id": "tr-133",
+            "translationId": "messages.catalogEditor.sizeCodePlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing locale-owned optional hook exposes English at runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, e.g. 18650",
+                "Previous Turkish: Optional, e.g. 18650"
+            ],
+            "resolution": "İsteğe bağlı, ör. 18650"
+        },
+        {
+            "id": "tr-134",
+            "translationId": "messages.catalogEditor.wrapperColorPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing locale-owned optional hook exposes English at runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, descriptive",
+                "Previous Turkish: Optional, descriptive"
+            ],
+            "resolution": "İsteğe bağlı, açıklayıcı"
+        },
+        {
+            "id": "tr-135",
+            "translationId": "messages.catalogEditor.markingsPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing locale-owned optional hook exposes English at runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional; one wrapper marking per line",
+                "Previous Turkish: Optional; one wrapper marking per line"
+            ],
+            "resolution": "İsteğe bağlı; her satıra ambalajdaki bir işaret"
+        },
+        {
+            "id": "tr-136",
+            "translationId": "messages.catalogEditor.currentWithCRatingPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing locale-owned optional hook exposes English at runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when C rating is set",
+                "Previous Turkish: Optional when C rating is set"
+            ],
+            "resolution": "C değeri belirtilmişse isteğe bağlı"
+        },
+        {
+            "id": "tr-137",
+            "translationId": "messages.catalogEditor.cRatingWithCurrentPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[optional-fallback] Missing locale-owned optional hook exposes English at runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when current is set",
+                "Previous Turkish: Optional when current is set"
+            ],
+            "resolution": "Akım belirtilmişse isteğe bağlı"
+        },
+        {
+            "id": "tr-138",
+            "translationId": "messages.catalogManager.customItemsDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Use optional hook and translate known entity nouns before interpolation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __SE_ARG_0__ are always shown in calculator selectors.",
+                "Previous Turkish: Custom __SE_ARG_0__ are always shown in calculator selectors."
+            ],
+            "resolution": "Özel __SE_ARG_0__ hesaplayıcı seçim listelerinde her zaman gösterilir."
+        },
+        {
+            "id": "tr-139",
+            "translationId": "runtime.catalogNouns.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Translate known entity-kind argument; preserve user-created names. Match capitalized properties arguments too.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: material",
+                "Previous Turkish: material"
+            ],
+            "resolution": "malzeme"
+        },
+        {
+            "id": "tr-140",
+            "translationId": "runtime.catalogNouns.materials",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Translate known entity-kind argument; preserve user-created names. Match capitalized properties arguments too.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: materials",
+                "Previous Turkish: materials"
+            ],
+            "resolution": "malzemeler"
+        },
+        {
+            "id": "tr-141",
+            "translationId": "runtime.catalogNouns.battery",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Translate known entity-kind argument; preserve user-created names. Match capitalized properties arguments too.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: battery",
+                "Previous Turkish: battery"
+            ],
+            "resolution": "pil"
+        },
+        {
+            "id": "tr-142",
+            "translationId": "runtime.catalogNouns.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Translate known entity-kind argument; preserve user-created names. Match capitalized properties arguments too.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: batteries",
+                "Previous Turkish: batteries"
+            ],
+            "resolution": "piller"
+        },
+        {
+            "id": "tr-143",
+            "translationId": "runtime.catalogNouns.mod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Translate known entity-kind argument; preserve user-created names. Match capitalized properties arguments too.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: mod",
+                "Previous Turkish: mod"
+            ],
+            "resolution": "Existing valid Turkish term preserved; category interpolation verified."
+        },
+        {
+            "id": "tr-144",
+            "translationId": "runtime.catalogNouns.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-arguments] Translate known entity-kind argument; preserve user-created names. Match capitalized properties arguments too.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: mods",
+                "Previous Turkish: mods"
+            ],
+            "resolution": "modlar"
+        },
+        {
+            "id": "tr-145",
+            "translationId": "routeMetadata./juice.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-strength] Liquid strength is concentration, not physical power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Plan liquid strength and ingredient ratios.",
+                "Previous Turkish: Likit gücünü ve içerik oranlarını planlayın."
+            ],
+            "resolution": "Likitin nikotin derişimini ve bileşen oranlarını planlayın."
+        },
+        {
+            "id": "tr-146",
+            "translationId": "routeMetadata./modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-sense] Regulated electronics is translated as edited/arranged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous Turkish: Düzenlenmiş bir modun çıkış sınırlarından kullanışlı direnç aralığını bulun."
+            ],
+            "resolution": "Regüleli bir modun çıkış sınırlarından kullanışlı direnç aralığını bulun."
+        },
+        {
+            "id": "tr-147",
+            "translationId": "routeMetadata./wirewiz.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-identity] Use the actual calculator identity already established in Turkish navigation and page title.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire Wizard",
+                "Previous Turkish: Tel sihirbazı"
+            ],
+            "resolution": "Wire Wizard"
+        },
+        {
+            "id": "tr-148",
+            "translationId": "routeMetadata./compare/mods.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[circuit-board] Electronic control boards are mistranslated as panels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Compare mods/boards",
+                "Previous Turkish: Modları/panoları karşılaştır"
+            ],
+            "resolution": "Modları/kartları karşılaştır"
+        },
+        {
+            "id": "tr-149",
+            "translationId": "routeMetadata./compare/mods.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[circuit-board] Electronic control boards are mistranslated as panels.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Compare two mods or control boards from the Steam Engine catalog side by side.",
+                "Previous Turkish: Steam Engine kataloğundaki iki modu veya kontrol panosunu yan yana karşılaştırın."
+            ],
+            "resolution": "Steam Engine kataloğundaki iki modu veya kontrol kartını yan yana karşılaştırın."
+        },
+        {
+            "id": "tr-150",
+            "translationId": "runtime.tcr.hardcodedForWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: for wire",
+                "Previous Turkish: for wire"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-151",
+            "translationId": "runtime.wirewiz.childRole.core",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core",
+                "Previous Turkish: Core"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-152",
+            "translationId": "runtime.wirewiz.childRole.wrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Wrap",
+                "Previous Turkish: Wrap"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-153",
+            "translationId": "runtime.wirewiz.childRole.doubleCore",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core (two identical wires)",
+                "Previous Turkish: Core (two identical wires)"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-154",
+            "translationId": "runtime.wirewiz.childRole.primaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Primary wrap (one around each core)",
+                "Previous Turkish: Primary wrap (one around each core)"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-155",
+            "translationId": "runtime.wirewiz.childRole.secondaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Secondary wrap (around both cores)",
+                "Previous Turkish: Secondary wrap (around both cores)"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-156",
+            "translationId": "runtime.wirewiz.singleWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[hardcoded-ui-source] Hardcoded English outside locale-owned hooks; needs future shared i18n work, not a new Turkish-only API in this correction batch.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: __SE_ARG_0__ wire",
+                "Previous Turkish: __SE_ARG_0__ wire"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "tr-157",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Turkish: R, ohm (\\u03a9) cinsinden ölçülen dirençtir."
+            ],
+            "resolution": "R, ohm (Ω) cinsinden ölçülen dirençtir."
+        },
+        {
+            "id": "tr-158",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Turkish: R, ohm (\\u03a9) cinsinden ölçülen dirençtir."
+            ],
+            "resolution": "Turkish display corrected to: R, ohm (Ω) cinsinden ölçülen dirençtir.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-159",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous Turkish: Sıfır \\u03a9 direnci ideal bir kısa devredir ve ayrı olarak ele alınmalıdır."
+            ],
+            "resolution": "Sıfır Ω direnci ideal bir kısa devredir ve ayrı olarak ele alınmalıdır."
+        },
+        {
+            "id": "tr-160",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous Turkish: Sıfır \\u03a9 direnci ideal bir kısa devredir ve ayrı olarak ele alınmalıdır."
+            ],
+            "resolution": "Turkish display corrected to: Sıfır Ω direnci ideal bir kısa devredir ve ayrı olarak ele alınmalıdır.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-161",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Turkish: 4,2 V'luk bir kaynak 1,0 \\u03a9 yüke bağlanır."
+            ],
+            "resolution": "4,2 V'luk bir kaynak 1,0 Ω yüke bağlanır."
+        },
+        {
+            "id": "tr-162",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Turkish: 4,2 V'luk bir kaynak 1,0 \\u03a9 yüke bağlanır."
+            ],
+            "resolution": "Turkish display corrected to: 4,2 V'luk bir kaynak 1,0 Ω yüke bağlanır.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-163",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Turkish: I = 4,2 V / 1,0 Ω = 4,2 A"
+            ],
+            "resolution": "Existing Turkish display is correct; canonical English source issue documented for separate parity repair."
+        },
+        {
+            "id": "tr-164",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Turkish: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "R = 12 V / 2 A = 6 Ω"
+        },
+        {
+            "id": "tr-165",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Turkish: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "Turkish display corrected to: R = 12 V / 2 A = 6 Ω. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-166",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Turkish: Devre direnci 6 \\u03a9'dur."
+            ],
+            "resolution": "Devre direnci 6 Ω'dur."
+        },
+        {
+            "id": "tr-167",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Turkish: Devre direnci 6 \\u03a9'dur."
+            ],
+            "resolution": "Turkish display corrected to: Devre direnci 6 Ω'dur.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-168",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Turkish: 0,5 A akım 10 \\u03a9 dirençten akar."
+            ],
+            "resolution": "0,5 A akım 10 Ω dirençten akar."
+        },
+        {
+            "id": "tr-169",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Turkish: 0,5 A akım 10 \\u03a9 dirençten akar."
+            ],
+            "resolution": "Turkish display corrected to: 0,5 A akım 10 Ω dirençten akar.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-170",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Turkish: 1 k\\u03a9 = 1.000 \\u03a9"
+            ],
+            "resolution": "1 kΩ = 1.000 Ω"
+        },
+        {
+            "id": "tr-171",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Turkish: 1 k\\u03a9 = 1.000 \\u03a9"
+            ],
+            "resolution": "Turkish display corrected to: 1 kΩ = 1.000 Ω. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-172",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Turkish: 1 M\\u03a9 = 1.000.000 \\u03a9"
+            ],
+            "resolution": "1 MΩ = 1.000.000 Ω"
+        },
+        {
+            "id": "tr-173",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Turkish: 1 M\\u03a9 = 1.000.000 \\u03a9"
+            ],
+            "resolution": "Turkish display corrected to: 1 MΩ = 1.000.000 Ω. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-174",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Turkish: 0,8 \\u03a9'luk bir bobin 3 A taşır."
+            ],
+            "resolution": "0,8 Ω'luk bir bobin 3 A taşır."
+        },
+        {
+            "id": "tr-175",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Turkish: 0,8 \\u03a9'luk bir bobin 3 A taşır."
+            ],
+            "resolution": "Turkish display corrected to: 0,8 Ω'luk bir bobin 3 A taşır.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-176",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Turkish: 0,20 Ω değerindeki iki direnç seri bağlanarak 8,0 V'luk bir kaynağa bağlanır."
+            ],
+            "resolution": "Existing Turkish display is correct; canonical English source issue documented for separate parity repair."
+        },
+        {
+            "id": "tr-177",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Turkish: R_total = 0,40 Ω"
+            ],
+            "resolution": "Existing Turkish display is correct; canonical English source issue documented for separate parity repair."
+        },
+        {
+            "id": "tr-178",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Turkish: İki eşit 0,40 \\u03a9 dal 4,0 V'a bağlanır."
+            ],
+            "resolution": "İki eşit 0,40 Ω dal 4,0 V'a bağlanır."
+        },
+        {
+            "id": "tr-179",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Turkish: İki eşit 0,40 \\u03a9 dal 4,0 V'a bağlanır."
+            ],
+            "resolution": "Turkish display corrected to: İki eşit 0,40 Ω dal 4,0 V'a bağlanır.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-180",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Turkish: R_total = 0,20 Ω"
+            ],
+            "resolution": "Existing Turkish display is correct; canonical English source issue documented for separate parity repair."
+        },
+        {
+            "id": "tr-181",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous Turkish: \\u03b1, malzemenin 1/°C veya ppm/°C cinsinden ifade edilen sıcaklık katsayısıdır."
+            ],
+            "resolution": "α, malzemenin 1/°C veya ppm/°C cinsinden ifade edilen sıcaklık katsayısıdır."
+        },
+        {
+            "id": "tr-182",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous Turkish: \\u03b1, malzemenin 1/°C veya ppm/°C cinsinden ifade edilen sıcaklık katsayısıdır."
+            ],
+            "resolution": "Turkish display corrected to: α, malzemenin 1/°C veya ppm/°C cinsinden ifade edilen sıcaklık katsayısıdır.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-183",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 1.00 \\u03a9 resistance is specified at 20 \\u00b0C, with a TCR of 400 ppm/\\u00b0C.",
+                "Previous Turkish: 20 °C'de 1,00 Ω direnç ve 400 ppm/°C TCR verilmiştir."
+            ],
+            "resolution": "Existing Turkish display is correct; canonical English source issue documented for separate parity repair."
+        },
+        {
+            "id": "tr-184",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Turkish: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "α = 400 × 10^-6 / °C = 0,0004 / °C"
+        },
+        {
+            "id": "tr-185",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Turkish: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "Turkish display corrected to: α = 400 × 10^-6 / °C = 0,0004 / °C. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-186",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Turkish: \\u0394T = 100 - 20 = 80 \\u00b0C"
+            ],
+            "resolution": "ΔT = 100 - 20 = 80 °C"
+        },
+        {
+            "id": "tr-187",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Turkish: \\u0394T = 100 - 20 = 80 \\u00b0C"
+            ],
+            "resolution": "Turkish display corrected to: ΔT = 100 - 20 = 80 °C. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-188",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Turkish: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "R_T = 1,00 [1 + 0,0004 × 80] = 1,032 Ω"
+        },
+        {
+            "id": "tr-189",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Turkish: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "Turkish display corrected to: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 Ω. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-190",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Turkish: Tahmini direnç 1,032 \\u03a9'dur, bu da 20 \\u00b0C'deki değerinin yaklaşık %3,2 üzerindedir."
+            ],
+            "resolution": "Tahmini direnç 1,032 Ω'dur, bu da 20 °C'deki değerinin yaklaşık %3,2 üzerindedir."
+        },
+        {
+            "id": "tr-191",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Turkish: Tahmini direnç 1,032 \\u03a9'dur, bu da 20 \\u00b0C'deki değerinin yaklaşık %3,2 üzerindedir."
+            ],
+            "resolution": "Turkish display corrected to: Tahmini direnç 1,032 Ω'dur, bu da 20 °C'deki değerinin yaklaşık %3,2 üzerindedir.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-192",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Turkish: Direnç: ohm (\\u03a9)."
+            ],
+            "resolution": "Direnç: ohm (Ω)."
+        },
+        {
+            "id": "tr-193",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Turkish: Direnç: ohm (\\u03a9)."
+            ],
+            "resolution": "Turkish display corrected to: Direnç: ohm (Ω).. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-194",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Literal Unicode escape displays instead of its symbol; repair Turkish presentation while recording canonical source issue separately.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Turkish: Örneğin, 2,2 k\\u03a9, 2.200 \\u03a9'a, 15 mA ise 0,015 A'ya eşittir. Formül kullanmadan önce değerleri uyumlu birimlere dönüştürün."
+            ],
+            "resolution": "Örneğin, 2,2 kΩ, 2.200 Ω'a, 15 mA ise 0,015 A'ya eşittir. Formül kullanmadan önce değerleri uyumlu birimlere dönüştürün."
+        },
+        {
+            "id": "tr-195",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-unicode] Canonical source contains a literal escape instead of the mathematical symbol. English source and wider parity require separate repair.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Turkish: Örneğin, 2,2 k\\u03a9, 2.200 \\u03a9'a, 15 mA ise 0,015 A'ya eşittir. Formül kullanmadan önce değerleri uyumlu birimlere dönüştürün."
+            ],
+            "resolution": "Turkish display corrected to: Örneğin, 2,2 kΩ, 2.200 Ω'a, 15 mA ise 0,015 A'ya eşittir. Formül kullanmadan önce değerleri uyumlu birimlere dönüştürün.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-196",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[joule-source] Canonical summary wrongly says resistance is converted to heat. Suggested target paraphrases intended meaning confirmed by the article and knowledge base.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: How electrical current turns resistance into heat.",
+                "Previous Turkish: Elektrik akımı direnci ısıya nasıl dönüştürür?"
+            ],
+            "resolution": "Turkish display corrected to: Elektrik akımı geçtiğinde elektrik enerjisinin ısıya nasıl dönüştüğü.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-197",
+            "translationId": "messages.catalogEditor.heatCapacity",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[specific-heat-source] English label says heat capacity but mass-normalized units and field represent specific heat capacity. Source/parity work is separate.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Heat capacity (J/g·K)",
+                "Previous Turkish: Isı kapasitesi (J/g·K)"
+            ],
+            "resolution": "Turkish display corrected to: Özgül ısı kapasitesi (J/g·K). Canonical English and wider source/parity repair remain outside this locale cycle."
+        },
+        {
+            "id": "tr-198",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[temperature-unit-source] English source uses 60 C where a temperature limit means 60 °C; distinguish temperature from battery C rating.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 40 A exact-wrapper value; 70 A is limited to 60 C and tested as an EVE 40PL rewrap.",
+                "Previous Turkish: Tam ambalajla doğrulanan değer 40 A'dir; 70 A, 60 C ile sınırlıdır ve EVE 40PL yeniden ambalajlaması olarak test edilmiştir."
+            ],
+            "resolution": "Turkish display corrected to: Tam ambalajla doğrulanan değer 40 A'dir; 70 A, 60 °C ile sınırlıdır ve EVE 40PL yeniden ambalajlaması olarak test edilmiştir.. Canonical English and wider source/parity repair remain outside this locale cycle."
+        }
+    ]
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T201929078Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Bengali pass identified 25 remaining circuit, thermal, waveform, SI-unit, and wire-gauge wording issues; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-20260818-101",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage definition used an awkward noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘V হল ভোল্টে ভোল্টেজ’."],
+            "resolution": "Changed it to ‘V হল ভোল্টেজ, ভোল্টে (V) মাপা হয়’."
+        },
+        {
+            "id": "bn-20260818-102",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating explanation repeated শক্তি and used less natural technical phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph mixed ‘তাপ ক্ষমতা’ and ‘তাপ প্রবাহ’ with an awkward surface-loss clause."],
+            "resolution": "Rewrote it with তাপধারণ ক্ষমতা, তাপপ্রবাহ, and a clearer explanation of energy leaving the surface."
+        },
+        {
+            "id": "bn-20260818-103",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell capacity explanation was unclear.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘সমান কোষের মতো’ without clearly stating the ampere-hour relationship."],
+            "resolution": "Rewrote it to state that series cells add voltage while ampere-hour capacity remains approximately that of one cell."
+        },
+        {
+            "id": "bn-20260818-104",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell explanation used an incomplete combining construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said capacity and current ‘প্রায় যোগ করে’."],
+            "resolution": "Changed it to clear Bengali stating that capacity and available current approximately add in parallel."
+        },
+        {
+            "id": "bn-20260818-105",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-sharing sentence used a literal and incomplete list.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet listed contacts and wires without natural Bengali syntax."],
+            "resolution": "Rewrote it as a clear dependency on internal resistance, connections, wires, and switches."
+        },
+        {
+            "id": "bn-20260818-106",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The title used a literal phrase for solving circuits.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘বাস্তব সার্কিট সমাধান’."],
+            "resolution": "Changed it to the more natural technical title ‘বাস্তব সার্কিট বিশ্লেষণ’."
+        },
+        {
+            "id": "bn-20260818-107",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-analysis checklist mixed কারেন্ট and স্রোত terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘শাখা স্রোত’ and ‘অনুমান বর্তমান’."],
+            "resolution": "Standardized it on কারেন্ট and a clear phrase for assumed current direction."
+        },
+        {
+            "id": "bn-20260818-108",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL/KVL instruction used an unnecessary plural construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘স্বাধীন নোডগুলিতে’ and ‘স্বাধীন লুপের চারপাশে’."],
+            "resolution": "Changed it to concise technical Bengali for independent nodes and loops."
+        },
+        {
+            "id": "bn-20260818-109",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Ohm-law checklist item used an unnatural ‘সম্পর্কযুক্ত করুন’ construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous item said to relate voltage and current with the formula in a literal way."],
+            "resolution": "Rewrote it as ‘V = I × R ব্যবহার করে ... সম্পর্ক স্থাপন করুন’."
+        },
+        {
+            "id": "bn-20260818-110",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final checklist item used the vague phrase পাওয়ার ব্যালেন্স চেক.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet mixed English loan wording with the surrounding Bengali."],
+            "resolution": "Changed it to ‘ক্ষমতার ভারসাম্য যাচাই করুন’."
+        },
+        {
+            "id": "bn-20260818-111",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The waveform-variable definitions used inconsistent terminology for amplitude, frequency, and time.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘সাইন’, ‘ফ্রিকোয়েন্সি’, and ‘সময়’ in a mixed construction."],
+            "resolution": "Rewrote it with অ্যামপ্লিটিউড, কম্পাঙ্ক, সময়, and ফেজ কোণ in a consistent sentence."
+        },
+        {
+            "id": "bn-20260818-112",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angular-frequency definition used a passive and less direct construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘পরিমাপ করা হয়’ without the natural unit phrasing."],
+            "resolution": "Changed it to ‘কৌণিক কম্পাঙ্ক ω প্রতি সেকেন্ডে রেডিয়ানে মাপা হয়’."
+        },
+        {
+            "id": "bn-20260818-113",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity unit definition used an unnatural Bengali unit phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet placed ‘এ’ awkwardly before the units."],
+            "resolution": "Changed it to ‘J/K বা J/°C এককে তাপধারণ ক্ষমতা’."
+        },
+        {
+            "id": "bn-20260818-114",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example conclusion used an awkward literal phrase for ideal energy need.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion began ‘আদর্শ শক্তির প্রয়োজন হল’."],
+            "resolution": "Rewrote it as ‘আদর্শভাবে প্রয়োজনীয় শক্তি 41.8 kJ’ and clarified real heat loss."
+        },
+        {
+            "id": "bn-20260818-115",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The example title used an unnatural word order.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘উত্তাপের আদর্শ সময়’."],
+            "resolution": "Changed it to ‘আদর্শ উত্তাপের সময়’."
+        },
+        {
+            "id": "bn-20260818-116",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The total heat-transfer-rate definition used a literal unit construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘ওয়াট (W) এ মোট তাপ-স্থানান্তর হার’."],
+            "resolution": "Changed it to ‘ওয়াটে (W) মোট তাপ স্থানান্তরের হার’."
+        },
+        {
+            "id": "bn-20260818-117",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The worked example called heat-flux density simply heat flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion omitted the density qualifier from the result."],
+            "resolution": "Changed it to ‘গড় তাপ-প্রবাহের ঘনত্ব 5,000 W/m²’."
+        },
+        {
+            "id": "bn-20260818-118",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-difference definition did not identify the two sides of the layer.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet only said ‘স্তর জুড়ে’."],
+            "resolution": "Clarified it as the temperature difference between the two sides of the layer."
+        },
+        {
+            "id": "bn-20260818-119",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The layer-thickness definition used a clumsy word order.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘মিটারে স্তরের পুরুত্ব’."],
+            "resolution": "Changed it to ‘স্তরটির পুরুত্ব, মিটারে’."
+        },
+        {
+            "id": "bn-20260818-120",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-conversion instruction used an English loan and omitted the natural case marker.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘এলাকাকে m² এ রূপান্তর করুন’."],
+            "resolution": "Changed it to ‘ক্ষেত্রফলকে m²-এ রূপান্তর করুন’."
+        },
+        {
+            "id": "bn-20260818-121",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI length row used a Bengali symbol instead of the standard SI symbol m.",
+            "disposition": "resolved",
+            "evidence": ["The previous row ended with ‘মি’."],
+            "resolution": "Changed it to ‘দৈর্ঘ্য / মিটার / m’."
+        },
+        {
+            "id": "bn-20260818-122",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI mass row used a Bengali symbol instead of the standard kg symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous row ended with ‘কেজি’."],
+            "resolution": "Changed it to ‘ভর / কিলোগ্রাম / kg’."
+        },
+        {
+            "id": "bn-20260818-123",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI current row used a Bengali symbol instead of the standard A symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous row ended with ‘ক’."],
+            "resolution": "Changed it to ‘বৈদ্যুতিক প্রবাহ / অ্যাম্পিয়ার / A’."
+        },
+        {
+            "id": "bn-20260818-124",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage bullet used a Bengali symbol instead of standard V notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘ভি’."],
+            "resolution": "Changed it to ‘ভোল্টেজ: ভোল্ট (V)’."
+        },
+        {
+            "id": "bn-20260818-125",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The nominal-dimensions note used a literal construction for stranded-wire construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘আটকে থাকা নির্মাণ’ and an awkward measurement clause."],
+            "resolution": "Rewrote it with natural Bengali for product tolerances, insulation, and multi-wire construction."
+        }
+    ]
+}

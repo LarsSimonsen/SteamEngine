@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260818T235803282Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Hindi pass identified two protected-variable formula defects; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "hi-20260819-006",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The current-law formula translated the protected current variable I into Hindi text.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was Σ मैं = 0, which changes a mathematical variable into a word."],
+            "resolution": "Restored the canonical expression Σ I = 0."
+        },
+        {
+            "id": "hi-20260819-007",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.1",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The current-law balance formula translated the protected input and output variable names.",
+            "disposition": "resolved",
+            "evidence": ["The translated variable names in Σ मैं_में = Σ मैं_बाहर no longer matched the canonical formula identifiers."],
+            "resolution": "Restored Σ I_in = Σ I_out."
+        }
+    ]
+}

@@ -1,0 +1,720 @@
+{
+    "schemaVersion": 1,
+    "locale": "id",
+    "cycleId": "id-20261007T181123650Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Selected Indonesian after comparing effective cross-surface samples across locales: runtime, quad-coil, nicotine-base and stranded-wire wrong-sense translations gave the clearest cross-surface defect evidence. Queue priority is not a quality score; selection is sample-based. Independent review covered all 1115 canonical semantic entries, followed by route metadata and Ohm sentence composition. Canonical English, glossary, UI, and local technical articles were available.",
+        "limitations": [
+            "Model critique does not constitute competent human review or a global exhaustive locale ranking.",
+            "Existing machine-draft status and correction feedback remain enabled."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Passed translation metadata and queue validation, TypeScript, all 572 tests in 85 files, full production build, 61 route cases and generated-link checks across 10279 HTML files. Browser smoke checks passed on 15 Indonesian routes; battery, mod-range and Ohm desktop/mobile screenshots were inspected with no horizontal overflow. Result rendering used repository-derived API fixtures because the live calculation requests did not complete in the preview. The IIS broker verified the switch to the built blue slot; browser checks used the generated artifact through the local static server, not a verified IIS public URL."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Independent agent reviewed all 1115 effective entries: messages 308, calculators.batt 67, calculators.coil 80, calculators.converter 25, calculators.juice 55, calculators.modrange 49, calculators.tcr 42, calculators.wirewiz 101, comparisons.batteries 26, comparisons.mods 11, comparisons.materials 19, catalog 295, catalogText 37. Follow-up verified 49 overrides and identified one optional Ohm label, sentence composition, and two route descriptions. These were corrected, yielding 52 distinct corrected display entries."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Indonesian human review was performed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "User requested review, improvement and commit; no production publication."
+        }
+    },
+    "findings": [
+        {
+            "id": "id-independent-01-1",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Indonesian: Cell selection"
+            ],
+            "resolution": "Pemilihan sel"
+        },
+        {
+            "id": "id-independent-01-2",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Indonesian: Battery configuration"
+            ],
+            "resolution": "Konfigurasi baterai"
+        },
+        {
+            "id": "id-independent-01-3",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Indonesian: 1S — Single cell"
+            ],
+            "resolution": "1S — Sel tunggal"
+        },
+        {
+            "id": "id-independent-01-4",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Indonesian: Custom configuration"
+            ],
+            "resolution": "Konfigurasi khusus"
+        },
+        {
+            "id": "id-independent-01-5",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Indonesian: Cells in series"
+            ],
+            "resolution": "Sel dalam rangkaian seri"
+        },
+        {
+            "id": "id-independent-01-6",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Indonesian: Parallel strings"
+            ],
+            "resolution": "Cabang paralel"
+        },
+        {
+            "id": "id-independent-01-7",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous Indonesian: cells"
+            ],
+            "resolution": "sel"
+        },
+        {
+            "id": "id-independent-01-8",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous Indonesian: cell"
+            ],
+            "resolution": "sel"
+        },
+        {
+            "id": "id-independent-01-9",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Indonesian: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "https://www.fda.gov/tobacco-products/tobacco-products-ingredients-components/tips-help-avoid-vape-battery-fires-or-explosions — FDA advises against mixing brands, charge levels, or old and new batteries and requires following device recommendations.",
+                "https://www.batteryuniversity.com/article/bu-302-series-and-parallel-battery-configurations/ — Discusses matching cells, imbalance from weaker or differently aged cells, and reduced pack performance."
+            ],
+            "resolution": "Gunakan sel identik yang cocok satu sama lain serta memiliki usia dan kondisi yang sama. Pembagian arus dimodelkan secara ideal; sel terlemah membatasi kemampuan paket baterai."
+        },
+        {
+            "id": "id-independent-01-10",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Indonesian: Battery pack"
+            ],
+            "resolution": "Paket baterai"
+        },
+        {
+            "id": "id-independent-01-11",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Translate battery cell configuration controls: These effective user-facing strings remain English, including the matched-cell caution. Translate existing meaning without introducing new advice.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Indonesian: Estimated current per cell"
+            ],
+            "resolution": "Perkiraan arus per sel"
+        },
+        {
+            "id": "id-independent-02-1",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore cell-versus-pack input context: The target predates the cell-and-pack UI: it omits that entries are per cell and that the same cell type is used throughout the pack.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Indonesian: Prasetel baterai"
+            ],
+            "resolution": "Prasetel sel"
+        },
+        {
+            "id": "id-independent-02-2",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore cell-versus-pack input context: The target predates the cell-and-pack UI: it omits that entries are per cell and that the same cell type is used throughout the pack.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Indonesian: Prasetel baterai"
+            ],
+            "resolution": "Prasetel sel"
+        },
+        {
+            "id": "id-independent-02-3",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore cell-versus-pack input context: The target predates the cell-and-pack UI: it omits that entries are per cell and that the same cell type is used throughout the pack.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Indonesian: Pilih prasetel baterai internal atau masukkan nilai Anda sendiri di bawah."
+            ],
+            "resolution": "Pilih sel yang digunakan di seluruh paket baterai, atau masukkan nilai per sel di bawah."
+        },
+        {
+            "id": "id-independent-02-4",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore cell-versus-pack input context: The target predates the cell-and-pack UI: it omits that entries are per cell and that the same cell type is used throughout the pack.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Indonesian: Nilai baterai"
+            ],
+            "resolution": "Sel dan paket baterai"
+        },
+        {
+            "id": "id-independent-03-1",
+            "translationId": "calculators.batt.unregulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Distinguish device mod from operating mode: Modus denotes a mode, whereas the English label names an unregulated mod device.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unregulated mod",
+                "Previous Indonesian: Modus non-regulasi"
+            ],
+            "resolution": "Mod tanpa regulasi"
+        },
+        {
+            "id": "id-independent-04-1",
+            "translationId": "calculators.batt.estimatedRuntime",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore battery operating duration: Waktu proses means processing time rather than battery runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated runtime",
+                "Previous Indonesian: Perkiraan waktu proses"
+            ],
+            "resolution": "Perkiraan waktu pengoperasian"
+        },
+        {
+            "id": "id-independent-04-2",
+            "translationId": "calculators.batt.continuousRuntime",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore battery operating duration: Waktu proses means processing time rather than battery runtime.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous runtime",
+                "Previous Indonesian: Waktu proses terus menerus"
+            ],
+            "resolution": "Waktu pengoperasian kontinu"
+        },
+        {
+            "id": "id-independent-05-1",
+            "translationId": "calculators.coil.setupParallel4",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore four-coil count: Segi empat describes quadrilateral geometry. These options select four coils, not square-shaped coils.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quad coil (parallel)",
+                "Previous Indonesian: Coil segi empat (paralel)"
+            ],
+            "resolution": "Empat coil (paralel)"
+        },
+        {
+            "id": "id-independent-05-2",
+            "translationId": "calculators.coil.setupSeries4",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore four-coil count: Segi empat describes quadrilateral geometry. These options select four coils, not square-shaped coils.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quad coil (series)",
+                "Previous Indonesian: Coil segi empat (seri)"
+            ],
+            "resolution": "Empat coil (seri)"
+        },
+        {
+            "id": "id-independent-05-3",
+            "translationId": "calculators.coil.setupSeriesParallel4",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore four-coil count: Segi empat describes quadrilateral geometry. These options select four coils, not square-shaped coils.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quad coil (series-parallel)",
+                "Previous Indonesian: Coil segi empat (seri-paralel)"
+            ],
+            "resolution": "Empat coil (seri-paralel)"
+        },
+        {
+            "id": "id-independent-06-1",
+            "translationId": "calculators.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore build parameters noun phrase: Build is a noun modifying parameters; buat parameter erroneously tells the user to create parameters.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose your wire and build parameters to estimate wraps, resistance, and heat.",
+                "Previous Indonesian: Pilih kawat Anda dan buat parameter untuk memperkirakan lilitan, resistansi, dan panas."
+            ],
+            "resolution": "Pilih kawat dan parameter konstruksi untuk memperkirakan jumlah lilitan, resistansi, dan panas."
+        },
+        {
+            "id": "id-independent-07-1",
+            "translationId": "calculators.juice.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore nicotine base properties: Informasi dasar nikotin means basic information about nicotine rather than properties of the nicotine base liquid.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Input the properties of your nicotine base and your desired mix.",
+                "Previous Indonesian: Masukkan informasi dasar nikotin Anda dan komposisi campuran yang diinginkan."
+            ],
+            "resolution": "Masukkan sifat basis nikotin Anda dan komposisi campuran yang diinginkan."
+        },
+        {
+            "id": "id-independent-08-1",
+            "translationId": "calculators.converter.needleGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Correct BWG label expansion: The target replaces needle gauge with British Wire Gauge, contrary to the source and catalog Birmingham Wire Gauge identity. Preserve the source abbreviation and qualify its needle-gauge use.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG (needle gauge)",
+                "Previous Indonesian: British Wire Gauge (BWG)"
+            ],
+            "resolution": "BWG (gauge jarum)"
+        },
+        {
+            "id": "id-independent-09-1",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore current-versus-voltage crossover meaning: Median is not a translation of the source crossover point. It identifies a different mathematical concept.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Indonesian: Resistansi median"
+            ],
+            "resolution": "Titik peralihan batas arus/tegangan"
+        },
+        {
+            "id": "id-independent-09-2",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore current-versus-voltage crossover meaning: Median is not a translation of the source crossover point. It identifies a different mathematical concept.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Indonesian: median"
+            ],
+            "resolution": "Titik peralihan batas arus/tegangan"
+        },
+        {
+            "id": "id-independent-10-1",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore resistance guidance and upper-range midpoint: The current strings claim optimal resistance and an optimal point, while English deliberately describes guidance and the upper-range midpoint.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Indonesian: Resistansi optimal"
+            ],
+            "resolution": "Panduan resistansi"
+        },
+        {
+            "id": "id-independent-10-2",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore resistance guidance and upper-range midpoint: The current strings claim optimal resistance and an optimal point, while English deliberately describes guidance and the upper-range midpoint.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Indonesian: Titik optimal"
+            ],
+            "resolution": "Titik tengah rentang atas"
+        },
+        {
+            "id": "id-independent-11-1",
+            "translationId": "calculators.modrange.voltageLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore voltage-limit requirement grammar: Yang diperlukan means the limit that is required; the source says the voltage limit requires a resistance bound. The surrounding UI appends that bound.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the voltage limit requires",
+                "Previous Indonesian: batas tegangan yang diperlukan"
+            ],
+            "resolution": "batas tegangan memerlukan"
+        },
+        {
+            "id": "id-independent-12-1",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Fix Ohm intro assembled sentence: The UI places law links between these fragments. Current Indonesian word order produces Ini sederhana Hukum Ohm dan ... kalkulator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous Indonesian: Ini sederhana"
+            ],
+            "resolution": "Ini adalah kalkulator"
+        },
+        {
+            "id": "id-independent-12-2",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Fix Ohm intro assembled sentence: The UI places law links between these fragments. Current Indonesian word order produces Ini sederhana Hukum Ohm dan ... kalkulator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous Indonesian: kalkulator."
+            ],
+            "resolution": "yang sederhana."
+        },
+        {
+            "id": "id-independent-13-1",
+            "translationId": "messages.catalogManager.shared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore shared catalog adjective: Berbagi katalog means sharing a catalog (a verb), whereas this label describes a catalog shared by calculators.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: shared __se_arg_0__ catalog",
+                "Previous Indonesian: berbagi katalog __SE_ARG_0__"
+            ],
+            "resolution": "katalog __SE_ARG_0__ bersama"
+        },
+        {
+            "id": "id-independent-14-1",
+            "translationId": "messages.catalogEditor.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Distinguish rated from measured capacity: Terukur means measured. Rated capacity is a declared rating and must not imply an independent measurement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity (mAh)",
+                "Previous Indonesian: Kapasitas terukur (mAh)"
+            ],
+            "resolution": "Kapasitas nominal (mAh)"
+        },
+        {
+            "id": "id-independent-14-2",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Distinguish rated from measured capacity: Terukur means measured. Rated capacity is a declared rating and must not imply an independent measurement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity",
+                "Previous Indonesian: Kapasitas terukur"
+            ],
+            "resolution": "Kapasitas nominal"
+        },
+        {
+            "id": "id-independent-15-1",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Describe raised battery terminal: Tombol atas reads as a top button/control rather than the shape of a cell terminal. Match the flat-top label with terminal-shape wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous Indonesian: Tombol atas"
+            ],
+            "resolution": "Ujung menonjol"
+        },
+        {
+            "id": "id-independent-16-1",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore measured as-sold dimension notes instruction: Gunakan catatan untuk mengukur says use the notes to perform measurement. The source says the notes store measured as-sold dimensions. Paket mod also omits battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Indonesian: Masukkan setidaknya satu batas pengosongan kontinu. Baterai terintegrasi adalah paket mod internal, sehingga dimensi sel individual tidak diperlukan. Dimensi sel yang dapat dilepas bersifat nominal; gunakan catatan untuk mengukur dimensi produk yang dijual. Ketika kedua batas pengosongan ditetapkan, kalkulator terus menggunakan batas turunan yang lebih aman jika keduanya berbeda secara signifikan."
+            ],
+            "resolution": "Masukkan setidaknya satu batas pengosongan kontinu. Baterai terintegrasi merupakan paket baterai internal mod, sehingga dimensi sel individual tidak diperlukan. Dimensi sel yang dapat dilepas bersifat nominal; gunakan catatan untuk mencantumkan dimensi terukur produk sebagaimana dijual. Jika kedua batas pengosongan ditetapkan dan berbeda secara signifikan, kalkulator tetap menggunakan batas hasil perhitungan yang lebih aman."
+        },
+        {
+            "id": "id-independent-17-1",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore heating water action: Air pemanas is heater water; this worked example is the action of heating water.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heating water",
+                "Previous Indonesian: Air pemanas"
+            ],
+            "resolution": "Memanaskan air"
+        },
+        {
+            "id": "id-independent-18-1",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Correct inconsistent heat-capacity thousands separator: The target uses decimal commas throughout, but retains 4,180 from English here. In Indonesian this reads as 4.180 rather than 4180, and contradicts the following formula using 4.180.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat 0.20 kg of water from 20 °C to 70 °C using c = 4,180 J/(kg·K).",
+                "Previous Indonesian: Panaskan 0,20 kg air dari 20 °C menjadi 70 °C menggunakan c = 4,180 J/(kg·K)."
+            ],
+            "resolution": "Panaskan 0,20 kg air dari 20 °C menjadi 70 °C menggunakan c = 4180 J/(kg·K)."
+        },
+        {
+            "id": "id-independent-19-1",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Restore stranded-conductor construction: Terdampar means washed ashore/stranded geographically, not construction from wire strands.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: These values are nominal. Product tolerances, coatings, insulation, and stranded construction can change the measured or overall diameter.",
+                "Previous Indonesian: Nilai ini bersifat nominal. Toleransi produk, pelapisan, isolasi, dan konstruksi terdampar dapat mengubah diameter terukur atau keseluruhan."
+            ],
+            "resolution": "Nilai ini bersifat nominal. Toleransi produk, pelapisan, isolasi, dan konstruksi kawat serabut dapat mengubah diameter terukur atau diameter keseluruhan."
+        },
+        {
+            "id": "id-independent-20-1",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore wire gauge system identity and table heading: Pengukur denotes a measuring instrument rather than the gauge size system. Keep Standard Wire Gauge as the named system and use glossary gauge kawat terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: SWG is Standard Wire Gauge, the historical British wire and sheet-thickness system.",
+                "Previous Indonesian: SWG adalah Pengukur Kawat Standar, sistem ketebalan kawat dan lembaran Inggris yang bersejarah."
+            ],
+            "resolution": "SWG adalah Standard Wire Gauge, sistem ukuran kawat dan ketebalan lembaran Inggris yang bersejarah."
+        },
+        {
+            "id": "id-independent-20-2",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore wire gauge system identity and table heading: Pengukur denotes a measuring instrument rather than the gauge size system. Keep Standard Wire Gauge as the named system and use glossary gauge kawat terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous Indonesian: Pengukur"
+            ],
+            "resolution": "Nomor gauge"
+        },
+        {
+            "id": "id-independent-21-1",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Make increasing AWG number unambiguous: Menambah ukuran sebanyak tiga ukuran can mean increasing physical size; the source says increase the gauge number by three, which reduces physical area.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous Indonesian: Resistansi tergantung pada panjang konduktor L, luas penampang A, dan resistivitas material ρ. Karena luas bervariasi dengan kuadrat diameter, perbedaan diameter yang kecil dapat menimbulkan perbedaan resistansi yang besar. Dalam AWG, menambah ukuran sebanyak tiga ukuran kira-kira akan mengurangi separuh luas dan menggandakan resistansi per satuan panjang untuk material dan suhu yang sama."
+            ],
+            "resolution": "Resistansi bergantung pada panjang konduktor L, luas penampang A, dan resistivitas material ρ. Karena luas berubah sebanding dengan kuadrat diameter, perbedaan diameter yang kecil dapat menimbulkan perbedaan resistansi yang besar. Dalam AWG, menaikkan nomor gauge sebanyak tiga kira-kira mengurangi luas menjadi separuh dan menggandakan resistansi per satuan panjang untuk material dan suhu yang sama."
+        },
+        {
+            "id": "id-independent-22-1",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore through-layer temperature difference: Antar lapisan means between layers. The source difference is across the thickness of one layer.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: ΔT is the temperature difference across the layer.",
+                "Previous Indonesian: ΔT adalah perbedaan suhu antar lapisan."
+            ],
+            "resolution": "ΔT adalah perbedaan suhu antara kedua sisi lapisan."
+        },
+        {
+            "id": "id-independent-23-1",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Distinguish mechanical strain from pressure: Tekanan mekanis means mechanical pressure; the source specifies strain, or regangan.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A manufacturer's TCR normally applies to a stated temperature and resistance range. Temperature gradients, material changes, contacts, mechanical strain, and self-heating can make a real result differ from the first-order estimate.",
+                "Previous Indonesian: TCR pabrikan biasanya berlaku pada kisaran suhu dan resistansi yang ditentukan. Gradien suhu, perubahan material, kontak, tekanan mekanis, dan pemanasan sendiri dapat membuat hasil nyata berbeda dari perkiraan tingkat pertama."
+            ],
+            "resolution": "TCR pabrikan biasanya berlaku pada rentang suhu dan resistansi yang ditentukan. Gradien suhu, perubahan material, kontak, regangan mekanis, dan pemanasan sendiri dapat membuat hasil nyata berbeda dari perkiraan orde pertama."
+        },
+        {
+            "id": "id-independent-24-1",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Use specific heat consistently: Panas spesifik is a literal rendering that breaks the established capacity terminology used in the same article.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The simple equation assumes specific heat is roughly constant. Heat loss, convection, radiation, evaporation, contact resistance, and uneven temperature can make a real result differ from the ideal.",
+                "Previous Indonesian: Persamaan sederhana mengasumsikan panas spesifik kira-kira konstan. Kehilangan panas, konveksi, radiasi, penguapan, resistansi kontak, dan suhu yang tidak merata dapat membuat hasil nyata berbeda dari ideal."
+            ],
+            "resolution": "Persamaan sederhana mengasumsikan kapasitas kalor spesifik kurang lebih konstan. Kehilangan panas, konveksi, radiasi, penguapan, resistansi kontak, dan suhu yang tidak merata dapat membuat hasil nyata berbeda dari hasil ideal."
+        },
+        {
+            "id": "id-independent-25-1",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "Restore worked-example title: Contoh perhitungan drops resistive load meaning and duplicates its section heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A resistive load",
+                "Previous Indonesian: Contoh perhitungan"
+            ],
+            "resolution": "Beban resistif"
+        },
+        {
+            "id": "id-independent-26-1",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Preserve pound unit symbol: The source lb symbol was replaced by pon, conflicting with unit-symbol preservation. Indonesian pon can also suggest a different conventional quantity. The following paragraph already explains pounds.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 lb ≈ 0.45359237 kg.",
+                "Previous Indonesian: 1 pon ≈ 0,45359237 kg."
+            ],
+            "resolution": "1 lb ≈ 0,45359237 kg."
+        },
+        {
+            "id": "id-independent-27-1",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore inverse-function terminology: Terbalik can suggest reversing or reciprocating a function. Invers names the inverse trigonometric function precisely.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use an inverse trigonometric function when the side lengths are known.",
+                "Previous Indonesian: Gunakan fungsi trigonometri terbalik jika panjang sisinya diketahui."
+            ],
+            "resolution": "Gunakan fungsi trigonometri invers jika panjang sisinya diketahui."
+        },
+        {
+            "id": "id-independent-28-1",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Restore doubling rather than unspecified multiplication: Melipatgandakan can mean increasing severalfold, while this relationship specifically requires doubling current.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: At constant resistance, doubling current produces four times the heating power.",
+                "Previous Indonesian: Pada resistansi konstan, melipatgandakan arus akan menghasilkan daya pemanasan empat kali lebih besar."
+            ],
+            "resolution": "Pada resistansi konstan, menggandakan arus menghasilkan daya pemanasan empat kali lipat."
+        },
+        {
+            "id": "id-ohm-link",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Optional Ohm link label was absent and the UI used English. Localized the supported optional label.",
+            "disposition": "resolved",
+            "evidence": [
+                "Previous display text: Joule's law"
+            ],
+            "resolution": "Hukum Joule"
+        },
+        {
+            "id": "id-juice-metadata",
+            "translationId": "localeMetadata.id./juice.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Liquid strength means nicotine concentration.",
+            "disposition": "resolved",
+            "evidence": [
+                "Previous display text: Rencanakan kekuatan liquid dan perbandingan bahan."
+            ],
+            "resolution": "Rencanakan kadar nikotin dan perbandingan bahan liquid."
+        },
+        {
+            "id": "id-modrange-metadata",
+            "translationId": "localeMetadata.id./modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Regulated means electronically regulated, not orderly.",
+            "disposition": "resolved",
+            "evidence": [
+                "Previous display text: Temukan rentang resistansi yang berguna dari batas keluaran mod teratur."
+            ],
+            "resolution": "Temukan rentang resistansi yang berguna dari batas keluaran mod teregulasi."
+        },
+        {
+            "id": "id-joule-source-wording",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "low",
+            "summary": "English says current turns resistance into heat; the existing Indonesian correctly says electrical energy.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Existing Indonesian preserves the engineering meaning documented in the Steam Engine Joule heating reference."
+            ],
+            "resolution": "Rejected a literal target rewrite. Canonical English editorial correction remains outside this locale task."
+        }
+    ]
+}

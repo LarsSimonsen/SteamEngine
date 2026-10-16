@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260819T184007907Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Hindi locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Hindi critique found three awkward or inconsistent catalog metadata labels." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Hindi human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{
+        "id": "hi-catalog-metadata", "translationId": "shared.encyclopediaDetail.breadcrumb", "category": "translation-defect", "severity": "medium",
+        "summary": "Navigation, record status, and catalog impact labels were transliterated incompletely or used awkward literal wording.", "disposition": "resolved",
+        "evidence": ["These labels identify navigation and research-record metadata."], "resolution": "Used consistent Hindi UI terminology while retaining familiar technical loanwords."
+    }]
+}

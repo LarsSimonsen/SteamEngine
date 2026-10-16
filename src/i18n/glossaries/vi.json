@@ -7,9 +7,14 @@
             "source": "vaping",
             "preferred": "vape",
             "context": "General vaping terminology and interface copy.",
-            "discouraged": ["hút thuốc"],
+            "discouraged": [
+                "hút thuốc"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese vaping terminology research" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese vaping terminology research"
+            },
             "confidence": "high"
         },
         "electronic-cigarette": {
@@ -17,25 +22,38 @@
             "preferred": "thuốc lá điện tử",
             "context": "Formal name for an electronic-cigarette device.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese government terminology and native usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese government terminology and native usage"
+            },
             "confidence": "high"
         },
         "atomizer": {
             "source": "atomizer",
             "preferred": "đầu đốt",
             "context": "Vaping component that heats e-liquid; use with device-level output wording.",
-            "discouraged": ["máy phun"],
+            "discouraged": [
+                "máy phun"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese vaping usage and technical descriptions" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese vaping usage and technical descriptions"
+            },
             "confidence": "medium"
         },
         "coil": {
             "source": "coil",
             "preferred": "coil",
             "context": "Technical calculator term for the resistive heating element; dây đốt is the explanatory Vietnamese term.",
-            "discouraged": ["cuộn dây"],
+            "discouraged": [
+                "cuộn dây"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese vaping glossary and coil guides" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese vaping glossary and coil guides"
+            },
             "confidence": "high"
         },
         "replaceable-coil-head": {
@@ -43,16 +61,24 @@
             "preferred": "đầu coil thay thế",
             "context": "Replaceable atomizer head used in a tank or pod.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese vaping usage"
+            },
             "confidence": "medium"
         },
         "e-liquid": {
             "source": "e-liquid",
             "preferred": "tinh dầu",
             "context": "Vaping liquid used in a tank or atomizer.",
-            "discouraged": ["nước ép"],
+            "discouraged": [
+                "nước ép"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese native vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese native vaping usage"
+            },
             "confidence": "high"
         },
         "battery": {
@@ -60,7 +86,10 @@
             "preferred": "pin",
             "context": "Battery or cell used to power a vaping device.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Vietnamese technical and vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese technical and vaping usage"
+            },
             "confidence": "high"
         },
         "output-power": {
@@ -68,18 +97,246 @@
             "preferred": "công suất đầu ra của đầu đốt",
             "context": "Power emitted by the atomizer, not an interface or connector.",
             "state": "needs-review",
-            "provenance": { "kind": "machine", "method": "Vietnamese vaping terminology research" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Vietnamese vaping terminology research"
+            },
             "confidence": "medium",
             "uncertainty": {
                 "reason": "Vietnamese sources use both đầu đốt and máy phun for atomizer; the calculator context requires clear emitted-power wording.",
                 "bestCurrentTranslation": "Công suất đầu ra của đầu đốt",
-                "alternatives": ["Công suất phát ra từ đầu đốt", "Công suất đầu ra của atomizer"],
+                "alternatives": [
+                    "Công suất phát ra từ đầu đốt",
+                    "Công suất đầu ra của atomizer"
+                ],
                 "sources": [
-                    { "label": "Unismoke: Thuật ngữ vape", "url": "https://unismoke.vn/pages/thuat-ngu-vape" },
-                    { "label": "Vietnamese Ministry of Science and Technology", "url": "https://mst.gov.vn/thuoc-la-dien-tu-hiem-hoa-can-duoc-loai-tru-som-197156676.htm" },
-                    { "label": "Ecovape: Check Atomizer", "url": "https://ecovape.vn/vape-loi-check-atomizer-check-batterry-low-res" }
+                    {
+                        "label": "Unismoke: Thuật ngữ vape",
+                        "url": "https://unismoke.vn/pages/thuat-ngu-vape"
+                    },
+                    {
+                        "label": "Vietnamese Ministry of Science and Technology",
+                        "url": "https://mst.gov.vn/thuoc-la-dien-tu-hiem-hoa-can-duoc-loai-tru-som-197156676.htm"
+                    },
+                    {
+                        "label": "Ecovape: Check Atomizer",
+                        "url": "https://ecovape.vn/vape-loi-check-atomizer-check-batterry-low-res"
+                    }
                 ]
             }
+        },
+        "electrical-resistance": {
+            "source": "resistance",
+            "preferred": "điện trở",
+            "context": "Electrical resistance, not opposition.",
+            "discouraged": [
+                "kháng chiến",
+                "sức đề kháng"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "electrical-current": {
+            "source": "current",
+            "preferred": "dòng điện",
+            "context": "Electric current, not the present time.",
+            "discouraged": [
+                "hiện tại"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "electrical-power": {
+            "source": "power",
+            "preferred": "công suất",
+            "context": "Energy transferred per time, not authority.",
+            "discouraged": [
+                "quyền lực"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-capacity": {
+            "source": "capacity",
+            "preferred": "dung lượng",
+            "context": "Charge capacity in mAh, distinct from power.",
+            "discouraged": [
+                "công suất"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "cell": {
+            "source": "cell",
+            "preferred": "cell pin",
+            "context": "One electrochemical cell, distinct from the full pack.",
+            "discouraged": [
+                "tế bào",
+                "ô"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "pack": {
+            "source": "battery pack",
+            "preferred": "bộ pin",
+            "context": "Complete assembly of cells.",
+            "discouraged": [
+                "gói"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "wire-gauge": {
+            "source": "wire gauge",
+            "preferred": "cỡ dây",
+            "context": "AWG, SWG and BWG conductor-size systems.",
+            "discouraged": [
+                "máy đo",
+                "thước dây"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "heat-capacity": {
+            "source": "heat capacity",
+            "preferred": "nhiệt dung",
+            "context": "Energy required per temperature change.",
+            "discouraged": [
+                "công suất nhiệt"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "mật độ dòng nhiệt",
+            "context": "Heat-transfer rate per unit area.",
+            "discouraged": [
+                "dòng nhiệt"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "wire-mass": {
+            "source": "mass",
+            "preferred": "khối lượng",
+            "context": "Physical mass.",
+            "discouraged": [
+                "thánh lễ"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "wrap-count": {
+            "source": "wraps",
+            "preferred": "số vòng quấn",
+            "context": "Number of coil winding turns.",
+            "discouraged": [
+                "kết thúc tốt đẹp"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "twist-pitch": {
+            "source": "twist pitch",
+            "preferred": "bước xoắn",
+            "context": "Axial distance per full wire twist.",
+            "discouraged": [
+                "cao độ xoắn"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "control-board": {
+            "source": "control board",
+            "preferred": "bo mạch điều khiển",
+            "context": "Electronic regulating board.",
+            "discouraged": [
+                "bảng điều khiển"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "form-factor": {
+            "source": "form factor",
+            "preferred": "dạng pin",
+            "context": "Cylindrical/prismatic shape; separate from size code.",
+            "discouraged": [
+                "yếu tố hình thức"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5496946968214683"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://www.steam-engine.org/batt" />
+    <meta property="og:url" content="https://www.steam-engine.org/batt" />
+    <title>Battery drain | Steam Engine | free vaping calculators</title>
+    <meta property="og:title" content="Battery drain | Steam Engine | free vaping calculators" />
+    <meta name="description" content="Battery drain calculator for APVs/mech mods. Returns amp drain, power drain, amp limit headroom, run time, estimated number of puffs, etc." />
+    <meta property="og:description" content="Battery drain calculator for APVs/mech mods. Returns amp drain, power drain, amp limit headroom, run time, estimated number of puffs, etc." />
+    <link id="bscss" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="se.css?v=8" rel="stylesheet" />
+<script defer src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script defer src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="steam-engine.js?v=19"></script>
+<script defer src="analytics.js?v=1"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Lars Olaf Simonsen">
+<meta property="og:image" content="https://www.steam-engine.org/static/Hi-Res-Icon444.png" />
+<meta property="og:site_name" content="Steam Engine" />
+<meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" sizes="192x192" href="/static/icon192x192.png" />
+<link rel="icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/static/icon128x128.png" />
+<base target="_parent" />
+</head>
+<body id="batt">
+    <nav id="toppnav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#setoppmeny" aria-expanded="false" style="margin-bottom:0px;">
+                <span style="display:inline-block;margin-right:0.5em;">Menu</span>
+                <span style="display:inline-block;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </button>
+            <a href="https://www.steam-engine.org" rel="bookmark">
+                <img src="static/logo.png" alt="Steam Engine logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="setoppmeny">
+            <ul class="nav navbar-nav" id="choo-topnav">
+                <li class="tnf" id="navtab-main">
+                    <a class="tnf" href="https://www.steam-engine.org">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-ohm">
+                    <a class="tnf" href="ohm">
+                        Ohm's law
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-coil">
+                    <a class="tnf" href="coil">
+                        Coil wrapping
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-wirewiz">
+                    <a class="tnf" href="wirewiz">
+                        Wire Wizard
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-batt">
+                    <a class="tnf" href="batt">
+                        Battery drain
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-modrange">
+                    <a class="tnf" href="modrange">
+                        Mod range
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-juice">
+                    <a class="tnf" href="juice">
+                        E-liquid
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-converter">
+                    <a class="tnf" href="converter">
+                        Convert
+                    </a>
+                </li>
+
+                <li class="tnf" id="navtab-new-site">
+                    <a class="tnf" href="..">
+                        New version!
+                    </a>
+                </li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navtab-about" class="tnf">
+                    <a class="tnf" href="about" rel="author license">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+        <div class="container">
+            <a class="legacy-new-notice" href="../batt"><strong>Try the new battery drain calculator here.</strong></a>
+        </div>
+<div class="sebackto"></div>
+    <div class="container">
+        <main>
+            <div class="row">
+                <div class="col col-sm-6 col-md-3 col-always">
+                    <div class="btn-group pull-right" style="margin-top:1em;">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Menu <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" id="bd-reset" title="Reset to default values">Reset</a></li>
+
+                            <li class="divider"></li>
+                            <li><a href="#" id="bd-save" title="Save settings to a cookie">Save</a></li>
+                            <li><a href="#" id="bd-load" title="Load settings from a cookie, if you saved them earlier">Load</a></li>
+
+                        </ul>
+                    </div>
+                    <label>Device type</label>
+                    <div id="bd-pv-radio">
+                        <div class="radio">
+                            <label for="bd-pv-mech">
+                                <input type="radio" id="bd-pv-mech" name="bd-pv" value="apv" />
+                                unregulated (<abbr title="mechanical mod">mech</abbr>)
+                            </label>
+                        </div>
+                        <div class="menumsg"></div>
+                        <div class="radio">
+                            <label for="bd-pv-apv">
+                                <input type="radio" id="bd-pv-apv" name="bd-pv" value="mech" />
+                                regulated (<abbr title="advanced personal vaporizer">APV</abbr>)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Atomizer resistance</label>
+                        <div class="input-group">
+                            <input type="number" min="0.1" max="10" step="0.1" class="form-control text-right" id="bd-attyres" />
+                            <span class="input-group-addon"><span>&ohm;</span></span>
+                        </div>
+                    </div>
+                    <div class="bd-hidemech" id="bd-mode-radio">
+                        <label>Mode</label>
+                        <div>
+                            <div class="radio">
+                                <label for="bd-mode-vv">
+                                    <input type="radio" id="bd-mode-vv" name="bd-mode" value="vv" />
+                                    voltage regulation (<abbr title="variable voltage">VV</abbr>)
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="bd-mode-vw">
+                                    <input type="radio" id="bd-mode-vw" name="bd-mode" value="vw" />
+                                    power regulation (<abbr title="variable wattage">VW</abbr>)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group bd-hidemech bd-hidevw">
+                        <label>Voltage setting</label>
+                        <div class="input-group">
+                            <input type="number" min="0" max="1000" step="0.1" class="form-control text-right" id="bd-vapeu" />
+                            <span class="input-group-addon"><span>V</span></span>
+                        </div>
+                        <span class="help-block">User selected voltage setting.</span>
+                    </div>
+                    <div class="form-group bd-hidemech bd-hidevv">
+                        <label>Power (wattage) setting</label>
+                        <div class="input-group">
+                            <input type="number" min="0" max="1000" step="0.1" class="form-control text-right" id="bd-vapep" />
+                            <span class="input-group-addon"><span>W</span></span>
+                        </div>
+                        <span class="help-block">User selected power setting.</span>
+                    </div>
+                    <div class="form-group blinky" data-blink=".presettarget" title="Presets for battery capacity, nominal voltage, and C rating.">
+                        <a class="pull-right btn btn-link btn-xs" href="customdata#batt" title="Manage your custom presets">Custom battery presets</a>
+                        <label>Battery presets</label>
+                        <select class="form-control" id="bd-battpre"></select>
+                    </div>
+                    <div class="formfactorfilter"></div>
+                </div>
+                <div class="col col-sm-6 col-md-3 attyresultscol">
+                    <div class="form-group bd-hidemech">
+                        <label><abbr title="the efficiency of the regulating circuit">APV efficiency</abbr></label>
+                        <div class="input-group">
+                            <input type="number" min="1" max="100" step="1" class="form-control text-right" id="bd-effic" />
+                            <span class="input-group-addon">%</span>
+                        </div>
+                        <span class="help-block">Most APVs are 80&ndash;95% efficient.</span>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <i class="glyphicon glyphicon-cloud-upload pull-right"></i>
+                            <h3 class="panel-title">Atomizer <small>&ndash; what hits your topper</small></h3>
+                        </div>
+                        <table class="table table-striped table-condesed" id="bd-attyresults"></table>
+                        <script id="attyresults-template" type="text/x-handlebars-template">
+                            <tbody>
+                                <tr>
+                                    <td>Voltage</td>
+                                    <td class="text-right">{{u}}</td>
+                                    <td>V</td>
+                                </tr>
+                                <tr>
+                                    <td>Current</td>
+                                    <td class="text-right">{{i}}</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Power</td>
+                                    <td class="text-right">{{p}}</td>
+                                    <td>W</td>
+                                </tr>
+                            </tbody>
+                        </script>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-3 col-always">
+                    <div class="form-group">
+                        <label>Battery voltage</label>
+                        <div class="input-group">
+                            <input type="number" min="0.1" max="100" step="0.1" class="form-control text-right" id="bd-battu" />
+                            <span class="input-group-addon"><span>V</span></span>
+                        </div>
+                        <span class="help-block bd-hidemech">For calculating battery current and amp limit headroom.</span>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <i class="glyphicon glyphicon-signal glyphicon-flipped pull-right"></i>
+                            <h3 class="panel-title">Battery drain <small>&ndash; what taxes your battery</small></h3>
+                        </div>
+                        <table class="table table-striped table-condesed" id="bd-battresults"></table>
+                        <script id="battresults-template" type="text/x-handlebars-template">
+                            <tbody>
+                                <tr>
+                                    <td>Voltage</td>
+                                    <td class="text-right">{{u}}</td>
+                                    <td>V</td>
+                                </tr>
+                                <tr>
+                                    <td>Current</td>
+                                    <td class="text-right">{{i}}</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Power</td>
+                                    <td class="text-right">{{p}}</td>
+                                    <td>W</td>
+                                </tr>
+                            </tbody>
+                        </script>
+                    </div>
+                    <div class="panel panel-primary" id="bd-battlimitpanel">
+                        <div class="panel-heading">
+                            <i class="glyphicon glyphicon-ban-circle pull-right"></i>
+                            <h3 class="panel-title">Amp limit <small>&ndash; how much your battery can take</small></h3>
+                        </div>
+                        <table class="table table-striped table-condesed" id="bd-battlimit"></table>
+                        <script id="battlimit-template" type="text/x-handlebars-template">
+                            <tbody>
+                                <tr title="Battery capacity multiplied with C rating">
+                                    <td>Amp limit</td>
+                                    <td class="text-right">{{amplimit}}</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>Amp headroom <small>@ {{battu}} V</small></td>
+                                    {{#if over100}}
+                                    <td class="text-right danger" title="Overcurrent">
+                                        {{else if over90}}
+                                    <td class="text-right danger" title="Almost no headroom - You should have at least 20% headroom">
+                                        {{else if over80}}
+                                    <td class="text-right warning" title="You should have at least 20% headroom">
+                                        {{else if over70}}
+                                    <td class="text-right">
+                                        {{else if ok}}
+                                    <td class="text-right success">
+                                        {{/if}}
+                                        {{headroom}}
+                                    </td>
+                                    <td>%</td>
+                                </tr>
+                            </tbody>
+                        </script>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-3 col-always">
+                    <div class="form-group presettarget">
+                        <label>Battery capacity</label>
+                        <div class="input-group">
+                            <input type="number" min="1" step="1" class="form-control text-right" id="bd-battcap" />
+                            <span class="input-group-addon"><span>mAh</span></span>
+                        </div>
+                        <span class="help-block">
+                            Capacity affects runtime and current/headroom.
+                        </span>
+                    </div>
+                    <div class="form-group presettarget">
+                        <label>Nominal voltage and C rating</label>
+                        <div class="input-group">
+                            <input type="number" min="0.1" step="0.1" class="form-control text-right" id="bd-nomu" placeholder="Nominal voltage" />
+                            <span class="input-group-addon">V</span>
+                            <input type="number" min="1" step="0.1" class="form-control text-right" id="bd-crating" placeholder="C rating" />
+                            <span class="input-group-addon">C</span>
+                        </div>
+                        <span class="help-block">
+                            Nominal voltage affects runtime.
+                            C rating affects max current and headroom.
+                        </span>
+                    </div>
+                    <div class="panel panel-success" id="bd-battruntimepanel">
+                        <div class="panel-heading">
+                            <i class="glyphicon glyphicon-time pull-right"></i>
+                            <h3 class="panel-title">Runtime <small>&ndash; how long you can vape</small></h3>
+                        </div>
+                        <table class="table table-striped table-condesed" id="bd-battruntime"></table>
+                        <script id="battruntime-template" type="text/x-handlebars-template">
+                            <tbody>
+                                <tr>
+                                    <td>Battery energy <small class="text-muted">@ {{nomu}} V</small></td>
+                                    <td class="text-right">{{cappow}}</td>
+                                    <td title="Watt-hours">Wh</td>
+                                </tr>
+                                <tr>
+                                    <td>"Nominal" power <small class="text-muted">{{nomu}} V @ {{attyres}} &ohm;</small></td>
+                                    <td class="text-right">{{nomp}}</td>
+                                    <td>W</td>
+                                </tr>
+                                <tr title="How long your battery will last if you fire your mod continuously.">
+                                    <td>Estimated total runtime</td>
+                                    <td class="text-right">{{battime}}</td>
+                                    <td>min</td>
+                                </tr>
+                                <tr>
+                                    <td>Estimated # <small class="text-muted">5 sec</small> puffs</td>
+                                    <td class="text-right">{{battpuffs}}</td>
+                                    <td><i class="glyphicon glyphicon-cloud text-muted"></i></td>
+                                </tr>
+                            </tbody>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <section class="aboutbattery"></section>
+        </main>
+        <!-- steam-engine-ad:start provider="steam-engine-waterfall" placement="primary-banner" -->
+        <div class="ad-slot se-ad-placement text-center" aria-label="Advertisement"
+            data-ad-context="batt" data-ad-placement="legacy-calculator-footer"
+            style="margin:1.5em auto;min-height:250px"></div>
+        <script async src="/advertising/runtime.js"></script>
+        <!-- steam-engine-ad:end -->
+        <div class="howdoesitwork">
+            <div class="row">
+                <div class="col col-md-12">
+                    <h2>How battery drain is calculated <small>&ndash; horses for courses</small></h2>
+                    <p>
+                        There are two main types of mods: Regulated, and unregulated (mechanical).
+                        (Putting a Kick in a mech mod automagically turns it into a regulated mod.)
+                        As far as battery drain is concerned, these are two completely different animals.
+                    </p>
+                    <p>
+                        In an unregulated mod, a lower resistance atomizer means more current drawn from the battery, and less battery life.
+                        In a regulated mod, things get more complicated, and the rules are different.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4">
+                    <h3>Unregulated mods <small>&ndash; a battery with a coil on it</small></h3>
+                    <p>
+                        Unregulated (mech) mods are very simple devices. They have one circuit. This circuit can be easily modelled using <a href="https://en.wikipedia.org/wiki/Ohm's_law" class="wplink">Ohm's law</a>.
+                        In other words, if you have a basic understanding of Ohm's law, that is all it takes.
+                    </p>
+                    <p>
+                        The battery drain is determined by two factors:
+                    </p>
+                    <ul>
+                        <li>The resistance of the atomizer, which is more or less constant after you have built your coil(s).</li>
+                        <li>The voltage of the battery, which decreases as the battery drains. </li>
+                    </ul>
+                    <p>
+                        Using a single, fully charged, Li-ion cell, the voltage starts at around 4.2V.
+                        It quickly drops to around 3.7&ndash;3.6V as you use the mod, and stays there for a while.
+                        Once the voltage sinks under 3.6V, it starts dropping faster again, and the battery needs to be recharged.
+                        Discharing an ICR battery below 3V can ruin the battery.
+                        IMR batteries can handle as low as 2.5V.
+                    </p>
+                    <p>
+                        There is not much more to mech mods. They are about as simple as an electrical circuit can get:
+                    </p>
+                    <ul>
+                        <li>The voltage hitting the atomizer is the voltage from the battery (minus the tiny voltage drop in the switch and conductors).</li>
+                        <li>The current flowing through the battery is the current flowing through the atomizer.</li>
+                    </ul>
+                    <p>
+                        A multimeter and some straightforward use of Ohm's law you will give you all the numbers you need.
+                    </p>
+                </div>
+                <div class="col col-md-4">
+                    <h3>Regulated mods <small>&ndash; fixed or variable voltage or power</small></h3>
+                    <p>
+                        Regulated mods are more difficult to model. But even though they are much more complex than mechs, with some selective simplification we can safely ignore most of the complexity.
+                        So we break these mods down into two circuits and a <a href="https://en.wikipedia.org/wiki/Black_box" class="wplink">black box</a>. This makes our regulated mod model little more than twice as complex as our mech mod model.
+                    </p>
+                    <p>
+                        The two main circuits of a regulated mod are:
+                    </p>
+                    <ul>
+                        <li>The atomizer (output) side.</li>
+                        <li>The battery (input) side.</li>
+                    </ul>
+                    <p>
+                        And never the twain shall meet. The regulator circuit takes care of that.
+                        It can have a bunch of more or less advanced circuits in itself, and it uses a little bit of power, but for the most part we can envision it as a black box separating the battery circuit from the atty circuit.
+                    </p>
+                    <h4>Tread carefully <small>&ndash; here be pitfalls</small></h4>
+                    <p>
+                        Since we are looking at two separate circuits, you can never mix numbers from both sides of the regulator in your calculations.
+                        For instance: You cannot determine the current drained from the battery by measuring the resistance of the coil and the voltage of the battery.
+                        Using the resistance from one circuit, and the voltage from a different circuit, will result in a nonsensical answer.
+                        Nor can you determine the current going through the coil by determining the current from the battery.
+                    </p>
+                    <h4>Output <small>&ndash; the atomizer</small></h4>
+                    <p>
+                        On the atomizer side, the voltage is ideally whatever the user has selected, but keep in mind that some APVs promise more than they keep.
+                        If you set the voltage to 5V, are you confident that the APV actually delivers 5V?
+                        Unless you know that your APV is accurate, you might want to measure and confirm the output voltage under load.
+                    </p>
+                    <p>
+                        Variable wattage devices work like variable voltage devices, for the most part.
+                        The difference is that they measure the atomizer resistance, and uses this measurement, and Ohm's law, to calculate what voltage to set in order to reach your desired power.
+                    </p>
+                    <p>
+                        Likewise, knowing the output voltage and resistance, you can calculate the output current and power yourself.
+                    </p>
+                    <h4>Input <small>&ndash; the battery</small></h4>
+                    <p>
+                        On the battery side, the voltage is whatever the battery has in it at the moment, just like with mech mods.
+                        The power, however, is <i>whatever the regulator needs to pull in order to deliver the desired voltage to the atomizer at any given time</i>.
+                        So by dividing the power by the (ever decreasing) battery voltage, we find the (ever increasing) current.
+                    </p>
+                    <h4>Transfer the power <small>&ndash; getting down to it</small></h4>
+                    <p>
+                        So how can our measured resistance tell us anything about battery drain?
+                        Well, there is one way to "transfer information" from one side of the regulator to the other.
+                        The trick is simple; to paraphrase some old movie: Use the power, Luke!
+                    </p>
+                    <p>
+                        <b>The power hitting the atomizer equals the power flowing from the battery, minus the power used by the regulator circuit.</b>
+                    </p>
+                    <p>
+                        These regulator circuits typically boast an efficiency between 80&ndash;95%. In practice this means that the regulator "steals" about a tenth of the power from the battery.
+                    </p>
+                    <p>
+                        Knowing this, we can use our multimeter and Ohm's law to calculate what is going on at either side of the regulator.
+                        Then we can convert it to Watts, and voila! Subtracting (or adding) the loss in the regulator circuit, we now know the power on the other side as well.
+                    </p>
+                    <p>
+                        Lastly, we use Ohm's law again, break down the power to current and voltage, and that's that:
+                        We now have all the numbers we need.
+                    </p>
+                </div>
+                <div class="col col-md-4">
+                    <h3>Battery capacity</h3>
+                    <p>
+                        Capacity is normally stated in mAh, but this number is not very usable as it is.
+                    </p>
+                    <ul>
+                        <li>In unregulated mods the current drain decreases as the battery drains.</li>
+                        <li>In regulated mods the current drain increases as the battery drains.</li>
+                    </ul>
+                    <p>
+                        The interesting figure here is not mAh, but Wh (Watt-hours).
+                        Using Ohm's law and a nominal voltage of 3.7V, current capacity is easily converted to power capacity.
+                    </p>
+                    <p>
+                        A 2 Wh battery can deliver two Watts continuously for one hour, one Watt for two hours, etc, half a Watt for four hours, etc.
+                    </p>
+                </div>
+                <div class="col col-md-4">
+                    <h3>Battery presets</h3>
+                    <p>
+                        Most of the battery specifications were collected from <a href="https://www.e-cigarette-forum.com/blog/9-battery-basics-for-mods-the-ultimate-battery-guide.4848/" rel="nofollow" target="_blank">Baditude's blog post at ECF</a>.
+                        The presets are for convenience only, and I can not promise you that I did zero mistakes when entering the values, so please take care to ensure that the presets that you use are in accordance with the actual specs of the batteries that you use.
+                    </p>
+                </div>
+                <div class="col col-md-4">
+                    <h3>Regulated mod caveat</h3>
+                    <p>
+                        As the battery drains in a regulated mod, the battery voltage goes down. As a result, the mod must draw more current in order to maintain the set voltage or power. In other words, as battery voltage goes down, battery current goes up.
+                        This is the opposite of what happens with mechanical mods, and somewhat unintuitive.
+                    </p>
+                    <p>
+                        Don't rely on the "best case scenario" where the batteries are full, when you make calculations for regulated mods.
+                        It is safer to assume a battery voltage of 3.5V, or even lower, depending on how low the mod will go before it demands a new charge.
+                    </p>
+                    <p>
+                        Again, with mech mods the opposite is true: The current drops as the voltage drops. So with mechs, it is safest to assume a full battery when you're doing these calculations.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    <footer id="sefooter" class="container-fluid">
+    <hr />
+    <div class="row">
+        
+        
+        
+        <div class="col col-md-3 col-sm-12 text-center">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="col col-md-2 col-sm-12 text-right">
+            <a id="seaddr" href="https://www.steam-engine.org">www.steam-engine.org</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+</script>
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

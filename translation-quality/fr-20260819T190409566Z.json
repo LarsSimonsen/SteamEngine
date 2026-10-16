@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "fr", "cycleId": "fr-20260819T190409566Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete French locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh French critique found five catalog labels using adjective, charging, legal-evidence, or overly literal wording." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent French human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "fr-catalog-metadata", "translationId": "shared.encyclopedia.openEntry", "category": "translation-defect", "severity": "medium", "summary": "Five action and research-record labels used the wrong grammatical or domain sense.", "disposition": "resolved", "evidence": ["The strings label an action, chart loading, and catalog documentation metadata."], "resolution": "Used idiomatic French UI and catalog terminology." }]
+}

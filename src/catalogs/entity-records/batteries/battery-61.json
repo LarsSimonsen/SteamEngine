@@ -1,0 +1,144 @@
+{
+    "entityId": "battery-61",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for Sanyo UR18650F.",
+        "description": "This researched draft preserves the calculator's 2400mAh and 1C compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "vapingvibe-2026",
+            "title": "Best 18650 Batteries for Vaping",
+            "url": "https://vapingvibe.com/best-18650-batteries/",
+            "publisher": "vapingvibe.com",
+            "limitations": "Bounded five-cell editorial list; commercial links may influence selection."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "spec-sanyo-records",
+            "title": "Sanyo UR18650F battery record",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "CQham battery test database mirror",
+            "limitations": "Aggregated historical database; supporting evidence for terminal and protection fields, not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-sanyo",
+            "title": "Sanyo cylindrical lithium-ion cell specifications",
+            "url": "https://www.tokojelek.com/download/document/datasheet/battery/sanyo/Sanyo_F_Specification_Sheet.pdf",
+            "publisher": "Sanyo specification mirror",
+            "limitations": "Surviving Sanyo datasheets identify lithium-ion cells but do not disclose an exact cathode for every listed model."
+        },
+        {
+            "id": "chemistry-sanyo-ti",
+            "title": "Battery chemistry selection guide",
+            "url": "https://www.ti.com/lit/an/slua505b/slua505b.pdf",
+            "publisher": "Texas Instruments",
+            "limitations": "Older chemistry association; it is not a revision-specific Sanyo manufacturer disclosure."
+        },
+        {
+            "id": "intro-sanyo-ur18650f-2011",
+            "title": "XTAR 18700 batteries tested / Sanyo UR18650F reference",
+            "url": "https://budgetlightforum.com/t/xtar-18700-batteries-tested-2200-2400-2600/1762",
+            "publisher": "BudgetLightForum",
+            "limitations": "Historical thread references the exact Sanyo model; it establishes availability context by this date, not launch."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-sanyo-f",
+            "statement": "The aggregated battery record identifies Sanyo UR18650F as a flat-top, unprotected 18650 cell; it is a low-drain cell and remains unsuitable for high-current vaping use.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Sanyo UR18650F 2400mAh 1C as a 2400mAh preset with a 1C runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "Sanyo UR18650F is documented as lithium-ion; an older TI chemistry association reports LCO for the UR18650F family, but the exact catalog revision was not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Sanyo UR18650F has reliable market-introduction evidence dated 2011-12-24 or earlier.",
+            "evidenceDate": "2011-12-24",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion — LCO reported for some UR18650F revisions; exact revision unresolved",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

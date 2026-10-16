@@ -1,0 +1,53 @@
+{
+    "entityId": "provape-provari-1",
+    "entityType": "finished-device",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "The original full-size ProVari, a single-cell variable-voltage regulated tube mod introduced in 2010.",
+        "description": "The first-generation ProVari adjusts output voltage from 3.3 to 6.0 V and predates the lower-resistance V2 electronics and the smaller ProVari Mini.",
+        "highlights": [
+            "Voltage-only regulation",
+            "Single 18490/18500 cell, or single 18650 with extension cap",
+            "2.5 A and 15 W output ceilings"
+        ]
+    },
+    "sources": [
+        {
+            "id": "history-battery-20260824",
+            "title": "ProVape Says Goodbye to the Vape Industry",
+            "url": "https://vaping360.com/es/vape-news/43279/provape-closes-provari/",
+            "limitations": "Retrospective specialist reporting; useful for introduction year and cell formats, not exact electrical ceilings."
+        },
+        {
+            "id": "electrical-20260824",
+            "title": "Provari v2 versus provari v1",
+            "url": "https://www.e-cigarette-forum.com/threads/provari-v2-versus-provari-v1.272005/",
+            "limitations": "Contemporary owner report based on ProVape support and its comparison document; the original PDF is no longer directly retrievable."
+        },
+        {
+            "id": "minimum-resistance-20260824",
+            "title": "Provari-Talk - 83",
+            "url": "https://www.dampfertreff.ch/t65934f995-Provari-Talk-82.html",
+            "limitations": "Specialist community report rather than surviving manufacturer documentation; the 1.2 ohm floor is approximate."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18490/18500",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

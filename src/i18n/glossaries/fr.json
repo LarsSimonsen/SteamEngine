@@ -9,7 +9,10 @@
             "context": "Terme courant désignant le vapotage et son univers matériel.",
             "discouraged": ["vaporisateur"],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Recherche terminologique française sur le vapotage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Recherche terminologique française sur le vapotage"
+            },
             "confidence": "high"
         },
         "electronic-cigarette": {
@@ -17,16 +20,22 @@
             "preferred": "cigarette électronique",
             "context": "Terme général et formel désignant une cigarette électronique.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Recherche terminologique française" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Recherche terminologique française"
+            },
             "confidence": "high"
         },
         "atomizer": {
             "source": "atomizer",
             "preferred": "atomiseur",
-            "context": "Composant de vape qui vaporise le e-liquide et émet une puissance de sortie.",
+            "context": "Composant de vape qui transforme l’énergie électrique en chaleur pour vaporiser l’e-liquide.",
             "discouraged": ["interface", "port de sortie"],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Recherche terminologique française sur le vapotage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Relecture complète GPT-6 fondée sur la source anglaise et le contexte technique"
+            },
             "confidence": "high"
         },
         "coil": {
@@ -35,7 +44,10 @@
             "context": "Élément chauffant de l’atomiseur ; bobine convient lorsqu’il s’agit précisément de sa forme enroulée.",
             "discouraged": ["coil"],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Recherche terminologique française sur le vapotage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Recherche terminologique française sur le vapotage"
+            },
             "confidence": "high"
         },
         "e-liquid": {
@@ -44,25 +56,34 @@
             "context": "Liquide utilisé par l’atomiseur ; liquide de vape est une variante explicative.",
             "discouraged": ["jus"],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Recherche terminologique française" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Recherche terminologique française"
+            },
             "confidence": "high"
         },
         "battery-drain": {
             "source": "battery drain",
             "preferred": "consommation de la batterie",
-            "context": "Courant et puissance tirés d’une batterie dans un résultat de calcul.",
-            "discouraged": ["drainage de la batterie", "décharge de la batterie"],
+            "context": "Courant et puissance tirés d’une batterie dans un résultat de calcul. Le terme décharge reste correct pour les limites de décharge et les consignes de sécurité.",
+            "discouraged": ["drainage de la batterie"],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Traduction technique contextuelle" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Relecture complète GPT-6 fondée sur la source anglaise et le contexte technique"
+            },
             "confidence": "high"
         },
         "output-power": {
             "source": "output power",
             "preferred": "puissance de sortie",
-            "context": "Puissance émise par l’atomiseur, et non une interface ou un port de sortie.",
+            "context": "Puissance électrique fournie par le mod à l’atomiseur.",
             "discouraged": ["interface de sortie", "port de sortie"],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Traduction technique contextuelle" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Relecture complète GPT-6 fondée sur la source anglaise et le contexte technique"
+            },
             "confidence": "high"
         }
     }

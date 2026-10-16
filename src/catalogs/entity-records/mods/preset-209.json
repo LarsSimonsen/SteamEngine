@@ -1,0 +1,43 @@
+{
+    "entityId": "vapor-flask-v1-v2-dna-30",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Vapor Flask V2 history and review",
+            "url": "https://vapingcheap.com/vapor-flask-v2-clone-review/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-dna30-20260824",
+            "title": "Evolv DNA 30D datasheet",
+            "url": "https://downloads.evolvapor.com/dna30.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 2
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Evolv DNA-30D"
+            }
+        ]
+    }
+}

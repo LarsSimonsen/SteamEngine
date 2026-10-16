@@ -1,0 +1,18 @@
+{
+    "schemaVersion": 1,
+    "locale": "zh-Hans",
+    "cycleId": "zh-Hans-20260819T002827250Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Simplified Chinese source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Simplified Chinese pass identified four protected-unit and Kirchhoff current-law clarity defects; all four were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Simplified Chinese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "zh-Hans-20260819-006", "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.1", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The megaohm conversion translated the protected SI symbols into Chinese words and changed the unit meaning.", "disposition": "resolved", "evidence": ["The previous bullet was 1 百万欧元 = 1,000,000 欧元, which refers to euros rather than megaohms."], "resolution": "Restored 1 MΩ = 1,000,000 Ω." },
+        { "id": "zh-Hans-20260819-007", "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.2", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The milliamp conversion translated the protected SI symbols into Chinese words and removed required spacing.", "disposition": "resolved", "evidence": ["The previous bullet was 1毫安=0.001安 rather than the protected SI notation."], "resolution": "Restored 1 mA = 0.001 A." },
+        { "id": "zh-Hans-20260819-008", "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.3", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The watt conversion translated the protected SI symbols into Chinese words.", "disposition": "resolved", "evidence": ["The previous bullet was 1 瓦 = 1,000 毫瓦 rather than the contract-preserved SI symbols."], "resolution": "Restored 1 W = 1,000 mW." },
+        { "id": "zh-Hans-20260819-009", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0", "category": "translation-defect", "severity": "medium", "summary": "The current-law example used unnatural numeric wording and did not clearly describe current flowing into and out of a node.", "disposition": "resolved", "evidence": ["The previous paragraph began 如果 8 个 A and used less direct branch-flow wording."], "resolution": "Rewrote the example with natural Chinese electrical terminology and explicit sign interpretation." }
+    ]
+}

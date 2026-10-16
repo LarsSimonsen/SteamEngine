@@ -1,0 +1,95 @@
+{
+    "entityId": "battery-87",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Provisional research record for Tenpower INR21700-50XG.",
+        "description": "Tenpower identifies INR21700-50XG as a 5000mAh 21700 cell. Battery Mooch tested the exact model and estimated 40A continuous current, while noting that the tested cells lacked CCC marks and appeared pre-production.",
+        "highlights": [
+            "Exact model identity is supported by Tenpower data and an exact-model vaping test.",
+            "Discovery value is 5000mAh and 40A continuous; 90A is temperature-limited and 140A is pulse-only.",
+            "The tested samples appeared pre-production; production continuity remains unresolved.",
+            "Runtime admission is recorded as battery-87.",
+            "Runtime admission is recorded separately from editorial visibility."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "Tenpower cell application table",
+            "url": "https://www.tenpowercell.com.cn/products/applications",
+            "publisher": "Tenpower",
+            "limitations": "The table establishes exact model identity and nominal capacity; displayed current figures remain manufacturer claims."
+        },
+        {
+            "id": "manufacturer-datasheet",
+            "title": "INR21700-50XG product specification",
+            "url": "https://www.nkon.nl/en/amfile/file/download/file/801/product/5883/",
+            "publisher": "Tenpower",
+            "limitations": "Manufacturer specification copy hosted by a distributor; it identifies the exact model and its discharge limits."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: Tenpower 50XG - 40A/90A 5000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-tenpower-50xg-40a-90a-5000mah-21700-pre-production.992040/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model test; samples lacked CCC marks and may be pre-production."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is Tenpower INR21700-50XG.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "Tenpower specifies 5000mAh nominal capacity for INR21700-50XG.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch estimated 40A continuous current; 90A is temperature-limited and 140A is a short pulse claim.",
+            "evidenceDate": "2025-10-24",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact Tenpower INR21700-50XG has an eligible exact-model vaping battery test.",
+            "evidenceDate": "2025-10-24",
+            "confidence": "high"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current Steam Engine battery catalog contains no exact Tenpower INR21700-50XG preset.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

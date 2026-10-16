@@ -1,0 +1,458 @@
+{
+    "schemaVersion": 1,
+    "locale": "fi",
+    "date": "2026-10-13",
+    "scope": "Unpublished Finnish draft terminology research",
+    "publicationStatus": "unpublished",
+    "humanApproval": false,
+    "sources": [
+        {
+            "id": "techbbs",
+            "url": "https://bbs.io-tech.fi/threads/sahkotupakka.582/",
+            "issuer": "io-tech / TechBBS",
+            "author": "Jahve3 and thread participants",
+            "title": "Sähkötupakka",
+            "date": "2016-10-17; opening glossary edited 2017-10-30",
+            "access": "Full public HTML retrieved",
+            "locator": "Opening glossary and original participant posts",
+            "evidence": "coili, vastus, vastuslanka, modi, wickaus; electrical quantity resistanssi",
+            "limitations": "Glossary credits Vaporvandal: count as one lineage, not two independent sources. Historical hobby language; technical and safety claims not adopted.",
+            "checkedAt": "2026-10-13"
+        },
+        {
+            "id": "vaperoom",
+            "url": "https://www.vaperoom.fi/",
+            "issuer": "VapeRoom Helsinki",
+            "author": "Corporate; individual unnamed",
+            "title": "VapeRoom Helsinki",
+            "date": null,
+            "access": "Full public HTML retrieved",
+            "locator": "Meistä and Tuotteet",
+            "evidence": "modit, höyrystimet, pohja-/tiiviste-/valmis-/nikotiininesteet; atomisaattorit also used",
+            "limitations": "Commercial self-description; language usage only, no independent product or legal validation.",
+            "checkedAt": "2026-10-13"
+        },
+        {
+            "id": "sfs",
+            "url": "https://sfs.fi/wp-content/uploads/2020/10/SI-opas.pdf",
+            "issuer": "Suomen Standardisoimisliitto SFS",
+            "author": "SR102 Mittayksiköt",
+            "title": "SI-opas:2019, seventh edition",
+            "date": "2019-05-02",
+            "access": "Complete 76-page PDF retrieved",
+            "locator": "Printed pp. 39–41 and 46 (PDF indices 40–42 and 47)",
+            "evidence": "lämpövirran tiheys, lämpökapasiteetti, ominaislämpökapasiteetti, ominaislatenttilämpö, resistanssi, resistiivisyys",
+            "limitations": "Finnish quantity terminology, not vaping slang. 2019 edition; no claim to audit all current standards.",
+            "checkedAt": "2026-10-13"
+        },
+        {
+            "id": "aalto",
+            "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/46200217-4738-44ca-a012-89d19f47e2ff/content",
+            "issuer": "Aalto University",
+            "author": "Kirsi Savolainen",
+            "title": "Lähes nollaenergiatasoisen toimistorakennuksen vaipparakenteiden rakennusfysikaalinen toimivuus",
+            "date": "2018-02-19",
+            "access": "Complete 122-page thesis PDF retrieved",
+            "locator": "Notation pp. 7–9",
+            "evidence": "lämpövuo for W/m² and ominaislämpökapasiteetti for J/(kg K)",
+            "limitations": "Building-physics thesis, funded by Sweco and Elo; terminology evidence only. Shows variation, not that SFS term is the sole valid wording.",
+            "checkedAt": "2026-10-13"
+        },
+        {
+            "id": "opetustv",
+            "url": "https://opetus.tv/yliopisto/fysiikka/sahkoopin-perusteet/sahkovirta-ja-elektroniikan-alkeet/",
+            "issuer": "Opetus.tv",
+            "author": "Pekka Koskinen",
+            "title": "Sähkövirta ja elektroniikan alkeet",
+            "date": null,
+            "access": "Complete HTML retrieved; videos not played",
+            "locator": "Ohmin laki section",
+            "evidence": "resistiivisyys, resistanssi and sähkövirta",
+            "limitations": "Course headings and summaries, not a complete video review.",
+            "checkedAt": "2026-10-13"
+        }
+    ],
+    "failedOrExcluded": [
+        {
+            "url": "https://www.e-savuke.com/vb/forum.php",
+            "reason": "Search lead; direct retrieval failed."
+        },
+        {
+            "url": "https://www.vaporvandal.com/hoyrytietoa",
+            "reason": "Direct retrieval failed; attributed glossary available via TechBBS, not counted independently."
+        },
+        {
+            "url": "https://www.puff.fi/",
+            "reason": "Direct retrieval failed."
+        },
+        {
+            "url": "https://users.jyu.fi/~veapaja/Statistical_Physics_B/luentomoniste.pdf",
+            "reason": "Direct retrieval failed; search snippet not used as decisive evidence."
+        },
+        {
+            "url": "https://stagvape.com/fi/oppaat/aloittelijan-vape-sanakirja-terminologia",
+            "reason": "Mixed English/Finnish and awkward prose; unsuitable model of native Finnish usage."
+        },
+        {
+            "url": "https://bbs.io-tech.fi/threads/sahkotupakka.582/page-55",
+            "reason": "Retrieved; no coili match, no additional terminology support claimed."
+        }
+    ],
+    "decisions": [
+        {
+            "id": "vaping-coil-usage",
+            "disposition": "applied",
+            "conclusion": "Prefer coili in vaping UI; retain resistanssi for quantity. Usage evidence supports this register choice, not a claim that kela is technically false."
+        },
+        {
+            "id": "heat-flux-standard-term",
+            "disposition": "applied",
+            "conclusion": "Use SFS lämpövirran tiheys consistently, preserving values and area units."
+        },
+        {
+            "id": "specific-latent-heat",
+            "disposition": "retained-with-evidence",
+            "semanticId": "catalog.concepts.concept-heat-capacity.sections.4.paragraphs.0",
+            "conclusion": "Existing ominaislatenttilämpö directly supported by SFS."
+        },
+        {
+            "id": "atomizer-and-mod",
+            "disposition": "retained-with-evidence",
+            "conclusion": "Keep höyrystin and modi; avoid collapsing atomizer and heating element."
+        },
+        {
+            "id": "staggered-clapton",
+            "disposition": "uncertain-retained",
+            "conclusion": "No decisive Finnish evidence found to replace Porrastettu Clapton; existing needs-review preserved."
+        }
+    ],
+    "changes": [
+        {
+            "id": "calculators.coil.coilArea",
+            "before": "Kelan pinta-ala",
+            "after": "Coilin pinta-ala",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.coilDimensions",
+            "before": "Kelan mitat",
+            "after": "Coilin mitat",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.coilSpecifications",
+            "before": "Kelan tekniset tiedot",
+            "after": "Coilin tekniset tiedot",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.coilWidth",
+            "before": "Kelan leveys",
+            "after": "Coilin leveys",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.description",
+            "before": "Valitse lanka ja kelan rakenneparametrit arvioidaksesi kierrosmäärää, resistanssia ja lämpöominaisuuksia.",
+            "after": "Valitse lanka ja coilin rakenneparametrit arvioidaksesi kierrosmäärää, resistanssia ja lämpöominaisuuksia.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.eyebrow",
+            "before": "Kelan käämintälaskin",
+            "after": "Coilin käämintälaskin",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.heatFlux",
+            "before": "Lämpövuon tiheys",
+            "after": "Lämpövirran tiheys",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "calculators.coil.perCoil",
+            "before": "kelaa kohti",
+            "after": "coilia kohti",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.resistancePerCoil",
+            "before": "Resistanssi kelaa kohti",
+            "after": "Resistanssi coilia kohti",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel2",
+            "before": "Kaksi kelaa (rinnan)",
+            "after": "Kaksi coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel3",
+            "before": "Kolme kelaa (rinnan)",
+            "after": "Kolme coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel4",
+            "before": "Neljä kelaa (rinnan)",
+            "after": "Neljä coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel5",
+            "before": "Viisi kelaa (rinnan)",
+            "after": "Viisi coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel6",
+            "before": "Kuusi kelaa (rinnan)",
+            "after": "Kuusi coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel7",
+            "before": "Seitsemän kelaa (rinnan)",
+            "after": "Seitsemän coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupParallel8",
+            "before": "Kahdeksan kelaa (rinnan)",
+            "after": "Kahdeksan coilia (rinnan)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupSeries2",
+            "before": "Kaksi kelaa (sarjassa)",
+            "after": "Kaksi coilia (sarjassa)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupSeries3",
+            "before": "Kolme kelaa (sarjassa)",
+            "after": "Kolme coilia (sarjassa)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupSeries4",
+            "before": "Neljä kelaa (sarjassa)",
+            "after": "Neljä coilia (sarjassa)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupSeriesParallel4",
+            "before": "Neljä kelaa (sarja-rinnankytkentä)",
+            "after": "Neljä coilia (sarja-rinnankytkentä)",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.setupSingle",
+            "before": "Yksi kela",
+            "after": "Yksi coili",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.singleCoil",
+            "before": "Yksi kela.",
+            "after": "Yksi coili.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.targetHeatFlux",
+            "before": "Lämpövuon tavoitetiheys",
+            "after": "Lämpövirran tavoitetiheys",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "calculators.coil.title",
+            "before": "Suunnittele kelasi",
+            "after": "Suunnittele coilisi",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.wireLengthInCoil",
+            "before": "Langan pituus kelassa",
+            "after": "Langan pituus coilissa",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.coil.wireLengthWarning",
+            "before": "Liitosjalkojen jälkeen kelalle ei jää riittävästi lankaa.",
+            "after": "Liitosjalkojen jälkeen coilille ei jää riittävästi lankaa.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.tcr.needModel",
+            "before": "Tarvitsetko täydellisen kelamallin?",
+            "after": "Tarvitsetko täydellisen coilimallin?",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.tcr.needModelText",
+            "before": "langan geometrian, monimutkaisten rakenteiden ja kelalaskelmien käsittelyyn. Tämä rajatumpi työkalu soveltuu resistanssikäyrien vertailuun ja yhdistämiseen.",
+            "after": "langan geometrian, monimutkaisten rakenteiden ja coililaskelmien käsittelyyn. Tämä rajatumpi työkalu soveltuu resistanssikäyrien vertailuun ja yhdistämiseen.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.wirewiz.coilParameters",
+            "before": "Kelan parametrit",
+            "after": "Coilin parametrit",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.wirewiz.coilParametersTitle",
+            "before": "Kelan parametrit",
+            "after": "Coilin parametrit",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.wirewiz.description",
+            "before": "Suunnittele ja analysoi monimutkaisia lankarakenteita omia kelojasi varten. Ensimmäinen uudistettu versio säilyttää vanhan laskentamallin ja tulostusmuodot.",
+            "after": "Suunnittele ja analysoi monimutkaisia lankarakenteita omia coilejasi varten. Ensimmäinen uudistettu versio säilyttää vanhan laskentamallin ja tulostusmuodot.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "calculators.wirewiz.heatFlux",
+            "before": "Lämpövuon tiheys",
+            "after": "Lämpövirran tiheys",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.description",
+            "before": "Lämpövuon tiheys kuvaa, kuinka nopeasti lämpö siirtyy pinnan läpi pinta-alayksikköä kohti. Se ei riipu lämpöä varastoivan materiaalin kokonaismäärästä.",
+            "after": "Lämpövirran tiheys kuvaa, kuinka nopeasti lämpö siirtyy pinnan läpi pinta-alayksikköä kohti. Se ei riipu lämpöä varastoivan materiaalin kokonaismäärästä.",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.displayName",
+            "before": "Lämpövuon tiheys",
+            "after": "Lämpövirran tiheys",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.sections.0.bullets.0",
+            "before": "q'' on lämpövuon tiheys yksikössä W/m².",
+            "after": "q'' on lämpövirran tiheys yksikössä W/m².",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.sections.0.paragraphs.0",
+            "before": "Lämpövuon tiheys ja lämpökapasiteetti ovat eri suureita. Lämpökapasiteetti kuvaa varastoitunutta energiaa lämpötilan muutosta kohti, kun taas lämpövuon tiheys kuvaa lämmön siirtymistä pinnan läpi aikayksikköä ja pinta-alayksikköä kohti.",
+            "after": "Lämpövirran tiheys ja lämpökapasiteetti ovat eri suureita. Lämpökapasiteetti kuvaa varastoitunutta energiaa lämpötilan muutosta kohti, kun taas lämpövirran tiheys kuvaa lämmön siirtymistä pinnan läpi aikayksikköä ja pinta-alayksikköä kohti.",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.sections.1.examples.0.conclusion",
+            "before": "Keskimääräinen lämpövuon tiheys on 5 000 W/m² eli 0,5 W/cm².",
+            "after": "Keskimääräinen lämpövirran tiheys on 5 000 W/m² eli 0,5 W/cm².",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.sections.1.examples.0.title",
+            "before": "Lämmittimen keskimääräinen lämpövuon tiheys",
+            "after": "Lämmittimen keskimääräinen lämpövirran tiheys",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.sections.4.bullets.1",
+            "before": "Erota keskimääräinen lämpövuon tiheys paikallisesta huippuarvosta: lämpeneminen voi olla epätasaista.",
+            "after": "Erota keskimääräinen lämpövirran tiheys paikallisesta huippuarvosta: lämpeneminen voi olla epätasaista.",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-heat-flux.sections.4.bullets.3",
+            "before": "Lämpövuon tiheys kuvaa lämmön siirtymisnopeutta, ei lämpötilaa. Käytä lämpökapasiteettia lämpötilan muutoksen laskemiseen.",
+            "after": "Lämpövirran tiheys kuvaa lämmön siirtymisnopeutta, ei lämpötilaa. Käytä lämpökapasiteettia lämpötilan muutoksen laskemiseen.",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "catalog.concepts.concept-joule-heating.sections.1.examples.0.conclusion",
+            "before": "Kela muuttaa energiaa lämmöksi 7,2 joulea sekunnissa eli 72 J kymmenessä sekunnissa.",
+            "after": "Coili muuttaa energiaa lämmöksi 7,2 joulea sekunnissa eli 72 J kymmenessä sekunnissa.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "before": "Kelassa kulkee 3 A:n virta, ja sen resistanssi on 0,8 Ω.",
+            "after": "Coilissa kulkee 3 A:n virta, ja sen resistanssi on 0,8 Ω.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "catalog.concepts.concept-joule-heating.sections.2.paragraphs.0",
+            "before": "Sähköteho kuvaa energian siirtymistä aikayksikköä kohti, ei lämpötilaa. Lämpökapasiteetti ja lämpövuon tiheys määräävät, miten energia muuttaa lämpötilaa ja kuinka nopeasti se siirtyy pinnalta pois.",
+            "after": "Sähköteho kuvaa energian siirtymistä aikayksikköä kohti, ei lämpötilaa. Lämpökapasiteetti ja lämpövirran tiheys määräävät, miten energia muuttaa lämpötilaa ja kuinka nopeasti se siirtyy pinnalta pois.",
+            "finding": "heat-flux-standard-term"
+        },
+        {
+            "id": "messages.encyclopediaDetail.materialCatalog",
+            "before": "Kelamateriaalien luettelo",
+            "after": "Coilimateriaalien luettelo",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "messages.home.intro",
+            "before": "Steam Engine tarjoaa käytännöllisiä laskimia kelojen rakentamiseen, akun kuormituksen tarkistamiseen, sähkösavukenesteen sekoittamiseen ja oman laitekokoonpanon lukuarvojen ymmärtämiseen.",
+            "after": "Steam Engine tarjoaa käytännöllisiä laskimia coilien rakentamiseen, akun kuormituksen tarkistamiseen, sähkösavukenesteen sekoittamiseen ja oman laitekokoonpanon lukuarvojen ymmärtämiseen.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "messages.home.tools.coil.description",
+            "before": "Suunnittele itse rakennettavien höyrystimien keloja ja tutki niiden sähköisiä ominaisuuksia.",
+            "after": "Suunnittele itse rakennettavien höyrystimien coileja ja tutki niiden sähköisiä ominaisuuksia.",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "messages.home.tools.coil.label",
+            "before": "Kelan käämintä",
+            "after": "Coilin käämintä",
+            "finding": "vaping-coil-usage"
+        },
+        {
+            "id": "messages.home.tools.wirewiz.description",
+            "before": "Yhdistele erilaisia lankoja ja suunnittele kelan rakenne ja lämpötilakäyrä.",
+            "after": "Yhdistele erilaisia lankoja ja suunnittele coilin rakenne ja lämpötilakäyrä.",
+            "finding": "vaping-coil-usage"
+        }
+    ],
+    "routeMetadataChanges": [
+        {
+            "route": "/coil",
+            "field": "title",
+            "before": "Kelan käämintä",
+            "after": "Coilin käämintä"
+        },
+        {
+            "route": "/coil",
+            "field": "description",
+            "before": "Suunnittele kelan mitat ja käämintäparametrit.",
+            "after": "Suunnittele coilin mitat ja käämintäparametrit."
+        },
+        {
+            "route": "/wirewiz",
+            "field": "description",
+            "before": "Suunnittele ja analysoi moniosaisia lankarakenteita omia keloja varten.",
+            "after": "Suunnittele ja analysoi moniosaisia lankarakenteita omia coileja varten."
+        }
+    ],
+    "independentReview": {
+        "reviewer": "fi_term_check",
+        "kind": "machine",
+        "outcome": "Passed final review of all 48 messages, 3 route fields, glossary and evidence report; no blockers."
+    },
+    "limitations": [
+        "Public pages only; no private social-media groups accessed.",
+        "Finnish remains unpublished and pending human review.",
+        "No claim of representative contemporary Finnish corpus coverage."
+    ],
+    "validation": [
+        "i18n:qc:fi: 1115 entries, arguments, signatures and snapshot passed",
+        "typecheck passed",
+        "i18n:review:check passed",
+        "vitest src/i18n: 11 files, 42 tests passed on host; initial sandbox run could not rename temporary cache files",
+        "Full build passed; 64 route cases and 737 links in 10279 HTML files; local IIS blue slot verified",
+        "git diff --check passed",
+        "Finnish is unpublished: no integrated Finnish browser test available; wording reviewed directly in draft"
+    ]
+}

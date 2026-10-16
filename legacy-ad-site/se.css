@@ -1,0 +1,204 @@
+﻿html, body {
+  overflow-x: hidden;
+}
+
+body .container a.legacy-new-notice {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0.75rem 0 0 auto;
+  padding: 0.7rem 1rem;
+  color: #36524e;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  background: #e7f5f2;
+  border: 1px solid #8fcfc3;
+  border-left: 0.35rem solid #328f82;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.legacy-new-notice:hover,
+.legacy-new-notice:focus-visible {
+  color: #36524e;
+  background: #d9efeb;
+  text-decoration: none;
+}
+
+.defaulttheme #toppnav {
+    background-color:#f6fcff;
+}
+
+body #navtab-new-site > a {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 0.85em;
+    color: #fff !important;
+    font-weight: 700 !important;
+    line-height: 1.428571429;
+    background-color: #328f82 !important;
+    border-radius: 999px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body #navtab-new-site > a::after {
+    content: " ↗";
+}
+
+body #navtab-new-site > a:hover,
+body #navtab-new-site > a:focus-visible {
+    color: #fff !important;
+    background-color: #267267 !important;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.28);
+}
+
+#toppnav img {
+    max-height: 50px;
+}
+.defaulttheme #toppnav li a {
+    text-shadow: none;
+    transition-property: text-shadow;
+    transition-duration: 1s;
+}
+.defaulttheme #toppnav .tnf:hover a {
+    text-shadow: 3px 3px 8px rgba(5, 5, 5, 0.33);
+    transition-property: text-shadow;
+    transition-duration: 0.1s;
+}
+
+.btn {
+	transition:0.18s;
+}
+body a, 
+.defaulttheme body .btn-link {
+	color:#54A498;
+}
+.defaulttheme body .panel-primary .panel-heading  {
+	background-color: #748EB6;
+}
+.defaulttheme body .btn-primary  {
+	background-color: #748EB6;
+}
+
+#googleplay {
+	margin-top:0.2em;
+}
+
+.invis { display:none; }
+
+.input-group-addon {
+	font-family:"Courier New", Courier, monospace;
+	padding: 0 0.5em;
+}
+
+.form-control.text-right {
+	padding-right:1em;
+}
+
+.btn-group-justified {
+	width: 88%;
+}
+
+.cd-calcicon {
+	display:none;
+	color:lightsteelblue;
+}
+
+.radio-inline label {
+	font-weight:normal;
+}
+
+.menumsg {
+	position:relative;
+}
+
+.menumsg .menumsg-inner {
+	min-width:20em;
+	z-index:980;
+	position:absolute;
+	right:-0.25em;
+	cursor:default;
+}
+
+.menumsg .menumsg-inner .alert-success {
+	border: 1px solid green;
+}
+.menumsg .menumsg-inner .alert-danger {
+	border: 1px solid darkred;
+}
+.menumsg .menumsg-inner .alert-warning {
+	border: 1px solid orange;
+}
+.helpcursor {
+	cursor:help;
+}
+#navtab-ohm b {
+	font-weight:900;
+}
+.glyphicon-flipped {
+	-o-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.text-bold {
+	font-weight:bolder;
+}
+
+.panel-primary .panel-title small {
+	color:#ddd;
+}
+footer .col {
+	margin-bottom:1em;
+}
+#cd-units
+,#cd-units .radio {
+	max-width:14em;
+	overflow-x: visible;
+	white-space:nowrap;
+}
+#heaticon {
+	transition-property: color;
+	transition: 1s;
+}
+.cd-advanced {
+	transition-property: background-color;
+	transition: 1s;
+}
+center .ad728 img {
+	max-width:728px;
+	width:100%;
+}
+center .ad468 img {
+	max-width:468px;
+	width:100%;
+}
+.reading {
+    background-color:#bfffbf;
+}
+
+.trhoyde,
+.brhoyde {
+    min-height: 90px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+#coil #rescontab li {
+    border-width: 1px 1px 0 1px;
+    border-color: #ccc;
+    border-style: solid;
+    border-radius: 4px 4px 0 0;
+    padding: 0 6px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+#coil #rescontab .active {
+    background-color:#eee;
+}

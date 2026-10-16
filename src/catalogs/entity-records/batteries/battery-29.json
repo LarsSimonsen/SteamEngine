@@ -1,0 +1,131 @@
+{
+    "entityId": "battery-29",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for Efest IMR 26650.",
+        "description": "This researched draft preserves the calculator's 3500mAh and 32A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "vapestyle-efest-26650",
+            "title": "Efest IMR 26650 3500mAh 32A/64A",
+            "url": "https://www.vapestyle.cz/bateriove-clanky-typ-26650/baterie-efest-imr-26650-3500mah-32a-64a/",
+            "publisher": "vapestyle.cz",
+            "limitations": "Current Czech specialist-vape listing; 32A/64A labels require careful interpretation."
+        },
+        {
+            "id": "store-26650",
+            "title": "26650 batteries",
+            "url": "https://www.18650batterystore.com/collections/26650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "efest-catalog",
+            "title": "Efest battery catalog",
+            "url": "https://www.efestpower.com/index.php?ac=article&at=list&tid=133",
+            "publisher": "efestpower.com",
+            "limitations": "Accessible official catalog appears historically frozen around 2015; it is not evidence of current activity."
+        },
+        {
+            "id": "test-b43",
+            "title": "Efest IMR 26650 3500mAh purple 2014 test",
+            "url": "https://www.candlepowerforums.com/threads/test-review-of-efest-imr26650-3500mah-purple-2014.393502/",
+            "publisher": "CandlePowerForums / HKJ",
+            "limitations": "Exact purple 2014 review; the tested wrapper revision governs applicability and the printed 32A/64A ratings are not adopted as safe limits."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Efest IMR 26650 3500mAh 32A as a 3500mAh preset with a 32A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The tested 2014 Efest IMR 26650 3500mAh revision has a purple wrapper, raised/button-top terminal, and no protection circuit; it is a nominal 26 mm x 65 mm cylindrical cell. Independent testing found the printed 32A/64A ratings substantially overstated.",
+            "evidenceDate": "2014",
+            "confidence": "medium"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Efest IMR 26650 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Efest IMR 26650 has reliable market-introduction evidence dated 2014-12-03 or earlier.",
+            "evidenceDate": "2014-12-03",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "26650",
+            "nominalDiameterMm": 26,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": false,
+        "appearance": {
+            "wrapperColor": "purple"
+        },
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "low",
+            "summary": "A purple raised-top 2014 revision is documented, but wrapper continuity and underlying OEM identity are not established for the generic catalog entry.",
+            "checks": [
+                "Match the exact purple 2014 wrapper and terminal before applying the physical observations or test result.",
+                "Inspect label layout, wrapper, and terminal against a known-good sample.",
+                "Do not infer the underlying OEM cell from Efest branding alone."
+            ]
+        }
+    }
+}

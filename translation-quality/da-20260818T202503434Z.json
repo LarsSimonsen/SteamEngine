@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260818T202503434Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Danish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Danish pass identified 25 remaining circuit, TCR, thermal, SI-conversion, and wire-gauge wording issues; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Danish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "da-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance example title used an imperative without the definite noun.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Find modstand’."],
+            "resolution": "Changed it to ‘Find modstanden’."
+        },
+        {
+            "id": "da-20260818-077",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage example title used an indefinite noun.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Find spænding’."],
+            "resolution": "Changed it to ‘Find spændingen’."
+        },
+        {
+            "id": "da-20260818-078",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance statement used an awkward production construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said that doubling current ‘producerer’ four times heat effect."],
+            "resolution": "Rewrote it as a direct Danish relationship using ‘giver ... fire gange så stor varmeeffekt’."
+        },
+        {
+            "id": "da-20260818-079",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current statement repeated the doubling phrase awkwardly.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘fordobler en fordobling’."],
+            "resolution": "Changed it to ‘varmeeffekten fordobles, når modstanden fordobles’."
+        },
+        {
+            "id": "da-20260818-080",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage statement used an unnatural noun phrase for lowering resistance.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘sænkning af modstand’."],
+            "resolution": "Changed it to ‘når modstanden sænkes’."
+        },
+        {
+            "id": "da-20260818-081",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell explanation did not clearly state the ampere-hour relationship.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said capacity remained ‘den samme som en celle’."],
+            "resolution": "Rewrote it to state that capacity in ampere-hours is approximately that of one cell."
+        },
+        {
+            "id": "da-20260818-082",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The lithium-ion series-charging bullet used a compressed compound that was hard to read.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘Serielithium-ion-opladning’."],
+            "resolution": "Changed it to clear Danish for charging series-connected lithium-ion cells."
+        },
+        {
+            "id": "da-20260818-083",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-analysis title used the less natural phrase rigtige kredsløb.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Løsning af rigtige kredsløb’."],
+            "resolution": "Changed it to ‘Analyse af virkelige kredsløb’."
+        },
+        {
+            "id": "da-20260818-084",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-analysis checklist used nodespændinger instead of the standard Danish knude term.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Marker nodespændinger’."],
+            "resolution": "Changed it to ‘Markér knudespændinger’ and retained the branch-current checklist."
+        },
+        {
+            "id": "da-20260818-085",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The final checklist item needed a more polished conjunction and imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous item joined the two instructions without a comma or clear verb form."],
+            "resolution": "Changed it to ‘Løs de samtidige ligninger, og kontrollér effektbalancen’."
+        },
+        {
+            "id": "da-20260818-086",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage TCR paragraph used compressed syntax for the temperature and current effects.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘stigende temperatur’ and ‘modstandsforøgelse’ in a literal construction."],
+            "resolution": "Rewrote it with explicit positive-TCR, constant-voltage, and constant-current relationships."
+        },
+        {
+            "id": "da-20260818-087",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The manufacturer-range limitation used a vague phrase for the first-order estimate.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph ended with ‘førsteordens skøn’."],
+            "resolution": "Rewrote it with the more precise term ‘førsteordensestimatet’ and clearer source limitations."
+        },
+        {
+            "id": "da-20260818-088",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angular-frequency unit used the abbreviated and less natural ‘pr.’ form.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘radianer pr. sekund’."],
+            "resolution": "Changed it to ‘radianer i sekundet’."
+        },
+        {
+            "id": "da-20260818-089",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object/material title used kontra, which was less natural in this technical context.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Objekt kontra materiale’."],
+            "resolution": "Changed it to ‘Objekt og materiale’."
+        },
+        {
+            "id": "da-20260818-090",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The temperature-difference equivalence used an awkward phrase for equal magnitude.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘den samme størrelse som’."],
+            "resolution": "Changed it to the natural Danish phrase ‘lige så stor som’."
+        },
+        {
+            "id": "da-20260818-091",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-conversion instruction omitted the definite article and used a less direct command.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Konverter areal’."],
+            "resolution": "Changed it to ‘Konvertér arealet til m², før du bruger W/m²’."
+        },
+        {
+            "id": "da-20260818-092",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inch conversion formula retained English unit names and decimal points.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began ‘1 inch = 25.4 mm’."],
+            "resolution": "Changed it to Danish unit wording and decimal commas."
+        },
+        {
+            "id": "da-20260818-093",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The foot conversion formula retained English unit names and decimal points.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began ‘1 foot = 12 inches’."],
+            "resolution": "Changed it to ‘1 fod = 12 tommer = 0,3048 m’."
+        },
+        {
+            "id": "da-20260818-094",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The yard conversion formula retained English foot wording and decimal points.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began ‘1 yard = 3 feet’."],
+            "resolution": "Changed it to ‘1 yard = 3 fod = 0,9144 m’."
+        },
+        {
+            "id": "da-20260818-095",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG description used a literal and grammatically awkward expansion.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘den amerikanske Wire Gauge’."],
+            "resolution": "Changed it to ‘AWG er American Wire Gauge’."
+        },
+        {
+            "id": "da-20260818-096",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The diameter instruction used a reflexive phrase suggesting that systems themselves become confused.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘når systemer kan blive forvirrede’."],
+            "resolution": "Changed it to ‘når systemerne kan forveksles’."
+        },
+        {
+            "id": "da-20260818-097",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conductor-dimension instruction used an incomplete noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet did not clearly state whether the dimension applied to a bare conductor."],
+            "resolution": "Rewrote it with clear Danish for bare conductor, insulation, sheet thickness, and pipe-wall thickness."
+        },
+        {
+            "id": "da-20260818-098",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The system-comparison paragraph used identify for a relation that should use correspond.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence said the same number ‘identificerer’ the same diameter."],
+            "resolution": "Changed it to the clearer correspondence wording ‘svarer ... til samme diameter’."
+        },
+        {
+            "id": "da-20260818-099",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance explanation used a literal phrase for a small diameter difference and an unclear AWG verb.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘beskeden diameterforskel’ and ‘forøgelse af måleren’."],
+            "resolution": "Rewrote it with a clear small-difference statement and the three-gauge relationship."
+        },
+        {
+            "id": "da-20260818-100",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The imperial-dimension note retained English words inches, square inches, and cubic inches.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph ended with the untranslated English dimension names."],
+            "resolution": "Changed it to ‘tommer, kvadrattommer og kubiktommer’."
+        }
+    ]
+}

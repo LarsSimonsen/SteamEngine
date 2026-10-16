@@ -1,0 +1,89 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260819T114322550Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The canonical English and complete Greek source scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue validation, TypeScript type checking, all 464 tests, the production IIS build, route-contract validation, and generated internal-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Greek critique found product-identity and unit-symbol corruption plus safety and electrical-context wording defects."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Greek human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested application corrections and a commit, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "el-wire-wizard-identity",
+            "translationId": "calculators.wirewiz.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Wire Wizard was translated as an ordinary wire-guide phrase in navigation and calculator messages.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."],
+            "resolution": "Restored Wire Wizard in shared navigation, Wire Wizard, and TCR messages."
+        },
+        {
+            "id": "el-ampere-symbol",
+            "translationId": "calculators.modrange.ampere",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The ampere symbol used Greek alpha instead of the protected Latin A character.",
+            "disposition": "resolved",
+            "evidence": ["Greek Α and Latin A are distinct Unicode characters even though they look similar."],
+            "resolution": "Restored the protected Latin A unit symbol."
+        },
+        {
+            "id": "el-juice-safety-context",
+            "translationId": "calculators.juice.safetyText",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The nicotine warning omitted the object of mixing and did not explicitly identify e-liquid.",
+            "disposition": "resolved",
+            "evidence": ["The canonical warning concerns risk reduction before mixing one's own e-liquid."],
+            "resolution": "Named υγρό αναπλήρωσης explicitly and tightened the independent-verification guidance."
+        },
+        {
+            "id": "el-coil-terminal-terms",
+            "translationId": "calculators.coil.legLength",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Coil and wire legs were described with words for human legs or feet.",
+            "disposition": "resolved",
+            "evidence": ["These fields refer to the electrical terminal portions of the resistance wire."],
+            "resolution": "Used ακροδέκτες for leg length, terminal power loss, and remaining-wire guidance."
+        },
+        {
+            "id": "el-effective-current",
+            "translationId": "calculators.batt.effectiveMaximumCurrent",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "Effective maximum current used an adjective meaning successful or efficacious.",
+            "disposition": "resolved",
+            "evidence": ["The result is the active current limit used by the battery safety calculation."],
+            "resolution": "Changed the label to Ενεργό μέγιστο ρεύμα."
+        },
+        {
+            "id": "el-wire-result-labels",
+            "translationId": "calculators.wirewiz.powerDissipated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Dissipated power used a diffusion term and the standalone configuration label used the wrong grammatical case.",
+            "disposition": "resolved",
+            "evidence": ["Both values are standalone technical UI labels."],
+            "resolution": "Used Ισχύς απωλειών and the nominative label Διαμόρφωση."
+        }
+    ]
+}

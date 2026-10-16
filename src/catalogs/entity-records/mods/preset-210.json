@@ -1,0 +1,49 @@
+{
+    "entityId": "vapor-flask-v2-dna-40",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-210",
+            "title": "Vapor Flask Squonk DNA 40 product page",
+            "url": "https://www.vapinart.com/cart/Vapor-Flask-Squonk-DNA-40-21S-Black-Top-P1772.aspx",
+            "limitations": "Exact-device page preserves a dated review observation; the current out-of-stock state is not used as evidence of current availability."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Vapor Flask V2.1 DNA40 product record",
+            "url": "https://www.intaste.de/Vapor-Flask-V21-DNA40",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-dna40-20260824",
+            "title": "Evolv DNA 40 datasheet",
+            "url": "https://downloads.evolvapor.com/dna40.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 2
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Evolv DNA-40 (std. wire)"
+            }
+        ]
+    }
+}

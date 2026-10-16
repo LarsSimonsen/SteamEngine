@@ -1,0 +1,29 @@
+{
+    "entityId": "yihi-sx350j",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "YiHi SX board-family technical discussion",
+            "url": "https://www.ecigtalk.org/forum/f126/t50133.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-sx350j-20260824",
+            "title": "YiHi SX350J device manual",
+            "url": "https://manualzilla.com/doc/6777132/bedienungsanleitung",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": []
+}

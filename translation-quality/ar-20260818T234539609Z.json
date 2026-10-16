@@ -1,0 +1,59 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260818T234539609Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the active cycle was finalized."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Arabic pass identified three additional unit-symbol and formula defects; all three were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-20260819-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The milliampere conversion translated protected SI unit symbols into Arabic words.",
+            "disposition": "resolved",
+            "evidence": ["The previous entry used مللي أمبير and أ rather than the canonical mA and A symbols."],
+            "resolution": "Restored the protected SI expression 1 mA = 0.001 A."
+        },
+        {
+            "id": "ar-20260819-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The watt conversion used megawatts instead of milliwatts.",
+            "disposition": "resolved",
+            "evidence": ["The previous entry said 1 واط = 1000 ميجاوات, which changes the scale by 10^9."],
+            "resolution": "Restored the correct SI conversion 1 W = 1000 mW."
+        },
+        {
+            "id": "ar-20260819-053",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The ideal-heating formula translated the protected time variable and unit symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula displayed ر and Arabic unit words instead of t, kJ, W, and s."],
+            "resolution": "Restored the canonical variable and SI symbols in t = 41.8 kJ / 100 W = 418 s."
+        }
+    ]
+}

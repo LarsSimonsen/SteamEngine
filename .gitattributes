@@ -1,0 +1,3 @@
+# Keep generated translation-review metadata byte-stable across platforms.
+/src/i18n/translation-review.json text eol=lf
+/src/i18n/translation-review/*.json text eol=lf

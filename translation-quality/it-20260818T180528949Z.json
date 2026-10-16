@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "it",
+    "cycleId": "it-20260818T180528949Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Italian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Italian pass identified 25 actionable formula, terminology, grammar, technical-clarity, and SI-unit defects across electrical, circuit, thermal, trigonometric, and unit content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Italian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "it-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.1.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The resistance rearrangement used compressed division notation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression was R = V/I."
+            ],
+            "resolution": "Restored the readable protected notation R = V / I."
+        },
+        {
+            "id": "it-20260818-077",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current definition omitted the variable name and repeated ampere awkwardly.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet said only that current was expressed in amperes."
+            ],
+            "resolution": "Rewrote it as I è la corrente, misurata in ampere (A)."
+        },
+        {
+            "id": "it-20260818-078",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-heating paragraph mixed infinitive and imperative forms and used an awkward literal rendering.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph began with Verificare and used a less natural margin phrase."
+            ],
+            "resolution": "Rewrote it with consistent informal imperative wording and clearer thermal caution."
+        },
+        {
+            "id": "it-20260818-079",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The branch definition was missing the preposition needed for natural Italian.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used percorso corrente."
+            ],
+            "resolution": "Changed it to percorso per la corrente."
+        },
+        {
+            "id": "it-20260818-080",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The loop definition used an English loanword in an otherwise Italian list.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began with Un loop."
+            ],
+            "resolution": "Rephrased it as a closed path returning to its starting point."
+        },
+        {
+            "id": "it-20260818-081",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor conclusion used resistori inconsistently with the rest of the Italian terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous conclusion referred to both components as resistori."
+            ],
+            "resolution": "Changed it to entrambe le resistenze."
+        },
+        {
+            "id": "it-20260818-082",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor conclusion used an awkward literal phrase for branch current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous wording said each branch trasporta 10 A."
+            ],
+            "resolution": "Rephrased it as each branch conducts 10 A when branch resistances are equal."
+        },
+        {
+            "id": "it-20260818-083",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage-law heading was less natural than the standard Italian technical form.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title used Legge di Kirchhoff sulla tensione."
+            ],
+            "resolution": "Changed it to Legge della tensione di Kirchhoff."
+        },
+        {
+            "id": "it-20260818-084",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law paragraph used an awkward translation of loop direction and current flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph referred to una direzione del circuito and scorre attraverso."
+            ],
+            "resolution": "Rewrote it with verso di percorrenza and attraversa terminology."
+        },
+        {
+            "id": "it-20260818-085",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cell-current bullet used a literal translation of current sharing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began with La condivisione della corrente."
+            ],
+            "resolution": "Changed it to the natural La ripartizione della corrente."
+        },
+        {
+            "id": "it-20260818-086",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The lithium-ion series-charging warning used awkward word order and omitted explicit per-cell monitoring.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said ricarica in serie agli ioni di litio."
+            ],
+            "resolution": "Rewrote it as series charging of lithium-ion cells with monitoring of each cell."
+        },
+        {
+            "id": "it-20260818-087",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-solving checklist used an impersonal infinitive where the surrounding instructions used direct imperatives.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began with Contrassegnare."
+            ],
+            "resolution": "Changed it to the direct imperative Segna."
+        },
+        {
+            "id": "it-20260818-088",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The second circuit-solving checklist item had the same inconsistent mood.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began with Applicare."
+            ],
+            "resolution": "Changed it to the direct imperative Applica."
+        },
+        {
+            "id": "it-20260818-089",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The model-limits paragraph switched to an impersonal infinitive at the warning conclusion.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous sentence ended with Includere ogni comportamento omesso."
+            ],
+            "resolution": "Changed it to direct imperative wording with clearer high-current context."
+        },
+        {
+            "id": "it-20260818-090",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR display name omitted the standard abbreviation and was less explicit about resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was only Coefficiente di temperatura della resistenza."
+            ],
+            "resolution": "Changed it to Coefficiente di temperatura della resistenza (TCR)."
+        },
+        {
+            "id": "it-20260818-091",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR power paragraph used fonte di corrente and a literal driven-at-voltage phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph was understandable but less idiomatic for an engineering explanation."
+            ],
+            "resolution": "Rewrote it with alimentata a tensione costante and sorgente di corrente."
+        },
+        {
+            "id": "it-20260818-092",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The triangle-solving heading was an awkward literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title did not use the natural infinitive construction for finding sides and angles."
+            ],
+            "resolution": "Changed it to Trovare lati e angoli."
+        },
+        {
+            "id": "it-20260818-093",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating setup used an ambiguous reference to the example.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began with Riscalda l'esempio da 41,8 kJ."
+            ],
+            "resolution": "Rephrased it as heating a sample requiring 41,8 kJ with a constant 100 W source and no losses."
+        },
+        {
+            "id": "it-20260818-094",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change heading did not express the practical-limit context naturally.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was a literal translation of phase changes and limits."
+            ],
+            "resolution": "Changed it to Cambiamenti di fase e limiti pratici."
+        },
+        {
+            "id": "it-20260818-095",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI length row used an uppercase metre symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used M instead of the SI symbol m."
+            ],
+            "resolution": "Corrected the row to metro with symbol m."
+        },
+        {
+            "id": "it-20260818-096",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI time row used an uppercase second symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used S instead of the SI symbol s."
+            ],
+            "resolution": "Corrected the row to secondo with symbol s."
+        },
+        {
+            "id": "it-20260818-097",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.4",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI electric-current row contained a corrupted unit symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used UN instead of A."
+            ],
+            "resolution": "Corrected the row to ampere with symbol A."
+        },
+        {
+            "id": "it-20260818-098",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.5",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The amount-of-substance row translated mole as neo.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used the unrelated Italian word neo."
+            ],
+            "resolution": "Changed the unit name to mole and retained mol."
+        },
+        {
+            "id": "it-20260818-099",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.6",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI luminous-intensity row used an uppercase candela symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used CD instead of cd."
+            ],
+            "resolution": "Corrected the row to candela with symbol cd."
+        },
+        {
+            "id": "it-20260818-100",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The milli prefix used the uppercase mega symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used M for 10^-3."
+            ],
+            "resolution": "Corrected the prefix row to milli with symbol m."
+        }
+    ]
+}

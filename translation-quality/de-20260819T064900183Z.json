@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260819T064900183Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded German pass identified an inconsistent inverse-tangent label and shortened side labels in the worked example; both were aligned with the standard German triangle terms." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "de-20260819-011",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-tangent formula used gegenüber and angrenzend instead of the standard German terms Gegenkathete and Ankathete used by the other formulas and explanation.",
+            "disposition": "resolved",
+            "evidence": ["The inverse-sine and inverse-cosine formulas used Gegenkathete and Ankathete, but inverse tangent used different descriptive labels."],
+            "resolution": "Changed the inverse-tangent formula to Gegenkathete / Ankathete."
+        },
+        {
+            "id": "de-20260819-012",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used descriptive side labels instead of the standard German terms used in the section.",
+            "disposition": "resolved",
+            "evidence": ["The example used gegenüber and angrenzend while the explanatory text and formulas used Gegenkathete and Ankathete."],
+            "resolution": "Aligned both example labels with Gegenkathete and Ankathete."
+        }
+    ]
+}

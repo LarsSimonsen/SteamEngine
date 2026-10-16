@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260818T142901096Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded German pass identified 25 actionable formula, terminology, grammar, and technical-clarity defects across electrical, circuit, trigonometric, thermal, unit, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘I = V/R’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "de-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘R = V/I’."],
+            "resolution": "Restored ‘R = V / I’."
+        },
+        {
+            "id": "de-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-power paragraph used the vague loanword Spielraum for a safety margin.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said the component needed ‘Spielraum’."],
+            "resolution": "Changed it to the precise technical phrase Sicherheitsmarge."
+        },
+        {
+            "id": "de-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule example described a power rate as joules per second without stating the equivalent power.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘7,2 Joule pro Sekunde’."],
+            "resolution": "Clarified the result as 7.2 W or 72 J in 10 seconds."
+        },
+        {
+            "id": "de-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-transfer bullet retained the English loanword Hardware.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘Hardware’."],
+            "resolution": "Changed it to the German term Geräte."
+        },
+        {
+            "id": "de-20260818-031",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-connection definition used a literal compound rather than the standard German term.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Eine Parallelverbindung ...’."],
+            "resolution": "Changed it to Parallelschaltung."
+        },
+        {
+            "id": "de-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell safety bullet used an awkward nominalized phrase for charging.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Das serielle Lithium-Ionen-Laden’."],
+            "resolution": "Rewrote it as charging lithium-ion cells in series and clarified balancing or protection."
+        },
+        {
+            "id": "de-20260818-033",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The German sentence incorrectly capitalized a new clause after a semicolon.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘; Viele Metalle’."],
+            "resolution": "Changed Viele to lowercase viele."
+        },
+        {
+            "id": "de-20260818-034",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle explanation used an ungrammatical description of the adjacent side.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said the adjacent side ‘berührt ihn mit Ausnahme der Hypotenuse’."],
+            "resolution": "Rewrote the paragraph with standard Gegenkathete, Ankathete, and Hypotenuse wording."
+        },
+        {
+            "id": "de-20260818-035",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘I = V/R’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "de-20260818-036",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-capacity formula lost the temperature-difference symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘C = Q/AT’."],
+            "resolution": "Restored ‘C = Q / ΔT’."
+        },
+        {
+            "id": "de-20260818-037",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-time conclusion used an unclear pronoun and spelled out the protected seconds unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with ‘ist es etwa 523 Sekunden’."],
+            "resolution": "Rephrased it with the heating time and protected 523 s notation."
+        },
+        {
+            "id": "de-20260818-038",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change limitation referred to specific heat rather than specific heat capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said ‘die spezifische Wärme’."],
+            "resolution": "Changed it to die spezifische Wärmekapazität and clarified deviation from the ideal."
+        },
+        {
+            "id": "de-20260818-039",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux description used Wärmefluss instead of the preferred German technical term.",
+            "disposition": "resolved",
+            "evidence": ["The previous description repeatedly used ‘Wärmefluss’."],
+            "resolution": "Aligned the description with Wärmestromdichte."
+        },
+        {
+            "id": "de-20260818-040",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux summary used an indirect literal rate phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary described the rate of heat transfer through an area unit indirectly."],
+            "resolution": "Changed it to ‘Die Wärmeübertragungsrate pro Flächeneinheit’."
+        },
+        {
+            "id": "de-20260818-041",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example title omitted the technical concept of flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Durchschnittlicher Wärmefluss’."],
+            "resolution": "Changed it to ‘Mittlere Wärmestromdichte eines Heizelements’."
+        },
+        {
+            "id": "de-20260818-042",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical heat-flux check used an infinitive rather than a formal imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began with an infinitive rather than ‘Unterscheiden Sie’."],
+            "resolution": "Changed it to a formal imperative distinguishing average and local maxima."
+        },
+        {
+            "id": "de-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The second heat-flux check used an informal or incomplete imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet did not use the formal instruction style used elsewhere in the locale."],
+            "resolution": "Changed it to ‘Berücksichtigen Sie ...’."
+        },
+        {
+            "id": "de-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction note used Wärmefluss rather than Wärmestrom.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said the minus sign indicated ‘Wärmefluss’."],
+            "resolution": "Changed it to the technical term Wärmestrom."
+        },
+        {
+            "id": "de-20260818-045",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge section title was mistranslated as measuring-device systems.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Messgerätesysteme’."],
+            "resolution": "Changed it to the technical title ‘Drahtstärkesysteme’."
+        },
+        {
+            "id": "de-20260818-046",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG safety paragraph incorrectly capitalized the second clause after a semicolon.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘; Die Strombelastbarkeit’."],
+            "resolution": "Changed Die to lowercase die and retained the technical safety wording."
+        },
+        {
+            "id": "de-20260818-047",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final wire-gauge instruction used the vague phrase aktuelle Kapazität.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Bestimmen Sie die aktuelle Kapazität’."],
+            "resolution": "Changed it to the precise term Strombelastbarkeit."
+        },
+        {
+            "id": "de-20260818-048",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example conclusion used the generic Wärmefluss term after the title was localized.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion said ‘Die durchschnittliche Wärmefluss ...’."],
+            "resolution": "Aligned it with mittlere Wärmestromdichte."
+        },
+        {
+            "id": "de-20260818-049",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length-conversion formulas retained English unit names and decimal points.",
+            "disposition": "resolved",
+            "evidence": ["The previous formulas used inch, foot, feet, and decimal points."],
+            "resolution": "Localized the unit names and normalized German decimal commas across the formula set."
+        },
+        {
+            "id": "de-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge comparison used an awkward phrase for stranded construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘strandete Konstruktion’."],
+            "resolution": "Changed it to the natural German phrase mehrdrähtige Ausführung."
+        }
+    ]
+}

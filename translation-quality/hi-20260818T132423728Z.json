@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260818T132423728Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Hindi pass identified 25 actionable protected-formula, variable-name, and technical-terminology defects across Ohm, Joule, Kirchhoff, TCR, trigonometry, and thermal content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "hi-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Ohm-law formula localized protected variable names into Hindi words.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘वी = आई × आर’."],
+            "resolution": "Restored ‘V = I × R’."
+        },
+        {
+            "id": "hi-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current definition repeated the Hindi word for ampere and used a localized variable inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘एम्पीयर या एम्पीयर (ए)’."],
+            "resolution": "Changed it to a concise definition of I in amperes (A)."
+        },
+        {
+            "id": "hi-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The rearranged current formula localized the variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘मैं = वी/आर’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "hi-20260818-029",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The rearranged resistance formula localized the variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘आर = वी/आई’."],
+            "resolution": "Restored ‘R = V / I’."
+        },
+        {
+            "id": "hi-20260818-030",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current worked formula localized variables and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used Hindi words for I, V, and A."],
+            "resolution": "Restored the protected SI expression for current."
+        },
+        {
+            "id": "hi-20260818-031",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The resistance worked formula localized variables and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used Hindi words for R, V, and A."],
+            "resolution": "Restored the protected SI expression for resistance."
+        },
+        {
+            "id": "hi-20260818-032",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The voltage worked formula localized variables and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used Hindi words for V, A, and volts."],
+            "resolution": "Restored the protected SI expression for voltage."
+        },
+        {
+            "id": "hi-20260818-033",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-power formula localized all protected variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used पी, वी, आई, and आर."],
+            "resolution": "Restored ‘P = V × I = I^2 × R = V^2 / R’."
+        },
+        {
+            "id": "hi-20260818-034",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description retained an English loan phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous description used ‘जूल हीटिंग’ in otherwise Hindi content."],
+            "resolution": "Rewrote it with the Hindi term जूल तापन."
+        },
+        {
+            "id": "hi-20260818-035",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.formulas",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "All three Joule-heating formulas localized protected variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions used Hindi words for P, V, I, and R."],
+            "resolution": "Restored the protected P = V × I, P = I^2 × R, and P = V^2 / R expressions."
+        },
+        {
+            "id": "hi-20260818-036",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical-checks title used an informal literal translation.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘व्यावहारिक जांच’."],
+            "resolution": "Changed it to ‘व्यावहारिक परीक्षण’."
+        },
+        {
+            "id": "hi-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.formulas",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Kirchhoff current-law formulas localized protected current symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions used Hindi words for I, I_in, and I_out."],
+            "resolution": "Restored Σ I = 0 and Σ I_in = Σ I_out."
+        },
+        {
+            "id": "hi-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-resistance formula localized R_total.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘R_कुल’."],
+            "resolution": "Restored ‘R_total = R_1 + R_2 + ...’."
+        },
+        {
+            "id": "hi-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-resistance example formula localized R_total.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘R_कुल’."],
+            "resolution": "Restored ‘R_total = 0.40 Ω’."
+        },
+        {
+            "id": "hi-20260818-040",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR coefficient formula contained corrupted degree-unit characters.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression rendered the degree unit as a control character."],
+            "resolution": "Restored the protected α and °C notation."
+        },
+        {
+            "id": "hi-20260818-041",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The TCR temperature-change formula contained corrupted degree-unit characters.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression rendered 80 °C with a control character."],
+            "resolution": "Restored ‘ΔT = 100 - 20 = 80 °C’."
+        },
+        {
+            "id": "hi-20260818-042",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle formulas localized protected geometry labels and variables.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions used Hindi words inside sin, cos, and tan formulas."],
+            "resolution": "Restored the standard sin, cos, and tan expressions with opposite, adjacent, and hypotenuse."
+        },
+        {
+            "id": "hi-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.formulas",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The basic heat-capacity formulas localized protected variable names.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions used Devanagari variable names for C, Q, m, and c."],
+            "resolution": "Restored C = Q / ΔT and Q = m × c × ΔT."
+        },
+        {
+            "id": "hi-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-heating formula localized Q and P.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘क्यू = पी × टी’."],
+            "resolution": "Restored ‘Q = P × t’."
+        },
+        {
+            "id": "hi-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The latent-heat formula localized Q, m, and L.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘क्यू = एम × एल’."],
+            "resolution": "Restored ‘Q = m × L’."
+        },
+        {
+            "id": "hi-20260818-046",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule worked-example title used an ungrammatical literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘काम किया उदाहरण’."],
+            "resolution": "Standardized the surrounding section terminology in the correction overlay."
+        },
+        {
+            "id": "hi-20260818-047",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-power paragraph mixed localized units with a literal safety phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used वी, डब्ल्यू, and a literal ‘हेडरूम’ phrase."],
+            "resolution": "Rewrote the paragraph with protected SI notation and a clear safety-margin phrase."
+        },
+        {
+            "id": "hi-20260818-048",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current-law title used the generic word for current instead of the electrical term धारा.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘किरचॉफ का वर्तमान कानून’."],
+            "resolution": "Changed it to ‘किरचॉफ का धारा नियम’."
+        },
+        {
+            "id": "hi-20260818-049",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR result formula used localized punctuation and variables inconsistently with the preceding formulas.",
+            "disposition": "resolved",
+            "evidence": ["The result was not aligned with the restored α and ΔT expressions."],
+            "resolution": "The corrected overlay preserves the protected R_T result notation."
+        },
+        {
+            "id": "hi-20260818-050",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The electrical-heating section title used an awkward literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘विद्युत शक्ति से गर्म करना’."],
+            "resolution": "Changed it to the technical Hindi title ‘विद्युत शक्ति से तापन’."
+        }
+    ]
+}

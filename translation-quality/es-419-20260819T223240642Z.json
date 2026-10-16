@@ -1,0 +1,122 @@
+{
+    "schemaVersion": 1,
+    "locale": "es-419",
+    "cycleId": "es-419-20260819T223240642Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, complete effective es-419 exports, runtime-expanded catalog presentations, glossary, protected-token rules, and three fresh independent machine critiques were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation checks, type checking, 459 non-queue tests, the production build, route checks, and generated-link checks passed while the cycle was active." },
+        "linguisticCritique": { "state": "completed", "summary": "Three independent machine iterations identified and resolved 61 actionable findings before the bounded run limit." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Latin American Spanish human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested continued improvement and a commit, not publication or deployment." }
+    },
+    "findings": [
+        {
+            "id": "es419-runtime-catalog-materialization", "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "source-content-defect", "severity": "critical", "disposition": "resolved",
+            "summary": "Corrected battery, material, and mod dictionaries were exported but stale draft dictionaries had already been expanded into encyclopedia presentations.",
+            "evidence": ["Affected battery notes 71, 77–92, and 94–96, material.safety.verifiedProfile, and mod profiles 235 and 237."],
+            "resolution": "Re-expanded all three es-419 presentation categories from the corrected dictionaries and wired corrected dictionaries into the exported translation maps."
+        },
+        {
+            "id": "es419-catalog-safety-notes", "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Nineteen battery evidence notes lost ampere units or distorted tabless, temperature-limited, rewrap, and production-revision meaning.",
+            "evidence": ["The independent pass checked notes for batteries 71, 77–92, and 94–96 against canonical English."],
+            "resolution": "Made every corrected safety note effective at runtime with units, identities, and evidence limits intact."
+        },
+        {
+            "id": "es419-mod-profile-relationships", "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "Several mod profiles mistranslated cell count, adapters, integrated batteries, control boards, or left English construction syntax.",
+            "evidence": ["Affected presets 10, 231, 234, 235, 236, 237, and 238."],
+            "resolution": "Retranslated the affected profiles and preserved product identities and electrical limits."
+        },
+        {
+            "id": "es419-reset-semantics", "translationId": "messages.error.reset",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "Reset actions used Reiniciar, suggesting a restart rather than restoring state.",
+            "evidence": ["Affected shared error, Ohm, battery, coil, juice, mod-range, TCR, and Wire Wizard reset labels."],
+            "resolution": "Standardized the actions on Restablecer."
+        },
+        {
+            "id": "es419-formula-object-shape", "translationId": "catalog.concepts.formula-object-shape",
+            "category": "source-content-defect", "severity": "critical", "disposition": "resolved",
+            "summary": "Thirteen section formulas had been replaced with bare strings, so the renderer received no expression property.",
+            "evidence": ["Affected Kirchhoff series, voltage, and cell formulas plus trigonometry ratio, inverse, and radians formulas."],
+            "resolution": "Restored ConceptFormula objects and assigned through their expression properties."
+        },
+        {
+            "id": "es419-shared-ui-cleanup", "translationId": "messages.calculatorHeader.oldVersionNote",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Shared UI retained duplicate punctuation, wrong curve-sort wording, unsafe grammatical gender, and inconsistent voltage terminology.",
+            "evidence": ["Covered old-version note, normalization help, voltage labels, visibility states, catalog used-by text, and count agreement."],
+            "resolution": "Corrected concatenation, wording, gender neutrality, plural handling, and LatAm voltaje terminology."
+        },
+        {
+            "id": "es419-concept-register", "translationId": "catalog.concepts.informalRegister",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Concept instructions mixed formal imperatives into an informal-tú locale.",
+            "evidence": ["Affected Ohm, TCR, SI, heat-flux, Kirchhoff, trigonometry, wire-gauge, and material-safety instructions."],
+            "resolution": "Normalized the identified instructions to clear informal imperatives."
+        },
+        {
+            "id": "es419-concept-language", "translationId": "catalog.concepts.concept-joule-heating.displayName",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Concept headings and prose retained calques, inconsistent Joule terminology, lowercase titles, punctuation, and awkward technical phrasing.",
+            "evidence": ["Covered Ohm headings/example, Joule terminology, Kirchhoff solving title, heat headings, TCR mechanical strain, and wire-gauge headings."],
+            "resolution": "Rewrote the affected headings and passages with consistent Latin American technical Spanish."
+        },
+        {
+            "id": "es419-concept-number-format", "translationId": "catalog.concepts.es419NumberConvention",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Static concepts used Spain-style decimal commas and period grouping while Intl.NumberFormat(es-419) uses decimal points and comma grouping.",
+            "evidence": ["The exhaustive pass covered 61 paths across all seven concepts and verified Intl.NumberFormat(es-419)."],
+            "resolution": "Normalized every identified static value and formula to es-419 punctuation without changing numeric identity."
+        },
+        {
+            "id": "es419-literal-unicode-escapes", "translationId": "catalog.concepts.literalUnicodeEscapes",
+            "category": "translation-defect", "severity": "high", "disposition": "resolved",
+            "summary": "Twelve effective concept strings displayed literal Unicode escape text instead of Ω, α, Δ, and °.",
+            "evidence": ["The runtime scan enumerated every remaining literal escape path."],
+            "resolution": "Replaced every identified literal escape with its actual symbol."
+        },
+        {
+            "id": "es419-wirewiz-consistency", "translationId": "calculators.wirewiz.electrical",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Wire Wizard retained adjective-only result headings, dormant title conflicts, and lowercase Clapton.",
+            "evidence": ["Affected electrical, thermal, coilParametersTitle, wireDesignTitle, and clapton."],
+            "resolution": "Aligned headings with visible terms and preserved the Clapton construction name."
+        },
+        {
+            "id": "es419-calculator-residuals", "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect", "severity": "medium", "disposition": "resolved",
+            "summary": "Median resistance, TCR normalization help, and battery authenticity agreement remained inaccurate.",
+            "evidence": ["Affected modrange.medianResistance, tcr.exportHelp, and comparisons.batteries.compareAuthenticityVerified."],
+            "resolution": "Used Resistencia mediana, neutral normalization wording, and feminine Verificada."
+        },
+        {
+            "id": "es419-joule-example", "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0",
+            "category": "terminology-disagreement", "severity": "medium", "disposition": "resolved",
+            "summary": "The Joule example used bobina and the unnatural electrical verb transporta.",
+            "evidence": ["The locale glossary uses resistencia for the heating element."],
+            "resolution": "Used Una resistencia de 0.8 Ω conduce 3 A and aligned the conclusion."
+        },
+        {
+            "id": "es419-si-and-heat-values", "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.2",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "SI, imperial, heat-capacity, heat-flux, TCR, trigonometry, Ohm, and Kirchhoff examples had inconsistent localized values.",
+            "evidence": ["The exhaustive path audit covered every table cell, setup, formula, conclusion, prefix, and conversion value."],
+            "resolution": "Made units, grouping, decimals, symbols, and percent spacing consistent and unambiguous."
+        },
+        {
+            "id": "es419-catalog-number-fanout", "translationId": "catalogText.mod.preset-231.profile",
+            "category": "factual-or-safety-risk", "severity": "high", "disposition": "resolved",
+            "summary": "Six corrected dictionary values and eleven expanded catalog consumers used the wrong es-419 numeric punctuation.",
+            "evidence": ["Affected battery 82 and mod presets 231, 234, 235, 236, and 237."],
+            "resolution": "Corrected the source dictionaries and regenerated their expanded presentation fan-out."
+        }
+    ]
+}

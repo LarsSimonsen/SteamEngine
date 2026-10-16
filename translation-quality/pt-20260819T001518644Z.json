@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "pt",
+    "cycleId": "pt-20260819T001518644Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Portuguese source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Portuguese pass identified three terminology and protected-formula presentation defects; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Portuguese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "pt-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading used a literal phrase instead of the standard Portuguese electrical term.", "disposition": "resolved", "evidence": ["Lei atual de Kirchhoff reads as a current or present law rather than Kirchhoff's current law."], "resolution": "Changed it to Lei das correntes de Kirchhoff." },
+        { "id": "pt-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.0", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The current-law formula changed the protected variable I to lowercase i.", "disposition": "resolved", "evidence": ["The previous expression was Σ i = 0, while the notation contract preserves the electrical-current variable I."], "resolution": "Restored Σ I = 0." },
+        { "id": "pt-20260819-008", "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.0", "category": "translation-defect", "severity": "medium", "summary": "The Joule-heating worked formula used spaced caret notation and omitted the explicit evaluated power expression.", "disposition": "resolved", "evidence": ["The previous expression was P = I ^ 2 × R = 3 ^ 2 × 0,8 = 7,2 W."], "resolution": "Normalized the displayed formula to P = I^2 × R = 3^2 × 0,8 = 7,2 W." }
+    ]
+}

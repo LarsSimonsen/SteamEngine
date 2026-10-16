@@ -1,0 +1,169 @@
+{
+    "entityId": "battery-65",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for Sony US18650VTC4.",
+        "description": "This researched draft preserves the calculator's 2100mAh and 30A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "vapingvibe-2026",
+            "title": "Best 18650 Batteries for Vaping",
+            "url": "https://vapingvibe.com/best-18650-batteries/",
+            "publisher": "vapingvibe.com",
+            "limitations": "Bounded five-cell editorial list; commercial links may influence selection."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "mooch-sony-vtc4",
+            "title": "Sony VTC4 2000mAh bench retest",
+            "url": "https://www.e-cigarette-forum.com/threads/sony-vtc4-2000mah-18650-retest-results-a-great-23a-2100mah-battery.733299/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact tested sample and date; later batches, wrappers, or counterfeit cells may differ."
+        },
+        {
+            "id": "ecf-vtc4-discussion",
+            "title": "Fake or Real Sony VTC4 discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/fake-or-real-sony-vtc4.872549/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Small exact-model community discussion from 2018."
+        },
+        {
+            "id": "spec-sony-kp",
+            "title": "Sony VTC3/VTC4/VTC5 and US18650V3 specification records",
+            "url": "https://www.keeppower.com.cn/UploadFiles/20140321235357.pdf",
+            "publisher": "Keeppower specification mirror",
+            "limitations": "Specification mirror; it supports bare-cell physical properties, not wrapper appearance or retail authenticity."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-murata",
+            "title": "Cylindrical type lithium-ion secondary batteries",
+            "url": "https://www.murata.com/en-sg/products/batteries/cylindrical",
+            "publisher": "Murata Manufacturing",
+            "limitations": "Current Murata product information; it identifies the positive-electrode families for VTC4 and VTC5 but does not cover every historical Sony revision."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-sony-vtc4",
+            "statement": "Sony US18650VTC4 is documented as a flat-top, unprotected 18650 cell; the specification records approximately 18.2 mm x 65.0 mm and common retail references show a green wrapper for this model.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Sony US18650VTC4 2100mAh 30A as a 2100mAh preset with a 30A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "cdr-obs-v3-0218",
+            "statement": "Battery Mooch assessed this tested exact model at 23A continuous discharge.",
+            "evidenceDate": "2016-03-14",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "Murata identifies the Sony/Murata US18650VTC4 positive electrode as NCM, with graphite as the negative electrode.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "high"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Sony US18650VTC4 has reliable market-introduction evidence dated 2016-03-14 or earlier.",
+            "evidenceDate": "2016-03-14",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [
+        {
+            "id": "review-obs-v3-0218",
+            "reviewer": "Battery Mooch",
+            "reviewedAt": "2016-03-14",
+            "verdict": "positive",
+            "summary": "Eligible Battery Mooch exact-model test conclusion retained with its original evidence date.",
+            "pros": [
+                "Exact-model instrumented vaping-focused test."
+            ],
+            "reservations": [
+                "The conclusion applies to the tested sample and observable revision, not every later batch."
+            ]
+        }
+    ],
+    "safetyFindings": [
+        {
+            "summary": "The runtime 30A value exceeds the tested 23A CDR.",
+            "runtimeImplication": "Preserve compatibility value until separately approved; do not treat it as an endorsed CDR."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion — NMC",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

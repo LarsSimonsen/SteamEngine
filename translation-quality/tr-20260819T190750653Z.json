@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "tr", "cycleId": "tr-20260819T190750653Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Turkish locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Turkish critique found two catalog labels using food and implementation senses." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Turkish human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "tr-catalog-metadata", "translationId": "shared.encyclopediaDetail.breadcrumb", "category": "translation-defect", "severity": "medium", "summary": "Breadcrumb and catalog implication used culinary and implementation senses rather than navigation and impact.", "disposition": "resolved", "evidence": ["The labels identify a navigation path and the effect of research on the catalog."], "resolution": "Used natural Turkish navigation and impact terminology." }]
+}

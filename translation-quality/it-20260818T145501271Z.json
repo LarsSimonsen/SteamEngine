@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "it",
+    "cycleId": "it-20260818T145501271Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Italian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Italian pass identified 25 actionable formula, terminology, grammar, and technical-clarity defects across electrical, circuit, trigonometric, thermal, heat-flux, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Italian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "it-20260818-051",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule worked formula used L instead of W for power.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with 7,2 L."],
+            "resolution": "Restored P = I^2 × R = 3^2 × 0,8 = 7,2 W."
+        },
+        {
+            "id": "it-20260818-052",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule example described power as joules per second without stating watts clearly.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used 7,2 joule al secondo."],
+            "resolution": "Clarified the result as 7,2 W or 72 J in 10 seconds."
+        },
+        {
+            "id": "it-20260818-053",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-transfer bullet retained the English loanword hardware.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with all'hardware."],
+            "resolution": "Changed it to alle apparecchiature."
+        },
+        {
+            "id": "it-20260818-054",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff current-law title was mistranslated as the current or present law.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was L'attuale legge di Kirchhoff."],
+            "resolution": "Changed it to Legge della corrente di Kirchhoff."
+        },
+        {
+            "id": "it-20260818-055",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law paragraph used direzioni attuali instead of directions of current.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence instructed the reader to choose direzioni attuali."],
+            "resolution": "Rephrased it with direzioni delle correnti and natural Italian agreement."
+        },
+        {
+            "id": "it-20260818-056",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Kirchhoff voltage-law formula omitted spacing around the sigma term.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ΣV = 0."],
+            "resolution": "Restored Σ V = 0."
+        },
+        {
+            "id": "it-20260818-057",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The parallel-branch voltage formula localized the protected total-voltage variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used V_totale."],
+            "resolution": "Restored V_total = V_1 = V_2 = ... with the Italian branch note."
+        },
+        {
+            "id": "it-20260818-058",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell bullet used an awkward phrase for ampere-hour capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used capacità amperora without the natural unit phrase."],
+            "resolution": "Rewrote it as capacità in ampere-ora."
+        },
+        {
+            "id": "it-20260818-059",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell bullet used an incomplete formulation for approximately additive current and capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used si aggiungono approssimativamente without a clear subject pair."],
+            "resolution": "Rephrased it with natural Italian wording for capacity and available current."
+        },
+        {
+            "id": "it-20260818-060",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The sine formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used opposto and ipotenusa inside the formula."],
+            "resolution": "Restored sin(θ) = opposite / hypotenuse."
+        },
+        {
+            "id": "it-20260818-061",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The cosine formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used adiacente and ipotenusa inside the formula."],
+            "resolution": "Restored cos(θ) = adjacent / hypotenuse."
+        },
+        {
+            "id": "it-20260818-062",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tangent formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used opposto and adiacente inside the formula."],
+            "resolution": "Restored tan(θ) = opposite / adjacent."
+        },
+        {
+            "id": "it-20260818-063",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-sine formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used opposto and ipotenusa inside the formula."],
+            "resolution": "Restored θ = sin^-1(opposite / hypotenuse)."
+        },
+        {
+            "id": "it-20260818-064",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-cosine formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used adiacente and ipotenusa inside the formula."],
+            "resolution": "Restored θ = cos^-1(adjacent / hypotenuse)."
+        },
+        {
+            "id": "it-20260818-065",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The inverse-tangent formula localized protected triangle-side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used opposto and adiacente inside the formula."],
+            "resolution": "Restored θ = tan^-1(opposite / adjacent)."
+        },
+        {
+            "id": "it-20260818-066",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.degrees-and-radians.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The degree-to-radian formula localized the protected degree variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used θ_gradi."],
+            "resolution": "Restored θ_rad = θ_deg × π / 180."
+        },
+        {
+            "id": "it-20260818-067",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating conclusion spelled out the validated seconds result.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with 523 secondi rather than protected 523 s notation."],
+            "resolution": "Changed it to approximately 523 s."
+        },
+        {
+            "id": "it-20260818-068",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change limitations referred to specific heat rather than specific heat capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used calore specifico in the simplifying assumption."],
+            "resolution": "Changed it to capacità termica specifica and clarified nonuniform temperature."
+        },
+        {
+            "id": "it-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux display name did not identify the per-area density quantity.",
+            "disposition": "resolved",
+            "evidence": ["The previous display name was Flusso di calore."],
+            "resolution": "Changed it to Densità di flusso termico."
+        },
+        {
+            "id": "it-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux description used the general heat-flow term instead of heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous description repeatedly used flusso di calore without the per-area qualifier."],
+            "resolution": "Aligned it with densità di flusso termico."
+        },
+        {
+            "id": "it-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux summary did not use the standard per-unit-area phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary described transfer through an area unit indirectly."],
+            "resolution": "Changed it to the rate of heat transfer per unit surface."
+        },
+        {
+            "id": "it-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The q'' definition called the quantity heat flow rather than heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said q'' è il flusso di calore."],
+            "resolution": "Defined q'' as densità di flusso termico in W/m²."
+        },
+        {
+            "id": "it-20260818-073",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux example conclusion used the general heat-flow term after the quantity was defined as density.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion said flusso di calore medio."],
+            "resolution": "Aligned it with densità media di flusso termico."
+        },
+        {
+            "id": "it-20260818-074",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The convection paragraph used coefficiente superficiale rather than the convection coefficient.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph referred to a generic surface coefficient h."],
+            "resolution": "Changed it to coefficiente di convezione h and retained Kelvin."
+        },
+        {
+            "id": "it-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The stranded-conductor instruction used an awkward singular construction and inconsistent imperative mood.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used costruzione del trefolo and an infinitive among informal instructions."],
+            "resolution": "Rephrased it with costruzione dei trefoli and a consistent informal imperative."
+        }
+    ]
+}

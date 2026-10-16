@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260818T203026027Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded German pass identified 25 remaining circuit, TCR, thermal, SI-unit, and wire-gauge wording issues; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-20260818-076",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance example title used an imperative phrase rather than a concise noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Finden Sie Widerstand’."],
+            "resolution": "Changed it to ‘Widerstand bestimmen’."
+        },
+        {
+            "id": "de-20260818-077",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage example title used an inconsistent imperative form.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Finden Sie Spannung’."],
+            "resolution": "Changed it to ‘Spannung bestimmen’."
+        },
+        {
+            "id": "de-20260818-078",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating explanation used Wärmefluss where the page consistently discusses heat-flux density.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph described Wärmefluss without the density qualifier and used a literal surface-loss construction."],
+            "resolution": "Rewrote it with Wärmestromdichte and clearer energy-transfer wording."
+        },
+        {
+            "id": "de-20260818-079",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance relationship used an unnecessarily literal production phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said doubling current ‘produziert’ four times the heat effect."],
+            "resolution": "Changed it to the direct relation ‘vervierfacht sich die Wärmeleistung’."
+        },
+        {
+            "id": "de-20260818-080",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current relationship repeated the doubling phrase awkwardly.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘verdoppelt eine Verdoppelung’."],
+            "resolution": "Changed it to ‘verdoppelt sich ... wenn sich der Widerstand verdoppelt’."
+        },
+        {
+            "id": "de-20260818-081",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage TCR paragraph used compressed syntax for resistance and current changes.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph joined the positive-TCR condition and current tendency without a clear clause structure."],
+            "resolution": "Rewrote it with explicit constant-voltage and constant-current relationships."
+        },
+        {
+            "id": "de-20260818-082",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR limitation paragraph used a literal first-order estimate phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph ended with ‘erste Ordnung Schätzung’."],
+            "resolution": "Rewrote it with clear German for a first-order approximation and its real-world deviations."
+        },
+        {
+            "id": "de-20260818-083",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The waveform-variable bullet omitted natural German articles and repeated und.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘A ist Amplitude ... t die Zeit ...’."],
+            "resolution": "Changed it to ‘A ist die Amplitude, f die Frequenz ... t die Zeit ...’."
+        },
+        {
+            "id": "de-20260818-084",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angular-frequency unit used an inconsistent Bogenmaß construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘im Bogenmaß pro Sekunde’."],
+            "resolution": "Changed it to the standard wording ‘in Radiant pro Sekunde’."
+        },
+        {
+            "id": "de-20260818-085",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating setup used a compressed compound around the energy example.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup used a less natural ‘41,8-kJ-Beispiel’ construction."],
+            "resolution": "Rewrote it as a direct instruction to heat the 41,8-kJ example from a constant 100-W source without losses."
+        },
+        {
+            "id": "de-20260818-086",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The area-conversion instruction omitted the definite article.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Konvertieren Sie Fläche’."],
+            "resolution": "Changed it to ‘Wandeln Sie die Fläche in m² um’."
+        },
+        {
+            "id": "de-20260818-087",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux definition did not consistently distinguish heat-flux density from heat capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used Wärmefluss while the title and formulas used Wärmestromdichte."],
+            "resolution": "Rewrote it with consistent Wärmestromdichte terminology and a clear surface-crossing explanation."
+        },
+        {
+            "id": "de-20260818-088",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length-conversion setup used an unnecessary repeated imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup used ‘Konvertieren Sie ... in ...’ with an awkward second unit phrase."],
+            "resolution": "Changed it to natural German for converting 0,1 Zoll to millimetres and 5 mm to inches."
+        },
+        {
+            "id": "de-20260818-089",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The imperial-dimension note used English unit names.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph ended with ‘Zoll, Quadratzoll und Kubikzoll’ in a mixed construction and used a literal relation phrase."],
+            "resolution": "Rewrote it with consistent German for mass, force, and the three imperial dimensions."
+        },
+        {
+            "id": "de-20260818-090",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The unit-check title used the less natural Gerätekontrollen.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Praktische Gerätekontrollen’."],
+            "resolution": "Changed it to ‘Praktische Einheitenprüfungen’."
+        },
+        {
+            "id": "de-20260818-091",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unit-check bullet used an untranslated English imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Convert before multiplying or dividing’."],
+            "resolution": "Changed it to ‘Wandeln Sie die Einheiten vor dem Multiplizieren oder Dividieren um’."
+        },
+        {
+            "id": "de-20260818-092",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rounding instruction used an incomplete imperative and less natural precision phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘Rund nur zu letzt’ style wording."],
+            "resolution": "Rewrote it as a complete instruction to round only at the end."
+        },
+        {
+            "id": "de-20260818-093",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG expansion used an imprecise translated system name.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet called AWG ‘amerikanische Drahtstärke’."],
+            "resolution": "Changed it to ‘AWG steht für American Wire Gauge’ and retained the historical Brown-&-Sharpe name."
+        },
+        {
+            "id": "de-20260818-094",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SWG description omitted the standard system name and used a compressed compound.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘Draht- und Blechdickensystem’ without a clear system-name expansion."],
+            "resolution": "Rewrote it with the standard name and clear German description."
+        },
+        {
+            "id": "de-20260818-095",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The BWG description used a literal past-tense construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said the system ‘wurde früher ... verwendet’."],
+            "resolution": "Changed it to concise German describing its historical use for iron wire, pipes, and sheet thickness."
+        },
+        {
+            "id": "de-20260818-096",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The system-identification instruction used the vague verb nennen.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘Nennen Sie das System’."],
+            "resolution": "Changed it to the precise specification instruction ‘Geben Sie das System an’."
+        },
+        {
+            "id": "de-20260818-097",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The nominal-diameter instruction used a compressed ‘Systeme verwechselt’ phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet did not clearly state when systems may be confused."],
+            "resolution": "Rewrote it with ‘wenn Systeme verwechselt werden können’."
+        },
+        {
+            "id": "de-20260818-098",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conductor-dimension instruction used an incomplete material noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet did not clearly distinguish a blank conductor from the isolated diameter."],
+            "resolution": "Rewrote it with clear German for blank conductor, insulation, sheet thickness, and pipe-wall thickness."
+        },
+        {
+            "id": "de-20260818-099",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The stranded-conductor instruction used a literal term for wire construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘Litzenkonstruktion’ without a direct specification verb."],
+            "resolution": "Changed it to a direct instruction to specify the Drahtkonstruktion when flexibility and total diameter matter."
+        },
+        {
+            "id": "de-20260818-100",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance explanation used Materialwiderstand rather than the standard material property term.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph referred to ‘Materialwiderstand ρ’."],
+            "resolution": "Changed it to ‘spezifischer Widerstand ρ’ and clarified the three-size AWG relationship."
+        }
+    ]
+}

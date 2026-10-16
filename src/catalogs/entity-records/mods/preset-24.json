@@ -1,0 +1,38 @@
+{
+    "entityId": "dovpo-e-mech",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Dovpo E-Mech manual",
+            "url": "https://manualzz.com/doc/6602878/dovpo-e-mech-electronic-cigarette-mod-user-manual",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-dovpo-emech-20260824",
+            "title": "Dovpo E-Mech review",
+            "url": "https://www.ecigguide.com/dovpo-e-mech-30-watt",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260819T122945918Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete German source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue and findings validation, TypeScript type checking, 8 focused tests, the production IIS build, route-contract validation, and generated internal-link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh German critique found chronology, protected identity, safety, coil, and catalog false-friend defects." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent German human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        {
+            "id": "de-available-by", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high",
+            "summary": "Available by was rendered as available from, reversing the date-bound meaning.", "disposition": "resolved",
+            "evidence": ["The canonical label expresses an upper date bound."], "resolution": "Used a spätestens construction."
+        },
+        {
+            "id": "de-product-identity", "translationId": "shared.encyclopedia.kicker", "category": "translation-defect", "severity": "high",
+            "summary": "Steam Engine and Wire Wizard were translated as ordinary phrases.", "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."], "resolution": "Restored both names verbatim across shared, TCR, and Wire Wizard labels."
+        },
+        {
+            "id": "de-coil-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high",
+            "summary": "Coil lead power loss became loss of leg strength.", "disposition": "resolved",
+            "evidence": ["The fields describe the electrical lead portions of resistance wire."], "resolution": "Used Anschlussdrähte consistently in Coil and Wire Wizard."
+        },
+        {
+            "id": "de-nicotine-safety", "translationId": "calculators.juice.safetyText", "category": "factual-or-safety-risk", "severity": "high",
+            "summary": "The warning omitted e-liquid context and used redundant, weakened hazard wording.", "disposition": "resolved",
+            "evidence": ["The canonical warning explicitly concerns mixing e-liquid and the possibility of death."], "resolution": "Rewrote the warning in concise, explicit German."
+        },
+        {
+            "id": "de-catalog-false-friends", "translationId": "shared.encyclopediaDetail.propertyLabels.boardController", "category": "translation-defect", "severity": "medium",
+            "summary": "Technical board, property, evidence, and evidence-date labels used unrelated legal or general-language senses.", "disposition": "resolved",
+            "evidence": ["The labels belong to an electrical technical catalog."], "resolution": "Applied Platine, Eigenschaft, and natural evidence terminology."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1, "locale": "id", "cycleId": "id-20260819T130708553Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Indonesian source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Indonesian critique confirmed interpolation works and found protected-name drift, an imprecise date bound and circuit-board label, coil-lead ambiguity, and a safety and ingredient wording issue." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Indonesian human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "id-identity", "translationId": "shared.encyclopedia.kicker", "category": "translation-defect", "severity": "high", "summary": "Steam Engine was translated as the generic steam engine in a catalog identity label.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored Steam Engine." },
+        { "id": "id-date-board", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Available by only said available on, and circuit board used a generic board term.", "disposition": "resolved", "evidence": ["These labels describe an upper date bound and electronics."], "resolution": "Used paling lambat and papan sirkuit." },
+        { "id": "id-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "medium", "summary": "Coil legs used an unqualified anatomical term.", "disposition": "resolved", "evidence": ["The fields describe the lead portions of resistance wire."], "resolution": "Qualified the term as kaki kawat." },
+        { "id": "id-safety", "translationId": "calculators.juice.safetyText", "category": "factual-or-safety-risk", "severity": "medium", "summary": "The warning referred vaguely to mixing it yourself and ingredient was rendered as material.", "disposition": "resolved", "evidence": ["The context is a liquid recipe and e-liquid safety."], "resolution": "Used bahan and named liquid explicitly in the warning." }
+    ]
+}

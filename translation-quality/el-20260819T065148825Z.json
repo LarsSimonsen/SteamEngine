@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "el",
+    "cycleId": "el-20260819T065148825Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Greek source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Greek pass identified shortened side labels in the trigonometry formulas and worked example; all were aligned with the established Greek terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Greek human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "el-20260819-020",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle formulas used shortened Greek side labels instead of the established απέναντι πλευρά and παρακείμενη πλευρά terms.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory paragraph used the full side terms while the formulas displayed only απέναντι and παρακείμενη."],
+            "resolution": "Expanded all three visible formulas to the established Greek side terminology."
+        },
+        {
+            "id": "el-20260819-021",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-trigonometry formulas used shortened Greek side labels that differed from the surrounding explanation.",
+            "disposition": "resolved",
+            "evidence": ["The inverse formulas omitted πλευρά although the section consistently described απέναντι πλευρά and παρακείμενη πλευρά."],
+            "resolution": "Aligned all three inverse formulas with the established Greek side terminology."
+        },
+        {
+            "id": "el-20260819-022",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used abbreviated side labels instead of the terms used in the Greek explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example labels omitted πλευρά while the explanatory paragraph used the full side terms."],
+            "resolution": "Expanded both example labels to απέναντι πλευρά and παρακείμενη πλευρά."
+        }
+    ]
+}

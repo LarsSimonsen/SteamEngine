@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "tr",
+    "cycleId": "tr-20260819T004306979Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Turkish source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Turkish pass identified three untranslated trigonometry formula terms; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Turkish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "tr-20260819-033", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0", "category": "translation-defect", "severity": "medium", "summary": "The inverse-sine formula retained English side names in the Turkish trigonometry section.", "disposition": "resolved", "evidence": ["The previous expression was θ = sin^-1(opposite / hypotenuse)."], "resolution": "Changed the side names to karşı and hipotenüs." },
+        { "id": "tr-20260819-034", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The inverse-cosine formula retained English side names in the Turkish trigonometry section.", "disposition": "resolved", "evidence": ["The previous expression was θ = cos^-1(adjacent / hypotenuse)."], "resolution": "Changed the side names to komşu and hipotenüs." },
+        { "id": "tr-20260819-035", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2", "category": "translation-defect", "severity": "medium", "summary": "The inverse-tangent formula retained English side names in the Turkish trigonometry section.", "disposition": "resolved", "evidence": ["The previous expression was θ = tan^-1(opposite / adjacent)."], "resolution": "Changed the side names to karşı and komşu." }
+    ]
+}

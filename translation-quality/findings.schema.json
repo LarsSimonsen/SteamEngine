@@ -1,0 +1,85 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://www.steam-engine.org/schemas/translation-critique-findings-v1.json",
+    "title": "Steam Engine translation critique findings",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schemaVersion", "locale", "cycleId", "resourceProfile", "review", "findings"],
+    "properties": {
+        "schemaVersion": { "const": 1 },
+        "locale": { "type": "string", "minLength": 2 },
+        "cycleId": { "type": "string", "minLength": 1 },
+        "resourceProfile": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["classification", "assessment"],
+            "properties": {
+                "classification": { "enum": ["standard", "limited"] },
+                "assessment": { "type": "string", "minLength": 1 },
+                "ownerConfirmed": { "type": "boolean" },
+                "limitations": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+            }
+        },
+        "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "automatedQuality",
+                "linguisticCritique",
+                "competentHumanReview",
+                "publicationAuthorization"
+            ],
+            "properties": {
+                "automatedQuality": { "$ref": "#/$defs/reviewBoundary" },
+                "linguisticCritique": { "$ref": "#/$defs/reviewBoundary" },
+                "competentHumanReview": { "$ref": "#/$defs/reviewBoundary" },
+                "publicationAuthorization": { "$ref": "#/$defs/reviewBoundary" }
+            }
+        },
+        "findings": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/finding" }
+        }
+    },
+    "$defs": {
+        "reviewBoundary": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["state", "summary"],
+            "properties": {
+                "state": { "type": "string", "minLength": 1 },
+                "summary": { "type": "string", "minLength": 1 },
+                "reviewer": { "type": "string", "minLength": 1 },
+                "reviewedAt": { "type": "string", "format": "date" }
+            }
+        },
+        "finding": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "category", "severity", "summary", "disposition", "evidence"],
+            "properties": {
+                "id": { "type": "string", "minLength": 1 },
+                "translationId": { "type": "string", "minLength": 1 },
+                "category": {
+                    "enum": [
+                        "translation-defect",
+                        "source-content-defect",
+                        "factual-or-safety-risk",
+                        "terminology-disagreement",
+                        "tool-false-positive"
+                    ]
+                },
+                "severity": { "enum": ["low", "medium", "high", "critical"] },
+                "summary": { "type": "string", "minLength": 1 },
+                "disposition": {
+                    "enum": ["resolved", "rejected-with-evidence", "owner-accepted", "awaiting-owner"]
+                },
+                "evidence": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+                "resolution": { "type": "string", "minLength": 1 },
+                "ownerDecision": { "type": "string", "minLength": 1 },
+                "ownerIdentity": { "type": "string", "minLength": 1 },
+                "ownerQuestion": { "type": "string", "minLength": 1 }
+            }
+        }
+    }
+}

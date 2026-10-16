@@ -3,11 +3,23 @@
     "sourceLocale": "en",
     "locale": "is",
     "entries": {
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "rafhlöðupakki",
+            "context": "Combined series/parallel cell assembly.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "medium"
+        },
         "vaping": {
             "source": "vaping",
-            "preferred": "veip",
-            "context": "Use veip as the established Icelandic loanword in user-facing contexts; use rafsígaretta or rafrettur for the device.",
-            "discouraged": ["vaping"],
+            "preferred": "rafrettunotkun",
+            "context": "Use rafrettunotkun for vaping as an activity; use rafretta or rafrettur for the device and the verb nota rafrettu in prose.",
+            "discouraged": ["vaping", "veip"],
             "state": "machine",
             "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic language and vaping sources" },
             "confidence": "medium",
@@ -31,7 +43,7 @@
         "coil": {
             "source": "coil",
             "preferred": "spóla",
-            "context": "Use spóla for the coil/heating spiral in calculator labels; retain coil only where it is a product identifier.",
+            "context": "Use spóla for coils and heating spirals everywhere in translated prose and UI; retain coil only inside an unchanged product name or identifier.",
             "state": "machine",
             "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic vaping terminology sources" },
             "confidence": "medium",
@@ -99,22 +111,106 @@
             "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic electrical terminology" },
             "confidence": "high"
         },
+        "control-board": {
+            "source": "control board",
+            "preferred": "stýrispjald",
+            "context": "An electronic control board used in a regulated device; use stýrispjald. Use stýrispjaldssnið for a profile describing that board. Reserve stjórnborð for a user-facing control panel, and do not use borð, bretti, or stýriborð for the circuit board.",
+            "discouraged": ["borð", "bretti", "stjórnborð", "stýriborð"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Semantic correction informed by Icelandic electrical terminology research" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "dict.cc English-Icelandic: printed circuit board", "url": "https://m.dict.cc/english-icelandic/board.html" }
+            ]
+        },
+        "board-profile": {
+            "source": "board profile",
+            "preferred": "stýrispjaldssnið",
+            "context": "A profile describing an electronic control board. Keep it distinct from stýrispjald (the physical board), tækjasnið (the complete device profile), and borð or stjórnborð (physical-table or user-interface meanings).",
+            "discouraged": ["borðsnið", "stjórnborðssnið", "snið stýrispjaldsins", "prófíll stýrispjalds"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Terminology policy confirmed by maintainer after Icelandic technical-usage research" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Íðorðabankinn: Icelandic technical terminology", "url": "https://idord.arnastofnun.is/" }
+            ]
+        },
+        "device-profile": {
+            "source": "device profile",
+            "preferred": "tækjasnið",
+            "context": "A profile describing the complete vaping device. Use tækjasnið for this device-level meaning; use stýrispjaldssnið when the profile belongs to the electronic control board. Do not use tækissnið, mod-prófíll, or mod-snið.",
+            "discouraged": ["tækissnið", "mod-prófíll", "mod-snið", "prófíll tækis"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Terminology policy confirmed by maintainer after Icelandic technical-usage research" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Íðorðabankinn: Icelandic technical terminology", "url": "https://idord.arnastofnun.is/" }
+            ]
+        },
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "rafhlöðufruma",
+            "context": "An individual rechargeable cell, distinguished from a battery pack or device-integrated battery. The shorter synonym sella is used in battery-calculator labels and help; rafhlöðufruma remains valid. University of Iceland Vísindavefurinn (2017-03-31, answer 14877) supports the cell lemma, not full sentence grammar.",
+            "discouraged": ["klefi"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Semantic correction informed by Icelandic battery terminology research" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Vísindavefurinn: how batteries work", "url": "https://www.visindavefur.is/svar.php?id=49959" }
+            ]
+        },
         "output-power": {
             "source": "atomizer output",
-            "preferred": "afl sem gefið er frá uppgufaranum",
+            "preferred": "Úttaksafl uppgufarans",
             "context": "This is emitted power from the atomizer, not a user-interface output.",
             "state": "needs-review",
             "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Icelandic vaping terminology and the English source annotation" },
             "confidence": "low",
             "uncertainty": {
                 "reason": "The compact Icelandic label must distinguish emitted power from the vaporizer from a generic output or interface result.",
-                "bestCurrentTranslation": "afl sem gefið er frá uppgufaranum",
-                "alternatives": ["afl uppgufarans", "útgangsafl uppgufarans"],
+                "bestCurrentTranslation": "Úttaksafl uppgufarans",
+                "alternatives": ["Afl uppgufarans", "Útgefið afl uppgufarans"],
                 "sources": [
                     { "label": "Vísindavefurinn: the heater produces vapor in an e-cigarette", "url": "https://www.visindavefur.is/svar.php?id=69718" },
                     { "label": "Icelandic EEA terminology for vaporizer components", "url": "https://gagnagrunnur.ees.is/32016d0586" }
-                ]
-            }
+            ]
+        },
+        "mod": {
+            "source": "mod",
+            "preferred": "rafrettutæki",
+            "context": "Use the formal Icelandic term rafrettutæki for a vaping mod; use stýrt rafrettutæki or óstýrt rafrettutæki when regulation matters. Do not use mod, mods, Mod-svið, or veiptæki in translated UI or prose.",
+            "discouraged": ["mod", "mods", "Mod-svið", "veiptæki"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Terminology policy confirmed by maintainer after Icelandic official-usage research" },
+            "confidence": "medium",
+            "sources": [
+                { "label": "Alþingi: rafrettur og áfyllingar fyrir rafrettur", "url": "https://www.althingi.is/altext/148/s/1086.html" }
+            ]
+        },
+        "discharge": {
+            "source": "discharge",
+            "preferred": "afhleðsla",
+            "context": "Use afhleðsla for electrical discharge and its compounds, including afhleðslustraumur and samfelld afhleðslueinkunn; do not use losun for this meaning.",
+            "discouraged": ["losun"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Terminology policy confirmed by maintainer after Icelandic battery terminology research" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vísindavefurinn: einnota og endurhlaðanlegar rafhlöður", "url": "https://www.visindavefur.is/svar.php?id=14877" }
+            ]
+        },
+        "battery-drain": {
+            "source": "battery drain",
+            "preferred": "rafhlöðunotkun",
+            "context": "Use rafhlöðunotkun for current or energy drawn from a battery by a device; keep it distinct from the electrical process afhleðsla.",
+            "discouraged": ["afhleðsla", "losun"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Terminology policy confirmed by maintainer after Icelandic battery terminology research" },
+            "confidence": "high",
+            "sources": [
+                { "label": "Vísindavefurinn: einnota og endurhlaðanlegar rafhlöður", "url": "https://www.visindavefur.is/svar.php?id=14877" }
+            ]
+        }
         }
     }
 }

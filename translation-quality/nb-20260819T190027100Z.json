@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "nb", "cycleId": "nb-20260819T190027100Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Bokmål locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Bokmål critique found one research metadata label using an unnecessary English-derived legal term." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Bokmål human review was performed; the correction remains machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "nb-evidence-date", "translationId": "shared.encyclopediaDetail.evidenceDate", "category": "translation-defect", "severity": "low", "summary": "Evidensdato is an awkward English-derived label in this documentation context.", "disposition": "resolved", "evidence": ["The field gives the date of the supporting documentation, not legal evidence."], "resolution": "Used Dokumentasjonsdato." }]
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "es",
+    "cycleId": "es-20260818T120338240Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Spanish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Spanish pass identified 25 actionable defects in battery summaries, evidence notes, and safety wording; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Spanish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "es-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary was awkwardly phrased.",
+            "disposition": "resolved",
+            "evidence": ["The previous Spanish wording used an unnecessary literal construction for a rechargeable cell."],
+            "resolution": "Rephrased it as a concise description of a removable rechargeable cell for compatible devices."
+        },
+        {
+            "id": "es-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The integrated-battery summary did not clearly distinguish an internal pack from a replaceable cell.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording described an internal battery but did not clearly state that it is integrated."],
+            "resolution": "Added the integrated-pack and user-replaceable-cell distinction."
+        },
+        {
+            "id": "es-20260818-003",
+            "translationId": "catalogText.battery.note.approvedResearch",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The approval note used a feminine adjective without a clear feminine antecedent.",
+            "disposition": "resolved",
+            "evidence": ["The previous text began with ‘Aprobada’ although the implied record is masculine."],
+            "resolution": "Changed the agreement to the natural masculine form ‘Aprobado’."
+        },
+        {
+            "id": "es-20260818-004",
+            "translationId": "catalogText.battery.note.capacityBelowLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity note used less precise label language.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording said the capacity was lower than what the label suggests rather than lower than the labeled value."],
+            "resolution": "Changed it to state that true capacity is below the capacity shown on the label."
+        },
+        {
+            "id": "es-20260818-005",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 20 A continuous-rating note was not grammatical Spanish.",
+            "disposition": "resolved",
+            "evidence": ["The previous text placed the number before a malformed literal translation of continuous rating."],
+            "resolution": "Rephrased it as 20 A of continuous current and explicitly excluded pulse values."
+        },
+        {
+            "id": "es-20260818-006",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison note was a malformed machine translation of the source sentence.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘20 Un’ and awkward word order around the wrapper and production revision."],
+            "resolution": "Rephrased the value as a conservative independent 20 A comparison and retained both qualifiers."
+        },
+        {
+            "id": "es-20260818-007",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model testing note had malformed number placement and unnatural phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘15 Un valor’ and did not naturally connect the tested CCC-marked revision."],
+            "resolution": "Rephrased it as a conservative 15 A value from exact-model testing."
+        },
+        {
+            "id": "es-20260818-008",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tabless-revision note mistranslated the tested-cell description.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording referred to a revision without tabs as ‘sin tablas’ and used malformed amperage grammar."],
+            "resolution": "Used the technical term ‘tabless’ and explicitly warned not to substitute pulse values."
+        },
+        {
+            "id": "es-20260818-009",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The true-continuous-value note was not grammatical Spanish.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘36 Un verdadero valor continuo’ and omitted natural temperature wording."],
+            "resolution": "Rephrased it as a 36 A true continuous value with the 56 A figure temperature-limited."
+        },
+        {
+            "id": "es-20260818-010",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The pre-production and CCC caveat used awkward literal wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used an unnecessary capitalized sentence fragment and a less natural term for tested cells."],
+            "resolution": "Rephrased it as a conservative 40 A value for tested pre-production cells without the CCC logo."
+        },
+        {
+            "id": "es-20260818-011",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The recommended continuous value note was malformed and unclear about cycle life.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘13 Un valor’ and a literal phrase for the intended cycle-life limitation."],
+            "resolution": "Rephrased it as a recommended 13 A continuous value and an absolute 16.8 A maximum."
+        },
+        {
+            "id": "es-20260818-012",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The note had malformed amperage grammar and an unnatural temperature caveat.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘40 Un valor’ and used ‘temperatura limitada’ as a literal fragment."],
+            "resolution": "Rephrased it as a conservative 40 A value with temperature-limited 70 A and pre-production samples."
+        },
+        {
+            "id": "es-20260818-013",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell comparison note was malformed.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘40 Un valor comparativo’ and did not naturally state the temperature requirement."],
+            "resolution": "Rephrased it as a 40 A production-cell comparison value requiring temperature control at 70 A."
+        },
+        {
+            "id": "es-20260818-014",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The exact-wrapper note was malformed and used an unclear translation of rewrap.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘40 Un’ and ‘reenvoltorio’ in an otherwise ungrammatical sentence."],
+            "resolution": "Rephrased it as a 40 A exact-wrapper value limited to 60 °C and tested as an EVE 40PL rewrap."
+        },
+        {
+            "id": "es-20260818-015",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The 19 A evidence note had malformed number placement.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘19 Un valor’ and unnatural capitalization around the tested samples."],
+            "resolution": "Rephrased it as a conservative 19 A value for pre-production samples without CCC marks."
+        },
+        {
+            "id": "es-20260818-016",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 40 A and 90 A caveat was not grammatical Spanish.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘40 Un valor’ and the literal fragment ‘tiene una temperatura limitada’."],
+            "resolution": "Rephrased it as a conservative 40 A value with temperature-limited 90 A."
+        },
+        {
+            "id": "es-20260818-017",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The temperature and unresolved-production caveat was malformed.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘40 Un’ and a literal phrase for temperature limitation and production continuity."],
+            "resolution": "Rephrased it as a conservative 40 A value with temperature-limited 60 A and unresolved production continuity."
+        },
+        {
+            "id": "es-20260818-018",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity and marking caveat used awkward phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘40 Un’ and the unnatural phrase ‘capacidad inconsistente’."],
+            "resolution": "Rephrased it as a conservative 40 A value for tested samples with irregular capacity and missing marks."
+        },
+        {
+            "id": "es-20260818-019",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The 13 A evidence note had malformed number placement and capitalization.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘13 Un valor’ and an unnatural sentence structure."],
+            "resolution": "Rephrased it as a conservative 13 A value for pre-production samples without CCC marks."
+        },
+        {
+            "id": "es-20260818-020",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tester estimate note was malformed and used an unnatural temperature phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘30 Un valor continuo’ and ‘tiene una temperatura limitada’."],
+            "resolution": "Rephrased it as a tester-estimated 30 A continuous value with Reliance's 50 A maximum temperature-limited."
+        },
+        {
+            "id": "es-20260818-021",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The two-batch production note was malformed.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘20 Un valor’ and a literal construction for temperature limitation."],
+            "resolution": "Rephrased it as a 20 A continuous value from two tested production-related batches."
+        },
+        {
+            "id": "es-20260818-022",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The continuous-versus-pulse distinction used awkward technical Spanish.",
+            "disposition": "resolved",
+            "evidence": ["The previous text was understandable but used an unnatural phrase for pulse-only current."],
+            "resolution": "Clarified 12 A continuous, 20 A pulse-only, and preserved the exact wrapper identifier."
+        },
+        {
+            "id": "es-20260818-023",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-wrapper and sourcing caveat contained malformed number placement and literal terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘20 Un’ and awkward translations for wrapper revisions and sourcing."],
+            "resolution": "Rephrased the 20 A exact-wrapper value, tester recommendation, advertisement, and sourcing caveat."
+        },
+        {
+            "id": "es-20260818-024",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rewrap note was malformed and used an unclear literal translation.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘30 Un’ and an unnatural term for rewrap."],
+            "resolution": "Rephrased it as a 30 A exact-model value and identified it as a rewrap."
+        },
+        {
+            "id": "es-20260818-025",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The revision-specific inheritance warning was malformed.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘30 Un’ and awkwardly described the materially different four-leg revisions."],
+            "resolution": "Rephrased the exact five-leg revision value and the warning against inheriting the profile."
+        }
+    ]
+}

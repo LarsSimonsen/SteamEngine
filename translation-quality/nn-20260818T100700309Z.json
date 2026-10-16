@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T100700309Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, partial and complete builds, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Nynorsk translation defects in the remaining Kirchhoff and opening TCR text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-026",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff description retained Bokmål vocabulary and an unclear compound.",
+            "disposition": "resolved",
+            "evidence": ["Before: beskriver bevaring i kretsknutepunkter og lukkede sløyfer."],
+            "resolution": "Changed to Nynorsk wording describing conservation at circuit nodes and in closed loops."
+        },
+        {
+            "id": "nn-20260818-027",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The loop definition was entirely Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["Before: En sløyfe er en lukket vei som kommer tilbake til utgangspunktet."],
+            "resolution": "Changed to: Ei sløyfe er ein lukka veg som kjem tilbake til utgangspunktet."
+        },
+        {
+            "id": "nn-20260818-028",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-connection definition used Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En seriekobling gir strømmen berre én vei gjennom komponentene."],
+            "resolution": "Changed to Nynorsk seriekopling, straum, éin, veg, and komponentane forms."
+        },
+        {
+            "id": "nn-20260818-029",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-connection definition used Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En parallellkobling kobler grener til de samme to nodene."],
+            "resolution": "Changed to Nynorsk parallellkopling, koplar, greinene, dei same, and nodane forms."
+        },
+        {
+            "id": "nn-20260818-030",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law example retained Bokmål articles, verbs, and electrical terms.",
+            "disposition": "resolved",
+            "evidence": ["Before: går inn i en node ... én gren ... de resterende grenene ... når du regner."],
+            "resolution": "Rewrote the example with Nynorsk articles, terminology, and verb forms."
+        },
+        {
+            "id": "nn-20260818-031",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The section title used the Bokmål form kretser.",
+            "disposition": "resolved",
+            "evidence": ["Before: Serie- og parallellkretser."],
+            "resolution": "Changed to: Serie- og parallellkrinsar."
+        },
+        {
+            "id": "nn-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor example title used Bokmål compounds.",
+            "disposition": "resolved",
+            "evidence": ["Before: Seriekoblede motstander."],
+            "resolution": "Changed to: Seriekopla motstandar."
+        },
+        {
+            "id": "nn-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor setup used Bokmål infinitive and noun forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: To motstander ... kobles til 8,0 V."],
+            "resolution": "Changed to: To motstandar ... blir kopla i serie til 8,0 V."
+        },
+        {
+            "id": "nn-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor conclusion used Bokmål adjective and noun forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Den samme strømmen ... begge motstandene."],
+            "resolution": "Changed to: Den same straumen ... begge motstandane."
+        },
+        {
+            "id": "nn-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor example title used Bokmål compounds.",
+            "disposition": "resolved",
+            "evidence": ["Before: Parallellkoblede motstander."],
+            "resolution": "Changed to: Parallellkopla motstandar."
+        },
+        {
+            "id": "nn-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor setup used Bokmål noun and verb forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: To like grener ... kobles til 4,0 V."],
+            "resolution": "Changed to: To like greiner ... blir kopla til 4,0 V."
+        },
+        {
+            "id": "nn-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor conclusion used Bokmål definite forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Når grenmotstandene er like, fører hver gren 10 A."],
+            "resolution": "Changed to: Når greinmotstandane er like, fører kvar grein 10 A."
+        },
+        {
+            "id": "nn-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law explanation retained several Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: spenningsøkninger ... en lukket sløyfe ... hold polaritetene ... løsningen."],
+            "resolution": "Rewrote the paragraph with Nynorsk terms while preserving the polarity and voltage-drop meaning."
+        },
+        {
+            "id": "nn-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell explanation used Bokmål verb and noun forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Seriekoblede celler legger sammen spenningen ... tilsvarer én lik celle."],
+            "resolution": "Changed to Nynorsk seriekopla, legg, medan, and tilsvarande forms."
+        },
+        {
+            "id": "nn-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell explanation used Bokmål verb and noun forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Parallellkoblede celler beholder samme spenning ... tilgjengelig straum."],
+            "resolution": "Changed to Nynorsk parallellkopla, held på, tilgjengeleg, and om lag forms."
+        },
+        {
+            "id": "nn-20260818-041",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-sharing explanation retained Bokmål forms for dependence and wiring.",
+            "disposition": "resolved",
+            "evidence": ["Before: Strømfordelingen avhenger av indre motstand, kontakter, ledninger og brytere."],
+            "resolution": "Changed to Nynorsk straumfordelinga, avheng, kontaktar, leidningar, and brytarar."
+        },
+        {
+            "id": "nn-20260818-042",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The lithium-ion safety explanation used Bokmål requirements and protection terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: Seriekoblede litiumioneceller krever overvåking ... beskyttelse."],
+            "resolution": "Changed to Nynorsk seriekopla, krev, overvaking, and vern forms."
+        },
+        {
+            "id": "nn-20260818-043",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-solving title used Bokmål forms for solving and real circuits.",
+            "disposition": "resolved",
+            "evidence": ["Before: Løsning av virkelige kretser."],
+            "resolution": "Changed to: Løysing av verkelege krinsar."
+        },
+        {
+            "id": "nn-20260818-044",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The node-voltage bullet used Bokmål definite forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Merk nodenes spenninger, grenstrømmer og antatte strømretninger."],
+            "resolution": "Changed to Nynorsk node, greinstraum, and straumretning forms."
+        },
+        {
+            "id": "nn-20260818-045",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL/KVL bullet used Bokmål plural forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Bruk KCL i uavhengige noder og KVL rundt uavhengige sløyfer."],
+            "resolution": "Changed noder to the Nynorsk form nodar."
+        },
+        {
+            "id": "nn-20260818-046",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistor relation bullet used the Bokmål definite noun form.",
+            "disposition": "resolved",
+            "evidence": ["Before: Knytt spenning og straum i motstander sammen ..."],
+            "resolution": "Changed to Nynorsk motstandar and saman forms."
+        },
+        {
+            "id": "nn-20260818-047",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The simultaneous-equations bullet used the Bokmål verb and noun.",
+            "disposition": "resolved",
+            "evidence": ["Before: Løs de samtidige ligningene og kontroller effektbalansen."],
+            "resolution": "Changed to Nynorsk Løys and likningane forms."
+        },
+        {
+            "id": "nn-20260818-048",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-model limitations paragraph was largely Bokmål and used awkward translated terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: En forenklet modell ... virkningsgrad ... beskyttelseskretser ... sterkstrømskrets."],
+            "resolution": "Rewrote the paragraph with Nynorsk terms for model limits, efficiency, protection circuits, and high current."
+        },
+        {
+            "id": "nn-20260818-049",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR description retained Bokmål forms for describing a conductor's resistance.",
+            "disposition": "resolved",
+            "evidence": ["Before: beskriver hvordan en leders motstand endrer seg med temperaturen."],
+            "resolution": "Changed to Nynorsk skildrar, korleis, ein leiar, and endrar forms."
+        },
+        {
+            "id": "nn-20260818-050",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR linear-model introduction retained Bokmål articles and verb forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Ved en liten eller moderat temperaturendring bruker vi dette førsteordensforholdet:"],
+            "resolution": "Changed to: Ved ei lita eller moderat temperaturendring brukar vi dette førsteordensforholdet:"
+        }
+    ]
+}

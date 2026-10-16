@@ -1,0 +1,36 @@
+{
+    "entityId": "sigelei-fuchai-213-plus",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Sigelei Fuchai 213 Plus review",
+            "url": "https://www.smoketastic.com/sigelei-213-plus/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-fuchai-20260824",
+            "title": "Sigelei Fuchai 213 feature record",
+            "url": "https://www.vapoteurs.com/1428-fuchai-213.html",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

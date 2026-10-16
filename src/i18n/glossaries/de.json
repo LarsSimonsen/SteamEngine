@@ -7,9 +7,14 @@
             "source": "vaping",
             "preferred": "Dampfen",
             "context": "General German term for using an electronic cigarette.",
-            "discouraged": ["Rauchen"],
+            "discouraged": [
+                "Rauchen"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German vaping terminology research" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German vaping terminology research"
+            },
             "confidence": "high"
         },
         "electronic-cigarette": {
@@ -17,25 +22,38 @@
             "preferred": "E-Zigarette",
             "context": "Common German name for an electronic-cigarette device.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German technical and vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German technical and vaping usage"
+            },
             "confidence": "high"
         },
         "atomizer": {
             "source": "atomizer",
             "preferred": "Verdampfer",
             "context": "The vaping component that heats Liquid; not an interface or connector.",
-            "discouraged": ["Atomizer"],
+            "discouraged": [
+                "Atomizer"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German vaping glossaries and technical terminology" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German vaping glossaries and technical terminology"
+            },
             "confidence": "high"
         },
         "coil": {
             "source": "coil",
             "preferred": "Wicklung",
             "context": "Technical calculator term for the resistive heating assembly; Coil remains common in German vaping usage.",
-            "discouraged": ["Spule"],
+            "discouraged": [
+                "Spule"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German vaping glossaries" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German vaping glossaries"
+            },
             "confidence": "medium"
         },
         "replaceable-coil-head": {
@@ -43,25 +61,38 @@
             "preferred": "Verdampferkopf",
             "context": "Replaceable heating head used in a tank or pod.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German vaping usage"
+            },
             "confidence": "high"
         },
         "e-liquid": {
             "source": "e-liquid",
             "preferred": "Liquid",
             "context": "Vaping liquid used in a tank or Verdampfer.",
-            "discouraged": ["E-Flüssigkeit"],
+            "discouraged": [
+                "E-Flüssigkeit"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German native vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German native vaping usage"
+            },
             "confidence": "high"
         },
         "battery": {
             "source": "battery",
             "preferred": "Akku",
             "context": "Rechargeable battery or cell used to power a vaping device.",
-            "discouraged": ["Batterie"],
+            "discouraged": [
+                "Batterie"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "German technical and vaping usage" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German technical and vaping usage"
+            },
             "confidence": "high"
         },
         "output-power": {
@@ -69,18 +100,225 @@
             "preferred": "vom Verdampfer abgegebene Leistung",
             "context": "Power emitted by the atomizer, not an interface or output connector.",
             "state": "needs-review",
-            "provenance": { "kind": "machine", "method": "German vaping terminology research" },
+            "provenance": {
+                "kind": "machine",
+                "method": "German vaping terminology research"
+            },
             "confidence": "medium",
             "uncertainty": {
                 "reason": "German sources distinguish the Verdampfer as the device and the Leistung as its electrical output; the English annotation requires emitted-power wording rather than an interface label.",
                 "bestCurrentTranslation": "Vom Verdampfer abgegebene Leistung",
-                "alternatives": ["Ausgangsleistung des Verdampfers", "Leistungsabgabe des Verdampfers"],
+                "alternatives": [
+                    "Ausgangsleistung des Verdampfers",
+                    "Leistungsabgabe des Verdampfers"
+                ],
                 "sources": [
-                    { "label": "Backendampfer: Glossar elektrische Zigaretten", "url": "https://backendampfer.de/glossar/" },
-                    { "label": "VapeTrade: Glossar zum Dampfen", "url": "https://www.vapetrade.de/ratgeber/vape/glossar-und-begriffe/" },
-                    { "label": "BesserDampfen: Verdampfer", "url": "https://www.besserdampfen.de/hilfe/verdampfer/" }
+                    {
+                        "label": "Backendampfer: Glossar elektrische Zigaretten",
+                        "url": "https://backendampfer.de/glossar/"
+                    },
+                    {
+                        "label": "VapeTrade: Glossar zum Dampfen",
+                        "url": "https://www.vapetrade.de/ratgeber/vape/glossar-und-begriffe/"
+                    },
+                    {
+                        "label": "BesserDampfen: Verdampfer",
+                        "url": "https://www.besserdampfen.de/hilfe/verdampfer/"
+                    }
                 ]
             }
+        },
+        "electrical-current": {
+            "source": "current",
+            "preferred": "Strom",
+            "context": "Electrical current measured in amperes.",
+            "discouraged": [
+                "Aktuell",
+                "aktuelle Grenze"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "electrical-power": {
+            "source": "power",
+            "preferred": "Leistung",
+            "context": "Electrical power measured in watts.",
+            "discouraged": [
+                "Macht"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "nicotine-base": {
+            "source": "nicotine base",
+            "preferred": "Nikotinbase",
+            "context": "Nic abbreviates nicotine, not nice.",
+            "discouraged": [
+                "Schöne Basis"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "nicotine-strength": {
+            "source": "nicotine strength",
+            "preferred": "Nikotinstärke",
+            "context": "Nicotine concentration, e.g. mg/mL.",
+            "discouraged": [
+                "Schöne Stärke"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "liquid-volume": {
+            "source": "volume",
+            "preferred": "Volumen",
+            "context": "Space occupied by liquid, distinct from loudness.",
+            "discouraged": [
+                "Lautstärke"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "flavoring": {
+            "source": "flavoring",
+            "preferred": "Aroma",
+            "context": "Measured mixing ingredient.",
+            "discouraged": [
+                "Geschmack"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "Akkupack",
+            "context": "Complete series/parallel cell assembly.",
+            "discouraged": [],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "continuous-discharge": {
+            "source": "continuous discharge current",
+            "preferred": "Dauerentladestrom",
+            "context": "Continuous current rating, not watts or pulse rating.",
+            "discouraged": [
+                "Dauerentladungsleistung"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "resistivity": {
+            "source": "resistivity",
+            "preferred": "spezifischer elektrischer Widerstand",
+            "context": "Material property distinct from resistance of an object.",
+            "discouraged": [],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "heat-flux": {
+            "source": "heat flux",
+            "preferred": "Wärmestromdichte",
+            "context": "Heat transfer rate per area; W/m².",
+            "discouraged": [
+                "Wärmefluss"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "coil-turns": {
+            "source": "wraps",
+            "preferred": "Windungen",
+            "context": "Number of turns in a heating coil.",
+            "discouraged": [
+                "Wraps"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "cell-wrapper": {
+            "source": "wrapper",
+            "preferred": "Ummantelung",
+            "context": "Cell sleeve, not shipping packaging.",
+            "discouraged": [
+                "Umschlag"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "tabless": {
+            "source": "tabless",
+            "preferred": "Tabless",
+            "context": "Cell technology; native manufacturer usage retains the term.",
+            "discouraged": [
+                "Tabellenrevision"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

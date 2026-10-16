@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260819T063746658Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Nynorsk pass identified shortened side labels in the trigonometry formulas and worked example; all were aligned with the established Nynorsk terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "nn-20260819-016",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle formulas used shortened Nynorsk side labels instead of the established motståande side and hosliggjande side terms.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory text used motståande side and hosliggjande side while the formulas omitted side."],
+            "resolution": "Expanded all three visible formulas to the established Nynorsk side terminology."
+        },
+        {
+            "id": "nn-20260819-017",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-trigonometry formulas used shortened Nynorsk side labels that differed from the surrounding explanation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed motståande and hosliggjande while the section defined the terms with side."],
+            "resolution": "Aligned all three inverse formulas with the established Nynorsk side terminology."
+        },
+        {
+            "id": "nn-20260819-018",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used abbreviated side labels instead of the terms used in the Nynorsk explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example labels omitted side although the explanatory text used motståande side and hosliggjande side."],
+            "resolution": "Expanded both example labels to motståande side and hosliggjande side."
+        }
+    ]
+}

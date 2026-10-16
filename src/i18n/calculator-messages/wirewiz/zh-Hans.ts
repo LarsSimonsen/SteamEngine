@@ -33,8 +33,7 @@ export const messages: CalculatorRouteMessages = {
     "table": "桌子",
     "equivalents": "等价物",
     "temperaturePoints": "温度点（°C，逗号分隔）",
-    "temperatureHelp": "为可读的界面保留最多七个可见级别。旧版导出使用此处列出的每个点。",
-    "temperatureUnavailable": "温度结果不可用：",
+    "temperatureHelp": "示例：-40, 20, 100, 200。请输入 2–20 个互不相同且严格升序的温度，并用逗号分隔。数值不得低于 −273.15 °C。", "applyTemperaturePoints": "应用温度点", "temperatureErrorEmpty": "请在每两个逗号之间输入一个数字。", "temperatureErrorNumber": "请仅使用以逗号分隔的十进制数字。", "temperatureErrorMinimum": "请至少输入 2 个温度点。", "temperatureErrorMaximum": "请输入不超过 20 个温度点。", "temperatureErrorAbsoluteZero": "温度点不得低于 −273.15 °C。", "temperatureErrorDuplicate": "每个温度点必须互不相同。", "temperatureErrorAscending": "请按严格升序输入温度点。", "temperatureUnavailable": "温度结果不可用：",
     "temperatureDataExtrapolationUnavailable": "如果没有外推，电线设计的温度数据不涵盖该温度。",
     "extrapolated": "可用 TFR 范围之外的值是线性外推的。",
     "temperatureScale": "温标",
@@ -63,7 +62,7 @@ export const messages: CalculatorRouteMessages = {
     "results": "结果",
     "electrical": "电气",
     "resistance": "反抗",
-    "perUnitLength": "...每单位长度",
+    "perUnitLength": "单位长度电阻",
     "thermal": "热的",
     "vapingRange": "在电子烟范围内",
     "tcrExplanation": "20 °C 至 300 °C 之间电阻的相对变化。",
@@ -97,3 +96,28 @@ export const messages: CalculatorRouteMessages = {
     "wireDesignTitle": "线材设计",
     "tempControlTitle": "温度控制"
 };
+
+Object.assign(messages, {
+    "export": "导出",
+    "import": "导入",
+    "wraps": "匝数",
+    "legLength": "引线长度",
+    "wrapSpacing": "匝间距",
+    "tfrEditor": "TFR 编辑器",
+    "graph": "图表",
+    "table": "表格",
+    "single": "单线",
+    "parallel": "并联",
+    "twisted": "绞合",
+    "removeWire": "移除导线",
+    "resistance": "电阻",
+    "perUnitLength": "单位长度电阻",
+    "thermal": "热学",
+    "physical": "物理",
+    "mass": "质量",
+    "round": "圆线",
+    "ribbon": "带状线",
+    "twistPitch": "绞距",
+    "current": "电流",
+    "tcPrecision": "TC 精度"
+});

@@ -1,0 +1,37 @@
+{
+    "entityId": "innokin-itaste-vv-v3-0",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Innokin iTaste VV V3.0 historical record",
+            "url": "https://belvaping.com/articles/itaste-vv-v3-0-ot-innokin-istoriya-vejpinga/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-innokin-vv3-20260824",
+            "title": "Innokin iTaste VV V3.0 manual",
+            "url": "https://www.manualslib.com/manual/1098359/Itaste-Vv-V3-0.html",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 800
+            }
+        ]
+    }
+}

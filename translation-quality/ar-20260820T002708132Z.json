@@ -1,0 +1,42 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260820T002708132Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Arabic runtime entries, Arabic review metadata, the locale glossary, and prior reports were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "All 464 tests, translation review checks, queue validation, runtime scans, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "The first and third full-scope audits found no linguistic issues; the middle pass found one review-metadata regression."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The locale remains explicitly pending competent human Arabic review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-atomizer-output-review-state",
+            "translationId": "calculators.batt.atomizerOutput",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "Changing the atomizer-output translation signature reset its explicit needs-review metadata to the generic machine state.",
+            "disposition": "resolved",
+            "evidence": [
+                "The locale-wide review test expected Arabic to remain needs-review.",
+                "The corrected term still has documented regional terminology uncertainty."
+            ],
+            "resolution": "Restored the current signature's needs-review state, sources, preferred translation, and alternatives; the full suite then passed."
+        }
+    ]
+}

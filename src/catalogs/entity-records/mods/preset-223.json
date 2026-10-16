@@ -1,0 +1,34 @@
+{
+    "entityId": "dna80c",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Evolv DNA80C product page",
+            "url": "https://wholesale.evolvapor.com/shop/dna-boards-3/dna-80c-7194",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "input-voltage-20260824",
+            "title": "DNA80C datasheet",
+            "url": "https://wholesale.evolvapor.com/shop/dna-80c-7194/document/16"
+        },
+        {
+            "id": "operating-features-dna80c-20260824",
+            "title": "Evolv DNA 80 Color",
+            "url": "https://www.evolvapor.com/products/dna-80-color",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": []
+}

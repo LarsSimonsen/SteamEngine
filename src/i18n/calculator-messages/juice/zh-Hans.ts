@@ -59,3 +59,7 @@ export const messages: CalculatorRouteMessages = {
     "densityUnit": "密度：",
     "negativeValue": "负值意味着当前的组合不可行。"
 };
+
+Object.assign(messages, {
+    "negativeValue": "负值表示当前配方不可行。"
+});

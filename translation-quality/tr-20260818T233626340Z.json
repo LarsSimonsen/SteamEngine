@@ -1,0 +1,99 @@
+{
+    "schemaVersion": 1,
+    "locale": "tr",
+    "cycleId": "tr-20260818T233626340Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Turkish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, focused queue tests, and the full test suite passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Turkish pass identified five additional actionable formula, unit, and technical-wording defects; all five were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Turkish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle."
+        }
+    },
+    "findings": [
+        {
+            "id": "tr-20260819-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "critical",
+            "summary": "The Ohm's-law worked example rendered the current variable as the Turkish word ben.",
+            "disposition": "resolved",
+            "evidence": ["The source formula uses the protected current variable I, while the target string contained ben."],
+            "resolution": "Restored the canonical I variable and preserved the localized numeric formatting."
+        },
+        {
+            "id": "tr-20260819-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The milliampere conversion omitted spaces around the unit symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous target text was 1mA = 0,001A, unlike the surrounding SI expressions."],
+            "resolution": "Changed it to 1 mA = 0,001 A."
+        },
+        {
+            "id": "tr-20260819-028",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule-heating example localized the SI second symbol as sn.",
+            "disposition": "resolved",
+            "evidence": ["The formula displayed 10 sn, while the canonical SI symbol is s."],
+            "resolution": "Restored the SI expression E = P × t = 7,2 W × 10 s = 72 J."
+        },
+        {
+            "id": "tr-20260819-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating conclusion used an awkward rate expression.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording combined the time rate and total energy in a literal phrase."],
+            "resolution": "Rephrased the sentence as a natural statement of 7,2 joules per second and 72 J in 10 seconds."
+        },
+        {
+            "id": "tr-20260819-030",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The right-triangle formulas still exposed English side names in Turkish content.",
+            "disposition": "resolved",
+            "evidence": ["The displayed formulas used opposite, adjacent, and hypotenuse despite the surrounding Turkish explanation."],
+            "resolution": "Localized the visible opposite-side name to karşı while preserving the trigonometric expression."
+        },
+        {
+            "id": "tr-20260819-031",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula still exposed the English adjacent-side name.",
+            "disposition": "resolved",
+            "evidence": ["The displayed formula used adjacent in otherwise Turkish explanatory content."],
+            "resolution": "Localized the visible adjacent-side name to komşu."
+        },
+        {
+            "id": "tr-20260819-032",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula still exposed English side names.",
+            "disposition": "resolved",
+            "evidence": ["The displayed formula used opposite and adjacent rather than the established Turkish terms."],
+            "resolution": "Localized the visible side names to karşı and komşu."
+        }
+    ]
+}

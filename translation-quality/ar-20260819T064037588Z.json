@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T064037588Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Arabic pass identified shortened side labels in the trigonometry formulas and worked example; all were aligned with the established Arabic terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "ar-20260819-015",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle formulas used shortened Arabic side labels instead of the established الضلع المقابل and الضلع المجاور terms.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory text used الضلع المقابل and الضلع المجاور while the formulas displayed only المقابل and المجاور."],
+            "resolution": "Expanded all three visible formulas to the established Arabic side terminology."
+        },
+        {
+            "id": "ar-20260819-016",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-trigonometry formulas used shortened Arabic side labels that differed from the surrounding explanation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas used المقابل and المجاور while the section explained the terms as الضلع المقابل and الضلع المجاور."],
+            "resolution": "Aligned all three inverse formulas with the established Arabic side terminology."
+        },
+        {
+            "id": "ar-20260819-017",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used abbreviated side labels instead of the terms used in the Arabic explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example labels were المقابل and المجاور while the surrounding text used الضلع المقابل and الضلع المجاور."],
+            "resolution": "Expanded both example labels to الضلع المقابل and الضلع المجاور."
+        }
+    ]
+}

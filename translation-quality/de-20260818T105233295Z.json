@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "de",
+    "cycleId": "de-20260818T105233295Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and German source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable German translation defects in battery evidence, safety, and profile text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent German human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "de-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary was grammatically serviceable but unnecessarily relative and less concise.",
+            "disposition": "resolved",
+            "evidence": ["Before: Eine herausnehmbare wiederaufladbare Zelle, die in kompatiblen Geräten verwendet wird."],
+            "resolution": "Changed to a concise German description of a herausnehmbare, wiederaufladbare Zelle."
+        },
+        {
+            "id": "de-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The integrated-battery summary needed a more direct German user-replacement phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: Ein interner Akku im Gerät statt einer vom Benutzer austauschbaren Zelle."],
+            "resolution": "Normalized the summary while preserving the integrated-versus-removable distinction."
+        },
+        {
+            "id": "de-20260818-003",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison-value note used an English-style article and incorrect capitalization after a semicolon.",
+            "disposition": "resolved",
+            "evidence": ["Before: 20 Ein konservativer unabhängiger Vergleichswert; Die genaue Verpackung ..."],
+            "resolution": "Changed to a 20 A conservative value with German sentence casing and agreement."
+        },
+        {
+            "id": "de-20260818-004",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A and retained machine-translated test wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: 15 Ein konservativer Wert aus exakten Modelltests ..."],
+            "resolution": "Changed to a 15 A value from tests of the exact model."
+        },
+        {
+            "id": "de-20260818-005",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The table-revision note omitted A and used a false imperative for pulse ratings.",
+            "disposition": "resolved",
+            "evidence": ["Before: 45 Ein unabhängiger kontinuierlicher Wert ... Ersetzen Sie nicht die Pulswerte."],
+            "resolution": "Changed to a 45 A continuous value that does not replace pulse values."
+        },
+        {
+            "id": "de-20260818-006",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note used the false friend wahrer and omitted A after the actual value.",
+            "disposition": "resolved",
+            "evidence": ["Before: 36 Ein wahrer kontinuierlicher Wert ..."],
+            "resolution": "Changed to: 36 A tatsächlicher kontinuierlicher Wert ..."
+        },
+        {
+            "id": "de-20260818-007",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The preproduction note omitted A and used unnatural wording for preproduction cells.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 Ein konservativer Wert; Die getesteten Zellen schienen vor der Produktion zu sein ..."],
+            "resolution": "Changed to a 40 A value and natural German Vorserienprodukte wording."
+        },
+        {
+            "id": "de-20260818-008",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The recommended-rating note omitted A and translated cycle life too literally.",
+            "disposition": "resolved",
+            "evidence": ["Before: 13 Ein empfohlener Dauerwert ... Zyklenlebensdauer."],
+            "resolution": "Changed to 13 A and the natural phrase für eine lange Lebensdauer."
+        },
+        {
+            "id": "de-20260818-009",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-limited note omitted A and used inconsistent preproduction wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 Ein konservativer Wert; 70 A ist temperaturbegrenzt ... Vorproduktion."],
+            "resolution": "Changed to a 40 A value and consistent Vorserie terminology."
+        },
+        {
+            "id": "de-20260818-010",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell note used an awkward compound and a mismatched plural verb.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 A Vergleichswert Produktionszelle; 70 A erfordern ..."],
+            "resolution": "Changed to a clear 40 A comparison value for the production cell."
+        },
+        {
+            "id": "de-20260818-011",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper note omitted A and used awkward wrapper/repackaging terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 Ein exakter Wrapper-Wert ... EVE 40PL-Umwicklung."],
+            "resolution": "Changed to a 40 A value for the exact packaging and natural Rewrap wording."
+        },
+        {
+            "id": "de-20260818-012",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sample note omitted A and capitalized the sentence fragment incorrectly.",
+            "disposition": "resolved",
+            "evidence": ["Before: 19 Ein konservativer Wert; Genaue getestete Muster ..."],
+            "resolution": "Changed to a 19 A value and grammatical German sample wording."
+        },
+        {
+            "id": "de-20260818-013",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The 90 A note omitted A after the conservative value and used awkward preproduction phrasing.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 Ein konservativer Wert; 90 A ist temperaturbegrenzt ..."],
+            "resolution": "Changed to a 40 A value with clear Vorserienprodukte wording."
+        },
+        {
+            "id": "de-20260818-014",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-continuity note omitted A and used ungelöst for an unresolved status.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 Ein konservativer Wert ... bleibt ungelöst."],
+            "resolution": "Changed to 40 A and die Produktionskontinuität bleibt ungeklärt."
+        },
+        {
+            "id": "de-20260818-015",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity note omitted A and used an awkward noun phrase for inconsistent capacity.",
+            "disposition": "resolved",
+            "evidence": ["Before: 40 Ein konservativer Wert; Die getesteten Proben hatten eine inkonsistente Kapazität ..."],
+            "resolution": "Changed to 40 A and uneinheitliche Kapazität."
+        },
+        {
+            "id": "de-20260818-016",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The second preproduction note omitted A and used incorrect sentence capitalization.",
+            "disposition": "resolved",
+            "evidence": ["Before: 13 Ein konservativer Wert; Genaue getestete Muster ..."],
+            "resolution": "Changed to 13 A and grammatical German sample wording."
+        },
+        {
+            "id": "de-20260818-017",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tester-estimate note omitted A and used awkward source/maximum phrasing.",
+            "disposition": "resolved",
+            "evidence": ["Before: 30 Ein vom Tester geschätzter kontinuierlicher Wert; Der Maximalwert ..."],
+            "resolution": "Changed to 30 A and natural German wording for Reliance's maximum."
+        },
+        {
+            "id": "de-20260818-018",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The batch note omitted A and used an English-style article after the number.",
+            "disposition": "resolved",
+            "evidence": ["Before: 20 Ein kontinuierlicher Wert aus zwei geprüften ..."],
+            "resolution": "Changed to 20 A kontinuierlicher Wert from the two tested batches."
+        },
+        {
+            "id": "de-20260818-019",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The pulse-only note used an awkward deckblatt term and agreement.",
+            "disposition": "resolved",
+            "evidence": ["Before: 12 A Dauerstrom; 20 A ist nur Impulsbetrieb ... Deckblatt ..."],
+            "resolution": "Changed to 12 A kontinuierlich, 20 A Impulsbetrieb, and exact packaging wording."
+        },
+        {
+            "id": "de-20260818-020",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The exact-wrapper note omitted A and retained machine-translated sourcing and packaging terms.",
+            "disposition": "resolved",
+            "evidence": ["Before: 20 Ein exakter Wrapper-Wert ... Umverpackungsbeschaffungs- oder Verpackungsrevisionen ..."],
+            "resolution": "Rewrote the note with 20 A, Rewrap-Quellen, and Verpackungsrevisionen."
+        },
+        {
+            "id": "de-20260818-021",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rewrap note omitted A and used a literal wrapper/underlying-source construction.",
+            "disposition": "resolved",
+            "evidence": ["Before: 30 Ein exakter Modellwert ... Neuverpackung ... zugrunde liegenden Bezugsquellen ..."],
+            "resolution": "Changed to a 30 A value and natural German packaging/source wording."
+        },
+        {
+            "id": "de-20260818-022",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The revision note omitted A and used unnatural leg-count and inheritance wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: 30 Ein exakter Revisionswert mit fünf Beinen ... dürfen dieses Profil nicht erben."],
+            "resolution": "Rewrote it as the exact Fünfbein-Revision and prohibited later revisions from übernehmen this profile."
+        },
+        {
+            "id": "de-20260818-023",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The low-drain warning was translated as low power consumption rather than discharge capability.",
+            "disposition": "resolved",
+            "evidence": ["Before: Batterie mit geringem Stromverbrauch; nicht zum Dampfen geeignet."],
+            "resolution": "Changed to: Batterie mit geringer Entladekapazität; nicht zum Dampfen geeignet."
+        },
+        {
+            "id": "de-20260818-024",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The regulated-device profile used an awkward compound and omitted the possible control-board context.",
+            "disposition": "resolved",
+            "evidence": ["Before: Ein reguliertes Dampfgeräteprofil für ..."],
+            "resolution": "Changed to a profile for a regulated vaping device or control board."
+        },
+        {
+            "id": "de-20260818-025",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The continuous-rating entry was reviewed as part of the same unit-and-article correction family.",
+            "disposition": "resolved",
+            "evidence": ["Before: 20 A Dauerleistung; Pulswerte werden nicht verwendet."],
+            "resolution": "Confirmed the corrected unit-aware wording as 20 A kontinuierliche Leistung; pulse values are not used."
+        }
+    ]
+}

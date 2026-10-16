@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "sv", "cycleId": "sv-20260819T125324843Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Swedish source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Swedish critique found visible interpolation tokens, chronology and technical catalog errors, coil-lead errors, e-liquid terminology problems, and Wire Wizard false friends." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Swedish human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "sv-placeholders", "translationId": "shared.catalogManager.manage", "category": "translation-defect", "severity": "critical", "summary": "Sixteen functions could return literal lower-case placeholder tokens.", "disposition": "resolved", "evidence": ["The draft replaced only upper-case tokens."], "resolution": "Reimplemented affected catalog and Ohm functions." },
+        { "id": "sv-catalog", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "The upper date bound and technical property and board labels used incorrect senses.", "disposition": "resolved", "evidence": ["These labels describe catalog evidence and electronics."], "resolution": "Used senast, egenskap, and kort/styrenhet." },
+        { "id": "sv-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and their power loss became anatomical legs and loss of strength.", "disposition": "resolved", "evidence": ["The fields describe electrical connections."], "resolution": "Used anslutningar consistently." },
+        { "id": "sv-juice", "translationId": "calculators.juice.nicStrength", "category": "factual-or-safety-risk", "severity": "high", "summary": "Nicotine terms became the adjective fine and the target label referred to shooting.", "disposition": "resolved", "evidence": ["These fields define an e-liquid recipe."], "resolution": "Used explicit formulation terminology and rewrote the warning." },
+        { "id": "sv-wirewiz", "translationId": "calculators.wirewiz.mass", "category": "translation-defect", "severity": "high", "summary": "Current, dissipated power, and mass used present-time, disappearance, and religious-service senses.", "disposition": "resolved", "evidence": ["These are electrical and physical quantities."], "resolution": "Used ström, avgiven effekt, and massa." }
+    ]
+}

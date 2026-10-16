@@ -1,0 +1,41 @@
+{
+    "entityId": "notcigs-buzz-pro",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-186",
+            "title": "One Week with the Buzz Pro review",
+            "url": "https://www.e-cigarette-forum.com/threads/one-week-with-the-buzz-pro-review.214774/",
+            "limitations": "Exact Buzz Pro review establishes a dated upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Notcigs Buzz Pro exact-model coverage",
+            "url": "https://forums.whirlpool.net.au/archive/3qyn8ly3-2",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Notcigs VV"
+            }
+        ]
+    }
+}

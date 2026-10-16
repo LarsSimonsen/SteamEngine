@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "locale": "zh-Hans",
+    "cycleId": "zh-Hans-20260818T155045482Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Simplified Chinese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Simplified Chinese pass identified 25 actionable technical translation defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Simplified Chinese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {"id":"zh-Hans-20260818-026","translationId":"concept-ohms-law.rearranged-formulas.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The current formula used a Chinese character for the variable I.","disposition":"resolved","evidence":["The equation must solve for current I."],"resolution":"Restored I = V / R."},
+        {"id":"zh-Hans-20260818-027","translationId":"concept-ohms-law.worked-examples.0.title","category":"translation-defect","severity":"low","summary":"The title translated current as a context-dependent word for present or current time.","disposition":"resolved","evidence":["The example calculates electrical current."],"resolution":"Changed the title to the standard Chinese term for current."},
+        {"id":"zh-Hans-20260818-028","translationId":"concept-ohms-law.worked-examples.0.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The formula omitted unit spacing and the ohm symbol.","disposition":"resolved","evidence":["The result is 4.2 A from 4.2 V and 1.0 Ω."],"resolution":"Restored a fully unit-labeled formula."},
+        {"id":"zh-Hans-20260818-029","translationId":"concept-ohms-law.worked-examples.1.title","category":"translation-defect","severity":"low","summary":"The resistance title used an unnatural literal translation.","disposition":"resolved","evidence":["The example calculates resistance."],"resolution":"Changed the title to the standard Chinese technical term."},
+        {"id":"zh-Hans-20260818-030","translationId":"concept-ohms-law.worked-examples.1.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The resistance formula omitted unit spacing.","disposition":"resolved","evidence":["The result is 6 Ω from 12 V and 2 A."],"resolution":"Restored the canonical unit formatting."},
+        {"id":"zh-Hans-20260818-031","translationId":"concept-ohms-law.worked-examples.2.formulas.0","category":"factual-or-safety-risk","severity":"high","summary":"The voltage example used VCC instead of the variable V.","disposition":"resolved","evidence":["The example solves for voltage V."],"resolution":"Restored V = 0.5 A × 10 Ω = 5 V."},
+        {"id":"zh-Hans-20260818-032","translationId":"concept-ohms-law.electrical-power.title","category":"translation-defect","severity":"medium","summary":"The title said electrical force or electricity rather than electrical power.","disposition":"resolved","evidence":["The section defines P and reports watts."],"resolution":"Changed the title to electrical power."},
+        {"id":"zh-Hans-20260818-033","translationId":"concept-ohms-law.unit-conversions.bullets.1","category":"factual-or-safety-risk","severity":"medium","summary":"The megohm conversion was mistranslated as a million euros.","disposition":"resolved","evidence":["The source defines 1 MΩ = 1,000,000 Ω."],"resolution":"Restored the MΩ conversion."},
+        {"id":"zh-Hans-20260818-034","translationId":"concept-ohms-law.unit-conversions.bullets.2","category":"factual-or-safety-risk","severity":"medium","summary":"The milliampere conversion used prose and omitted the standard unit symbols.","disposition":"resolved","evidence":["The source defines 1 mA = 0.001 A."],"resolution":"Restored the standard mA and A symbols."},
+        {"id":"zh-Hans-20260818-035","translationId":"concept-joule-heating.worked-example.conclusion","category":"factual-or-safety-risk","severity":"medium","summary":"The conclusion expressed power as joules per second without clearly separating energy and power.","disposition":"resolved","evidence":["The calculation gives 7.2 W and 72 J over 10 seconds."],"resolution":"Separated power in watts from total energy in joules."},
+        {"id":"zh-Hans-20260818-036","translationId":"concept-kirchhoffs-laws.circuit-terms.bullets.1","category":"translation-defect","severity":"low","summary":"The branch definition used a current-path phrase that was not natural Chinese.","disposition":"resolved","evidence":["A branch is a path between two nodes."],"resolution":"Rewrote it as an electrical current path."},
+        {"id":"zh-Hans-20260818-037","translationId":"concept-kirchhoffs-laws.current-law.paragraphs.0","category":"factual-or-safety-risk","severity":"medium","summary":"The KCL example rendered 8 A as eight units of A and called current direction current time.","disposition":"resolved","evidence":["The example uses 8 A entering, 3 A leaving, and 5 A remaining."],"resolution":"Corrected the quantities and current-direction wording."},
+        {"id":"zh-Hans-20260818-038","translationId":"concept-kirchhoffs-laws.series-and-parallel.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The total-current variable was localized inside the equation.","disposition":"resolved","evidence":["The formula must retain I_total."],"resolution":"Restored I_total."},
+        {"id":"zh-Hans-20260818-039","translationId":"concept-kirchhoffs-laws.series-and-parallel.formulas.1","category":"factual-or-safety-risk","severity":"medium","summary":"The total-resistance variable was localized inside the equation.","disposition":"resolved","evidence":["The formula must retain R_total."],"resolution":"Restored R_total."},
+        {"id":"zh-Hans-20260818-040","translationId":"concept-kirchhoffs-laws.series-and-parallel.formulas.2","category":"factual-or-safety-risk","severity":"medium","summary":"The parallel-current equation used a localized total-current variable.","disposition":"resolved","evidence":["The formula must retain I_total."],"resolution":"Restored I_total."},
+        {"id":"zh-Hans-20260818-041","translationId":"concept-kirchhoffs-laws.series-and-parallel.formulas.3","category":"factual-or-safety-risk","severity":"medium","summary":"The reciprocal resistance equation used a localized total-resistance variable.","disposition":"resolved","evidence":["The formula must retain R_total."],"resolution":"Restored the canonical reciprocal formula."},
+        {"id":"zh-Hans-20260818-042","translationId":"concept-kirchhoffs-laws.series-and-parallel.examples.1.formulas.1","category":"factual-or-safety-risk","severity":"medium","summary":"The parallel example used an inconsistent localized current variable.","disposition":"resolved","evidence":["The example calculates total current from 4.0 V and 0.20 Ω."],"resolution":"Restored I_total with complete units."},
+        {"id":"zh-Hans-20260818-043","translationId":"concept-kirchhoffs-laws.voltage-law.formulas","category":"translation-defect","severity":"low","summary":"Voltage equations omitted spacing and mixed Chinese prose into symbolic labels.","disposition":"resolved","evidence":["The equations are shared technical notation across locales."],"resolution":"Restored spacing and the stable parallel-branches label."},
+        {"id":"zh-Hans-20260818-044","translationId":"concept-kirchhoffs-laws.cells.formulas","category":"translation-defect","severity":"low","summary":"Series and parallel labels in the cell equations were literal and inconsistent.","disposition":"resolved","evidence":["The formulas distinguish series voltage from parallel capacity."],"resolution":"Restored the standard series and parallel labels."},
+        {"id":"zh-Hans-20260818-045","translationId":"concept-heat-flux.worked-example.formulas.0","category":"factual-or-safety-risk","severity":"medium","summary":"The heat-flux example wrote units as Chinese words inside the equation.","disposition":"resolved","evidence":["The result is 5,000 W/m² from 100 W over 0.020 m²."],"resolution":"Restored the standard unit symbols and superscripts."},
+        {"id":"zh-Hans-20260818-046","translationId":"concept-si-system-and-imperial-units.base-units.rows.0","category":"factual-or-safety-risk","severity":"medium","summary":"The length base-unit row translated metre as an instrument and used a Chinese word instead of m.","disposition":"resolved","evidence":["The SI length unit is metre, symbol m."],"resolution":"Corrected the name and symbol."},
+        {"id":"zh-Hans-20260818-047","translationId":"concept-si-system-and-imperial-units.base-units.rows.1","category":"factual-or-safety-risk","severity":"medium","summary":"The mass row used incorrect Chinese wording and mismatched the unit and symbol.","disposition":"resolved","evidence":["The SI mass unit is kilogram, symbol kg."],"resolution":"Corrected the row to 质量、千克、kg."},
+        {"id":"zh-Hans-20260818-048","translationId":"concept-si-system-and-imperial-units.base-units.rows.4","category":"factual-or-safety-risk","severity":"medium","summary":"The electric-current symbol was translated as a Chinese word instead of A.","disposition":"resolved","evidence":["The SI current unit is ampere, symbol A."],"resolution":"Restored A."},
+        {"id":"zh-Hans-20260818-049","translationId":"concept-si-system-and-imperial-units.base-units.rows.5","category":"factual-or-safety-risk","severity":"high","summary":"The amount-of-substance row used a mistranslated word for mole and the wrong symbol.","disposition":"resolved","evidence":["The SI unit is mole, symbol mol."],"resolution":"Corrected the name and symbol."},
+        {"id":"zh-Hans-20260818-050","translationId":"concept-si-system-and-imperial-units.base-units.rows.6","category":"factual-or-safety-risk","severity":"high","summary":"The candela symbol was mistranslated as a compact disc.","disposition":"resolved","evidence":["The SI symbol for candela is cd."],"resolution":"Restored cd."}
+    ]
+}

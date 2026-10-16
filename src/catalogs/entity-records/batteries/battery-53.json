@@ -1,0 +1,137 @@
+{
+    "entityId": "battery-53",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for Samsung ICR18650-26F.",
+        "description": "This researched draft preserves the calculator's 2600mAh and 2C compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "vapingvibe-2026",
+            "title": "Best 18650 Batteries for Vaping",
+            "url": "https://vapingvibe.com/best-18650-batteries/",
+            "publisher": "vapingvibe.com",
+            "limitations": "Bounded five-cell editorial list; commercial links may influence selection."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "spec-samsung-records",
+            "title": "Samsung ICR18650-26F battery record",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "CQham battery test database mirror",
+            "limitations": "Aggregated historical database; supporting evidence for terminal and protection fields, not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-samsung-26f",
+            "title": "Samsung ICR18650-26F chemistry references",
+            "url": "https://www.mdpi.com/1996-1073/13/8/1858",
+            "publisher": "Academic battery research",
+            "limitations": "Published studies conflict: one identifies an NMC cathode while another lists LiCoO2; the record preserves that revision/literature conflict."
+        },
+        {
+            "id": "intro-samsung-26f-2009",
+            "title": "ICR18650-26F product specification",
+            "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/180/8233.ICR18650_2D00_26F-Specification.pdf",
+            "publisher": "Samsung SDI",
+            "limitations": "The specification revision is dated 2009-11-04; it establishes documented product existence by that date, not first sale."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-samsung-26f",
+            "statement": "The aggregated battery record identifies Samsung ICR18650-26F as a flat-top, unprotected 18650 cell.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Samsung ICR18650-26F 2600mAh 2C as a 2600mAh preset with a 2C runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "Published studies disagree on Samsung ICR18650-26F chemistry: one reports an NMC cathode while another lists LiCoO2.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Samsung ICR18650-26F has reliable market-introduction evidence dated 2009-11-04 or earlier.",
+            "evidenceDate": "2009-11-04",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion — LCO/NMC classification conflict",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

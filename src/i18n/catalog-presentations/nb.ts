@@ -1,14 +1,14 @@
-import { batteryPresets } from "../../catalogs/batteries/defaults";
 import { concepts } from "../../catalogs/concepts/catalog";
-import { builtInPresets } from "../../catalogs/mods/presets";
-import { materials } from "../../catalogs/materials/catalog";
 import type {
     CatalogPresentation,
     CatalogPresentationMap,
     CatalogPresentationSet,
 } from "../catalog-presentations";
+import { batteryPresentationsFor, type BatteryTextDictionary } from "../battery-presentation-text";
 
 import { presentations as english } from "./en";
+import { modPresentationsFor, type ModTextDictionary } from "../mod-presentation-text";
+import { materialPresentationsFor, type MaterialTextDictionary } from "../material-presentation-text";
 
 const recordFor = <T extends { readonly id: string }>(
     items: readonly T[],
@@ -17,16 +17,11 @@ const recordFor = <T extends { readonly id: string }>(
     items.map((item) => [item.id, presentationFor(item)]),
 ) as CatalogPresentationMap;
 
-const firstSentence = (value: string): string => value.match(/^[\s\S]*?[.!?](?:\s|$)/)?.[0].trim() ?? value;
 const ohm = "Ω";
 const degree = "°";
 const alpha = "α";
 const delta = "Δ";
 const rho = "ρ";
-
-const batterySummary = (battery: (typeof batteryPresets)[number]): string => battery.batteryAccess === "integrated"
-    ? "En intern batteripakke i enheten, ikke en celle som brukeren kan bytte."
-    : "En utskiftbar, oppladbar celle for kompatible enheter.";
 
 const bokmaalConcepts: Readonly<Record<string, Pick<
     CatalogPresentation,
@@ -724,31 +719,114 @@ const bokmaalMaterialNames: Readonly<Record<string, string>> = {
     zr: "Zirkonium (rent)",
 };
 
-const bokmaalBatteryNotes: Readonly<Record<string, string>> = {
-    "battery-61": "Batteri for lav belastning; egner seg ikke for damping.",
-    "battery-71": "20 A kontinuerlig verdi; pulsverdier brukes ikke.",
-    "battery-72": "Den faktiske kapasiteten er lavere enn etiketten antyder.",
-    "battery-73": "Den faktiske kapasiteten er lavere enn etiketten antyder.",
-    "battery-77": "20 A konservativ, uavhengig sammenligningsverdi; nøyaktig omslag og produksjonsrevisjon er fortsatt relevante.",
-    "battery-78": "15 A konservativ verdi fra testing av nøyaktig modell; den testede CCC-merkede revisjonen er fortsatt relevant.",
-    "battery-79": "45 A uavhengig kontinuerlig verdi for den testede tabless-revisjonen; ikke erstatt den med pulsverdier.",
-    "battery-80": "36 A faktisk kontinuerlig verdi; 56 A-verdien er temperaturbegrenset.",
-    "battery-81": "40 A konservativ verdi; de testede cellene så ut til å være førproduksjon og manglet CCC-logo.",
-    "battery-82": "13 A anbefalt kontinuerlig verdi; 16,8 A er et absolutt maksimum som ikke er ment for lang levetid.",
-    "battery-83": "40 A konservativ verdi; 70 A er temperaturbegrenset og de testede prøvene var førproduksjon.",
-    "battery-84": "40 A sammenligningsverdi for produksjonscelle; 70 A krever temperaturkontroll.",
-    "battery-85": "40 A verdi for nøyaktig omslag; 70 A er begrenset til 60 °C og testet som en EVE 40PL-rewrap.",
-    "battery-86": "19 A konservativ verdi; de nøyaktig testede prøvene så ut til å være førproduksjon og manglet CCC-merker.",
-    "battery-87": "40 A konservativ verdi; 90 A er temperaturbegrenset og de testede cellene så ut til å være førproduksjon.",
-    "battery-88": "40 A konservativ verdi; 60 A er temperaturbegrenset og produksjonskontinuiteten er fortsatt uavklart.",
-    "battery-89": "40 A konservativ verdi; de testede prøvene hadde ujevn kapasitet og manglet CCC-/CE-merker.",
-    "battery-90": "13 A konservativ verdi; de nøyaktig testede prøvene så ut til å være førproduksjon og manglet CCC-merker.",
-    "battery-91": "30 A kontinuerlig verdi anslått av tester; Reliances maksimum på 50 A er temperaturbegrenset.",
-    "battery-92": "20 A kontinuerlig verdi fra to produksjonsrelaterte testpartier; 30 A er temperaturbegrenset.",
-    "battery-93": "12 A kontinuerlig; 20 A er kun puls. Det nøyaktig testede omslaget er registrert som SA110 / INR18650/40.",
-    "battery-94": "20 A verdi for nøyaktig omslag; testeren anbefaler under 15 A kontinuerlig. Vapehuset oppgir 25 A i tittelen, og senere rewrap-kilder eller omslagsrevisjoner kan avvike.",
-    "battery-95": "30 A verdi for nøyaktig modell; dette er en rewrap, og senere omslagsrevisjoner eller underliggende kilde kan avvike.",
-    "battery-96": "30 A verdi for nøyaktig fembeinsrevisjon; firebeins- og senere revisjoner med samme omslag er vesentlig forskjellige og må ikke arve denne profilen.",
+export const batteryTexts: BatteryTextDictionary = {
+    "battery.summary.removable": "En utskiftbar, oppladbar celle for kompatible enheter.",
+    "battery.summary.integrated": "En integrert batteripakke i enheten, ikke en celle som brukeren kan bytte ut.",
+    "battery.note.approvedResearch": "Godkjent 2026-08-13; se tilhørende forskningsoppføring.",
+    "battery.note.capacityBelowLabel": "Den faktiske kapasiteten er lavere enn etiketten antyder.",
+    "battery.note.battery-71.evidence": "20 A kontinuerlig verdi; pulsverdier brukes ikke.",
+    "battery.note.battery-77.evidence":
+        "20 A konservativ, uavhengig sammenligningsverdi; nøyaktig "
+        + "innpakning og produksjonsrevisjon er fortsatt relevante.",
+    "battery.note.battery-78.evidence":
+        "15 A konservativ verdi fra testing av nøyaktig modell; den "
+        + "testede CCC-merkede revisjonen er fortsatt relevant.",
+    "battery.note.battery-79.evidence":
+        "45 A uavhengig kontinuerlig verdi for den testede "
+        + "tabless-revisjonen; ikke erstatt den med pulsverdier.",
+    "battery.note.battery-80.evidence": "36 A faktisk kontinuerlig verdi; 56 A-verdien er temperaturbegrenset.",
+    "battery.note.battery-81.evidence":
+        "40 A konservativ verdi; de testede cellene så ut til å "
+        + "være førproduksjon og manglet CCC-logo.",
+    "battery.note.battery-82.evidence":
+        "13 A anbefalt kontinuerlig verdi; 16,8 A er et absolutt "
+        + "maksimum som ikke er ment for lang levetid.",
+    "battery.note.battery-83.evidence":
+        "40 A konservativ verdi; 70 A er temperaturbegrenset og de "
+        + "testede prøvene var førproduksjon.",
+    "battery.note.battery-84.evidence":
+        "40 A sammenligningsverdi for produksjonscelle; 70 A krever "
+        + "temperaturkontroll.",
+    "battery.note.battery-85.evidence":
+        "40 A verdi for nøyaktig omslag; 70 A er begrenset til 60 "
+        + "°C og testet som en EVE 40PL-rewrap.",
+    "battery.note.battery-86.evidence":
+        "19 A konservativ verdi; de nøyaktig testede prøvene så ut "
+        + "til å være førproduksjon og manglet CCC-merker.",
+    "battery.note.battery-87.evidence":
+        "40 A konservativ verdi; 90 A er temperaturbegrenset og de "
+        + "testede cellene så ut til å være førproduksjon.",
+    "battery.note.battery-88.evidence":
+        "40 A konservativ verdi; 60 A er temperaturbegrenset og "
+        + "produksjonskontinuiteten er fortsatt uavklart.",
+    "battery.note.battery-89.evidence":
+        "40 A konservativ verdi; de testede prøvene hadde ujevn "
+        + "kapasitet og manglet CCC-/CE-merker.",
+    "battery.note.battery-90.evidence":
+        "13 A konservativ verdi; de nøyaktig testede prøvene så ut "
+        + "til å være førproduksjon og manglet CCC-merker.",
+    "battery.note.battery-91.evidence":
+        "30 A kontinuerlig verdi anslått av tester; Reliances "
+        + "maksimum på 50 A er temperaturbegrenset.",
+    "battery.note.battery-92.evidence":
+        "20 A kontinuerlig verdi fra to produksjonsrelaterte "
+        + "testpartier; 30 A er temperaturbegrenset.",
+    "battery.note.battery-93.evidence":
+        "12 A kontinuerlig; 20 A er kun puls. Det nøyaktig testede "
+        + "omslaget er registrert som SA110 / INR18650/40.",
+    "battery.note.battery-94.evidence":
+        "20 A verdi for nøyaktig omslag; testeren anbefaler under "
+        + "15 A kontinuerlig. Vapehuset oppgir 25 A i tittelen, og "
+        + "senere rewrap-kilder eller omslagsrevisjoner kan avvike.",
+    "battery.note.battery-95.evidence":
+        "30 A verdi for nøyaktig modell; dette er en rewrap, og "
+        + "senere omslagsrevisjoner eller underliggende kilde kan "
+        + "avvike.",
+    "battery.note.battery-96.evidence":
+        "30 A verdi for nøyaktig fembeinsrevisjon; firebeins- og "
+        + "senere revisjoner med samme omslag er vesentlig "
+        + "forskjellige og må ikke arve denne profilen.",
+    "battery.safety.lowDrain": "Batteri med lav utladningskapasitet; egner seg ikke for damping.",
+};
+
+export const materialTexts: MaterialTextDictionary = {
+    "material.profile": (displayName) => "Katalogprofil for " + displayName
+        + ", med data for motstandstråd og temperaturkontroll.",
+    "material.safety.verifiedProfile":
+        "Bruk en verifisert materialprofil, og følg enhetens "
+        + "temperatur- og driftsgrenser.",
+};
+export const modTexts: ModTextDictionary = {
+    "mod.profile.regulated": (displayName) => "Profil for en regulert enhet eller et styrekort: "
+        + displayName + ".",
+    "mod.preset-9.profile":
+        "Billet Box Rev. 3a med perleblåst, blankdyppet anodisert "
+        + "aluminiumsfinish; introdusert i mai 2014.",
+    "mod.preset-10.profile":
+        "En Cloupor-enhet på 30 W med et tredjeparts "
+        + "klonebrikkesett i DNA30-stil, ikke et autentisk Evolv "
+        + "DNA-30D-kort.",
+    "mod.preset-231.profile":
+        "Regulert mod med to 21700-celler og 18650-adaptere; "
+        + "VAPORESSO oppgir 220 W; testing målte 208 W, 8,979 V og 39 "
+        + "A.",
+    "mod.preset-234.profile":
+        "Regulert mod med to 18650-celler; VAPORESSO oppgir 220 W; "
+        + "testing målte 215 W, 9,08 V og 37 A.",
+    "mod.preset-235.profile":
+        "Regulert mod med innebygd batteri, oppgitt til 100 W; "
+        + "testing målte 101 W, 29 A og minst 7,97 V.",
+    "mod.preset-236.profile":
+        "Regulert mod med én 18650-celle og AS Chip 4.0; "
+        + "produsentprofilen er 100 W, 7,5 V, 32 A og 0,1–3 Ω.",
+    "mod.preset-237.profile":
+        "Mod for én 21700-celle eller en tilpasset 18650-celle; "
+        + "Eleaf oppgir 100 W, 9 V og 0,05–3,5 Ω; testing "
+        + "identifiserte 30 A.",
+    "mod.preset-238.profile":
+        "Regulert squonk-mod for én 21700-, 20700- eller tilpasset "
+        + "18650-celle, med en konservativ profil på 95 W, 6 V og 34 "
+        + "A.",
 };
 
 export const presentations: CatalogPresentationSet = {
@@ -756,32 +834,7 @@ export const presentations: CatalogPresentationSet = {
         ...english.concepts[concept.id],
         ...bokmaalConcepts[concept.id],
     })),
-    materials: recordFor(materials, (material) => {
-        const displayName = bokmaalMaterialNames[material.id] ?? material.name;
-        return {
-            ...english.materials[material.id],
-            displayName,
-            description: `Katalogprofil for ${displayName}, med data for motstandstråd og temperaturkontroll.`,
-            summary: `Et katalogmateriale for motstandstråd og temperaturkontroll: ${displayName}.`,
-            safetyText: "Bruk en verifisert materialprofil, og følg enhetens temperatur- og driftsgrenser.",
-        };
-    }),
-    batteries: recordFor(batteryPresets, (battery) => ({
-        ...english.batteries[battery.id],
-        description: "En oppladbar celle eller batteripakke for kompatible enheter.",
-        summary: battery.batteryAccess === "integrated"
-            ? "En integrert batteripakke i enheten."
-            : "En utskiftbar, oppladbar celle for kompatible enheter.",
-        notes: bokmaalBatteryNotes[battery.id]
-            ? [bokmaalBatteryNotes[battery.id]]
-            : undefined,
-        safetyText: battery.safetyWarning
-            ? "Bruk bare batteriet innenfor oppgitte grenser og ikke i en enhet som krever høyere belastning."
-            : undefined,
-    })),
-    mods: recordFor(builtInPresets, (mod) => ({
-        ...english.mods[mod.id],
-        description: `Profil for en regulert enhet eller et styrekort: ${mod.displayName}.`,
-        summary: "En profil for en regulert enhet eller et styrekort.",
-    })),
+    materials: materialPresentationsFor(materialTexts, bokmaalMaterialNames),
+    batteries: batteryPresentationsFor(batteryTexts),
+    mods: modPresentationsFor(modTexts),
 };

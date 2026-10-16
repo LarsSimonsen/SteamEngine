@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "hi",
+    "cycleId": "hi-20260818T204946329Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Hindi pass identified 25 remaining technical wording, terminology, notation, and unit-clarity defects across Ohm's law, Joule heating, Kirchhoff's laws, TCR, heat capacity, and SI prefixes; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "hi-20260818-101",
+            "translationId": "catalog.concepts.concept-ohms-law.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Ohm-law description used करंट instead of the clearer Hindi technical term धारा.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used mixed Hindi and loanword terminology for electric current."],
+            "resolution": "Rewrote the description with वोल्टेज, धारा, and प्रतिरोध."
+        },
+        {
+            "id": "hi-20260818-102",
+            "translationId": "catalog.concepts.concept-ohms-law.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm-law summary used करंट rather than consistent Hindi terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used करंट in the short concept summary."],
+            "resolution": "Changed the summary to वोल्टेज, धारा और प्रतिरोध के बीच संबंध।"
+        },
+        {
+            "id": "hi-20260818-103",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The watt conversion incorrectly named megawatts instead of milliwatts.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation stated 1 W = 1,000 मेगावाट, which is dimensionally incorrect."],
+            "resolution": "Corrected the conversion to 1 W = 1,000 mW."
+        },
+        {
+            "id": "hi-20260818-104",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The model-limits paragraph used an awkward transliteration for operating conditions.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used ऑपरेटिंग स्थिति in an otherwise Hindi technical paragraph."],
+            "resolution": "Rewrote the phrase as संचालन की स्थिति and standardized the current terminology."
+        },
+        {
+            "id": "hi-20260818-105",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description mixed English heating terminology with Hindi wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used जूल हीटिंग and गर्मी in the concept description."],
+            "resolution": "Rewrote it as जूल तापन and ऊष्मा for consistent technical Hindi."
+        },
+        {
+            "id": "hi-20260818-106",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power introduction was an incomplete literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation said विद्युत ताप शक्ति है before listing the formulas."],
+            "resolution": "Changed it to a complete introduction: विद्युत तापन शक्ति का वर्णन इन संबंधों से किया जाता है।"
+        },
+        {
+            "id": "hi-20260818-107",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current definition used चालू, which means switched on rather than electric current.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation defined I with the misleading word चालू."],
+            "resolution": "Defined I as धारा and retained the protected ampere symbol A."
+        },
+        {
+            "id": "hi-20260818-108",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example setup used an unnatural verb construction for current flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation said a coil में 3 A होता है."],
+            "resolution": "Rewrote it as एक 0.8 Ω कुंडल में 3 A धारा बहती है।"
+        },
+        {
+            "id": "hi-20260818-109",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The safety check mixed loanwords for current, power, and thermal margin.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used करंट, पावर, and हेडरूम in the safety instruction."],
+            "resolution": "Rewrote the instruction with धारा, शक्ति, and पर्याप्त सुरक्षा-मार्जिन."
+        },
+        {
+            "id": "hi-20260818-110",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff description used mixed transliterations for circuit concepts.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation referred to सर्किट नोड्स and बंद लूप in the description."],
+            "resolution": "Rewrote the description with परिपथ, नोडों, and बंद पाशों."
+        },
+        {
+            "id": "hi-20260818-111",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Kirchhoff summary used the awkward loanword कनेक्टेड.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation began the summary with कनेक्टेड सर्किट में."],
+            "resolution": "Changed it to जुड़े हुए परिपथ में धारा और वोल्टेज का व्यवहार।"
+        },
+        {
+            "id": "hi-20260818-112",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law example used literal direction wording and localized ampere units inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used ए and said a branch धारा को दूर ले जाती है."],
+            "resolution": "Rewrote the example with A, धारा बाहर ले जाती है, and a clear negative-result explanation."
+        },
+        {
+            "id": "hi-20260818-113",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-current formula localized the protected total-current variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used I_कुल rather than a stable Latin variable name."],
+            "resolution": "Changed the formula to I_total = I_1 = I_2 = ..."
+        },
+        {
+            "id": "hi-20260818-114",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-current formula localized the total-current variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used I_कुल in the parallel-current formula."],
+            "resolution": "Changed the formula to I_total = I_1 + I_2 + ..."
+        },
+        {
+            "id": "hi-20260818-115",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.formulas.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistance formula localized the protected total-resistance variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used R_कुल in the parallel-resistance formula."],
+            "resolution": "Changed the formula to 1 / R_total = 1 / R_1 + 1 / R_2 + ..."
+        },
+        {
+            "id": "hi-20260818-116",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor example mixed Devanagari variables and unit names into the formula.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used मैं, वी, and ए in a numerical formula."],
+            "resolution": "Changed it to I = 8.0 V / 0.40 Ω = 20 A."
+        },
+        {
+            "id": "hi-20260818-117",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor example localized the total-resistance variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used R_कुल in the numerical example."],
+            "resolution": "Changed it to R_total = 0.20 Ω."
+        },
+        {
+            "id": "hi-20260818-118",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-current example mixed Latin and Devanagari variable and unit forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation ended the formula with 20 ए."],
+            "resolution": "Standardized it as I_total = 4.0 V / 0.20 Ω = 20 A."
+        },
+        {
+            "id": "hi-20260818-119",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The circuit-solving instruction transliterated the standard KCL and KVL acronyms.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used केसीएल and केवीएल instead of the standard Latin acronyms."],
+            "resolution": "Changed the instruction to use KCL and KVL."
+        },
+        {
+            "id": "hi-20260818-120",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR unit used a localized transliteration for ppm.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used पीपीएम/°C in a technical unit definition."],
+            "resolution": "Changed the unit notation to the standard ppm/°C."
+        },
+        {
+            "id": "hi-20260818-121",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR power formula localized the protected voltage and current variables.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used मैं = वी/आर in the formula."],
+            "resolution": "Changed it to I = V / R."
+        },
+        {
+            "id": "hi-20260818-122",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating formula localized all protected variables.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used क्यू = पी × टी rather than the shared notation."],
+            "resolution": "Changed it to Q = P × t."
+        },
+        {
+            "id": "hi-20260818-123",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The ideal-heating-time example localized the time, energy, and power variables and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi presentation used टी, जे, and डब्ल्यू in the numerical formula."],
+            "resolution": "Changed it to t = 41,800 J / 100 W = 418 s."
+        },
+        {
+            "id": "hi-20260818-124",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.3.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI prefix table translated micro as कुटीर, which is not the name of the prefix.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi table labeled the 10^-6 prefix कुटीर."],
+            "resolution": "Changed the prefix name to माइक्रो."
+        },
+        {
+            "id": "hi-20260818-125",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.4.2",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The SI prefix table gave the nano factor as 10^-9 but wrote the decimal with one zero too few.",
+            "disposition": "resolved",
+            "evidence": ["The previous Hindi table stated 0.0000001 = 10^-9, an inconsistent factor."],
+            "resolution": "Corrected the decimal to 0.000000001 = 10^-9."
+        }
+    ]
+}

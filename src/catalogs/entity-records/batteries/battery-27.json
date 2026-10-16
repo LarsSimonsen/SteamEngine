@@ -1,0 +1,145 @@
+{
+    "entityId": "battery-27",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for Efest IMR 18650 35A.",
+        "description": "This researched draft preserves the calculator's 2500mAh and 20A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "budgetvapors-efest-2500",
+            "title": "Efest IMR 18650 2500mAh 35A",
+            "url": "https://www.budgetvapors.com/efest-imr-18650-2500mah-35a-battery/",
+            "publisher": "budgetvapors.com",
+            "limitations": "Current exact listing is out of stock; retailer specifications are not independent tests."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "efest-catalog",
+            "title": "Efest battery catalog",
+            "url": "https://www.efestpower.com/index.php?ac=article&at=list&tid=133",
+            "publisher": "efestpower.com",
+            "limitations": "Accessible official catalog appears historically frozen around 2015; it is not evidence of current activity."
+        },
+        {
+            "id": "intro-source",
+            "title": "Efest 2500mAh/35A availability post",
+            "url": "https://www.dampfertreff.ch/t107543f1894-NEU-bei-Akkuteile-Efest-IMR-mit-mAh-A.html",
+            "publisher": "Akkuteile / Dampfertreff",
+            "limitations": "Retail availability post; does not independently verify the wrapper rating."
+        },
+        {
+            "id": "test-b42",
+            "title": "Efest metallic purple 20A 2500mAh 18650 bench test",
+            "url": "https://www.e-cigarette-forum.com/threads/efest-metallic-purple-20a-2500mah-18650-bench-test-results-accurately-rated-20a-the-hohmwork.745823/",
+            "publisher": "E-Cigarette Forum / Battery Mooch",
+            "limitations": "Exact metallic-purple sample; the catalog's 35A model label is retained as historical compatibility data, not accepted as a safe continuous rating."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Efest IMR 18650 35A 2500mAh 20A as a 2500mAh preset with a 20A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The tested metallic-purple Efest IMR 18650 2500mAh revision is flat-top and unprotected; Battery Mooch identified it as a Hohm Work rewrap and rated it at 20A continuous despite the historical 35A model label.",
+            "evidenceDate": "2016",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Efest IMR 18650 35A catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "No reliable exact-model market-introduction date was established for Efest IMR 18650 35A in the 2026-08-04 catalog-wide research pass.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": false,
+        "appearance": {
+            "wrapperColor": "purple"
+        },
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "low",
+            "summary": "A specific metallic-purple Efest revision was identified as a Hohm Work rewrap, but wrapper continuity and authenticity of any other sample remain unresolved.",
+            "checks": [
+                "Match the exact metallic-purple wrapper and markings before applying the Hohm Work attribution or 20A test result.",
+                "Inspect label layout, wrapper, and terminal against a known-good sample.",
+                "Do not infer the underlying OEM cell from Efest branding alone."
+            ]
+        }
+    }
+}

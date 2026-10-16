@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260820T001644748Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Arabic runtime entries, the Arabic glossary, prior review metadata, and technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, runtime scans, queue validation, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three further full-scope reviews resolved 75 shared-interface, calculator, catalog, and concept findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Arabic corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-shared-concatenation-and-metadata",
+            "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five shared UI entries had missing concatenation spaces, unsafe generic-item agreement, inconsistent unit notation, or literal research metadata.",
+            "disposition": "resolved",
+            "evidence": [
+                "Three save-notice fragments lacked the leading space required by runtime concatenation.",
+                "Generic catalog-item placeholders appeared inside gendered phrases.",
+                "Resistivity notation differed from the canonical engineering unit."
+            ],
+            "resolution": "Restored concatenation boundaries and standardized generic catalog, editor, and encyclopedia language."
+        },
+        {
+            "id": "ar-calculator-and-circuit-consistency",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five calculator and circuit entries retained inconsistent calculator names, geometry terms, comparison agreement, or awkward electrical prose.",
+            "disposition": "resolved",
+            "evidence": [
+                "A series resistance was described with a nonstandard calque.",
+                "A displayed voltage repeated the value in both prose and symbol form.",
+                "Mod-or-board comparison sentences forced incompatible grammatical agreement."
+            ],
+            "resolution": "Standardized calculator terminology, coil and wire labels, circuit prose, and comparison messages."
+        },
+        {
+            "id": "ar-final-catalog-and-ui-polish",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Twenty-five remaining entries changed source unit wording or used inconsistent catalog, date, battery-note, and metadata language.",
+            "disposition": "resolved",
+            "evidence": [
+                "The Joule conclusion replaced joules per second with watts despite the source's explicit wording.",
+                "A thousands separator was lost from a unit conversion.",
+                "Catalog and market-introduction labels varied across navigation and detail views."
+            ],
+            "resolution": "Restored source units and grouping and harmonized catalog, battery evidence, market-date, and metadata wording."
+        }
+    ]
+}

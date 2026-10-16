@@ -1,0 +1,124 @@
+{
+    "entityId": "battery-32",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for Keeppower IMR26650.",
+        "description": "This researched draft preserves the calculator's 5200mAh and 30A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "store-26650",
+            "title": "26650 batteries",
+            "url": "https://www.18650batterystore.com/collections/26650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "test-b44",
+            "title": "Keeppower IMR26650 5200mAh black 2014 test",
+            "url": "https://www.candlepowerforums.com/threads/test-review-of-keeppower-imr26650-5200mah-black-2014.387664/",
+            "publisher": "CandlePowerForums / HKJ",
+            "limitations": "Exact black 2014 sample; official Keeppower also sells protected and customized 26650 variants."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "intro-keeppower-2014",
+            "title": "Keeppower 5200mAh IMR26650 product news",
+            "url": "https://www.keeppower.com.cn/news_detail.php?id=98",
+            "publisher": "Keeppower",
+            "limitations": "Official dated product/news page establishes public availability context, not necessarily the first sale in every market."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Keeppower IMR26650 5200mAh 30A as a 5200mAh preset with a 30A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The tested black 2014 Keeppower IMR26650 5200mAh revision is flat-top and unprotected, with observed dimensions of approximately 26.5 mm x 67.0 mm; the nominal catalog size remains 26650.",
+            "evidenceDate": "2014",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Keeppower IMR26650 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Keeppower IMR26650 has reliable market-introduction evidence dated 2014-06-23 or earlier.",
+            "evidenceDate": "2014-06-23",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "26650",
+            "nominalDiameterMm": 26,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": false,
+        "appearance": {
+            "wrapperColor": "black"
+        },
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "medium",
+            "summary": "The black 2014 unprotected flat-top revision is well documented, but Keeppower sells multiple 5200mAh 26650 constructions and exact sample identity still needs matching.",
+            "checks": [
+                "Match the black unprotected wrapper and terminal before applying the observed 67 mm length.",
+                "Check for a protection circuit and compare the label/markings with a known-good Keeppower sample.",
+                "Do not infer the construction from capacity and brand alone."
+            ]
+        }
+    }
+}

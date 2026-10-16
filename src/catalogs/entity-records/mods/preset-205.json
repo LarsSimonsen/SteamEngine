@@ -1,0 +1,35 @@
+{
+    "entityId": "sigelei-raptor",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Sigelei Raptor identity discussion",
+            "url": "https://vapingunderground.com/threads/sigelei-raptor-mod-100w.22549/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "YiHi SX330 V3 100W"
+            }
+        ]
+    }
+}

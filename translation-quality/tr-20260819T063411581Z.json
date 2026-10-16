@@ -1,0 +1,47 @@
+{
+    "schemaVersion": 1,
+    "locale": "tr",
+    "cycleId": "tr-20260819T063411581Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Turkish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Turkish pass identified abbreviated side labels in the trigonometry formulas and worked example; all were aligned with the established Turkish terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Turkish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "tr-20260819-036",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle formulas used shortened Turkish side labels instead of the established karşı kenar and komşu kenar terms.",
+            "disposition": "resolved",
+            "evidence": ["The explanatory text used karşı kenar and komşu kenar while the formulas displayed only karşı and komşu."],
+            "resolution": "Expanded all three visible formulas to the established Turkish side terminology."
+        },
+        {
+            "id": "tr-20260819-037",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The inverse-trigonometry formulas used shortened Turkish side labels that differed from the surrounding explanation.",
+            "disposition": "resolved",
+            "evidence": ["The formulas displayed karşı and komşu while the section defined the terms as karşı kenar and komşu kenar."],
+            "resolution": "Aligned all three inverse formulas with the established Turkish side terminology."
+        },
+        {
+            "id": "tr-20260819-038",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked trigonometry example used abbreviated side labels instead of the terms used in the Turkish explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example labels were karşı and komşu while the explanatory text used karşı kenar and komşu kenar."],
+            "resolution": "Expanded both example labels to karşı kenar and komşu kenar."
+        }
+    ]
+}

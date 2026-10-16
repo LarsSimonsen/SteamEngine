@@ -179,6 +179,7 @@ export const messages = {
         "manufacturer": "Hersteller",
         "model": "Modell",
         "variant": "Variante",
+        "weightGrams": "Gewicht (g)",
         "optional": "Optional",
         "unknown": "Unbekannt",
         "batteryAccess": "Zugang zur Batterie",
@@ -252,7 +253,7 @@ export const messages = {
                 "description": "Planen Sie wiederaufbaubare Verdampferwicklungen und untersuchen Sie deren elektrisches Verhalten."
             },
             "wirewiz": {
-                "label": "Draht-Assistent",
+                "label": "Wire Wizard",
                 "description": "Kombinieren Sie verschiedene Drähte, um eine Spule und deren Temperaturkurve zu formen."
             },
             "batt": {
@@ -317,7 +318,7 @@ export const messages = {
     }
     },
     "encyclopedia": {
-        "kicker": "Referenz zur Dampfmaschine",
+        "kicker": "Steam Engine-Referenz",
         "title": "Katalog",
         "lead": "Durchsuchen Sie die Konzepte, Materialien, Batterien, Mods und Steuerplatinen hinter den Taschenrechnern.",
         "entriesLabel": (...args: unknown[]) => {
@@ -386,7 +387,7 @@ export const messages = {
         return output;
     },
         "availableBy": (...args: unknown[]) => {
-        let output = "Verfügbar ab __SE_ARG_0__";
+        let output = "Spätestens am __SE_ARG_0__ verfügbar";
         output = output.replaceAll("__SE_ARG_0__", String(args[0] ?? ""));
         output = output.replaceAll("__se_arg_0__", String(args[0] ?? ""));
         return output;
@@ -397,12 +398,12 @@ export const messages = {
         "sourceBackedEntity": "Quellgestützter Entitätsdatensatz",
         "researchSummary": "Forschungszusammenfassung",
         "noResearchSummary": "Für diesen Eintrag ist keine Forschungszusammenfassung verfügbar.",
-        "evidenceNotes": "Beweisnotizen",
+        "evidenceNotes": "Hinweise zur Beleglage",
         "source": "Quelle",
         "sources": "Quellen",
         "noSources": "Für diesen Eintrag sind keine Quellen verfügbar.",
         "noSourceBackedRecord": "Für diesen Eintrag ist kein quellengestützter Forschungsbericht verfügbar.",
-        "property": "Eigentum",
+        "property": "Eigenschaft",
         "properties": "Eigenschaften",
         "value": "Wert",
         "unit": "Unit",
@@ -430,7 +431,7 @@ export const messages = {
         return output;
     },
         "limitation": "Einschränkung",
-        "evidenceDate": "Beweisdatum",
+        "evidenceDate": "Datum des Nachweises",
         "confidence": "Vertrauen",
         "date": "Datum",
         "relation": "Beziehung",
@@ -490,6 +491,21 @@ export const messages = {
     },
         "noUsableResistanceRange": "Aus den Kataloggrenzen lässt sich kein nutzbarer Widerstandsbereich errechnen.",
         "modBoardCatalog": "Mod-Board- und Gerätekatalog",
+        "supportedModesAndCapabilities": "Unterstützte Modi und Funktionen",
+        "outputControlModes": "Ausgangsregelungsmodi",
+        "additionalCapabilities": "Zusätzliche Funktionen",
+        "operatingFeatureLabels": {
+            "voltage": "Spannungsregelung",
+            "power": "Leistungsregelung",
+            "current": "Stromregelung",
+            "temperatureControl": "Temperaturkontrolle",
+            "bypass": "Bypass",
+            "powerCurve": "Leistungskurve",
+            "temperatureCurve": "Temperaturkurve",
+            "configurableTcr": "Konfigurierbarer TCR",
+            "preheat": "Vorheizen",
+            "replay": "Replay",
+        },
         "batteryCatalog": "Batteriekatalog",
         "materialCatalog": "Katalog für Spulenmaterialien",
         "overview": "Übersicht",
@@ -506,10 +522,10 @@ export const messages = {
             "ratedCapacity": "Nennkapazität",
             "continuousDischarge": "Kontinuierliche Entladungsleistung",
             "maximumPower": "Maximale Leistung",
-            "maximumVoltage": "Maximale Spannung",
+            "maximumVoltage": "Maximale Spannung", "minimumInputVoltage": "Minimale Eingangsspannung", "typicalInputVoltage": "Typische Eingangsspannung", "maximumInputVoltage": "Maximale Eingangsspannung",
             "maximumCurrent": "Maximaler Strom",
             "resistanceRange": "Widerstandsbereich",
-            "boardController": "Vorstand/Controller",
+            "boardController": "Platine/Controller",
             "resistivity": "Elektrischer Widerstand bei 20 °C",
             "temperatureModel": "Temperaturmodell",
             "fullResistanceCurve": "Volle Widerstandskurve",

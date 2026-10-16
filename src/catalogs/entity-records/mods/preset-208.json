@@ -1,0 +1,53 @@
+{
+    "entityId": "svoemesto-semovar",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "SvoëMesto Semovar review",
+            "url": "https://vapingcheap.com/semovar-v3-clone-review/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-nivel-20260824",
+            "title": "Nivel VV/VW board user guide",
+            "url": "https://www.scribd.com/document/118600734/Nivel-VV-VW-Board-User-Guide-en-1",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18350",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18500",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "Nivel V3"
+            }
+        ]
+    }
+}

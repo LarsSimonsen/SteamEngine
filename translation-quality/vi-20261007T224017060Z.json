@@ -1,0 +1,2659 @@
+{
+    "schemaVersion": 1,
+    "locale": "vi",
+    "cycleId": "vi-20261007T224017060Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Comparative screening covered 12 common IDs across all 23 remaining locales, seven further IDs across ten candidates, and approximately 65 calculator/home entries across vi, zh-Hans, de, uk and hi. Vietnamese had the broadest repeated wrong-sense errors. Selection is sample-based, not a global exhaustive ranking. Full independent critique then covered all 1115 canonical entries, 11 route metadata records, glossary and Ohm UI assembly, using canonical English and the effective runtime translation.",
+        "limitations": [
+            "Model critique is not competent human review. Machine-draft notice remains enabled."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Post-staging typecheck, translation metadata and 190 canonical correction signatures, all 572 tests in 85 files, full IIS preview build, Cloudflare artifact build, 64 route cases, generated links across 10279 pages, and 15 Vietnamese browser routes passed. Desktop/mobile layouts were visually inspected. Browser result rendering used repository test fixtures. An initial test run concurrent with the build timed out; the isolated reduced-concurrency rerun passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Reviewed all 1115 canonical entries: messages 308, calculators.batt 67, calculators.coil 80, calculators.converter 25, calculators.juice 55, calculators.modrange 49, calculators.tcr 42, calculators.wirewiz 101, comparisons 56, catalog 295, catalogText 37. Corrected 191 display entries in 75 coherent recurring-issue groups across three bounded iterations. Three entries in two optional style groups were retained after independent reassessment. Route metadata and comparison translations required no high-confidence corrections."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Vietnamese human review was performed."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User explicitly requested full review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "vi-0003",
+            "translationId": "messages.navigation.home",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Brand name translated literally and home meaning omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine home",
+                "Previous Vietnamese: Động cơ hơi nước"
+            ],
+            "resolution": "Trang chủ Steam Engine"
+        },
+        {
+            "id": "vi-0009",
+            "translationId": "messages.theme.switchToLight",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "[light-theme] Light theme is not illumination mode.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Switch to light mode",
+                "Previous Vietnamese: Chuyển sang chế độ ánh sáng",
+                "https://support.microsoft.com/vi-vn/accessibility/windows/use-color-and-contrast-for-accessibility-in-microsoft-365 — Vietnamese UI documentation uses Sáng for application color mode. Primary product localization, not proof every alternative is wrong."
+            ],
+            "resolution": "Chế độ sáng is more idiomatic than chế độ ánh sáng, but toggle context retains light-theme intent; no high-confidence material semantic error."
+        },
+        {
+            "id": "vi-0057",
+            "translationId": "messages.catalogEditor.model",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[product-model] Model means product model, not fashion model.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Model",
+                "Previous Vietnamese: người mẫu"
+            ],
+            "resolution": "Mẫu"
+        },
+        {
+            "id": "vi-0062",
+            "translationId": "messages.catalogEditor.batteryAccess",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-access] Access denotes removable/integrated construction, not data access.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery access",
+                "Previous Vietnamese: Truy cập pin"
+            ],
+            "resolution": "Khả năng tháo rời pin"
+        },
+        {
+            "id": "vi-0063",
+            "translationId": "messages.catalogEditor.removableCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-terminology] Cell translated as biological cell.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Removable cell",
+                "Previous Vietnamese: Tế bào có thể tháo rời"
+            ],
+            "resolution": "Cell pin có thể tháo rời"
+        },
+        {
+            "id": "vi-0065",
+            "translationId": "messages.catalogEditor.formFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[form-factor] Form factor translated word for word.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Form factor",
+                "Previous Vietnamese: Yếu tố hình thức"
+            ],
+            "resolution": "Dạng pin"
+        },
+        {
+            "id": "vi-0066",
+            "translationId": "messages.catalogEditor.selectFormFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[form-factor] Form factor translated word for word.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Select a form factor",
+                "Previous Vietnamese: Chọn một yếu tố hình thức"
+            ],
+            "resolution": "Chọn dạng pin"
+        },
+        {
+            "id": "vi-0073",
+            "translationId": "messages.catalogEditor.terminalStyle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Terminal means electrical terminal, not terminal device.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Terminal style",
+                "Previous Vietnamese: Kiểu thiết bị đầu cuối"
+            ],
+            "resolution": "Kiểu đầu cực"
+        },
+        {
+            "id": "vi-0075",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal] Button top means protruding battery terminal.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous Vietnamese: Nút trên cùng"
+            ],
+            "resolution": "Đầu cực lồi"
+        },
+        {
+            "id": "vi-0079",
+            "translationId": "messages.catalogEditor.protectedStatus",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection] Clarify battery protection rather than generic protected status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected status",
+                "Previous Vietnamese: trạng thái được bảo vệ"
+            ],
+            "resolution": "Trạng thái mạch bảo vệ"
+        },
+        {
+            "id": "vi-0080",
+            "translationId": "messages.catalogEditor.protectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection] Protected battery construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected",
+                "Previous Vietnamese: Được bảo vệ"
+            ],
+            "resolution": "Có mạch bảo vệ"
+        },
+        {
+            "id": "vi-0081",
+            "translationId": "messages.catalogEditor.unprotectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection] Unprotected battery construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unprotected",
+                "Previous Vietnamese: không được bảo vệ"
+            ],
+            "resolution": "Không có mạch bảo vệ"
+        },
+        {
+            "id": "vi-0083",
+            "translationId": "messages.catalogEditor.markings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-markings] Markings means printed identity marks, not marking action.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Markings",
+                "Previous Vietnamese: Đánh dấu"
+            ],
+            "resolution": "Ký hiệu trên pin"
+        },
+        {
+            "id": "vi-0084",
+            "translationId": "messages.catalogEditor.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[capacity-not-power] Capacity incorrectly translated as power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity (mAh)",
+                "Previous Vietnamese: Công suất định mức (mAh)"
+            ],
+            "resolution": "Dung lượng định mức (mAh)"
+        },
+        {
+            "id": "vi-0090",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[cell-pack-terminology] Cell, pack and measured dimensions mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Vietnamese: Nhập ít nhất một giới hạn xả liên tục. Pin tích hợp là gói mod bên trong nên không cần kích thước ô riêng biệt. Kích thước ô có thể tháo rời là danh nghĩa; sử dụng ghi chú để đo kích thước khi bán. Khi cả hai giới hạn xả được đặt, máy tính sẽ tiếp tục sử dụng giới hạn dẫn xuất an toàn hơn nếu chúng khác nhau về mặt cơ bản."
+            ],
+            "resolution": "Nhập ít nhất một giới hạn xả liên tục. Pin tích hợp là bộ pin bên trong mod, nên không cần kích thước của cell rời. Kích thước cell có thể tháo rời là kích thước danh nghĩa; hãy ghi kích thước đo được của sản phẩm khi bán trong phần ghi chú. Khi đặt cả hai giới hạn xả, máy tính vẫn dùng giới hạn suy ra an toàn hơn nếu hai giới hạn khác nhau đáng kể."
+        },
+        {
+            "id": "vi-0091",
+            "translationId": "messages.catalogEditor.resistivity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[squared-units] Squared unit symbol damaged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistivity (Ω mm²/m)",
+                "Previous Vietnamese: Điện trở suất (Ω mm2/m)",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "Điện trở suất (Ω mm²/m)"
+        },
+        {
+            "id": "vi-0092",
+            "translationId": "messages.catalogEditor.heatCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[heat-capacity-not-power] Heat capacity mistranslated as thermal power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat capacity (J/g·K)",
+                "Previous Vietnamese: Công suất nhiệt (J/g·K)"
+            ],
+            "resolution": "Nhiệt dung (J/g·K)"
+        },
+        {
+            "id": "vi-0098",
+            "translationId": "messages.catalogEditor.resistanceFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance means electrical resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance factor",
+                "Previous Vietnamese: hệ số kháng"
+            ],
+            "resolution": "Hệ số điện trở"
+        },
+        {
+            "id": "vi-0110",
+            "translationId": "messages.catalogEditor.minAtomizerResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer] Atomizer mistranslated as spraying.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Minimum atomizer resistance (Ω)",
+                "Previous Vietnamese: Điện trở phun tối thiểu (Ω)"
+            ],
+            "resolution": "Điện trở đầu đốt tối thiểu (Ω)"
+        },
+        {
+            "id": "vi-0111",
+            "translationId": "messages.catalogEditor.maxAtomizerResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer] Atomizer mistranslated as spraying.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Maximum atomizer resistance (Ω)",
+                "Previous Vietnamese: Điện trở phun tối đa (Ω)"
+            ],
+            "resolution": "Điện trở đầu đốt tối đa (Ω)"
+        },
+        {
+            "id": "vi-0116",
+            "translationId": "messages.home.blogTitle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[brand-identity] Product identity translated literally.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Steam Engine blog",
+                "Previous Vietnamese: Blog động cơ hơi nước"
+            ],
+            "resolution": "Blog Steam Engine"
+        },
+        {
+            "id": "vi-0122",
+            "translationId": "messages.home.tools.ohm.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[joule-heating] Joule heating is a physical effect, not heating system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculate resistance, voltage, current, and power with Joule heating.",
+                "Previous Vietnamese: Tính toán điện trở, điện áp, dòng điện và công suất bằng hệ thống sưởi Joule."
+            ],
+            "resolution": "Tính điện trở, điện áp, dòng điện và công suất với hiệu ứng tỏa nhiệt Joule."
+        },
+        {
+            "id": "vi-0124",
+            "translationId": "messages.home.tools.coil.description",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[atomizer] Atomizer coils become atomic coils; rebuildable meaning lost.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Plan rebuildable atomizer coils and explore their electrical behavior.",
+                "Previous Vietnamese: Lập kế hoạch xây dựng lại cuộn dây nguyên tử và khám phá hành vi điện của chúng."
+            ],
+            "resolution": "Thiết kế coil cho đầu đốt có thể tự quấn lại và tìm hiểu đặc tính điện của chúng."
+        },
+        {
+            "id": "vi-0130",
+            "translationId": "messages.home.tools.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Electrical resistance mistranslated as opposition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find the useful resistance range for a regulated mod.",
+                "Previous Vietnamese: Tìm phạm vi kháng cự hữu ích cho một mod được điều chỉnh."
+            ],
+            "resolution": "Tìm phạm vi điện trở hữu ích cho mod có điều chỉnh."
+        },
+        {
+            "id": "vi-0134",
+            "translationId": "messages.home.tools.converter.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Wire gauge is wire size, not measuring tape.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert between millimeters, inches, fractional inches, and wire gauges.",
+                "Previous Vietnamese: Chuyển đổi giữa milimet, inch, inch phân số và thước dây."
+            ],
+            "resolution": "Chuyển đổi giữa milimét, inch, inch dạng phân số và cỡ dây."
+        },
+        {
+            "id": "vi-0139",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-assembly] Sentence fragment currently assembles to nonsense.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous Vietnamese: Đây là một cách đơn giản"
+            ],
+            "resolution": "Công cụ này áp dụng"
+        },
+        {
+            "id": "vi-0141",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-assembly] Move calculator noun before linked law names for Vietnamese grammar.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous Vietnamese: máy tính."
+            ],
+            "resolution": "cho các phép tính đơn giản."
+        },
+        {
+            "id": "vi-0145",
+            "translationId": "messages.ohm.simpleLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] UI locks are value constraints, not padlocks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Simple locks",
+                "Previous Vietnamese: Ổ khóa đơn giản"
+            ],
+            "resolution": "Khóa đơn giản"
+        },
+        {
+            "id": "vi-0146",
+            "translationId": "messages.ohm.showDetailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] UI locks are value constraints, not padlocks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Show detailed locks",
+                "Previous Vietnamese: Hiển thị ổ khóa chi tiết"
+            ],
+            "resolution": "Hiển thị khóa chi tiết"
+        },
+        {
+            "id": "vi-0147",
+            "translationId": "messages.ohm.hideDetailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] UI locks are value constraints, not padlocks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Hide detailed locks",
+                "Previous Vietnamese: Ẩn ổ khóa chi tiết"
+            ],
+            "resolution": "Ẩn khóa chi tiết"
+        },
+        {
+            "id": "vi-0155",
+            "translationId": "messages.ohm.fields.resistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-resistance] Resistance translated as resistance movement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance",
+                "Previous Vietnamese: Kháng chiến"
+            ],
+            "resolution": "Điện trở"
+        },
+        {
+            "id": "vi-0157",
+            "translationId": "messages.ohm.fields.current",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Current translated as present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Vietnamese: hiện tại"
+            ],
+            "resolution": "Dòng điện"
+        },
+        {
+            "id": "vi-0158",
+            "translationId": "messages.ohm.fields.power",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-power] Power translated as authority.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous Vietnamese: quyền lực"
+            ],
+            "resolution": "Công suất"
+        },
+        {
+            "id": "vi-0162",
+            "translationId": "messages.encyclopedia.lead",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-board] Control board is a circuit board, not control panel.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Browse the concepts, materials, batteries, mods, and control boards behind the calculators.",
+                "Previous Vietnamese: Duyệt qua các khái niệm, vật liệu, pin, mod và bảng điều khiển đằng sau máy tính."
+            ],
+            "resolution": "Duyệt các khái niệm, vật liệu, pin, mod và bo mạch điều khiển làm nền tảng cho các máy tính."
+        },
+        {
+            "id": "vi-0175",
+            "translationId": "messages.encyclopedia.categoryLabels.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-board] Boards translated as tables.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mods and boards",
+                "Previous Vietnamese: Mod và bảng"
+            ],
+            "resolution": "Mod và bo mạch"
+        },
+        {
+            "id": "vi-0177",
+            "translationId": "messages.encyclopedia.categoryDescriptions.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-terminology] Cells/packs translated biologically and generically.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells, packs, and integrated power sources.",
+                "Previous Vietnamese: Tế bào, gói và nguồn năng lượng tích hợp."
+            ],
+            "resolution": "Cell pin, bộ pin và nguồn điện tích hợp."
+        },
+        {
+            "id": "vi-0179",
+            "translationId": "messages.encyclopedia.categoryDescriptions.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-board] Control board mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated devices and control-board profiles.",
+                "Previous Vietnamese: Các thiết bị được điều chỉnh và hồ sơ bảng điều khiển."
+            ],
+            "resolution": "Các thiết bị có điều chỉnh và hồ sơ bo mạch điều khiển."
+        },
+        {
+            "id": "vi-0194",
+            "translationId": "messages.encyclopediaDetail.sourceBackedMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-material] Material mistranslated as document.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Source-backed material record",
+                "Previous Vietnamese: Hồ sơ tài liệu được hỗ trợ từ nguồn"
+            ],
+            "resolution": "Hồ sơ vật liệu có nguồn chứng minh"
+        },
+        {
+            "id": "vi-0210",
+            "translationId": "messages.encyclopediaDetail.temperatureResistanceCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-by-temperature] Resistance versus temperature becomes temperature tolerance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature resistance curve",
+                "Previous Vietnamese: Đường cong chịu nhiệt độ"
+            ],
+            "resolution": "Đường cong điện trở theo nhiệt độ"
+        },
+        {
+            "id": "vi-0212",
+            "translationId": "messages.encyclopediaDetail.relativeResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Electrical resistance becomes immune resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Relative resistance",
+                "Previous Vietnamese: Sức đề kháng tương đối"
+            ],
+            "resolution": "Điện trở tương đối"
+        },
+        {
+            "id": "vi-0221",
+            "translationId": "messages.encyclopediaDetail.confidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[evidence-confidence] Evidence confidence is not self-confidence.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Confidence",
+                "Previous Vietnamese: sự tự tin"
+            ],
+            "resolution": "Độ tin cậy"
+        },
+        {
+            "id": "vi-0235",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[ampere-omission] Ampere unit omitted and syntax broken.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ A continuous-discharge rating.",
+                "Previous Vietnamese: Danh mục liệt kê __SE_ARG_0__ Xếp hạng phóng điện liên tục.",
+                "https://www.molicel.com/product/ — Molicel product overview"
+            ],
+            "resolution": "Danh mục ghi dòng xả liên tục định mức là __SE_ARG_0__ A."
+        },
+        {
+            "id": "vi-0238",
+            "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-terminology] Rewrap explanation mistranslates cell and wrapper.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The label is treated as a rewrap brand; the underlying cell manufacturer is not assumed from the wrapper.",
+                "Previous Vietnamese: Nhãn được coi như nhãn hiệu được bọc lại; nhà sản xuất tế bào cơ bản không được giả định từ trình bao bọc."
+            ],
+            "resolution": "Nhãn này được coi là thương hiệu bọc lại cell; không suy đoán nhà sản xuất cell bên trong chỉ từ vỏ bọc."
+        },
+        {
+            "id": "vi-0239",
+            "translationId": "messages.encyclopediaDetail.oldBatteryWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[superseded-tense] Already superseded becomes future replacement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is an old battery model and is probably superseded by more suitable models.",
+                "Previous Vietnamese: Đây là mẫu pin cũ và có lẽ sẽ được thay thế bằng mẫu pin phù hợp hơn."
+            ],
+            "resolution": "Đây là mẫu pin cũ và có lẽ đã được thay thế bởi các mẫu phù hợp hơn."
+        },
+        {
+            "id": "vi-0240",
+            "translationId": "messages.encyclopediaDetail.unknownBatteryIntroductionNotice",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-terminology] Cell incorrectly translated biologically.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The market introduction date for this cell is unknown, so its age and whether it has been superseded cannot be determined.",
+                "Previous Vietnamese: Ngày giới thiệu ra thị trường của loại tế bào này vẫn chưa được xác định, vì vậy không thể xác định được tuổi của nó và liệu nó có bị thay thế hay không."
+            ],
+            "resolution": "Chưa rõ ngày cell pin này được đưa ra thị trường, nên không thể xác định tuổi của nó hoặc liệu nó đã được thay thế hay chưa."
+        },
+        {
+            "id": "vi-0244",
+            "translationId": "messages.encyclopediaDetail.basedOnBoardProfile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-board] Board is not a table.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This device profile is based on the board profile:",
+                "Previous Vietnamese: Hồ sơ thiết bị này dựa trên hồ sơ bảng:"
+            ],
+            "resolution": "Hồ sơ thiết bị này dựa trên hồ sơ bo mạch:"
+        },
+        {
+            "id": "vi-0252",
+            "translationId": "messages.encyclopediaDetail.batteryAccess",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-access] Access refers to removability.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery access",
+                "Previous Vietnamese: Truy cập pin"
+            ],
+            "resolution": "Khả năng tháo rời pin"
+        },
+        {
+            "id": "vi-0255",
+            "translationId": "messages.encyclopediaDetail.protectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection] Cell/protection construction mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected cell.",
+                "Previous Vietnamese: Tế bào được bảo vệ"
+            ],
+            "resolution": "Cell pin có mạch bảo vệ."
+        },
+        {
+            "id": "vi-0256",
+            "translationId": "messages.encyclopediaDetail.unprotectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-protection] Cell/protection construction mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unprotected cell.",
+                "Previous Vietnamese: Tế bào không được bảo vệ"
+            ],
+            "resolution": "Cell pin không có mạch bảo vệ."
+        },
+        {
+            "id": "vi-0261",
+            "translationId": "messages.encyclopediaDetail.markings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-markings] Markings is noun, not mark action.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Markings",
+                "Previous Vietnamese: Đánh dấu"
+            ],
+            "resolution": "Ký hiệu trên pin"
+        },
+        {
+            "id": "vi-0263",
+            "translationId": "messages.encyclopediaDetail.noUsableResistanceRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No usable resistance range can be calculated from the catalog limits.",
+                "Previous Vietnamese: Không có phạm vi kháng cự hữu dụng nào có thể được tính toán từ giới hạn danh mục."
+            ],
+            "resolution": "Không thể tính được phạm vi điện trở sử dụng được từ các giới hạn trong danh mục."
+        },
+        {
+            "id": "vi-0264",
+            "translationId": "messages.encyclopediaDetail.modBoardCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[control-board] Board is not a table.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod board and device catalog",
+                "Previous Vietnamese: Bảng mod và danh mục thiết bị"
+            ],
+            "resolution": "Danh mục bo mạch mod và thiết bị"
+        },
+        {
+            "id": "vi-0279",
+            "translationId": "messages.encyclopediaDetail.materialCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-terminology] Coil becomes generic roll.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil material catalog",
+                "Previous Vietnamese: Danh mục vật liệu cuộn"
+            ],
+            "resolution": "Danh mục vật liệu coil"
+        },
+        {
+            "id": "vi-0284",
+            "translationId": "messages.encyclopediaDetail.noMaterialSources",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-material] Material becomes document.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No sources are available for this material.",
+                "Previous Vietnamese: Không có nguồn có sẵn cho tài liệu này."
+            ],
+            "resolution": "Không có nguồn nào cho vật liệu này."
+        },
+        {
+            "id": "vi-0288",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.formFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[form-factor] Form factor literal mistranslation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Form factor",
+                "Previous Vietnamese: Yếu tố hình thức"
+            ],
+            "resolution": "Dạng pin"
+        },
+        {
+            "id": "vi-0290",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.ratedCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[capacity-not-power] Capacity becomes power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Rated capacity",
+                "Previous Vietnamese: Công suất định mức"
+            ],
+            "resolution": "Dung lượng định mức"
+        },
+        {
+            "id": "vi-0298",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.resistanceRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance range",
+                "Previous Vietnamese: Phạm vi kháng cự"
+            ],
+            "resolution": "Phạm vi điện trở"
+        },
+        {
+            "id": "vi-0302",
+            "translationId": "messages.encyclopediaDetail.propertyLabels.fullResistanceCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Full resistance curve",
+                "Previous Vietnamese: Đường cong kháng cự đầy đủ"
+            ],
+            "resolution": "Đường cong điện trở đầy đủ"
+        },
+        {
+            "id": "vi-0319",
+            "translationId": "calculators.batt.bypass",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[bypass-mode] Device mode identity should be preserved, not skip command.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Bypass",
+                "Previous Vietnamese: Bỏ qua"
+            ],
+            "resolution": "Bypass"
+        },
+        {
+            "id": "vi-0325",
+            "translationId": "calculators.batt.efficiency",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[efficiency] Engineering efficiency differs from effectiveness.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Efficiency",
+                "Previous Vietnamese: Hiệu quả"
+            ],
+            "resolution": "Hiệu suất"
+        },
+        {
+            "id": "vi-0327",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated UI.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Vietnamese: Cell selection"
+            ],
+            "resolution": "Chọn cell pin"
+        },
+        {
+            "id": "vi-0328",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-configuration-translation] Stale translation loses per-cell meaning and adds integrated preset.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Vietnamese: Chọn cài đặt sẵn pin tích hợp hoặc nhập giá trị của riêng bạn bên dưới."
+            ],
+            "resolution": "Chọn loại cell dùng cho toàn bộ bộ pin, hoặc nhập các giá trị cho từng cell bên dưới."
+        },
+        {
+            "id": "vi-0334",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Stale text loses cell/pack distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Vietnamese: Giá trị pin"
+            ],
+            "resolution": "Cell và bộ pin"
+        },
+        {
+            "id": "vi-0335",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated UI.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Vietnamese: Battery configuration"
+            ],
+            "resolution": "Cấu hình pin"
+        },
+        {
+            "id": "vi-0338",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated configuration.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Vietnamese: 1S — Single cell"
+            ],
+            "resolution": "1S — Một cell"
+        },
+        {
+            "id": "vi-0339",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated UI.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Vietnamese: Custom configuration"
+            ],
+            "resolution": "Cấu hình tùy chỉnh"
+        },
+        {
+            "id": "vi-0340",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated input label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Vietnamese: Cells in series"
+            ],
+            "resolution": "Số cell nối tiếp"
+        },
+        {
+            "id": "vi-0341",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated input label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Vietnamese: Parallel strings"
+            ],
+            "resolution": "Số nhánh song song"
+        },
+        {
+            "id": "vi-0344",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[battery-configuration-translation] Safety instruction entirely untranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Vietnamese: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "Dùng các cell giống nhau, được ghép đồng bộ, có cùng tuổi và tình trạng. Việc chia dòng điện được lý tưởng hóa; cell yếu nhất giới hạn khả năng của cả bộ pin."
+        },
+        {
+            "id": "vi-0354",
+            "translationId": "calculators.batt.batteryHelp",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[capacity-not-power] Capacity becomes power and current becomes present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
+                "Previous Vietnamese: Điện áp và công suất danh định xác định năng lượng dự trữ ước tính và thời gian chạy liên tục. Chúng không ảnh hưởng đến giới hạn hiện tại."
+            ],
+            "resolution": "Điện áp danh định và dung lượng quyết định năng lượng dự trữ ước tính và thời gian hoạt động liên tục. Chúng không ảnh hưởng đến giới hạn dòng điện."
+        },
+        {
+            "id": "vi-0361",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated result heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Vietnamese: Battery pack"
+            ],
+            "resolution": "Bộ pin"
+        },
+        {
+            "id": "vi-0362",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-translation] Untranslated result label.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Vietnamese: Estimated current per cell"
+            ],
+            "resolution": "Dòng điện ước tính qua mỗi cell"
+        },
+        {
+            "id": "vi-0369",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[current-headroom] Current headroom becomes remaining present space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous Vietnamese: Khoảng trống hiện tại còn lại dưới 20%."
+            ],
+            "resolution": "Biên độ dự phòng dòng điện còn dưới 20%."
+        },
+        {
+            "id": "vi-0371",
+            "translationId": "calculators.batt.runtimeHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[runtime-power-overhead] Electrical overhead becomes operating costs; power becomes energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This idealized estimate assumes continuous output at the calculated battery power. Real runtime varies with cutoff voltage, voltage sag, cell age, device overhead, and intermittent use.",
+                "Previous Vietnamese: Ước tính lý tưởng hóa này giả định sản lượng liên tục ở mức năng lượng pin được tính toán. Thời gian chạy thực tế thay đổi tùy theo điện áp cắt, độ sụt điện áp, tuổi của tế bào, chi phí hoạt động của thiết bị và việc sử dụng không liên tục."
+            ],
+            "resolution": "Ước tính lý tưởng hóa này giả định đầu ra liên tục ở mức công suất pin đã tính. Thời gian hoạt động thực tế thay đổi theo điện áp ngắt, sụt áp, tuổi cell, điện năng thiết bị tự tiêu thụ và việc sử dụng ngắt quãng."
+        },
+        {
+            "id": "vi-0375",
+            "translationId": "calculators.coil.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-terminology] Coil becomes roll.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Coil wrapping calculator",
+                "Previous Vietnamese: Máy tính quấn cuộn"
+            ],
+            "resolution": "Máy tính quấn coil"
+        },
+        {
+            "id": "vi-0386",
+            "translationId": "calculators.coil.metric",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[metric-imperial] Metric becomes statistical.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Metric units",
+                "Previous Vietnamese: Đơn vị số liệu"
+            ],
+            "resolution": "Đơn vị hệ mét"
+        },
+        {
+            "id": "vi-0387",
+            "translationId": "calculators.coil.imperial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[metric-imperial] Imperial becomes royal.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Imperial units",
+                "Previous Vietnamese: đơn vị hoàng gia"
+            ],
+            "resolution": "Đơn vị hệ Anh"
+        },
+        {
+            "id": "vi-0389",
+            "translationId": "calculators.coil.wireProfile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-profile] Profile is cross-section, not dossier.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire profile",
+                "Previous Vietnamese: Hồ sơ dây"
+            ],
+            "resolution": "Tiết diện dây"
+        },
+        {
+            "id": "vi-0393",
+            "translationId": "calculators.coil.twistPitch",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[twist-pitch] Pitch is distance per twist, not audio pitch.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Twist pitch",
+                "Previous Vietnamese: Cao độ xoắn"
+            ],
+            "resolution": "Bước xoắn"
+        },
+        {
+            "id": "vi-0405",
+            "translationId": "calculators.coil.buildDetails",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[build-details] Build details becomes build in detail.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Build details",
+                "Previous Vietnamese: Xây dựng chi tiết"
+            ],
+            "resolution": "Chi tiết cấu hình coil"
+        },
+        {
+            "id": "vi-0415",
+            "translationId": "calculators.coil.wraps",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[wrap-count] Wraps mistranslated as happy endings.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Number of wraps",
+                "Previous Vietnamese: Số lượng kết thúc tốt đẹp"
+            ],
+            "resolution": "Số vòng quấn"
+        },
+        {
+            "id": "vi-0417",
+            "translationId": "calculators.coil.heatCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[heat-capacity-not-power] Heat capacity becomes thermal power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat capacity",
+                "Previous Vietnamese: công suất nhiệt"
+            ],
+            "resolution": "Nhiệt dung"
+        },
+        {
+            "id": "vi-0420",
+            "translationId": "calculators.coil.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Heat flux is per area, distinct from total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous Vietnamese: dòng nhiệt"
+            ],
+            "resolution": "Mật độ dòng nhiệt"
+        },
+        {
+            "id": "vi-0439",
+            "translationId": "calculators.coil.resistanceActual",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance becomes immune resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: actual resistance",
+                "Previous Vietnamese: sức đề kháng thực tế"
+            ],
+            "resolution": "điện trở thực tế"
+        },
+        {
+            "id": "vi-0442",
+            "translationId": "calculators.coil.unavailableMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-material] Material becomes document.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unavailable material",
+                "Previous Vietnamese: Tài liệu không có sẵn"
+            ],
+            "resolution": "Vật liệu không có sẵn"
+        },
+        {
+            "id": "vi-0451",
+            "translationId": "calculators.coil.setupSeries2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[series-topology] Series topology becomes series/list.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual coil (series)",
+                "Previous Vietnamese: Cuộn dây kép (loạt)"
+            ],
+            "resolution": "Coil kép (nối tiếp)"
+        },
+        {
+            "id": "vi-0452",
+            "translationId": "calculators.coil.setupSeries3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[series-topology] Series topology becomes series/list.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Triple coil (series)",
+                "Previous Vietnamese: Cuộn dây ba (loạt)"
+            ],
+            "resolution": "Ba coil (nối tiếp)"
+        },
+        {
+            "id": "vi-0453",
+            "translationId": "calculators.coil.setupSeries4",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[series-topology] Series topology becomes series/list.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quad coil (series)",
+                "Previous Vietnamese: Cuộn dây bốn (loạt)"
+            ],
+            "resolution": "Bốn coil (nối tiếp)"
+        },
+        {
+            "id": "vi-0458",
+            "translationId": "calculators.converter.embeddedDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Wire gauge becomes measuring tape.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert between millimetres, inches, wire gauges, and fractional inches.",
+                "Previous Vietnamese: Chuyển đổi giữa milimét, inch, thước dây và inch phân số."
+            ],
+            "resolution": "Chuyển đổi giữa milimét, inch, cỡ dây và inch dạng phân số."
+        },
+        {
+            "id": "vi-0466",
+            "translationId": "calculators.converter.americanWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge is a size system, not measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: American Wire Gauge",
+                "Previous Vietnamese: Máy đo dây của Mỹ"
+            ],
+            "resolution": "Cỡ dây Mỹ (AWG)"
+        },
+        {
+            "id": "vi-0467",
+            "translationId": "calculators.converter.needleGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge is a size system, not measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG (needle gauge)",
+                "Previous Vietnamese: BWG (máy đo kim)"
+            ],
+            "resolution": "BWG (cỡ kim)"
+        },
+        {
+            "id": "vi-0468",
+            "translationId": "calculators.converter.standardWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge is a size system, not measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Standard Wire Gauge",
+                "Previous Vietnamese: Máy đo dây tiêu chuẩn"
+            ],
+            "resolution": "Cỡ dây tiêu chuẩn (SWG)"
+        },
+        {
+            "id": "vi-0478",
+            "translationId": "calculators.converter.decimalPlaces",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[decimal-places] Decimal places is digit count, not decimal numbers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Decimal places",
+                "Previous Vietnamese: số thập phân"
+            ],
+            "resolution": "Số chữ số thập phân"
+        },
+        {
+            "id": "vi-0482",
+            "translationId": "calculators.juice.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-base-strength] Nicotine base becomes abstract foundation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Input the properties of your nicotine base and your desired mix.",
+                "Previous Vietnamese: Nhập các đặc tính của cơ sở nicotin và hỗn hợp mong muốn của bạn."
+            ],
+            "resolution": "Nhập các đặc tính của dung dịch nicotine nền và hỗn hợp mong muốn."
+        },
+        {
+            "id": "vi-0483",
+            "translationId": "calculators.juice.menu",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ui-menu] Menu is UI, not restaurant menu.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Menu",
+                "Previous Vietnamese: Thực đơn"
+            ],
+            "resolution": "Trình đơn"
+        },
+        {
+            "id": "vi-0489",
+            "translationId": "calculators.juice.amount",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[liquid-quantity] Quantity becomes money amount.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Amount you want to make",
+                "Previous Vietnamese: Số tiền bạn muốn thực hiện"
+            ],
+            "resolution": "Lượng muốn pha"
+        },
+        {
+            "id": "vi-0490",
+            "translationId": "calculators.juice.nicStrengthIn",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-base-strength] Input distinction omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nic strength in",
+                "Previous Vietnamese: Nồng độ nicotine"
+            ],
+            "resolution": "Nồng độ nicotine đầu vào"
+        },
+        {
+            "id": "vi-0517",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-base-strength] Nicotine base and concentration instructions mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous Vietnamese: Bạn có thể cần phải giảm nội dung nic, VG hoặc PG hoặc hương vị mục tiêu của mình. Ngoài ra, hãy sử dụng đế nic mạnh hơn hoặc đế nic có tỷ lệ VG/PG khác. Vui lòng điều chỉnh cài đặt của bạn cho đến khi tất cả các số lớn hơn 0."
+            ],
+            "resolution": "Bạn có thể cần giảm nồng độ nicotine mục tiêu, tỷ lệ VG hoặc PG, hoặc lượng hương liệu. Ngoài ra, hãy dùng dung dịch nicotine nền có nồng độ cao hơn hoặc có tỷ lệ VG/PG khác. Hãy điều chỉnh cài đặt cho đến khi mọi số đều lớn hơn 0."
+        },
+        {
+            "id": "vi-0518",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[nicotine-base-strength] Concentration warning rendered as power/strength of foundation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous Vietnamese: Cấp độ nic mục tiêu của bạn cao hơn sức mạnh cơ bản nic của bạn. Bạn nên có cơ sở nic mạnh hơn hoặc giảm sức mạnh nic mục tiêu của mình."
+            ],
+            "resolution": "Nồng độ nicotine mục tiêu cao hơn nồng độ của dung dịch nicotine nền. Bạn cần dùng dung dịch nicotine nền có nồng độ cao hơn hoặc giảm nồng độ nicotine mục tiêu."
+        },
+        {
+            "id": "vi-0527",
+            "translationId": "calculators.juice.flavorPercentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-ingredient] Ingredient concentration, not subjective flavor percentage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor percentage",
+                "Previous Vietnamese: Tỷ lệ hương vị"
+            ],
+            "resolution": "Tỷ lệ hương liệu"
+        },
+        {
+            "id": "vi-0528",
+            "translationId": "calculators.juice.flavorVg",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-ingredient] VG carrier for flavoring, not flavor itself.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor is VG based",
+                "Previous Vietnamese: Hương vị dựa trên VG"
+            ],
+            "resolution": "Hương liệu dùng nền VG"
+        },
+        {
+            "id": "vi-0535",
+            "translationId": "calculators.modrange.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod] Regulated becomes legally prescribed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod calculator",
+                "Previous Vietnamese: Máy tính mod được quy định"
+            ],
+            "resolution": "Máy tính mod có điều chỉnh"
+        },
+        {
+            "id": "vi-0537",
+            "translationId": "calculators.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod] Resistance and regulated mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous Vietnamese: Tìm phạm vi kháng cự hữu ích từ giới hạn đầu ra của mod được quy định."
+            ],
+            "resolution": "Tìm phạm vi điện trở hữu ích từ các giới hạn đầu ra của mod có điều chỉnh."
+        },
+        {
+            "id": "vi-0543",
+            "translationId": "calculators.modrange.presetIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod] Regulated becomes legally prescribed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose a regulated mod preset.",
+                "Previous Vietnamese: Chọn một cài đặt trước mod được quy định."
+            ],
+            "resolution": "Chọn cấu hình có sẵn cho mod có điều chỉnh."
+        },
+        {
+            "id": "vi-0544",
+            "translationId": "calculators.modrange.preset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod] Regulated becomes legally prescribed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod preset",
+                "Previous Vietnamese: Cài đặt trước mod được quy định"
+            ],
+            "resolution": "Cấu hình có sẵn của mod có điều chỉnh"
+        },
+        {
+            "id": "vi-0546",
+            "translationId": "calculators.modrange.details",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-not-mode] Mod becomes mode.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Details about this mod",
+                "Previous Vietnamese: Thông tin chi tiết về chế độ này"
+            ],
+            "resolution": "Thông tin chi tiết về mod này"
+        },
+        {
+            "id": "vi-0547",
+            "translationId": "calculators.modrange.customMod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-not-mode] Mod becomes mode.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom mod",
+                "Previous Vietnamese: Chế độ tùy chỉnh"
+            ],
+            "resolution": "Mod tùy chỉnh"
+        },
+        {
+            "id": "vi-0558",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[modrange-guidance] Stale translation claims optimum; source is guidance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Vietnamese: Sức đề kháng tối ưu"
+            ],
+            "resolution": "Hướng dẫn chọn điện trở"
+        },
+        {
+            "id": "vi-0560",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[modrange-crossover] Stale translation says average resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Vietnamese: Kháng trung bình"
+            ],
+            "resolution": "Điểm giao giữa giới hạn dòng điện và điện áp"
+        },
+        {
+            "id": "vi-0561",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[modrange-upper-midpoint] Stale translation says sweet spot.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Vietnamese: Điểm ngọt ngào"
+            ],
+            "resolution": "Trung điểm phần trên của phạm vi"
+        },
+        {
+            "id": "vi-0562",
+            "translationId": "calculators.modrange.currentLimit",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Current becomes present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current limit",
+                "Previous Vietnamese: Giới hạn hiện tại"
+            ],
+            "resolution": "Giới hạn dòng điện"
+        },
+        {
+            "id": "vi-0565",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current becomes present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous Vietnamese: giới hạn hiện tại yêu cầu"
+            ],
+            "resolution": "giới hạn dòng điện yêu cầu"
+        },
+        {
+            "id": "vi-0567",
+            "translationId": "calculators.modrange.resistanceAtLimit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance at the limit",
+                "Previous Vietnamese: Kháng cự ở giới hạn"
+            ],
+            "resolution": "Điện trở tại giới hạn"
+        },
+        {
+            "id": "vi-0569",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current becomes present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous Vietnamese: Giới hạn hiện tại đạt được đầu tiên."
+            ],
+            "resolution": "Đạt giới hạn dòng điện trước."
+        },
+        {
+            "id": "vi-0573",
+            "translationId": "calculators.modrange.powerCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] Power becomes strength.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power curve",
+                "Previous Vietnamese: Đường cong sức mạnh"
+            ],
+            "resolution": "Đường cong công suất"
+        },
+        {
+            "id": "vi-0575",
+            "translationId": "calculators.modrange.powerCurveDescriptionLong",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] Power becomes strength.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A graph of maximum achievable power against resistance, with the calculated usable range highlighted.",
+                "Previous Vietnamese: Biểu đồ về sức mạnh tối đa có thể đạt được so với điện trở, trong đó phạm vi có thể sử dụng được tính toán được tô sáng."
+            ],
+            "resolution": "Biểu đồ công suất tối đa có thể đạt được theo điện trở, với phạm vi sử dụng được đã tính được tô nổi bật."
+        },
+        {
+            "id": "vi-0576",
+            "translationId": "calculators.modrange.powerCurveLegend",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[graph-legend] Legend becomes myth and power becomes strength.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power curve legend",
+                "Previous Vietnamese: Huyền thoại đường cong sức mạnh"
+            ],
+            "resolution": "Chú giải đường cong công suất"
+        },
+        {
+            "id": "vi-0579",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[modrange-crossover] Stale source translation says median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Vietnamese: trung vị"
+            ],
+            "resolution": "Điểm giao giữa giới hạn dòng điện và điện áp"
+        },
+        {
+            "id": "vi-0580",
+            "translationId": "calculators.modrange.resistance",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-resistance] Resistance becomes resistance movement.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance",
+                "Previous Vietnamese: Kháng chiến"
+            ],
+            "resolution": "Điện trở"
+        },
+        {
+            "id": "vi-0581",
+            "translationId": "calculators.modrange.power",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-power] Power becomes authority.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous Vietnamese: quyền lực"
+            ],
+            "resolution": "Công suất"
+        },
+        {
+            "id": "vi-0582",
+            "translationId": "calculators.modrange.current",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[electrical-current] Current becomes present time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Vietnamese: hiện tại"
+            ],
+            "resolution": "Dòng điện"
+        },
+        {
+            "id": "vi-0585",
+            "translationId": "calculators.tcr.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[TCR] TCR meaning becomes temperature resistance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature coefficient of resistance",
+                "Previous Vietnamese: Hệ số kháng nhiệt độ"
+            ],
+            "resolution": "Hệ số nhiệt độ của điện trở"
+        },
+        {
+            "id": "vi-0590",
+            "translationId": "calculators.tcr.needModelText",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Resistance mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: for wire geometry, complex constructions, and coil calculations. This focused tool remains useful for comparing and combining resistance curves.",
+                "Previous Vietnamese: cho hình dạng dây, cấu trúc phức tạp và tính toán cuộn dây. Công cụ tập trung này vẫn hữu ích cho việc so sánh và kết hợp các đường cong kháng cự."
+            ],
+            "resolution": "để tính hình học dây, các cấu trúc phức tạp và coil. Công cụ chuyên biệt này vẫn hữu ích để so sánh và kết hợp các đường cong điện trở."
+        },
+        {
+            "id": "vi-0596",
+            "translationId": "calculators.tcr.help",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-material] Materials become documents.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",
+                "Previous Vietnamese: Việc chỉnh sửa các giá trị này sẽ xóa các tài liệu đã chọn. Đầu ra DNA 200 chấp nhận 2–8 điểm và cần một điểm gần 70 °F (khoảng 21 °C)."
+            ],
+            "resolution": "Chỉnh sửa các giá trị này sẽ xóa lựa chọn vật liệu. Đầu ra DNA 200 chấp nhận 2–8 điểm và cần một điểm gần 70 °F (khoảng 21 °C)."
+        },
+        {
+            "id": "vi-0602",
+            "translationId": "calculators.tcr.addMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-material] Material becomes document.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Add material",
+                "Previous Vietnamese: Thêm tài liệu"
+            ],
+            "resolution": "Thêm vật liệu"
+        },
+        {
+            "id": "vi-0604",
+            "translationId": "calculators.tcr.results",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[resistance-by-temperature] Resistance by temperature becomes temperature tolerance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance by temperature",
+                "Previous Vietnamese: Kháng nhiệt độ"
+            ],
+            "resolution": "Điện trở theo nhiệt độ"
+        },
+        {
+            "id": "vi-0635",
+            "translationId": "calculators.wirewiz.menu",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ui-menu] UI menu becomes restaurant menu.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Menu",
+                "Previous Vietnamese: Thực đơn"
+            ],
+            "resolution": "Trình đơn"
+        },
+        {
+            "id": "vi-0636",
+            "translationId": "calculators.wirewiz.export",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[data-import-export] Data export becomes merchandise export.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Export",
+                "Previous Vietnamese: Xuất khẩu"
+            ],
+            "resolution": "Xuất"
+        },
+        {
+            "id": "vi-0637",
+            "translationId": "calculators.wirewiz.import",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[data-import-export] Data import becomes merchandise import.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Import",
+                "Previous Vietnamese: Nhập khẩu"
+            ],
+            "resolution": "Nhập"
+        },
+        {
+            "id": "vi-0644",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[wrap-count] Wraps becomes happy endings.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wraps",
+                "Previous Vietnamese: kết thúc tốt đẹp"
+            ],
+            "resolution": "Số vòng quấn"
+        },
+        {
+            "id": "vi-0651",
+            "translationId": "calculators.wirewiz.dna200",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[brand-identity] Product name altered to Vietnamese DNA abbreviation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA200",
+                "Previous Vietnamese: ADN200"
+            ],
+            "resolution": "DNA200"
+        },
+        {
+            "id": "vi-0671",
+            "translationId": "calculators.wirewiz.resistanceFactor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-resistance] Electrical resistance mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance factor",
+                "Previous Vietnamese: hệ số kháng"
+            ],
+            "resolution": "Hệ số điện trở"
+        },
+        {
+            "id": "vi-0674",
+            "translationId": "calculators.wirewiz.referenceMaterial",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-material] Reference material becomes reference document.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reference material",
+                "Previous Vietnamese: Tài liệu tham khảo"
+            ],
+            "resolution": "Vật liệu tham chiếu"
+        },
+        {
+            "id": "vi-0676",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[material-mode-fragment] Fragment does not express selected material mode.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous Vietnamese: Để khớp nó trên một bộ mod thành"
+            ],
+            "resolution": "Để đạt cùng mức đó trên mod đặt ở chế độ"
+        },
+        {
+            "id": "vi-0682",
+            "translationId": "calculators.wirewiz.single",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-wire] Single wire becomes unmarried person.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single",
+                "Previous Vietnamese: Độc thân"
+            ],
+            "resolution": "Đơn"
+        },
+        {
+            "id": "vi-0700",
+            "translationId": "calculators.wirewiz.heatFlux",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux-density] Heat flux per area becomes total heat flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux",
+                "Previous Vietnamese: dòng nhiệt"
+            ],
+            "resolution": "Mật độ dòng nhiệt"
+        },
+        {
+            "id": "vi-0702",
+            "translationId": "calculators.wirewiz.heatCapacity",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[heat-capacity-not-power] Heat capacity becomes thermal power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat capacity",
+                "Previous Vietnamese: công suất nhiệt"
+            ],
+            "resolution": "Nhiệt dung"
+        },
+        {
+            "id": "vi-0706",
+            "translationId": "calculators.wirewiz.physical",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-properties] Physical properties becomes bodily fitness.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Physical",
+                "Previous Vietnamese: thể chất"
+            ],
+            "resolution": "Tính chất vật lý"
+        },
+        {
+            "id": "vi-0714",
+            "translationId": "calculators.wirewiz.mass",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[physical-mass] Mass becomes religious mass.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mass",
+                "Previous Vietnamese: Thánh lễ"
+            ],
+            "resolution": "Khối lượng"
+        },
+        {
+            "id": "vi-0717",
+            "translationId": "calculators.wirewiz.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-profile] Wire profile is cross-section, not dossier.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Profile",
+                "Previous Vietnamese: Hồ sơ"
+            ],
+            "resolution": "Tiết diện"
+        },
+        {
+            "id": "vi-0718",
+            "translationId": "calculators.wirewiz.round",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-profile] Round cross-section becomes loop.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Round",
+                "Previous Vietnamese: vòng"
+            ],
+            "resolution": "Tròn"
+        },
+        {
+            "id": "vi-0721",
+            "translationId": "calculators.wirewiz.twistPitch",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[twist-pitch] Twist pitch becomes audio pitch.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Twist pitch",
+                "Previous Vietnamese: Cao độ xoắn"
+            ],
+            "resolution": "Bước xoắn"
+        },
+        {
+            "id": "vi-0796",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked examples becomes examples that worked.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked examples",
+                "Previous Vietnamese: Ví dụ đã làm việc"
+            ],
+            "resolution": "Ví dụ tính toán"
+        },
+        {
+            "id": "vi-0827",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example becomes operating example.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Vietnamese: Ví dụ hoạt động"
+            ],
+            "resolution": "Ví dụ tính toán"
+        },
+        {
+            "id": "vi-0846",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[circuit-node-definition] Intervening component becomes interfering component.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A node is a set of conductors connected without an intervening component.",
+                "Previous Vietnamese: Nút là một tập hợp các dây dẫn được kết nối mà không có thành phần can thiệp."
+            ],
+            "resolution": "Nút là tập hợp các dây dẫn được nối với nhau mà không có linh kiện xen giữa."
+        },
+        {
+            "id": "vi-0850",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[parallel-node-definition] Same two nodes becomes two identical nodes.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A parallel connection joins branches to the same two nodes.",
+                "Previous Vietnamese: Một kết nối song song nối các nhánh của hai nút giống nhau."
+            ],
+            "resolution": "Mắc song song là nối các nhánh vào cùng hai nút."
+        },
+        {
+            "id": "vi-0875",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[simultaneous-equations] Simultaneous equations means a system, not temporal concurrency.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Solve the simultaneous equations and check power balance.",
+                "Previous Vietnamese: Giải các phương trình đồng thời và kiểm tra cân bằng công suất."
+            ],
+            "resolution": "Giải hệ phương trình và kiểm tra cân bằng công suất."
+        },
+        {
+            "id": "vi-0914",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mathematical-identities] Mathematical identities becomes identification.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Waveforms and useful identities",
+                "Previous Vietnamese: Dạng sóng và nhận dạng hữu ích"
+            ],
+            "resolution": "Dạng sóng và các đồng nhất thức hữu ích"
+        },
+        {
+            "id": "vi-0917",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.3.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mathematical-sign] Algebraic sign becomes indication.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Keep the sign and quadrant when direction or phase matters.",
+                "Previous Vietnamese: Giữ dấu hiệu và góc phần tư khi hướng hoặc pha quan trọng."
+            ],
+            "resolution": "Giữ đúng dấu và góc phần tư khi hướng hoặc pha có ý nghĩa quan trọng."
+        },
+        {
+            "id": "vi-0919",
+            "translationId": "catalog.concepts.concept-heat-capacity.description",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[heat-capacity-not-power] Heat capacity becomes thermal power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat capacity connects transferred energy with the temperature change of an object or material.",
+                "Previous Vietnamese: Công suất nhiệt kết nối năng lượng truyền với sự thay đổi nhiệt độ của vật thể hoặc vật liệu."
+            ],
+            "resolution": "Nhiệt dung liên hệ năng lượng truyền vào với sự thay đổi nhiệt độ của vật thể hoặc vật liệu."
+        },
+        {
+            "id": "vi-0923",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-energy-definition] Definition grammar incorrectly makes Q receive energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Q is transferred heat energy in joules (J).",
+                "Previous Vietnamese: Q được truyền năng lượng nhiệt tính bằng joules (J)."
+            ],
+            "resolution": "Q là nhiệt lượng truyền đi, tính bằng joule (J)."
+        },
+        {
+            "id": "vi-0926",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Vietnamese: Ví dụ hoạt động"
+            ],
+            "resolution": "Ví dụ tính toán"
+        },
+        {
+            "id": "vi-0935",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[formula-unit-symbol] Formula unit symbol must remain s.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: t = 41,800 J / 100 W = 418 s",
+                "Previous Vietnamese: t = 41.800 J / 100 W = 418 giây",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "t = 41.800 J / 100 W = 418 s"
+        },
+        {
+            "id": "vi-0949",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[heat-capacity-not-power] Confuses heat capacity with thermal power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heat flux is different from heat capacity: heat capacity describes stored energy per temperature change, while heat flux describes the rate at which heat crosses a surface.",
+                "Previous Vietnamese: Thông lượng nhiệt khác với công suất nhiệt: công suất nhiệt mô tả năng lượng dự trữ trên mỗi sự thay đổi nhiệt độ, trong khi thông lượng nhiệt mô tả tốc độ nhiệt truyền qua một bề mặt."
+            ],
+            "resolution": "Mật độ dòng nhiệt khác với nhiệt dung: nhiệt dung mô tả năng lượng tích trữ trên mỗi đơn vị thay đổi nhiệt độ, còn mật độ dòng nhiệt mô tả tốc độ nhiệt truyền qua bề mặt trên mỗi đơn vị diện tích."
+        },
+        {
+            "id": "vi-0950",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-examples] Worked example mistranslated.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Vietnamese: Ví dụ hoạt động"
+            ],
+            "resolution": "Ví dụ tính toán"
+        },
+        {
+            "id": "vi-0954",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[squared-units] Squared unit symbols damaged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The average heat flux is 5,000 W/m², or 0.5 W/cm².",
+                "Previous Vietnamese: Thông lượng nhiệt trung bình là 5.000 W/m2, hoặc 0,5 W/cm2.",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "Mật độ dòng nhiệt trung bình là 5.000 W/m², hoặc 0,5 W/cm²."
+        },
+        {
+            "id": "vi-0957",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[layer-temperature-difference] Across layer becomes within/between layer.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: ΔT is the temperature difference across the layer.",
+                "Previous Vietnamese: ΔT là chênh lệch nhiệt độ giữa lớp."
+            ],
+            "resolution": "ΔT là chênh lệch nhiệt độ giữa hai mặt của lớp."
+        },
+        {
+            "id": "vi-0963",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[squared-units] Squared unit symbols damaged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Convert area to m² before using W/m².",
+                "Previous Vietnamese: Chuyển đổi diện tích sang m2 trước khi sử dụng W/m2.",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "Đổi diện tích sang m² trước khi dùng W/m²."
+        },
+        {
+            "id": "vi-0970",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[SI-common-vs-base] Common becomes base; following list also includes derived units.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Common SI units",
+                "Previous Vietnamese: Các đơn vị cơ bản SI",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "Các đơn vị SI thông dụng"
+        },
+        {
+            "id": "vi-0971",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Physical quantity becomes count.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quantity",
+                "Previous Vietnamese: số lượng",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes"
+            ],
+            "resolution": "Đại lượng"
+        },
+        {
+            "id": "vi-0973",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.2",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "[notation-symbol] Unit symbol is not an icon.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Symbol",
+                "Previous Vietnamese: Biểu tượng",
+                "https://support.microsoft.com/vi-vn/word/insert-a-symbol-in-word — Uses biểu tượng toán học and ký hiệu for mathematical characters.",
+                "https://vanban.chinhphu.vn/?docid=162349&pageid=27160 — Official measurement terminology uses ký hiệu for SI symbols."
+            ],
+            "resolution": "Ký hiệu is precise metrological wording, but biểu tượng also denotes symbols and is understandable in a table of unit/prefix symbols. Original claim that biểu tượng means only icon was too categorical."
+        },
+        {
+            "id": "vi-0977",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.1.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[physical-mass] Mass becomes religious mass.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mass",
+                "Previous Vietnamese: Thánh lễ"
+            ],
+            "resolution": "Khối lượng"
+        },
+        {
+            "id": "vi-0978",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.1.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[SI-unit-names] Unit name column wrongly uses symbol.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: kilogram",
+                "Previous Vietnamese: kg",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "kilogam"
+        },
+        {
+            "id": "vi-0993",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.6.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[SI-unit-names] Unit name becomes ordinary candle.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: candela",
+                "Previous Vietnamese: nến",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "candela"
+        },
+        {
+            "id": "vi-1004",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.headers.1",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "[notation-symbol] Prefix symbol is not an icon.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Symbol",
+                "Previous Vietnamese: Biểu tượng",
+                "https://support.microsoft.com/vi-vn/word/insert-a-symbol-in-word — Uses biểu tượng toán học and ký hiệu for mathematical characters.",
+                "https://vanban.chinhphu.vn/?docid=162349&pageid=27160 — Official measurement terminology uses ký hiệu for SI symbols."
+            ],
+            "resolution": "Ký hiệu is precise metrological wording, but biểu tượng also denotes symbols and is understandable in a table of unit/prefix symbols. Original claim that biểu tượng means only icon was too categorical."
+        },
+        {
+            "id": "vi-1005",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.headers.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[multiplication-factor] Multiplication factor becomes generic element.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Factor",
+                "Previous Vietnamese: Yếu tố",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes"
+            ],
+            "resolution": "Hệ số"
+        },
+        {
+            "id": "vi-1009",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.1.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[SI-prefix-identities] SI prefix name translated literally.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: mega",
+                "Previous Vietnamese: lớn",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "mega"
+        },
+        {
+            "id": "vi-1012",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.2.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[SI-prefix-identities] SI prefix becomes millimetre.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: milli",
+                "Previous Vietnamese: milimét",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "milli"
+        },
+        {
+            "id": "vi-1013",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.2.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[SI-prefix-identities] SI symbol becomes Vietnamese pronoun.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: m",
+                "Previous Vietnamese: tôi",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "m"
+        },
+        {
+            "id": "vi-1015",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.3.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[SI-prefix-identities] SI prefix name translated literally.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: micro",
+                "Previous Vietnamese: vi mô",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — NIST SI units and prefixes",
+                "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes — Confirms SI quantity, unit and prefix identities; names and symbols must not become ordinary words."
+            ],
+            "resolution": "micro"
+        },
+        {
+            "id": "vi-1038",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-dimension] Dimensions means physical dimensions, not sizes.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Confirm that both sides of an equation have compatible dimensions.",
+                "Previous Vietnamese: Xác nhận rằng cả hai vế của phương trình đều có các kích thước tương thích."
+            ],
+            "resolution": "Xác nhận rằng hai vế của phương trình có thứ nguyên tương thích."
+        },
+        {
+            "id": "vi-1041",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge systems become measuring devices.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wire gauges: AWG, SWG, and BWG",
+                "Previous Vietnamese: Đồng hồ đo dây: AWG, SWG và BWG"
+            ],
+            "resolution": "Cỡ dây: AWG, SWG và BWG"
+        },
+        {
+            "id": "vi-1044",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge systems meaning lost.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge systems",
+                "Previous Vietnamese: Hệ thống đo"
+            ],
+            "resolution": "Các hệ cỡ dây"
+        },
+        {
+            "id": "vi-1045",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge standard becomes measurement instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: AWG is the American Wire Gauge, also known historically as Brown & Sharpe gauge.",
+                "Previous Vietnamese: AWG là Máy đo dây của Mỹ, còn được gọi là máy đo Brown & Sharpe trong lịch sử."
+            ],
+            "resolution": "AWG là hệ cỡ dây Mỹ (American Wire Gauge), trước đây còn được gọi là hệ cỡ dây Brown & Sharpe."
+        },
+        {
+            "id": "vi-1046",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge standard becomes measurement instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: SWG is Standard Wire Gauge, the historical British wire and sheet-thickness system.",
+                "Previous Vietnamese: SWG là Máy đo dây tiêu chuẩn, hệ thống đo độ dày dây và tấm lịch sử của Anh."
+            ],
+            "resolution": "SWG là hệ cỡ dây tiêu chuẩn (Standard Wire Gauge), hệ quy định cỡ dây và độ dày tấm trước đây của Anh."
+        },
+        {
+            "id": "vi-1047",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge standard becomes measurement instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: BWG is Birmingham Wire Gauge, historically used for iron wire, tubing, and sheet thickness.",
+                "Previous Vietnamese: BWG là Máy đo dây Birmingham, trước đây được sử dụng cho dây sắt, ống và độ dày tấm."
+            ],
+            "resolution": "BWG là hệ cỡ dây Birmingham (Birmingham Wire Gauge), trước đây dùng cho dây sắt, ống và độ dày tấm."
+        },
+        {
+            "id": "vi-1048",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Wire size number becomes gauge instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A larger ordinary gauge number generally means a smaller diameter; sizes above gauge 0 use 00, 000, or 0000.",
+                "Previous Vietnamese: Số đo thông thường lớn hơn thường có nghĩa là đường kính nhỏ hơn; kích thước trên thước đo 0 sử dụng 00, 000 hoặc 0000."
+            ],
+            "resolution": "Số cỡ dây thông thường càng lớn thì đường kính thường càng nhỏ; các kích cỡ lớn hơn cỡ 0 dùng 00, 000 hoặc 0000."
+        },
+        {
+            "id": "vi-1051",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[ampacity] Ampacity dangerously mistranslated as amplification.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For 1/0, 2/0, 3/0, and 4/0, use n = 0, -1, -2, and -3. AWG determines conductor size, not a universal safe current; ampacity also depends on material, insulation, cooling, installation, and applicable electrical rules.",
+                "Previous Vietnamese: Đối với 1/0, 2/0, 3/0 và 4/0, hãy sử dụng n = 0, -1, -2 và -3. AWG xác định kích thước dây dẫn, không phải dòng điện an toàn phổ quát; độ khuếch đại cũng phụ thuộc vào vật liệu, cách điện, làm mát, lắp đặt và các quy tắc điện hiện hành."
+            ],
+            "resolution": "Đối với 1/0, 2/0, 3/0 và 4/0, dùng n = 0, -1, -2 và -3. AWG xác định kích thước dây dẫn, không quy định một dòng điện an toàn chung; khả năng tải dòng điện còn phụ thuộc vào vật liệu, lớp cách điện, làm mát, cách lắp đặt và các quy định điện áp dụng."
+        },
+        {
+            "id": "vi-1053",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge becomes instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous Vietnamese: Máy đo"
+            ],
+            "resolution": "Cỡ dây"
+        },
+        {
+            "id": "vi-1069",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-conductor] Insulation becomes thermal insulation and stranded construction becomes braided only.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: These values are nominal. Product tolerances, coatings, insulation, and stranded construction can change the measured or overall diameter.",
+                "Previous Vietnamese: Những giá trị này là danh nghĩa. Dung sai của sản phẩm, lớp phủ, lớp cách nhiệt và kết cấu bện có thể thay đổi đường kính đo được hoặc đường kính tổng thể."
+            ],
+            "resolution": "Đây là các giá trị danh nghĩa. Dung sai sản phẩm, lớp phủ, lớp cách điện và cấu tạo nhiều sợi có thể làm thay đổi đường kính đo được hoặc đường kính tổng thể."
+        },
+        {
+            "id": "vi-1070",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge becomes instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge, area, and resistance",
+                "Previous Vietnamese: Máy đo, diện tích và điện trở"
+            ],
+            "resolution": "Cỡ dây, diện tích và điện trở"
+        },
+        {
+            "id": "vi-1071",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge] Gauge number becomes measuring ruler.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous Vietnamese: Điện trở phụ thuộc vào chiều dài dây dẫn L, diện tích mặt cắt ngang A và điện trở suất của vật liệu ρ. Bởi vì diện tích thay đổi theo bình phương đường kính, nên sự chênh lệch đường kính khiêm tốn có thể tạo ra sự khác biệt đáng kể về điện trở. Trong AWG, việc tăng thước đo lên ba kích cỡ sẽ làm giảm gần một nửa diện tích và tăng gấp đôi điện trở trên mỗi đơn vị chiều dài đối với cùng một vật liệu và nhiệt độ."
+            ],
+            "resolution": "Điện trở phụ thuộc vào chiều dài dây dẫn L, diện tích mặt cắt ngang A và điện trở suất vật liệu ρ. Vì diện tích thay đổi theo bình phương đường kính, chênh lệch nhỏ về đường kính có thể tạo ra chênh lệch đáng kể về điện trở. Trong AWG, tăng số cỡ dây thêm ba bậc sẽ làm diện tích giảm còn khoảng một nửa và điện trở trên mỗi đơn vị chiều dài tăng gấp đôi với cùng vật liệu và nhiệt độ."
+        },
+        {
+            "id": "vi-1076",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[stranded-conductor] Stranded conductors becomes trapped wires.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For stranded conductors, include strand construction when flexibility and overall diameter matter.",
+                "Previous Vietnamese: Đối với dây dẫn bị mắc kẹt, hãy bao gồm việc xây dựng sợi khi tính linh hoạt và đường kính tổng thể là vấn đề quan trọng."
+            ],
+            "resolution": "Với dây dẫn nhiều sợi, hãy nêu cấu tạo các sợi khi độ mềm dẻo và đường kính tổng thể có ý nghĩa quan trọng."
+        },
+        {
+            "id": "vi-1081",
+            "translationId": "catalogText.battery.note.capacityBelowLabel",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[capacity-not-power] Capacity becomes power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: True capacity is lower than the label suggests.",
+                "Previous Vietnamese: Công suất thực tế thấp hơn nhãn gợi ý."
+            ],
+            "resolution": "Dung lượng thực tế thấp hơn mức ghi trên nhãn."
+        },
+        {
+            "id": "vi-1085",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[pulse-substitution-direction] Prohibition direction reversed: currently says do not use continuous instead of pulse.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous Vietnamese: 45 A, giá trị liên tục độc lập của phiên bản tabless đã thử nghiệm; không dùng giá trị này thay cho giá trị xung.",
+                "https://www.molicel.com/product/ — Molicel product overview",
+                "https://www.molicel.com/product/ — Manufacturer distinguishes continuous and pulse discharge ratings; consulted for terminology only, not exact battery-79 limits."
+            ],
+            "resolution": "45 A, giá trị xả liên tục độc lập của phiên bản tabless đã thử nghiệm; không thay bằng giá trị dòng xung."
+        },
+        {
+            "id": "vi-1087",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared becomes certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; tested cells appeared pre-production and lacked the CCC logo.",
+                "Previous Vietnamese: 40 A, giá trị thận trọng; các cell đã thử nghiệm là mẫu tiền sản xuất và không có logo CCC."
+            ],
+            "resolution": "40 A, giá trị thận trọng; các cell đã thử nghiệm có vẻ là mẫu tiền sản xuất và không có logo CCC."
+        },
+        {
+            "id": "vi-1092",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared becomes certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 19 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Vietnamese: 19 A, giá trị thận trọng; các mẫu chính xác đã thử nghiệm là mẫu tiền sản xuất và không có dấu CCC."
+            ],
+            "resolution": "19 A, giá trị thận trọng; các mẫu đã thử nghiệm có vẻ là mẫu tiền sản xuất và không có dấu CCC."
+        },
+        {
+            "id": "vi-1093",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared becomes certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 40 A conservative value; 90 A is temperature-limited and tested cells appeared pre-production.",
+                "Previous Vietnamese: 40 A, giá trị thận trọng; 90 A bị giới hạn bởi nhiệt độ và các cell đã thử nghiệm là mẫu tiền sản xuất."
+            ],
+            "resolution": "40 A, giá trị thận trọng; 90 A bị giới hạn bởi nhiệt độ và các cell đã thử nghiệm có vẻ là mẫu tiền sản xuất."
+        },
+        {
+            "id": "vi-1096",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[preproduction-uncertainty] Appeared becomes certainty.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 13 A conservative value; exact tested samples appeared pre-production and lacked CCC marks.",
+                "Previous Vietnamese: 13 A, giá trị thận trọng; các mẫu chính xác đã thử nghiệm là mẫu tiền sản xuất và không có dấu CCC."
+            ],
+            "resolution": "13 A, giá trị thận trọng; các mẫu đã thử nghiệm có vẻ là mẫu tiền sản xuất và không có dấu CCC."
+        },
+        {
+            "id": "vi-1106",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[device-board-source-fidelity] Adds unsupported board alternative to device-only source.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A regulated vaping device profile for __SE_ARG_0__.",
+                "Previous Vietnamese: Hồ sơ của thiết bị vaping có điều chỉnh hoặc bo mạch điều khiển: __SE_ARG_0__."
+            ],
+            "resolution": "Hồ sơ thiết bị vape có điều chỉnh cho __SE_ARG_0__."
+        },
+        {
+            "id": "vi-1110",
+            "translationId": "catalogText.mod.preset-234.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-mod] Regulated becomes prescribed.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-18650 regulated mod; VAPORESSO rates it 220 W; testing measured 215 W, 9.08 V, and 37 A.",
+                "Previous Vietnamese: Mod quy định Dual-18650; VAPORESSO đánh giá nó là 220 W; thử nghiệm đo được 215 W, 9,08 V và 37 A."
+            ],
+            "resolution": "Mod có điều chỉnh dùng hai pin 18650; VAPORESSO công bố công suất 220 W; thử nghiệm đo được 215 W, 9,08 V và 37 A."
+        },
+        {
+            "id": "vi-1113",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-terminology] Cell/adapter configuration becomes one-box converter mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell 21700/18650-adapter mod; Eleaf specifies 100 W, 9 V, 0.05–3.5 Ω; testing identified 30 A.",
+                "Previous Vietnamese: Mod bộ chuyển đổi 21700/18650 một ô; Eleaf chỉ định 100 W, 9 V, 0,05–3,5 Ω; thử nghiệm xác định 30 A."
+            ],
+            "resolution": "Mod dùng một cell 21700 hoặc cell 18650 qua bộ chuyển đổi; Eleaf công bố 100 W, 9 V, 0,05–3,5 Ω; thử nghiệm xác định 30 A."
+        },
+        {
+            "id": "vi-1114",
+            "translationId": "catalogText.mod.preset-238.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-terminology] Cell becomes box and adapted 18650 becomes adjusted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell regulated squonk mod for 21700, 20700, or adapted 18650 cells with a conservative 95 W, 6 V, 34 A profile.",
+                "Previous Vietnamese: Mod squonk được điều chỉnh một ô cho các ô 21700, 20700 hoặc 18650 được điều chỉnh với cấu hình 95 W, 6 V, 34 A bảo thủ."
+            ],
+            "resolution": "Mod squonk có điều chỉnh dùng một cell 21700, 20700 hoặc cell 18650 qua bộ chuyển đổi, với cấu hình thận trọng 95 W, 6 V, 34 A."
+        },
+        {
+            "id": "vi-ohm-link",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-assembly] Optional law link label is absent and renders English fallback.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous Vietnamese: Joule's law"
+            ],
+            "resolution": "định luật Joule"
+        },
+        {
+            "id": "vi-context-1",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "low",
+            "summary": "English says current turns resistance into heat; Vietnamese already states energy conversion correctly.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Canonical English, effective Vietnamese and knowledge-base foundational articles were inspected."
+            ],
+            "resolution": "Retain source-aligned meaning; rejected a locale-only conceptual change. This is not an unresolved Vietnamese defect."
+        },
+        {
+            "id": "vi-context-2",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "low",
+            "summary": "Canonical and target contain literal Unicode escape strings in snapshot. Shared source/serialization defect, not Vietnamese-only.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Canonical English, effective Vietnamese and knowledge-base foundational articles were inspected."
+            ],
+            "resolution": "Retain source-aligned meaning; rejected a locale-only conceptual change. This is not an unresolved Vietnamese defect."
+        },
+        {
+            "id": "vi-context-3",
+            "translationId": "messages.catalogEditor.heatCapacity",
+            "category": "source-content-defect",
+            "severity": "low",
+            "summary": "Source calls J/g·K heat capacity rather than specific heat capacity. Correct mistranslation to nhiệt dung but source terminology requires separate decision.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Canonical English, effective Vietnamese and knowledge-base foundational articles were inspected."
+            ],
+            "resolution": "Retain source-aligned meaning; rejected a locale-only conceptual change. This is not an unresolved Vietnamese defect."
+        },
+        {
+            "id": "vi-context-4",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.paragraphs.1",
+            "category": "source-content-defect",
+            "severity": "low",
+            "summary": "Contact resistance may mean thermal contact resistance; source ambiguous. Do not silently change to thermal without source review.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Canonical English, effective Vietnamese and knowledge-base foundational articles were inspected."
+            ],
+            "resolution": "Retain source-aligned meaning; rejected a locale-only conceptual change. This is not an unresolved Vietnamese defect."
+        },
+        {
+            "id": "vi-context-5",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.2",
+            "category": "source-content-defect",
+            "severity": "low",
+            "summary": "Contact resistance likely thermal here but source not explicit; separate source clarification.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Canonical English, effective Vietnamese and knowledge-base foundational articles were inspected."
+            ],
+            "resolution": "Retain source-aligned meaning; rejected a locale-only conceptual change. This is not an unresolved Vietnamese defect."
+        },
+        {
+            "id": "vi-context-6",
+            "translationId": "messages.catalogManager.manage",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "Extraction shows lowercase source sentinel and uppercase target sentinel for many template entries. Check extraction/function substitution before declaring runtime placeholder defects.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "Canonical English, effective Vietnamese and knowledge-base foundational articles were inspected."
+            ],
+            "resolution": "Sentinel casing reflects source function case conversion; placeholders work at runtime. No locale defect."
+        }
+    ]
+}

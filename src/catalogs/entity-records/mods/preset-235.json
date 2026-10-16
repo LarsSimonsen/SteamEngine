@@ -1,0 +1,98 @@
+{
+    "entityId": "vaporesso-armour-ultra",
+    "entityType": "mod",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A regulated ARMOUR device with a built-in 5500 mAh battery and 100 W maximum output.",
+        "description": "VAPORESSO documents the ARMOUR ULTRA as a built-in-battery regulated device rated at 100 W. An exact-device Vaping360 review measured 101 W and 29 A and reached at least 7.97 V, explicitly noting that the voltage could be higher. The admitted runtime profile uses 7.97 V as a deliberately conservative observed proxy; it is not presented as the device's proven maximum.",
+        "highlights": [
+            "Exact identity and integrated battery are established.",
+            "It is distinct from the cataloged dual-21700 ARMOUR MAX.",
+            "Independent testing supplies 101 W and 29 A and a 7.97 V-plus observation.",
+            "Runtime admission uses 7.97 V conservatively while preserving the unresolved true maximum."
+        ]
+    },
+    "sources": [
+        {
+            "id": "official",
+            "title": "ARMOUR ULTRA official series page",
+            "url": "https://www.vaporesso.com/series-product/armour-series/armour-ultra",
+            "publisher": "VAPORESSO",
+            "limitations": "Manufacturer page states battery and power class but omits flat maximum output voltage and current."
+        },
+        {
+            "id": "manual",
+            "title": "ARMOUR ULTRA user manual mirror",
+            "url": "https://www.buyv2cigs.co.uk/content/user-manuals/vaporesso-armour-ultra-user-manual.pdf",
+            "publisher": "Vaporesso",
+            "limitations": "Manual mirror; protection thresholds do not fully describe output behavior."
+        },
+        {
+            "id": "review",
+            "title": "Vaporesso ARMOUR ULTRA review",
+            "url": "https://vaping360.com/reviews/vaporesso-armour-ultra-review/",
+            "publisher": "Vaping360",
+            "limitations": "Commercial editorial review of one sample; the voltage result is reported as 7.97 V plus."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact marketed identity is VAPORESSO ARMOUR ULTRA.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Future revision or regional naming changes remain possible."
+        },
+        {
+            "id": "manufacturer-profile",
+            "statement": "VAPORESSO specifies a built-in 5500 mAh battery and 100 W maximum output.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Official presentations vary in listed dimensions and omit maximum output voltage/current."
+        },
+        {
+            "id": "resistance-envelope",
+            "statement": "The exact manual describes low-resistance protection below 0.1 Ω and high-resistance protection above 5 Ω.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium",
+            "limitations": "Protection thresholds are not necessarily a flat supported range in every operating mode."
+        },
+        {
+            "id": "measured-output",
+            "statement": "Vaping360 measured about 101 W and 29 A on an exact ARMOUR ULTRA sample and observed at least 7.97 V.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium",
+            "limitations": "Single sample and test-load coverage; the voltage observation was open-ended."
+        },
+        {
+            "id": "voltage-open-ended",
+            "statement": "The exact ARMOUR ULTRA review does not establish a maximum output voltage because the observed 7.97 V value was reported as 7.97 V plus.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "A runtime profile may use a deliberately conservative observed value only after an explicit policy decision; it must not be described as the device's true maximum."
+        },
+        {
+            "id": "family-relation",
+            "statement": "ARMOUR ULTRA and ARMOUR MAX are members of VAPORESSO's ARMOUR family but use different battery architectures.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Family membership does not permit transferring electrical limits."
+        }
+    ],
+    "domainData": {
+        "deviceCategory": "box-mod",
+        "batterySystem": {
+            "configuration": "built-in 5500 mAh battery"
+        },
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 5500
+            }
+        ]
+    }
+}

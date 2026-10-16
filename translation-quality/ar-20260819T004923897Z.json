@@ -1,0 +1,20 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T004923897Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Arabic pass identified six trigonometry terminology, formula, and title defects; all six were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "ar-20260819-009", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.title", "category": "translation-defect", "severity": "medium", "summary": "The right-triangles heading used صحيحة, meaning correct, instead of the standard Arabic term for right-angled triangles.", "disposition": "resolved", "evidence": ["The previous title was المثلثات الصحيحة."], "resolution": "Changed it to المثلثات القائمة." },
+        { "id": "ar-20260819-010", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The trigonometry explanation called sine cosine and used inconsistent names for the opposite side.", "disposition": "resolved", "evidence": ["The previous paragraph said جيب التمام for the sine ratio and used المعاكس for the tangent numerator."], "resolution": "Rewrote the paragraph with the standard Arabic terms الجيب, جيب التمام, الظل, المقابل, and المجاور." },
+        { "id": "ar-20260819-011", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0", "category": "translation-defect", "severity": "medium", "summary": "The sine formula retained English side labels.", "disposition": "resolved", "evidence": ["The previous expression was sin(θ) = opposite / hypotenuse."], "resolution": "Changed it to sin(θ) = المقابل / الوتر." },
+        { "id": "ar-20260819-012", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The cosine formula retained English side labels.", "disposition": "resolved", "evidence": ["The previous expression was cos(θ) = adjacent / hypotenuse."], "resolution": "Changed it to cos(θ) = المجاور / الوتر." },
+        { "id": "ar-20260819-013", "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2", "category": "translation-defect", "severity": "medium", "summary": "The tangent formula retained English side labels.", "disposition": "resolved", "evidence": ["The previous expression was tan(θ) = opposite / adjacent."], "resolution": "Changed it to tan(θ) = المقابل / المجاور." },
+        { "id": "ar-20260819-014", "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.title", "category": "translation-defect", "severity": "medium", "summary": "The unknown-sides heading used الجوانب, a general word for sides, instead of the standard geometric term الأضلاع.", "disposition": "resolved", "evidence": ["The previous title was إيجاد الجوانب والزوايا المجهولة."], "resolution": "Changed it to إيجاد الأضلاع والزوايا المجهولة." }
+    ]
+}

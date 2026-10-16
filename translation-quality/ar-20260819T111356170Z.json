@@ -1,0 +1,189 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T111356170Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The canonical English and complete Arabic source scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue and findings validation, TypeScript typecheck, 464 tests, the production IIS build, route-contract validation, and generated internal-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Arabic critique identified protected-token corruption, electrical terminology errors, unsafe e-liquid wording, and unrelated literal translations."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested application corrections and a commit, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-protected-tfr",
+            "translationId": "calculators.tcr.normalizedTfr",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "TFR was expanded as total fertility rate in shared, TCR, and Wire Wizard messages.",
+            "disposition": "resolved",
+            "evidence": ["The English source uses the protected technical acronym TFR."],
+            "resolution": "Preserved TFR and rewrote the surrounding Arabic technical phrasing."
+        },
+        {
+            "id": "ar-protected-product-names",
+            "translationId": "calculators.tcr.export",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "DNA 200 and Wire Wizard product identities were translated as ordinary words.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."],
+            "resolution": "Restored DNA 200 and Wire Wizard verbatim."
+        },
+        {
+            "id": "ar-protected-awg",
+            "translationId": "calculators.coil.awg",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "AWG was expanded as an unrelated ad hoc working group.",
+            "disposition": "resolved",
+            "evidence": ["AWG identifies the American Wire Gauge system in this calculator."],
+            "resolution": "Restored the protected acronym AWG."
+        },
+        {
+            "id": "ar-protected-units",
+            "translationId": "calculators.juice.pg",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "PG, ml, g, W, and A were replaced with ambiguous Arabic letters or words.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract requires stable unit symbols and recipe component abbreviations."],
+            "resolution": "Restored PG, ml, g, W, and A exactly."
+        },
+        {
+            "id": "ar-electrical-current",
+            "translationId": "shared.ohm.fields.current",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Electrical current was rendered with an adjective meaning current or present.",
+            "disposition": "resolved",
+            "evidence": ["Arabic electrical usage distinguishes التيار from الحالي."],
+            "resolution": "Used التيار consistently in the audited Ohm, battery, Mod Range, Wire Wizard, and catalog labels."
+        },
+        {
+            "id": "ar-electrical-power",
+            "translationId": "shared.ohm.fields.power",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Electrical power was rendered as force or energy in result labels.",
+            "disposition": "resolved",
+            "evidence": ["The established Arabic electrical term for power is القدرة."],
+            "resolution": "Used القدرة for power and السعة for capacity across the audited labels."
+        },
+        {
+            "id": "ar-mod-identity",
+            "translationId": "shared.encyclopediaDetail.integratedInMod",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Mod was translated as modification, mode, or Ministry of Defense.",
+            "disposition": "resolved",
+            "evidence": ["The Arabic glossary and route copy use المود for the vaping device."],
+            "resolution": "Used المود in the affected shared, battery, and Mod Range messages."
+        },
+        {
+            "id": "ar-juice-safety",
+            "translationId": "calculators.juice.safetyText",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The nicotine warning told users to mix their own dangers rather than their own e-liquid.",
+            "disposition": "resolved",
+            "evidence": ["The canonical warning concerns risk reduction before mixing e-liquid."],
+            "resolution": "Rewrote the warning in clear Arabic while preserving its severity and verification advice."
+        },
+        {
+            "id": "ar-juice-concentration",
+            "translationId": "calculators.juice.nicStrength",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Nicotine concentration labels and adjustment guidance used broken abbreviations and a Nikon mistranslation.",
+            "disposition": "resolved",
+            "evidence": ["The fields describe nicotine concentration and nicotine base."],
+            "resolution": "Used تركيز النيكوتين and قاعدة النيكوتين and rewrote the adjustment guidance."
+        },
+        {
+            "id": "ar-juice-literal-labels",
+            "translationId": "calculators.juice.targetLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Target, amount, flavoring, and load labels were literal or contextually wrong.",
+            "disposition": "resolved",
+            "evidence": ["The labels refer to a desired batch, flavor ingredients, and restoring saved settings."],
+            "resolution": "Replaced them with concise recipe-context Arabic labels."
+        },
+        {
+            "id": "ar-wire-physical-properties",
+            "translationId": "calculators.wirewiz.mass",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Mass, physical properties, profile, and round shape were translated as religious Mass, bodily, personal profile, and a tour.",
+            "disposition": "resolved",
+            "evidence": ["These labels describe wire geometry and physical measurements."],
+            "resolution": "Used الكتلة, الخصائص الفيزيائية, المقطع, and دائري."
+        },
+        {
+            "id": "ar-wire-thermal-electrical",
+            "translationId": "calculators.wirewiz.powerDissipated",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Heat capacity and dissipated power used imprecise power or energy terms.",
+            "disposition": "resolved",
+            "evidence": ["The results distinguish heat capacity from electrical power."],
+            "resolution": "Used السعة الحرارية and القدرة المبدّدة."
+        },
+        {
+            "id": "ar-coil-geometry",
+            "translationId": "calculators.coil.twistPitch",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twist pitch, wraps, wire profile, and cross-sectional area had unrelated literal translations.",
+            "disposition": "resolved",
+            "evidence": ["The fields describe wire and coil geometry."],
+            "resolution": "Applied technical geometry wording consistently in Coil and Wire Wizard."
+        },
+        {
+            "id": "ar-coil-leg-power",
+            "translationId": "calculators.coil.legPowerLoss",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Leg power loss was translated as loss of leg strength.",
+            "disposition": "resolved",
+            "evidence": ["The result is electrical power dissipated in the coil legs."],
+            "resolution": "Changed the label to فقد القدرة في الأرجل."
+        },
+        {
+            "id": "ar-battery-safety-context",
+            "translationId": "calculators.batt.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Atomizer output, battery capacity, and current headroom were mistranslated in battery-safety context.",
+            "disposition": "resolved",
+            "evidence": ["The calculator estimates atomizer output and checks battery current limits."],
+            "resolution": "Rewrote the description and help text with established atomizer, capacity, and current-limit terminology."
+        },
+        {
+            "id": "ar-shared-catalog-labels",
+            "translationId": "shared.encyclopediaDetail.unit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "One catalog label remained English and material or board catalog labels were malformed.",
+            "disposition": "resolved",
+            "evidence": ["The Arabic locale must not use runtime English fallback for supported shared labels."],
+            "resolution": "Translated Unit and corrected the material and mod-board catalog labels."
+        }
+    ]
+}

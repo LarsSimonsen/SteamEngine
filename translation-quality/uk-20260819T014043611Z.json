@@ -1,0 +1,124 @@
+{
+    "schemaVersion": 1,
+    "locale": "uk",
+    "cycleId": "uk-20260819T014043611Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Ukrainian source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Ukrainian pass identified eleven remaining trigonometry, circuit, and imperial-unit terminology defects; all eleven were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Ukrainian human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "uk-20260819-008",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Ukrainian right-triangle formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The formulas used opposite, adjacent, and hypotenuse instead of Ukrainian side terminology."],
+            "resolution": "Localized all three side labels in the formulas."
+        },
+        {
+            "id": "uk-20260819-009",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas retained English side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions contained opposite, adjacent, and hypotenuse."],
+            "resolution": "Localized the side labels while preserving inverse-function notation."
+        },
+        {
+            "id": "uk-20260819-010",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-cell formula retained the English word series in a Ukrainian annotation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (series)."],
+            "resolution": "Changed the annotation to (послідовно)."
+        },
+        {
+            "id": "uk-20260819-011",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch voltage formula retained an English annotation.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (parallel branches)."],
+            "resolution": "Changed it to (паралельні гілки)."
+        },
+        {
+            "id": "uk-20260819-012",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inch conversion retained the English unit name and notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula began 1 inch = 25.4 mm = 0.0254 m in a Ukrainian section."],
+            "resolution": "Localized the unit names and decimal separators."
+        },
+        {
+            "id": "uk-20260819-013",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The foot conversion retained English unit names and notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used foot and inches in English."],
+            "resolution": "Localized the unit names and decimal separators."
+        },
+        {
+            "id": "uk-20260819-014",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The yard conversion retained English unit names and notation.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula used yard and feet in English."],
+            "resolution": "Localized the unit names and decimal separators."
+        },
+        {
+            "id": "uk-20260819-015",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle section mixed Ukrainian prose with English formula terminology.",
+            "disposition": "resolved",
+            "evidence": ["The paragraph defined Ukrainian side terms while the displayed formulas retained English labels."],
+            "resolution": "Aligned all displayed ratios with the Ukrainian explanation."
+        },
+        {
+            "id": "uk-20260819-016",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angle-finding section was inconsistent across inverse formulas and the surrounding Ukrainian prose.",
+            "disposition": "resolved",
+            "evidence": ["The inverse formulas did not reuse the Ukrainian side terminology from the preceding explanation."],
+            "resolution": "Applied one consistent Ukrainian terminology set throughout the section."
+        },
+        {
+            "id": "uk-20260819-017",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The imperial-length subsection mixed Ukrainian and English unit naming.",
+            "disposition": "resolved",
+            "evidence": ["The inch, foot, and yard formulas were still presented in English notation."],
+            "resolution": "Normalized the three length conversions to Ukrainian unit names and separators."
+        },
+        {
+            "id": "uk-20260819-018",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branch annotation was the remaining English label in the circuit formulas.",
+            "disposition": "resolved",
+            "evidence": ["The surrounding Ukrainian voltage-law section used Ukrainian terminology while this annotation remained English."],
+            "resolution": "Changed the annotation to паралельні гілки."
+        }
+    ]
+}

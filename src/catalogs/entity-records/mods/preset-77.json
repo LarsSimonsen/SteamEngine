@@ -1,0 +1,36 @@
+{
+    "entityId": "kamry-20",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Kamry 20 review",
+            "url": "https://www.ecigclick.co.uk/kamry-20-review/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-kamry20-20260824",
+            "title": "Kamry 20W review",
+            "url": "https://www.ecigguide.com/kamry-20w",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated"
+            }
+        ]
+    }
+}

@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "pl",
+    "cycleId": "pl-20260818T182212437Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Polish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Polish pass identified 25 actionable terminology, grammar, technical-clarity, and SI-unit defects across circuit, TCR, trigonometric, thermal, heat-flux, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Polish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "pl-20260818-026",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating summary said current turns resistance into heat instead of electrical energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary was Jak prąd elektryczny zamienia opór w ciepło."
+            ],
+            "resolution": "Changed it to electrical energy being converted to heat."
+        },
+        {
+            "id": "pl-20260818-027",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-connection definition used awkward Polish grammar.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet said Połączenie szeregowe zapewnia prąd tylko jedną ścieżkę."
+            ],
+            "resolution": "Rephrased it as providing current with one path through the components."
+        },
+        {
+            "id": "pl-20260818-028",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KCL paragraph used aktualne kierunki, which means current/recent directions rather than current directions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used aktualne kierunki before solving."
+            ],
+            "resolution": "Rewrote it with kierunki prądu and natural wording for current leaving the node."
+        },
+        {
+            "id": "pl-20260818-029",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor conclusion used przenosi for branch current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous conclusion said each branch carries 10 A with an unnatural verb."
+            ],
+            "resolution": "Changed it to each branch carrying 10 A."
+        },
+        {
+            "id": "pl-20260818-030",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning used an awkward noun phrase for series charging.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began with Szeregowe ładowanie litowo-jonowe."
+            ],
+            "resolution": "Rephrased it as charging lithium-ion cells connected in series with cell-level monitoring."
+        },
+        {
+            "id": "pl-20260818-031",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.setup",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The TCR example had an incorrect space between the degree symbol and C.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup used 20 ° C."
+            ],
+            "resolution": "Corrected it to 20 °C and clarified the TCR statement."
+        },
+        {
+            "id": "pl-20260818-032",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR power paragraph used an awkward literal phrase for a positive-TCR resistor driven by constant voltage.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began with rezystancji dodatniej TCR napędzanej."
+            ],
+            "resolution": "Rewrote it with natural Polish engineering terminology."
+        },
+        {
+            "id": "pl-20260818-033",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation used imprecise Polish descriptions of opposite and adjacent sides.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph used przeciwna strona and sąsiednia strona as literal noun phrases."
+            ],
+            "resolution": "Rewrote the side definitions and SOH-CAH-TOA explanation."
+        },
+        {
+            "id": "pl-20260818-034",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The triangle example title translated side as a generic page/side term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Znajdź stronę."
+            ],
+            "resolution": "Changed it to Znajdź bok."
+        },
+        {
+            "id": "pl-20260818-035",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The worked formula localized the protected side label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression used naprzeciwko instead of the protected formula label."
+            ],
+            "resolution": "Restored opposite = 10 × sin(30°) = 5 cm."
+        },
+        {
+            "id": "pl-20260818-036",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change paragraph used an unnatural term for specific latent heat.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used ciepło właściwe utajone."
+            ],
+            "resolution": "Changed it to właściwe ciepło utajone and clarified the phase change."
+        },
+        {
+            "id": "pl-20260818-037",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heat-flux display name omitted the density/per-area meaning.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous name was Strumień ciepła."
+            ],
+            "resolution": "Changed it to Gęstość strumienia ciepła."
+        },
+        {
+            "id": "pl-20260818-038",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The definition called Q_dot a heat-transfer coefficient instead of a rate.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used całkowity współczynnik przenikania ciepła."
+            ],
+            "resolution": "Changed it to całkowita szybkość przepływu ciepła."
+        },
+        {
+            "id": "pl-20260818-039",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux conclusion omitted Polish thousands spacing and the density term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous conclusion rendered 5000 W/m² without a separator."
+            ],
+            "resolution": "Changed it to 5 000 W/m² and gęstość strumienia ciepła."
+        },
+        {
+            "id": "pl-20260818-040",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final practical-check bullet used a grammatically awkward phrase about heat capacity changing temperature.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said it uses heat capacity for temperature change."
+            ],
+            "resolution": "Rephrased it as using heat capacity to describe the temperature change."
+        },
+        {
+            "id": "pl-20260818-041",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.1.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The SI mass row was corrupted by an unrelated religious phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used Msza św instead of Masa."
+            ],
+            "resolution": "Changed it to Masa."
+        },
+        {
+            "id": "pl-20260818-042",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.3.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI temperature unit used an inflected form unsuitable for the table.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row used Kelwina."
+            ],
+            "resolution": "Changed it to kelwin."
+        },
+        {
+            "id": "pl-20260818-043",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.4",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The nano prefix row had the symbol and factor in the wrong fields after an earlier draft correction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous row no longer represented nano, n, and 10^-9 consistently."
+            ],
+            "resolution": "Replaced the full row with nano, n, and 0,000000001 = 10^-9."
+        },
+        {
+            "id": "pl-20260818-044",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-gauge display name used a term meaning thickness rather than general wire dimensions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous name was Grubość drutu."
+            ],
+            "resolution": "Changed it to Wymiary drutu: AWG, SWG i BWG."
+        },
+        {
+            "id": "pl-20260818-045",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-number guidance used awkward wording for gauge size and numbers above zero.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used numer miernika and skrajni 0."
+            ],
+            "resolution": "Rewrote it with natural Polish terms for gauge size and 00/000/0000 notation."
+        },
+        {
+            "id": "pl-20260818-046",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR coefficient units omitted conventional spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used 1/°C and ppm/°C."
+            ],
+            "resolution": "Changed it to 1 / °C and ppm / °C."
+        },
+        {
+            "id": "pl-20260818-047",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR example heading was a literal translation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Działający przykład."
+            ],
+            "resolution": "Changed it to Przykład obliczeniowy."
+        },
+        {
+            "id": "pl-20260818-048",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The KVL formula retained an untranslated branch note.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous expression ended with (parallel branches)."
+            ],
+            "resolution": "Restored the protected formula and branch-note notation."
+        },
+        {
+            "id": "pl-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-resistance heading used gauge as the primary dimension and omitted wire-size clarity.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Wskaźnik, powierzchnia i rezystancja."
+            ],
+            "resolution": "Changed it to Rozmiar drutu, pole przekroju i rezystancja."
+        },
+        {
+            "id": "pl-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The stranded-wire specification used an awkward term for strand construction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet used konstrukcję żyły."
+            ],
+            "resolution": "Changed it to konstrukcję splotu."
+        }
+    ]
+}

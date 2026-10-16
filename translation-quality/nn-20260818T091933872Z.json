@@ -1,0 +1,282 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T091933872Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed after the correction batch."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Nynorsk translation defects; all 25 were resolved in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-001",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The Nynorsk text replaced the low-drain safety warning with a different usage instruction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Low-drain battery; not suited for vaping.",
+                "The replacement preserves both the low-discharge meaning and the vaping suitability warning."
+            ],
+            "resolution": "Changed to: Batteri med låg utladingsstraum; ikkje eigna for damping."
+        },
+        {
+            "id": "nn-20260818-002",
+            "translationId": "catalog.concepts.concept-ohms-law.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The description retained Bokmål verb, article, and circuit terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: knytter sammen ... i en elektrisk krets."],
+            "resolution": "Changed to: knyter saman ... i ein elektrisk krins."
+        },
+        {
+            "id": "nn-20260818-003",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The section title used the Bokmål form of the compound.",
+            "disposition": "resolved",
+            "evidence": ["Before: Sammenhengen."],
+            "resolution": "Changed to: Samanhengen."
+        },
+        {
+            "id": "nn-20260818-004",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph used Bokmål adjective, noun, and indefinite article forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Den grunnleggende sammenhengen ... i en komponent."],
+            "resolution": "Changed to: Den grunnleggjande samanhengen ... i ein komponent."
+        },
+        {
+            "id": "nn-20260818-005",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The short-circuit guidance used Bokmål articles and verb form.",
+            "disposition": "resolved",
+            "evidence": ["Before: En motstand ... en ideell kortslutning ... behandles separat."],
+            "resolution": "Changed to Nynorsk articles and handsamast."
+        },
+        {
+            "id": "nn-20260818-006",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example title used the Bokmål form of current.",
+            "disposition": "resolved",
+            "evidence": ["Before: Finn strømmen."],
+            "resolution": "Changed to: Finn straumen."
+        },
+        {
+            "id": "nn-20260818-007",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example setup used Bokmål articles and past participle.",
+            "disposition": "resolved",
+            "evidence": ["Before: En kilde ... koblet til en belastning."],
+            "resolution": "Changed to: Ei kjelde ... kopla til ei belastning."
+        },
+        {
+            "id": "nn-20260818-008",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example conclusion used Bokmål forms for current and load.",
+            "disposition": "resolved",
+            "evidence": ["Before: Strømmen i belastningen ..."],
+            "resolution": "Changed to: Straumen i belastninga ..."
+        },
+        {
+            "id": "nn-20260818-009",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance-example setup used Bokmål circuit and verb forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En krets ... trekker 2 A."],
+            "resolution": "Changed to: Ein krins ... trekkjer 2 A."
+        },
+        {
+            "id": "nn-20260818-010",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example title used the Bokmål definite form of voltage.",
+            "disposition": "resolved",
+            "evidence": ["Before: Finn spenningen."],
+            "resolution": "Changed to: Finn spenninga."
+        },
+        {
+            "id": "nn-20260818-011",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-example setup used Bokmål indefinite articles.",
+            "disposition": "resolved",
+            "evidence": ["Before: En straum ... gjennom en motstand."],
+            "resolution": "Changed to: Ein straum ... gjennom ein motstand."
+        },
+        {
+            "id": "nn-20260818-012",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The power explanation retained multiple Bokmål forms in a technical paragraph.",
+            "disposition": "resolved",
+            "evidence": ["Before: kombineres, sammenhengen, måles, en kilde, en belastning, på en trygg måte."],
+            "resolution": "Rewritten with Nynorsk forms while preserving the formula, values, and safety meaning."
+        },
+        {
+            "id": "nn-20260818-013",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.5.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The model-limits paragraph retained Bokmål adjective, noun, and circuit forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: en idealisert modell, Virkelige komponenter, parallellkretser, bruker."],
+            "resolution": "Changed to Nynorsk forms including ein, verkelege, krinsar, and brukar."
+        },
+        {
+            "id": "nn-20260818-014",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description retained Bokmål description and question-word forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: beskriver hvordan ..."],
+            "resolution": "Changed to: skildrar korleis ..."
+        },
+        {
+            "id": "nn-20260818-015",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistive-load example used the Bokmål indefinite article.",
+            "disposition": "resolved",
+            "evidence": ["Before: En resistiv belastning."],
+            "resolution": "Changed to: Ei resistiv belastning."
+        },
+        {
+            "id": "nn-20260818-016",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coil example used the Bokmål indefinite article.",
+            "disposition": "resolved",
+            "evidence": ["Before: En spole på 0,8 Ω ..."],
+            "resolution": "Changed to: Ei spole på 0,8 Ω ..."
+        },
+        {
+            "id": "nn-20260818-017",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The energy conclusion used a Bokmål verb and plural time form.",
+            "disposition": "resolved",
+            "evidence": ["Before: omdanner ... 10 sekunder."],
+            "resolution": "Changed to: omdannar ... 10 sekund."
+        },
+        {
+            "id": "nn-20260818-018",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating section title used Bokmål question and definite forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: Hva påverkar oppvarmingen."],
+            "resolution": "Changed to: Kva påverkar oppvarminga."
+        },
+        {
+            "id": "nn-20260818-019",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance explanation used Bokmål article, current, and multiplier forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: en dobling av strømmen fire ganger."],
+            "resolution": "Changed to: ei dobling av straumen fire gonger."
+        },
+        {
+            "id": "nn-20260818-020",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-current explanation used an ungrammatical Bokmål construction.",
+            "disposition": "resolved",
+            "evidence": ["Before: dobler en dobling av motstanden oppvarmingseffekten."],
+            "resolution": "Rewritten as: gjer ei dobling av motstanden at oppvarmingseffekten blir dobla."
+        },
+        {
+            "id": "nn-20260818-021",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat explanation retained Bokmål articles, verb forms, and surface terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: en temperatur ... hvordan ... hvor raskt den forlater overflaten."],
+            "resolution": "Rewritten with ein, korleis, varmestraum, han, and forlèt overflata."
+        },
+        {
+            "id": "nn-20260818-022",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms title used the Bokmål compound form.",
+            "disposition": "resolved",
+            "evidence": ["Before: Kretstermer."],
+            "resolution": "Changed to: Krinstermar."
+        },
+        {
+            "id": "nn-20260818-023",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction retained Bokmål demonstrative, adjective, and verb forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: De grunnleggende termene gjør det enklere å tolke et kretsskjema."],
+            "resolution": "Changed to: Dei grunnleggjande termane gjer det enklare å tolke eit krinsskjema."
+        },
+        {
+            "id": "nn-20260818-024",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The node definition retained Bokmål articles, conductor, connection, and pronoun forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En node er et sett ledere som er koblet sammen utan en komponent mellom dem."],
+            "resolution": "Changed to Nynorsk forms including ein, leiarar, kopla, ein, and dei."
+        },
+        {
+            "id": "nn-20260818-025",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The branch definition retained Bokmål articles, current, path, and node forms.",
+            "disposition": "resolved",
+            "evidence": ["Before: En gren er en strømvei mellom to noder."],
+            "resolution": "Changed to: Ei grein er ein straumveg mellom to nodar."
+        }
+    ]
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "id",
+    "cycleId": "id-20260818T121344912Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Indonesian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Indonesian pass identified 25 actionable defects in battery summaries, evidence notes, and safety wording; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Indonesian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "id-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary omitted the battery context.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording described a removable rechargeable cell but did not identify it as a battery cell."],
+            "resolution": "Clarified that the item is a removable rechargeable battery cell."
+        },
+        {
+            "id": "id-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The integrated-battery summary used less natural wording for an internal pack.",
+            "disposition": "resolved",
+            "evidence": ["The previous text described a pack installed inside the device rather than an internal battery pack."],
+            "resolution": "Rephrased it as an internal battery pack and retained the user-replaceable-cell distinction."
+        },
+        {
+            "id": "id-20260818-003",
+            "translationId": "catalogText.battery.note.approvedResearch",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The approval note omitted the approval date.",
+            "disposition": "resolved",
+            "evidence": ["The previous text only said to see the associated research note."],
+            "resolution": "Restored the approval date 2026-08-13 and the research-note reference."
+        },
+        {
+            "id": "id-20260818-004",
+            "translationId": "catalogText.battery.note.capacityBelowLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity note used less direct wording for the labeled value.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence referred generally to what is listed rather than the capacity shown on the label."],
+            "resolution": "Clarified that true capacity is lower than the capacity shown on the label."
+        },
+        {
+            "id": "id-20260818-005",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The continuous-rating note used imprecise ‘value’ terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous text translated rating as a generic continuous value."],
+            "resolution": "Changed it to a 20 A continuous rating and retained the exclusion of pulse ratings."
+        },
+        {
+            "id": "id-20260818-006",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper and production-revision note used awkward wrapper terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a literal term for wrapper and did not clearly describe the exact wrapper."],
+            "resolution": "Rephrased it around the exact wrapper and retained the independent 20 A comparison."
+        },
+        {
+            "id": "id-20260818-007",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note used awkward model wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text described the exact model with an unnatural literal expression."],
+            "resolution": "Rephrased it as a conservative 15 A value from exact-model testing."
+        },
+        {
+            "id": "id-20260818-008",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tabless-revision note used an awkward substitution warning.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording said not to replace the value with pulse values in a less natural construction."],
+            "resolution": "Clarified the independent 45 A continuous value for the tested tabless revision."
+        },
+        {
+            "id": "id-20260818-009",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 36 A continuous value used a less precise temperature caveat.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence omitted the natural ‘dibatasi oleh suhu’ construction."],
+            "resolution": "Clarified the real 36 A continuous value and temperature-limited 56 A figure."
+        },
+        {
+            "id": "id-20260818-010",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The pre-production wording was less natural.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a compressed form for pre-production cells."],
+            "resolution": "Rephrased it as tested cells originating from pre-production and lacking the CCC logo."
+        },
+        {
+            "id": "id-20260818-011",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The cycle-life limitation was awkwardly phrased.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used an unnatural expression for the intended cycle-life limit."],
+            "resolution": "Retained the recommended 13 A continuous value and clarified the absolute 16.8 A maximum."
+        },
+        {
+            "id": "id-20260818-012",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The pre-production sample caveat used less natural grammar.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said the samples ‘were pre-production’ in an awkward construction."],
+            "resolution": "Rephrased it as samples originating from pre-production and retained the 40 A and 70 A limits."
+        },
+        {
+            "id": "id-20260818-013",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell comparison value used an unclear noun order.",
+            "disposition": "resolved",
+            "evidence": ["The previous text combined the value and production-cell description as a compressed noun phrase."],
+            "resolution": "Rephrased it as a 40 A comparison value from a production cell."
+        },
+        {
+            "id": "id-20260818-014",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The exact-wrapper note omitted the degree symbol and used awkward wrapper wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text displayed 60 C and used a literal term for exact wrapper."],
+            "resolution": "Restored 60 °C and clarified the 40 A exact-wrapper value and EVE 40PL rewrap."
+        },
+        {
+            "id": "id-20260818-015",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-tested-sample note used compressed wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text did not clearly distinguish exact tested samples."],
+            "resolution": "Clarified the exact samples, their pre-production appearance, and missing CCC marks."
+        },
+        {
+            "id": "id-20260818-016",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 90 A temperature limitation used less natural grammar.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a compressed form for a temperature-limited rating."],
+            "resolution": "Rephrased it as 90 A limited by temperature and retained the pre-production caveat."
+        },
+        {
+            "id": "id-20260818-017",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The unresolved production-continuity caveat was awkwardly phrased.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a literal expression for production continuity remaining unresolved."],
+            "resolution": "Clarified the temperature-limited 60 A value and unresolved production continuity."
+        },
+        {
+            "id": "id-20260818-018",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inconsistent-capacity wording was less natural.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘tidak konsisten’ where ‘tidak seragam’ is clearer in this evidence note."],
+            "resolution": "Changed the capacity caveat to the clearer Indonesian wording and retained CCC/CE marks."
+        },
+        {
+            "id": "id-20260818-019",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-tested-sample note used compressed wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text did not clearly distinguish exact tested samples from other samples."],
+            "resolution": "Clarified the exact samples, their pre-production appearance, and missing CCC marks."
+        },
+        {
+            "id": "id-20260818-020",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tester-estimated value used awkward noun order.",
+            "disposition": "resolved",
+            "evidence": ["The previous phrase placed the tester estimate after the value in an unnatural construction."],
+            "resolution": "Rephrased it as a 30 A continuous value according to the tester's estimate."
+        },
+        {
+            "id": "id-20260818-021",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The two-batch production note used a compressed phrase for the tested batches.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording did not clearly connect the batches with their production relationship."],
+            "resolution": "Clarified that the 20 A value comes from two tested production-related batches."
+        },
+        {
+            "id": "id-20260818-022",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The continuous-versus-pulse distinction used a fragmentary opening.",
+            "disposition": "resolved",
+            "evidence": ["The previous text began with ‘Kontinu 12 A’ rather than a natural Indonesian sentence fragment."],
+            "resolution": "Changed it to ‘12 A kontinu; 20 A hanya untuk pulsa’ and preserved the exact wrapper identifier."
+        },
+        {
+            "id": "id-20260818-023",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper and sourcing caveat used awkward technical wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used compressed wording for exact wrapper, rewrap sourcing, and later revisions."],
+            "resolution": "Rephrased the exact 20 A value, tester recommendation, advertisement, and sourcing caveat."
+        },
+        {
+            "id": "id-20260818-024",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model rewrap note used awkward sourcing terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous text referred to rewrap and subsequent wrapper revisions with compressed wording."],
+            "resolution": "Clarified the 30 A exact-model value, rewrap status, and possible sourcing differences."
+        },
+        {
+            "id": "id-20260818-025",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The revision-specific inheritance warning used awkward wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text did not clearly state that four-leg and later revisions are materially different."],
+            "resolution": "Clarified the exact five-leg revision value and warned against inheriting this profile."
+        }
+    ]
+}

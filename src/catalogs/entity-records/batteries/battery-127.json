@@ -1,0 +1,30 @@
+{
+    "entityId": "battery-127",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Great Power 60Q - 60A/110A 6000mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-great-power-60q-60a-110a-6000mah-21700.995238/",
+            "limitations": "Complete exact-model test of two July 2026 CCC-marked samples; tested values remain sample-specific."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

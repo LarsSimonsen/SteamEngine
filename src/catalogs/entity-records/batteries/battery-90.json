@@ -1,0 +1,88 @@
+{
+    "entityId": "battery-90",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "Provisional research record for FEB 21700-68E.",
+        "description": "FEB markets the 21700-68E as a 6500mAh cylindrical cell. Battery Mooch tested the exact model and estimated 13A continuous current, describing it as a strong energy cell; the samples lacked CCC marks and appeared pre-production.",
+        "highlights": [
+            "Exact identity is supported by FEB model naming and an exact-model vaping test.",
+            "Discovery value is 6500mAh and 13A continuous; no higher temperature-limited rating was established.",
+            "The tested samples appeared pre-production, so production continuity and wrapper revision need follow-up.",
+            "Runtime admission is recorded as battery-90.",
+            "Runtime admission is recorded separately from editorial visibility."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "FEB 68E cell library record",
+            "url": "https://voltt.aboutenergy.io/cell-library/FEB_68E",
+            "publisher": "Voltt / FEB source data",
+            "limitations": "The record reports manufacturer-sourced identity and capacity; it is not a primary FEB-hosted document."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: FEB 21700G (68E) - 13A 6500mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-feb-21700g-68e-13a-6500mah-21700.993807/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model test; samples lacked CCC marks and may be pre-production."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact candidate identity is FEB 21700-68E, also called FEB 21700G or 68E.",
+            "evidenceDate": "2026-04-11",
+            "confidence": "medium"
+        },
+        {
+            "id": "capacity",
+            "statement": "The manufacturer-linked data and exact test identify 6350mAh minimum and 6500mAh nominal capacity.",
+            "evidenceDate": "2026-04-11",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch estimated 13A continuous current and observed about 65C at that load; no higher temperature-limited or pulse rating was established.",
+            "evidenceDate": "2026-04-11",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact FEB 21700-68E has an eligible exact-model vaping battery test.",
+            "evidenceDate": "2026-04-11",
+            "confidence": "high"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current Steam Engine battery catalog contains no exact FEB 21700-68E preset.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not established in this pass.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

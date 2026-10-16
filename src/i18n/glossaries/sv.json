@@ -3,6 +3,18 @@
     "sourceLocale": "en",
     "locale": "sv",
     "entries": {
+        "runtime": {
+            "source": "runtime",
+            "preferred": "drifttid",
+            "context": "Operating duration in minutes; use consistently in battery labels and help.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
         "vaping": {
             "source": "vaping",
             "preferred": "vejping",
@@ -101,20 +113,15 @@
         },
         "output-power": {
             "source": "atomizer output",
-            "preferred": "effekt som avges från förångaren",
-            "context": "This is emitted power from the atomizer, not a user-interface output.",
-            "state": "needs-review",
-            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Swedish vaping terminology and the English source annotation" },
-            "confidence": "medium",
-            "uncertainty": {
-                "reason": "The concise UI label must distinguish emitted atomizer power from a generic output or interface result.",
-                "bestCurrentTranslation": "effekt som avges från förångaren",
-                "alternatives": ["förångarens avgivna effekt", "förångarens uteffekt"],
-                "sources": [
-                    { "label": "Länsstyrelsernas knowledge summary on e-cigarettes", "url": "https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc289/1732533024885/Tobaksfria%20nikotinprodukter%20-%20En%20kunskapssammanst%C3%A4llning%20om%20elektroniska%20cigaretter.pdf" },
-                    { "label": "EUR-Lex Swedish terminology for e-cigarette heating and vaporization", "url": "https://eur-lex.europa.eu/legal-content/SV/TXT/PDF/?uri=CELEX:32023R0808" }
-                ]
-            }
+            "preferred": "förångarens elektriska värden",
+            "context": "Värden för spänning, ström och effekt som modden levererar till förångaren. För specifikt output power används uteffekt.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent Swedish technical terminology review",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

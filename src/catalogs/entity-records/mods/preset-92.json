@@ -1,0 +1,38 @@
+{
+    "entityId": "majesty-150w",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-92",
+            "title": "Majesty 150W variable-wattage APV",
+            "url": "https://atmoskepseis.blogspot.com/2015/02/majesty-150w-variable-wattage-vw-apv.html",
+            "limitations": "Exact-model review establishes a dated upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Majesty 150W exact product record",
+            "url": "https://apvboxmod.blogspot.com/2015/02/majesty-150w-variable-wattage-vw-apv.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

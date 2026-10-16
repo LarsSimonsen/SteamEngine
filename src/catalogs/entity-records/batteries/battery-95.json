@@ -1,0 +1,51 @@
+{
+    "entityId": "battery-95",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "A revision-specific Golisi S35 21700 rewrap rated at 3750mAh and 30A continuous.",
+        "description": "Exact-model retesting supports 3750mAh and 30A for the documented wrapper. Later wrapper revisions or underlying sourcing may differ.",
+        "highlights": [
+            "30A exact-model retest",
+            "3750mAh capacity class",
+            "Rewrap continuity warning"
+        ]
+    },
+    "sources": [
+        {
+            "id": "official",
+            "title": "Golisi S35 21700 Battery",
+            "url": "https://www.golisi.eu/s35-21700-battery/GLA10007",
+            "limitations": "Manufacturer product identity and claims; rewrap sourcing may change."
+        },
+        {
+            "id": "test",
+            "title": "Bench Retest Results: Golisi Black S35 30A 3750mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-retest-results-golisi-black-s35-30a-3750mah-21700-accurately-rated-lipo-chemistry.891871/",
+            "limitations": "Exact-model rewrap retest; the result is not universal across later wrappers."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "Preserve rewrap and wrapper-continuity warning."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70,
+            "terminalStyle": "flat-top"
+        },
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

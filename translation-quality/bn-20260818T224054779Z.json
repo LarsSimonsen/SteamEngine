@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "locale": "bn",
+  "cycleId": "bn-20260818T224054779Z",
+  "resourceProfile": { "classification": "standard", "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally." },
+  "review": {
+    "automatedQuality": { "state": "passed", "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed." },
+    "linguisticCritique": { "state": "completed", "summary": "A bounded Bengali pass identified 5 actionable terminology, formula, and technical-clarity defects; all 5 were corrected." },
+    "competentHumanReview": { "state": "pending", "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted." },
+    "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+  },
+  "findings": [
+    { "id": "bn-20260819-001", "translationId": "catalog.concepts.concept-kirchhoffs-laws.description", "category": "translation-defect", "severity": "high", "summary": "The Kirchhoff description did not name charge and energy conservation explicitly.", "disposition": "resolved", "evidence": ["The previous description referred generally to current and voltage behavior."], "resolution": "Specified charge conservation at nodes and energy conservation in closed loops." },
+    { "id": "bn-20260819-002", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0", "category": "translation-defect", "severity": "medium", "summary": "The current-law example did not clearly state the remaining 5 A branch total.", "disposition": "resolved", "evidence": ["The previous sentence used a less direct branch construction."], "resolution": "Rewrote the 8 A / 3 A / 5 A example in clear Bengali." },
+    { "id": "bn-20260819-003", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The voltage example formula used an inconsistent decimal form.", "disposition": "resolved", "evidence": ["The previous formula used the locale-inconsistent decimal representation."], "resolution": "Standardized the formula as +8.0 V while preserving the variables." },
+    { "id": "bn-20260819-004", "translationId": "catalog.concepts.concept-heat-flux.displayName", "category": "terminology-disagreement", "severity": "high", "summary": "The heat-flux display name did not distinguish density from total heat flow.", "disposition": "resolved", "evidence": ["The previous name rendered heat flux without the per-area qualifier."], "resolution": "Changed it to তাপ-প্রবাহের ঘনত্ব." },
+    { "id": "bn-20260819-005", "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4", "category": "factual-or-safety-risk", "severity": "high", "summary": "The current-capacity instruction was too literal and could be read as present power.", "disposition": "resolved", "evidence": ["The previous wording did not clearly express current-carrying capacity."], "resolution": "Specified কারেন্ট বহনক্ষমতা and retained the product-data and code warning." }
+  ]
+}

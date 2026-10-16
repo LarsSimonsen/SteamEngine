@@ -1,0 +1,117 @@
+{
+    "entityId": "battery-41",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for Orbtronic 18650 PD2900.",
+        "description": "This researched draft preserves the calculator's 2900mAh and 10A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "test-b19",
+            "title": "Orbtronic 18650PD 2900mAh black test",
+            "url": "https://budgetlightforum.com/t/test-review-of-orbtronic-18650pd-2900mah-black/23182",
+            "publisher": "BudgetLightForum / HKJ",
+            "limitations": "Exact tested sample and historical wrapper revision; later batches or counterfeit cells may differ."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "physical-obs-b19",
+            "statement": "The tested Orbtronic 18650PD 2900mAh sample was a black button-top cell measuring approximately 18.5 mm x 66.5 mm; the report identifies a Panasonic PF cell inside and does not describe a protection circuit.",
+            "evidenceDate": "2013-12-08",
+            "confidence": "medium"
+        },
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves Orbtronic 18650 PD2900 2900mAh 10A as a 2900mAh preset with a 10A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The Orbtronic 18650 PD2900 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry Orbtronic 18650 PD2900 has reliable market-introduction evidence dated 2013-12-08 or earlier.",
+            "evidenceDate": "2013-12-08",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": null,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "No entry-specific authenticity assessment was established in this catalog pass; exact wrapper, batch, or pack provenance remains unresolved."
+        }
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260818T142253490Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Danish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Danish pass identified 25 actionable formula, terminology, grammar, and English-residue defects across electrical, circuit, trigonometric, thermal, unit, and wire-gauge content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Danish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "da-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘I = V/R’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "da-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance formula omitted spacing around equality and division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘R = V/I’."],
+            "resolution": "Restored ‘R = V / I’."
+        },
+        {
+            "id": "da-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The unit-conversion instruction omitted the definite article.",
+            "disposition": "resolved",
+            "evidence": ["The previous instruction was ‘Hold enheder konsistente før beregning’."],
+            "resolution": "Changed it to natural Danish ‘Hold enhederne konsistente før beregningen’."
+        },
+        {
+            "id": "da-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule example described a power rate as joules per second without stating the equivalent power.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion said the coil converts energy at ‘7,2 joule pr. sekund’."],
+            "resolution": "Clarified the result as 7.2 W or 72 J over 10 seconds."
+        },
+        {
+            "id": "da-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-transfer bullet retained the English loanword hardware.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘hardware’."],
+            "resolution": "Changed it to the Danish term udstyr."
+        },
+        {
+            "id": "da-20260818-031",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit glossary used the English term node.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began ‘En node er ...’."],
+            "resolution": "Changed it to the Danish electrical term knude."
+        },
+        {
+            "id": "da-20260818-032",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-connection definition used an awkward literal construction for current flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘giver strøm kun én vej’."],
+            "resolution": "Rephrased it as the series connection carrying current only one way."
+        },
+        {
+            "id": "da-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell bullet used an awkward passive phrase for summed capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘tilføjes ca.’."],
+            "resolution": "Rewrote it as capacity and available current being approximately added together."
+        },
+        {
+            "id": "da-20260818-034",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula used the abbreviated modsat label rather than the definite Danish side term.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘sin(θ) = modsat / hypotenusen’."],
+            "resolution": "Changed it to ‘den modstående / hypotenusen’."
+        },
+        {
+            "id": "da-20260818-035",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula used inconsistent abbreviated side labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘tan(θ) = modsat / tilstødende’."],
+            "resolution": "Standardized it to ‘den modstående / den tilstødende’."
+        },
+        {
+            "id": "da-20260818-036",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-cosine formula used the English hypotenuse label.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with ‘/ hypotenuse’."],
+            "resolution": "Changed it to the Danish definite form hypotenusen."
+        },
+        {
+            "id": "da-20260818-037",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-tangent formula mixed abbreviated and definite Danish labels.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘modsat / tilstødende’."],
+            "resolution": "Standardized it to ‘den modstående / den tilstødende’."
+        },
+        {
+            "id": "da-20260818-038",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR current formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘I = V/R’."],
+            "resolution": "Restored ‘I = V / R’."
+        },
+        {
+            "id": "da-20260818-039",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity example used the wrong grammatical gender for varmelegeme and an incomplete loss phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion said ‘en rigtig varmelegeme ... på grund af tab’."],
+            "resolution": "Changed it to ‘et rigtigt varmelegeme’ and clarified heat loss."
+        },
+        {
+            "id": "da-20260818-040",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-time conclusion spelled out the protected seconds unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion ended with ‘523 sekunder’."],
+            "resolution": "Restored the concise protected notation 523 s."
+        },
+        {
+            "id": "da-20260818-041",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change limitation used a vague specific-heat reference.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph referred only to ‘specifik varme’."],
+            "resolution": "Changed it to the precise term specifikke varmekapacitet."
+        },
+        {
+            "id": "da-20260818-042",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux definition used the older loanword after the title had been localized.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph repeatedly used ‘varmeflux’."],
+            "resolution": "Aligned the paragraph with the preferred Danish term varmestrømstæthed."
+        },
+        {
+            "id": "da-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux summary used an imprecise literal rate phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary described the ‘satsen’ of heat transfer."],
+            "resolution": "Changed it to the clear phrase ‘Hastigheden for varmeoverførsel pr. arealenhed’."
+        },
+        {
+            "id": "da-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction note used the generic English-derived word flow.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘angiver flow’."],
+            "resolution": "Changed it to the Danish technical term varmestrøm."
+        },
+        {
+            "id": "da-20260818-045",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The imperial-unit paragraph retained English names for inches and their squared/cubed forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘inches, square inches og cubic inches’."],
+            "resolution": "Translated the unit names to tommer, kvadrattommer, and kubiktommer."
+        },
+        {
+            "id": "da-20260818-046",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length-conversion formulas retained English unit names and decimal points.",
+            "disposition": "resolved",
+            "evidence": ["The previous formulas used inch, foot, feet, and decimal points."],
+            "resolution": "Localized the unit names and normalized Danish decimal commas across the formula set."
+        },
+        {
+            "id": "da-20260818-047",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-number bullet used the awkward phrase måler 0.",
+            "disposition": "resolved",
+            "evidence": ["The previous correction still said ‘størrelser over måler 0’."],
+            "resolution": "Changed it to the clearer Danish phrase måletrinnet 0."
+        },
+        {
+            "id": "da-20260818-048",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge comparison retained the awkward phrase strandede konstruktion.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used ‘strandet konstruktion’."],
+            "resolution": "Changed it to the natural Danish phrase flertrådet konstruktion."
+        },
+        {
+            "id": "da-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The stranded-wire instruction used the English-derived strengkonstruktion.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used ‘strengkonstruktion’."],
+            "resolution": "Changed it to trådkonstruktionen."
+        },
+        {
+            "id": "da-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final wire-gauge instruction used the vague phrase aktuelle kapacitet.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘Bestem den aktuelle kapacitet’."],
+            "resolution": "Changed it to the precise term strømkapaciteten."
+        }
+    ]
+}

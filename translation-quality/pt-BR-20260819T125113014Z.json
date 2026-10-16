@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "pt-BR", "cycleId": "pt-BR-20260819T125113014Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Brazilian Portuguese source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Brazilian Portuguese critique found visible interpolation tokens, identity drift, chronology, coil-lead, e-liquid, and UI false-friend defects." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Brazilian Portuguese human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "ptbr-placeholders", "translationId": "shared.catalogManager.manage", "category": "translation-defect", "severity": "critical", "summary": "Sixteen functions could return literal lower-case placeholder tokens.", "disposition": "resolved", "evidence": ["The draft replaced only upper-case tokens."], "resolution": "Reimplemented the affected catalog and Ohm functions." },
+        { "id": "ptbr-identity-date", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Protected names drifted and available by used an ambiguous preposition.", "disposition": "resolved", "evidence": ["The contract protects names and the date is an upper bound."], "resolution": "Restored names and used disponível até." },
+        { "id": "ptbr-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads and power loss were translated as anatomical legs and leg strength.", "disposition": "resolved", "evidence": ["The fields describe electrical terminals."], "resolution": "Used terminais consistently." },
+        { "id": "ptbr-juice", "translationId": "calculators.juice.nicBase", "category": "factual-or-safety-risk", "severity": "high", "summary": "Nicotine base became database, strength became goodness, and target wording referred to shooting.", "disposition": "resolved", "evidence": ["These fields define an e-liquid recipe."], "resolution": "Used explicit formulation terminology and rewrote the warning." },
+        { "id": "ptbr-ui", "translationId": "calculators.wirewiz.table", "category": "translation-defect", "severity": "medium", "summary": "Several controls used restaurant, furniture, or marital-status senses.", "disposition": "resolved", "evidence": ["These are software and wire-design controls."], "resolution": "Used Menu, Tabela, and Único." }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "locale": "sv",
+    "cycleId": "sv-20260819T071453801Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Swedish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, TypeScript typecheck, production build, route checks, and generated internal-link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Swedish pass identified abbreviated and inconsistent side labels in the trigonometry worked example; both were aligned with the established Swedish terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Swedish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "sv-20260819-017",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Swedish worked trigonometry example used shortened labels that differed from the full terms used in the formulas and explanation.",
+            "disposition": "resolved",
+            "evidence": ["The example used motsatt and intilliggande while the section used motstående sida and närliggande sida."],
+            "resolution": "Aligned both example formulas with motstående sida and närliggande sida."
+        }
+    ]
+}

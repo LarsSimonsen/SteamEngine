@@ -1,0 +1,169 @@
+{
+    "entityId": "battery-33",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine oem-cell preset for LG 18650HB6.",
+        "description": "This researched draft preserves the calculator's 1500mAh and 30A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "vapingvibe-2026",
+            "title": "Best 18650 Batteries for Vaping",
+            "url": "https://vapingvibe.com/best-18650-batteries/",
+            "publisher": "vapingvibe.com",
+            "limitations": "Bounded five-cell editorial list; commercial links may influence selection."
+        },
+        {
+            "id": "ecigone-batteries",
+            "title": "Vape Batteries",
+            "url": "https://ecigone.co.uk/collections/18650",
+            "publisher": "ecigone.co.uk",
+            "limitations": "Current UK specialist-vape collection is limited to 18650 and 21700 products."
+        },
+        {
+            "id": "evolution-batteries",
+            "title": "Vape Batteries",
+            "url": "https://www.evolutionvaping.co.uk/collections/vape-batteries",
+            "publisher": "evolutionvaping.co.uk",
+            "limitations": "Current UK specialist-vape collection; similar model names are not treated as exact matches."
+        },
+        {
+            "id": "store-18650",
+            "title": "18650 batteries",
+            "url": "https://www.18650batterystore.com/collections/18650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; stock proves supply, not vaping adoption."
+        },
+        {
+            "id": "mooch-lg-hb6",
+            "title": "LG HB6 30A 1500mAh bench test",
+            "url": "https://www.e-cigarette-forum.com/threads/lg-hb6-30a-1500mah-18650-bench-test-results-better-than-sx30-at-25a.682205/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact tested sample and date; later batches, wrappers, or counterfeit cells may differ."
+        },
+        {
+            "id": "ecf-hb6-discussion",
+            "title": "LG HB6 issue discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/lg-hb6-issue.768301/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Small exact-model community discussion from 2016."
+        },
+        {
+            "id": "spec-b46",
+            "title": "LG HB6 product specification",
+            "url": "https://www.megacellmonitor.com/pdf/vendor_specs/SPEC_LG_LGDAHB61865_ICR18650HB6.pdf",
+            "publisher": "LG Chem specification mirror",
+            "limitations": "Surviving specification mirror; it identifies the bare industrial cell, not the provenance or authenticity of any retail-wrapped sample."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        },
+        {
+            "id": "chemistry-lg-hb6",
+            "title": "LG HB6 safety data sheet",
+            "url": "https://www.esco-net.com/wcs/escort/ItemFile/shiire_shohin/DF026/DF02613/DF0261383/DF0261383_DOC_SDS_ENG_INP%2801%29.pdf",
+            "publisher": "LG Chem specification mirror",
+            "limitations": "Surviving SDS identifies a lithium-ion battery but does not disclose the exact cathode formulation; retail wrapper provenance is separate."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves LG 18650HB6 1500mAh 30A as a 1500mAh preset with a 30A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "cdr-obs-v3-0212",
+            "statement": "Battery Mooch assessed this tested exact model at 30A continuous discharge.",
+            "evidenceDate": "2015-06-20",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The LG HB6 specification and specialist cell listings identify an unprotected flat-top 18650 cell of approximately 18.3 mm x 65.0 mm; the manufacturer specification does not define a retail wrapper color.",
+            "evidenceDate": "2016",
+            "confidence": "high"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "LG 18650HB6 is documented as a lithium-ion cell, but the surviving manufacturer SDS does not disclose its exact cathode formulation.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "high"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry LG 18650HB6 has reliable market-introduction evidence dated 2015-06-20 or earlier.",
+            "evidenceDate": "2015-06-20",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [
+        {
+            "id": "review-obs-v3-0212",
+            "reviewer": "Battery Mooch",
+            "reviewedAt": "2015-06-20",
+            "verdict": "positive",
+            "summary": "Eligible Battery Mooch exact-model test conclusion retained with its original evidence date.",
+            "pros": [
+                "Exact-model instrumented vaping-focused test."
+            ],
+            "reservations": [
+                "The conclusion applies to the tested sample and observable revision, not every later batch."
+            ]
+        }
+    ],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (cathode not disclosed in surviving manufacturer SDS)",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "medium",
+            "summary": "LG's HB6 cell identity and specifications are well supported, but authenticity of an individual bare or wrapped sample still requires provenance and physical inspection.",
+            "checks": [
+                "Buy from a traceable source and compare the cell markings/terminal construction with the LG specification and a known-good sample.",
+                "Inspect the wrapper, top insulator, and weld/terminal geometry for damage or relabeling.",
+                "Do not assume a cell marked HB6 is genuine solely from the printed model name."
+            ]
+        }
+    }
+}

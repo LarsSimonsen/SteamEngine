@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "locale": "zh-Hans",
+    "cycleId": "zh-Hans-20260819T014701519Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Simplified Chinese source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Simplified Chinese pass identified six remaining formula-notation and unit-translation defects; all six were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Simplified Chinese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "zh-Hans-20260819-010",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tangent formula used an inconsistent Chinese term for the adjacent side and omitted spacing around the division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was tan(θ) = 对边/相邻 while the explanation used 邻边."],
+            "resolution": "Changed it to tan(θ) = 对边 / 邻边."
+        },
+        {
+            "id": "zh-Hans-20260819-011",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0-2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The inverse-trigonometry formulas used full-width punctuation and inconsistent spacing.",
+            "disposition": "resolved",
+            "evidence": ["The previous formulas mixed full-width parentheses with compact slash notation."],
+            "resolution": "Normalized all three inverse formulas to consistent notation and spacing."
+        },
+        {
+            "id": "zh-Hans-20260819-012",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.0",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The Kirchhoff voltage-law formula omitted the spacing in the protected sigma expression.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ΣV = 0 rather than the canonical Σ V = 0."],
+            "resolution": "Restored the canonical spacing."
+        },
+        {
+            "id": "zh-Hans-20260819-013",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage-law annotation retained the English phrase parallel branches.",
+            "disposition": "resolved",
+            "evidence": ["The previous formula ended with (parallel branches) in an otherwise Simplified Chinese section."],
+            "resolution": "Changed it to (并联分支)."
+        },
+        {
+            "id": "zh-Hans-20260819-014",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The cell formulas retained the English series and parallel annotations.",
+            "disposition": "resolved",
+            "evidence": ["The previous expressions ended with (series) and (parallel)."],
+            "resolution": "Changed them to (串联) and (并联)."
+        },
+        {
+            "id": "zh-Hans-20260819-015",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.0-3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The imperial length-conversion formulas retained English unit names in the Simplified Chinese section.",
+            "disposition": "resolved",
+            "evidence": ["The formulas used inch, foot, feet, yard, and in² while the worked example used Chinese names."],
+            "resolution": "Localized the four displayed length conversions as 英寸, 英尺, 码, and 英寸²."
+        }
+    ]
+}

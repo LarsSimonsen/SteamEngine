@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T125719847Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Nynorsk pass identified 25 actionable Bokmål residues and mixed-language defects in electrical, circuit, trigonometric, thermal, and unit terminology; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-076",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage bullet retained Bokmål forms for increase and decrease.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used ‘øker’ and ‘reduseres’ in Nynorsk content."],
+            "resolution": "Changed the sentence to ‘aukar’ and ‘minkar’."
+        },
+        {
+            "id": "nn-20260818-077",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-safety paragraph mixed Bokmål forms with Nynorsk terminology.",
+            "disposition": "resolved",
+            "evidence": ["It used komponenter, tilkoblinger, tilstrekkelig, virkelige, batterier, and strømforsyninger."],
+            "resolution": "Rewrote the paragraph with Nynorsk component, connection, margin, battery, and supply terms."
+        },
+        {
+            "id": "nn-20260818-078",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-connection definition used the Bokmål verb gir.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence began ‘Ei seriekopling gir’."],
+            "resolution": "Changed gir to the Nynorsk form gjev."
+        },
+        {
+            "id": "nn-20260818-079",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law title used the Bokmål compound strømlov.",
+            "disposition": "resolved",
+            "evidence": ["The title was ‘Kirchhoffs strømlov’."],
+            "resolution": "Changed it to ‘Kirchhoffs straumlov’."
+        },
+        {
+            "id": "nn-20260818-080",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law example used an awkward phrase for the remaining branch currents.",
+            "disposition": "resolved",
+            "evidence": ["The previous wording said the branches had to ‘føre til saman 5 A ut’."],
+            "resolution": "Rephrased it as the other branches carrying 5 A out in total."
+        },
+        {
+            "id": "nn-20260818-081",
+            "translationId": "catalog.concepts.concept-trigonometry.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The trigonometry summary used the Bokmål form Vinkler.",
+            "disposition": "resolved",
+            "evidence": ["The summary began ‘Vinkler, lengder’."],
+            "resolution": "Changed Vinkler to the Nynorsk form Vinklar."
+        },
+        {
+            "id": "nn-20260818-082",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sine formula used the Bokmål geometric term motstående.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used ‘motståande’ inconsistently with the example’s Bokmål label."],
+            "resolution": "Standardized the expression as ‘motståande / hypotenuse’."
+        },
+        {
+            "id": "nn-20260818-083",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.0.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cosine formula used the Bokmål geometric term hosliggende.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used the Bokmål label hosliggende."],
+            "resolution": "Standardized the expression as ‘hosliggjande / hypotenuse’."
+        },
+        {
+            "id": "nn-20260818-084",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The opposite-side example formula retained the Bokmål label motstående.",
+            "disposition": "resolved",
+            "evidence": ["The example used ‘motstående’ while surrounding prose was Nynorsk."],
+            "resolution": "Changed the label to motståande."
+        },
+        {
+            "id": "nn-20260818-085",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.1.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The adjacent-side example formula retained the Bokmål label hosliggende.",
+            "disposition": "resolved",
+            "evidence": ["The example used ‘hosliggende’ while surrounding prose was Nynorsk."],
+            "resolution": "Changed the label to hosliggjande."
+        },
+        {
+            "id": "nn-20260818-086",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The degrees-and-radians title used the Bokmål form radianer.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Grader og radianer’."],
+            "resolution": "Changed it to ‘Grader og radianar’."
+        },
+        {
+            "id": "nn-20260818-087",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The angle-mode warning was largely Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["It used være, riktig, brukes, and annet in Nynorsk content."],
+            "resolution": "Rewrote the warning with vere, rett, blir brukt, anna, and heil."
+        },
+        {
+            "id": "nn-20260818-088",
+            "translationId": "catalog.concepts.concept-heat-capacity.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity description used the Bokmål verb beskriver and passive form trengs.",
+            "disposition": "resolved",
+            "evidence": ["The previous description used ‘beskriver hvor mye energi som trengs’."],
+            "resolution": "Changed it to Nynorsk skildrar and trengst."
+        },
+        {
+            "id": "nn-20260818-089",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The basic-relationships title was Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Grunnleggende sammenhenger’."],
+            "resolution": "Changed it to ‘Grunnleggjande samanhengar’."
+        },
+        {
+            "id": "nn-20260818-090",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The temperature-difference bullet used Bokmål En and forskjell.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet said ‘En temperaturforskjell ... en forskjell’."],
+            "resolution": "Changed it to ‘Ein temperaturskilnad ... ein skilnad’."
+        },
+        {
+            "id": "nn-20260818-091",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example title used the Bokmål form Regneeksempel.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Regneeksempel’."],
+            "resolution": "Changed it to ‘Rekneeksempel’."
+        },
+        {
+            "id": "nn-20260818-092",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The water example used the Bokmål noun vann.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Oppvarming av vann’."],
+            "resolution": "Changed it to ‘Oppvarming av vatn’."
+        },
+        {
+            "id": "nn-20260818-093",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity conclusion was written in Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["It used en, virkelig, varmeovn, and trenger."],
+            "resolution": "Rewrote the conclusion as Nynorsk with ein, verkeleg, varmeomn, and treng."
+        },
+        {
+            "id": "nn-20260818-094",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object-and-material paragraph mixed Bokmål verbs, articles, and nouns.",
+            "disposition": "resolved",
+            "evidence": ["It used gjelder, avhenger, hvor mye, en materialegenskap, and samme."],
+            "resolution": "Rewrote the paragraph with gjeld, avheng, kor mykje, materialeigenskap, and same."
+        },
+        {
+            "id": "nn-20260818-095",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.4.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-loss limitations paragraph retained Bokmål forms.",
+            "disposition": "resolved",
+            "evidence": ["It used ligningen, antar, et, gjøre, and avviker."],
+            "resolution": "Rewrote the paragraph with likninga, føreset, eit, gjere, and avvik."
+        },
+        {
+            "id": "nn-20260818-096",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux description used the Bokmål verb beskriver and from-form fra.",
+            "disposition": "resolved",
+            "evidence": ["The previous description began ‘Varmestrøm beskriver’ and ended ‘fra en overflate’."],
+            "resolution": "Changed it to skildrar and frå ei overflate."
+        },
+        {
+            "id": "nn-20260818-097",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux example used Bokmål article and noun forms.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup said ‘En varmeovn’."],
+            "resolution": "Changed it to ‘Ein varmeomn’."
+        },
+        {
+            "id": "nn-20260818-098",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.2.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction note used Bokmål angir and strømning.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said ‘Minustegnet angir strømning’."],
+            "resolution": "Changed it to ‘Minusteiknet viser straum’."
+        },
+        {
+            "id": "nn-20260818-099",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical heat-flux check mixed Bokmål forms and used an awkward noun.",
+            "disposition": "resolved",
+            "evidence": ["It used Skill and oppvarmingen in a Nynorsk list."],
+            "resolution": "Rewrote it with Skil, gjennomsnittleg, and oppvarminga."
+        },
+        {
+            "id": "nn-20260818-100",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.4.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The practical heat-flux check used the Bokmål form nødvendig.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet ended with ‘når det er nødvendig’."],
+            "resolution": "Changed it to ‘når det er naudsynt’."
+        }
+    ]
+}

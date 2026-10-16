@@ -1,0 +1,3061 @@
+{
+    "schemaVersion": 1,
+    "date": "2026-10-13",
+    "sourceLocale": "en",
+    "targetGroup": [
+        "es",
+        "es-419"
+    ],
+    "selection": {
+        "basis": "es-419 has 87 identical-source entries and 1115 low-confidence records, the highest identical-source count among low-confidence drafts; this is a triage signal, not a quality score.",
+        "scope": "Spanish regional variants; bounded battery calculator review, not a complete locale critique.",
+        "activeCycles": "Neither selected locale has an active cycle; queue states remain unchanged."
+    },
+    "scope": {
+        "namespaces": [
+            "calculators.batt"
+        ],
+        "pages": [
+            "/es/batt",
+            "/es-419/batt"
+        ],
+        "inspectedIds": [
+            "calculators.batt.atomizerOutput",
+            "calculators.batt.atomizerResistance",
+            "calculators.batt.batteryConfiguration",
+            "calculators.batt.batteryDrain",
+            "calculators.batt.batteryHelp",
+            "calculators.batt.batteryIntro",
+            "calculators.batt.batteryPreset",
+            "calculators.batt.batteryPresets",
+            "calculators.batt.batterySafety",
+            "calculators.batt.batteryValues",
+            "calculators.batt.batteryVoltage",
+            "calculators.batt.boardInputProfile",
+            "calculators.batt.bypass",
+            "calculators.batt.cRating",
+            "calculators.batt.calculating",
+            "calculators.batt.capacity",
+            "calculators.batt.caution",
+            "calculators.batt.cell",
+            "calculators.batt.cellSelection",
+            "calculators.batt.cellVoltageNearCutoff",
+            "calculators.batt.cells",
+            "calculators.batt.cellsInSeries",
+            "calculators.batt.continuousRuntime",
+            "calculators.batt.currentHeadroom",
+            "calculators.batt.currentLabel",
+            "calculators.batt.currentPerCell",
+            "calculators.batt.currentRegulated",
+            "calculators.batt.customBattery",
+            "calculators.batt.customConfiguration",
+            "calculators.batt.customValues",
+            "calculators.batt.danger",
+            "calculators.batt.description",
+            "calculators.batt.detailsBattery",
+            "calculators.batt.device",
+            "calculators.batt.deviceBatterySetup",
+            "calculators.batt.effectiveMaximumCurrent",
+            "calculators.batt.efficiency",
+            "calculators.batt.enterValue",
+            "calculators.batt.estimatedRuntime",
+            "calculators.batt.eyebrow",
+            "calculators.batt.manage",
+            "calculators.batt.matchedCells",
+            "calculators.batt.maximumCurrent",
+            "calculators.batt.nominalEnergy",
+            "calculators.batt.nominalVoltage",
+            "calculators.batt.notVerified",
+            "calculators.batt.operatingMode",
+            "calculators.batt.outputPower",
+            "calculators.batt.outputVoltage",
+            "calculators.batt.pack",
+            "calculators.batt.parallelStrings",
+            "calculators.batt.powerLabel",
+            "calculators.batt.powerRegulated",
+            "calculators.batt.regulatedVoltageHelp",
+            "calculators.batt.reset",
+            "calculators.batt.results",
+            "calculators.batt.resultsUseLastValidValues",
+            "calculators.batt.runtimeHelp",
+            "calculators.batt.safe",
+            "calculators.batt.selectPreset",
+            "calculators.batt.singleCell",
+            "calculators.batt.title",
+            "calculators.batt.unregulated",
+            "calculators.batt.unregulatedVoltageHelp",
+            "calculators.batt.voltage",
+            "calculators.batt.voltageLabel",
+            "calculators.batt.voltageRegulated"
+        ],
+        "extraContext": [
+            "src/pages/batt/battery-drain-calculator.tsx",
+            "src/i18n/locales.ts battery-page titles and descriptions",
+            "src/i18n/calculator-messages/es-419-corrections.ts runtime overlay"
+        ],
+        "excluded": "Other calculators, shared validation resources, battery manager/catalog dictionaries and whole-locale review are outside the linguistic audit."
+    },
+    "review": {
+        "sameAgentReviewedAndEdited": true,
+        "independentReview": false,
+        "humanReview": false,
+        "machineDraftNoticeRetained": true
+    },
+    "signatures": {
+        "algorithm": "SHA-256 of UTF-8 JSON.stringify([semanticId, text]); no aggregate signatures",
+        "ordering": "Semantic IDs sorted by helper; targets ordered es, es-419"
+    },
+    "evidence": [
+        "Canonical English calculators.batt entries included per row",
+        "src/pages/batt/battery-drain-calculator.tsx: per-cell fields, configuration summary, matched-cell notice and pack output consumers",
+        "the Steam Engine Kirchhoff's laws reference: series current and parallel branches",
+        "Existing Spanish locale glossaries: battery consumption and output power"
+    ],
+    "counts": {
+        "inspectedSemanticIds": 67,
+        "inspectedLocaleIdPairs": 134,
+        "changedLocaleIdPairs": 35,
+        "changedByLocale": {
+            "es": 20,
+            "es-419": 15
+        },
+        "independentFindingGroups": 6,
+        "renderedOccurrenceCount": "Not counted; shared calculator labels can occur more than once."
+    },
+    "unresolvedQuestions": [
+        "Competent human linguistic review remains pending; machine corrections do not certify whole-locale quality."
+    ],
+    "validation": {
+        "status": "passed-with-rendered-limitations",
+        "checks": [
+            "npm run i18n:review:check",
+            "npm run i18n:critique-queue",
+            "npm run typecheck",
+            "56 focused tests in translation-review, calculator-messages and battery API/domain/component suites",
+            "npm run build (host identity): full production build; 39 IIS rules, 64 route cases; 737 links across 10279 HTML files; verified IIS slot switch",
+            "git diff --cached --check"
+        ],
+        "renderedChecks": {
+            "baseUrl": "http://127.0.0.1:4238",
+            "artifact": ".iis-slots/blue",
+            "pages": [
+                "/es/batt",
+                "/es-419/batt"
+            ],
+            "verified": [
+                "Correct HTML language and page title",
+                "Localized per-cell introduction, preset and configuration labels",
+                "1S singular celda and 2S2P plural 4 celdas",
+                "Custom configuration exposes Celdas en serie and Ramas en paralelo in es",
+                "Localized matched-cell warning in both variants",
+                "Machine-draft notice retained",
+                "No document horizontal overflow; es-419 full-page screenshot inspected"
+            ],
+            "limitations": [
+                "Live calculation request failed with Failed to fetch; result cards and their runtime help could not be inspected in the browser. API/domain/component tests passed.",
+                "Blank capacity interaction produced no inline error while the calculation failure dialog was active; validation rendering is not claimed.",
+                "Built pages were inspected through the project static preview server. localhost/es/batt returned IIS 404; the configured IIS binding could not be read with ordinary-user permissions. The build broker verified its slot switch; live IIS HTTP route parity was not independently confirmed."
+            ]
+        },
+        "environmentRetries": [
+            "Sandbox Vitest cache rename denied before tests ran; host rerun passed all 56 tests.",
+            "Sandbox could not access the broker; host query confirmed RUNNING and host build succeeded."
+        ],
+        "unrelatedChangesExcluded": [
+            "AGENTS.md",
+            "skills/steam-engine-related-language-review/",
+            "tools/translation-review-data.mjs"
+        ]
+    },
+    "entries": [
+        {
+            "id": "calculators.batt.atomizerOutput",
+            "sourceText": "Atomizer output",
+            "sourceSignature": "2cd5e27ec756ab8edc3518317ae07ed0f92c52b875e850081fe7b1b9225ae7a9",
+            "targets": {
+                "es": {
+                    "before": "Salida del atomizador",
+                    "after": "Salida del atomizador",
+                    "baselineSignature": "9217630d284db3bff073232925280dd9d25358fb68b8c551860feb7b02774d06",
+                    "finalSignature": "9217630d284db3bff073232925280dd9d25358fb68b8c551860feb7b02774d06",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "2cd5e27ec756ab8edc3518317ae07ed0f92c52b875e850081fe7b1b9225ae7a9",
+                        "translationSignature": "9217630d284db3bff073232925280dd9d25358fb68b8c551860feb7b02774d06",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Potencia de salida del atomizador",
+                    "after": "Potencia de salida del atomizador",
+                    "baselineSignature": "5bc277b509cde0f54f7e1aa1430f38e7c7128850e2ca5610dbcf82ef610067f8",
+                    "finalSignature": "5bc277b509cde0f54f7e1aa1430f38e7c7128850e2ca5610dbcf82ef610067f8",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "2cd5e27ec756ab8edc3518317ae07ed0f92c52b875e850081fe7b1b9225ae7a9",
+                        "translationSignature": "5bc277b509cde0f54f7e1aa1430f38e7c7128850e2ca5610dbcf82ef610067f8",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.atomizerResistance",
+            "sourceText": "Atomizer resistance",
+            "sourceSignature": "a5f3da70c1dea4dc76a28c171ba5ecc4ed24d515bdf58325e6d0ef2c645fdaa8",
+            "targets": {
+                "es": {
+                    "before": "Resistencia del atomizador",
+                    "after": "Resistencia del atomizador",
+                    "baselineSignature": "6c9c4c2bd97871fac0ecb009d5093595145a5e09d47163a01c228c58a90d826c",
+                    "finalSignature": "6c9c4c2bd97871fac0ecb009d5093595145a5e09d47163a01c228c58a90d826c",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "a5f3da70c1dea4dc76a28c171ba5ecc4ed24d515bdf58325e6d0ef2c645fdaa8",
+                        "translationSignature": "6c9c4c2bd97871fac0ecb009d5093595145a5e09d47163a01c228c58a90d826c",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Resistencia del atomizador",
+                    "after": "Resistencia del atomizador",
+                    "baselineSignature": "6c9c4c2bd97871fac0ecb009d5093595145a5e09d47163a01c228c58a90d826c",
+                    "finalSignature": "6c9c4c2bd97871fac0ecb009d5093595145a5e09d47163a01c228c58a90d826c",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "a5f3da70c1dea4dc76a28c171ba5ecc4ed24d515bdf58325e6d0ef2c645fdaa8",
+                        "translationSignature": "6c9c4c2bd97871fac0ecb009d5093595145a5e09d47163a01c228c58a90d826c",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryConfiguration",
+            "sourceText": "Battery configuration",
+            "sourceSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+            "targets": {
+                "es": {
+                    "before": "Battery configuration",
+                    "after": "Configuración de baterías",
+                    "baselineSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+                    "finalSignature": "41c3a8e36b1c413bf0fa2e55540fa073c2f6b093616db80c9be3bdd6fb7bbb37",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+                        "translationSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Battery configuration",
+                    "after": "Configuración de baterías",
+                    "baselineSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+                    "finalSignature": "41c3a8e36b1c413bf0fa2e55540fa073c2f6b093616db80c9be3bdd6fb7bbb37",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+                        "translationSignature": "59cbb7f8727e2d6986ca5877c900b2a80184b1c2ea8751872977bf44444769ad",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryDrain",
+            "sourceText": "Battery drain",
+            "sourceSignature": "4c9739f3a92a489e838d9c3ebce40ac646e386e951efd971d243c9075a56f9fa",
+            "targets": {
+                "es": {
+                    "before": "Consumo de batería",
+                    "after": "Consumo de batería",
+                    "baselineSignature": "0b32692b1a4a7af0e6847297abbd3a6ae26e45eb65714539633210484c7b27e7",
+                    "finalSignature": "0b32692b1a4a7af0e6847297abbd3a6ae26e45eb65714539633210484c7b27e7",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "4c9739f3a92a489e838d9c3ebce40ac646e386e951efd971d243c9075a56f9fa",
+                        "translationSignature": "0b32692b1a4a7af0e6847297abbd3a6ae26e45eb65714539633210484c7b27e7",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Consumo de batería",
+                    "after": "Consumo de batería",
+                    "baselineSignature": "0b32692b1a4a7af0e6847297abbd3a6ae26e45eb65714539633210484c7b27e7",
+                    "finalSignature": "0b32692b1a4a7af0e6847297abbd3a6ae26e45eb65714539633210484c7b27e7",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "4c9739f3a92a489e838d9c3ebce40ac646e386e951efd971d243c9075a56f9fa",
+                        "translationSignature": "0b32692b1a4a7af0e6847297abbd3a6ae26e45eb65714539633210484c7b27e7",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryHelp",
+            "sourceText": "Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
+            "sourceSignature": "d3a480314b5d2c517ea8ea072c724ec469224e410d3a96cce8383ce29aa1cae8",
+            "targets": {
+                "es": {
+                    "before": "El voltaje nominal y la capacidad determinan la energía almacenada estimada y el tiempo de funcionamiento continuo. No afectan el límite de corriente.",
+                    "after": "El voltaje nominal y la capacidad determinan la energía almacenada estimada y el tiempo de funcionamiento continuo. No afectan el límite de corriente.",
+                    "baselineSignature": "2545342a10df07ab9e1bcac2296d2f433db87df0c10b05ee9f590db71ee293c3",
+                    "finalSignature": "2545342a10df07ab9e1bcac2296d2f433db87df0c10b05ee9f590db71ee293c3",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d3a480314b5d2c517ea8ea072c724ec469224e410d3a96cce8383ce29aa1cae8",
+                        "translationSignature": "2545342a10df07ab9e1bcac2296d2f433db87df0c10b05ee9f590db71ee293c3",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "El voltaje nominal y la capacidad determinan la energía almacenada estimada y la autonomía continua. No afectan el límite de corriente.",
+                    "after": "El voltaje nominal y la capacidad determinan la energía almacenada estimada y la autonomía continua. No afectan el límite de corriente.",
+                    "baselineSignature": "eac1c3a0100d0a455b6d0ac3b0a8ae9d594a84cfba42f60c966f4c337b09cff9",
+                    "finalSignature": "eac1c3a0100d0a455b6d0ac3b0a8ae9d594a84cfba42f60c966f4c337b09cff9",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d3a480314b5d2c517ea8ea072c724ec469224e410d3a96cce8383ce29aa1cae8",
+                        "translationSignature": "eac1c3a0100d0a455b6d0ac3b0a8ae9d594a84cfba42f60c966f4c337b09cff9",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryIntro",
+            "sourceText": "Choose the cell used throughout the pack, or enter per-cell values below.",
+            "sourceSignature": "7e34ac9231da9b37d69f1ce11d2d2f2a3cd34331404d77f2a9bb92e97343c6e1",
+            "targets": {
+                "es": {
+                    "before": "Elija un valor preestablecido de batería incorporada o ingrese sus propios valores a continuación.",
+                    "after": "Elija el tipo de celda utilizado en todo el conjunto de baterías o introduzca los valores por celda a continuación.",
+                    "baselineSignature": "58cbe25e3d3d51a27c11803624d3cfa58c82519d8af427701830253bb297d8e6",
+                    "finalSignature": "4e19b820ec19f815194a4383cda1a9ac42aea4705218b0fddcf25899ecdca5d6",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "7e34ac9231da9b37d69f1ce11d2d2f2a3cd34331404d77f2a9bb92e97343c6e1",
+                        "translationSignature": "58cbe25e3d3d51a27c11803624d3cfa58c82519d8af427701830253bb297d8e6",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Elige un preajuste de batería incluido o ingresa tus propios valores a continuación.",
+                    "after": "Elige el tipo de celda utilizado en todo el conjunto de baterías o ingresa los valores por celda a continuación.",
+                    "baselineSignature": "f46d2f9e7d72f056c1a6e4763dc351ababf9370ed54ffb4effe1f5ad174332b3",
+                    "finalSignature": "347e5ae5799737373886a3de069427476b2efa9c5d1a6e161a77bc216fb066cf",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "7e34ac9231da9b37d69f1ce11d2d2f2a3cd34331404d77f2a9bb92e97343c6e1",
+                        "translationSignature": "f46d2f9e7d72f056c1a6e4763dc351ababf9370ed54ffb4effe1f5ad174332b3",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryPreset",
+            "sourceText": "Cell preset",
+            "sourceSignature": "cd9ca08428ab4cec90bfe82473f7996aab293d6fe444bf0a07b7da919fa85055",
+            "targets": {
+                "es": {
+                    "before": "Preajuste de batería",
+                    "after": "Preajuste de celda",
+                    "baselineSignature": "0503f2e04f53672f19906e50f5529199077531a955c38a3c02e43280e401c8c9",
+                    "finalSignature": "29bb577bc7194741b6075eda5e12401f6f7989b518d6c1f6adb8e68807425051",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "cd9ca08428ab4cec90bfe82473f7996aab293d6fe444bf0a07b7da919fa85055",
+                        "translationSignature": "0503f2e04f53672f19906e50f5529199077531a955c38a3c02e43280e401c8c9",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Preajuste de batería",
+                    "after": "Preajuste de celda",
+                    "baselineSignature": "0503f2e04f53672f19906e50f5529199077531a955c38a3c02e43280e401c8c9",
+                    "finalSignature": "29bb577bc7194741b6075eda5e12401f6f7989b518d6c1f6adb8e68807425051",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "cd9ca08428ab4cec90bfe82473f7996aab293d6fe444bf0a07b7da919fa85055",
+                        "translationSignature": "0503f2e04f53672f19906e50f5529199077531a955c38a3c02e43280e401c8c9",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryPresets",
+            "sourceText": "Cell preset",
+            "sourceSignature": "4fde5e3e8b3e2c5805453e611dda24835b08b3017847aa9566f6659bc9e6b412",
+            "targets": {
+                "es": {
+                    "before": "Preajustes de batería",
+                    "after": "Preajuste de celda",
+                    "baselineSignature": "860688d935a2b5d9253f9f08c2a73a29aaa1f5953ca682589d851cee6a5a9d3a",
+                    "finalSignature": "1ffd677675bb3627fb5bbe0e123df0ee85a10c88c21cff2370a52d827b54fa95",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "4fde5e3e8b3e2c5805453e611dda24835b08b3017847aa9566f6659bc9e6b412",
+                        "translationSignature": "860688d935a2b5d9253f9f08c2a73a29aaa1f5953ca682589d851cee6a5a9d3a",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Preajustes de batería",
+                    "after": "Preajuste de celda",
+                    "baselineSignature": "860688d935a2b5d9253f9f08c2a73a29aaa1f5953ca682589d851cee6a5a9d3a",
+                    "finalSignature": "1ffd677675bb3627fb5bbe0e123df0ee85a10c88c21cff2370a52d827b54fa95",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "4fde5e3e8b3e2c5805453e611dda24835b08b3017847aa9566f6659bc9e6b412",
+                        "translationSignature": "860688d935a2b5d9253f9f08c2a73a29aaa1f5953ca682589d851cee6a5a9d3a",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batterySafety",
+            "sourceText": "Battery safety",
+            "sourceSignature": "f7c29c7996954c50c723106ed8c12ad0fa93d671e8f4b3365b834097f665dfa3",
+            "targets": {
+                "es": {
+                    "before": "Seguridad de la batería",
+                    "after": "Seguridad de la batería",
+                    "baselineSignature": "7d160ea6f7ac8a9f0957722e53cd19bd693da2099a80b08cb8ff681b3529eb43",
+                    "finalSignature": "7d160ea6f7ac8a9f0957722e53cd19bd693da2099a80b08cb8ff681b3529eb43",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "f7c29c7996954c50c723106ed8c12ad0fa93d671e8f4b3365b834097f665dfa3",
+                        "translationSignature": "7d160ea6f7ac8a9f0957722e53cd19bd693da2099a80b08cb8ff681b3529eb43",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Seguridad de la batería",
+                    "after": "Seguridad de la batería",
+                    "baselineSignature": "7d160ea6f7ac8a9f0957722e53cd19bd693da2099a80b08cb8ff681b3529eb43",
+                    "finalSignature": "7d160ea6f7ac8a9f0957722e53cd19bd693da2099a80b08cb8ff681b3529eb43",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "f7c29c7996954c50c723106ed8c12ad0fa93d671e8f4b3365b834097f665dfa3",
+                        "translationSignature": "7d160ea6f7ac8a9f0957722e53cd19bd693da2099a80b08cb8ff681b3529eb43",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryValues",
+            "sourceText": "Cell and pack",
+            "sourceSignature": "0339dd0dee7f5892ae4d1cf7bb144f681151db6305f9cdf4338d41e8f91a9584",
+            "targets": {
+                "es": {
+                    "before": "Valores de la batería",
+                    "after": "Celda y conjunto de baterías",
+                    "baselineSignature": "0a7f8a1faa6d8d8688f0f7efae6629231143bccb87806206c738d3b1637c1211",
+                    "finalSignature": "093172f47ea6a00e6f314a501601ee58a8aa1d1d1aeff1e5cd66d2959a24481f",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "0339dd0dee7f5892ae4d1cf7bb144f681151db6305f9cdf4338d41e8f91a9584",
+                        "translationSignature": "0a7f8a1faa6d8d8688f0f7efae6629231143bccb87806206c738d3b1637c1211",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Valores de la batería",
+                    "after": "Celda y conjunto de baterías",
+                    "baselineSignature": "0a7f8a1faa6d8d8688f0f7efae6629231143bccb87806206c738d3b1637c1211",
+                    "finalSignature": "093172f47ea6a00e6f314a501601ee58a8aa1d1d1aeff1e5cd66d2959a24481f",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Restore current English distinction between per-cell inputs and pack totals; old wording predates multi-cell support.",
+                    "baselineReview": {
+                        "sourceSignature": "0339dd0dee7f5892ae4d1cf7bb144f681151db6305f9cdf4338d41e8f91a9584",
+                        "translationSignature": "0a7f8a1faa6d8d8688f0f7efae6629231143bccb87806206c738d3b1637c1211",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.batteryVoltage",
+            "sourceText": "Battery voltage",
+            "sourceSignature": "13c78033f01d032565e518ef21904132f119b296218b571944dfc129a2051919",
+            "targets": {
+                "es": {
+                    "before": "Voltaje de la batería",
+                    "after": "Voltaje de la batería",
+                    "baselineSignature": "c5b9039cc38c713ce32a6c3a57ad3de46b3cfaa52e8e4cf59776fe3dbe96b4a3",
+                    "finalSignature": "c5b9039cc38c713ce32a6c3a57ad3de46b3cfaa52e8e4cf59776fe3dbe96b4a3",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "13c78033f01d032565e518ef21904132f119b296218b571944dfc129a2051919",
+                        "translationSignature": "c5b9039cc38c713ce32a6c3a57ad3de46b3cfaa52e8e4cf59776fe3dbe96b4a3",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Voltaje de la batería",
+                    "after": "Voltaje de la batería",
+                    "baselineSignature": "c5b9039cc38c713ce32a6c3a57ad3de46b3cfaa52e8e4cf59776fe3dbe96b4a3",
+                    "finalSignature": "c5b9039cc38c713ce32a6c3a57ad3de46b3cfaa52e8e4cf59776fe3dbe96b4a3",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "13c78033f01d032565e518ef21904132f119b296218b571944dfc129a2051919",
+                        "translationSignature": "c5b9039cc38c713ce32a6c3a57ad3de46b3cfaa52e8e4cf59776fe3dbe96b4a3",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.boardInputProfile",
+            "sourceText": "Board input profile",
+            "sourceSignature": "95ef5008bc0b608086b54afe3ef19aa87647efc878348e5ab04f785eb76eb356",
+            "targets": {
+                "es": {
+                    "before": "Perfil de entrada de la placa",
+                    "after": "Perfil de entrada de la placa",
+                    "baselineSignature": "3091e0d1e42531f1ad7f1f91e5139d65a98fff465774e6de2737310424e1da3e",
+                    "finalSignature": "3091e0d1e42531f1ad7f1f91e5139d65a98fff465774e6de2737310424e1da3e",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "95ef5008bc0b608086b54afe3ef19aa87647efc878348e5ab04f785eb76eb356",
+                        "translationSignature": "3091e0d1e42531f1ad7f1f91e5139d65a98fff465774e6de2737310424e1da3e",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Perfil de entrada de la placa",
+                    "after": "Perfil de entrada de la placa",
+                    "baselineSignature": "3091e0d1e42531f1ad7f1f91e5139d65a98fff465774e6de2737310424e1da3e",
+                    "finalSignature": "3091e0d1e42531f1ad7f1f91e5139d65a98fff465774e6de2737310424e1da3e",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "95ef5008bc0b608086b54afe3ef19aa87647efc878348e5ab04f785eb76eb356",
+                        "translationSignature": "3091e0d1e42531f1ad7f1f91e5139d65a98fff465774e6de2737310424e1da3e",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.bypass",
+            "sourceText": "Bypass",
+            "sourceSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+            "targets": {
+                "es": {
+                    "before": "Bypass",
+                    "after": "Bypass",
+                    "baselineSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                    "finalSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                        "translationSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Bypass",
+                    "after": "Bypass",
+                    "baselineSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                    "finalSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                        "translationSignature": "742bb19db1b76ea26d01df1d4b40d377debf0164332482b214850fc333191289",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.cRating",
+            "sourceText": "C rating",
+            "sourceSignature": "0339eb5ae848beecd94a4f4ec3f839e5098d2df7f22812b670098a5fdc5b06d6",
+            "targets": {
+                "es": {
+                    "before": "calificación C",
+                    "after": "Tasa C de descarga",
+                    "baselineSignature": "102537ea2c444934cf9a247ef93f1abdb59c0a011096aa09964b13abd0804fe2",
+                    "finalSignature": "9329a103e343bfae03576a8e5f5435ec06f7e9c9fb31a39de2f22c9e186ec3e0",
+                    "disposition": "wording-improvement",
+                    "rationale": "Name the discharge C rate explicitly rather than a generic rating.",
+                    "baselineReview": {
+                        "sourceSignature": "0339eb5ae848beecd94a4f4ec3f839e5098d2df7f22812b670098a5fdc5b06d6",
+                        "translationSignature": "102537ea2c444934cf9a247ef93f1abdb59c0a011096aa09964b13abd0804fe2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Tasa C de descarga",
+                    "after": "Tasa C de descarga",
+                    "baselineSignature": "9329a103e343bfae03576a8e5f5435ec06f7e9c9fb31a39de2f22c9e186ec3e0",
+                    "finalSignature": "9329a103e343bfae03576a8e5f5435ec06f7e9c9fb31a39de2f22c9e186ec3e0",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "0339eb5ae848beecd94a4f4ec3f839e5098d2df7f22812b670098a5fdc5b06d6",
+                        "translationSignature": "9329a103e343bfae03576a8e5f5435ec06f7e9c9fb31a39de2f22c9e186ec3e0",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.calculating",
+            "sourceText": "Calculating…",
+            "sourceSignature": "0fe7573e6725bd99853e5c70b48f83a829de90fe2f36d8cced1b9cbdea2b9daf",
+            "targets": {
+                "es": {
+                    "before": "Calculando…",
+                    "after": "Calculando…",
+                    "baselineSignature": "a8fa67688aca4c954c63e3ae57c9efc67f726145c953183ebdc9672127420d40",
+                    "finalSignature": "a8fa67688aca4c954c63e3ae57c9efc67f726145c953183ebdc9672127420d40",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "0fe7573e6725bd99853e5c70b48f83a829de90fe2f36d8cced1b9cbdea2b9daf",
+                        "translationSignature": "a8fa67688aca4c954c63e3ae57c9efc67f726145c953183ebdc9672127420d40",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Calculando…",
+                    "after": "Calculando…",
+                    "baselineSignature": "a8fa67688aca4c954c63e3ae57c9efc67f726145c953183ebdc9672127420d40",
+                    "finalSignature": "a8fa67688aca4c954c63e3ae57c9efc67f726145c953183ebdc9672127420d40",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "0fe7573e6725bd99853e5c70b48f83a829de90fe2f36d8cced1b9cbdea2b9daf",
+                        "translationSignature": "a8fa67688aca4c954c63e3ae57c9efc67f726145c953183ebdc9672127420d40",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.capacity",
+            "sourceText": "Capacity",
+            "sourceSignature": "4cda4a81bf677069d96c2e07e20ffb08eb43f691d697e418549cb60e430d6d5e",
+            "targets": {
+                "es": {
+                    "before": "Capacidad",
+                    "after": "Capacidad",
+                    "baselineSignature": "13211a3bd02b823eaabc91da65ba8ec132d99c4bf2ef5c34d09a89e0371504f9",
+                    "finalSignature": "13211a3bd02b823eaabc91da65ba8ec132d99c4bf2ef5c34d09a89e0371504f9",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "4cda4a81bf677069d96c2e07e20ffb08eb43f691d697e418549cb60e430d6d5e",
+                        "translationSignature": "13211a3bd02b823eaabc91da65ba8ec132d99c4bf2ef5c34d09a89e0371504f9",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Capacidad",
+                    "after": "Capacidad",
+                    "baselineSignature": "13211a3bd02b823eaabc91da65ba8ec132d99c4bf2ef5c34d09a89e0371504f9",
+                    "finalSignature": "13211a3bd02b823eaabc91da65ba8ec132d99c4bf2ef5c34d09a89e0371504f9",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "4cda4a81bf677069d96c2e07e20ffb08eb43f691d697e418549cb60e430d6d5e",
+                        "translationSignature": "13211a3bd02b823eaabc91da65ba8ec132d99c4bf2ef5c34d09a89e0371504f9",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.caution",
+            "sourceText": "Less than 20% current headroom remains.",
+            "sourceSignature": "e433705a6190347d169e6ccf3a34566e92401075d1b034698eaa504f55747e99",
+            "targets": {
+                "es": {
+                    "before": "Queda menos del 20 % del margen de corriente.",
+                    "after": "Queda menos del 20 % del margen de corriente.",
+                    "baselineSignature": "f83759f69176fb62e89c3d5e36e5b958f1361f64f9b0273b7f75b152c75c6b17",
+                    "finalSignature": "f83759f69176fb62e89c3d5e36e5b958f1361f64f9b0273b7f75b152c75c6b17",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "e433705a6190347d169e6ccf3a34566e92401075d1b034698eaa504f55747e99",
+                        "translationSignature": "f83759f69176fb62e89c3d5e36e5b958f1361f64f9b0273b7f75b152c75c6b17",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Queda menos del 20 % de margen de corriente.",
+                    "after": "Queda menos del 20 % de margen de corriente.",
+                    "baselineSignature": "f946f30ffc4c759ba25389c8b32d2e2ef4ed405f353b3f21d5ca2445d836f51f",
+                    "finalSignature": "f946f30ffc4c759ba25389c8b32d2e2ef4ed405f353b3f21d5ca2445d836f51f",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "e433705a6190347d169e6ccf3a34566e92401075d1b034698eaa504f55747e99",
+                        "translationSignature": "f946f30ffc4c759ba25389c8b32d2e2ef4ed405f353b3f21d5ca2445d836f51f",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.cell",
+            "sourceText": "cell",
+            "sourceSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+            "targets": {
+                "es": {
+                    "before": "cell",
+                    "after": "celda",
+                    "baselineSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+                    "finalSignature": "08d0b03cd9807c09b9f6ce169e052d5d5001fb28681e87aed4205ab4f30a44c6",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+                        "translationSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "cell",
+                    "after": "celda",
+                    "baselineSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+                    "finalSignature": "08d0b03cd9807c09b9f6ce169e052d5d5001fb28681e87aed4205ab4f30a44c6",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+                        "translationSignature": "269caf5acdd2e706141277656087564f25523e83cb9f959228cb87b12c8a9641",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.cellSelection",
+            "sourceText": "Cell selection",
+            "sourceSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+            "targets": {
+                "es": {
+                    "before": "Cell selection",
+                    "after": "Selección de celda",
+                    "baselineSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+                    "finalSignature": "af5b5537647a71407253966a6115deb4f6fc2b3edf54a18ffaf52b89b685e11b",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+                        "translationSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Cell selection",
+                    "after": "Selección de celda",
+                    "baselineSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+                    "finalSignature": "af5b5537647a71407253966a6115deb4f6fc2b3edf54a18ffaf52b89b685e11b",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+                        "translationSignature": "a342c45aa9356fe9b12df48ff9d3e114a90f391e98f6ab32a0ca45107008a148",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.cellVoltageNearCutoff",
+            "sourceText": "Cell voltage near cutoff",
+            "sourceSignature": "b957be3710de6cd1f6726418b7a504f7eb1d15a29c4ad54e90be32ffacbc9723",
+            "targets": {
+                "es": {
+                    "before": "Voltaje de la celda cerca del corte",
+                    "after": "Voltaje de la celda cerca del corte",
+                    "baselineSignature": "44ff462c063ea90b1285ae6197e637906c68576cdfd78ad725e25770bf458b61",
+                    "finalSignature": "44ff462c063ea90b1285ae6197e637906c68576cdfd78ad725e25770bf458b61",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "b957be3710de6cd1f6726418b7a504f7eb1d15a29c4ad54e90be32ffacbc9723",
+                        "translationSignature": "44ff462c063ea90b1285ae6197e637906c68576cdfd78ad725e25770bf458b61",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Voltaje de la celda cerca del corte",
+                    "after": "Voltaje de la celda cerca del corte",
+                    "baselineSignature": "44ff462c063ea90b1285ae6197e637906c68576cdfd78ad725e25770bf458b61",
+                    "finalSignature": "44ff462c063ea90b1285ae6197e637906c68576cdfd78ad725e25770bf458b61",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "b957be3710de6cd1f6726418b7a504f7eb1d15a29c4ad54e90be32ffacbc9723",
+                        "translationSignature": "44ff462c063ea90b1285ae6197e637906c68576cdfd78ad725e25770bf458b61",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.cells",
+            "sourceText": "cells",
+            "sourceSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+            "targets": {
+                "es": {
+                    "before": "cells",
+                    "after": "celdas",
+                    "baselineSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+                    "finalSignature": "476cc6fe0ebfe581a4364fcd85a33674f24022db1fc9feacc2410fb9cc52b16e",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+                        "translationSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "cells",
+                    "after": "celdas",
+                    "baselineSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+                    "finalSignature": "476cc6fe0ebfe581a4364fcd85a33674f24022db1fc9feacc2410fb9cc52b16e",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+                        "translationSignature": "15d84821efb590644bc5939223f816f12c2fe3dce696767217d1c94a28271354",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.cellsInSeries",
+            "sourceText": "Cells in series",
+            "sourceSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+            "targets": {
+                "es": {
+                    "before": "Cells in series",
+                    "after": "Celdas en serie",
+                    "baselineSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+                    "finalSignature": "8ce8c5befdad5e40f7495fe7f67c26d8bb5b54db470ff043c8b97944ff8bb71b",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+                        "translationSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Cells in series",
+                    "after": "Celdas en serie",
+                    "baselineSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+                    "finalSignature": "8ce8c5befdad5e40f7495fe7f67c26d8bb5b54db470ff043c8b97944ff8bb71b",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+                        "translationSignature": "fe78705595a350ec33921ff5fc8d384c7870c0ad7487b5ae16fc8dcd63f84c9a",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.continuousRuntime",
+            "sourceText": "Continuous runtime",
+            "sourceSignature": "25dc78d2278bf1ed97a231449791fd719b7cead261e52084d0fac54fede41f54",
+            "targets": {
+                "es": {
+                    "before": "Tiempo de ejecución continuo",
+                    "after": "Autonomía continua",
+                    "baselineSignature": "063b355cdafe75eb4055bea696ac0262166ed09013723f4319e822dec98381a4",
+                    "finalSignature": "8e1b72c3c55bf31d7512d70feccbd8b9f3645e66ea07ef33f40fcc195b63551d",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Use battery operating duration rather than software execution terminology.",
+                    "baselineReview": {
+                        "sourceSignature": "25dc78d2278bf1ed97a231449791fd719b7cead261e52084d0fac54fede41f54",
+                        "translationSignature": "063b355cdafe75eb4055bea696ac0262166ed09013723f4319e822dec98381a4",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Autonomía continua",
+                    "after": "Autonomía continua",
+                    "baselineSignature": "8e1b72c3c55bf31d7512d70feccbd8b9f3645e66ea07ef33f40fcc195b63551d",
+                    "finalSignature": "8e1b72c3c55bf31d7512d70feccbd8b9f3645e66ea07ef33f40fcc195b63551d",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "25dc78d2278bf1ed97a231449791fd719b7cead261e52084d0fac54fede41f54",
+                        "translationSignature": "8e1b72c3c55bf31d7512d70feccbd8b9f3645e66ea07ef33f40fcc195b63551d",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.currentHeadroom",
+            "sourceText": "Current headroom",
+            "sourceSignature": "ca96cd35203e0dc70e40951bcd1294a0b5b1e12a0c72bfa8559f6392942bdf57",
+            "targets": {
+                "es": {
+                    "before": "Margen de corriente",
+                    "after": "Margen de corriente",
+                    "baselineSignature": "8f706172e0481331f4779b864065a0e5e9db79c594a2e7b8ba9dfac347771370",
+                    "finalSignature": "8f706172e0481331f4779b864065a0e5e9db79c594a2e7b8ba9dfac347771370",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "ca96cd35203e0dc70e40951bcd1294a0b5b1e12a0c72bfa8559f6392942bdf57",
+                        "translationSignature": "8f706172e0481331f4779b864065a0e5e9db79c594a2e7b8ba9dfac347771370",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Margen de corriente",
+                    "after": "Margen de corriente",
+                    "baselineSignature": "8f706172e0481331f4779b864065a0e5e9db79c594a2e7b8ba9dfac347771370",
+                    "finalSignature": "8f706172e0481331f4779b864065a0e5e9db79c594a2e7b8ba9dfac347771370",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "ca96cd35203e0dc70e40951bcd1294a0b5b1e12a0c72bfa8559f6392942bdf57",
+                        "translationSignature": "8f706172e0481331f4779b864065a0e5e9db79c594a2e7b8ba9dfac347771370",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.currentLabel",
+            "sourceText": "Current",
+            "sourceSignature": "78277df17d1e761a8e9adb93d46459803fc856df29753a5ac7c3049510f28964",
+            "targets": {
+                "es": {
+                    "before": "Corriente",
+                    "after": "Corriente",
+                    "baselineSignature": "14e9572c7df53aa68500e1ad9febc60bbd283b85f50b1097dccae22b555a66df",
+                    "finalSignature": "14e9572c7df53aa68500e1ad9febc60bbd283b85f50b1097dccae22b555a66df",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "78277df17d1e761a8e9adb93d46459803fc856df29753a5ac7c3049510f28964",
+                        "translationSignature": "14e9572c7df53aa68500e1ad9febc60bbd283b85f50b1097dccae22b555a66df",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Corriente",
+                    "after": "Corriente",
+                    "baselineSignature": "14e9572c7df53aa68500e1ad9febc60bbd283b85f50b1097dccae22b555a66df",
+                    "finalSignature": "14e9572c7df53aa68500e1ad9febc60bbd283b85f50b1097dccae22b555a66df",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "78277df17d1e761a8e9adb93d46459803fc856df29753a5ac7c3049510f28964",
+                        "translationSignature": "14e9572c7df53aa68500e1ad9febc60bbd283b85f50b1097dccae22b555a66df",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.currentPerCell",
+            "sourceText": "Estimated current per cell",
+            "sourceSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+            "targets": {
+                "es": {
+                    "before": "Estimated current per cell",
+                    "after": "Corriente estimada por celda",
+                    "baselineSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+                    "finalSignature": "d4297024c396dc4ef4619a206b924c633ea3be1d60cba64fdab90d95e9615208",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+                        "translationSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Estimated current per cell",
+                    "after": "Corriente estimada por celda",
+                    "baselineSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+                    "finalSignature": "d4297024c396dc4ef4619a206b924c633ea3be1d60cba64fdab90d95e9615208",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+                        "translationSignature": "59b18842ab1e4d1f9b2b1939b72ddfd243e78565863e0f52463eeeb13cf2973f",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.currentRegulated",
+            "sourceText": "Current regulated",
+            "sourceSignature": "5c9e447bac55fe394e3f3cdfd1c35ac7c7316ce4489619485c47b811b0aac8bb",
+            "targets": {
+                "es": {
+                    "before": "Corriente regulada",
+                    "after": "Corriente regulada",
+                    "baselineSignature": "775cee3cefce90fd3058f18de0f8000964b3b75a2fb8be357787fcbb4a859696",
+                    "finalSignature": "775cee3cefce90fd3058f18de0f8000964b3b75a2fb8be357787fcbb4a859696",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "5c9e447bac55fe394e3f3cdfd1c35ac7c7316ce4489619485c47b811b0aac8bb",
+                        "translationSignature": "775cee3cefce90fd3058f18de0f8000964b3b75a2fb8be357787fcbb4a859696",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Corriente regulada",
+                    "after": "Corriente regulada",
+                    "baselineSignature": "775cee3cefce90fd3058f18de0f8000964b3b75a2fb8be357787fcbb4a859696",
+                    "finalSignature": "775cee3cefce90fd3058f18de0f8000964b3b75a2fb8be357787fcbb4a859696",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "5c9e447bac55fe394e3f3cdfd1c35ac7c7316ce4489619485c47b811b0aac8bb",
+                        "translationSignature": "775cee3cefce90fd3058f18de0f8000964b3b75a2fb8be357787fcbb4a859696",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.customBattery",
+            "sourceText": "Custom battery",
+            "sourceSignature": "bd489c580b323b2344127cdf26496640d482dfc2c726e70534c1c5920450d1c5",
+            "targets": {
+                "es": {
+                    "before": "Batería personalizada",
+                    "after": "Batería personalizada",
+                    "baselineSignature": "3b03afab73f4a93d4e29b82604f3e72d26b5ba3afc5d6467511d084cb317a724",
+                    "finalSignature": "3b03afab73f4a93d4e29b82604f3e72d26b5ba3afc5d6467511d084cb317a724",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "bd489c580b323b2344127cdf26496640d482dfc2c726e70534c1c5920450d1c5",
+                        "translationSignature": "3b03afab73f4a93d4e29b82604f3e72d26b5ba3afc5d6467511d084cb317a724",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Batería personalizada",
+                    "after": "Batería personalizada",
+                    "baselineSignature": "3b03afab73f4a93d4e29b82604f3e72d26b5ba3afc5d6467511d084cb317a724",
+                    "finalSignature": "3b03afab73f4a93d4e29b82604f3e72d26b5ba3afc5d6467511d084cb317a724",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "bd489c580b323b2344127cdf26496640d482dfc2c726e70534c1c5920450d1c5",
+                        "translationSignature": "3b03afab73f4a93d4e29b82604f3e72d26b5ba3afc5d6467511d084cb317a724",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.customConfiguration",
+            "sourceText": "Custom configuration",
+            "sourceSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+            "targets": {
+                "es": {
+                    "before": "Custom configuration",
+                    "after": "Configuración personalizada",
+                    "baselineSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+                    "finalSignature": "02945b05ecbb71f27226e24c44574270e99af978981bb1d6e11eed0b3e8c0cee",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+                        "translationSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Custom configuration",
+                    "after": "Configuración personalizada",
+                    "baselineSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+                    "finalSignature": "02945b05ecbb71f27226e24c44574270e99af978981bb1d6e11eed0b3e8c0cee",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+                        "translationSignature": "4fa92ed037ec01084453413af4fbb1cfd535410c557d493f5767856cea34b5d5",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.customValues",
+            "sourceText": "Custom values",
+            "sourceSignature": "7f060057ada3bd9c5ad0714ad770674c1734f09142856e0afc8136b734c28838",
+            "targets": {
+                "es": {
+                    "before": "Valores personalizados",
+                    "after": "Valores personalizados",
+                    "baselineSignature": "6b11f2fbff4983b133138f0366db047977141f863de3b3c2fc386f4b5999a176",
+                    "finalSignature": "6b11f2fbff4983b133138f0366db047977141f863de3b3c2fc386f4b5999a176",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "7f060057ada3bd9c5ad0714ad770674c1734f09142856e0afc8136b734c28838",
+                        "translationSignature": "6b11f2fbff4983b133138f0366db047977141f863de3b3c2fc386f4b5999a176",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Valores personalizados",
+                    "after": "Valores personalizados",
+                    "baselineSignature": "6b11f2fbff4983b133138f0366db047977141f863de3b3c2fc386f4b5999a176",
+                    "finalSignature": "6b11f2fbff4983b133138f0366db047977141f863de3b3c2fc386f4b5999a176",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "7f060057ada3bd9c5ad0714ad770674c1734f09142856e0afc8136b734c28838",
+                        "translationSignature": "6b11f2fbff4983b133138f0366db047977141f863de3b3c2fc386f4b5999a176",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.danger",
+            "sourceText": "The estimated drain exceeds the effective battery limit.",
+            "sourceSignature": "ee406fd81d3b4d3cb3c1d70b0869b1757eac648d2bb9daed1ec460a92fcb5e7d",
+            "targets": {
+                "es": {
+                    "before": "El consumo estimado supera el límite efectivo de la batería.",
+                    "after": "El consumo estimado supera el límite efectivo de la batería.",
+                    "baselineSignature": "21f36e4cd1eec392f2b22c21af1db760deb381e6aca60524e9d1b7d4f1a740c2",
+                    "finalSignature": "21f36e4cd1eec392f2b22c21af1db760deb381e6aca60524e9d1b7d4f1a740c2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "ee406fd81d3b4d3cb3c1d70b0869b1757eac648d2bb9daed1ec460a92fcb5e7d",
+                        "translationSignature": "21f36e4cd1eec392f2b22c21af1db760deb381e6aca60524e9d1b7d4f1a740c2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "La corriente de descarga estimada supera el límite efectivo de la batería.",
+                    "after": "La corriente de descarga estimada supera el límite efectivo de la batería.",
+                    "baselineSignature": "6bb59994f943c22c6ab54e3648e73d3cd5b16716d3b49a908ea941c0aa9787e5",
+                    "finalSignature": "6bb59994f943c22c6ab54e3648e73d3cd5b16716d3b49a908ea941c0aa9787e5",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "ee406fd81d3b4d3cb3c1d70b0869b1757eac648d2bb9daed1ec460a92fcb5e7d",
+                        "translationSignature": "6bb59994f943c22c6ab54e3648e73d3cd5b16716d3b49a908ea941c0aa9787e5",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.description",
+            "sourceText": "Estimate atomizer output, battery drain, and available current headroom for regulated and unregulated mods.",
+            "sourceSignature": "d8d90fb986a7a03301cc4f64eec7eaf855edf04efc54d77a7c9ed271e9ff1d49",
+            "targets": {
+                "es": {
+                    "before": "Calcule la salida del atomizador, el consumo de la batería y el margen de corriente disponible para mods regulados y no regulados.",
+                    "after": "Calcule la salida del atomizador, el consumo de la batería y el margen de corriente disponible para mods regulados y no regulados.",
+                    "baselineSignature": "aa2a245dd4df69e784a3faa6f47ed6380d47041d3ce01d9cda9cf1fb3a7f4556",
+                    "finalSignature": "aa2a245dd4df69e784a3faa6f47ed6380d47041d3ce01d9cda9cf1fb3a7f4556",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d8d90fb986a7a03301cc4f64eec7eaf855edf04efc54d77a7c9ed271e9ff1d49",
+                        "translationSignature": "aa2a245dd4df69e784a3faa6f47ed6380d47041d3ce01d9cda9cf1fb3a7f4556",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Estima la potencia de salida del atomizador, el consumo de batería y el margen de corriente disponible para mods regulados y no regulados.",
+                    "after": "Estima la potencia de salida del atomizador, el consumo de batería y el margen de corriente disponible para mods regulados y no regulados.",
+                    "baselineSignature": "60043e34f4dea32f35b96e3b475bf90b9bda298d7b80e3bffd03489a2af620af",
+                    "finalSignature": "60043e34f4dea32f35b96e3b475bf90b9bda298d7b80e3bffd03489a2af620af",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d8d90fb986a7a03301cc4f64eec7eaf855edf04efc54d77a7c9ed271e9ff1d49",
+                        "translationSignature": "60043e34f4dea32f35b96e3b475bf90b9bda298d7b80e3bffd03489a2af620af",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.detailsBattery",
+            "sourceText": "Details about this battery",
+            "sourceSignature": "c43fe439fb183d60caade389d429fd4f4ad5d97b6ee7e7a079f7713bc6885014",
+            "targets": {
+                "es": {
+                    "before": "Detalles sobre esta batería",
+                    "after": "Detalles sobre esta batería",
+                    "baselineSignature": "ff17632b6d482516057d4aa16a00ab1f9d59bcc808bb70f99437731d709246ca",
+                    "finalSignature": "ff17632b6d482516057d4aa16a00ab1f9d59bcc808bb70f99437731d709246ca",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c43fe439fb183d60caade389d429fd4f4ad5d97b6ee7e7a079f7713bc6885014",
+                        "translationSignature": "ff17632b6d482516057d4aa16a00ab1f9d59bcc808bb70f99437731d709246ca",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Detalles sobre esta batería",
+                    "after": "Detalles sobre esta batería",
+                    "baselineSignature": "ff17632b6d482516057d4aa16a00ab1f9d59bcc808bb70f99437731d709246ca",
+                    "finalSignature": "ff17632b6d482516057d4aa16a00ab1f9d59bcc808bb70f99437731d709246ca",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c43fe439fb183d60caade389d429fd4f4ad5d97b6ee7e7a079f7713bc6885014",
+                        "translationSignature": "ff17632b6d482516057d4aa16a00ab1f9d59bcc808bb70f99437731d709246ca",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.device",
+            "sourceText": "Device",
+            "sourceSignature": "121035e41b304cd46c4a6142238a4ee28086d4c4513ccbd1e733eb152e1892f7",
+            "targets": {
+                "es": {
+                    "before": "Dispositivo",
+                    "after": "Dispositivo",
+                    "baselineSignature": "c765bc3f17b8b49352c21248c06fdb680c1d7c92a2a34eedd7d7ce25fff3b894",
+                    "finalSignature": "c765bc3f17b8b49352c21248c06fdb680c1d7c92a2a34eedd7d7ce25fff3b894",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "121035e41b304cd46c4a6142238a4ee28086d4c4513ccbd1e733eb152e1892f7",
+                        "translationSignature": "c765bc3f17b8b49352c21248c06fdb680c1d7c92a2a34eedd7d7ce25fff3b894",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Dispositivo",
+                    "after": "Dispositivo",
+                    "baselineSignature": "c765bc3f17b8b49352c21248c06fdb680c1d7c92a2a34eedd7d7ce25fff3b894",
+                    "finalSignature": "c765bc3f17b8b49352c21248c06fdb680c1d7c92a2a34eedd7d7ce25fff3b894",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "121035e41b304cd46c4a6142238a4ee28086d4c4513ccbd1e733eb152e1892f7",
+                        "translationSignature": "c765bc3f17b8b49352c21248c06fdb680c1d7c92a2a34eedd7d7ce25fff3b894",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.deviceBatterySetup",
+            "sourceText": "Device battery setup",
+            "sourceSignature": "6a01de16b026918100b3a945395fe600025fb8534875942bf50d8599a6638937",
+            "targets": {
+                "es": {
+                    "before": "Configuración de batería del dispositivo",
+                    "after": "Configuración de batería del dispositivo",
+                    "baselineSignature": "b8971a3017284449692d60ca2537eae8e8944c367238c77e91f403ca6f192ce7",
+                    "finalSignature": "b8971a3017284449692d60ca2537eae8e8944c367238c77e91f403ca6f192ce7",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "6a01de16b026918100b3a945395fe600025fb8534875942bf50d8599a6638937",
+                        "translationSignature": "b8971a3017284449692d60ca2537eae8e8944c367238c77e91f403ca6f192ce7",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Configuración de batería del dispositivo",
+                    "after": "Configuración de batería del dispositivo",
+                    "baselineSignature": "b8971a3017284449692d60ca2537eae8e8944c367238c77e91f403ca6f192ce7",
+                    "finalSignature": "b8971a3017284449692d60ca2537eae8e8944c367238c77e91f403ca6f192ce7",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "6a01de16b026918100b3a945395fe600025fb8534875942bf50d8599a6638937",
+                        "translationSignature": "b8971a3017284449692d60ca2537eae8e8944c367238c77e91f403ca6f192ce7",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.effectiveMaximumCurrent",
+            "sourceText": "Effective maximum current",
+            "sourceSignature": "02ce1111831ee1e1e6bdbf6f5055b0854a1f2594e16b109b0b54784b92e42e00",
+            "targets": {
+                "es": {
+                    "before": "Corriente máxima efectiva",
+                    "after": "Corriente máxima efectiva",
+                    "baselineSignature": "c833ad11cbd42a4ec8058cac363c676d7e1d571a0cb3d439ab1c9d9100d67094",
+                    "finalSignature": "c833ad11cbd42a4ec8058cac363c676d7e1d571a0cb3d439ab1c9d9100d67094",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "02ce1111831ee1e1e6bdbf6f5055b0854a1f2594e16b109b0b54784b92e42e00",
+                        "translationSignature": "c833ad11cbd42a4ec8058cac363c676d7e1d571a0cb3d439ab1c9d9100d67094",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Corriente máxima efectiva",
+                    "after": "Corriente máxima efectiva",
+                    "baselineSignature": "c833ad11cbd42a4ec8058cac363c676d7e1d571a0cb3d439ab1c9d9100d67094",
+                    "finalSignature": "c833ad11cbd42a4ec8058cac363c676d7e1d571a0cb3d439ab1c9d9100d67094",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "02ce1111831ee1e1e6bdbf6f5055b0854a1f2594e16b109b0b54784b92e42e00",
+                        "translationSignature": "c833ad11cbd42a4ec8058cac363c676d7e1d571a0cb3d439ab1c9d9100d67094",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.efficiency",
+            "sourceText": "Efficiency",
+            "sourceSignature": "3007f19edcddf1a205abd5363fb2ad9185d6584ed2eb55e5e9be5f6c295111b5",
+            "targets": {
+                "es": {
+                    "before": "Eficiencia",
+                    "after": "Eficiencia",
+                    "baselineSignature": "1705bf7b41e12c981559a9c58535deff3a153b6e3b5faf3aa73047e6a3f9fac8",
+                    "finalSignature": "1705bf7b41e12c981559a9c58535deff3a153b6e3b5faf3aa73047e6a3f9fac8",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "3007f19edcddf1a205abd5363fb2ad9185d6584ed2eb55e5e9be5f6c295111b5",
+                        "translationSignature": "1705bf7b41e12c981559a9c58535deff3a153b6e3b5faf3aa73047e6a3f9fac8",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Eficiencia",
+                    "after": "Eficiencia",
+                    "baselineSignature": "1705bf7b41e12c981559a9c58535deff3a153b6e3b5faf3aa73047e6a3f9fac8",
+                    "finalSignature": "1705bf7b41e12c981559a9c58535deff3a153b6e3b5faf3aa73047e6a3f9fac8",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "3007f19edcddf1a205abd5363fb2ad9185d6584ed2eb55e5e9be5f6c295111b5",
+                        "translationSignature": "1705bf7b41e12c981559a9c58535deff3a153b6e3b5faf3aa73047e6a3f9fac8",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.enterValue",
+            "sourceText": "Enter a value for",
+            "sourceSignature": "d285b339544de030a21f32bbdc419bda89c2c14e4fe02e8bcb61d58f006b6aa8",
+            "targets": {
+                "es": {
+                    "before": "Introduzca un valor para",
+                    "after": "Introduzca un valor para",
+                    "baselineSignature": "0eeb3cf3418d582aba6f614a61530dbb440a57fec27518dc5f1e782183203af2",
+                    "finalSignature": "0eeb3cf3418d582aba6f614a61530dbb440a57fec27518dc5f1e782183203af2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d285b339544de030a21f32bbdc419bda89c2c14e4fe02e8bcb61d58f006b6aa8",
+                        "translationSignature": "0eeb3cf3418d582aba6f614a61530dbb440a57fec27518dc5f1e782183203af2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Ingresa un valor para",
+                    "after": "Ingresa un valor para",
+                    "baselineSignature": "4775fc6692bc21480624259bfeab3ffbf664b3be604a1f70d92d2c57d22f8c8e",
+                    "finalSignature": "4775fc6692bc21480624259bfeab3ffbf664b3be604a1f70d92d2c57d22f8c8e",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d285b339544de030a21f32bbdc419bda89c2c14e4fe02e8bcb61d58f006b6aa8",
+                        "translationSignature": "4775fc6692bc21480624259bfeab3ffbf664b3be604a1f70d92d2c57d22f8c8e",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.estimatedRuntime",
+            "sourceText": "Estimated runtime",
+            "sourceSignature": "9862bb87c7021e184075691ea4c3b1fc9c0388c9efde01b7fa5155d9b9b62f0a",
+            "targets": {
+                "es": {
+                    "before": "Tiempo de ejecución estimado",
+                    "after": "Autonomía estimada",
+                    "baselineSignature": "dc51b997b6976dd4c07ce60ab8617013967ba092e341378e19ca7976f5c94503",
+                    "finalSignature": "3b0406eaafaa98d99083b02c1ccb66d45754be927234a1b3f41b99ba42a31b82",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Use battery operating duration rather than software execution terminology.",
+                    "baselineReview": {
+                        "sourceSignature": "9862bb87c7021e184075691ea4c3b1fc9c0388c9efde01b7fa5155d9b9b62f0a",
+                        "translationSignature": "dc51b997b6976dd4c07ce60ab8617013967ba092e341378e19ca7976f5c94503",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Autonomía estimada",
+                    "after": "Autonomía estimada",
+                    "baselineSignature": "3b0406eaafaa98d99083b02c1ccb66d45754be927234a1b3f41b99ba42a31b82",
+                    "finalSignature": "3b0406eaafaa98d99083b02c1ccb66d45754be927234a1b3f41b99ba42a31b82",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "9862bb87c7021e184075691ea4c3b1fc9c0388c9efde01b7fa5155d9b9b62f0a",
+                        "translationSignature": "3b0406eaafaa98d99083b02c1ccb66d45754be927234a1b3f41b99ba42a31b82",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.eyebrow",
+            "sourceText": "Battery drain and safety calculator",
+            "sourceSignature": "7989972a48e72607388f9dc92b5cac558b00ce8ec8ac8c220062ec572e1c0692",
+            "targets": {
+                "es": {
+                    "before": "Calculadora de seguridad y consumo de batería",
+                    "after": "Calculadora de seguridad y consumo de batería",
+                    "baselineSignature": "4e47d48a6238c4b7cdeaf79732a3b6966f8dee56619b406afb9695ae2a4e3209",
+                    "finalSignature": "4e47d48a6238c4b7cdeaf79732a3b6966f8dee56619b406afb9695ae2a4e3209",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "7989972a48e72607388f9dc92b5cac558b00ce8ec8ac8c220062ec572e1c0692",
+                        "translationSignature": "4e47d48a6238c4b7cdeaf79732a3b6966f8dee56619b406afb9695ae2a4e3209",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Calculadora de seguridad y consumo de batería",
+                    "after": "Calculadora de seguridad y consumo de batería",
+                    "baselineSignature": "4e47d48a6238c4b7cdeaf79732a3b6966f8dee56619b406afb9695ae2a4e3209",
+                    "finalSignature": "4e47d48a6238c4b7cdeaf79732a3b6966f8dee56619b406afb9695ae2a4e3209",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "7989972a48e72607388f9dc92b5cac558b00ce8ec8ac8c220062ec572e1c0692",
+                        "translationSignature": "4e47d48a6238c4b7cdeaf79732a3b6966f8dee56619b406afb9695ae2a4e3209",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.manage",
+            "sourceText": "Manage batteries",
+            "sourceSignature": "39ceb499494068f0f2382140e56586c23d84e3d3006028c9db8600823469d0ff",
+            "targets": {
+                "es": {
+                    "before": "Administrar baterías",
+                    "after": "Administrar baterías",
+                    "baselineSignature": "c908b07dadcf149910fc7f7fc84986f6e26fee4bb9dc00eb3270b2782ff45fd6",
+                    "finalSignature": "c908b07dadcf149910fc7f7fc84986f6e26fee4bb9dc00eb3270b2782ff45fd6",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "39ceb499494068f0f2382140e56586c23d84e3d3006028c9db8600823469d0ff",
+                        "translationSignature": "c908b07dadcf149910fc7f7fc84986f6e26fee4bb9dc00eb3270b2782ff45fd6",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Administrar baterías",
+                    "after": "Administrar baterías",
+                    "baselineSignature": "c908b07dadcf149910fc7f7fc84986f6e26fee4bb9dc00eb3270b2782ff45fd6",
+                    "finalSignature": "c908b07dadcf149910fc7f7fc84986f6e26fee4bb9dc00eb3270b2782ff45fd6",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "39ceb499494068f0f2382140e56586c23d84e3d3006028c9db8600823469d0ff",
+                        "translationSignature": "c908b07dadcf149910fc7f7fc84986f6e26fee4bb9dc00eb3270b2782ff45fd6",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.matchedCells",
+            "sourceText": "Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+            "sourceSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+            "targets": {
+                "es": {
+                    "before": "Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                    "after": "Utilice celdas idénticas y emparejadas, con la misma antigüedad y en el mismo estado. El reparto de corriente es idealizado; la celda más débil limita el conjunto de baterías.",
+                    "baselineSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+                    "finalSignature": "e6416ab16123bf68eb7a6c6c71e4ba31aa2ca7bb99ae0b90ff6a6aa109fb2b5e",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+                        "translationSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                    "after": "Usa celdas idénticas y emparejadas, con la misma antigüedad y en el mismo estado. El reparto de corriente es idealizado; la celda más débil limita el conjunto de baterías.",
+                    "baselineSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+                    "finalSignature": "0cdb7e2c2ecac6c99182d7d60ad1b4657e81d031271fabbf7c2381b810ee4bfa",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+                        "translationSignature": "9ba4000f94cf12392b8d965c15dab447471e037e14baa689b7d0b51d1feab1de",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.maximumCurrent",
+            "sourceText": "Maximum current",
+            "sourceSignature": "8c0702688dfde851601de8a2fe07236aaab970bdc57fc8022fe146eeda8aafcc",
+            "targets": {
+                "es": {
+                    "before": "Corriente máxima",
+                    "after": "Corriente máxima",
+                    "baselineSignature": "c1f98c01b55eeb0393386ce13bd8128fbbb7aa4c8090c0c3caed97ff8c1b3a1b",
+                    "finalSignature": "c1f98c01b55eeb0393386ce13bd8128fbbb7aa4c8090c0c3caed97ff8c1b3a1b",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "8c0702688dfde851601de8a2fe07236aaab970bdc57fc8022fe146eeda8aafcc",
+                        "translationSignature": "c1f98c01b55eeb0393386ce13bd8128fbbb7aa4c8090c0c3caed97ff8c1b3a1b",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Corriente máxima",
+                    "after": "Corriente máxima",
+                    "baselineSignature": "c1f98c01b55eeb0393386ce13bd8128fbbb7aa4c8090c0c3caed97ff8c1b3a1b",
+                    "finalSignature": "c1f98c01b55eeb0393386ce13bd8128fbbb7aa4c8090c0c3caed97ff8c1b3a1b",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "8c0702688dfde851601de8a2fe07236aaab970bdc57fc8022fe146eeda8aafcc",
+                        "translationSignature": "c1f98c01b55eeb0393386ce13bd8128fbbb7aa4c8090c0c3caed97ff8c1b3a1b",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.nominalEnergy",
+            "sourceText": "Nominal energy",
+            "sourceSignature": "cd2385847d8c98c972b6c8886e84c3a9c7b0eb21b7283f0e68599684bdf02e40",
+            "targets": {
+                "es": {
+                    "before": "Energía nominal",
+                    "after": "Energía nominal",
+                    "baselineSignature": "6d0c9a676c235a61eaf51446207635ac691f81a5064c85fe70d062d9639f9dfc",
+                    "finalSignature": "6d0c9a676c235a61eaf51446207635ac691f81a5064c85fe70d062d9639f9dfc",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "cd2385847d8c98c972b6c8886e84c3a9c7b0eb21b7283f0e68599684bdf02e40",
+                        "translationSignature": "6d0c9a676c235a61eaf51446207635ac691f81a5064c85fe70d062d9639f9dfc",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Energía nominal",
+                    "after": "Energía nominal",
+                    "baselineSignature": "6d0c9a676c235a61eaf51446207635ac691f81a5064c85fe70d062d9639f9dfc",
+                    "finalSignature": "6d0c9a676c235a61eaf51446207635ac691f81a5064c85fe70d062d9639f9dfc",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "cd2385847d8c98c972b6c8886e84c3a9c7b0eb21b7283f0e68599684bdf02e40",
+                        "translationSignature": "6d0c9a676c235a61eaf51446207635ac691f81a5064c85fe70d062d9639f9dfc",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.nominalVoltage",
+            "sourceText": "Nominal voltage",
+            "sourceSignature": "d23693e87ccf02b0bb3e6ea6de31283bd9853895cfe3b469a1efe19ec3af9d5a",
+            "targets": {
+                "es": {
+                    "before": "tensión nominal",
+                    "after": "tensión nominal",
+                    "baselineSignature": "3f88d4ce764a9e5c3114152791b054848ab60b01ca0b7b84c8304e9740bc5a4e",
+                    "finalSignature": "3f88d4ce764a9e5c3114152791b054848ab60b01ca0b7b84c8304e9740bc5a4e",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d23693e87ccf02b0bb3e6ea6de31283bd9853895cfe3b469a1efe19ec3af9d5a",
+                        "translationSignature": "3f88d4ce764a9e5c3114152791b054848ab60b01ca0b7b84c8304e9740bc5a4e",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Voltaje nominal",
+                    "after": "Voltaje nominal",
+                    "baselineSignature": "47a790afcd64f3f1a091df22069583ffb7866b46ac603e130056ef02be4071c2",
+                    "finalSignature": "47a790afcd64f3f1a091df22069583ffb7866b46ac603e130056ef02be4071c2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "d23693e87ccf02b0bb3e6ea6de31283bd9853895cfe3b469a1efe19ec3af9d5a",
+                        "translationSignature": "47a790afcd64f3f1a091df22069583ffb7866b46ac603e130056ef02be4071c2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.notVerified",
+            "sourceText": "not verified",
+            "sourceSignature": "07efc127429561e1ca73af6fe0984f359e8a3045b008c32f551944c553d20634",
+            "targets": {
+                "es": {
+                    "before": "no verificado",
+                    "after": "no verificado",
+                    "baselineSignature": "3d960afc711c075ec7f81f462a9897128de652a8d644ba087934d4dc8377dad5",
+                    "finalSignature": "3d960afc711c075ec7f81f462a9897128de652a8d644ba087934d4dc8377dad5",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "07efc127429561e1ca73af6fe0984f359e8a3045b008c32f551944c553d20634",
+                        "translationSignature": "3d960afc711c075ec7f81f462a9897128de652a8d644ba087934d4dc8377dad5",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "no verificado",
+                    "after": "no verificado",
+                    "baselineSignature": "3d960afc711c075ec7f81f462a9897128de652a8d644ba087934d4dc8377dad5",
+                    "finalSignature": "3d960afc711c075ec7f81f462a9897128de652a8d644ba087934d4dc8377dad5",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "07efc127429561e1ca73af6fe0984f359e8a3045b008c32f551944c553d20634",
+                        "translationSignature": "3d960afc711c075ec7f81f462a9897128de652a8d644ba087934d4dc8377dad5",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.operatingMode",
+            "sourceText": "Operating mode",
+            "sourceSignature": "93b43f3df1b86c879314d862eaf42481da8130a01431dd151c6826633248370d",
+            "targets": {
+                "es": {
+                    "before": "Modo de funcionamiento",
+                    "after": "Modo de funcionamiento",
+                    "baselineSignature": "953f0943c37ee74ad2a0dd7e68c0f0f5b51e16fc6697089cca9c45c24ff2fdf2",
+                    "finalSignature": "953f0943c37ee74ad2a0dd7e68c0f0f5b51e16fc6697089cca9c45c24ff2fdf2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "93b43f3df1b86c879314d862eaf42481da8130a01431dd151c6826633248370d",
+                        "translationSignature": "953f0943c37ee74ad2a0dd7e68c0f0f5b51e16fc6697089cca9c45c24ff2fdf2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Modo de funcionamiento",
+                    "after": "Modo de funcionamiento",
+                    "baselineSignature": "953f0943c37ee74ad2a0dd7e68c0f0f5b51e16fc6697089cca9c45c24ff2fdf2",
+                    "finalSignature": "953f0943c37ee74ad2a0dd7e68c0f0f5b51e16fc6697089cca9c45c24ff2fdf2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "93b43f3df1b86c879314d862eaf42481da8130a01431dd151c6826633248370d",
+                        "translationSignature": "953f0943c37ee74ad2a0dd7e68c0f0f5b51e16fc6697089cca9c45c24ff2fdf2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.outputPower",
+            "sourceText": "Output power",
+            "sourceSignature": "2c11aee084661fde0b63197d8555252d9463fe034c8e8e2577930c6ae2d434cc",
+            "targets": {
+                "es": {
+                    "before": "Potencia de salida",
+                    "after": "Potencia de salida",
+                    "baselineSignature": "d929b2c8bd7eed8f5a5eccf80f3062843dc829822fb1d1bacf4e5bb0b9d39e9a",
+                    "finalSignature": "d929b2c8bd7eed8f5a5eccf80f3062843dc829822fb1d1bacf4e5bb0b9d39e9a",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "2c11aee084661fde0b63197d8555252d9463fe034c8e8e2577930c6ae2d434cc",
+                        "translationSignature": "d929b2c8bd7eed8f5a5eccf80f3062843dc829822fb1d1bacf4e5bb0b9d39e9a",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Potencia de salida",
+                    "after": "Potencia de salida",
+                    "baselineSignature": "d929b2c8bd7eed8f5a5eccf80f3062843dc829822fb1d1bacf4e5bb0b9d39e9a",
+                    "finalSignature": "d929b2c8bd7eed8f5a5eccf80f3062843dc829822fb1d1bacf4e5bb0b9d39e9a",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "2c11aee084661fde0b63197d8555252d9463fe034c8e8e2577930c6ae2d434cc",
+                        "translationSignature": "d929b2c8bd7eed8f5a5eccf80f3062843dc829822fb1d1bacf4e5bb0b9d39e9a",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.outputVoltage",
+            "sourceText": "Output voltage",
+            "sourceSignature": "01150c39c413edfcb82481ea24267e8c96f3a69aa08b9cbdfb3c32837e59232f",
+            "targets": {
+                "es": {
+                    "before": "voltaje de salida",
+                    "after": "voltaje de salida",
+                    "baselineSignature": "9c1450fc0aca1fba3ee4447e42eaa7542c53d6a7e85c5538f84deffe747f7f8d",
+                    "finalSignature": "9c1450fc0aca1fba3ee4447e42eaa7542c53d6a7e85c5538f84deffe747f7f8d",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "01150c39c413edfcb82481ea24267e8c96f3a69aa08b9cbdfb3c32837e59232f",
+                        "translationSignature": "9c1450fc0aca1fba3ee4447e42eaa7542c53d6a7e85c5538f84deffe747f7f8d",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Voltaje de salida",
+                    "after": "Voltaje de salida",
+                    "baselineSignature": "7192aa09cde3319499276abd842ec3f75536b12facef176084fa871907d729ef",
+                    "finalSignature": "7192aa09cde3319499276abd842ec3f75536b12facef176084fa871907d729ef",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "01150c39c413edfcb82481ea24267e8c96f3a69aa08b9cbdfb3c32837e59232f",
+                        "translationSignature": "7192aa09cde3319499276abd842ec3f75536b12facef176084fa871907d729ef",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.pack",
+            "sourceText": "Battery pack",
+            "sourceSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+            "targets": {
+                "es": {
+                    "before": "Battery pack",
+                    "after": "Conjunto de baterías",
+                    "baselineSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+                    "finalSignature": "ee669798f2a5a8f1f9d51c155e5265ad50c3f821d56c3a20d626ae1e74066966",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+                        "translationSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Battery pack",
+                    "after": "Conjunto de baterías",
+                    "baselineSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+                    "finalSignature": "ee669798f2a5a8f1f9d51c155e5265ad50c3f821d56c3a20d626ae1e74066966",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+                        "translationSignature": "70fce72dab20f5cfd4c24f0c2d9f2b06f69ece955e2d754e7331f2ae5065ab03",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.parallelStrings",
+            "sourceText": "Parallel strings",
+            "sourceSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+            "targets": {
+                "es": {
+                    "before": "Parallel strings",
+                    "after": "Ramas en paralelo",
+                    "baselineSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+                    "finalSignature": "5ec93de061c23e979bdd65173f41bced6d925495aed65382b0c5b41eb6754743",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+                        "translationSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Parallel strings",
+                    "after": "Ramas en paralelo",
+                    "baselineSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+                    "finalSignature": "5ec93de061c23e979bdd65173f41bced6d925495aed65382b0c5b41eb6754743",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+                        "translationSignature": "b28ec4c4eadcb3711560ae1f6e14e50c8ed088ea37ce86f6a8c27dddbb0de223",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.powerLabel",
+            "sourceText": "Power",
+            "sourceSignature": "c3d1ae3485ea7955c47a6293c2876ead6deeaa7d5d2ab2d2a3a8e7de8b57d659",
+            "targets": {
+                "es": {
+                    "before": "Potencia",
+                    "after": "Potencia",
+                    "baselineSignature": "af5e37e7672f75a39f41ed6e219522106df197cc15231aeab13eb85c75e61d31",
+                    "finalSignature": "af5e37e7672f75a39f41ed6e219522106df197cc15231aeab13eb85c75e61d31",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c3d1ae3485ea7955c47a6293c2876ead6deeaa7d5d2ab2d2a3a8e7de8b57d659",
+                        "translationSignature": "af5e37e7672f75a39f41ed6e219522106df197cc15231aeab13eb85c75e61d31",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Potencia",
+                    "after": "Potencia",
+                    "baselineSignature": "af5e37e7672f75a39f41ed6e219522106df197cc15231aeab13eb85c75e61d31",
+                    "finalSignature": "af5e37e7672f75a39f41ed6e219522106df197cc15231aeab13eb85c75e61d31",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c3d1ae3485ea7955c47a6293c2876ead6deeaa7d5d2ab2d2a3a8e7de8b57d659",
+                        "translationSignature": "af5e37e7672f75a39f41ed6e219522106df197cc15231aeab13eb85c75e61d31",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.powerRegulated",
+            "sourceText": "Power regulated mod",
+            "sourceSignature": "b8725abf45374633f146888fa4243f67d8875cd58386b883154e2c1bba9c133a",
+            "targets": {
+                "es": {
+                    "before": "Modificación de potencia regulada",
+                    "after": "Mod con potencia regulada",
+                    "baselineSignature": "ce26cefeb0e448b7468fb890330216750d78a7ed4ff2af0382f2b22ed54663aa",
+                    "finalSignature": "a4fdae8ad7e1a0a054350e5a22e0cad87bb163998900461a8338e57619eb430b",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Mod denotes the device, not a modification; preserve power regulation meaning.",
+                    "baselineReview": {
+                        "sourceSignature": "b8725abf45374633f146888fa4243f67d8875cd58386b883154e2c1bba9c133a",
+                        "translationSignature": "ce26cefeb0e448b7468fb890330216750d78a7ed4ff2af0382f2b22ed54663aa",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Mod con potencia regulada",
+                    "after": "Mod con potencia regulada",
+                    "baselineSignature": "a4fdae8ad7e1a0a054350e5a22e0cad87bb163998900461a8338e57619eb430b",
+                    "finalSignature": "a4fdae8ad7e1a0a054350e5a22e0cad87bb163998900461a8338e57619eb430b",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "b8725abf45374633f146888fa4243f67d8875cd58386b883154e2c1bba9c133a",
+                        "translationSignature": "a4fdae8ad7e1a0a054350e5a22e0cad87bb163998900461a8338e57619eb430b",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.regulatedVoltageHelp",
+            "sourceText": "Use the per-cell voltage under load near your mod's cutoff. 3.2 V is a conservative starting point; use the device specification when available.",
+            "sourceSignature": "4b7da7b99cbbd6995573ef9b5a27b575c4e1a2c998fdb17f80b00b4e7e36d9fc",
+            "targets": {
+                "es": {
+                    "before": "Usa el voltaje por celda bajo carga cerca del corte del mod. 3,2 V es un punto de partida conservador; usa las especificaciones del dispositivo cuando estén disponibles.",
+                    "after": "Usa el voltaje por celda bajo carga cerca del corte del mod. 3,2 V es un punto de partida conservador; usa las especificaciones del dispositivo cuando estén disponibles.",
+                    "baselineSignature": "4a540961f0d8de24c0d0b52582498212288a743312924f32c2081c9ce0313367",
+                    "finalSignature": "4a540961f0d8de24c0d0b52582498212288a743312924f32c2081c9ce0313367",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "4b7da7b99cbbd6995573ef9b5a27b575c4e1a2c998fdb17f80b00b4e7e36d9fc",
+                        "translationSignature": "4a540961f0d8de24c0d0b52582498212288a743312924f32c2081c9ce0313367",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Usa el voltaje por celda bajo carga cerca del corte del mod. 3.2 V es un punto de partida conservador; usa las especificaciones del dispositivo cuando estén disponibles.",
+                    "after": "Usa el voltaje por celda bajo carga cerca del corte del mod. 3.2 V es un punto de partida conservador; usa las especificaciones del dispositivo cuando estén disponibles.",
+                    "baselineSignature": "8ec52a27d60b2b7088fb17c56a990d17cdda528b04db2c797e1ecfcc88ea0ec9",
+                    "finalSignature": "8ec52a27d60b2b7088fb17c56a990d17cdda528b04db2c797e1ecfcc88ea0ec9",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "4b7da7b99cbbd6995573ef9b5a27b575c4e1a2c998fdb17f80b00b4e7e36d9fc",
+                        "translationSignature": "8ec52a27d60b2b7088fb17c56a990d17cdda528b04db2c797e1ecfcc88ea0ec9",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.reset",
+            "sourceText": "Reset",
+            "sourceSignature": "c31fe254ffad24a73c961f4a25a68194e961f072af521f119f98dac7121dcc55",
+            "targets": {
+                "es": {
+                    "before": "Reiniciar",
+                    "after": "Reiniciar",
+                    "baselineSignature": "b5648555243c65949eab8ec1f1127fcc229847dd5fda31fb76ed567159f7cc75",
+                    "finalSignature": "b5648555243c65949eab8ec1f1127fcc229847dd5fda31fb76ed567159f7cc75",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c31fe254ffad24a73c961f4a25a68194e961f072af521f119f98dac7121dcc55",
+                        "translationSignature": "b5648555243c65949eab8ec1f1127fcc229847dd5fda31fb76ed567159f7cc75",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Restablecer",
+                    "after": "Restablecer",
+                    "baselineSignature": "fdcf7e00a4f35450f111d704232d397ff827831f420f9163cc596980cfbc07b6",
+                    "finalSignature": "fdcf7e00a4f35450f111d704232d397ff827831f420f9163cc596980cfbc07b6",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c31fe254ffad24a73c961f4a25a68194e961f072af521f119f98dac7121dcc55",
+                        "translationSignature": "fdcf7e00a4f35450f111d704232d397ff827831f420f9163cc596980cfbc07b6",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.results",
+            "sourceText": "Results",
+            "sourceSignature": "c964022ebbbb8ad3cb73f7f642c7e1cf94dc50df3696a07e57a8450848b76afe",
+            "targets": {
+                "es": {
+                    "before": "Resultados",
+                    "after": "Resultados",
+                    "baselineSignature": "39ab9f3b824fae9fac7d0d32ed0c612c25e12cc0a005dda31582aed88cfccff7",
+                    "finalSignature": "39ab9f3b824fae9fac7d0d32ed0c612c25e12cc0a005dda31582aed88cfccff7",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c964022ebbbb8ad3cb73f7f642c7e1cf94dc50df3696a07e57a8450848b76afe",
+                        "translationSignature": "39ab9f3b824fae9fac7d0d32ed0c612c25e12cc0a005dda31582aed88cfccff7",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Resultados",
+                    "after": "Resultados",
+                    "baselineSignature": "39ab9f3b824fae9fac7d0d32ed0c612c25e12cc0a005dda31582aed88cfccff7",
+                    "finalSignature": "39ab9f3b824fae9fac7d0d32ed0c612c25e12cc0a005dda31582aed88cfccff7",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "c964022ebbbb8ad3cb73f7f642c7e1cf94dc50df3696a07e57a8450848b76afe",
+                        "translationSignature": "39ab9f3b824fae9fac7d0d32ed0c612c25e12cc0a005dda31582aed88cfccff7",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.resultsUseLastValidValues",
+            "sourceText": "Results use the last valid value.",
+            "sourceSignature": "5f7b486fb67d2459158a44d3c8f52de0fdc20a35d0a8d36dec75b9fd20c3296f",
+            "targets": {
+                "es": {
+                    "before": "Los resultados usan el último valor válido.",
+                    "after": "Los resultados usan el último valor válido.",
+                    "baselineSignature": "b1734efad0a39b00a6fed8691bedaaa2714ca6db5ca2543ffee483505e81f7f2",
+                    "finalSignature": "b1734efad0a39b00a6fed8691bedaaa2714ca6db5ca2543ffee483505e81f7f2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "5f7b486fb67d2459158a44d3c8f52de0fdc20a35d0a8d36dec75b9fd20c3296f",
+                        "translationSignature": "b1734efad0a39b00a6fed8691bedaaa2714ca6db5ca2543ffee483505e81f7f2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Los resultados usan el último valor válido.",
+                    "after": "Los resultados usan el último valor válido.",
+                    "baselineSignature": "b1734efad0a39b00a6fed8691bedaaa2714ca6db5ca2543ffee483505e81f7f2",
+                    "finalSignature": "b1734efad0a39b00a6fed8691bedaaa2714ca6db5ca2543ffee483505e81f7f2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "5f7b486fb67d2459158a44d3c8f52de0fdc20a35d0a8d36dec75b9fd20c3296f",
+                        "translationSignature": "b1734efad0a39b00a6fed8691bedaaa2714ca6db5ca2543ffee483505e81f7f2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.runtimeHelp",
+            "sourceText": "This idealized estimate assumes continuous output at the calculated battery power. Real runtime varies with cutoff voltage, voltage sag, cell age, device overhead, and intermittent use.",
+            "sourceSignature": "a1227f1badc265404cba99a73131a0dd4449268ace6762538f0dbbd871d69e0c",
+            "targets": {
+                "es": {
+                    "before": "Esta estimación idealizada supone una producción continua con la potencia de batería calculada. El tiempo de ejecución real varía según el voltaje de corte, la caída de voltaje, la antigüedad de la celda, la sobrecarga del dispositivo y el uso intermitente.",
+                    "after": "Esta estimación idealizada supone que la batería entrega continuamente la potencia calculada. La autonomía real varía según el voltaje de corte, la caída de voltaje, la antigüedad de la celda, el consumo del propio dispositivo y el uso intermitente.",
+                    "baselineSignature": "113ca40f92d159b629fa4ee43054e919d1e0767fa352c4fde128cb8ccdb81785",
+                    "finalSignature": "6ef4dd41ed38800297c6cd984000221ab1ec4cadb3cd22223f8c54d5ea7c672f",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Device overhead is the device’s own energy consumption, not overload; runtime means operating duration.",
+                    "baselineReview": {
+                        "sourceSignature": "a1227f1badc265404cba99a73131a0dd4449268ace6762538f0dbbd871d69e0c",
+                        "translationSignature": "113ca40f92d159b629fa4ee43054e919d1e0767fa352c4fde128cb8ccdb81785",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Esta estimación idealizada supone que la batería entrega continuamente la potencia calculada. La autonomía real varía según el voltaje de corte, la caída de voltaje, el desgaste de la celda, el consumo del dispositivo y el uso intermitente.",
+                    "after": "Esta estimación idealizada supone que la batería entrega continuamente la potencia calculada. La autonomía real varía según el voltaje de corte, la caída de voltaje, el desgaste de la celda, el consumo del dispositivo y el uso intermitente.",
+                    "baselineSignature": "5893af4a5f5dff6c412101f24c0dd51ed70a53f2652bb905036834c192eb88e5",
+                    "finalSignature": "5893af4a5f5dff6c412101f24c0dd51ed70a53f2652bb905036834c192eb88e5",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "a1227f1badc265404cba99a73131a0dd4449268ace6762538f0dbbd871d69e0c",
+                        "translationSignature": "5893af4a5f5dff6c412101f24c0dd51ed70a53f2652bb905036834c192eb88e5",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.safe",
+            "sourceText": "The estimated drain is within the effective battery limit.",
+            "sourceSignature": "79b33d3d23c3dfba7563c83157cc7836b7b5969014290b0de576a1f8bded5b83",
+            "targets": {
+                "es": {
+                    "before": "El consumo estimado está dentro del límite efectivo de la batería.",
+                    "after": "El consumo estimado está dentro del límite efectivo de la batería.",
+                    "baselineSignature": "f1590e7afd3946d4985eb2c41f74630a3a750b47982fed757d969980dead2847",
+                    "finalSignature": "f1590e7afd3946d4985eb2c41f74630a3a750b47982fed757d969980dead2847",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "79b33d3d23c3dfba7563c83157cc7836b7b5969014290b0de576a1f8bded5b83",
+                        "translationSignature": "f1590e7afd3946d4985eb2c41f74630a3a750b47982fed757d969980dead2847",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "La corriente de descarga estimada está dentro del límite efectivo de la batería.",
+                    "after": "La corriente de descarga estimada está dentro del límite efectivo de la batería.",
+                    "baselineSignature": "e69e4cd2bcd9277f0e6bfb1f9866559b60e8ed59bb81e74b160575b80ac87d34",
+                    "finalSignature": "e69e4cd2bcd9277f0e6bfb1f9866559b60e8ed59bb81e74b160575b80ac87d34",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "79b33d3d23c3dfba7563c83157cc7836b7b5969014290b0de576a1f8bded5b83",
+                        "translationSignature": "e69e4cd2bcd9277f0e6bfb1f9866559b60e8ed59bb81e74b160575b80ac87d34",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.selectPreset",
+            "sourceText": "Select a preset here",
+            "sourceSignature": "0d27e7d45d9502128fbc8e26a2fb7e76c4cd3dd0af4a029e7c2c060b70dcf824",
+            "targets": {
+                "es": {
+                    "before": "Seleccione un ajuste preestablecido aquí",
+                    "after": "Seleccione un ajuste preestablecido aquí",
+                    "baselineSignature": "3fa7e4cc1d5e700a6da671c06608fbe6f90308fa2fd94256b2c0e8187ff75808",
+                    "finalSignature": "3fa7e4cc1d5e700a6da671c06608fbe6f90308fa2fd94256b2c0e8187ff75808",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "0d27e7d45d9502128fbc8e26a2fb7e76c4cd3dd0af4a029e7c2c060b70dcf824",
+                        "translationSignature": "3fa7e4cc1d5e700a6da671c06608fbe6f90308fa2fd94256b2c0e8187ff75808",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Selecciona un preajuste aquí",
+                    "after": "Selecciona un preajuste aquí",
+                    "baselineSignature": "4714bc7f1ad4337ef87df613ecafc63a54b9d35a1c17f3b66d9844c7c4de09b8",
+                    "finalSignature": "4714bc7f1ad4337ef87df613ecafc63a54b9d35a1c17f3b66d9844c7c4de09b8",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "0d27e7d45d9502128fbc8e26a2fb7e76c4cd3dd0af4a029e7c2c060b70dcf824",
+                        "translationSignature": "4714bc7f1ad4337ef87df613ecafc63a54b9d35a1c17f3b66d9844c7c4de09b8",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.singleCell",
+            "sourceText": "1S — Single cell",
+            "sourceSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+            "targets": {
+                "es": {
+                    "before": "1S — Single cell",
+                    "after": "1S — Una sola celda",
+                    "baselineSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+                    "finalSignature": "9eb1deec7d553b362f12116c14bc8cf7afd42d3db5ab5db33c2fe887d71627be",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+                        "translationSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "1S — Single cell",
+                    "after": "1S — Una sola celda",
+                    "baselineSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+                    "finalSignature": "9eb1deec7d553b362f12116c14bc8cf7afd42d3db5ab5db33c2fe887d71627be",
+                    "disposition": "translation-defect-corrected",
+                    "rationale": "Replace untranslated English with Spanish while preserving cell topology, quantity and the original safety qualification.",
+                    "baselineReview": {
+                        "sourceSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+                        "translationSignature": "b319b9979ec548953cebffb133cf3d643f9c14f3cc357b46ff4d62eca1e0fd9b",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.title",
+            "sourceText": "Battery drain",
+            "sourceSignature": "9fd094e87f2c9b8dc9411074123f09a408b3a45275faefd3bf1de53148400421",
+            "targets": {
+                "es": {
+                    "before": "Consumo de batería",
+                    "after": "Consumo de batería",
+                    "baselineSignature": "b62be3c77edbf4108d7d2d14ef4dd203e199121fd7a48d2e1183d9467fb19a85",
+                    "finalSignature": "b62be3c77edbf4108d7d2d14ef4dd203e199121fd7a48d2e1183d9467fb19a85",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "9fd094e87f2c9b8dc9411074123f09a408b3a45275faefd3bf1de53148400421",
+                        "translationSignature": "b62be3c77edbf4108d7d2d14ef4dd203e199121fd7a48d2e1183d9467fb19a85",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Consumo de batería",
+                    "after": "Consumo de batería",
+                    "baselineSignature": "b62be3c77edbf4108d7d2d14ef4dd203e199121fd7a48d2e1183d9467fb19a85",
+                    "finalSignature": "b62be3c77edbf4108d7d2d14ef4dd203e199121fd7a48d2e1183d9467fb19a85",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "9fd094e87f2c9b8dc9411074123f09a408b3a45275faefd3bf1de53148400421",
+                        "translationSignature": "b62be3c77edbf4108d7d2d14ef4dd203e199121fd7a48d2e1183d9467fb19a85",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.unregulated",
+            "sourceText": "Unregulated mod",
+            "sourceSignature": "3b522672c9ba10b0d5e177b29f94264c694f7fdd0ad5c8be8a588e9ea487e17d",
+            "targets": {
+                "es": {
+                    "before": "Mod no regulado",
+                    "after": "Mod no regulado",
+                    "baselineSignature": "6ec979f46a7f3a6c5f010d7e014abce585308e0c505acae9b80454564f885247",
+                    "finalSignature": "6ec979f46a7f3a6c5f010d7e014abce585308e0c505acae9b80454564f885247",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "3b522672c9ba10b0d5e177b29f94264c694f7fdd0ad5c8be8a588e9ea487e17d",
+                        "translationSignature": "6ec979f46a7f3a6c5f010d7e014abce585308e0c505acae9b80454564f885247",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Mod no regulado",
+                    "after": "Mod no regulado",
+                    "baselineSignature": "6ec979f46a7f3a6c5f010d7e014abce585308e0c505acae9b80454564f885247",
+                    "finalSignature": "6ec979f46a7f3a6c5f010d7e014abce585308e0c505acae9b80454564f885247",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "3b522672c9ba10b0d5e177b29f94264c694f7fdd0ad5c8be8a588e9ea487e17d",
+                        "translationSignature": "6ec979f46a7f3a6c5f010d7e014abce585308e0c505acae9b80454564f885247",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.unregulatedVoltageHelp",
+            "sourceText": "Use the full-charge battery voltage for the highest-current case. Do not count voltage sag as safety headroom.",
+            "sourceSignature": "ecee5855e4bb8faee58c5d1685e5a5557c8177b29fd6d3e339719e36f4ae7ef7",
+            "targets": {
+                "es": {
+                    "before": "Usa el voltaje de la batería con carga completa para el caso de mayor corriente. No cuentes la caída de voltaje como margen de seguridad.",
+                    "after": "Usa el voltaje de la batería con carga completa para el caso de mayor corriente. No cuentes la caída de voltaje como margen de seguridad.",
+                    "baselineSignature": "174cec412ac11ba96813c4184198b9292e210d21eb6a1df931c6d157d30423e2",
+                    "finalSignature": "174cec412ac11ba96813c4184198b9292e210d21eb6a1df931c6d157d30423e2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "ecee5855e4bb8faee58c5d1685e5a5557c8177b29fd6d3e339719e36f4ae7ef7",
+                        "translationSignature": "174cec412ac11ba96813c4184198b9292e210d21eb6a1df931c6d157d30423e2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Usa el voltaje de la batería con carga completa para el caso de mayor corriente. No cuentes la caída de voltaje como margen de seguridad.",
+                    "after": "Usa el voltaje de la batería con carga completa para el caso de mayor corriente. No cuentes la caída de voltaje como margen de seguridad.",
+                    "baselineSignature": "174cec412ac11ba96813c4184198b9292e210d21eb6a1df931c6d157d30423e2",
+                    "finalSignature": "174cec412ac11ba96813c4184198b9292e210d21eb6a1df931c6d157d30423e2",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "ecee5855e4bb8faee58c5d1685e5a5557c8177b29fd6d3e339719e36f4ae7ef7",
+                        "translationSignature": "174cec412ac11ba96813c4184198b9292e210d21eb6a1df931c6d157d30423e2",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.voltage",
+            "sourceText": "Voltage",
+            "sourceSignature": "835a3e528658f43ad6fc2616f0ef830171e76fd548704a57d8ee7a365f6ae0cc",
+            "targets": {
+                "es": {
+                    "before": "Voltaje",
+                    "after": "Voltaje",
+                    "baselineSignature": "e93112f86a26ff4ab7b52b5e2edfe39484135ce0831897557a96d4da7a292684",
+                    "finalSignature": "e93112f86a26ff4ab7b52b5e2edfe39484135ce0831897557a96d4da7a292684",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "835a3e528658f43ad6fc2616f0ef830171e76fd548704a57d8ee7a365f6ae0cc",
+                        "translationSignature": "e93112f86a26ff4ab7b52b5e2edfe39484135ce0831897557a96d4da7a292684",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Voltaje",
+                    "after": "Voltaje",
+                    "baselineSignature": "e93112f86a26ff4ab7b52b5e2edfe39484135ce0831897557a96d4da7a292684",
+                    "finalSignature": "e93112f86a26ff4ab7b52b5e2edfe39484135ce0831897557a96d4da7a292684",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "835a3e528658f43ad6fc2616f0ef830171e76fd548704a57d8ee7a365f6ae0cc",
+                        "translationSignature": "e93112f86a26ff4ab7b52b5e2edfe39484135ce0831897557a96d4da7a292684",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.voltageLabel",
+            "sourceText": "Voltage",
+            "sourceSignature": "32c3a8bcd28585ba36bde4278e99be152d10a8ff5f1268cafd3a328fb74a9fcd",
+            "targets": {
+                "es": {
+                    "before": "Voltaje",
+                    "after": "Voltaje",
+                    "baselineSignature": "87e4ccc8339897e07a5d0f4d032863ba734de1d910c23a8fdc6d8253243186cf",
+                    "finalSignature": "87e4ccc8339897e07a5d0f4d032863ba734de1d910c23a8fdc6d8253243186cf",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "32c3a8bcd28585ba36bde4278e99be152d10a8ff5f1268cafd3a328fb74a9fcd",
+                        "translationSignature": "87e4ccc8339897e07a5d0f4d032863ba734de1d910c23a8fdc6d8253243186cf",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Voltaje",
+                    "after": "Voltaje",
+                    "baselineSignature": "87e4ccc8339897e07a5d0f4d032863ba734de1d910c23a8fdc6d8253243186cf",
+                    "finalSignature": "87e4ccc8339897e07a5d0f4d032863ba734de1d910c23a8fdc6d8253243186cf",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "32c3a8bcd28585ba36bde4278e99be152d10a8ff5f1268cafd3a328fb74a9fcd",
+                        "translationSignature": "87e4ccc8339897e07a5d0f4d032863ba734de1d910c23a8fdc6d8253243186cf",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "calculators.batt.voltageRegulated",
+            "sourceText": "Voltage regulated mod",
+            "sourceSignature": "87e77e1c94be00bef9b57f73f494e3ee146b5419a59517bad5cafdb29fae55ed",
+            "targets": {
+                "es": {
+                    "before": "Mod regulado por voltaje",
+                    "after": "Mod regulado por voltaje",
+                    "baselineSignature": "737763c6e421fc2d68dca9a2b9539353a1e6604de8795e6edb8f374bde09503d",
+                    "finalSignature": "737763c6e421fc2d68dca9a2b9539353a1e6604de8795e6edb8f374bde09503d",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "87e77e1c94be00bef9b57f73f494e3ee146b5419a59517bad5cafdb29fae55ed",
+                        "translationSignature": "737763c6e421fc2d68dca9a2b9539353a1e6604de8795e6edb8f374bde09503d",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Spanish vaping terminology research"
+                        },
+                        "confidence": "low"
+                    }
+                },
+                "es-419": {
+                    "before": "Mod con voltaje regulado",
+                    "after": "Mod con voltaje regulado",
+                    "baselineSignature": "cbc4598f5af1b3a87b4f11adb75d6b2c4aa4d4845f6389ea6612eebf9ed8c930",
+                    "finalSignature": "cbc4598f5af1b3a87b4f11adb75d6b2c4aa4d4845f6389ea6612eebf9ed8c930",
+                    "disposition": "retained",
+                    "rationale": "Compared with canonical English in battery-page context; no clear meaning defect established. Regional register and punctuation retained.",
+                    "baselineReview": {
+                        "sourceSignature": "87e77e1c94be00bef9b57f73f494e3ee146b5419a59517bad5cafdb29fae55ed",
+                        "translationSignature": "cbc4598f5af1b3a87b4f11adb75d6b2c4aa4d4845f6389ea6612eebf9ed8c930",
+                        "state": "machine",
+                        "provenance": {
+                            "kind": "machine",
+                            "method": "Google Translate machine draft with Latin American Spanish terminology review"
+                        },
+                        "confidence": "low"
+                    }
+                }
+            }
+        }
+    ],
+    "findingGroups": [
+        "Untranslated multi-cell configuration labels and matched-cell help",
+        "Outdated per-cell versus pack input guidance",
+        "European Spanish mod mistranslated as modification",
+        "European Spanish runtime translated as execution time",
+        "European Spanish device overhead mistranslated as overload",
+        "European Spanish generic C rating clarified as discharge rate"
+    ]
+}

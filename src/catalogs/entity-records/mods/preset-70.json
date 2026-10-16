@@ -1,0 +1,30 @@
+{
+    "entityId": "j-well-troca",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-70",
+            "title": "J-Well Troca 30W / 2200mAh / Alesia",
+            "url": "https://atmoskepseis.blogspot.com/2015/05/j-well-troca-30w-2200mah-alesia.html",
+            "limitations": "Exact-model review establishes a dated upper bound only."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated"
+            }
+        ]
+    }
+}

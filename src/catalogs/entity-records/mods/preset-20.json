@@ -1,0 +1,48 @@
+{
+    "entityId": "dicodes-dani-extreme-v2-pipeline-pro-v2",
+    "entityType": "mod",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-20",
+            "title": "Pipeline Pro 2 by Dicodes",
+            "url": "https://www.levapelier.com/en/pipeline-pro-2-par-dicodes/",
+            "limitations": "The combined catalog identity includes Dani Extreme v2 and Pipeline Pro v2; the dated source is for Pipeline Pro 2."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Dani Extreme V2 manual",
+            "url": "https://www.dicodes-mods.com/dani-extreme-v2.html?cid=118&file=files%2Fmanuals%2FDani_Extreme_V2_manual.pdf",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-dicodes-v2-20260824",
+            "title": "Dicodes Dani Extreme V2 manual",
+            "url": "https://manualzz.com/doc/29709975/dicodes-dani-extreme-v2-electronic-cigarette-manual",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18350"
+            },
+            {
+                "format": "18500"
+            },
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

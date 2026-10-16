@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local IIS Web Config Maintenance"
+  short_description: "Maintain local IIS extensionless routes"
+  default_prompt: "Use $local-iis-web-config-maintenance to update and validate the local IIS rewrite configuration for this static site."

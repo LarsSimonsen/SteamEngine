@@ -1,0 +1,31 @@
+{
+    "entityId": "ego-twist",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "eGo Twist variable-voltage battery specifications",
+            "url": "https://www.bestvape.ie/product/ego-battery-varivolt/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 650
+            }
+        ]
+    }
+}

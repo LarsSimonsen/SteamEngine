@@ -1,0 +1,32 @@
+{
+    "entityId": "heatvape-invader-mini",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-48",
+            "title": "Heatvape Invader Mini Review",
+            "url": "https://www.ecigclick.co.uk/heatvape-invader-mini-review/",
+            "limitations": "Exact finished-device review establishes an upper bound; the TC-mode profile is the same device variant, not a separate launch."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

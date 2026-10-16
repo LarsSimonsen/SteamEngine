@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1, "locale": "sv", "cycleId": "sv-20260819T185338518Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English, the complete Swedish locale, prior critique, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review, queue validation, type checking, focused tests, and the production preview build passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Swedish critique found five catalog labels using food, electrical-load, legal-evidence, or literal compound senses." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Swedish human review was performed; corrections remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [{ "id": "sv-catalog-metadata", "translationId": "shared.encyclopediaDetail.breadcrumb", "category": "translation-defect", "severity": "medium", "summary": "Five navigation and research-record labels used unrelated literal senses.", "disposition": "resolved", "evidence": ["The strings label navigation, chart loading, and catalog documentation metadata."], "resolution": "Used idiomatic Swedish UI and catalog terminology." }]
+}

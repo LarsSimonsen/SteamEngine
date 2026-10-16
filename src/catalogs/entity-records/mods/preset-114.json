@@ -1,0 +1,36 @@
+{
+    "entityId": "sigelei-vmax",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Sigelei Legend V2 retailer specification",
+            "url": "https://www.ecig-privee.fr/les-mods-electroniques/264-kit-complet-legend-v2-de-sigelei-370088200702.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18350"
+            },
+            {
+                "format": "18500"
+            },
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

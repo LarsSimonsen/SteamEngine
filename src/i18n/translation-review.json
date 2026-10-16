@@ -6,12 +6,12 @@
             "state": "source"
         },
         "nb": {
-            "state": "reviewed",
+            "state": "machine",
             "reviewFile": "src/i18n/translation-review/nb.json",
             "glossaryFile": "src/i18n/glossaries/nb.json"
         },
         "nn": {
-            "state": "reviewed",
+            "state": "machine",
             "reviewFile": "src/i18n/translation-review/nn.json",
             "glossaryFile": "src/i18n/glossaries/nn.json"
         },
@@ -30,8 +30,13 @@
             "reviewFile": "src/i18n/translation-review/es.json",
             "glossaryFile": "src/i18n/glossaries/es.json"
         },
-        "fr": {
+        "es-419": {
             "state": "machine",
+            "reviewFile": "src/i18n/translation-review/es-419.json",
+            "glossaryFile": "src/i18n/glossaries/es-419.json"
+        },
+        "fr": {
+            "state": "needs-review",
             "reviewFile": "src/i18n/translation-review/fr.json",
             "glossaryFile": "src/i18n/glossaries/fr.json"
         },
@@ -61,7 +66,7 @@
             "glossaryFile": "src/i18n/glossaries/de.json"
         },
         "sv": {
-            "state": "needs-review",
+            "state": "machine",
             "reviewFile": "src/i18n/translation-review/sv.json",
             "glossaryFile": "src/i18n/glossaries/sv.json"
         },
@@ -86,12 +91,12 @@
             "glossaryFile": "src/i18n/glossaries/bn.json"
         },
         "pt": {
-            "state": "needs-review",
+            "state": "machine",
             "reviewFile": "src/i18n/translation-review/pt.json",
             "glossaryFile": "src/i18n/glossaries/pt.json"
         },
         "pt-BR": {
-            "state": "needs-review",
+            "state": "machine",
             "reviewFile": "src/i18n/translation-review/pt-BR.json",
             "glossaryFile": "src/i18n/glossaries/pt-BR.json"
         },
@@ -109,12 +114,27 @@
             "state": "needs-review",
             "reviewFile": "src/i18n/translation-review/el.json",
             "glossaryFile": "src/i18n/glossaries/el.json"
+        },
+        "tr": {
+            "state": "machine",
+            "reviewFile": "src/i18n/translation-review/tr.json",
+            "glossaryFile": "src/i18n/glossaries/tr.json"
+        },
+        "id": {
+            "state": "machine",
+            "reviewFile": "src/i18n/translation-review/id.json",
+            "glossaryFile": "src/i18n/glossaries/id.json"
+        },
+        "fi": {
+            "state": "needs-review",
+            "reviewFile": "src/i18n/translation-review/fi.json",
+            "glossaryFile": "src/i18n/glossaries/fi.json"
         }
     },
     "bundles": {
         "messages": {
             "sourceFile": "src/i18n/messages/en.ts",
-            "sourceSignature": "6534fa739e545cb992c4e49e0ea3a5ad922c555db095bf8e91833735bdb039bc",
+            "sourceSignature": "da485bb4855a34fa869b5df706607c93b64fb7dc18ba05c957f2ed619d9a62e1",
             "files": {
                 "en": "src/i18n/messages/en.ts",
                 "nb": "src/i18n/messages/nb.ts",
@@ -137,7 +157,10 @@
                 "pt-BR": "src/i18n/messages/pt-BR.ts",
                 "ja": "src/i18n/messages/ja.ts",
                 "ko": "src/i18n/messages/ko.ts",
-                "el": "src/i18n/messages/el.ts"
+                "el": "src/i18n/messages/el.ts",
+                "tr": "src/i18n/messages/tr.ts",
+                "id": "src/i18n/messages/id.ts",
+                "fi": "src/i18n/messages/fi.ts"
             }
         },
         "calculator-messages": {
@@ -151,13 +174,13 @@
                 "wirewiz": "src/i18n/calculator-messages/wirewiz/en.ts"
             },
             "sourceSignatures": {
-                "batt": "1d557b7b4ba76c1bd9da1ff51c4bc1e00c9d620c744c46bc316c68efa9fc6760",
+                "batt": "24ca7f0c024635fcc7182688ebc833e693d414ebe76ac8b2430f17843beeedb6",
                 "coil": "8d564fb9b5a1b2b4da0592cdcbde7ba81338dbccf80333e0e9211fc70859ddd4",
                 "converter": "7546fd3019cd410ca9d31e08678f8018c9a034c3c296eb9e4d965c4d4f0118ce",
                 "juice": "a4b6b49685c1b468ddbba38e9ceb938f01357a78097d2b0697f32bf1988d8b29",
                 "modrange": "c23772742a0afb74ec07e79ef0cc3bfcbf9be69a9c74d7cff340f439738dfa03",
                 "tcr": "932c79664bb351d772609f52b068170667db40d01b8e92eab61f26e7752e1cb5",
-                "wirewiz": "282e8147aff6d4676345ad47ec758e22bc4f5f90866232818f709a39b3f0c475"
+                "wirewiz": "f476e2ed2a1625e02dc0442e473e40bd3911f4c9561f2cd6821761a806c6193a"
             },
             "files": {
                 "batt": {
@@ -182,7 +205,10 @@
                     "pt-BR": "src/i18n/calculator-messages/batt/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/batt/ja.ts",
                     "ko": "src/i18n/calculator-messages/batt/ko.ts",
-                    "el": "src/i18n/calculator-messages/batt/el.ts"
+                    "el": "src/i18n/calculator-messages/batt/el.ts",
+                    "tr": "src/i18n/calculator-messages/batt/tr.ts",
+                    "id": "src/i18n/calculator-messages/batt/id.ts",
+                    "fi": "src/i18n/calculator-messages/batt/fi.ts"
                 },
                 "coil": {
                     "en": "src/i18n/calculator-messages/coil/en.ts",
@@ -206,7 +232,10 @@
                     "pt-BR": "src/i18n/calculator-messages/coil/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/coil/ja.ts",
                     "ko": "src/i18n/calculator-messages/coil/ko.ts",
-                    "el": "src/i18n/calculator-messages/coil/el.ts"
+                    "el": "src/i18n/calculator-messages/coil/el.ts",
+                    "tr": "src/i18n/calculator-messages/coil/tr.ts",
+                    "id": "src/i18n/calculator-messages/coil/id.ts",
+                    "fi": "src/i18n/calculator-messages/coil/fi.ts"
                 },
                 "converter": {
                     "en": "src/i18n/calculator-messages/converter/en.ts",
@@ -230,7 +259,10 @@
                     "pt-BR": "src/i18n/calculator-messages/converter/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/converter/ja.ts",
                     "ko": "src/i18n/calculator-messages/converter/ko.ts",
-                    "el": "src/i18n/calculator-messages/converter/el.ts"
+                    "el": "src/i18n/calculator-messages/converter/el.ts",
+                    "tr": "src/i18n/calculator-messages/converter/tr.ts",
+                    "id": "src/i18n/calculator-messages/converter/id.ts",
+                    "fi": "src/i18n/calculator-messages/converter/fi.ts"
                 },
                 "juice": {
                     "en": "src/i18n/calculator-messages/juice/en.ts",
@@ -254,7 +286,10 @@
                     "pt-BR": "src/i18n/calculator-messages/juice/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/juice/ja.ts",
                     "ko": "src/i18n/calculator-messages/juice/ko.ts",
-                    "el": "src/i18n/calculator-messages/juice/el.ts"
+                    "el": "src/i18n/calculator-messages/juice/el.ts",
+                    "tr": "src/i18n/calculator-messages/juice/tr.ts",
+                    "id": "src/i18n/calculator-messages/juice/id.ts",
+                    "fi": "src/i18n/calculator-messages/juice/fi.ts"
                 },
                 "modrange": {
                     "en": "src/i18n/calculator-messages/modrange/en.ts",
@@ -278,7 +313,10 @@
                     "pt-BR": "src/i18n/calculator-messages/modrange/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/modrange/ja.ts",
                     "ko": "src/i18n/calculator-messages/modrange/ko.ts",
-                    "el": "src/i18n/calculator-messages/modrange/el.ts"
+                    "el": "src/i18n/calculator-messages/modrange/el.ts",
+                    "tr": "src/i18n/calculator-messages/modrange/tr.ts",
+                    "id": "src/i18n/calculator-messages/modrange/id.ts",
+                    "fi": "src/i18n/calculator-messages/modrange/fi.ts"
                 },
                 "tcr": {
                     "en": "src/i18n/calculator-messages/tcr/en.ts",
@@ -302,7 +340,10 @@
                     "pt-BR": "src/i18n/calculator-messages/tcr/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/tcr/ja.ts",
                     "ko": "src/i18n/calculator-messages/tcr/ko.ts",
-                    "el": "src/i18n/calculator-messages/tcr/el.ts"
+                    "el": "src/i18n/calculator-messages/tcr/el.ts",
+                    "tr": "src/i18n/calculator-messages/tcr/tr.ts",
+                    "id": "src/i18n/calculator-messages/tcr/id.ts",
+                    "fi": "src/i18n/calculator-messages/tcr/fi.ts"
                 },
                 "wirewiz": {
                     "en": "src/i18n/calculator-messages/wirewiz/en.ts",
@@ -326,13 +367,63 @@
                     "pt-BR": "src/i18n/calculator-messages/wirewiz/pt-BR.ts",
                     "ja": "src/i18n/calculator-messages/wirewiz/ja.ts",
                     "ko": "src/i18n/calculator-messages/wirewiz/ko.ts",
-                    "el": "src/i18n/calculator-messages/wirewiz/el.ts"
+                    "el": "src/i18n/calculator-messages/wirewiz/el.ts",
+                    "tr": "src/i18n/calculator-messages/wirewiz/tr.ts",
+                    "id": "src/i18n/calculator-messages/wirewiz/id.ts",
+                    "fi": "src/i18n/calculator-messages/wirewiz/fi.ts"
+                }
+            }
+        },
+        "comparison-messages": {
+            "sourceFiles": {
+                "batteries": "src/i18n/comparison-messages/batteries/en.ts"
+            },
+            "sourceSignatures": {
+                "batteries": "e7af17e7b060149550c18615c74c16a98ef8a7f616c6c257035d7b29dbb02341"
+            },
+            "files": {
+                "batteries": {
+                    "en": "src/i18n/comparison-messages/batteries/en.ts",
+                    "nb": "src/i18n/comparison-messages/batteries/nb.ts",
+                    "nn": "src/i18n/comparison-messages/batteries/nn.ts",
+                    "zh-Hans": "src/i18n/comparison-messages/batteries/zh-Hans.ts",
+                    "ar": "src/i18n/comparison-messages/batteries/ar.ts",
+                    "es": "src/i18n/comparison-messages/batteries/es.ts",
+                    "fr": "src/i18n/comparison-messages/batteries/fr.ts",
+                    "pl": "src/i18n/comparison-messages/batteries/pl.ts",
+                    "uk": "src/i18n/comparison-messages/batteries/uk.ts",
+                    "it": "src/i18n/comparison-messages/batteries/it.ts",
+                    "vi": "src/i18n/comparison-messages/batteries/vi.ts",
+                    "de": "src/i18n/comparison-messages/batteries/de.ts",
+                    "sv": "src/i18n/comparison-messages/batteries/sv.ts",
+                    "da": "src/i18n/comparison-messages/batteries/da.ts",
+                    "is": "src/i18n/comparison-messages/batteries/is.ts",
+                    "hi": "src/i18n/comparison-messages/batteries/hi.ts",
+                    "bn": "src/i18n/comparison-messages/batteries/bn.ts",
+                    "pt": "src/i18n/comparison-messages/batteries/pt.ts",
+                    "pt-BR": "src/i18n/comparison-messages/batteries/pt-BR.ts",
+                    "ja": "src/i18n/comparison-messages/batteries/ja.ts",
+                    "ko": "src/i18n/comparison-messages/batteries/ko.ts",
+                    "el": "src/i18n/comparison-messages/batteries/el.ts",
+                    "tr": "src/i18n/comparison-messages/batteries/tr.ts",
+                    "id": "src/i18n/comparison-messages/batteries/id.ts",
+                    "fi": "src/i18n/comparison-messages/batteries/fi.ts"
                 }
             }
         },
         "catalog-presentations": {
-            "sourceFile": "src/i18n/catalog-presentations/en.ts",
-            "sourceSignature": "093354b436a6899e0e51ca4ee7462d7a4bd091c2fd99882dbe21f0452f6285c2",
+            "sourceFiles": {
+                "presentations": "src/i18n/catalog-presentations/en.ts",
+                "batteryTextModel": "src/i18n/battery-presentation-text.ts",
+                "materialTextModel": "src/i18n/material-presentation-text.ts",
+                "modTextModel": "src/i18n/mod-presentation-text.ts"
+            },
+            "sourceSignatures": {
+                "presentations": "b85cc04c31ddb47fb9f8c113256c101e5425d8433d6374bc48d7333588a923f3",
+                "batteryTextModel": "bb7ce75803892f03a5c7c29bbb428939fe28f9cccf4cc55b07f4b0dff10c7293",
+                "materialTextModel": "9d385b4e0365d0f75e04b4edfde8ee2e85695f27c13185b9b202325b93e75d35",
+                "modTextModel": "63153f0b1c2b95fbea88d9363dc1b795c2a3e1c34a249f475ecdfe7aa32b4b18"
+            },
             "files": {
                 "en": "src/i18n/catalog-presentations/en.ts",
                 "nb": "src/i18n/catalog-presentations/nb.ts",
@@ -355,7 +446,10 @@
                 "pt-BR": "src/i18n/catalog-presentations/pt-BR.ts",
                 "ja": "src/i18n/catalog-presentations/ja.ts",
                 "ko": "src/i18n/catalog-presentations/ko.ts",
-                "el": "src/i18n/catalog-presentations/el.ts"
+                "el": "src/i18n/catalog-presentations/el.ts",
+                "tr": "src/i18n/catalog-presentations/tr.ts",
+                "id": "src/i18n/catalog-presentations/id.ts",
+                "fi": "src/i18n/catalog-presentations/fi.ts"
             }
         }
     }

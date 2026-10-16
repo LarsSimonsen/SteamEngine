@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "is",
+    "cycleId": "is-20260818T110839377Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Icelandic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Icelandic translation defects in battery evidence, safety, and profile text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Icelandic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "is-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary was unnecessarily wordy.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the Icelandic summary."
+        },
+        {
+            "id": "is-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The integrated-battery summary used an indirect construction.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the integrated-versus-replaceable distinction."
+        },
+        {
+            "id": "is-20260818-003",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rating terminology was less precise than the source concept.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to a precise 20 A continuous-value statement."
+        },
+        {
+            "id": "is-20260818-004",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison note used repetitive and indirect wording.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to concise Icelandic comparison wording."
+        },
+        {
+            "id": "is-20260818-005",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note contained a grammatical error.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Corrected the 15 A exact-model test wording."
+        },
+        {
+            "id": "is-20260818-006",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The independent-value note used an inaccurate adjective and weak warning.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 45 A independent continuous value and pulse distinction."
+        },
+        {
+            "id": "is-20260818-007",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The actual-value note was repetitive.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to a concise 36 A and 56 A temperature statement."
+        },
+        {
+            "id": "is-20260818-008",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The preproduction note used repetitive rating terminology.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the 40 A and preproduction wording."
+        },
+        {
+            "id": "is-20260818-009",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The recommended-value note used an indirect service-life phrase.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 13 A recommendation and 16.8 A limit."
+        },
+        {
+            "id": "is-20260818-010",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-limited note used repetitive terminology.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the 40 A, 70 A, and preproduction wording."
+        },
+        {
+            "id": "is-20260818-011",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell comparison note was unnecessarily repetitive.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to a concise 40 A production-cell comparison statement."
+        },
+        {
+            "id": "is-20260818-012",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper note repeated rating terminology and used a long sentence.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the 40 A, 60 °C, and EVE 40PL wording."
+        },
+        {
+            "id": "is-20260818-013",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sample note used repetitive rating terminology.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the 19 A and tested-sample wording."
+        },
+        {
+            "id": "is-20260818-014",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note used repetitive value wording.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 40 A, 90 A, and preproduction details."
+        },
+        {
+            "id": "is-20260818-015",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-continuity wording was repetitive and indirect.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 40 A, 60 A, and unresolved continuity details."
+        },
+        {
+            "id": "is-20260818-016",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity description contained an incomplete adjective.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Corrected the 40 A and inconsistent-capacity wording."
+        },
+        {
+            "id": "is-20260818-017",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note repeated rating terminology unnecessarily.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the 13 A and tested-sample wording."
+        },
+        {
+            "id": "is-20260818-018",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tester-estimated note used repetitive phrasing.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 30 A estimate and 50 A temperature limitation."
+        },
+        {
+            "id": "is-20260818-019",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The batch note used repetitive continuous-rating wording.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 20 A batch value and 30 A limitation."
+        },
+        {
+            "id": "is-20260818-020",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The pulse-only distinction was expressed less directly than the source.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to a clear 12 A continuous and 20 A pulse-only statement."
+        },
+        {
+            "id": "is-20260818-021",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-wrapper note was too repetitive and indirect.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Normalized the recommendation, advertised value, and later-revision warning."
+        },
+        {
+            "id": "is-20260818-022",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note used an unnecessarily long construction.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to concise 30 A exact-model and rewrap wording."
+        },
+        {
+            "id": "is-20260818-023",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The five-leg revision note used awkward compound terminology.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Clarified the 30 A revision distinction and inheritance warning."
+        },
+        {
+            "id": "is-20260818-024",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The low-drain warning used less natural Icelandic phrasing.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to natural wording for a battery unsuitable for vaping."
+        },
+        {
+            "id": "is-20260818-025",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The regulated profile omitted the control-board alternative.",
+            "disposition": "resolved",
+            "evidence": ["Icelandic source review identified the issue."],
+            "resolution": "Changed to a profile for a regulated device or control board."
+        }
+    ]
+}

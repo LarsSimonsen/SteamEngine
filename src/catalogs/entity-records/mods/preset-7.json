@@ -1,0 +1,31 @@
+{
+    "entityId": "aspire-cf-sub-ohm",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Aspire CF Sub Ohm records",
+            "url": "https://www.efag.ie/regulated-electronic-mods/281-aspire-sub-ohm-2000mah-battery.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 2000
+            }
+        ]
+    }
+}

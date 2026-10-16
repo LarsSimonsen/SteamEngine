@@ -1,0 +1,37 @@
+{
+    "entityId": "pioneer4you-green-leaf-ipv-mini-2",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "IPV Mini 2 manual",
+            "url": "https://www.ecig-privee.fr/content/55-le-manuel-de-la-box-70w-ipv-mini-v2a-puissance-variable",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "YiHi SX330 V2C 70W"
+            }
+        ]
+    }
+}

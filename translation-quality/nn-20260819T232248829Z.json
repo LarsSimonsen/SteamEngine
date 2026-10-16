@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260819T232248829Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Nynorsk runtime entries, prior review metadata, the locale glossary, and authoritative Norwegian language resources were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation and checking, queue validation, effective-runtime scans, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three fresh passes reviewed effective runtime text for residual Bokmål, source fidelity, terminology, numeric formatting, and calculator grammar."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Nynorsk corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-effective-runtime-bokmal",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Nineteen effective runtime entries retained Bokmål forms or inconsistent heat-flux terminology hidden by the draft and correction layers.",
+            "disposition": "resolved",
+            "evidence": [
+                "Effective runtime inspection exposed forms such as Regneeksempler, lengdeenhet, ligning, tykkelse, måleenheter, and strømkapasiteten.",
+                "Nynorskordboka records eining, likning, and tjukkleik; the calculator already uses varmefluks for the same physical quantity."
+            ],
+            "resolution": "Replaced the Bokmål forms and standardized the concept on varmefluks while preserving formulas, units, and protected names."
+        },
+        {
+            "id": "nn-catalog-source-fidelity",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The integrated-battery summary omitted the non-user-replaceable distinction, the material profile added unsupported detail, and an Ohm formula used English decimal punctuation.",
+            "disposition": "resolved",
+            "evidence": [
+                "Canonical English explicitly distinguishes an internal battery pack from a user-replaceable cell.",
+                "Nynorsk technical values elsewhere use a decimal comma."
+            ],
+            "resolution": "Restored the battery distinction, removed the unsupported material-profile claim, and changed 0.5 A to 0,5 A."
+        },
+        {
+            "id": "nn-calculator-morphology",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Seven calculator entries retained inconsistent Bokmål morphology or punctuation.",
+            "disposition": "resolved",
+            "evidence": [
+                "The locale consistently uses førehandsval and feminine grensa elsewhere.",
+                "Nynorskordboka records breidd for transverse extent and the surrounding coil text already uses tvunnen."
+            ],
+            "resolution": "Corrected batteriførehandsval, batterigrensa, spolebreidd, grensa, tvunnen, and the relative-clause comma."
+        }
+    ]
+}

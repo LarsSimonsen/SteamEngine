@@ -1,0 +1,36 @@
+{
+    "entityId": "innokin-itaste-134-itaste-134-mini",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Innokin iTaste 134 discussion",
+            "url": "https://www.dampfertreff.ch/t93641f1894-Innokin-iTaste-Kurzeindruck.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18350"
+            },
+            {
+                "format": "18500"
+            },
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

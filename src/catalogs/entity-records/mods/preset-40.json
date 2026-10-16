@@ -1,0 +1,23 @@
+{
+    "entityId": "kick-2",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Evolv Kick 2 dimensions discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/the-kick-2-dimensions.558105/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": []
+}

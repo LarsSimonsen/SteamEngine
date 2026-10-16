@@ -1,0 +1,36 @@
+{
+    "entityId": "battery-126",
+    "recordStatus": "admitted",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "test",
+            "title": "Bench Test Results: Linkdata 55P - 40A/50A 5500mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-linkdata-55p-40a-50a-5500mah-21700.995029/",
+            "limitations": "Two May 2026 samples without CCC or CE marks."
+        },
+        {
+            "id": "retail",
+            "title": "LinkData 55P 21700 Cell - 5500mAh 50A Lithium-Ion Battery",
+            "url": "https://diy500amp.com/products/linkdata-55p-21700-cell-5500mah-50a-lithium-ion-battery",
+            "limitations": "Industrial retail listing explicitly excludes vape use."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

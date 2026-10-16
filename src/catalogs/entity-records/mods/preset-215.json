@@ -1,0 +1,28 @@
+{
+    "entityId": "dna60c",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "DNA 60C product page",
+            "url": "https://wholesale.evolvapor.com/shop/dna-60c-7223",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "input-voltage-20260824",
+            "title": "DNA60 Color datasheet",
+            "url": "https://wholesale.evolvapor.com/shop/dna-60c-7223/document/17"
+        }
+    ],
+    "claims": []
+}

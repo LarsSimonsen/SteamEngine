@@ -1,0 +1,2825 @@
+{
+    "schemaVersion": 1,
+    "locale": "pt",
+    "cycleId": "pt-20261012T132732989Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Comparative screening of all remaining locales selected European Portuguese for repeated protected-unit corruption, mistranslated battery notes and product identity. Full review covered 1115 canonical entries, optional hooks, catalog nouns, glossary and route metadata. Primary Portuguese terminology checked against IPQ SI references; existing canonical numerical claims retained. Resources: AGENTS.md; skills/steam-engine-improve-translations/SKILL.md; skills/_shared/i18n-translation-contract.md; .build-runs/translation-screening/entries.json; src/i18n/glossaries/pt.json; src/i18n/locales.ts; src/i18n/mod-comparison-metadata.ts; src/shared/ui/catalog-manager.tsx; src/catalogs/materials/material-editor.tsx; src/pages/ohm/ohm-calculator.tsx; src/pages/wirewiz/wire-wizard.tsx; src/pages/tcr/tcr-calculator.tsx; https://www.ipq.pt/metrologia/medicoes-dominios-intervencao/areas-atividade/eletricidade-magnetismo/; https://www.ipq.pt/metrologia/sistema-internacional-de-unidades/; https://diariodarepublica.pt/dr/detalhe/decreto-lei/76-2020-143741481",
+        "limitations": [
+            "Comparative screening is not an exhaustive global ranking.",
+            "Model critique is not competent human review.",
+            "Shared application strings outside locale dictionaries are documented separately; no unrelated multi-locale architecture changes.",
+            "Machine linguistic critique, not native-speaker or human approval.",
+            "Catalog research records and user-created names are not translatable dictionary entries; names are preserved.",
+            "Hardcoded shared JSX outside existing optional hooks requires a separate shared i18n task.",
+            "Canonical English defects are recorded separately; target display escape repairs are independently actionable.",
+            "Decimal comma is equivalent to decimal point and does not change numeric values.",
+            "Valid resistance/bobina variants and existing valid metadata were retained.",
+            "The glossary output-power entry was previously needs-review; correction is a terminology disagreement backed by electrical quantity and JSX output context.",
+            "Existing liquid-calculator mobile document overflow is caused by offscreen sr-only inputs; the same 548px width occurs in English at a 390px viewport. Visible controls fit; shared layout unchanged."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "All 573 tests in 85 files passed after updating the Portuguese review-state expectation and running tests after builds to avoid deployment-lock contention. Typecheck, metadata check, all 1115 runtime signatures, preserved numbers/placeholders, six changed catalog consumers, full IIS and Cloudflare builds, 64 route cases and 737 links in 10279 HTML files passed. Browser checked 15 Portuguese pages and three catalog editors plus four desktop/mobile layouts. All 13 Portuguese route pages have balanced script/div tags and pt-PT language metadata. Cloudflare artifact has Worker and 404 files and no IIS configuration."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "All 1115 canonical entries, 13 route metadata records, 11 glossary entries, 8 optional hooks and 17 category functions reviewed; 174 display entries and one glossary entry corrected in 56 cause groups, plus six known category noun mappings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent European Portuguese human review performed; existing unaffected approval attribution preserved, changed text returned to machine review."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User requested review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "pt-001",
+            "translationId": "messages.error.retrying",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Retrying…",
+                "Previous European Portuguese: Tentando novamente…"
+            ],
+            "resolution": "A tentar novamente…"
+        },
+        {
+            "id": "pt-002",
+            "translationId": "messages.encyclopediaDetail.loadingResearchRecord",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Loading research record…",
+                "Previous European Portuguese: Carregando registo de pesquisa…"
+            ],
+            "resolution": "A carregar o registo de investigação…"
+        },
+        {
+            "id": "pt-003",
+            "translationId": "calculators.batt.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-004",
+            "translationId": "calculators.coil.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-005",
+            "translationId": "calculators.converter.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-006",
+            "translationId": "calculators.juice.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-007",
+            "translationId": "calculators.modrange.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-008",
+            "translationId": "calculators.tcr.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-009",
+            "translationId": "calculators.wirewiz.calculating",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculating…",
+                "Previous European Portuguese: Calculando…"
+            ],
+            "resolution": "A calcular…"
+        },
+        {
+            "id": "pt-010",
+            "translationId": "calculators.juice.percentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Percentage",
+                "Previous European Portuguese: Porcentagem"
+            ],
+            "resolution": "Percentagem"
+        },
+        {
+            "id": "pt-011",
+            "translationId": "calculators.tcr.downloadCsv",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Download CSV file",
+                "Previous European Portuguese: Descarregar arquivo CSV"
+            ],
+            "resolution": "Descarregar ficheiro CSV"
+        },
+        {
+            "id": "pt-012",
+            "translationId": "calculators.wirewiz.downloadCsv",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Download CSV",
+                "Previous European Portuguese: Baixar CSV"
+            ],
+            "resolution": "Descarregar CSV"
+        },
+        {
+            "id": "pt-013",
+            "translationId": "calculators.wirewiz.temperatureControl",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature control",
+                "Previous European Portuguese: Controle de temperatura"
+            ],
+            "resolution": "Controlo de temperatura"
+        },
+        {
+            "id": "pt-014",
+            "translationId": "calculators.wirewiz.tempControlTitle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature control",
+                "Previous European Portuguese: Controle de temperatura"
+            ],
+            "resolution": "Controlo de temperatura"
+        },
+        {
+            "id": "pt-015",
+            "translationId": "calculators.wirewiz.menu",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pt-regional-usage] Use the European Portuguese interface form; current wording is Brazilian regional usage.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Menu",
+                "Previous European Portuguese: Cardápio"
+            ],
+            "resolution": "Menu"
+        },
+        {
+            "id": "pt-016",
+            "translationId": "messages.catalogManager.manage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Manage __se_arg_0__",
+                "Previous European Portuguese: Gerir __SE_ARG_0__"
+            ],
+            "resolution": "Known category arguments localized in all 17 functions; user-created names preserved."
+        },
+        {
+            "id": "pt-017",
+            "translationId": "messages.catalogManager.shared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: shared __se_arg_0__ catalog",
+                "Previous European Portuguese: Catálogo partilhado: __SE_ARG_0__"
+            ],
+            "resolution": "Known category arguments localized in all 17 functions; user-created names preserved."
+        },
+        {
+            "id": "pt-018",
+            "translationId": "messages.catalogManager.close",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Close __se_arg_0__ manager",
+                "Previous European Portuguese: Fechar a gestão de __SE_ARG_0__"
+            ],
+            "resolution": "Known category arguments localized in all 17 functions; user-created names preserved."
+        },
+        {
+            "id": "pt-019",
+            "translationId": "messages.catalogManager.choose",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose visible built-ins or create __se_arg_0__ stored in this browser.",
+                "Previous European Portuguese: Escolha os itens incorporados visíveis ou crie __SE_ARG_0__ personalizados neste browser."
+            ],
+            "resolution": "Escolha as entradas predefinidas visíveis ou crie entradas de __SE_ARG_0__ guardadas neste navegador."
+        },
+        {
+            "id": "pt-020",
+            "translationId": "messages.catalogManager.builtIn",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in __se_arg_0__",
+                "Previous European Portuguese: __SE_ARG_0__ incorporados"
+            ],
+            "resolution": "Entradas predefinidas: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-021",
+            "translationId": "messages.catalogManager.visibility",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Visibility changes save immediately. Hidden __se_arg_0__ remain available for cloning.",
+                "Previous European Portuguese: Os __SE_ARG_0__ ocultos podem ser clonados."
+            ],
+            "resolution": "As alterações de visibilidade são guardadas de imediato. As entradas ocultas (__SE_ARG_0__) continuam disponíveis para clonagem."
+        },
+        {
+            "id": "pt-022",
+            "translationId": "messages.catalogManager.custom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __se_arg_0__",
+                "Previous European Portuguese: __SE_ARG_0__ personalizados"
+            ],
+            "resolution": "Entradas personalizadas: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-023",
+            "translationId": "messages.catalogManager.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous European Portuguese: Novo __SE_ARG_0__ personalizado"
+            ],
+            "resolution": "Nova entrada personalizada: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-024",
+            "translationId": "messages.catalogManager.noneYet",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No custom __se_arg_0__ yet.",
+                "Previous European Portuguese: Ainda não existem __SE_ARG_0__ personalizados."
+            ],
+            "resolution": "Ainda não existem entradas personalizadas de __SE_ARG_0__."
+        },
+        {
+            "id": "pt-025",
+            "translationId": "messages.catalogManager.resetSaved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset saved __se_arg_0__ data",
+                "Previous European Portuguese: Repor dados guardados de __SE_ARG_0__"
+            ],
+            "resolution": "Known category arguments localized in all 17 functions; user-created names preserved."
+        },
+        {
+            "id": "pt-026",
+            "translationId": "messages.catalogManager.savedReset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saved __se_arg_0__ data was reset.",
+                "Previous European Portuguese: Os dados guardados de __SE_ARG_0__ foram repostos."
+            ],
+            "resolution": "Known category arguments localized in all 17 functions; user-created names preserved."
+        },
+        {
+            "id": "pt-027",
+            "translationId": "messages.catalogEditor.editCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Edit custom __se_arg_0__",
+                "Previous European Portuguese: Editar __SE_ARG_0__ personalizado"
+            ],
+            "resolution": "Editar entrada personalizada: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-028",
+            "translationId": "messages.catalogEditor.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous European Portuguese: Novo __SE_ARG_0__ personalizado"
+            ],
+            "resolution": "Nova entrada personalizada: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-029",
+            "translationId": "messages.catalogEditor.properties",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ properties",
+                "Previous European Portuguese: __SE_ARG_0__ propriedades"
+            ],
+            "resolution": "Propriedades de __SE_ARG_0__"
+        },
+        {
+            "id": "pt-030",
+            "translationId": "messages.catalogEditor.save",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Save __se_arg_0__",
+                "Previous European Portuguese: Guardar __SE_ARG_0__"
+            ],
+            "resolution": "Known category arguments localized in all 17 functions; user-created names preserved."
+        },
+        {
+            "id": "pt-031",
+            "translationId": "messages.catalogEditor.saved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Known entity arguments arrive in English. Translate only known entity nouns and use templates that agree with both masculine materials/mods and feminine batteries. Visibility also restores immediate saving omitted in the target.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ saved.",
+                "Previous European Portuguese: __SE_ARG_0__ guardado."
+            ],
+            "resolution": "Entrada guardada: __SE_ARG_0__."
+        },
+        {
+            "id": "pt-032",
+            "translationId": "messages.catalogManager.usedBy",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-name-agreement] Names are arbitrary and must remain unchanged; avoid assuming masculine grammatical gender.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cannot delete __SE_ARG_0__; it is used by __SE_ARG_1__.",
+                "Previous European Portuguese: Não é possível eliminar __SE_ARG_0__; é utilizado por __SE_ARG_1__."
+            ],
+            "resolution": "Não é possível eliminar __SE_ARG_0__: existe uma referência em __SE_ARG_1__."
+        },
+        {
+            "id": "pt-033",
+            "translationId": "messages.catalogManager.deleted",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-name-agreement] Names are arbitrary and must remain unchanged; avoid assuming masculine grammatical gender.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ was deleted.",
+                "Previous European Portuguese: __SE_ARG_0__ foi eliminado."
+            ],
+            "resolution": "Entrada eliminada: __SE_ARG_0__."
+        },
+        {
+            "id": "pt-034",
+            "translationId": "messages.catalogManager.customItemsDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-runtime-nouns] Existing optional hook prevents English description fallback; translate known plural argument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __SE_ARG_0__ are always shown in the calculator selector.",
+                "Previous European Portuguese: Custom __SE_ARG_0__ are always shown in the calculator selector."
+            ],
+            "resolution": "As entradas personalizadas de __SE_ARG_0__ são sempre apresentadas no seletor da calculadora."
+        },
+        {
+            "id": "pt-035",
+            "translationId": "messages.catalogEditor.sizeCodePlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-placeholder-fallback] Existing optional hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, e.g. 18650",
+                "Previous European Portuguese: Optional, e.g. 18650"
+            ],
+            "resolution": "Opcional, p. ex., 18650"
+        },
+        {
+            "id": "pt-036",
+            "translationId": "messages.catalogEditor.wrapperColorPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-placeholder-fallback] Existing optional hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, descriptive",
+                "Previous European Portuguese: Optional, descriptive"
+            ],
+            "resolution": "Opcional, descrição da cor"
+        },
+        {
+            "id": "pt-037",
+            "translationId": "messages.catalogEditor.markingsPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-placeholder-fallback] Existing optional hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional; one wrapper marking per line",
+                "Previous European Portuguese: Optional; one wrapper marking per line"
+            ],
+            "resolution": "Opcional; uma marcação do invólucro por linha"
+        },
+        {
+            "id": "pt-038",
+            "translationId": "messages.catalogEditor.currentWithCRatingPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-placeholder-fallback] Existing optional hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when C rating is set",
+                "Previous European Portuguese: Optional when C rating is set"
+            ],
+            "resolution": "Opcional quando a taxa C está definida"
+        },
+        {
+            "id": "pt-039",
+            "translationId": "messages.catalogEditor.cRatingWithCurrentPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-placeholder-fallback] Existing optional hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when current is set",
+                "Previous European Portuguese: Optional when current is set"
+            ],
+            "resolution": "Opcional quando a corrente está definida"
+        },
+        {
+            "id": "pt-040",
+            "translationId": "messages.catalogEditor.terminalStyle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[terminal-shape] Terminal style means the physical terminal type, not a stylistic terminal.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Terminal style",
+                "Previous European Portuguese: Estilo terminal"
+            ],
+            "resolution": "Tipo de terminal"
+        },
+        {
+            "id": "pt-041",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[terminal-shape] Button top describes a protruding battery terminal, not the upper part of a button.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous European Portuguese: Parte superior do botão"
+            ],
+            "resolution": "Topo saliente"
+        },
+        {
+            "id": "pt-042",
+            "translationId": "messages.catalogEditor.integratedMod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-adjective-agreement] The referent is bateria; feminine agreement is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Integrated in mod",
+                "Previous European Portuguese: Integrado no mod"
+            ],
+            "resolution": "Integrada no mod"
+        },
+        {
+            "id": "pt-043",
+            "translationId": "messages.encyclopediaDetail.integratedInMod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-adjective-agreement] The referent is bateria; feminine agreement is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Integrated in mod",
+                "Previous European Portuguese: Integrado no mod"
+            ],
+            "resolution": "Integrada no mod"
+        },
+        {
+            "id": "pt-044",
+            "translationId": "messages.catalogEditor.protectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-adjective-agreement] Use a neutral protection-state label for the battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected",
+                "Previous European Portuguese: Protegido"
+            ],
+            "resolution": "Com proteção"
+        },
+        {
+            "id": "pt-045",
+            "translationId": "messages.catalogEditor.unprotectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-adjective-agreement] Use a neutral protection-state label for the battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unprotected",
+                "Previous European Portuguese: Desprotegido"
+            ],
+            "resolution": "Sem proteção"
+        },
+        {
+            "id": "pt-046",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-meaning] Pack means an electrical assembly of cells, not a package of mods. Preserve both discharge-limit conditions and nominal/measured dimensions.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous European Portuguese: Introduza pelo menos um limite de descarga contínua. As baterias integradas são pacotes de mod internos, pelo que não são necessárias dimensões de células independentes. As dimensões das células amovíveis são nominais; utilize as notas para as dimensões medidas conforme vendidas. Quando ambos os limites de descarga são definidos, a calculadora continua a utilizar o limite derivado mais seguro se estes diferirem materialmente."
+            ],
+            "resolution": "Introduza pelo menos um limite de descarga contínua. As baterias integradas são conjuntos de células internos do mod, pelo que não são necessárias dimensões de células independentes. As dimensões das células amovíveis são nominais; utilize as notas para as dimensões medidas da bateria tal como é vendida. Quando ambos os limites de descarga estão definidos, a calculadora continua a utilizar o limite derivado mais seguro se estes diferirem significativamente."
+        },
+        {
+            "id": "pt-047",
+            "translationId": "messages.catalogEditor.normalizationHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[curve-sort] Sort means order curve points, not classify a curve.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saving sorts the curve, inserts or derives the 20 °C reference, and normalizes all factors.",
+                "Previous European Portuguese: Guardar classifica a curva, introduz ou deriva a referência de 20 °C e normaliza todos os fatores."
+            ],
+            "resolution": "Ao guardar, os pontos da curva são ordenados, a referência de 20 °C é inserida ou calculada e todos os fatores são normalizados."
+        },
+        {
+            "id": "pt-048",
+            "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-join] The editor directly concatenates saved(noun) and normalization; a separating space is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was interpolated and the curve was normalized.",
+                "Previous European Portuguese: O ponto 20 °C foi interpolado e a curva foi normalizada."
+            ],
+            "resolution": " O ponto 20 °C foi interpolado e a curva foi normalizada."
+        },
+        {
+            "id": "pt-049",
+            "translationId": "messages.catalogEditor.normalizationExtrapolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-join] The editor directly concatenates saved(noun) and normalization; a separating space is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was extrapolated and the curve was normalized.",
+                "Previous European Portuguese: O ponto de 20 °C foi extrapolado e a curva foi normalizada."
+            ],
+            "resolution": " O ponto de 20 °C foi extrapolado e a curva foi normalizada."
+        },
+        {
+            "id": "pt-050",
+            "translationId": "messages.catalogEditor.normalizationExisting",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-join] The editor directly concatenates saved(noun) and normalization; a separating space is required.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The TFR curve was normalized at 20 °C.",
+                "Previous European Portuguese: A curva TFR foi normalizada a 20 °C."
+            ],
+            "resolution": " A curva TFR foi normalizada a 20 °C."
+        },
+        {
+            "id": "pt-051",
+            "translationId": "messages.home.tools.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[power-meaning] Power is potência, a rate distinct from energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: See current and power drain for a battery-powered device.",
+                "Previous European Portuguese: Consulte consumo de corrente e energia para um dispositivo alimentado por bateria."
+            ],
+            "resolution": "Consulte o consumo de corrente e potência de um dispositivo alimentado por bateria."
+        },
+        {
+            "id": "pt-052",
+            "translationId": "messages.home.tools.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-device] Regulated electronics are regulados, not regulamentados (subject to regulation).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find the useful resistance range for a regulated mod.",
+                "Previous European Portuguese: Encontre a gama de resistência útil para um mod regulamentado."
+            ],
+            "resolution": "Encontre a gama de resistência útil para um mod regulado."
+        },
+        {
+            "id": "pt-053",
+            "translationId": "calculators.batt.unregulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-device] Regulated electronics are regulados, not regulamentados (subject to regulation).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unregulated mod",
+                "Previous European Portuguese: Mod não regulamentado"
+            ],
+            "resolution": "Mod não regulado"
+        },
+        {
+            "id": "pt-054",
+            "translationId": "calculators.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-device] Regulated electronics are regulados, not regulamentados (subject to regulation).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous European Portuguese: Encontre uma gama de resistência útil nos limites de saída de um mod regulamentado."
+            ],
+            "resolution": "Encontre uma gama de resistência útil nos limites de saída de um mod regulado."
+        },
+        {
+            "id": "pt-055",
+            "translationId": "calculators.modrange.presetIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-device] Regulated electronics are regulados, not regulamentados (subject to regulation).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose a regulated mod preset.",
+                "Previous European Portuguese: Escolha uma predefinição de mod regulamentada."
+            ],
+            "resolution": "Escolha uma predefinição de mod regulado."
+        },
+        {
+            "id": "pt-056",
+            "translationId": "calculators.modrange.preset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-device] Regulated electronics are regulados, not regulamentados (subject to regulation).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod preset",
+                "Previous European Portuguese: Predefinição de mod regulamentado"
+            ],
+            "resolution": "Predefinição de mod regulado"
+        },
+        {
+            "id": "pt-057",
+            "translationId": "calculators.modrange.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-device] The calculator concerns an electronically regulated mod, not a calculator subject to regulation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod calculator",
+                "Previous European Portuguese: Calculadora mod regulamentada"
+            ],
+            "resolution": "Calculadora de mod regulado"
+        },
+        {
+            "id": "pt-058",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-intro-assembly] Rephrase all fragments as one grammatically complete sentence around the law links.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous European Portuguese: Este é um simples"
+            ],
+            "resolution": "Esta calculadora utiliza a"
+        },
+        {
+            "id": "pt-059",
+            "translationId": "messages.ohm.descriptionBetweenLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-intro-assembly] Keep the generic conjunction: this key also joins field names in lock summaries. Put the article inside the optional law link label.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: and",
+                "Previous European Portuguese: e"
+            ],
+            "resolution": "Existing conjunction retained because it is also used to join field names; article moved to the optional Joule link label."
+        },
+        {
+            "id": "pt-060",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-intro-assembly] Completes the sentence without a dangling feminine noun.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous European Portuguese: calculadora."
+            ],
+            "resolution": "para cálculos simples."
+        },
+        {
+            "id": "pt-061",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-intro-assembly] Existing optional hook prevents English link text and owns the article, keeping the reused generic conjunction unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous European Portuguese: Joule's law"
+            ],
+            "resolution": "a lei de Joule"
+        },
+        {
+            "id": "pt-062",
+            "translationId": "messages.ohm.simpleLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] UI value locks are bloqueios, not door locks (fechaduras).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Simple locks",
+                "Previous European Portuguese: Fechaduras simples"
+            ],
+            "resolution": "Bloqueios simples"
+        },
+        {
+            "id": "pt-063",
+            "translationId": "messages.ohm.detailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] UI value locks are bloqueios, not door locks (fechaduras).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Detailed locks",
+                "Previous European Portuguese: Fechaduras detalhadas"
+            ],
+            "resolution": "Bloqueios detalhados"
+        },
+        {
+            "id": "pt-064",
+            "translationId": "messages.encyclopedia.searchPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-aliases] Aliases are alternate designations, not surnames.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Search names, models, or aliases",
+                "Previous European Portuguese: Pesquise nomes, modelos ou apelidos"
+            ],
+            "resolution": "Pesquise nomes, modelos ou designações alternativas"
+        },
+        {
+            "id": "pt-065",
+            "translationId": "messages.encyclopediaDetail.aliases",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-aliases] Label refers to alternate names for the catalog entity.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Aliases",
+                "Previous European Portuguese: Aliases"
+            ],
+            "resolution": "Designações alternativas"
+        },
+        {
+            "id": "pt-066",
+            "translationId": "messages.encyclopedia.browseCategory",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-count-order] Count must precede the counted noun in Portuguese.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Browse __SE_ARG_0__ (__SE_ARG_1__ entries)",
+                "Previous European Portuguese: Procurar __SE_ARG_0__ (entradas __SE_ARG_1__)"
+            ],
+            "resolution": "Explorar __SE_ARG_0__ (__SE_ARG_1__ entradas)"
+        },
+        {
+            "id": "pt-067",
+            "translationId": "messages.encyclopedia.categoryDescriptions.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-meaning] Electrical packs are not packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells, packs, and integrated power sources.",
+                "Previous European Portuguese: Células, embalagens e fontes de energia integradas."
+            ],
+            "resolution": "Células, conjuntos de células e fontes de energia integradas."
+        },
+        {
+            "id": "pt-068",
+            "translationId": "messages.encyclopediaDetail.batteryInternal",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-meaning] Clarify electrical assembly rather than package.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This battery is an internal pack in the device rather than a user-replaceable cell.",
+                "Previous European Portuguese: Esta bateria é um pacote interno do dispositivo, e não uma célula substituível pelo utilizador."
+            ],
+            "resolution": "Esta bateria é um conjunto de células interno do dispositivo, e não uma célula substituível pelo utilizador."
+        },
+        {
+            "id": "pt-069",
+            "translationId": "messages.encyclopediaDetail.categoryLabels.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-device-name] Mods are electronic devices, not modifications.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mods",
+                "Previous European Portuguese: Modificações"
+            ],
+            "resolution": "Mods"
+        },
+        {
+            "id": "pt-070",
+            "translationId": "messages.encyclopediaDetail.introduced",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-label-grammar] A date cannot be appended to the participle without a preposition; neutral label also avoids entity gender.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Introduced __SE_ARG_0__",
+                "Previous European Portuguese: Introduzido __SE_ARG_0__"
+            ],
+            "resolution": "Introdução no mercado: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-071",
+            "translationId": "messages.encyclopediaDetail.reviewed",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-label-grammar] Use a complete date label instead of a bare participle plus date.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reviewed __SE_ARG_0__",
+                "Previous European Portuguese: Revisto __SE_ARG_0__"
+            ],
+            "resolution": "Data de revisão: __SE_ARG_0__"
+        },
+        {
+            "id": "pt-072",
+            "translationId": "messages.encyclopediaDetail.availableBy",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[available-by] Available by establishes an upper bound on introduction, not the end of availability.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Available by __SE_ARG_0__",
+                "Previous European Portuguese: Disponível até __SE_ARG_0__"
+            ],
+            "resolution": "Disponível, o mais tardar, em __SE_ARG_0__"
+        },
+        {
+            "id": "pt-073",
+            "translationId": "messages.encyclopediaDetail.temperatureResistanceCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-temperature-curve] This plots electrical resistance versus temperature; resistência à temperatura can mean thermal endurance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature resistance curve",
+                "Previous European Portuguese: Curva de resistência à temperatura"
+            ],
+            "resolution": "Curva da resistência em função da temperatura"
+        },
+        {
+            "id": "pt-074",
+            "translationId": "messages.encyclopediaDetail.loadingTemperatureCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[loading-curve] Loading the chart is not battery charging or a charging-temperature curve.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Loading temperature curve…",
+                "Previous European Portuguese: Curva de temperatura de carregamento…"
+            ],
+            "resolution": "A carregar a curva de temperatura…"
+        },
+        {
+            "id": "pt-075",
+            "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rewrap-inference] Original manufacturer is not inferred from wrapper; target incorrectly says manufacturer is not assumed on wrapper.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The label is treated as a rewrap brand; the underlying cell manufacturer is not assumed from the wrapper.",
+                "Previous European Portuguese: O rótulo é tratado como uma marca reembalada; o fabricante da célula subjacente não é assumido no invólucro."
+            ],
+            "resolution": "A marca é tratada como uma marca que reveste células de outros fabricantes; não se deduz o fabricante original da célula apenas pelo invólucro."
+        },
+        {
+            "id": "pt-076",
+            "translationId": "messages.encyclopediaDetail.modBoardCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[board-catalog] The catalog contains boards and devices; current phrase detaches board from the catalog.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod board and device catalog",
+                "Previous European Portuguese: Placa de mod e catálogo de dispositivos"
+            ],
+            "resolution": "Catálogo de placas e dispositivos mod"
+        },
+        {
+            "id": "pt-077",
+            "translationId": "calculators.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] Output includes voltage/current/power; target reduces it to emitted power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimate atomizer output, battery drain, and available current headroom for regulated and unregulated mods.",
+                "Previous European Portuguese: Calcule a potência emitida pelo atomizador, o consumo da bateria e a margem de corrente disponível para mods regulados e não regulados."
+            ],
+            "resolution": "Estime a saída do atomizador, o consumo da bateria e a margem de corrente disponível para mods regulados e não regulados."
+        },
+        {
+            "id": "pt-078",
+            "translationId": "calculators.batt.atomizerOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] Section includes voltage, current and power, not power alone.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Atomizer output",
+                "Previous European Portuguese: Potência emitida pelo atomizador"
+            ],
+            "resolution": "Saída do atomizador"
+        },
+        {
+            "id": "pt-079",
+            "translationId": "calculators.batt.outputPower",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] Electrical output power is supplied to the atomizer; it is not power emitted by the atomizer.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Output power",
+                "Previous European Portuguese: Potência emitida pelo atomizador"
+            ],
+            "resolution": "Potência de saída"
+        },
+        {
+            "id": "pt-080",
+            "translationId": "glossary.output-power.preferred",
+            "category": "terminology-disagreement",
+            "severity": "medium",
+            "summary": "[atomizer-output] Correct the needs-review glossary: electrical output is supplied by the mod to the atomizer. The generic output heading additionally includes voltage and current.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: output power",
+                "Previous European Portuguese: potência emitida pelo atomizador"
+            ],
+            "resolution": "potência de saída"
+        },
+        {
+            "id": "pt-081",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous European Portuguese: Predefinições de bateria"
+            ],
+            "resolution": "Predefinição de célula"
+        },
+        {
+            "id": "pt-082",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous European Portuguese: Cell selection"
+            ],
+            "resolution": "Seleção de célula"
+        },
+        {
+            "id": "pt-083",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous European Portuguese: Escolha uma predefinição de bateria integrada ou introduza os seus próprios valores abaixo."
+            ],
+            "resolution": "Escolha a célula utilizada em todo o conjunto ou introduza abaixo os valores por célula."
+        },
+        {
+            "id": "pt-084",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous European Portuguese: Predefinição de bateria"
+            ],
+            "resolution": "Predefinição de célula"
+        },
+        {
+            "id": "pt-085",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous European Portuguese: Valores da bateria"
+            ],
+            "resolution": "Célula e conjunto de células"
+        },
+        {
+            "id": "pt-086",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous European Portuguese: Battery configuration"
+            ],
+            "resolution": "Configuração da bateria"
+        },
+        {
+            "id": "pt-087",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous European Portuguese: 1S — Single cell"
+            ],
+            "resolution": "1S — Uma célula"
+        },
+        {
+            "id": "pt-088",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous European Portuguese: Custom configuration"
+            ],
+            "resolution": "Configuração personalizada"
+        },
+        {
+            "id": "pt-089",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous European Portuguese: Cells in series"
+            ],
+            "resolution": "Células em série"
+        },
+        {
+            "id": "pt-090",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous European Portuguese: Parallel strings"
+            ],
+            "resolution": "Ramos em paralelo"
+        },
+        {
+            "id": "pt-091",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous European Portuguese: cells"
+            ],
+            "resolution": "células"
+        },
+        {
+            "id": "pt-092",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous European Portuguese: cell"
+            ],
+            "resolution": "célula"
+        },
+        {
+            "id": "pt-093",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous European Portuguese: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "Utilize células idênticas e emparelhadas, com a mesma idade e no mesmo estado. A partilha de corrente é idealizada; a célula mais fraca limita o conjunto."
+        },
+        {
+            "id": "pt-094",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous European Portuguese: Battery pack"
+            ],
+            "resolution": "Conjunto de células"
+        },
+        {
+            "id": "pt-095",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-controls] Cell/pack configuration controls are stale or untranslated; preserve the distinction between per-cell values and the assembled battery.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous European Portuguese: Estimated current per cell"
+            ],
+            "resolution": "Corrente estimada por célula"
+        },
+        {
+            "id": "pt-096",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[current-headroom] Electrical current headroom is not current space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous European Portuguese: Restam menos de 20% do espaço atual."
+            ],
+            "resolution": "A margem de corrente restante é inferior a 20%."
+        },
+        {
+            "id": "pt-097",
+            "translationId": "calculators.batt.estimatedRuntime",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-runtime] Battery runtime means autonomy, not software execution time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated runtime",
+                "Previous European Portuguese: Tempo de execução estimado"
+            ],
+            "resolution": "Autonomia estimada"
+        },
+        {
+            "id": "pt-098",
+            "translationId": "calculators.batt.continuousRuntime",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-runtime] Battery runtime means autonomy, not software execution time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous runtime",
+                "Previous European Portuguese: Tempo de execução contínuo"
+            ],
+            "resolution": "Autonomia em utilização contínua"
+        },
+        {
+            "id": "pt-099",
+            "translationId": "calculators.batt.runtimeHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-runtime] Restore battery power and distinguish device overhead from overload.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This idealized estimate assumes continuous output at the calculated battery power. Real runtime varies with cutoff voltage, voltage sag, cell age, device overhead, and intermittent use.",
+                "Previous European Portuguese: Esta estimativa idealizada pressupõe a produção contínua com a carga calculada da bateria. O tempo de funcionamento real varia de acordo com a tensão de corte, a queda de tensão, a idade da célula, a sobrecarga do dispositivo e a utilização intermitente."
+            ],
+            "resolution": "Esta estimativa idealizada pressupõe uma saída contínua à potência calculada da bateria. A autonomia real varia com a tensão de corte, a queda de tensão, a idade das células, o consumo interno do dispositivo e a utilização intermitente."
+        },
+        {
+            "id": "pt-100",
+            "translationId": "calculators.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wraps] Wire wraps are turns, not wrappers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose your wire and build parameters to estimate wraps, resistance, and heat.",
+                "Previous European Portuguese: Escolha o seu fio e crie parâmetros para estimar os invólucros, a resistência e o calor."
+            ],
+            "resolution": "Escolha o fio e os parâmetros de construção para estimar o número de voltas, a resistência e o calor."
+        },
+        {
+            "id": "pt-101",
+            "translationId": "calculators.coil.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wraps] Spacing describes turns of the coil, not packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrap spacing",
+                "Previous European Portuguese: Espaçamento de envoltório"
+            ],
+            "resolution": "Espaçamento entre voltas"
+        },
+        {
+            "id": "pt-102",
+            "translationId": "calculators.wirewiz.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wraps] Spacing describes turns of the coil, not packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrap spacing",
+                "Previous European Portuguese: Espaçamento de envoltório"
+            ],
+            "resolution": "Espaçamento entre voltas"
+        },
+        {
+            "id": "pt-103",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-wraps] Wire wraps are coil turns, not envelopes.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wraps",
+                "Previous European Portuguese: Envoltórios"
+            ],
+            "resolution": "Voltas"
+        },
+        {
+            "id": "pt-104",
+            "translationId": "calculators.coil.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-material] Control selects one material; use singular as canonical.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Material",
+                "Previous European Portuguese: Materiais"
+            ],
+            "resolution": "Material"
+        },
+        {
+            "id": "pt-105",
+            "translationId": "calculators.tcr.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-material] Control selects one material; use singular as canonical.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Material",
+                "Previous European Portuguese: Materiais"
+            ],
+            "resolution": "Material"
+        },
+        {
+            "id": "pt-106",
+            "translationId": "calculators.wirewiz.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-material] Control selects one material; use singular as canonical.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Material",
+                "Previous European Portuguese: Materiais"
+            ],
+            "resolution": "Material"
+        },
+        {
+            "id": "pt-107",
+            "translationId": "calculators.converter.americanWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] AWG names a gauge system, not a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: American Wire Gauge",
+                "Previous European Portuguese: Medidor de fio americano"
+            ],
+            "resolution": "American Wire Gauge"
+        },
+        {
+            "id": "pt-108",
+            "translationId": "calculators.converter.precisionHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge tables are not tables of counters.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Precision applies to numeric results. Gauge tables remain at their published values.",
+                "Previous European Portuguese: A precisão aplica-se a resultados numéricos. As tabelas de contadores mantêm-se com os seus valores publicados."
+            ],
+            "resolution": "A precisão aplica-se aos resultados numéricos. As tabelas de calibres mantêm os valores publicados."
+        },
+        {
+            "id": "pt-109",
+            "translationId": "calculators.converter.reset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[reset-defaults] Defaults refers to initial settings rather than standards.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset defaults",
+                "Previous European Portuguese: Redefinir padrões"
+            ],
+            "resolution": "Repor predefinições"
+        },
+        {
+            "id": "pt-110",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-strength] Strength means nicotine concentration, not physical force or an undefined nic base.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous European Portuguese: Pode ser necessário diminuir o conteúdo alvo de nic, VG ou PG ou aromatizante. Em alternativa, utilize uma base nic mais forte ou uma base nic com uma relação VG/PG diferente. Ajuste as suas definições até que todos os números sejam superiores a zero."
+            ],
+            "resolution": "Pode ser necessário reduzir a concentração pretendida de nicotina, o teor de VG ou PG, ou a quantidade de aroma. Em alternativa, utilize uma base com maior concentração de nicotina ou uma base com uma proporção VG/PG diferente. Ajuste as definições até que todos os números sejam superiores a zero."
+        },
+        {
+            "id": "pt-111",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-strength] Strength is concentration; current translation does not express that quantity clearly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous European Portuguese: O seu nível de nic alvo é superior à força base da sua nic. Deve obter uma base de nic mais forte ou diminuir a força de nic alvo."
+            ],
+            "resolution": "A concentração pretendida de nicotina é superior à concentração da base de nicotina. Utilize uma base mais concentrada ou reduza a concentração pretendida."
+        },
+        {
+            "id": "pt-112",
+            "translationId": "calculators.juice.flavor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-ingredient] The calculator measures a flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor",
+                "Previous European Portuguese: Sabor"
+            ],
+            "resolution": "Aroma"
+        },
+        {
+            "id": "pt-113",
+            "translationId": "calculators.juice.flavorName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-ingredient] The calculator measures a flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor",
+                "Previous European Portuguese: Sabor"
+            ],
+            "resolution": "Aroma"
+        },
+        {
+            "id": "pt-114",
+            "translationId": "calculators.juice.flavorPercentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-ingredient] The calculator measures a flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor percentage",
+                "Previous European Portuguese: Percentagem de sabor"
+            ],
+            "resolution": "Percentagem de aroma"
+        },
+        {
+            "id": "pt-115",
+            "translationId": "calculators.juice.flavorVg",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-ingredient] The calculator measures a flavoring ingredient, not the abstract taste.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor is VG based",
+                "Previous European Portuguese: O sabor é baseado no VG"
+            ],
+            "resolution": "O aroma tem VG como base"
+        },
+        {
+            "id": "pt-116",
+            "translationId": "calculators.juice.canMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mix-status-agreement] The mixture is feminine; isolated masculine este has no clear referent.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This can be mixed.",
+                "Previous European Portuguese: Este pode ser misturado."
+            ],
+            "resolution": "Esta mistura pode ser preparada."
+        },
+        {
+            "id": "pt-117",
+            "translationId": "calculators.modrange.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-operating-range] The range belongs to one selected mod, not an assortment of mods.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod range",
+                "Previous European Portuguese: Gama de mods"
+            ],
+            "resolution": "Gama do mod"
+        },
+        {
+            "id": "pt-118",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-stale] Canonical labels describe limits and midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous European Portuguese: Resistência ideal"
+            ],
+            "resolution": "Orientações sobre resistência"
+        },
+        {
+            "id": "pt-119",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-stale] Canonical labels describe limits and midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous European Portuguese: Resistência mediana"
+            ],
+            "resolution": "Cruzamento dos limites de corrente e tensão"
+        },
+        {
+            "id": "pt-120",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-stale] Canonical labels describe limits and midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous European Portuguese: Mediana"
+            ],
+            "resolution": "Cruzamento dos limites de corrente e tensão"
+        },
+        {
+            "id": "pt-121",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance-stale] Canonical labels describe limits and midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous European Portuguese: Ponto ideal"
+            ],
+            "resolution": "Ponto médio do intervalo superior"
+        },
+        {
+            "id": "pt-122",
+            "translationId": "calculators.modrange.currentLimit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current limit",
+                "Previous European Portuguese: Limite atual"
+            ],
+            "resolution": "Limite de corrente"
+        },
+        {
+            "id": "pt-123",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous European Portuguese: o limite atual exige"
+            ],
+            "resolution": "o limite de corrente exige"
+        },
+        {
+            "id": "pt-124",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous European Portuguese: O limite atual é atingido em primeiro lugar."
+            ],
+            "resolution": "O limite de corrente é atingido em primeiro lugar."
+        },
+        {
+            "id": "pt-125",
+            "translationId": "calculators.modrange.current",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous European Portuguese: Atual"
+            ],
+            "resolution": "Corrente"
+        },
+        {
+            "id": "pt-126",
+            "translationId": "calculators.modrange.watt",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Restore watt symbol; C denotes another unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: W",
+                "Previous European Portuguese: C"
+            ],
+            "resolution": "W"
+        },
+        {
+            "id": "pt-127",
+            "translationId": "calculators.modrange.ampere",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[unit-symbols] Restore ampere symbol; it must not be translated as an article.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A",
+                "Previous European Portuguese: Um"
+            ],
+            "resolution": "A"
+        },
+        {
+            "id": "pt-128",
+            "translationId": "calculators.modrange.power",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[power-meaning] Power is the electrical quantity potência, not poder.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous European Portuguese: Poder"
+            ],
+            "resolution": "Potência"
+        },
+        {
+            "id": "pt-129",
+            "translationId": "calculators.tcr.help",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[dna-product-name] DNA is an Evolv product family name, not the biological acronym to translate.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Editing these values clears selected materials. DNA 200 output accepts 2–8 points and needs one point near 70 °F (about 21 °C).",
+                "Previous European Portuguese: A edição destes valores limpa os materiais selecionados. A saída do ADN 200 aceita 2 a 8 pontos e necessita de um ponto próximo dos 70 °F (cerca de 21 °C)."
+            ],
+            "resolution": "A edição destes valores limpa os materiais selecionados. A saída do DNA 200 aceita 2 a 8 pontos e necessita de um ponto próximo dos 70 °F (cerca de 21 °C)."
+        },
+        {
+            "id": "pt-130",
+            "translationId": "calculators.tcr.csvOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[dna-product-name] DNA is an Evolv product family name, not the biological acronym to translate.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA 200 CSV output",
+                "Previous European Portuguese: Saída CSV do ADN 200"
+            ],
+            "resolution": "Saída CSV do DNA 200"
+        },
+        {
+            "id": "pt-131",
+            "translationId": "calculators.wirewiz.dna200",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[dna-product-name] DNA is an Evolv product family name, not the biological acronym to translate.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: DNA200",
+                "Previous European Portuguese: ADN200"
+            ],
+            "resolution": "DNA200"
+        },
+        {
+            "id": "pt-132",
+            "translationId": "calculators.tcr.noticeCleared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[clear-selection] Clearing selected materials is not releasing materials.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature points changed; selected materials were cleared.",
+                "Previous European Portuguese: Os pontos de temperatura mudaram; os materiais selecionados foram libertados."
+            ],
+            "resolution": "Os pontos de temperatura foram alterados; a seleção de materiais foi limpa."
+        },
+        {
+            "id": "pt-133",
+            "translationId": "calculators.wirewiz.strandWire",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[strand-wire] A strand is an individual constituent wire, not necessarily braided wire.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Strand wire",
+                "Previous European Portuguese: Fio entrançado"
+            ],
+            "resolution": "Fio individual"
+        },
+        {
+            "id": "pt-134",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-equivalence] Matching temperature response is not combining a wire with the mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous European Portuguese: Para combiná-lo num mod definido para"
+            ],
+            "resolution": "Para obter um resultado equivalente num mod configurado para"
+        },
+        {
+            "id": "pt-135",
+            "translationId": "calculators.wirewiz.sourceFactorSuffix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[source-factor-suffix] Existing optional suffix completes the Portuguese resistance-factor sentence without English fallback.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: at this temperature.",
+                "Previous European Portuguese: at this temperature."
+            ],
+            "resolution": "a esta temperatura."
+        },
+        {
+            "id": "pt-136",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] A worked example is a solved example; one target heading incorrectly labels the following example instead.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked examples",
+                "Previous European Portuguese: Exemplos trabalhados"
+            ],
+            "resolution": "Exemplos resolvidos"
+        },
+        {
+            "id": "pt-137",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] A worked example is a solved example; one target heading incorrectly labels the following example instead.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous European Portuguese: Exemplo trabalhado"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "pt-138",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] A worked example is a solved example; one target heading incorrectly labels the following example instead.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous European Portuguese: Exemplo trabalhado"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "pt-139",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] A worked example is a solved example; one target heading incorrectly labels the following example instead.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous European Portuguese: Exemplo trabalhado"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "pt-140",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] A worked example is a solved example; one target heading incorrectly labels the following example instead.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous European Portuguese: Densidade média do fluxo de calor"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "pt-141",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[thermal-headroom] Headroom means operating margin, not physical space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Ohm's law combines with the power relationship P = V × I. Power P is measured in watts (W). For a 4.2 V source and a 1.0 Ω load, the ideal power is 17.64 W. The component needs enough thermal capacity and headroom to dissipate the resulting heat safely.",
+                "Previous European Portuguese: A lei de Ohm combina com a relação de potência P = V × I. A potência P é medida em watts (W). Para uma fonte de 4,2 V e uma carga de 1,0 Ω, a potência ideal é de 17,64 W. O componente necessita de capacidade térmica e de espaço suficiente para dissipar o calor resultante em segurança."
+            ],
+            "resolution": "A lei de Ohm combina com a relação de potência P = V × I. A potência P é medida em watts (W). Para uma fonte de 4,2 V e uma carga de 1,0 Ω, a potência ideal é de 17,64 W. O componente necessita de capacidade térmica e de margem suficiente para dissipar o calor resultante em segurança."
+        },
+        {
+            "id": "pt-142",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[sustained-current] Continuous here concerns duration of the current rating; corrente contínua alone names DC and loses the duration distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Check that components, connections, and insulation can handle the expected current and power. Use appropriate headroom because real components can heat unevenly and resistance can change with temperature. Batteries and power supplies also have continuous current limits.",
+                "Previous European Portuguese: Verifique se os componentes, as ligações e o isolamento suportam a corrente e a potência esperadas. Mantenha uma margem adequada, pois os componentes reais podem aquecer de forma desigual e a resistência pode mudar com a temperatura. As baterias e as fontes de alimentação também têm limites de corrente contínua."
+            ],
+            "resolution": "Verifique se os componentes, as ligações e o isolamento suportam a corrente e a potência esperadas. Mantenha uma margem adequada, pois os componentes reais podem aquecer de forma desigual e a resistência pode mudar com a temperatura. As baterias e as fontes de alimentação também têm limites de corrente em funcionamento contínuo."
+        },
+        {
+            "id": "pt-143",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[series-cell-charging] It is the cells that are connected in series, not lithium ions. Retain monitoring, balancing and protection conditions.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Series lithium-ion charging requires cell-level monitoring and appropriate balancing or protection.",
+                "Previous European Portuguese: O carregamento em série de iões de lítio requer monitorização ao nível da célula e um equilíbrio ou proteção apropriados."
+            ],
+            "resolution": "O carregamento de células de iões de lítio ligadas em série requer monitorização ao nível de cada célula e equilibragem ou proteção adequadas."
+        },
+        {
+            "id": "pt-144",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[strain-stress] Mechanical strain is deformation; tensão mecânica means stress.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A manufacturer's TCR normally applies to a stated temperature and resistance range. Temperature gradients, material changes, contacts, mechanical strain, and self-heating can make a real result differ from the first-order estimate.",
+                "Previous European Portuguese: O TCR do fabricante aplica-se normalmente a uma gama declarada de temperatura e resistência. Gradientes de temperatura, alterações de material, contactos, tensão mecânica e autoaquecimento podem fazer com que um resultado real seja diferente da estimativa de primeira ordem."
+            ],
+            "resolution": "O TCR do fabricante aplica-se normalmente a uma gama declarada de temperatura e resistência. Gradientes de temperatura, alterações de material, contactos, deformação mecânica e autoaquecimento podem fazer com que um resultado real seja diferente da estimativa de primeira ordem."
+        },
+        {
+            "id": "pt-145",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[power-meaning] Power is distinct from energy; section computes heating time from watts.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heating with electrical power",
+                "Previous European Portuguese: Aquecimento com energia elétrica"
+            ],
+            "resolution": "Aquecimento com potência elétrica"
+        },
+        {
+            "id": "pt-146",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[heat-flux] This is heat flow per surface area, not volumetric flow rate (caudal).",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Average heater flux",
+                "Previous European Portuguese: Caudal médio do aquecedor"
+            ],
+            "resolution": "Densidade média do fluxo de calor do aquecedor"
+        },
+        {
+            "id": "pt-147",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Table identifies physical quantities, not counts/amounts.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quantity",
+                "Previous European Portuguese: Quantidade"
+            ],
+            "resolution": "Grandeza"
+        },
+        {
+            "id": "pt-148",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A gauge number describes a nominal size only when its gauge system is named.",
+                "Previous European Portuguese: Um número de contador descreve um tamanho nominal apenas quando o seu sistema de contador é nomeado."
+            ],
+            "resolution": "Um número de calibre só descreve um tamanho nominal quando o sistema de calibres é identificado."
+        },
+        {
+            "id": "pt-149",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge systems",
+                "Previous European Portuguese: Sistemas de medição"
+            ],
+            "resolution": "Sistemas de calibres"
+        },
+        {
+            "id": "pt-150",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: AWG is the American Wire Gauge, also known historically as Brown & Sharpe gauge.",
+                "Previous European Portuguese: AWG é o American Wire Gauge, também conhecido historicamente como medidor Brown & Sharpe."
+            ],
+            "resolution": "AWG é o American Wire Gauge, também conhecido historicamente como calibre Brown & Sharpe."
+        },
+        {
+            "id": "pt-151",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A larger ordinary gauge number generally means a smaller diameter; sizes above gauge 0 use 00, 000, or 0000.",
+                "Previous European Portuguese: Um número de calibre comum maior significa, geralmente, um diâmetro menor; tamanhos acima do medidor 0 utilizam 00, 000 ou 0000."
+            ],
+            "resolution": "Um número de calibre comum maior significa, geralmente, um diâmetro menor; tamanhos acima do calibre 0 utilizam 00, 000 ou 0000."
+        },
+        {
+            "id": "pt-152",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous European Portuguese: Medidor"
+            ],
+            "resolution": "Calibre"
+        },
+        {
+            "id": "pt-153",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge, area, and resistance",
+                "Previous European Portuguese: Medidor, área e resistência"
+            ],
+            "resolution": "Calibre, área e resistência"
+        },
+        {
+            "id": "pt-154",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous European Portuguese: A resistência depende do comprimento do condutor L, da área da secção transversal A e da resistividade do material ρ. Como a área varia com o quadrado do diâmetro, uma diferença modesta no diâmetro pode causar uma diferença substancial na resistência. No AWG, o aumento do medidor em três tamanhos reduz aproximadamente a área para metade e duplica a resistência por unidade de comprimento para o mesmo material e temperatura."
+            ],
+            "resolution": "A resistência depende do comprimento do condutor L, da área da secção transversal A e da resistividade do material ρ. Como a área varia com o quadrado do diâmetro, uma diferença modesta no diâmetro pode causar uma diferença substancial na resistência. No AWG, o aumento do calibre em três tamanhos reduz aproximadamente a área para metade e duplica a resistência por unidade de comprimento para o mesmo material e temperatura."
+        },
+        {
+            "id": "pt-155",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[gauge-system] Gauge is a named wire-size scale, not a counter or instrument; naming means identify the existing system.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Name the system, such as 24 AWG or 24 British SWG.",
+                "Previous European Portuguese: Dê um nome ao sistema, como por exemplo 24 AWG ou 24 British SWG."
+            ],
+            "resolution": "Identifique o sistema, por exemplo 24 AWG ou 24 British SWG."
+        },
+        {
+            "id": "pt-156",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[sheet-metal] Sheet refers to metal sheet, not a generic leaf.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: SWG is Standard Wire Gauge, the historical British wire and sheet-thickness system.",
+                "Previous European Portuguese: SWG é Standard Wire Gauge, o histórico sistema britânico de espessura de fios e folhas."
+            ],
+            "resolution": "SWG é Standard Wire Gauge, o histórico sistema britânico de espessura de fios e chapas."
+        },
+        {
+            "id": "pt-157",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-conductor] Stranded conductors contain multiple strands and need not be braided.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: These values are nominal. Product tolerances, coatings, insulation, and stranded construction can change the measured or overall diameter.",
+                "Previous European Portuguese: Estes valores são nominais. As tolerâncias do produto, os revestimentos, o isolamento e a construção entrançada podem alterar o diâmetro medido ou total."
+            ],
+            "resolution": "Estes valores são nominais. As tolerâncias do produto, os revestimentos, o isolamento e a construção multifilar podem alterar o diâmetro medido ou total."
+        },
+        {
+            "id": "pt-158",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-conductor] Strand construction means constituent wires, not cord construction or necessarily braiding.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For stranded conductors, include strand construction when flexibility and overall diameter matter.",
+                "Previous European Portuguese: Para condutores entrançados, inclua a construção do cordão quando a flexibilidade e o diâmetro total forem importantes."
+            ],
+            "resolution": "Para condutores multifilares, indique a constituição dos filamentos quando a flexibilidade e o diâmetro total forem importantes."
+        },
+        {
+            "id": "pt-159",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[pulse-substitution] Current translation prohibits replacing pulse ratings; source prohibits using pulse ratings in place of the continuous value.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous European Portuguese: 45 A, valor contínuo independente para a revisão tabless testada; não substitua os valores de impulso."
+            ],
+            "resolution": "45 A, valor contínuo independente para a revisão tabless testada; não o substitua por valores de impulso."
+        },
+        {
+            "id": "pt-160",
+            "translationId": "catalogText.mod.preset-231.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaporesso-identity] Restore manufacturer spelling and rated-power meaning; translate the two-cell descriptor without changing the cell format.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-21700 regulated mod with 18650 adapters; VAPORESSO rates it 220 W; testing measured 208 W, 8.979 V, and 39 A.",
+                "Previous European Portuguese: Mod regulado Dual-21700 com adaptadores 18650; VAPORESO avalia 220 W; os testes mediram 208 W, 8,979 V e 39 A."
+            ],
+            "resolution": "Mod regulado de duas células 21700 com adaptadores 18650; VAPORESSO indica uma potência nominal de 220 W; os testes mediram 208 W, 8,979 V e 39 A."
+        },
+        {
+            "id": "pt-161",
+            "translationId": "catalogText.mod.preset-234.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaporesso-identity] Restore manufacturer spelling and rated-power meaning; translate the two-cell descriptor without changing the cell format.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-18650 regulated mod; VAPORESSO rates it 220 W; testing measured 215 W, 9.08 V, and 37 A.",
+                "Previous European Portuguese: Mod regulado Dual-18650; VAPORESO avalia 220 W; os testes mediram 215 W, 9,08 V e 37 A."
+            ],
+            "resolution": "Mod regulado de duas células 18650; VAPORESSO indica uma potência nominal de 220 W; os testes mediram 215 W, 9,08 V e 37 A."
+        },
+        {
+            "id": "pt-162",
+            "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[integrated-mod] The battery is built in; it is not what regulates the mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in-battery regulated mod rated at 100 W; testing measured 101 W, 29 A, and at least 7.97 V.",
+                "Previous European Portuguese: Mod regulado por bateria integrada avaliado em 100 W; o teste mediu 101 W, 29 A e pelo menos 7,97 V."
+            ],
+            "resolution": "Mod regulado com bateria integrada, com potência nominal de 100 W; os testes mediram 101 W, 29 A e pelo menos 7,97 V."
+        },
+        {
+            "id": "pt-163",
+            "translationId": "catalogText.mod.preset-236.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-adapter-device] Single-cell construction is ordinary prose, not an untranslated product name. Preserve AS Chip 4.0 and numeric limits.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-18650 regulated mod using AS Chip 4.0; manufacturer profile is 100 W, 7.5 V, 32 A, 0.1–3 Ω.",
+                "Previous European Portuguese: Mod regulado Single-18650 usando AS Chip 4.0; o perfil do fabricante é de 100 W, 7,5 V, 32 A, 0,1–3 Ω."
+            ],
+            "resolution": "Mod regulado de uma célula 18650 com AS Chip 4.0; o perfil do fabricante é de 100 W, 7,5 V, 32 A, 0,1–3 Ω."
+        },
+        {
+            "id": "pt-164",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-adapter-device] Source describes a mod using a cell adapter, not an adapter mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell 21700/18650-adapter mod; Eleaf specifies 100 W, 9 V, 0.05–3.5 Ω; testing identified 30 A.",
+                "Previous European Portuguese: Adaptador Mod 21700/18650 de célula única; Eleaf especifica 100 W, 9 V, 0,05–3,5 Ω; testes identificaram 30 A."
+            ],
+            "resolution": "Mod de uma célula 21700, com adaptador para 18650; a Eleaf especifica 100 W, 9 V, 0,05–3,5 Ω; os testes identificaram 30 A."
+        },
+        {
+            "id": "pt-165",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous European Portuguese: R é a resistência, medida em ohms (\\u03a9)."
+            ],
+            "resolution": "R é a resistência, medida em ohms (Ω)."
+        },
+        {
+            "id": "pt-166",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous European Portuguese: Uma fonte de 4,2 V está ligada a uma carga de 1,0 \\u03a9."
+            ],
+            "resolution": "Uma fonte de 4,2 V está ligada a uma carga de 1,0 Ω."
+        },
+        {
+            "id": "pt-167",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous European Portuguese: I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+            ],
+            "resolution": "I = 4,2 V / 1,0 Ω = 4,2 A"
+        },
+        {
+            "id": "pt-168",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous European Portuguese: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "R = 12 V / 2 A = 6 Ω"
+        },
+        {
+            "id": "pt-169",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous European Portuguese: A resistência do circuito é de 6 \\u03a9."
+            ],
+            "resolution": "A resistência do circuito é de 6 Ω."
+        },
+        {
+            "id": "pt-170",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous European Portuguese: Uma corrente de 0,5 A circula através de uma resistência de 10 \\u03a9."
+            ],
+            "resolution": "Uma corrente de 0,5 A circula através de uma resistência de 10 Ω."
+        },
+        {
+            "id": "pt-171",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous European Portuguese: 1 k\\u03a9 = 1.000 \\u03a9"
+            ],
+            "resolution": "1 kΩ = 1.000 Ω"
+        },
+        {
+            "id": "pt-172",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous European Portuguese: 1 M\\u03a9 = 1.000.000 \\u03a9"
+            ],
+            "resolution": "1 MΩ = 1.000.000 Ω"
+        },
+        {
+            "id": "pt-173",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous European Portuguese: Dois resistores de 0,20 \\u03a9 em série estão ligados a 8,0 V."
+            ],
+            "resolution": "Dois resistores de 0,20 Ω em série estão ligados a 8,0 V."
+        },
+        {
+            "id": "pt-174",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous European Portuguese: R_total = 0,40 \\u03a9"
+            ],
+            "resolution": "R_total = 0,40 Ω"
+        },
+        {
+            "id": "pt-175",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous European Portuguese: Dois ramos iguais de 0,40 \\u03a9 estão ligados a 4,0 V."
+            ],
+            "resolution": "Dois ramos iguais de 0,40 Ω estão ligados a 4,0 V."
+        },
+        {
+            "id": "pt-176",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous European Portuguese: R_total = 0,20 \\u03a9"
+            ],
+            "resolution": "R_total = 0,20 Ω"
+        },
+        {
+            "id": "pt-177",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous European Portuguese: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "α = 400 × 10^-6 / °C = 0,0004 / °C"
+        },
+        {
+            "id": "pt-178",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous European Portuguese: \\u0394T = 100 - 20 = 80 °C"
+            ],
+            "resolution": "ΔT = 100 - 20 = 80 °C"
+        },
+        {
+            "id": "pt-179",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous European Portuguese: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "R_T = 1,00 [1 + 0,0004 × 80] = 1,032 Ω"
+        },
+        {
+            "id": "pt-180",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous European Portuguese: A resistência estimada é de 1,032 \\u03a9, cerca de 3,2% acima do seu valor a 20 \\u00b0C."
+            ],
+            "resolution": "A resistência estimada é de 1,032 Ω, cerca de 3,2% acima do seu valor a 20 °C."
+        },
+        {
+            "id": "pt-181",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous European Portuguese: Resistência: ohm (\\u03a9)."
+            ],
+            "resolution": "Resistência: ohm (Ω)."
+        },
+        {
+            "id": "pt-182",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode literal escape text into the intended mathematical/unit symbol; values and formula identities remain unchanged.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous European Portuguese: Por exemplo, 2,2 k\\u03a9 é igual a 2.200 \\u03a9 e 15 mA é igual a 0,015 A. Converta os valores em unidades compatíveis antes de utilizar uma fórmula."
+            ],
+            "resolution": "Por exemplo, 2,2 kΩ é igual a 2.200 Ω e 15 mA é igual a 0,015 A. Converta os valores em unidades compatíveis antes de utilizar uma fórmula."
+        },
+        {
+            "id": "pt-183",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous European Portuguese: R é a resistência, medida em ohms (\\u03a9)."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-184",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous European Portuguese: Uma resistência de 0 Ω é um curto-circuito ideal e deve ser tratada separadamente."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-185",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous European Portuguese: Uma fonte de 4,2 V está ligada a uma carga de 1,0 \\u03a9."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-186",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous European Portuguese: I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-187",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous European Portuguese: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-188",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous European Portuguese: A resistência do circuito é de 6 \\u03a9."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-189",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous European Portuguese: Uma corrente de 0,5 A circula através de uma resistência de 10 \\u03a9."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-190",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous European Portuguese: 1 k\\u03a9 = 1.000 \\u03a9"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-191",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous European Portuguese: 1 M\\u03a9 = 1.000.000 \\u03a9"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-192",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous European Portuguese: Uma bobina de 0,8 Ω é percorrida por uma corrente de 3 A."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-193",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous European Portuguese: Dois resistores de 0,20 \\u03a9 em série estão ligados a 8,0 V."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-194",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous European Portuguese: R_total = 0,40 \\u03a9"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-195",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous European Portuguese: Dois ramos iguais de 0,40 \\u03a9 estão ligados a 4,0 V."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-196",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous European Portuguese: R_total = 0,20 \\u03a9"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-197",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous European Portuguese: α é o coeficiente de temperatura do material, expresso em 1 / °C ou ppm / °C."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-198",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 1.00 \\u03a9 resistance is specified at 20 \\u00b0C, with a TCR of 400 ppm/\\u00b0C.",
+                "Previous European Portuguese: Especifica-se uma resistência de 1,00 Ω a 20 °C, com um TCR de 400 ppm/°C."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-199",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous European Portuguese: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-200",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous European Portuguese: \\u0394T = 100 - 20 = 80 °C"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-201",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous European Portuguese: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-202",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous European Portuguese: A resistência estimada é de 1,032 \\u03a9, cerca de 3,2% acima do seu valor a 20 \\u00b0C."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-203",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous European Portuguese: Resistência: ohm (\\u03a9)."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-204",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English itself exposes literal Unicode escape text; correct in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous European Portuguese: Por exemplo, 2,2 k\\u03a9 é igual a 2.200 \\u03a9 e 15 mA é igual a 0,015 A. Converta os valores em unidades compatíveis antes de utilizar uma fórmula."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-205",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-joule-summary] Resistance does not turn into heat. Portuguese already expresses the intended energy conversion correctly.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: How electrical current turns resistance into heat.",
+                "Previous European Portuguese: Como a corrente elétrica transforma a energia elétrica em calor."
+            ],
+            "resolution": "Canonical English issue retained for a separate source and locale-parity change; any independently recorded Portuguese display defect was corrected in this cycle."
+        },
+        {
+            "id": "pt-206",
+            "translationId": "shared.catalogManager.corruptStorage",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: No custom {plural} were loaded, and the saved data has not been overwritten.",
+                "Previous European Portuguese: No custom {plural} were loaded, and the saved data has not been overwritten."
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-207",
+            "translationId": "shared.catalogManager.operationMessage",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: {noun} is used by: {references}.",
+                "Previous European Portuguese: {noun} is used by: {references}."
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-208",
+            "translationId": "shared.tcr.forWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: for wire",
+                "Previous European Portuguese: for wire"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-209",
+            "translationId": "shared.wirewiz.core",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core",
+                "Previous European Portuguese: Core"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-210",
+            "translationId": "shared.wirewiz.wrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Wrap",
+                "Previous European Portuguese: Wrap"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-211",
+            "translationId": "shared.wirewiz.coreTwo",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core (two identical wires)",
+                "Previous European Portuguese: Core (two identical wires)"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-212",
+            "translationId": "shared.wirewiz.primaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Primary wrap (one around each core)",
+                "Previous European Portuguese: Primary wrap (one around each core)"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-213",
+            "translationId": "shared.wirewiz.secondaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Secondary wrap (around both cores)",
+                "Previous European Portuguese: Secondary wrap (around both cores)"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        },
+        {
+            "id": "pt-214",
+            "translationId": "shared.wirewiz.singleWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no locale-owned hook for this text; defer shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: {single} wire",
+                "Previous European Portuguese: {single} wire"
+            ],
+            "resolution": "Shared source/UI localization issue outside locale-owned text; preserved and documented for separate application i18n work."
+        }
+    ]
+}

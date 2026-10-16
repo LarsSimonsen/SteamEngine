@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "es",
+    "cycleId": "es-20260818T192141627Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Spanish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Spanish pass identified 25 actionable false-friend, grammar, register, thermal, circuit, and technical-clarity defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Spanish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "es-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The power paragraph translated heat-dissipation capability as thermal capacity and free space.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used suficiente capacidad térmica y espacio libre."
+            ],
+            "resolution": "Rewrote it with capacidad de disipación térmica and a margen de seguridad."
+        },
+        {
+            "id": "es-20260818-027",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power heading used a less precise heating term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Potencia de calentamiento."
+            ],
+            "resolution": "Changed it to Potencia térmica."
+        },
+        {
+            "id": "es-20260818-028",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The coil setup used transporta for electrical current.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was Una bobina de 0,8 Ω transporta 3 A."
+            ],
+            "resolution": "Changed it to a coil conducting a 3 A current."
+        },
+        {
+            "id": "es-20260818-029",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heading used calefacción, which suggests building heating rather than electrical heating.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was ¿Qué afecta la calefacción?."
+            ],
+            "resolution": "Changed it to ¿Qué afecta al calentamiento?."
+        },
+        {
+            "id": "es-20260818-030",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-transfer bullet translated hardware as hardware instead of equipment.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text referred to aire, líquido y hardware."
+            ],
+            "resolution": "Changed it to aire, líquido y equipos."
+        },
+        {
+            "id": "es-20260818-031",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph needed the more precise areal heat-flow term and clearer surface-transfer wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used flujo de calor and described heat abandoning the surface."
+            ],
+            "resolution": "Rewrote it with densidad de flujo térmico and natural Spanish."
+        },
+        {
+            "id": "es-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph translated safety margin as physical clearance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used Utilice un espacio libre adecuado."
+            ],
+            "resolution": "Rewrote it with margen de seguridad adecuado."
+        },
+        {
+            "id": "es-20260818-033",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor conclusion used an unnatural plural subject.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was Los mismos 20 A pasan por ambas resistencias."
+            ],
+            "resolution": "Changed it to La misma corriente de 20 A pasa por ambas resistencias."
+        },
+        {
+            "id": "es-20260818-034",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-resistor conclusion used transporta for current through a branch.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was cada rama transporta 10 A."
+            ],
+            "resolution": "Changed it to por cada rama circulan 10 A."
+        },
+        {
+            "id": "es-20260818-035",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The battery-cell heading could state the connection relationship more naturally.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Celdas en serie y paralelo."
+            ],
+            "resolution": "Changed it to Celdas conectadas en serie y paralelo."
+        },
+        {
+            "id": "es-20260818-036",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell bullet used an unclear equivalent-cell phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text ended with la de una celda igual."
+            ],
+            "resolution": "Changed it to la de una celda equivalente."
+        },
+        {
+            "id": "es-20260818-037",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The lithium-ion charging warning used an awkward literal phrase for series charging.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was La carga de iones de litio en serie."
+            ],
+            "resolution": "Rewrote it as La carga en serie de celdas de ion-litio with cell-level supervision."
+        },
+        {
+            "id": "es-20260818-038",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-solving title used a gerund that sounded like an incomplete instruction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Resolviendo circuitos reales."
+            ],
+            "resolution": "Changed it to Resolución de circuitos reales."
+        },
+        {
+            "id": "es-20260818-039",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The final circuit-solving bullet switched to informal tú while the surrounding text uses formal usted.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began Resuelve las ecuaciones."
+            ],
+            "resolution": "Changed it to the formal Resuelva."
+        },
+        {
+            "id": "es-20260818-040",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The triangle explanation needed clearer and less repetitive definitions of the sides and SOH-CAH-TOA.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph repeated side descriptions and used inconsistent phrasing."
+            ],
+            "resolution": "Rewrote it with precise opposite, adjacent, hypotenuse, sine, cosine, and tangent definitions."
+        },
+        {
+            "id": "es-20260818-041",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The efficiency percentage lacked Spanish spacing before the percent sign.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used 80%, contrary to the surrounding Spanish unit formatting."
+            ],
+            "resolution": "Changed it to 80 %."
+        },
+        {
+            "id": "es-20260818-042",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The object/material heading used versus, which is less natural for a technical comparison.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Objeto versus material."
+            ],
+            "resolution": "Changed it to Objeto y material."
+        },
+        {
+            "id": "es-20260818-043",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph used pertenece a todo el objeto where refers to the complete object is clearer.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began La capacidad calorífica pertenece a todo el objeto."
+            ],
+            "resolution": "Rewrote it with se refiere al objeto completo and natural grammar."
+        },
+        {
+            "id": "es-20260818-044",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.conduction.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The conduction heading had an unnecessary trailing period.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Conducción a través de una capa plana."
+            ],
+            "resolution": "Removed the trailing punctuation from the heading."
+        },
+        {
+            "id": "es-20260818-045",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The radiation paragraph incorrectly capitalized the word after a semicolon.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used ; Las temperaturas."
+            ],
+            "resolution": "Changed it to ; las temperaturas and retained absolute-kelvin wording."
+        },
+        {
+            "id": "es-20260818-046",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.practical-checks.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-check bullet used an infinitive fragment instead of the formal instruction used elsewhere.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet began Distinguir el flujo térmico."
+            ],
+            "resolution": "Changed it to the formal instruction Distinga."
+        },
+        {
+            "id": "es-20260818-047",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI display name had an unnecessary trailing period.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous display name was El sistema SI y las medidas imperiales.."
+            ],
+            "resolution": "Removed the trailing punctuation."
+        },
+        {
+            "id": "es-20260818-048",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance heading had an unnecessary trailing period.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was Calibre, área y resistencia.."
+            ],
+            "resolution": "Removed the trailing punctuation."
+        },
+        {
+            "id": "es-20260818-049",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG paragraph capitalized La after a semicolon and used the less precise corriente segura universal.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text contained ; La ampacidad también depende."
+            ],
+            "resolution": "Rewrote it with la capacidad de corriente and natural punctuation."
+        },
+        {
+            "id": "es-20260818-050",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire specification bullet used Asigne un nombre al sistema, an unnatural literal instruction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous bullet was Asigne un nombre al sistema."
+            ],
+            "resolution": "Changed it to the direct technical instruction Indique el sistema."
+        }
+    ]
+}

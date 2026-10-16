@@ -1,0 +1,391 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "tr",
+    "entries": {
+        "vaping": {
+            "source": "vaping",
+            "preferred": "elektronik sigara kullanımı",
+            "context": "Use for the activity or subject of using an electronic cigarette; keep the borrowed term vaping where it is the natural product term.",
+            "discouraged": [
+                "sigara içme"
+            ],
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish vaping terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Turkish vaping usage alternates between vaping and elektronik sigara kullanımı depending on register.",
+                "sources": [
+                    {
+                        "label": "Puff30: Elektronik sigara terimleri rehberi",
+                        "url": "https://puff30.com.tr/blog/71_elektronik-sigara-terimleri-rehberi-puff-coil-likit-ve-batarya-ne-anlama-gelir.html"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizer",
+            "context": "Vaping hardware component that heats liquid; retain the established Turkish loanword.",
+            "discouraged": [
+                "buharlaştırıcı"
+            ],
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish vaping terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Turkish product pages use both atomizer and atomizer-derived descriptions; consistency with vaping usage is preferred.",
+                "sources": [
+                    {
+                        "label": "Likital: Vaporesso Osmall 2 kullanım",
+                        "url": "https://www.likital.com/vaporesso-osmall-2-pod-mod-mtl-kullanim"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "coil",
+            "context": "Heating element in an atomizer; prefer coil in concise vaping UI, while bobin is an accepted Turkish explanatory equivalent.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish vaping terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Resolved: coil is common in Turkish vaping UI, while bobin is also established as its Turkish explanatory equivalent.",
+                "sources": [
+                    {
+                        "label": "Elektronik Sigara Rehberi: coil (ısıtıcı bobin)",
+                        "url": "https://www.elektroniksigararehberi.com/2023/11/5-temel-admda-coil-sarimi.html"
+                    },
+                    {
+                        "label": "E-Sigara Sepeti: Coil (Bobin)",
+                        "url": "https://www.esigarasepeti.com/sss/"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "likit",
+            "context": "Liquid used in an electronic cigarette; prefer likit in concise vaping UI, while e-sıvı is an accepted formal term.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish vaping terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "Resolved: likit and e-likit dominate consumer vaping usage, while e-sıvı is an established formal and academic equivalent.",
+                "sources": [
+                    {
+                        "label": "TÜSEB: Elektronik Sigara ve Yeni Nesil Tütün Ürünleri",
+                        "url": "https://files.tuseb.gov.tr/tuspe/files/yayinlar/2025-08-28-09-25-31.pdf"
+                    },
+                    {
+                        "label": "E-Likit: Turkish vaping product usage",
+                        "url": "https://www.e-likit.com/"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "battery": {
+            "source": "battery",
+            "preferred": "pil",
+            "context": "Rechargeable cell used in a vaping device.",
+            "discouraged": [
+                "batarya"
+            ],
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Pil and batarya are both used in Turkish; pil is shorter and aligns with electrical terminology.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://megep.meb.gov.tr/mte_program_modul/moduller_pdf/Elektrik%20Terminolojisi.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "resistance": {
+            "source": "resistance",
+            "preferred": "direnç",
+            "context": "Electrical resistance, measured in Ω.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "The standard Turkish electrical term is stable, but all machine-drafted technical copy still needs native-speaker review.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://megep.meb.gov.tr/mte_program_modul/moduller_pdf/Elektrik%20Terminolojisi.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "voltage": {
+            "source": "voltage",
+            "preferred": "gerilim",
+            "context": "Electrical voltage; prefer gerilim in formal technical labels, while voltaj is an accepted consumer-facing synonym.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "Resolved: gerilim is preferred for formal technical language, while voltaj is a recognized synonym and common in consumer vaping usage.",
+                "sources": [
+                    {
+                        "label": "Türk Dil Kurumu: gerilim",
+                        "url": "https://sozluk.gov.tr/gts?ara=gerilim"
+                    },
+                    {
+                        "label": "MEB: Gerilim (Voltaj)",
+                        "url": "https://meslek.meb.gov.tr/upload/dersmateryali/pdf/UB2024EDA905.pdf"
+                    },
+                    {
+                        "label": "Smok Türkiye: elektronik sigarada voltaj",
+                        "url": "https://smokturkey.net/"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "current": {
+            "source": "current",
+            "preferred": "akım",
+            "context": "Electrical current, not the adjective meaning present or current in time.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "English current is ambiguous outside an electrical context; the calculator context requires akım.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://megep.meb.gov.tr/mte_program_modul/moduller_pdf/Elektrik%20Terminolojisi.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "power": {
+            "source": "power",
+            "preferred": "güç",
+            "context": "Electrical power.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "The standard Turkish electrical term is stable, but the complete machine draft needs native-speaker review.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://meslek.meb.gov.tr/upload/dersmateryali/pdf/TES2024TE1001.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "wire": {
+            "source": "wire",
+            "preferred": "tel",
+            "context": "Wire used for a coil or electrical connection.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Google Translate draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "Tel is standard Turkish electrical terminology; context-sensitive review is still appropriate for wire-building labels.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://megep.meb.gov.tr/mte_program_modul/moduller_pdf/Elektrik%20Terminolojisi.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "temperature-coefficient": {
+            "source": "temperature coefficient",
+            "preferred": "sıcaklık katsayısı",
+            "context": "Temperature coefficient used by the TCR calculator.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Active-model draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "The phrase is technically direct, but a native reviewer should confirm the preferred TCR terminology.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://meslek.meb.gov.tr/upload/dersmateryali/pdf/TES2024TE1001.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "continuous-discharge": {
+            "source": "continuous discharge",
+            "preferred": "sürekli deşarj",
+            "context": "Battery continuous-discharge rating.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Active-model draft with Turkish battery terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "medium",
+            "uncertainty": {
+                "reason": "Battery sellers use several variants for discharge ratings; the concise technical wording needs native review.",
+                "sources": [
+                    {
+                        "label": "Tre Elektronik Sigara: elektronik sigara terimleri",
+                        "url": "https://trelektroniksigara24.com/elektronik-sigara-terimleri"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "safety": {
+            "source": "safety",
+            "preferred": "güvenlik",
+            "context": "Battery and device safety guidance.",
+            "state": "approved",
+            "provenance": {
+                "kind": "machine",
+                "method": "Active-model draft with Turkish electrical terminology research",
+                "model": "active Codex model"
+            },
+            "confidence": "high",
+            "uncertainty": {
+                "reason": "The base term is stable, but safety wording should receive a native technical review before approval.",
+                "sources": [
+                    {
+                        "label": "MEB: Elektrik terminolojisi",
+                        "url": "https://megep.meb.gov.tr/mte_program_modul/moduller_pdf/Elektrik%20Terminolojisi.pdf"
+                    }
+                ]
+            },
+            "reviewer": "Maintainer instruction",
+            "reviewedAt": "2026-08-17"
+        },
+        "resistivity": {
+            "source": "resistivity",
+            "preferred": "öz direnç",
+            "context": "Material property, distinct from the resistance of a particular wire.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full Turkish critique with contextual corrections",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "specific-heat": {
+            "source": "specific heat capacity",
+            "preferred": "özgül ısı kapasitesi",
+            "context": "Heat capacity per unit mass, J/(g·K) or J/(kg·K).",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full Turkish critique with contextual corrections",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "electrical-pulse": {
+            "source": "pulse",
+            "preferred": "darbe",
+            "context": "Electrical current pulse, not heartbeat.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full Turkish critique with contextual corrections",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "ampere-symbol": {
+            "source": "ampere symbol",
+            "preferred": "A",
+            "context": "Protected unit symbol; never translate as the English indefinite article.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full Turkish critique with contextual corrections",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "watt-symbol": {
+            "source": "watt symbol",
+            "preferred": "W",
+            "context": "Protected power unit symbol; K denotes kelvin.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent full Turkish critique with contextual corrections",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        }
+    }
+}

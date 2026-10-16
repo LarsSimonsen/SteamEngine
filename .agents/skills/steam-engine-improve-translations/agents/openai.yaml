@@ -1,0 +1,4 @@
+interface:
+  display_name: "Improve Steam Engine translations"
+  short_description: "Audit and improve queued locales"
+  default_prompt: "Use $steam-engine-improve-translations to audit and improve the next queued locale."

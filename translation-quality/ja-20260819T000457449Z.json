@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1,
+    "locale": "ja",
+    "cycleId": "ja-20260819T000457449Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Japanese source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Japanese pass identified two additional Kirchhoff terminology and current-flow wording defects; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Japanese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "ja-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading used 現在, which means present/current in time rather than electric current.", "disposition": "resolved", "evidence": ["キルヒホッフの現在法則 is a literal mistranslation of current law."], "resolution": "Changed it to the established キルヒホッフの電流則." },
+        { "id": "ja-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0", "category": "translation-defect", "severity": "medium", "summary": "The current-law example said a branch transmits current instead of saying current flows out of it.", "disposition": "resolved", "evidence": ["The previous Japanese wording used 伝送します for a branch carrying current away from a node."], "resolution": "Rephrased the example with 流れ込み and 流れ出る and clarified the assumed direction." }
+    ]
+}

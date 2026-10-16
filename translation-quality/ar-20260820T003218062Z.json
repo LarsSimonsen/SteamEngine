@@ -1,0 +1,42 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260820T003218062Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all 1,072 effective Arabic runtime entries, Arabic review metadata, the locale glossary, and prior reports were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "All 464 tests, translation review checks, queue validation, numeric and token scans, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Two consecutive fresh full-scope audits found no actionable Arabic findings after one numeric-range correction."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The locale is stable under automated and machine linguistic review; competent human Arabic review remains pending."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-tcr-point-range",
+            "translationId": "calculators.tcr.help",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The DNA 200 point-range guidance spelled out the lower endpoint while leaving the upper endpoint numeric, defeating exact numeric-token verification.",
+            "disposition": "resolved",
+            "evidence": [
+                "Canonical English explicitly specifies a 2–8 point range.",
+                "The source-to-runtime numeric audit found the Arabic entry retained only the digit 8."
+            ],
+            "resolution": "Restored both numeric endpoints as 2 and 8; two subsequent complete audits found no actionable issues."
+        }
+    ]
+}

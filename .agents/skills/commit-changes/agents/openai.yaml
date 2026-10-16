@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Changes"
+  short_description: "Stage task files and make validated Conventional Commits."
+  default_prompt: "Use $commit-changes to stage only task-related files, validate the staged diff, and create a concise Conventional Commit."

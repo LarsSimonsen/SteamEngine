@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "locale": "vi",
+    "cycleId": "vi-20260819T072108760Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Vietnamese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, TypeScript typecheck, production build, route checks, and generated internal-link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Vietnamese pass identified abbreviated and inconsistent side labels in the trigonometry worked example; both were aligned with the established Vietnamese terminology." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Vietnamese human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        {
+            "id": "vi-20260819-020",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0-1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Vietnamese worked trigonometry example used labels that differed from the shorter established terms used in the formulas and surrounding content.",
+            "disposition": "resolved",
+            "evidence": ["The example used đối diện and liền kề while the effective formulas used cạnh đối and cạnh kề."],
+            "resolution": "Aligned both example formulas with cạnh đối and cạnh kề."
+        }
+    ]
+}

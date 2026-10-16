@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "zh-Hans",
+    "cycleId": "zh-Hans-20260818T190702708Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Simplified Chinese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Simplified Chinese pass identified 25 actionable unit-formatting, false-friend, grammar, electrical, circuit, thermal, and formula defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Simplified Chinese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "zh-Hans-20260818-026",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rearranged-formulas heading was a literal translation rather than standard technical Chinese.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 重新排列的公式."
+            ],
+            "resolution": "Changed it to 变形公式."
+        },
+        {
+            "id": "zh-Hans-20260818-027",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-examples heading used 工作实例, which is less natural for a calculator example section.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 工作实例."
+            ],
+            "resolution": "Changed it to 示例."
+        },
+        {
+            "id": "zh-Hans-20260818-028",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example setup omitted spaces between numeric values and units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was 4.2 V 电源连接到 1.0Ω 负载."
+            ],
+            "resolution": "Added standard spacing around 1.0 Ω."
+        },
+        {
+            "id": "zh-Hans-20260818-029",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conclusion omitted spacing before the current unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was 负载电流为4.2A."
+            ],
+            "resolution": "Changed it to 负载电流为 4.2 A."
+        },
+        {
+            "id": "zh-Hans-20260818-030",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The example setup omitted spaces between current and resistance values and their units.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was 0.5A电流流过10Ω电阻."
+            ],
+            "resolution": "Changed it to 0.5 A 电流流过 10 Ω 电阻."
+        },
+        {
+            "id": "zh-Hans-20260818-031",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The power paragraph mistranslated safety headroom as heat capacity and clearance.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used 足够的热容量和净空来散发热量."
+            ],
+            "resolution": "Rewrote it with sufficient heat-dissipation capability and an appropriate safety margin."
+        },
+        {
+            "id": "zh-Hans-20260818-032",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The summary said current turned resistance into heat instead of electrical energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous summary was 电流如何将电阻转化为热量."
+            ],
+            "resolution": "Changed it to electrical energy being converted to heat by current."
+        },
+        {
+            "id": "zh-Hans-20260818-033",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.heating-power.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-power heading was less precise than the standard term for generated heat.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 加热功率."
+            ],
+            "resolution": "Changed it to 发热功率."
+        },
+        {
+            "id": "zh-Hans-20260818-034",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked-example heading used a literal work-related term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 工作示例."
+            ],
+            "resolution": "Changed it to 示例."
+        },
+        {
+            "id": "zh-Hans-20260818-035",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The setup used 承载 for current through a coil, which can imply a load rating rather than current flow.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous setup was 0.8Ω 线圈可承载 3A 电流."
+            ],
+            "resolution": "Rewrote it as 3 A current passing through a 0.8 Ω coil."
+        },
+        {
+            "id": "zh-Hans-20260818-036",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The heading was an awkward literal question using 供暖, which suggests building heating.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 影响供暖的因素有哪些."
+            ],
+            "resolution": "Changed it to 影响发热的因素."
+        },
+        {
+            "id": "zh-Hans-20260818-037",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-transfer bullet translated hardware as 硬件.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text referred to heat transfer to 空气、液体和硬件."
+            ],
+            "resolution": "Changed it to the technical term 设备."
+        },
+        {
+            "id": "zh-Hans-20260818-038",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The paragraph needed clearer distinction between power, temperature, heat capacity, and heat-flux density.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text used 热通量 without clarifying the areal quantity and used an awkward surface-exit phrase."
+            ],
+            "resolution": "Rewrote it with clear technical distinctions and natural Chinese."
+        },
+        {
+            "id": "zh-Hans-20260818-039",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph used 余量 without clearly identifying it as a safety margin.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said 使用适当的余量."
+            ],
+            "resolution": "Rewrote it with 适当的安全裕量 and clearer equipment checks."
+        },
+        {
+            "id": "zh-Hans-20260818-040",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction was a literal phrase that did not naturally describe circuit analysis.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was 基本术语使电路图更容易推理."
+            ],
+            "resolution": "Changed it to a natural introduction to analyzing circuit diagrams."
+        },
+        {
+            "id": "zh-Hans-20260818-041",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current-law example rendered 8 A as 8 个 A and used awkward current-direction wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text began 如果 8 个 A 进入一个节点 and ended with 选择当前方向."
+            ],
+            "resolution": "Rewrote it with correct units, flow wording, and assumed-direction explanation."
+        },
+        {
+            "id": "zh-Hans-20260818-042",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-resistor setup omitted spaces between values and units and used redundant connection wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was 两个0.20Ω电阻串联连接到8.0V."
+            ],
+            "resolution": "Changed it to two 0.20 Ω resistors connected in series to an 8.0 V source."
+        },
+        {
+            "id": "zh-Hans-20260818-043",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The cell heading was less direct than standard Chinese battery terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous title was 串联和并联的电池."
+            ],
+            "resolution": "Changed it to 电池串联和并联."
+        },
+        {
+            "id": "zh-Hans-20260818-044",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-cell bullet needed clearer battery-capacity wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said 安时容量仍保持为同等电池的水平."
+            ],
+            "resolution": "Rewrote it to state that voltage adds while ampere-hour capacity matches one equivalent cell."
+        },
+        {
+            "id": "zh-Hans-20260818-045",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell bullet used a vague phrase for approximate addition.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text said 容量和可用电流大约增加."
+            ],
+            "resolution": "Rewrote it to state that capacity and available current approximately add."
+        },
+        {
+            "id": "zh-Hans-20260818-046",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The charging warning used 电池级监控 rather than the clearer individual-cell term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was 串联锂离子充电需要电池级监控."
+            ],
+            "resolution": "Changed it to 单体级 monitoring with balancing or protection."
+        },
+        {
+            "id": "zh-Hans-20260818-047",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The limits paragraph needed more natural high-current terminology and a concise instruction.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text ended with 对高电流电路产生重大影响的所有被遗漏的行为."
+            ],
+            "resolution": "Rewrote it with 大电流电路 and clear omitted-factor wording."
+        },
+        {
+            "id": "zh-Hans-20260818-048",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR variable definition omitted spaces around the equation symbols.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous text was R_0是参考温度T_0下的电阻."
+            ],
+            "resolution": "Changed it to standard Chinese equation spacing."
+        },
+        {
+            "id": "zh-Hans-20260818-049",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.power-and-limits.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current formula contained the Chinese pronoun 我 instead of the variable I.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous formula was 我=V/R."
+            ],
+            "resolution": "Changed it to I = V / R."
+        },
+        {
+            "id": "zh-Hans-20260818-050",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The triangle explanation contained repeated and incorrect literal descriptions of sides and functions.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous paragraph repeated 对边 and described sine, cosine, and tangent relationships inaccurately."
+            ],
+            "resolution": "Rewrote it with correct opposite, adjacent, hypotenuse, and SOH-CAH-TOA definitions."
+        }
+    ]
+}

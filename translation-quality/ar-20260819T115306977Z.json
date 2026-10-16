@@ -1,0 +1,119 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T115306977Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The canonical English and complete Arabic source scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue and findings validation, TypeScript type checking, all 464 tests, the production IIS build, route-contract validation, and generated internal-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Arabic critique identified reversed chronology, a missing unit, protected-identity corruption, and electrical-context terminology defects."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested application corrections and a commit, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-chronology-labels",
+            "translationId": "shared.encyclopediaDetail.introducedNoEarlier",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The no-earlier-than label reversed the chronological constraint, while available-by used an instrumental preposition.",
+            "disposition": "resolved",
+            "evidence": ["The canonical labels establish lower-bound and by-date chronology."],
+            "resolution": "Used لا يسبق for the lower bound and بحلول for the by-date label."
+        },
+        {
+            "id": "ar-continuous-discharge-unit",
+            "translationId": "shared.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "A continuous-discharge statement omitted the protected ampere unit.",
+            "disposition": "resolved",
+            "evidence": ["The canonical interpolation appends the protected A unit symbol."],
+            "resolution": "Restored A after the interpolated rating."
+        },
+        {
+            "id": "ar-mod-identity",
+            "translationId": "shared.encyclopedia.categoryLabels.mods",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Mod was repeatedly rendered as modification or operating mode in shared, Wire Wizard, and catalog copy.",
+            "disposition": "resolved",
+            "evidence": ["The Arabic locale already uses المود for the vaping-device identity."],
+            "resolution": "Standardized the affected copy on المود and added a glossary entry discouraging تعديل and الوضع."
+        },
+        {
+            "id": "ar-battery-runtime-context",
+            "translationId": "calculators.batt.runtimeHelp",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Device overhead was translated as device overload and voltage sag used an unnatural literal rendering.",
+            "disposition": "resolved",
+            "evidence": ["The estimate lists ordinary runtime losses, not an overload condition."],
+            "resolution": "Used device-circuit consumption and voltage-drop terminology."
+        },
+        {
+            "id": "ar-coil-wire-terminology",
+            "translationId": "calculators.coil.legLength",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Coil legs were anatomical legs, strands were branches, and several geometry labels were malformed.",
+            "disposition": "resolved",
+            "evidence": ["These labels describe terminal wire portions, constituent strands, wrap spacing, and area."],
+            "resolution": "Used أطراف التوصيل, خيوط, المسافة بين اللفات, and مساحة المقطع العرضي consistently and recorded glossary guidance."
+        },
+        {
+            "id": "ar-tcr-coil-context",
+            "translationId": "calculators.tcr.needModelText",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Coil calculations were described as file calculations.",
+            "disposition": "resolved",
+            "evidence": ["The guidance links to Wire Wizard for coil and wire modeling."],
+            "resolution": "Used حسابات الكويل and tightened the surrounding technical wording."
+        },
+        {
+            "id": "ar-steam-engine-identity",
+            "translationId": "shared.encyclopedia.kicker",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Steam Engine product name was translated literally in the encyclopedia kicker.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."],
+            "resolution": "Restored Steam Engine verbatim."
+        },
+        {
+            "id": "ar-catalog-technical-properties",
+            "translationId": "shared.encyclopediaDetail.propertyLabels.boardController",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Board/controller, resistivity, specific heat capacity, and recommended vaping temperature used unrelated or imprecise terms.",
+            "disposition": "resolved",
+            "evidence": ["The fields identify electrical and thermal properties in the catalog."],
+            "resolution": "Applied established Arabic electrical and thermal terminology and removed the untranslated vaping word."
+        },
+        {
+            "id": "ar-battery-capacity-note",
+            "translationId": "catalog.battery.note.capacityBelowLabel",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "A battery-capacity note used the Arabic term for electrical power.",
+            "disposition": "resolved",
+            "evidence": ["The canonical note compares true capacity with the wrapper label."],
+            "resolution": "Used السعة الفعلية for true capacity."
+        }
+    ]
+}

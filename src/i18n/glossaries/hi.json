@@ -84,9 +84,17 @@
         "current": {
             "source": "current",
             "preferred": "करंट",
-            "context": "Electrical current, not present flow or currency.",
+            "context": "Electrical current; धारा is also valid in technical prose.",
+            "discouraged": [
+                "मौजूदा",
+                "वर्तमान"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Google Translate machine draft informed by Hindi electrical terminology" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
             "confidence": "high"
         },
         "power": {
@@ -113,6 +121,137 @@
                     { "label": "MSD Manual Hindi explanation of vaping vapor", "url": "https://www.msdmanuals.com/hi/home/special-subjects/illicit-drugs-and-intoxicants/vaping" }
                 ]
             }
+        },
+        "table": {
+            "source": "table",
+            "preferred": "तालिका",
+            "context": "A data table, not furniture.",
+            "discouraged": [
+                "मेज़"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "physical-property": {
+            "source": "physical property",
+            "preferred": "गुण",
+            "context": "Material or electrical property, not ownership.",
+            "discouraged": [
+                "संपत्ति"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "numeric-value": {
+            "source": "value",
+            "preferred": "मान",
+            "context": "Numeric value, not price.",
+            "discouraged": [
+                "कीमत"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "सेल",
+            "context": "Electrical battery cell; distinct from biological cell.",
+            "discouraged": [
+                "कोशिका"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "specific-heat": {
+            "source": "specific heat capacity",
+            "preferred": "विशिष्ट ऊष्मा धारिता",
+            "context": "Heat capacity per unit mass, J/(g·K) or J/(kg·K).",
+            "discouraged": [],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "heat-flux-density": {
+            "source": "heat flux",
+            "preferred": "ताप-प्रवाह घनत्व",
+            "context": "Heat-transfer rate per unit area, e.g. W/m².",
+            "discouraged": [],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "coil-leg": {
+            "source": "coil leg",
+            "preferred": "लेग",
+            "context": "Unwound lead connecting the coil; not an anatomical leg.",
+            "discouraged": [
+                "पैर"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "imperial-units": {
+            "source": "imperial units",
+            "preferred": "इम्पीरियल इकाइयाँ",
+            "context": "Measurement system, not royal status.",
+            "discouraged": [
+                "शाही इकाइयाँ"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "interpolation": {
+            "source": "interpolation",
+            "preferred": "अंतर्वेशन",
+            "context": "Estimating a value between existing data points.",
+            "discouraged": [
+                "प्रक्षेप"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete Hindi critique and contextual correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

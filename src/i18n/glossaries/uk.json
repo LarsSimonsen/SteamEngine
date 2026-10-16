@@ -7,9 +7,14 @@
             "source": "vaping",
             "preferred": "вейпінг",
             "context": "Сучасний український термін для використання електронної сигарети; у пояснювальному тексті можливе також паріння.",
-            "discouraged": ["випаровування"],
+            "discouraged": [
+                "випаровування"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Українські галузеві джерела та контекстний переклад" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українські галузеві джерела та контекстний переклад"
+            },
             "confidence": "medium"
         },
         "electronic-cigarette": {
@@ -17,63 +22,313 @@
             "preferred": "електронна сигарета",
             "context": "Стандартне українське позначення електронної сигарети.",
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українські технічні та галузеві джерела"
+            },
             "confidence": "high"
         },
         "atomizer": {
             "source": "atomizer",
             "preferred": "атомайзер",
             "context": "Компонент електронної сигарети, який нагріває рідину та утворює аерозоль; це не інтерфейс і не вихідний порт.",
-            "discouraged": ["розпилювач"],
+            "discouraged": [
+                "розпилювач"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українські технічні та галузеві джерела"
+            },
             "confidence": "high"
         },
         "coil": {
             "source": "coil",
             "preferred": "спіраль",
             "context": "Нагрівальний елемент атомайзера; у калькуляторах означає спіраль або нагрівальний вузол.",
-            "discouraged": ["котушка"],
+            "discouraged": [
+                "котушка"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українські технічні та галузеві джерела"
+            },
             "confidence": "high"
         },
         "e-liquid": {
             "source": "e-liquid",
             "preferred": "рідина",
             "context": "Рідина для електронної сигарети; за потреби уточнюється як рідина для вейпа.",
-            "discouraged": ["сік"],
+            "discouraged": [
+                "сік"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Українські технічні та галузеві джерела" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українські технічні та галузеві джерела"
+            },
             "confidence": "high"
         },
         "battery": {
             "source": "battery",
             "preferred": "акумулятор",
             "context": "Електричний акумуляторний елемент або акумуляторний блок; батарея збережена лише там, де йдеться про загальне побутове вживання.",
-            "discouraged": ["батарея"],
+            "discouraged": [
+                "батарея"
+            ],
             "state": "machine",
-            "provenance": { "kind": "machine", "method": "Українська електротехнічна термінологія" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українська електротехнічна термінологія"
+            },
             "confidence": "high"
         },
         "output-power": {
             "source": "output power",
             "preferred": "потужність, яку віддає атомайзер",
             "context": "У контексті атомайзера це потужність, що віддається або випромінюється нагрівальним вузлом, а не інтерфейс чи вихідний порт.",
-            "discouraged": ["вихід атомайзера", "вихідний порт"],
+            "discouraged": [
+                "вихід атомайзера",
+                "вихідний порт"
+            ],
             "state": "needs-review",
-            "provenance": { "kind": "machine", "method": "Українські джерела термінології вейпінгу та контекстний переклад" },
+            "provenance": {
+                "kind": "machine",
+                "method": "Українські джерела термінології вейпінгу та контекстний переклад"
+            },
             "confidence": "medium",
             "uncertainty": {
                 "reason": "Українські джерела послідовно вживають атомайзер для пристрою, але в англійському тексті окремо уточнено, що output означає випромінювану потужність, а не інтерфейс.",
                 "bestCurrentTranslation": "Потужність, яку віддає атомайзер",
-                "alternatives": ["Вихідна потужність атомайзера", "Потужність на атомайзері"],
+                "alternatives": [
+                    "Вихідна потужність атомайзера",
+                    "Потужність на атомайзері"
+                ],
                 "sources": [
-                    { "label": "KalyanCity: що таке атомайзер", "url": "https://kalyan-city.com.ua/chto-takoe-atomajzer/" },
-                    { "label": "Hotline: як вибрати електронну сигарету", "url": "https://hotline.ua/ua/guides/yak-vibrati-elektronn-cigarki/" },
-                    { "label": "Parovoz Vape: корисна інформація", "url": "https://parovoz.org.ua/pokupatelyu/poleznaya-informatsiya/" }
+                    {
+                        "label": "KalyanCity: що таке атомайзер",
+                        "url": "https://kalyan-city.com.ua/chto-takoe-atomajzer/"
+                    },
+                    {
+                        "label": "Hotline: як вибрати електронну сигарету",
+                        "url": "https://hotline.ua/ua/guides/yak-vibrati-elektronn-cigarki/"
+                    },
+                    {
+                        "label": "Parovoz Vape: корисна інформація",
+                        "url": "https://parovoz.org.ua/pokupatelyu/poleznaya-informatsiya/"
+                    }
                 ]
             }
+        },
+        "electrical-current": {
+            "source": "current",
+            "preferred": "струм",
+            "context": "Electrical current, not present/current as an adjective.",
+            "discouraged": [
+                "поточний"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-capacity": {
+            "source": "capacity",
+            "preferred": "ємність",
+            "context": "Battery charge capacity, distinct from power.",
+            "discouraged": [
+                "потужність"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-cell": {
+            "source": "cell",
+            "preferred": "акумуляторний елемент",
+            "context": "One electrochemical cell; елем. is invariant in compact count summaries.",
+            "discouraged": [
+                "клітина",
+                "камера"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "акумуляторний блок",
+            "context": "Complete cell assembly.",
+            "discouraged": [
+                "пакет"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "continuous-discharge": {
+            "source": "continuous discharge",
+            "preferred": "безперервний розряд",
+            "context": "Sustained discharge; distinguish from DC or pulse operation.",
+            "discouraged": [
+                "постійний розряд"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "coil-wraps": {
+            "source": "wraps",
+            "preferred": "витки",
+            "context": "Coil winding turns.",
+            "discouraged": [
+                "обгортання"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "wire-strands": {
+            "source": "strands",
+            "preferred": "жили",
+            "context": "Individual conducting strands.",
+            "discouraged": [
+                "пасма"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "twist-pitch": {
+            "source": "twist pitch",
+            "preferred": "крок скручування",
+            "context": "Axial distance for one full twist.",
+            "discouraged": [
+                "крок твіст"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "heat-flux-density": {
+            "source": "heat flux",
+            "preferred": "густина теплового потоку",
+            "context": "Heat transfer rate per unit area, e.g. W/m².",
+            "discouraged": [],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "nicotine-base": {
+            "source": "nicotine base",
+            "preferred": "нікотинова основа",
+            "context": "Mixing ingredient, not a personal name.",
+            "discouraged": [
+                "База Ніка"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "nicotine-strength": {
+            "source": "nicotine concentration",
+            "preferred": "концентрація нікотину",
+            "context": "Nicotine mass per volume.",
+            "discouraged": [
+                "Nic сила"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "physical-property": {
+            "source": "property",
+            "preferred": "властивість",
+            "context": "Physical/material property, not ownership.",
+            "discouraged": [
+                "власність"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "single-wire": {
+            "source": "single wire",
+            "preferred": "одинарний дріт",
+            "context": "Single conductor construction, not marital status.",
+            "discouraged": [
+                "неодружений"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "dimensional-analysis": {
+            "source": "dimension",
+            "preferred": "розмірність",
+            "context": "Dimensional compatibility in equations, not physical size.",
+            "discouraged": [
+                "розмір"
+            ],
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Independent complete-locale critique and contextual semantic correction",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
         }
     }
 }

@@ -1,0 +1,108 @@
+{
+    "entityId": "battery-5",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for AW IMR 18350.",
+        "description": "This researched draft preserves the calculator's 800mAh and 12A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "store-18350",
+            "title": "18350 batteries",
+            "url": "https://www.18650batterystore.com/collections/18350-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "spec-b32",
+            "title": "List of all batteries in our database",
+            "url": "https://www.cqham.ru/forum/attachment.php?attachmentid=341531&d=1597850680",
+            "publisher": "Battery test database mirror",
+            "limitations": "Aggregated historical test records; supports the listed AW variant's top style and protection status but is not manufacturer authentication."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves AW IMR 18350 800mAh 12A as a 800mAh preset with a 12A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The AW IMR 18350 800mAh entry is listed as an unprotected button-top cell in an aggregated battery test database.",
+            "evidenceDate": "2015",
+            "confidence": "medium"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The AW IMR 18350 catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "No reliable exact-model market-introduction date was established for AW IMR 18350 in the 2026-08-04 catalog-wide research pass.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The underlying cell or continuity of the exact wrapper revision is not currently established.",
+            "runtimeImplication": "Retain compatibility data but do not infer current production identity."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18350",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 35
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "low",
+            "summary": "The exact AW IMR 18350 800mAh wrapper revision, appearance, and manufacturer authenticity path remain unresolved.",
+            "checks": [
+                "Inspect the exact wrapper, label, and hologram against a known-good sample.",
+                "Use a specialist retailer with a documented AW supply chain.",
+                "Do not transfer the red appearance or dimensions of the 700mAh variant to this entry."
+            ]
+        }
+    }
+}

@@ -1,0 +1,231 @@
+﻿#workbench {
+    overflow-x:auto;
+}
+
+#workbench.hidesuboutputs .suboutput,
+#workbench.hidesuboutputs .subslot .tcrbuttons{
+	display: none;
+}
+
+.resov, .suboutput {
+	margin-top:1em;
+}
+
+.suboutput {
+	font-size:smaller;
+}
+
+.slot, .slothead {
+	display:block;
+	white-space:nowrap;
+	margin-bottom:0.5em;
+	padding-bottom: 0.25em;
+	border: 1px solid #bbb;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-shadow:  3px 3px 10px rgba(0,0,0,0.3), inset 3px 1px 15px rgba(47,31,31,0.1);
+	position:relative;
+}
+.slothead {
+	padding-left:1em;
+	padding-right:0.5em;
+	border-bottom-left-radius: 2px;
+	background-color: #fff7ef;
+}
+.slothead label {
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+	font-size: smaller;
+	font-weight: normal !important;
+}
+.rightpart, .leftpart {
+	padding-top:1em;
+}
+.leftpart {
+	margin-left:1em;
+}
+.hovedoutput {
+	box-shadow:  2px 2px 10px #ccccdd;
+}
+.slot.subslot {
+	background-color:#fff;
+}
+.slot.wire {
+	background-color:#f3f3f3;
+}
+.slot .leftpart {
+	display:inline-block;
+	min-width:10em;
+	vertical-align:top;
+}
+.slot .rightpart {
+	display:inline-block;
+	margin-left:0.5em;
+}
+.slot .singl {
+	display:block;
+	white-space: wrap;
+}
+.slot label {
+	color:#777;
+}
+.slottyp {
+	width:100%;
+}
+.slottyp select {
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+.slottypoptions {
+	width:15em;
+}
+.slotinfo {
+	/* width:15em; */
+}
+.twistpitch {
+	width: 5em;
+}
+.menumsg {
+	position:relative;
+}
+.menumsg-inner {
+	position:absolute;
+}
+a.closeslot {
+	position:absolute;
+	left:-5px;
+	top:-5px;
+	color:#888888;
+	cursor:pointer;
+	text-shadow: 1px 1px #ffffff;
+}
+a.closeslot:hover {
+	color:black;
+	text-shadow: 2px 2px #dddddd;
+}
+.slotinfo td {
+	padding-right:0.4em;
+}
+.rightpart {
+	/* border-left:1px solid #eee; */
+	padding-left:0.5em;
+	padding-right: 0.5em;
+}
+.slot.wire .rightpart {
+	border-left:none;
+}
+.slot {
+	//border-top: 1px solid gray;
+}
+.rightpart {
+}
+.finalslot .rightpart {
+	min-height: 30em;
+}
+.finalslot .slot .rightpart {
+	min-height:1em;
+}
+.leftpart {
+	margin-right:0.5em;
+}
+.results table {
+	margin-bottom:0.5em;
+	width:100%;
+}
+.results table.results-mech,
+.results table.results-heat {
+	border-top:1px solid lightgrey;
+}
+.results .results-res,
+.results .results-heatflux
+{
+	font-weight:bolder;
+}
+.results .results-sensitivity2 td.tablelabel,
+.results .results-sensitivity2 td.tablevalue {
+	font-weight:bolder;
+
+}
+.fractionmenu {
+	max-width: 20em;
+}
+.form-group-sm {
+	margin-bottom: 2px;
+}
+#tfrinfo {
+	vertical-align:top;
+}
+#tfrinfo #tfrleft {
+	display:inline-block;
+	width:10%;
+	vertical-align:top;
+	padding-left:0px;
+}
+#tfrinfo #tfrright {
+	display:inline-block;
+	width:90%;
+	padding-left:0.5em;
+}
+#tfrinfo ul {
+	border:none;
+	max-width:8em;
+	min-width:4em;
+}
+#tfrinfo ul#tfrnav {
+	vertical-align:top;
+}
+#tfrinfo ul li {
+	font-size: smaller;
+	border-bottom:1px solid lightgrey;
+	padding-top:0.2em;
+	padding-bottom:0.2em;
+	margin: 0px;
+}
+#tfrinfo ul li a {
+	padding:0px;
+}
+#tfrnav li.active {
+	background-color:#eeeeee;
+	font-weight:bolder;
+	padding-left:0.5em;
+}
+#tfrinfo {
+	height:160px;
+	display:block;
+}
+#tfrinfo #tfrchart
+,#tfrinfo #tfrmain
+,#tfrinfo #tfrtable
+,#tfrinfo #tfrequiv
+,#tfrinfo #tfrdna200 {
+	height:160px;
+	display:none;
+}
+#tfrinfo #tfrchart {
+	display:block;
+}
+#showtfrmain {
+	font-weight:900%;
+}
+#tfrdna200 textarea {
+	max-width:32em;
+}
+#tfrequivc
+,#tfrequivf {
+	min-width:4em;
+	padding-left:0px;
+	padding-right:0.5em;
+}
+#tcresults .panel-body {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.subslots {
+	position:relative;
+}
+.showadvancedslothead {
+	position:absolute;
+	right: 0px;
+	top: 0px;
+	color:grey;
+	opacity: 0.75;
+}

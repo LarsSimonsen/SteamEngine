@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<head>
+    <link rel="canonical" href="https://www.steam-engine.org/about" />
+    <meta property="og:url" content="https://www.steam-engine.org/about" />
+    <title>About | Steam Engine | free vaping calculators</title>
+    <meta property="og:title" content="About | Steam Engine | free vaping calculators" />
+    <meta name="description" content="About the Steam Engine suite of vaping calculators." />
+    <meta property="og:description" content="About the Steam Engine suite of vaping calculators." />
+    <link id="bscss" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="se.css?v=8" rel="stylesheet" />
+<script defer src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script defer src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="steam-engine.js?v=19"></script>
+<script defer src="analytics.js?v=1"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Lars Olaf Simonsen">
+<meta property="og:image" content="https://www.steam-engine.org/static/Hi-Res-Icon444.png" />
+<meta property="og:site_name" content="Steam Engine" />
+<meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" sizes="192x192" href="/static/icon192x192.png" />
+<link rel="icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/static/icon128x128.png" />
+<base target="_parent" />
+    <style>
+        #themestab, #customdatatab {
+            display: none;
+        }
+    </style>
+</head>
+<body id="about">
+    <nav id="toppnav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#setoppmeny"
+                aria-expanded="false"
+                style="margin-bottom:0px;"
+            >
+                <span style="display:inline-block;margin-right:0.5em;">Menu</span>
+                <span style="display:inline-block;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </button>
+            <a href="https://www.steam-engine.org" rel="bookmark">
+                <img src="static/logo.png" alt="Steam Engine logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="setoppmeny">
+            <ul class="nav navbar-nav" id="choo-topnav">
+                <li class="tnf" id="navtab-main">
+                    <a class="tnf" href="https://www.steam-engine.org">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-ohm">
+                    <a class="tnf" href="ohm">
+                        Ohm's law
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-coil">
+                    <a class="tnf" href="coil">
+                        Coil wrapping
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-wirewiz">
+                    <a class="tnf" href="wirewiz">
+                        Wire Wizard
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-batt">
+                    <a class="tnf" href="batt">
+                        Battery drain
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-modrange">
+                    <a class="tnf" href="modrange">
+                        Mod range
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-juice">
+                    <a class="tnf" href="juice">
+                        E-liquid
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-converter">
+                    <a class="tnf" href="converter">
+                        Convert
+                    </a>
+                </li>
+
+                <li class="tnf" id="navtab-new-site">
+                    <a class="tnf" href="..">
+                        New site
+                    </a>
+                </li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navtab-about" class="tnf">
+                    <a class="tnf" href="about" rel="author license">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="sebackto"></div>
+    <div class="container">
+        <nav class="btn-group">
+            <span class="btn btn-default active">About</span>
+            <a href="themes" class="btn btn-default">Themes</a>
+            <a href="customdata" class="btn btn-default">Custom data</a>
+        </nav>
+        <main id="abouttab">
+            <div class="row">
+                <section class="col col-md-6 col-lg-4">
+                    <h2>
+                        About <a href="https://www.steam-engine.org"><small class="notranslate">Steam Engine</small></a>
+                    </h2>
+                    <p>
+                        In <time datetime="2014-02">February 2014</time>, I got into rebuilding.
+                        I was searched for an online coil wrapping calculator, 
+                        but all I could find was spreadsheets and Ohm's law calculators. 
+                        So I created this site.
+                    </p>
+                    <p>
+                        The tool was initially called <i class="notranslate">vape calc</i> due to a lack of imagination. 
+                        Within the first month, the name was changed to <i class="notranslate">Steam Engine</i>.
+                    </p>
+                    <section>
+                        <h3>Author <small>of bugs and glitches</small></h3>
+                        <p>
+                            The <span class="notranslate">Steam Engine</span> 
+                            is built and stoked by a Norwegian vaping code monkey.
+                        </p>
+                        <p>Thanks to Ben Davis for designing the logo.</p>
+                    </section>
+                </section>
+
+                <div class="col col-md-6 col-lg-4">
+                    <section>
+                        <h2>Links <small>inbound and outbound</small></h2>
+                        <p>
+                            Feel free to link to <span class="notranslate">Steam Engine</span> from your own website.
+                            I would prefer that you link to the main page, 
+                            <a href="https://www.steam-engine.org"><code>https://www.steam-engine.org</code></a>,
+                            but this being the World Wide Web, you can link to wherever you like.
+                        </p>
+                        <h3>Non-English versions</h3>
+                        <p>
+                            If you want a link to Steam Engine in your own language, 
+                            you can add the language code in the URL.
+                            For example, in order to link to Steam Engine in Ukrainian, use
+                            <code>
+                                <a href="https://www.steam-engine.org/#googtrans(en|uk)" target="_blank">
+                                    https://www.steam-engine.org/#googtrans(en|uk)
+                                </a>
+                            </code>.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col col-md-6 col-lg-4">
+                    <section>
+                        <h3>Safety <small>&ndash; please vape responsibly</small></h3>
+                        <p>
+                            There are some dangers to Litihum ion batteries. The same goes for nicotine.
+                            Please inform yourself on battery safety and nicotine safety 
+                            before you dive into rebuilding and DIY.
+                        <p>
+                            After you have made a coil, always measure the resistance before you use it.
+                            Also be conscious about the limitations of your batteries.
+                            Double check your calculations using different tools.
+                        </p>
+                        <p>
+                            Concentrated nicotine can be lethal.
+                            Take the necessary precautions, and again, double check your calculations using other tools.
+                        </p>
+                        <p>
+                            Inform yourself about the helth effects of any flavoring agents you use in your e-liquids.
+                            Just because something is safe to eat, doesn't mean it is safe to inhale.
+                        </p>
+                    </section>
+                </div>
+                <section class="col col-md-6 col-lg-4 small">
+                    <h3>Disclaimer <small>it wasn't me</small></h3>
+                    <p>
+                        While I make every effort to deliver high quality calculators, 
+                        I do not guarantee that my products are free from defects. 
+                        The calculators are provided "as is", and you use the calculators at your own risk.
+                        I make no warranties as to accuracy, sanity, fitness for a particular purpose, 
+                        or any other warranties whether expressed or implied.
+                        No oral or written communication from or information provided by me shall create a warranty.
+                    </p>
+                    <p>
+                        Under no circumstances shall I be liable for direct, indirect, special, incidental, 
+                        or consequential damages resulting from the use, 
+                        misuse, or inability to use these calculators, 
+                        even if I has been advised of the possibility of such damages.
+                    </p>
+                    <p>
+                        Be aware of your personal responsibility.
+                        Double check all results if necessary.
+                        Use your best judgement, and use it at your own risk.
+                    </p>
+                    <h4>More legalese <small>the fine print</small></h4>
+                    <p>
+                        Copyright &copy; 2014-2026.
+                        All rights are mine, 
+                        <i title="And the theory about the blue whale too.">my own</i>, my precioussss.
+                    </p>
+                </section>
+            </div>
+        </main>
+        <main id="themestab">
+            <div>
+                <h1>
+                    Themes
+                    <small>
+                        Currently showing: 
+                        <span class="selectedtheme"></span>
+                    </small>
+                </h1>
+                <div class="row">
+                    <ul class="list-group col col-sm-3 col-xs-6">
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css"
+                        >
+                            Cerulean
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css"
+                        >
+                            Cosmo
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css"
+                        >
+                            Cyborg
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css"
+                        >
+                            Flatly
+                        </li>
+                    </ul>
+                    <ul class="list-group col col-sm-3 col-xs-6">
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css"
+                        >
+                            Darkly
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css"
+                        >
+                            Journal
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+                        >
+                            Lumen
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"
+                        >
+                            Paper
+                        </li>
+                    </ul>
+                    <ul class="list-group col col-sm-3 col-xs-6">
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css"
+                        >
+                            Readable
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css"
+                        >
+                            Sandstone
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css"
+                        >
+                            Simplex
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css"
+                        >
+                            Slate
+                        </li>
+                    </ul>
+                    <ul class="list-group col col-sm-3 col-xs-6">
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css"
+                        >
+                            Spacelab
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"
+                        >
+                            Superhero
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css"
+                        >
+                            United
+                        </li>
+                        <li
+                            class="list-group-item themez bootswatch"
+                            data-url="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css"
+                        >
+                            Yeti
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="themes-advanced" style="display:none;">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Custom CSS file URL</h3>
+                    </div>
+                    <div class="panel-body">
+                        <input class="form-control" placeholder="https://your.style/file/here.css" id="customcssfile" />
+                        <span class="help-block">
+                            Paste the URL to a Bootstrap or other CSS file here.
+                        </span>
+                        <span class="btn btn-primary" id="usecustomcssfile">Use custom CSS file</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span class="btn btn-default advancedthemes pull-right">Advanced</span>
+
+                <span class="btn btn-default removethemes">Reset to default</span>
+            </div>
+        </main>
+
+        <main id="customdatatab">
+            <style>
+                .list-group-item:hover {
+                    background-color: #eee;
+                }
+            </style>
+            <h1>
+                Custom data
+                <small>import/export your own</small>
+            </h1>
+
+            <section class="custommat panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Coil materials</h3>
+                </div>
+                <ul class="list-group"></ul>
+                <div class="panel-body">
+                    <form>
+                        <span class="help-block">
+                            Type in the properties to add them, or import JSON data.
+                        </span>
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control nm" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Resistivity</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right rstv" value="0.5" />
+                                        <span class="input-group-addon">Ω mm²/m</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Heat capacity</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right hc" value="0.5" />
+                                        <span class="input-group-addon">J/g×K</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Density</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right dens" value="7.5" />
+                                        <span class="input-group-addon">g/cm³</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>TCR (optional)</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right tcr" />
+                                        <span class="input-group-addon">/°C</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>TFR (optional)</label>
+                                    <input class="form-control tfr" />
+                                </div>
+                                <span class="btn btn-primary add">Add</span>
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="form-group">
+                                    <label>Import</label>
+                                    <textarea class="form-control" placeholder="Paste JSON data here"></textarea>
+                                </div>
+                                <span class="btn btn-primary import">Import</span>
+                                <div>
+                                    <label>Example JSON data:</label>
+                                    <pre>{"nm":"Handwavium","rstv":0.123,"hc":0.321,"dens":9.87,"tfr":[[0,0.5],[20,1],[100,1.5]]}</pre>
+                                    <pre>{"nm":"Unobtainium","rstv":5.678,"hc":0.012,"dens":5.67,"tcr":0.0987}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="custombatt panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Batteries</h3>
+                </div>
+                <ul class="list-group"></ul>
+                <div class="panel-body">
+                    <form>
+                        <span class="help-block">
+                            Type in the properties to add them, or import JSON data.
+                        </span>
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control nm" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Charge</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right q" value="1000" />
+                                        <span class="input-group-addon">mAh</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <div class="form-group">
+                                            <label>C rating</label>
+                                            <input step="0.01" min="0.01" class="form-control text-right c" />
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-6">
+                                        <div class="form-group">
+                                            <label>Max continuous discharge current</label>
+                                            <div class="input-group">
+                                                <input step="0.01" min="0.01" class="form-control text-right a" />
+                                                <span class="input-group-addon">A</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="btn btn-primary add">Add</span>
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="form-group">
+                                    <label>Import</label>
+                                    <textarea class="form-control" placeholder="Paste JSON data here"></textarea>
+                                </div>
+                                <span class="btn btn-primary import">Import</span>
+                                <div>
+                                    <label>Example JSON data:</label>
+                                    <pre>{"nm":"FakePower IMR 1865","q":650,"c":0.1}</pre>
+                                    <pre>{"nm":"ExplosiveFire ICR 1860","q":11000,"a":0.33}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="custommod panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Mods</h3>
+                </div>
+                <ul class="list-group"></ul>
+                <div class="panel-body">
+                    <form>
+                        <span class="help-block">
+                            Type in the properties to add them, or import JSON data.
+                        </span>
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control nm" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Maximum voltage</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right umax" />
+                                        <span class="input-group-addon">V</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Maximum power</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right pmax" />
+                                        <span class="input-group-addon">W</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Maximum current</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right imax" />
+                                        <span class="input-group-addon">A</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Minimum resistance (optional)</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right rmin" />
+                                        <span class="input-group-addon">Ω</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Maximum resistance (optional)</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right rmax" />
+                                        <span class="input-group-addon">Ω</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Minimum voltage (optional)</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right umin" />
+                                        <span class="input-group-addon">V</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Minimum power (optional)</label>
+                                    <div class="input-group">
+                                        <input step="0.01" min="0.01" class="form-control text-right pmin" />
+                                        <span class="input-group-addon">W</span>
+                                    </div>
+                                </div>
+                                <span class="btn btn-primary add">Add</span>
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="form-group">
+                                    <label>Import</label>
+                                    <textarea class="form-control" placeholder="Paste JSON data here"></textarea>
+                                </div>
+                                <span class="btn btn-primary import">Import</span>
+                                <div>
+                                    <label>Example JSON data:</label>
+                                    <pre>{"nm":"Legal Vape 4000","umin":12,"umax":66.6,"pmin":100,"pmax":4000,"rmin":0.5,"rmax":3,"imax":75}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <p>
+                The custom presets are stored in the 
+                <a href="https://en.wikipedia.org/wiki/Web_storage" target="_blank" rel="nofollow">local storage</a> 
+                of your browser. 
+                If you want to see it in another browser, you'll have to import it there too.
+                Save the JSON data elsewhere if you want to take it with you.
+            </p>
+        </main>
+        </div>
+
+    <script type="text/x-handlebars-template" id="template-data-mat">
+        <strong>{{nm}}</strong>
+        <ul>
+            <li>Resistivity: <strong>{{rstv}}</strong> Ω mm²/m</li>
+            <li>Heat capacity: <strong>{{hc}}</strong> J/g×K</li>
+            <li>Density: <strong>{{dens}}</strong> g/cm³</li>
+            {{#if tcr}}
+            <li>TRC: <strong>{{tcr}}</strong> /°C</li>
+            {{/if}}
+            {{#if tfr}}
+            <li>
+                TFR: <strong>{{tfr}}</strong>
+            </li>
+            {{/if}}
+        </ul>
+        <p class="text-right">JSON data: <code class="text-muted">{{json}}</code></p>
+    </script>
+    <script type="text/x-handlebars-template" id="template-data-batt">
+        <strong>{{nm}}</strong>
+        <ul>
+            <li>Capacity: <strong>{{q}}</strong> mAh</li>
+            {{#if c}}
+                <li>C-rating: <strong>{{c}}</strong></li>
+            {{/if}}
+            {{#if a}}
+                <li>Amp limit: <strong>{{a}}</strong> A</li>
+            {{/if}}
+        </ul>
+        <p class="text-right"><code class="text-muted">{{json}}</code></p>
+    </script>
+    <script type="text/x-handlebars-template" id="template-data-mod">
+        <strong>{{nm}}</strong>
+        <ul>
+            {{#if umin}}
+            <li>Minimum voltage: <strong>{{umin}}</strong> V</li>
+            {{/if}}
+            {{#if umax}}
+            <li>Maximum voltage: <strong>{{umax}}</strong> V</li>
+            {{/if}}
+            {{#if pmin}}
+            <li>Minimum power: <strong>{{pmin}}</strong> W</li>
+            {{/if}}
+            {{#if pmax}}
+            <li>Maximum power: <strong>{{pmax}}</strong> W</li>
+            {{/if}}
+            {{#if rmin}}
+            <li>Minimum resistance: <strong>{{rmin}}</strong> Ω</li>
+            {{/if}}
+            {{#if rmax}}
+            <li>Maximum resistance: <strong>{{rmax}}</strong> Ω</li>
+            {{/if}}
+            {{#if imin}}
+            <li>Minimum current: <strong>{{imin}}</strong> A</li>
+            {{/if}}
+            {{#if imax}}
+            <li>Maximum current: <strong>{{imax}}</strong> A</li>
+            {{/if}}
+        </ul>
+        <p class="text-right"><code class="text-muted">{{json}}</code></p>
+    </script>
+    <script type="text/x-handlebars-template" id="template-data">
+        <li class="list-group-item customitem" data-ii="{{ii}}">
+            <span class="delete btn btn-xs btn-default pull-right" title="Delete">
+                <i class="glyphicon glyphicon-trash"></i></span>
+            {{{html}}}
+        </li>
+    </script>
+    <script type="text/x-handlebars-template" id="template-nodata">
+        <li class="list-group-item">No custom data</li>
+    </script>
+    <footer id="sefooter" class="container-fluid">
+    <hr />
+    <div class="row">
+        
+        
+        
+        <div class="col col-md-3 col-sm-12 text-center">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="col col-md-2 col-sm-12 text-right">
+            <a id="seaddr" href="https://www.steam-engine.org">www.steam-engine.org</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    },'google_translate_element');
+	}
+</script>
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

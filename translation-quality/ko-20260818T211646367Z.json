@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "ko",
+    "cycleId": "ko-20260818T211646367Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Korean source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Korean pass identified 25 remaining spacing, terminology, grammar, notation, and energy-unit clarity defects across Ohm's law, Joule heating, Kirchhoff's laws, TCR, heat capacity, heat flux, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Korean human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ko-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Ohm-law setup omitted spaces between values and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation displayed 4.2V 소스 and 1.0 Ω 부하."],
+            "resolution": "Changed it to 4.2 V 전원 and 1.0 Ω 부하."
+        },
+        {
+            "id": "ko-20260818-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance formula omitted spaces around the protected values and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used R = 12V / 2A = 6 Ω."],
+            "resolution": "Changed it to R = 12 V / 2 A = 6 Ω."
+        },
+        {
+            "id": "ko-20260818-053",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The load-current conclusion omitted the space before the unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation displayed 부하 전류는 4.2A입니다."],
+            "resolution": "Changed it to 부하 전류는 4.2 A입니다."
+        },
+        {
+            "id": "ko-20260818-054",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage conclusion omitted the space before the unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation displayed 전압은 5V입니다."],
+            "resolution": "Changed it to 전압은 5 V입니다."
+        },
+        {
+            "id": "ko-20260818-055",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The kilo-ohm conversion omitted the space between the value and unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation displayed 1kΩ = 1,000 Ω."],
+            "resolution": "Changed it to 1 kΩ = 1,000 Ω."
+        },
+        {
+            "id": "ko-20260818-056",
+            "translationId": "catalog.concepts.concept-joule-heating.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating description used 저항 for a component rather than 저항기.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation said 전류가 저항을 통해 흐를 때."],
+            "resolution": "Changed it to 전류가 저항기를 통해 흐를 때."
+        },
+        {
+            "id": "ko-20260818-057",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-effects title used 난방, which refers to space heating rather than the technical process.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 난방에 영향을 미치는 것."],
+            "resolution": "Changed it to 가열에 영향을 미치는 요인."
+        },
+        {
+            "id": "ko-20260818-058",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule-heating power formula omitted spaces around the value and unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation ended the numerical formula with 7.2W."],
+            "resolution": "Changed it to 7.2 W."
+        },
+        {
+            "id": "ko-20260818-059",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule-heating energy formula omitted spaces around W, s, and J.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 7.2W × 10s = 72J."],
+            "resolution": "Changed it to 7.2 W × 10 s = 72 J."
+        },
+        {
+            "id": "ko-20260818-060",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Kirchhoff description vaguely referred to conservation around nodes and closed loops.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 회로 노드와 폐쇄 루프 주변의 보존을 설명합니다."],
+            "resolution": "Rewrote it with charge conservation at nodes and energy conservation along closed loops."
+        },
+        {
+            "id": "ko-20260818-061",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Kirchhoff summary used the literal 동작 for circuit behavior.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation ended with 전류와 전압이 어떻게 동작하는지."],
+            "resolution": "Changed it to 전류와 전압이 보이는 거동."
+        },
+        {
+            "id": "ko-20260818-062",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction used an unnatural translation of reasoning about a diagram.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation said 회로도를 더 쉽게 추론할 수 있습니다."],
+            "resolution": "Changed it to 회로도를 더 쉽게 분석할 수 있습니다."
+        },
+        {
+            "id": "ko-20260818-063",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.series-and-parallel.examples.1.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-current example omitted spaces around values and units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used I_total = 4.0V / 0.20 Ω = 20A."],
+            "resolution": "Changed it to I_total = 4.0 V / 0.20 Ω = 20 A."
+        },
+        {
+            "id": "ko-20260818-064",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The circuit-solving checklist translated power balance as force balance.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation said 힘의 균형을 확인해보세요."],
+            "resolution": "Corrected it to 전력 균형."
+        },
+        {
+            "id": "ko-20260818-065",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR worked-example heading used the generic 실제 사례.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 실제 사례 for a numerical calculation."],
+            "resolution": "Changed it to 계산 예제."
+        },
+        {
+            "id": "ko-20260818-066",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR example title used 저항 rather than the component term 저항기.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 가열된 저항."],
+            "resolution": "Changed it to 가열된 저항기."
+        },
+        {
+            "id": "ko-20260818-067",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR setup omitted spaces in the unit notation and compressed the technical statement.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 1.00 Ω 저항은 20 °C에서 지정되며 TCR은 400 ppm/°C입니다."],
+            "resolution": "Rewrote it as 1.00 Ω 저항기는 20 °C에서 지정되며 TCR은 400 ppm/°C입니다."
+        },
+        {
+            "id": "ko-20260818-068",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-capacity unit comparison omitted spaces between numeric values and symbols.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 1K and 1°C."],
+            "resolution": "Changed it to 1 K and 1 °C."
+        },
+        {
+            "id": "ko-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-capacity conclusion said more heaters were needed instead of more energy.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation ended with 실제 히터는 손실로 인해 더 많은 것이 필요합니다."],
+            "resolution": "Corrected it to more energy is required because of heat loss."
+        },
+        {
+            "id": "ko-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The electrical-heating title used 난방, which suggests household heating.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 전력으로 난방하기."],
+            "resolution": "Changed it to 전력에 의한 가열."
+        },
+        {
+            "id": "ko-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux setup omitted spaces around W and m².",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation displayed 100W and 0.020m²."],
+            "resolution": "Changed it to 100 W and 0.020 m²."
+        },
+        {
+            "id": "ko-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux conclusion omitted spaces around the reported units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation displayed 5,000W/m² and 0.5W/cm²."],
+            "resolution": "Changed it to 5,000 W/m² and 0.5 W/cm²."
+        },
+        {
+            "id": "ko-20260818-073",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI table title said general units rather than base units.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 일반적인 SI 단위 for the base-unit table."],
+            "resolution": "Changed it to SI 기본 단위."
+        },
+        {
+            "id": "ko-20260818-074",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.decimal-prefixes.table.rows.1.1",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The mega prefix used the Korean word for the letter name rather than the SI symbol M.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean table used 엠 in the mega-symbol cell."],
+            "resolution": "Corrected the symbol to M."
+        },
+        {
+            "id": "ko-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The AWG safety paragraph translated electrical insulation as thermal insulation.",
+            "disposition": "resolved",
+            "evidence": ["The previous Korean presentation used 단열재 for the conductor-insulation factor."],
+            "resolution": "Changed it to 절연재 and retained the warning that AWG is not a universal safe-current rating."
+        }
+    ]
+}

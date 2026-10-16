@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "it",
+    "cycleId": "it-20260818T111256724Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Italian source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Italian translation defects in battery evidence, safety, and profile text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Italian human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "it-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary was unnecessarily wordy.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Normalized the Italian summary."
+        },
+        {
+            "id": "it-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The integrated-battery summary used an indirect construction.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Normalized the integrated-versus-replaceable distinction."
+        },
+        {
+            "id": "it-20260818-003",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The rating phrase was an English-style literal translation.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Changed to natural 20 A continuous-current wording."
+        },
+        {
+            "id": "it-20260818-004",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison note omitted A and used an awkward noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the unit and comparison wording."
+        },
+        {
+            "id": "it-20260818-005",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 15 A exact-model test wording."
+        },
+        {
+            "id": "it-20260818-006",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tabless-revision note omitted A and translated pulse ratings incorrectly.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Clarified the 45 A continuous value and pulse distinction."
+        },
+        {
+            "id": "it-20260818-007",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The actual-value note used a false literal and omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 36 A actual-value wording."
+        },
+        {
+            "id": "it-20260818-008",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The preproduction note omitted A and used awkward phrasing.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Normalized the 40 A and preproduction wording."
+        },
+        {
+            "id": "it-20260818-009",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The recommended-rating note omitted A and translated service life literally.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Clarified the 13 A recommendation and service-life limitation."
+        },
+        {
+            "id": "it-20260818-010",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-limited note used inconsistent value grammar.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Normalized the 40 A, 70 A, and preproduction details."
+        },
+        {
+            "id": "it-20260818-011",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Changed to a clear 40 A production-cell comparison statement."
+        },
+        {
+            "id": "it-20260818-012",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper note omitted A and used incorrect rewrap terminology.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Normalized the 40 A, 60 °C, and EVE 40PL wording."
+        },
+        {
+            "id": "it-20260818-013",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sample note omitted A and used awkward preproduction language.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 19 A and tested-sample wording."
+        },
+        {
+            "id": "it-20260818-014",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note used inconsistent value grammar and omitted a natural preproduction phrase.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Clarified the 40 A and 90 A temperature-limited details."
+        },
+        {
+            "id": "it-20260818-015",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-continuity note used incorrect plural agreement.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 40 A, 60 A, and unresolved continuity wording."
+        },
+        {
+            "id": "it-20260818-016",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity note used unnatural agreement and omitted A in the lead phrase.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 40 A and inconsistent-capacity wording."
+        },
+        {
+            "id": "it-20260818-017",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used awkward preproduction wording.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 13 A and tested-sample wording."
+        },
+        {
+            "id": "it-20260818-018",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tester-estimated note contained an incorrectly capitalized sentence.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 30 A estimate and 50 A limitation."
+        },
+        {
+            "id": "it-20260818-019",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The batch note omitted A and used an awkward production phrase.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 20 A batch value and 30 A limitation."
+        },
+        {
+            "id": "it-20260818-020",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The continuous-rating phrase omitted the unit and used an awkward pulse construction.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Clarified the 12 A continuous and 20 A pulse-only distinction."
+        },
+        {
+            "id": "it-20260818-021",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-wrapper note omitted A and used English sourcing jargon.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Normalized the 20 A recommendation and later-revision warning."
+        },
+        {
+            "id": "it-20260818-022",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A and used awkward rewrap wording.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Corrected the 30 A exact-model and rewrap statement."
+        },
+        {
+            "id": "it-20260818-023",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The five-leg revision note used awkward literal terminology.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Clarified the 30 A revision distinction and inheritance warning."
+        },
+        {
+            "id": "it-20260818-024",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Low-drain was translated as low consumption, changing the safety meaning.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Changed to Italian wording for low discharge capability."
+        },
+        {
+            "id": "it-20260818-025",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The regulated profile omitted the control-board alternative.",
+            "disposition": "resolved",
+            "evidence": ["Italian source review identified the issue."],
+            "resolution": "Changed to a profile for a regulated device or control board."
+        }
+    ]
+}

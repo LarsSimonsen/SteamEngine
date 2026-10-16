@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1,
+    "locale": "id",
+    "cycleId": "id-20260819T003955878Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Indonesian source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Indonesian pass identified one protected-notation defect and one awkward worked-example title; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Indonesian human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "id-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.formulas.1", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The current-law formula translated the protected input and output current variables into Indonesian words.", "disposition": "resolved", "evidence": ["The previous expression was Σ I_masuk = Σ I_keluar, while the notation contract preserves I_in and I_out."], "resolution": "Restored Σ I_in = Σ I_out." },
+        { "id": "id-20260819-007", "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.title", "category": "translation-defect", "severity": "low", "summary": "The Joule-heating worked-example title was a literal success phrase rather than a natural calculation-example label.", "disposition": "resolved", "evidence": ["Contoh yang berhasil is understandable but does not identify the section as a worked calculation example."], "resolution": "Changed it to Contoh perhitungan." }
+    ]
+}

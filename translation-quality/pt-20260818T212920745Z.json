@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "pt",
+    "cycleId": "pt-20260818T212920745Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and European Portuguese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded European Portuguese pass identified 25 actionable terminology, grammar, formula-notation, circuit, thermal, and heat-flux defects; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent European Portuguese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "pt-20260818-051",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.bullets.2",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The zero-resistance warning used an incorrect unit-first phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous text was Uma resistência nula Ω é um curto-circuito ideal."],
+            "resolution": "Changed it to a resistance of 0 Ω and clarified the separate treatment."
+        },
+        {
+            "id": "pt-20260818-052",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current example title used the adjective atual instead of the technical noun corrente.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Encontrar atual."],
+            "resolution": "Changed it to Calcular a corrente."
+        },
+        {
+            "id": "pt-20260818-053",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance example title used an inconsistent imperative form.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Encontre resistência."],
+            "resolution": "Changed it to Calcular a resistência."
+        },
+        {
+            "id": "pt-20260818-054",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage example title used an inconsistent infinitive phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Encontrar tensão."],
+            "resolution": "Changed it to Calcular a tensão."
+        },
+        {
+            "id": "pt-20260818-055",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule-heating paragraph called electrical energy a rate and described it as changing temperature.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph began A energia elétrica é uma taxa de transferência de energia."],
+            "resolution": "Corrected the subject to electrical power and clarified the role of heat-flux density."
+        },
+        {
+            "id": "pt-20260818-056",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.practical-checks.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The safety paragraph translated safety margin as space.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used Utilize o espaço adequado."],
+            "resolution": "Changed it to maintain an adequate margin."
+        },
+        {
+            "id": "pt-20260818-057",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Kirchhoff description omitted the specific conservation principles.",
+            "disposition": "resolved",
+            "evidence": ["The previous description referred generally to conservação em nós de circuito."],
+            "resolution": "Named charge conservation at nodes and energy conservation around closed loops."
+        },
+        {
+            "id": "pt-20260818-058",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction used the literal phrase mais fácil de raciocinar.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said tornam um diagrama de circuito mais fácil de raciocinar."],
+            "resolution": "Rephrased it as making a circuit diagram easier to interpret."
+        },
+        {
+            "id": "pt-20260818-059",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.2.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The KVL formula translated the protected parallel-branch note.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression ended with (ramos paralelos)."],
+            "resolution": "Restored the protected expression ending (parallel branches)."
+        },
+        {
+            "id": "pt-20260818-060",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The KVL explanation used the English loanword loop.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph instructed the reader to choose uma direção de loop."],
+            "resolution": "Used the standard Portuguese term direção para a malha."
+        },
+        {
+            "id": "pt-20260818-061",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The series-cell statement used an awkward phrase for ampere-hour capacity.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence said a capacidade em amperes-hora permanece a de uma célula igual."],
+            "resolution": "Rephrased it using capacidade em ampere-hora and an equivalent individual cell."
+        },
+        {
+            "id": "pt-20260818-062",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "factual-or-safety-risk",
+            "severity": "medium",
+            "summary": "The parallel-cell statement did not clearly express approximate proportional addition.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended with aumentam aproximadamente."],
+            "resolution": "Clarified that capacity and available current increase approximately proportionally."
+        },
+        {
+            "id": "pt-20260818-063",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.solving-and-limits.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistor-equation bullet used the literal phrase fazer corresponder.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet began Faça corresponder a tensão e a corrente do resistor."],
+            "resolution": "Rephrased it as relating resistor voltage and current through V = I × R."
+        },
+        {
+            "id": "pt-20260818-064",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR display name used an unnatural Portuguese construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous name was Coeficiente de resistência à temperatura (TCR)."],
+            "resolution": "Changed it to Coeficiente de temperatura da resistência (TCR)."
+        },
+        {
+            "id": "pt-20260818-065",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The linear-model heading contained an unnecessary article.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was O modelo linear."],
+            "resolution": "Changed it to the concise technical heading Modelo linear."
+        },
+        {
+            "id": "pt-20260818-066",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR units omitted conventional spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous bullet used 1/°C or ppm/°C."],
+            "resolution": "Normalized the units to 1 / °C and ppm / °C."
+        },
+        {
+            "id": "pt-20260818-067",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The right-triangle explanation used literal and imprecise descriptions of the sides.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph used o lado oposto está oposto a este and touches it wording."],
+            "resolution": "Rewrote the definitions of opposite, adjacent, and hypotenuse with the SOH-CAH-TOA ratios."
+        },
+        {
+            "id": "pt-20260818-068",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.degrees-and-radians.formulas.1.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The degree-to-radian formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used θ_deg × π/180."],
+            "resolution": "Changed it to θ_deg × π / 180."
+        },
+        {
+            "id": "pt-20260818-069",
+            "translationId": "catalog.concepts.concept-heat-capacity.displayName",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity display name used capacity of heat rather than the standard technical term.",
+            "disposition": "resolved",
+            "evidence": ["The previous name was Capacidade de calor."],
+            "resolution": "Changed it to Capacidade térmica."
+        },
+        {
+            "id": "pt-20260818-070",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The basic-relationships heading used a literal cognate instead of relações.",
+            "disposition": "resolved",
+            "evidence": ["The previous heading was Relacionamentos básicos."],
+            "resolution": "Changed it to Relações básicas."
+        },
+        {
+            "id": "pt-20260818-071",
+            "translationId": "catalog.concepts.concept-heat-flux.description",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux description omitted the density/per-area meaning.",
+            "disposition": "resolved",
+            "evidence": ["The previous description began O fluxo de calor descreve."],
+            "resolution": "Changed it to densidade do fluxo de calor and explicitly stated each unit of area."
+        },
+        {
+            "id": "pt-20260818-072",
+            "translationId": "catalog.concepts.concept-heat-flux.summary",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux summary did not state the per-area quantity directly.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary said transferência através de uma unidade de área."],
+            "resolution": "Changed it to taxa de transferência por unidade de área."
+        },
+        {
+            "id": "pt-20260818-073",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The worked-example title called heat flux caudal, which means volumetric flow rate.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was Caudal médio do aquecedor."],
+            "resolution": "Changed it to Densidade média do fluxo de calor."
+        },
+        {
+            "id": "pt-20260818-074",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The heat-flux conclusion omitted the density term and thousands separator.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used O fluxo de calor médio é de 5000 W/m²."],
+            "resolution": "Changed it to heat-flux density of 5.000 W/m² and retained the W/cm² conversion."
+        },
+        {
+            "id": "pt-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.2.expression",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The AWG area formula used a corrupted variable name and spacing.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression used UMA = π × d ^ 2/4."],
+            "resolution": "Restored the protected area formula A = π × d^2 / 4."
+        }
+    ]
+}

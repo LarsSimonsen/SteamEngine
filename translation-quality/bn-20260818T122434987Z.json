@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260818T122434987Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Bengali source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Bengali pass identified 25 actionable defects in battery summaries, evidence notes, and safety wording; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary used an incomplete purpose phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous Bengali wording said used in compatible devices rather than for use in them."],
+            "resolution": "Rephrased it as a removable rechargeable cell for compatible devices."
+        },
+        {
+            "id": "bn-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The integrated-battery summary used awkward passive wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a punctuation error and did not naturally state that the pack is inside the device."],
+            "resolution": "Rephrased it as an internal pack inside the device rather than a user-replaceable cell."
+        },
+        {
+            "id": "bn-20260818-003",
+            "translationId": "catalogText.battery.note.approvedResearch",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The approval note used a less natural document reference.",
+            "disposition": "resolved",
+            "evidence": ["The previous text referred to the research document with an awkward machine-draft expression."],
+            "resolution": "Retained the date and clarified the associated research record reference."
+        },
+        {
+            "id": "bn-20260818-004",
+            "translationId": "catalogText.battery.note.capacityBelowLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity note omitted the label's indicated value.",
+            "disposition": "resolved",
+            "evidence": ["The previous text said lower than suggested by the label rather than lower than the capacity shown on it."],
+            "resolution": "Clarified that true capacity is lower than the capacity indicated on the label."
+        },
+        {
+            "id": "bn-20260818-005",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 20 A rating omitted the amperage unit and had English punctuation.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 20 and ended with a Latin full stop."],
+            "resolution": "Specified a 20 A continuous rating and excluded pulse ratings."
+        },
+        {
+            "id": "bn-20260818-006",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison note omitted the unit and used awkward wrapper terminology.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 20 and a literal expression for the exact wrapper and production revision."],
+            "resolution": "Rephrased it as a conservative independent 20 A comparison value."
+        },
+        {
+            "id": "bn-20260818-007",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted the 15 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 15 before the exact-model testing phrase."],
+            "resolution": "Specified a conservative 15 A value from exact-model testing."
+        },
+        {
+            "id": "bn-20260818-008",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tabless revision was mistranslated as a table revision.",
+            "disposition": "resolved",
+            "evidence": ["The previous Bengali wording translated tabless as tested tables."],
+            "resolution": "Used the protected technical term tabless and retained the pulse warning."
+        },
+        {
+            "id": "bn-20260818-009",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The true continuous value omitted its 36 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 36 in a safety-relevant rating note."],
+            "resolution": "Specified 36 A continuous and temperature-limited 56 A."
+        },
+        {
+            "id": "bn-20260818-010",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The conservative rating omitted its 40 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 40 and an awkward literal phrase for pre-production cells."],
+            "resolution": "Specified a conservative 40 A value and clarified the pre-production and CCC caveat."
+        },
+        {
+            "id": "bn-20260818-011",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The recommended rating omitted 13 A and used an unclear cycle-life phrase.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 13 and a literal expression for cycle life."],
+            "resolution": "Specified 13 A continuous and the absolute 16.8 A maximum."
+        },
+        {
+            "id": "bn-20260818-012",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 70 A temperature limitation used awkward grammar.",
+            "disposition": "resolved",
+            "evidence": ["The previous text described 70 A with a literal temperature-limited construction."],
+            "resolution": "Rephrased it as 70 A limited by temperature with pre-production samples."
+        },
+        {
+            "id": "bn-20260818-013",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell comparison note omitted the 40 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 40 in the comparison value."],
+            "resolution": "Specified a 40 A comparison value from a production cell."
+        },
+        {
+            "id": "bn-20260818-014",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The exact-wrapper note omitted the degree symbol and used awkward rewrap wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text displayed 60 C and used a literal term for wrapper."],
+            "resolution": "Restored 60 °C and clarified the 40 A exact-wrapper value and EVE 40PL rewrap."
+        },
+        {
+            "id": "bn-20260818-015",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The 19 A evidence note omitted the unit and used awkward exact-sample wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 19 and an unnatural phrase for exact tested samples."],
+            "resolution": "Specified the conservative 19 A value and clarified the tested pre-production samples."
+        },
+        {
+            "id": "bn-20260818-016",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 40 A value omitted the unit and the 90 A caveat was awkward.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 40 and literal temperature wording."],
+            "resolution": "Specified 40 A and clarified temperature-limited 90 A."
+        },
+        {
+            "id": "bn-20260818-017",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The 40 A value omitted the unit and production continuity was machine-translated.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 40 and an awkward phrase for unresolved continuity."],
+            "resolution": "Specified 40 A, temperature-limited 60 A, and unresolved production continuity."
+        },
+        {
+            "id": "bn-20260818-018",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The 40 A value omitted the unit and capacity wording was awkward.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 40 and an unnatural phrase for inconsistent capacity."],
+            "resolution": "Specified 40 A and clarified the irregular capacity and missing CCC/CE marks."
+        },
+        {
+            "id": "bn-20260818-019",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The 13 A value omitted the unit and used awkward exact-sample phrasing.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 13 and a literal phrase for exact tested samples."],
+            "resolution": "Specified 13 A and clarified the pre-production and CCC caveat."
+        },
+        {
+            "id": "bn-20260818-020",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The tester estimate omitted the 30 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 30 before the tester estimate."],
+            "resolution": "Specified the tester-estimated 30 A continuous value and temperature-limited 50 A maximum."
+        },
+        {
+            "id": "bn-20260818-021",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The two-batch note omitted the 20 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 20 and awkward production-batch grammar."],
+            "resolution": "Specified 20 A continuous from two tested production-related batches."
+        },
+        {
+            "id": "bn-20260818-022",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The continuous-versus-pulse statement omitted the 12 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text began with a bare 12 and used a fragmentary phrase."],
+            "resolution": "Clarified 12 A continuous, 20 A pulse-only, and retained the exact wrapper identifier."
+        },
+        {
+            "id": "bn-20260818-023",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-wrapper note omitted the 20 A and 15 A units.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 20 and an awkward expression for the continuous recommendation."],
+            "resolution": "Specified the 20 A exact-wrapper value and recommendation below 15 A continuous."
+        },
+        {
+            "id": "bn-20260818-024",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted the 30 A unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 30 and literal wording for later sourcing revisions."],
+            "resolution": "Specified the exact-model 30 A value and retained the rewrap sourcing caveat."
+        },
+        {
+            "id": "bn-20260818-025",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The five-leg revision note omitted the 30 A unit and used awkward inheritance wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous text used a bare 30 and a literal phrase for materially different revisions."],
+            "resolution": "Specified 30 A and warned that four-leg and later revisions must not inherit this profile."
+        }
+    ]
+}

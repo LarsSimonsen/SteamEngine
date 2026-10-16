@@ -1,0 +1,16 @@
+{
+    "schemaVersion": 1,
+    "locale": "it",
+    "cycleId": "it-20260819T000242442Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Italian source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Italian pass identified two additional power-unit and Kirchhoff terminology defects; both were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Italian human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "it-20260819-006", "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.0", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The Joule-heating formula displayed L instead of the power unit W.", "disposition": "resolved", "evidence": ["The previous expression ended in 7,2 L, which is not the watt unit defined by the source."], "resolution": "Restored 7,2 W in the formula." },
+        { "id": "it-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading was a literal translation of current rather than the Italian electrical term.", "disposition": "resolved", "evidence": ["L'attuale legge di Kirchhoff means the current law in a temporal or topical sense, not the law of electric current."], "resolution": "Changed it to Legge di corrente di Kirchhoff." }
+    ]
+}

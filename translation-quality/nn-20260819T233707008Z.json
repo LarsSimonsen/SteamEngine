@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260819T233707008Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all 1,071 effective Nynorsk runtime entries, prior review metadata, the locale glossary, and authoritative Norwegian language resources were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review checks, queue validation, effective-runtime completeness and token scans, source-fidelity heuristics, and TypeScript checking passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Two successive fresh audits found no actionable Nynorsk findings after the preceding correction cycle."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The locale is stable under automated and machine linguistic review; competent human Nynorsk review remains pending."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": []
+}

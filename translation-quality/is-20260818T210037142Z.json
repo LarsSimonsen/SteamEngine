@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "is",
+    "cycleId": "is-20260818T210037142Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Icelandic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Icelandic pass identified 25 remaining grammar, terminology, notation, and factual-clarity defects across Ohm's law, Joule heating, Kirchhoff's laws, TCR, heat capacity, heat flux, SI units, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Icelandic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "is-20260818-101",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Icelandic sentence used the wrong grammatical gender for spennugjafi.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said 4,2 V uppspretta er tengdur."],
+            "resolution": "Changed it to 4,2 V spennugjafi er tengdur við 1,0 Ω álag."
+        },
+        {
+            "id": "is-20260818-102",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The voltage conclusion omitted the space between the value and unit.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation displayed 5V."],
+            "resolution": "Changed it to 5 V."
+        },
+        {
+            "id": "is-20260818-103",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The short-circuit phrase used the wrong adjective form and an overly literal construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used tilvalin skammhlaup."],
+            "resolution": "Rewrote it as Núll Ω viðnám er hugsjónað skammhlaup."
+        },
+        {
+            "id": "is-20260818-104",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating setup described a coil as carrying a current rather than stating that current flows through it.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said 0,8 Ω spóla ber 3 A."],
+            "resolution": "Changed it to 3 A straumur flæðir um 0,8 Ω spólu."
+        },
+        {
+            "id": "is-20260818-105",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance condition used the wrong adjective form.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used Við stöðuga viðnám."],
+            "resolution": "Changed it to Við stöðugt viðnám."
+        },
+        {
+            "id": "is-20260818-106",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-voltage bullet referred to heat energy instead of heating power.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used hitaorku while the section compares power."],
+            "resolution": "Changed it to hitunaraflið."
+        },
+        {
+            "id": "is-20260818-107",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The explanatory paragraph incorrectly defined electricity as a rate of energy transfer.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said Rafmagn er hraði orkuflutnings."],
+            "resolution": "Corrected the subject to Rafafl and retained the distinction from temperature."
+        },
+        {
+            "id": "is-20260818-108",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction used an awkward literal phrase about reasoning over a diagram.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said gera hringrásarmynd auðveldara að rökræða um."],
+            "resolution": "Rewrote it as Grunnhugtökin auðvelda greiningu á hringrásarmyndum."
+        },
+        {
+            "id": "is-20260818-109",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The series-cell bullet omitted the preposition needed for ampere-hours.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used afkastageta amperstunda."],
+            "resolution": "Changed it to afkastageta í amperstundum."
+        },
+        {
+            "id": "is-20260818-110",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell bullet used an awkward verb for quantities being combined.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used bætast um það bil without a clear subject structure."],
+            "resolution": "Rephrased the sentence with afkastageta og tiltækur straumur leggjast saman."
+        },
+        {
+            "id": "is-20260818-111",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.3",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The series lithium-ion charging safety sentence used an unnatural compound noun.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation began with Röð litíumjónahleðsla."],
+            "resolution": "Rewrote it as Hleðsla litíumjónafrumna í röð and retained cell-level monitoring and protection."
+        },
+        {
+            "id": "is-20260818-112",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law paragraph used an ungrammatical description of voltage rises and drops.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used spennu hækkar og lækkar as the subject structure."],
+            "resolution": "Rewrote it with spennuhækkanir og spennuföll and clarified sign changes."
+        },
+        {
+            "id": "is-20260818-113",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR introduction used an unnatural translation of first-order relationship.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used fyrstu röð sambandið."],
+            "resolution": "Changed it to fyrsta stigs sambandið."
+        },
+        {
+            "id": "is-20260818-114",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The temperature-difference bullet had an unclear subject and agreement.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said Hitastig verður að nota sama kvarða."],
+            "resolution": "Rewrote it as Nota verður sama hitakvarða og sömu einingar."
+        },
+        {
+            "id": "is-20260818-115",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.basic-relationships.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Celsius notation omitted the conventional space before the unit symbol.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation displayed 1°C."],
+            "resolution": "Changed it to 1 °C."
+        },
+        {
+            "id": "is-20260818-116",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The ideal energy conclusion used a literal phrase instead of the standard term for ideal requirement.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used Hin fullkomna orkuþörf."],
+            "resolution": "Changed it to Kjörorkuþörfin and clarified real heat loss."
+        },
+        {
+            "id": "is-20260818-117",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.object-and-material.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The object-versus-material paragraph used a literal phrase instead of the technical term sérvarmageta.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used Sérstök varmageta."],
+            "resolution": "Changed it to Sérvarmageta and clarified that it is a material property."
+        },
+        {
+            "id": "is-20260818-118",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-flux conclusion used a generic heat-flow term rather than the section's flux-density term.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used Meðalhitaflæði despite reporting W/m²."],
+            "resolution": "Changed it to Meðalvarmaflæðisþéttleiki."
+        },
+        {
+            "id": "is-20260818-119",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The imperial-unit paragraph incorrectly translated square inches as square metres.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said fermetrar where the source distinguishes square inches."],
+            "resolution": "Corrected it to ferningstommur."
+        },
+        {
+            "id": "is-20260818-120",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The unit-check instruction used an infinitive where the other checklist items use an imperative.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said Umreikna fyrir margföldun eða deilingu."],
+            "resolution": "Changed it to Umreiknaðu áður en þú margfaldar eða deilir."
+        },
+        {
+            "id": "is-20260818-121",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.gauge-systems.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The gauge-number bullet had incorrect adjective agreement and capitalization.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used Stærri venjulegt mælitala and capitalized Stærðir mid-sentence."],
+            "resolution": "Changed it to Stærri venjuleg mælitala and normalized the sentence."
+        },
+        {
+            "id": "is-20260818-122",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG formula localized the protected inch-diameter variable.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used d_tomma rather than the canonical d_inch variable."],
+            "resolution": "Changed the expression to use d_inch while retaining Icelandic decimal formatting."
+        },
+        {
+            "id": "is-20260818-123",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wire-resistance paragraph duplicated the claim that area is halved and used an inaccurate material term.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation said helmingar flatarmálið um helming and used efniviðnám."],
+            "resolution": "Rewrote the paragraph with eðlisviðnám and a single, correct area-halving statement."
+        },
+        {
+            "id": "is-20260818-124",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-specification bullet used the wrong grammatical form for insulated diameter.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used einangruð þvermál."],
+            "resolution": "Changed it to einangrað þvermál."
+        },
+        {
+            "id": "is-20260818-125",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The current-sharing bullet used a less precise term for current distribution.",
+            "disposition": "resolved",
+            "evidence": ["The previous Icelandic presentation used Straumsamnýting for sharing between cells."],
+            "resolution": "Changed it to Straumdreifing and retained the dependencies on resistance, contacts, wiring, and switches."
+        }
+    ]
+}

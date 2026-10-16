@@ -1,0 +1,4 @@
+interface:
+  display_name: "Steam Engine Review Translation Corrections"
+  short_description: "Validate and apply human translation fixes"
+  default_prompt: "Use $steam-engine-review-translation-corrections to process submitted translation corrections."

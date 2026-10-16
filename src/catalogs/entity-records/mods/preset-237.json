@@ -1,0 +1,64 @@
+{
+    "entityId": "preset-237",
+    "entityType": "mod-device",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "catalog-identity"
+    },
+    "summary": {
+        "shortDescription": "A single-cell Eleaf regulated mod rated at 100W, 9V, and 30A.",
+        "description": "Eleaf specifies 1–100W, 0.5–9V, 0.05–3.5Ω TC/VW ranges, and one 21700 cell or an 18650 with adapter. The 30A ceiling comes from one exact-device independent test that measured 29A and identified a programmed 30A limit; Eleaf does not publish that current ceiling.",
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "official",
+            "title": "Eleaf iStick Pico 21700 100W TC Box Mod",
+            "url": "https://store.eleafworld.com/eleaf-istick-pico-21700-100w-tc-box-mod.html",
+            "limitations": "Manufacturer page omits maximum output current."
+        },
+        {
+            "id": "test",
+            "title": "Anthony Vapes: Eleaf Pico 21700 Mod Tech Review",
+            "url": "https://www.e-cigarette-forum.com/threads/anthony-vapes-eleaf-pico-21700-mod-tech-review.860437/",
+            "limitations": "One exact-device test sample measured 29A and identified a programmed 30A limit."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Eleaf iStick Pico 21700 100W TC Box Mod",
+            "url": "https://ismokeking.se/product/eleaf-istick-pico-21700-100w-tc-box-mod/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-eleaf-pico-20260824",
+            "title": "Eleaf iStick Pico 21700 official listing",
+            "url": "https://store.eleafworld.com/eleaf-istick-pico-21700-100w-tc-kit-with-ello-atomizer.html",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [],
+    "safetyFindings": [
+        {
+            "id": "legacy-safety-note",
+            "title": "Research safety note",
+            "summary": "Keep the 30A value labelled as an independently tested/programmed ceiling.",
+            "appliesTo": "This catalog profile",
+            "status": "review-required"
+        }
+    ],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "21700",
+                "seriesCount": 1,
+                "parallelCount": 1
+            },
+            {
+                "format": "18650",
+                "seriesCount": 1,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

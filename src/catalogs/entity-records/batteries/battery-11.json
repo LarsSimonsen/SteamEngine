@@ -1,0 +1,136 @@
+{
+    "entityId": "battery-11",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "variable"
+    },
+    "summary": {
+        "shortDescription": "A legacy Steam Engine rewrap preset for AWT 26650 4500mAh 75A.",
+        "description": "This researched draft preserves the calculator's 4500mAh and 35A compatibility values while separating current popularity evidence, independent tests, unresolved identity questions, and safety implications.",
+        "highlights": [
+            "Runtime values are compatibility data, not an endorsement."
+        ]
+    },
+    "classifications": [
+        "rewrap"
+    ],
+    "sources": [
+        {
+            "id": "recovered-runtime",
+            "title": "Recovered battery preset data",
+            "publisher": "Steam Engine recovered application",
+            "limitations": "Authoritative for recovered calculator compatibility values, not real-world safety or current supply."
+        },
+        {
+            "id": "vaping360-2026",
+            "title": "Best Vape Batteries 2026",
+            "url": "https://vaping360.com/best-batteries/",
+            "publisher": "vaping360.com",
+            "limitations": "Current bounded best-of lists; its 18650 list explicitly excludes rewraps."
+        },
+        {
+            "id": "store-26650",
+            "title": "26650 batteries",
+            "url": "https://www.18650batterystore.com/collections/26650-batteries",
+            "publisher": "18650batterystore.com",
+            "limitations": "Cross-market specialist retailer; bounded exact-size inventory."
+        },
+        {
+            "id": "mooch-awt-4500",
+            "title": "AWT 75A 4500mAh 26650 bench test",
+            "url": "https://www.e-cigarette-forum.com/threads/awt-75a-4500mah-26650-bench-test-results-only-a-10a-battery.703276/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact tested sample and date; later batches, wrappers, or counterfeit cells may differ."
+        },
+        {
+            "id": "spec-b33",
+            "title": "AWT 26650 battery",
+            "url": "https://upperlimitsinc.com/awt-26650-battery",
+            "publisher": "Upper Limits",
+            "limitations": "Exact-model retailer listing; reports flat-top style and nominal size but does not authenticate the underlying cell or support the advertised current."
+        },
+        {
+            "id": "chemistry-audit-method",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal methodology and audit trail; it records what was searched and why exact chemistry was or was not admitted."
+        },
+        {
+            "id": "chemistry-general-liion",
+            "title": "Types of lithium-ion batteries",
+            "url": "https://batteryuniversity.com/article/bu-205-types-of-lithium-ion",
+            "publisher": "Battery University",
+            "limitations": "General chemistry context; it does not identify the cathode or OEM inside any particular rewrapped cell."
+        }
+    ],
+    "claims": [
+        {
+            "id": "recovered-preset",
+            "statement": "Steam Engine preserves AWT 26650 4500mAh 75A 4500mAh 35A as a 4500mAh preset with a 35A runtime rating.",
+            "evidenceDate": "2018",
+            "confidence": "high"
+        },
+        {
+            "id": "physical-observation-2026-08-03",
+            "statement": "The AWT 26650 4500mAh 75A wrapper is documented as yellow and flat-top; the nominal size is 26 mm × 65 mm. Independent testing applies to a specific sample and found a substantially lower current capability than the label claim.",
+            "evidenceDate": "2016",
+            "confidence": "medium"
+        },
+        {
+            "id": "chemistry-pass-2026-08-03",
+            "statement": "The AWT 26650 4500mAh 75A catalog entry is a branded rewrap or protected branded cell marketed in an IMR/INR/ICR-family lithium-ion context, but the exact cathode chemistry and underlying OEM were not established.",
+            "evidenceDate": "2026-08-03",
+            "confidence": "low"
+        },
+        {
+            "id": "introduction-research-2026-08-04",
+            "statement": "The exact catalog entry AWT 26650 4500mAh 75A has reliable market-introduction evidence dated 2015-09-26 or earlier.",
+            "evidenceDate": "2015-09-26",
+            "confidence": "medium"
+        }
+    ],
+    "reviews": [
+        {
+            "id": "review-obs-v3-0211",
+            "reviewer": "Battery Mooch",
+            "reviewedAt": "2015-10-04",
+            "verdict": "negative",
+            "summary": "Eligible Battery Mooch exact-model test conclusion retained with its original evidence date.",
+            "pros": [],
+            "reservations": [
+                "The conclusion applies to the tested sample and observable revision, not every later batch."
+            ]
+        }
+    ],
+    "safetyFindings": [
+        {
+            "summary": "Independent testing found a 10A cell while runtime preserves 35A.",
+            "runtimeImplication": "Preserve compatibility value until separately approved; do not treat it as an endorsed CDR."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "26650",
+            "nominalDiameterMm": 26,
+            "nominalLengthMm": 65
+        },
+        "chemistry": "Lithium-ion (exact cathode chemistry and underlying OEM unresolved)",
+        "protected": null,
+        "appearance": {
+            "wrapperColor": "yellow"
+        },
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "low",
+            "summary": "The yellow flat-top wrapper is documented, but the underlying OEM cell and authenticity of any other AWT sample remain unresolved. Independent testing also found a major conflict with the advertised current rating.",
+            "checks": [
+                "Use a specialist retailer with a documented supply chain.",
+                "Inspect wrapper, markings, and terminal construction against the tested revision.",
+                "Do not treat the AWT label or 75A claim as proof of authenticity or capability."
+            ]
+        }
+    }
+}

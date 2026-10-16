@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260820T004640136Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, complete effective Bengali runtime content, repository checks, and targeted Bengali technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation and TypeScript checking passed after every correction batch."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three complete-scope passes resolved 73 catalog, shared-interface, comparison, coil, TCR, and Wire Wizard findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Bengali corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-catalog-and-comparison-semantics",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Twenty-five SI-symbol, circuit, catalog-note, shared-label, and mod-comparison defects remained in effective Bengali content.",
+            "disposition": "resolved",
+            "evidence": [
+                "One SI explanation still displayed literal Unicode escape sequences.",
+                "Several battery and mod notes were ambiguous or grammatically malformed.",
+                "Atomizer resistance and mod comparison labels used inconsistent technical terms."
+            ],
+            "resolution": "Restored visible symbols and precise circuit prose, rewrote battery and mod notes, and standardized shared and comparison terminology."
+        },
+        {
+            "id": "bn-coil-tcr-wirewiz",
+            "translationId": "calculators.coil.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five coil, TCR, and Wire Wizard labels used literal wrapping, base, loop, and resistance-factor calques.",
+            "disposition": "resolved",
+            "evidence": [
+                "Wrap spacing described package wrapping rather than spacing between coil turns.",
+                "Loop labels used a software-loop term rather than coil geometry.",
+                "TCR labels mixed resistance terminology and unclear base-value wording."
+            ],
+            "resolution": "Applied natural Bengali terms for coil turns, reference resistance, geometry, resistance curves, and wire construction."
+        },
+        {
+            "id": "bn-power-resistance-results",
+            "translationId": "calculators.wirewiz.powerDissipated",
+            "category": "terminology-disagreement",
+            "severity": "medium",
+            "summary": "Twenty-three remaining result labels inconsistently expressed electrical power, resistance, thermal properties, and per-unit measurements.",
+            "disposition": "resolved",
+            "evidence": [
+                "Power labels mixed transliteration with the established Bengali engineering term.",
+                "Wire Wizard result headings were bare adjectives rather than property groups.",
+                "Several resistance labels retained machine-literal phrasing."
+            ],
+            "resolution": "Standardized electrical power, resistance, heat-flux, thermal-property, and Wire Wizard result terminology across the effective locale."
+        }
+    ]
+}

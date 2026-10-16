@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260818T103222839Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Arabic source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Arabic translation defects in core electrical concept text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Arabic human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-20260818-001",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current symbol I was mistranslated as the Arabic word for I rather than identified as current.",
+            "disposition": "resolved",
+            "evidence": ["Before: أنا تيار، ويقاس بالأمبير أو الأمبير (A)."],
+            "resolution": "Changed to: I هو التيار، ويقاس بالأمبير (A)."
+        },
+        {
+            "id": "ar-20260818-002",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-examples title was an unnatural literal translation.",
+            "disposition": "resolved",
+            "evidence": ["Before: أمثلة عملت."],
+            "resolution": "Changed to the natural Arabic title أمثلة محلولة."
+        },
+        {
+            "id": "ar-20260818-003",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current example title used an unnatural literal phrase and the wrong noun form.",
+            "disposition": "resolved",
+            "evidence": ["Before: البحث عن الحالي."],
+            "resolution": "Changed to: إيجاد التيار."
+        },
+        {
+            "id": "ar-20260818-004",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current formula replaced the symbol I and units with Arabic words, obscuring the calculation.",
+            "disposition": "resolved",
+            "evidence": ["Before: أنا = 4.2 فولت / 1.0 Ω = 4.2 أ."],
+            "resolution": "Changed to: I = 4.2 V / 1.0 Ω = 4.2 A."
+        },
+        {
+            "id": "ar-20260818-005",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current conclusion omitted the copula and used a nonstandard unit abbreviation.",
+            "disposition": "resolved",
+            "evidence": ["Before: تيار الحمل 4.2 أ."],
+            "resolution": "Changed to: تيار الحمل هو 4.2 A."
+        },
+        {
+            "id": "ar-20260818-006",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The resistance example title used an inconsistent imperative phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: ابحث عن المقاومة."],
+            "resolution": "Changed to the consistent title إيجاد المقاومة."
+        },
+        {
+            "id": "ar-20260818-007",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The resistance formula used the Arabic letter ص instead of the symbol R and mixed translated units.",
+            "disposition": "resolved",
+            "evidence": ["Before: ص = 12 فولت / 2 أ = 6 Ω."],
+            "resolution": "Changed to: R = 12 V / 2 A = 6 Ω."
+        },
+        {
+            "id": "ar-20260818-008",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage example title used an inconsistent literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: البحث عن الجهد."],
+            "resolution": "Changed to: إيجاد الجهد."
+        },
+        {
+            "id": "ar-20260818-009",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage formula mixed Arabic unit names and abbreviations.",
+            "disposition": "resolved",
+            "evidence": ["Before: V = 0.5 أ × 10 أوم = 5 فولت."],
+            "resolution": "Changed to: V = 0.5 A × 10 Ω = 5 V."
+        },
+        {
+            "id": "ar-20260818-010",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The electrical-power paragraph confused power with force and energy.",
+            "disposition": "resolved",
+            "evidence": ["Before: علاقة القوة ... تكون الطاقة المثالية 17.64 واط."],
+            "resolution": "Rewrote the paragraph to consistently use القدرة and القدرة المثالية, with a natural translation of headroom."
+        },
+        {
+            "id": "ar-20260818-011",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating section title used a literal heating-power phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: قوة التدفئة."],
+            "resolution": "Changed to: قدرة التسخين."
+        },
+        {
+            "id": "ar-20260818-012",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The Joule-heating introduction repeated the unnatural title terminology.",
+            "disposition": "resolved",
+            "evidence": ["Before: قوة التدفئة الكهربائية هي:"],
+            "resolution": "Changed to: قدرة التسخين الكهربائية هي:"
+        },
+        {
+            "id": "ar-20260818-013",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The definition of P incorrectly called power energy.",
+            "disposition": "resolved",
+            "evidence": ["Before: P هي الطاقة بالواط (W)."],
+            "resolution": "Changed to: P هي القدرة بالواط (W)."
+        },
+        {
+            "id": "ar-20260818-014",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The definition of I used the Arabic word for current as an adjective rather than a clear noun phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: I الحالي بالأمبير (A)."],
+            "resolution": "Changed to: I هو التيار بالأمبير (A)."
+        },
+        {
+            "id": "ar-20260818-015",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The worked-example title was an unnatural literal translation.",
+            "disposition": "resolved",
+            "evidence": ["Before: عملت المثال."],
+            "resolution": "Changed to the natural Arabic title مثال محلول."
+        },
+        {
+            "id": "ar-20260818-016",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heating-effects title used an awkward preposition and literal wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: ما يؤثر على التدفئة."],
+            "resolution": "Changed to: ما يؤثر في التسخين."
+        },
+        {
+            "id": "ar-20260818-017",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-checks title was a machine-translated false friend.",
+            "disposition": "resolved",
+            "evidence": ["Before: الشيكات العملية."],
+            "resolution": "Changed to: فحوصات عملية."
+        },
+        {
+            "id": "ar-20260818-018",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The safety paragraph used an incorrect literal translation for thermal headroom and awkward resistance wording.",
+            "disposition": "resolved",
+            "evidence": ["Before: استخدم الإرتفاع المناسب ... يمكن أن تتغير المقاومة ..."],
+            "resolution": "Rewrote the paragraph with اترك هامشًا مناسبًا and clear component-resistance wording."
+        },
+        {
+            "id": "ar-20260818-019",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.0.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The circuit-terms introduction contained an ungrammatical literal phrase.",
+            "disposition": "resolved",
+            "evidence": ["Before: أسهل في التفكير فيما يلي:"],
+            "resolution": "Changed to: تجعل المصطلحات الأساسية فهم مخطط الدائرة أسهل:"
+        },
+        {
+            "id": "ar-20260818-020",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current-law title used الحالي, which means current as an adjective rather than the electrical noun.",
+            "disposition": "resolved",
+            "evidence": ["Before: قانون كيرشوف الحالي."],
+            "resolution": "Changed to the standard Arabic title قانون كيرشوف للتيار."
+        },
+        {
+            "id": "ar-20260818-021",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The current-law example used an unclear literal translation for current leaving a branch.",
+            "disposition": "resolved",
+            "evidence": ["Before: حمل أحد الفروع 3 A بعيدًا ... اختر الاتجاهات الحالية قبل الحل."],
+            "resolution": "Rewrote the example as current leaving a branch and directions of current before calculation."
+        },
+        {
+            "id": "ar-20260818-022",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The series-resistor formula replaced the symbol I and units with Arabic words.",
+            "disposition": "resolved",
+            "evidence": ["Before: أنا = 8.0 فولت / 0.40 أوم = 20 أ."],
+            "resolution": "Changed to: I = 8.0 V / 0.40 Ω = 20 A."
+        },
+        {
+            "id": "ar-20260818-023",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.3.formulas.2.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The parallel-branches formula retained English prose inside the Arabic locale.",
+            "disposition": "resolved",
+            "evidence": ["Before: (parallel branches)."],
+            "resolution": "Changed to: (الفروع المتوازية)."
+        },
+        {
+            "id": "ar-20260818-024",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The first circuit-solving bullet was ungrammatical and did not clearly instruct the reader to mark node voltages.",
+            "disposition": "resolved",
+            "evidence": ["Before: علامة الفولتية العقدة، والتيارات الفرعية ..."],
+            "resolution": "Changed to: حدّد جهود العقد وتيارات الفروع واتجاهات التيار المفترضة."
+        },
+        {
+            "id": "ar-20260818-025",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.5.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The simultaneous-equations instruction used an incorrect noun and an infinitive fragment.",
+            "disposition": "resolved",
+            "evidence": ["Before: حل المعادلات الآنية والتحقق من توازن الطاقة."],
+            "resolution": "Changed to: حل المعادلات المتزامنة وتحقق من توازن الطاقة."
+        }
+    ]
+}

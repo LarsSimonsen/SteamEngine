@@ -1,0 +1,105 @@
+.se-ad-placement {
+    box-sizing: border-box;
+    margin: 1.5em auto;
+    min-height: 250px;
+    text-align: center;
+}
+
+.se-ad-placement[data-ad-state="empty"] {
+    display: none;
+    min-height: 0;
+}
+
+.se-ad-attempt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    width: 100%;
+}
+
+.se-ad-attempt > .adsbygoogle {
+    flex: 1 1 100%;
+    min-width: 0;
+    width: 100%;
+}
+
+.se-ad-house-fallback {
+    margin: 0.75rem auto 0;
+    max-width: 30rem;
+}
+
+.se-ad-frame {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.se-house-ad {
+    background: color-mix(in srgb, currentColor 5%, transparent);
+    border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 150px;
+    padding: 1.45rem 1.6rem;
+    width: min(100%, 30rem);
+}
+
+.se-house-ad__label,
+.se-house-ad__title,
+.se-house-ad__body,
+.se-house-ad__qualifier {
+    margin: 0;
+}
+
+.se-house-ad__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    opacity: 0.72;
+    text-transform: uppercase;
+}
+
+.se-house-ad__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.se-house-ad__body {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    max-width: 25rem;
+}
+
+.se-house-ad__qualifier {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    opacity: 0.78;
+}
+
+.se-house-ad__cta {
+    border: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+    border-radius: 0.35rem;
+    color: inherit;
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 0.15rem;
+    padding: 0.45rem 0.7rem;
+    text-decoration: none;
+}
+
+.se-house-ad__cta:hover,
+.se-house-ad__cta:focus {
+    background: color-mix(in srgb, currentColor 8%, transparent);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}

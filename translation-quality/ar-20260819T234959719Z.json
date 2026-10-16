@@ -1,0 +1,70 @@
+{
+    "schemaVersion": 1,
+    "locale": "ar",
+    "cycleId": "ar-20260819T234959719Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all effective Arabic runtime entries, the Arabic glossary, prior review metadata, and technical terminology searches were available."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation and TypeScript checking passed after all three iterations."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Three complete-scope passes resolved 75 catalog, comparison, formula, unit, and engineering-terminology findings."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "The Arabic corrections were machine-reviewed and still require competent human review."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ar-catalog-comparison-fidelity",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Twenty-five comparison and catalog entries contained agreement errors, literal product-profile phrasing, and a corrupted 30 A current unit.",
+            "disposition": "resolved",
+            "evidence": [
+                "The preset-237 profile changed the protected current unit A into an Arabic letter.",
+                "Several mod profiles confused power with energy or obscured measured limits."
+            ],
+            "resolution": "Restored protected units and rewrote battery, material, mod, authenticity, and comparison text without changing product facts."
+        },
+        {
+            "id": "ar-concept-electrical-semantics",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.table.rows.1.1",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Twenty-five concept findings confused power with energy, constant current with direct current, strain with stress, and localized protected SI symbols.",
+            "disposition": "resolved",
+            "evidence": [
+                "SI prefix symbols k, M, m, and n had been replaced by Arabic letters.",
+                "The Joule article rendered constant current as continuous or direct current and power as energy in safety guidance.",
+                "Several visible values contained literal Unicode escape text instead of Ω."
+            ],
+            "resolution": "Restored technical symbols and corrected Ohm, Joule, Kirchhoff, TCR, trigonometry, heat-capacity, and SI terminology."
+        },
+        {
+            "id": "ar-concept-units-and-wire-gauges",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Twenty-five remaining concept entries used inconsistent heat-flux terms, altered engineering unit notation, and machine-literal wire-gauge language.",
+            "disposition": "resolved",
+            "evidence": [
+                "The AWG explanation translated ampacity as generic capacity and stranded construction as tabulated construction.",
+                "Several formulas expanded mm into prose while nearby formulas preserved symbols.",
+                "Heat-flux labels alternated between the defined density term and a broader heat-flow phrase."
+            ],
+            "resolution": "Standardized heat-flux language, preserved formula units, clarified SI conversions, and rewrote the wire-gauge explanation and practical guidance."
+        }
+    ]
+}

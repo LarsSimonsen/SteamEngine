@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5496946968214683"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://www.steam-engine.org/modrange" />
+    <meta property="og:url" content="https://www.steam-engine.org/modrange" />
+    <title>Mod range | Steam Engine | free vaping calculators</title>
+    <meta property="og:title" content="Mod range | Steam Engine | free vaping calculators" />
+    <meta name="description" content="Mod range calculator. Find the optimum resistance range for your regulated mod. Presets for many of the most common mods." />
+    <meta property="og:description" content="Mod range calculator. Find the optimum resistance range for your regulated mod. Presets for many of the most common mods." />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <link id="bscss" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="se.css?v=8" rel="stylesheet" />
+<script defer src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script defer src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="steam-engine.js?v=19"></script>
+<script defer src="analytics.js?v=1"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Lars Olaf Simonsen">
+<meta property="og:image" content="https://www.steam-engine.org/static/Hi-Res-Icon444.png" />
+<meta property="og:site_name" content="Steam Engine" />
+<meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" sizes="192x192" href="/static/icon192x192.png" />
+<link rel="icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/static/icon128x128.png" />
+<base target="_parent" />
+    <style type="text/css">
+        #modpreset .syn {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body id="modrange">
+    <nav id="toppnav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#setoppmeny" aria-expanded="false" style="margin-bottom:0px;">
+                <span style="display:inline-block;margin-right:0.5em;">Menu</span>
+                <span style="display:inline-block;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </button>
+            <a href="https://www.steam-engine.org" rel="bookmark">
+                <img src="static/logo.png" alt="Steam Engine logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="setoppmeny">
+            <ul class="nav navbar-nav" id="choo-topnav">
+                <li class="tnf" id="navtab-main">
+                    <a class="tnf" href="https://www.steam-engine.org">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-ohm">
+                    <a class="tnf" href="ohm">
+                        Ohm's law
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-coil">
+                    <a class="tnf" href="coil">
+                        Coil wrapping
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-wirewiz">
+                    <a class="tnf" href="wirewiz">
+                        Wire Wizard
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-batt">
+                    <a class="tnf" href="batt">
+                        Battery drain
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-modrange">
+                    <a class="tnf" href="modrange">
+                        Mod range
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-juice">
+                    <a class="tnf" href="juice">
+                        E-liquid
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-converter">
+                    <a class="tnf" href="converter">
+                        Convert
+                    </a>
+                </li>
+
+                <li class="tnf" id="navtab-new-site">
+                    <a class="tnf" href="..">
+                        New version!
+                    </a>
+                </li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navtab-about" class="tnf">
+                    <a class="tnf" href="about" rel="author license">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+        <div class="container">
+            <a class="legacy-new-notice" href="../modrange"><strong>Try the new Mod range calculator here.</strong></a>
+        </div>
+<div class="sebackto"></div>
+    <div class="container">
+        <main>
+            <div class="row">
+                <div class="col col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <a class="pull-right btn btn-link btn-xs" href="customdata#mod" title="Manage your custom presets">Custom mod presets</a>
+                        <label><abbr title="Advanced personal vaporizer">APV</abbr> preset</label>
+                        <select class="form-control" id="modpreset">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Max power (wattage)</label>
+                        <div class="input-group">
+                            <input type="number" value="15" class="form-control text-right" id="pmax" step="0.1" max="999" min="0.1" />
+                            <span class="input-group-addon">W</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Max voltage</label>
+                        <div class="input-group">
+                            <input type="number" value="6" class="form-control text-right" id="umax" step="0.1" max="99" min="0.1" />
+                            <span class="input-group-addon">V</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Current (amp) limit</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">I</span>
+                            <input type="number" value="3.5" class="form-control text-right" id="imax" step="0.1" max="99" min="0.1" />
+                            <span class="input-group-addon">A</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-4 col-sm-6" id="res">
+                    <div class="panel panel-primary" id="res3">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Optimal resistance</h3>
+                        </div>
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    Max power
+                                    <small>
+                                        <br />
+                                        (<span class="pmax"></span> W)
+                                    </small>
+                                </td>
+                                <td class="text-right">
+                                    <span class="rmin"></span> &ndash; <span class="rmax"></span>
+                                </td>
+                                <td>&ohm;</td>
+                            </tr>
+                            <tr>
+                                <td>Median resistance</td>
+                                <td class="text-right rmid"></td>
+                                <td>&ohm;</td>
+                            </tr>
+                            <tr class="text-bold">
+                                <td>Sweet spot</td>
+                                <td class="text-right rsweet"></td>
+                                <td>&ohm;</td>
+                            </tr>
+                        </table>
+                        <div class="panel-footer" style="padding-top:0px;padding-bottom:1px;">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Resistance range</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">R</span>
+                            <input type="number" value="1.2" class="form-control text-right" id="rmin" step="0.1" max="99" min="0.1" placeholder="0" />
+                            <span class="input-group-addon">-</span>
+                            <input type="number" value="" class="form-control text-right" id="rmax" step="0.1" max="99" min="0.1" placeholder="∞" />
+                            <span class="input-group-addon">Ω</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-md-4 col-sm-12">
+                    <div id="mrangechart" style="height:12em;">
+                        <canvas id="mainchart"></canvas>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6">
+                            <div class="panel panel-default" id="res1">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        Current limit <span class="imax"></span> A <small>vs. <span class="pmax"></span> W</small>
+                                    </h3>
+                                </div>
+                                <table class="table table-condensed">
+                                    <tr>
+                                        <td>Voltage</td>
+                                        <td class="text-right ures"></td>
+                                        <td>V</td>
+                                    </tr>
+                                    <tr class="maxu">
+                                        <td class="danger">Hits limit</td>
+                                        <td class="text-right umax"></td>
+                                        <td>V</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Resistance</td>
+                                        <td class="text-right rres"></td>
+                                        <td>&ohm;</td>
+                                    </tr>
+                                    <tr class="minr">
+                                        <td class="warning">Hits lower R limit</td>
+                                        <td class="text-right rmin"></td>
+                                        <td>&ohm;</td>
+                                    </tr>
+                                    <tr class="maxr">
+                                        <td class="warning">Hits upper R limit</td>
+                                        <td class="text-right rmax"></td>
+                                        <td>&ohm;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col col-sm-6">
+                            <div class="panel panel-default" id="res2">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        Voltage limit <span class="umax"></span> V <small>vs. <span class="pmax"></span> W</small>
+                                    </h3>
+                                </div>
+                                <table class="table table-condensed">
+                                    <tr>
+                                        <td>Current</td>
+                                        <td class="text-right ires"></td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr class="maxi">
+                                        <td class="danger">Hits limit</td>
+                                        <td class="text-right imax"></td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Resistance</td>
+                                        <td class="text-right rres"></td>
+                                        <td>&ohm;</td>
+                                    </tr>
+                                    <tr class="minr">
+                                        <td class="warning">Hits lower R limit</td>
+                                        <td class="text-right rmin"></td>
+                                        <td>&ohm;</td>
+                                    </tr>
+                                    <tr class="maxr">
+                                        <td class="warning">Hits upper R limit</td>
+                                        <td class="text-right rmax"></td>
+                                        <td>&ohm;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- steam-engine-ad:start provider="steam-engine-waterfall" placement="primary-banner" -->
+        <div class="ad-slot se-ad-placement text-center" aria-label="Advertisement"
+            data-ad-context="modrange" data-ad-placement="legacy-calculator-footer"
+            style="margin:1.5em auto;min-height:250px"></div>
+        <script async src="/advertising/runtime.js"></script>
+        <!-- steam-engine-ad:end -->
+        <div class="row">
+            <div class="col col-md-12">
+                <div class="row howdoesitwork">
+                    <div class="col col-md-6">
+                        <h3>Purpose</h3>
+                        <p>
+                            This calculator is for figuring out the optimal resistance range for your regulated mod (variable voltage or variable wattage advanced personal vaporizer) based on its maximum output current, voltage and power.
+                        </p>
+                        <p>
+                            Select your mod from the presets, or type in its limitations.
+                        </p>
+                        <ul>
+                            <li>
+                                With most VV/VW mods, a low resistance is not required for high power output, so the <b class="blinky" data-blink=".rmin">minimum resistance</b> may be less important than you think.
+                            </li>
+                            <li>
+                                At the <b class="blinky" data-blink=".rmid">median resistance</b>, the mod should be operating well within its voltage limit, as well as its current limit.
+                                If you are unsure about the quality of your circuitry, this resistance may be the safest bet for achieving maximum power.
+                            </li>
+                            <li>
+                                The <b class="blinky" data-blink=".rmax">maximum resistance</b> usually gives you the widest adjustment range.
+                            </li>
+                            <li>
+                                Between the median and the maximum resistance, there is a <b class="blinky" data-blink=".rsweet">sweet spot</b> of sorts, where many mods will give you a good balance of power and adjustability without overburdening your circuit board.
+                            </li>
+                        </ul>
+                        <p>
+                            Note:
+                            Some mod manufacturers exaggerate the specs.
+                            Others don't publish the limitations of their products, so data from reviews or forums have to be used instead.
+                            Mods also have individual variance.
+                            Don't take these numbers as gospel; <abbr title="Your Mod May Vary">YMMV</abbr>.
+                            If you have better data, leave me a message.
+                        </p>
+                    </div>
+                    <div class="col col-md-6">
+                        <h3>Results</h3>
+                        <p>
+                            The minimum resistance you should use is typically determined by the <abbr title="Personal Vaporizer">PV</abbr>'s current (amp) limit.
+                            The maximum resistance is typically determined by the voltage limit.
+                            The median resistance is calculated by ignoring the power limit, and simply dividing the voltage limit by the current limit.
+                            The "sweet spot" is between the median and the maximum resistance.
+                            Keeping the resistance of your atomizer close to the "sweet spot" of your APV should give you a decent adjustment range (with most APVs), without necessarily pushing the mod to its limits.
+                        </p>
+                        <h3>Battery efficiency <small>not calculated</small></h3>
+                        <p>
+                            Different mods and regulating circuits have different efficiency levels at various voltages. The efficiency is typically between 80% and 95%, but it can be lower.
+                            With the power output being constant, it is the efficiency of the circuit that determines how long your battery will last.
+                            There is no obvious way to know if your device is more battery efficient at lower or higher resistances, unless the manufacturer actually provides the data (most of them don't).
+                            The efficiency characteristics of a particular regulator is usually figured out by hooking it up to a test rig, or through good old fashioned user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <footer id="sefooter" class="container-fluid">
+    <hr />
+    <div class="row">
+        
+        
+        
+        <div class="col col-md-3 col-sm-12 text-center">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="col col-md-2 col-sm-12 text-right">
+            <a id="seaddr" href="https://www.steam-engine.org">www.steam-engine.org</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+</script>
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/x-handlebars-template" id="template-presets">
+        <option value=""></option>
+        {{#each .}}
+        <option value="{{@index}}" class="notranslate{{#if nm2}} syn{{/if}}">
+            {{nm}} {{#if nm2}}({{nm2}}){{/if}}
+        </option>
+        {{/each}}
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+    "entityId": "pioneer4you-green-leaf-ipv-v3-200w",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-197",
+            "title": "Pioneer4You offer two new mods",
+            "url": "https://www.planetofthevapes.co.uk/news/product/2015-07-15_pioneer4you-offer-two-new-mods.html",
+            "limitations": "Exact IPV3 Li/200W-upgrade variant is identified in the dated product report; the runtime profile name is retained as-is."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "IPV3 Li 200W upgrade discussion",
+            "url": "https://www.e-cigarette-forum.com/threads/ipv3-li-200w-upgrade.96890/",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "YiHi SX330-V3Si 200W"
+            }
+        ]
+    }
+}

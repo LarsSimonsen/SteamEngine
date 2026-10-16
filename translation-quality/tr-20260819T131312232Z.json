@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "tr", "cycleId": "tr-20260819T131312232Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Turkish source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Turkish critique confirmed interpolation works and found protected-name drift, a false-friend date bound and measurement label, ambiguous lead terminology, and several literal recipe translations." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Turkish human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "tr-identity", "translationId": "shared.encyclopedia.kicker", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated as generic phrases in navigation and calculator labels.", "disposition": "resolved", "evidence": ["The translation contract protects both product names."], "resolution": "Restored Steam Engine and Wire Wizard consistently." },
+        { "id": "tr-date", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Available by was rendered as available by an agent rather than an upper date bound.", "disposition": "resolved", "evidence": ["The label describes the latest date by which an item was available."], "resolution": "Used an explicit en geç date construction." },
+        { "id": "tr-coil", "translationId": "calculators.coil.imperial", "category": "translation-defect", "severity": "high", "summary": "Imperial units became empire units, and electrical leads used an anatomical term.", "disposition": "resolved", "evidence": ["The controls select an English-system measurement mode and describe resistance-wire leads."], "resolution": "Used İngiliz ölçü birimleri and bağlantı teli terminology." },
+        { "id": "tr-juice", "translationId": "calculators.juice.nicBase", "category": "factual-or-safety-risk", "severity": "high", "summary": "Nic base and nic strength became nice base and nice strength; flavor and target labels were also overly literal.", "disposition": "resolved", "evidence": ["The fields control nicotine concentration and e-liquid ingredients."], "resolution": "Restored nicotine, aroma, target, amount, and explicit safety terminology." },
+        { "id": "tr-actions", "translationId": "calculators.wirewiz.export", "category": "translation-defect", "severity": "medium", "summary": "Export and import buttons used trade nouns rather than software actions.", "disposition": "resolved", "evidence": ["The controls export and import a Wire Wizard design."], "resolution": "Used the standard Turkish software verbs." }
+    ]
+}

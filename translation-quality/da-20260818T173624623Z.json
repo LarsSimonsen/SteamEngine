@@ -1,0 +1,329 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260818T173624623Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Danish source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review, queue validation, typecheck, 79 test files with 462 tests, complete build, route checks, and generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Danish pass identified 25 remaining technical wording, terminology, and notation defects across TCR, Ohm's law, trigonometry, heat flux, SI conversions, and wire gauges; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Danish human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "da-20260818-051",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The TCR description used a less direct Danish verb for describing resistance change.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with clear Danish technical wording."
+        },
+        {
+            "id": "da-20260818-052",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.linear-model.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The first-order introduction used an awkward compound.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the natural Danish term førsteordensrelationen."
+        },
+        {
+            "id": "da-20260818-053",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.positive-and-negative.bullets.3",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The coefficient-sign bullet was grammatically incomplete.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as a complete warning about the coefficient sign."
+        },
+        {
+            "id": "da-20260818-054",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The TCR example title used the less natural Bearbejdet eksempel.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Regneeksempel."
+        },
+        {
+            "id": "da-20260818-055",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.relationship.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The current definition repeated ampere unnecessarily.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the concise Danish definition with A."
+        },
+        {
+            "id": "da-20260818-056",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule summary used an awkward phrase for where energy becomes heat.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to heat in a resistor."
+        },
+        {
+            "id": "da-20260818-057",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The Joule example title retained the less natural Bearbejdet eksempel.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Regneeksempel."
+        },
+        {
+            "id": "da-20260818-058",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.right-triangles.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The right-triangle explanation used literal and unclear spatial phrasing.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with consistent Danish geometry terms and explicit ratios."
+        },
+        {
+            "id": "da-20260818-059",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The triangle setup used møder for an angle relationship.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to a natural statement that the hypotenuse forms a 30° angle."
+        },
+        {
+            "id": "da-20260818-060",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked sine formula used an abbreviated side label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to den modstående."
+        },
+        {
+            "id": "da-20260818-061",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked cosine formula used an abbreviated side label.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to den tilstødende."
+        },
+        {
+            "id": "da-20260818-062",
+            "translationId": "catalog.concepts.concept-heat-flux.displayName",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux display name did not match the localized density terminology.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Varmestrømstæthed."
+        },
+        {
+            "id": "da-20260818-063",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.definition.bullets.0",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The q'' definition called heat-flux density simply heat flux.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to varmestrømstæthed while retaining W/m²."
+        },
+        {
+            "id": "da-20260818-064",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The heat-flux example title omitted the technical density term.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Gennemsnitlig varmestrømstæthed."
+        },
+        {
+            "id": "da-20260818-065",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The worked setup used the wrong grammatical gender for varmelegeme.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Et varmelegeme and preserved the engineering units."
+        },
+        {
+            "id": "da-20260818-066",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.headers.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SI table header omitted the Danish compound hyphen.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to SI-enhed."
+        },
+        {
+            "id": "da-20260818-067",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The length example retained English inch wording and decimal points.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Localized it as a Danish formula with comma decimal notation."
+        },
+        {
+            "id": "da-20260818-068",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The second length example retained an English unit and decimal point.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Localized it as a Danish formula with comma decimal notation."
+        },
+        {
+            "id": "da-20260818-069",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge description used a literal and repetitive measure phrase.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it with concise Danish terminology."
+        },
+        {
+            "id": "da-20260818-070",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.summary",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The wire-gauge summary retained the English-derived wire-gauge wording.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Rewrote it as Danish måletal for ledninger."
+        },
+        {
+            "id": "da-20260818-071",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.awg-formula.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The AWG title omitted the Danish compound hyphen.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to AWG-diameter og areal."
+        },
+        {
+            "id": "da-20260818-072",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.system-comparison.table.headers.2",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The SWG table header used a lowercase nationality adjective.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Britisk SWG."
+        },
+        {
+            "id": "da-20260818-073",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.title",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance title used the vague term måler.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to Måletal, areal og modstand."
+        },
+        {
+            "id": "da-20260818-074",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.resistance.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance formula omitted spacing around division.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to R = ρ × L / A."
+        },
+        {
+            "id": "da-20260818-075",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The practical-specification title used a generic loanword.",
+            "disposition": "resolved",
+            "evidence": [
+                "The previous Danish presentation contained the wording or notation described above."
+            ],
+            "resolution": "Changed it to the clearer Danish title Praktisk angivelse."
+        }
+    ]
+}

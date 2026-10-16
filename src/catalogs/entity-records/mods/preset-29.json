@@ -1,0 +1,29 @@
+{
+    "entityId": "dna20d",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-29",
+            "title": "Evolv DNA 20D modders boards",
+            "url": "https://forum.planetofthevapes.co.uk/threads/evolv-dna-20d-modders-boards.19677/",
+            "limitations": "Exact DNA20D board discussion records a vendor preparing to buy boards; it establishes a conservative upper bound."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Evolv DNA 20D datasheet",
+            "url": "https://downloads.evolvapor.com/dna20.pdf",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": []
+}

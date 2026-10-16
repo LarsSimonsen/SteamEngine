@@ -1,0 +1,765 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": 2,
+    "specification": "SITE-STRUCTURE.md",
+    "urlPolicy": {
+        "rootPath": "/",
+        "pageStyle": "slashless-extensionless",
+        "trailingSlashRedirectRequired": false,
+        "implementationSuffixRedirectRequired": true,
+        "implementationSuffixes": [
+            ".asp",
+            ".html"
+        ],
+        "localePrefixCaseSensitive": true
+    },
+    "origin": {
+        "rootPages": "public/<page>.html",
+        "localizedRootPages": "public/<locale>.html",
+        "localizedPages": "public/<locale>/<page>.html",
+        "comparisonPages": "public/compare/<category>.html",
+        "localizedComparisonPages": "public/<locale>/compare/<category>.html",
+        "catalogDetails": "public/catalog/<category>/<slug>.html",
+        "localizedCatalogDetails": "public/<locale>/catalog/<category>/<slug>.html",
+        "blogPages": "public/blog/<path>/index.html",
+        "legacyPages": "public/old/<page>.html",
+        "localIisConfig": "tools/local-iis-web.config",
+        "productionIncludesLocalIisConfig": false
+    },
+    "navigation": {
+        "general": [
+            "/catalog",
+            "/blog",
+            "/about"
+        ],
+        "primaryCalculators": [
+            "/ohm",
+            "/coil",
+            "/wirewiz",
+            "/batt",
+            "/modrange",
+            "/juice"
+        ],
+        "homeTools": [
+            "/ohm",
+            "/coil",
+            "/wirewiz",
+            "/batt",
+            "/modrange",
+            "/juice",
+            "/converter",
+            "/old"
+        ],
+        "routableCalculators": [
+            "/batt",
+            "/coil",
+            "/converter",
+            "/juice",
+            "/modrange",
+            "/ohm",
+            "/tcr",
+            "/wirewiz"
+        ],
+        "comparisonPages": [
+            "/compare/batteries",
+            "/compare/materials",
+            "/compare/mods"
+        ]
+    },
+    "localization": {
+        "defaultLocale": "en",
+        "publishedLocales": [
+            "en",
+            "nb",
+            "nn",
+            "zh-Hans",
+            "ar",
+            "es",
+            "es-419",
+            "fr",
+            "pl",
+            "uk",
+            "it",
+            "vi",
+            "de",
+            "sv",
+            "da",
+            "is",
+            "hi",
+            "bn",
+            "pt",
+            "pt-BR",
+            "ja",
+            "ko",
+            "el",
+            "tr",
+            "id",
+            "fi"
+        ],
+        "localizedPagePaths": [
+            "/",
+            "/catalog",
+            "/compare/batteries",
+            "/compare/materials",
+            "/compare/mods",
+            "/batt",
+            "/coil",
+            "/converter",
+            "/juice",
+            "/modrange",
+            "/ohm",
+            "/tcr",
+            "/wirewiz"
+        ],
+        "localizedCatalogDetails": true,
+        "englishOnlyAreas": [
+            "/about",
+            "/blog",
+            "/old",
+            "/privacy"
+        ],
+        "languageSwitching": "equivalent-route",
+        "englishOnlyLanguageSelector": "visible-disabled",
+        "machineDraftsPublished": true
+    },
+    "legacy": {
+        "rootPath": "/old",
+        "listedPages": [
+            "/old/ohm",
+            "/old/coil",
+            "/old/wirewiz",
+            "/old/batt",
+            "/old/modrange",
+            "/old/juice",
+            "/old/converter"
+        ],
+        "addressableOnlyPages": [
+            "/old/tcr",
+            "/old/about",
+            "/old/customdata",
+            "/old/themes"
+        ],
+        "originTemplate": "old/{page}.html"
+    },
+    "catalogDetail": {
+        "rootPath": "/catalog",
+        "pathTemplate": "/catalog/{category}/{slug}",
+        "categories": [
+            "concept",
+            "battery",
+            "mod",
+            "material"
+        ],
+        "originTemplate": "catalog/{category}/{slug}.html",
+        "categoryShortcuts": [
+            {
+                "path": "/catalog/concept",
+                "location": "/catalog#concepts",
+                "status": 301
+            },
+            {
+                "path": "/catalog/battery",
+                "location": "/catalog#batteries",
+                "status": 301
+            },
+            {
+                "path": "/catalog/mod",
+                "location": "/catalog#mods",
+                "status": 301
+            },
+            {
+                "path": "/catalog/material",
+                "location": "/catalog#materials",
+                "status": 301
+            }
+        ],
+        "localizedShortcutsPreserveLocale": true
+    },
+    "blog": {
+        "rootPath": "/blog",
+        "pagePatterns": [
+            "/blog",
+            "/blog/page/<page>",
+            "/blog/<year>/<month>/<day>/<slug>"
+        ],
+        "unsupportedPageFamilies": [
+            "category",
+            "tag",
+            "author",
+            "date-archive",
+            "feed-as-page",
+            "alternate-permalink"
+        ],
+        "originTemplate": "blog/<path>/index.html"
+    },
+    "hostRedirects": [
+        {
+            "host": "blog.steam-engine.org",
+            "targetOrigin": "https://www.steam-engine.org",
+            "rootLocation": "/blog",
+            "existingPathPrefix": "/blog",
+            "missingPathLocation": "/blog",
+            "status": 301,
+            "sitemapPolicy": "canonical-www-only"
+        }
+    ],
+    "canonicalization": {
+        "slashless": [
+            "/catalog",
+            "/compare/batteries",
+            "/compare/materials",
+            "/compare/mods",
+            "/blog",
+            "/about",
+            "/privacy",
+            "/batt",
+            "/coil",
+            "/converter",
+            "/juice",
+            "/modrange",
+            "/ohm",
+            "/tcr",
+            "/wirewiz",
+            "/old",
+            "/old/<legacyPage>",
+            "/blog/page/<page>",
+            "/blog/<year>/<month>/<day>/<slug>",
+            "/catalog/<category>/<slug>",
+            "/<locale>",
+            "/<locale>/catalog",
+            "/<locale>/compare/batteries",
+            "/<locale>/compare/materials",
+            "/<locale>/compare/mods",
+            "/<locale>/<calculator>",
+            "/<locale>/catalog/<category>/<slug>"
+        ],
+        "slashful": [],
+        "unsupportedVariants": [
+            "<canonical-non-root>/",
+            "<non-calculator>.asp",
+            "<non-calculator>.html"
+        ]
+    },
+    "generatedLinkPatterns": [
+        "/"
+    ],
+    "generatedLinkExceptions": [
+        {
+            "sourceRoute": "/blog/2016/11/10/new-version-of-steam-engine-in-the-works",
+            "href": "beta",
+            "reason": "Retained historical link to the retired beta route."
+        },
+        {
+            "sourceRoute": "/blog/2017/01/29/new-version-out-and-about",
+            "href": "default",
+            "reason": "Retained historical link to the retired default route."
+        },
+        {
+            "sourceRoute": "/blog/2017/09/28/cloud-chasing",
+            "href": "coil-old",
+            "reason": "Retained historical link to the retired coil-old route."
+        }
+    ],
+    "routeCases": [
+        {
+            "publicPath": "/default.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/index.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/ohm.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/ohm",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/ohm.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/ohm",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/converter.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/converter",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/coil.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/coil",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/coil.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/coil",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/wirewiz.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/wirewiz",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/wirewiz.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/wirewiz",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/batt.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/batt",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/batt.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/batt",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/modrange.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/modrange",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/modrange.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/modrange",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/juice.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/juice",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/juice.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/juice",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/converter.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/converter",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/tcr.asp",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/tcr",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/tcr.html",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/tcr",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/nb/ohm.html",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/catalog.html",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/compare/batteries",
+            "outcome": {
+                "kind": "origin",
+                "path": "compare/batteries.html"
+            }
+        },
+        {
+            "publicPath": "/nb/compare/batteries",
+            "outcome": {
+                "kind": "origin",
+                "path": "nb/compare/batteries.html"
+            }
+        },
+        {
+            "publicPath": "/compare/batteries/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/nb/compare/batteries/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/compare/materials",
+            "outcome": {
+                "kind": "origin",
+                "path": "compare/materials.html"
+            }
+        },
+        {
+            "publicPath": "/nb/compare/materials",
+            "outcome": {
+                "kind": "origin",
+                "path": "nb/compare/materials.html"
+            }
+        },
+        {
+            "publicPath": "/compare/materials/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/nb/compare/materials/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/compare/mods",
+            "outcome": {
+                "kind": "origin",
+                "path": "compare/mods.html"
+            }
+        },
+        {
+            "publicPath": "/nb/compare/mods",
+            "outcome": {
+                "kind": "origin",
+                "path": "nb/compare/mods.html"
+            }
+        },
+        {
+            "publicPath": "/compare/mods/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/nb/compare/mods/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/privacy",
+            "outcome": {
+                "kind": "origin",
+                "path": "privacy.html"
+            }
+        },
+        {
+            "publicPath": "/privacy/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/old",
+            "outcome": {
+                "kind": "origin",
+                "path": "old/index.html"
+            }
+        },
+        {
+            "publicPath": "/old/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/nb",
+            "outcome": {
+                "kind": "origin",
+                "path": "nb.html"
+            }
+        },
+        {
+            "publicPath": "/zh-Hans",
+            "outcome": {
+                "kind": "origin",
+                "path": "zh-Hans.html"
+            }
+        },
+        {
+            "publicPath": "/nb/catalog",
+            "outcome": {
+                "kind": "origin",
+                "path": "nb/catalog.html"
+            }
+        },
+        {
+            "publicPath": "/zh-Hans/ohm",
+            "outcome": {
+                "kind": "origin",
+                "path": "zh-Hans/ohm.html"
+            }
+        },
+        {
+            "publicPath": "/nb/catalog/material/kanthal-a",
+            "outcome": {
+                "kind": "origin",
+                "path": "nb/catalog/material/kanthal-a.html"
+            }
+        },
+        {
+            "publicPath": "/zh-Hans/catalog/material/kanthal-a",
+            "outcome": {
+                "kind": "origin",
+                "path": "zh-Hans/catalog/material/kanthal-a.html"
+            }
+        },
+        {
+            "publicPath": "/nb/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/nb/ohm/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/nb/catalog/material/kanthal-a/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/catalog",
+            "outcome": {
+                "kind": "origin",
+                "path": "catalog.html"
+            }
+        },
+        {
+            "publicPath": "/catalog/battery",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/catalog#batteries",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/nb/catalog/battery",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/nb/catalog#batteries",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/id/catalog/battery",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/id/catalog#batteries",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/tr/catalog/mod",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/tr/catalog#mods",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/es-419/catalog/material",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/es-419/catalog#materials",
+                "status": 301
+            }
+        },
+        {
+            "publicPath": "/catalog/battery/ampace-jp30p1-3000mah",
+            "outcome": {
+                "kind": "origin",
+                "path": "catalog/battery/ampace-jp30p1-3000mah.html"
+            }
+        },
+        {
+            "publicPath": "/catalog/mod/voopoo-drag-5",
+            "outcome": {
+                "kind": "origin",
+                "path": "catalog/mod/voopoo-drag-5.html"
+            }
+        },
+        {
+            "publicPath": "/catalog/material/kanthal-a",
+            "outcome": {
+                "kind": "origin",
+                "path": "catalog/material/kanthal-a.html"
+            }
+        },
+        {
+            "publicPath": "/catalog/concept/ohms-law",
+            "outcome": {
+                "kind": "origin",
+                "path": "catalog/concept/ohms-law.html"
+            }
+        },
+        {
+            "publicPath": "/catalog/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/blog",
+            "outcome": {
+                "kind": "origin",
+                "path": "blog/index.html"
+            }
+        },
+        {
+            "publicPath": "/blog/page/2",
+            "outcome": {
+                "kind": "origin",
+                "path": "blog/page/2/index.html"
+            }
+        },
+        {
+            "publicPath": "/blog/2015/11/17/welcome",
+            "outcome": {
+                "kind": "origin",
+                "path": "blog/2015/11/17/welcome/index.html"
+            }
+        },
+        {
+            "publicPath": "/blog/category/news",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/batteries/retired-route",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/mods/retired-route",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/materials/retired-route",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/catalog-data",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/fi/ohm",
+            "outcome": {
+                "kind": "origin",
+                "path": "fi/ohm.html"
+            }
+        },
+        {
+            "publicPath": "/fi/ohm/",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/fi/ohm.html",
+            "outcome": {
+                "kind": "unsupported",
+                "status": 404
+            }
+        },
+        {
+            "publicPath": "/fi/catalog/battery",
+            "outcome": {
+                "kind": "canonicalRedirect",
+                "location": "/fi/catalog#batteries",
+                "status": 301
+            }
+        }
+    ]
+}

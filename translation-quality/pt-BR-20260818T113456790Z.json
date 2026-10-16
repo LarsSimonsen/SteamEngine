@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "pt-BR",
+    "cycleId": "pt-BR-20260818T113456790Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Brazilian Portuguese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "An independent whole-locale pass identified 25 actionable Brazilian Portuguese translation defects in battery evidence, safety, and profile text; all 25 were corrected in this bounded iteration."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Brazilian Portuguese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "pt-BR-20260818-001",
+            "translationId": "catalogText.battery.summary.removable",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The removable-cell summary was normalized.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the summary."
+        },
+        {
+            "id": "pt-BR-20260818-002",
+            "translationId": "catalogText.battery.summary.integrated",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The integrated-battery summary was normalized.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Clarified the integrated distinction."
+        },
+        {
+            "id": "pt-BR-20260818-003",
+            "translationId": "catalogText.battery.note.battery-71.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The continuous-rating note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 20 A wording."
+        },
+        {
+            "id": "pt-BR-20260818-004",
+            "translationId": "catalogText.battery.note.battery-77.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The comparison note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 20 A comparison wording."
+        },
+        {
+            "id": "pt-BR-20260818-005",
+            "translationId": "catalogText.battery.note.battery-78.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 15 A value."
+        },
+        {
+            "id": "pt-BR-20260818-006",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tabless note omitted A and used pulse wording incorrectly.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Clarified the 45 A continuous and pulse distinction."
+        },
+        {
+            "id": "pt-BR-20260818-007",
+            "translationId": "catalogText.battery.note.battery-80.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The actual-value note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 36 A value."
+        },
+        {
+            "id": "pt-BR-20260818-008",
+            "translationId": "catalogText.battery.note.battery-81.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The preproduction note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A wording."
+        },
+        {
+            "id": "pt-BR-20260818-009",
+            "translationId": "catalogText.battery.note.battery-82.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The recommended-rating note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 13 A recommendation."
+        },
+        {
+            "id": "pt-BR-20260818-010",
+            "translationId": "catalogText.battery.note.battery-83.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The temperature-limited note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A and 70 A details."
+        },
+        {
+            "id": "pt-BR-20260818-011",
+            "translationId": "catalogText.battery.note.battery-84.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-cell note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A value."
+        },
+        {
+            "id": "pt-BR-20260818-012",
+            "translationId": "catalogText.battery.note.battery-85.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The wrapper note omitted A and used C without a degree symbol.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A and 60 °C details."
+        },
+        {
+            "id": "pt-BR-20260818-013",
+            "translationId": "catalogText.battery.note.battery-86.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The sample note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 19 A value."
+        },
+        {
+            "id": "pt-BR-20260818-014",
+            "translationId": "catalogText.battery.note.battery-87.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used awkward production wording.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A and 90 A details."
+        },
+        {
+            "id": "pt-BR-20260818-015",
+            "translationId": "catalogText.battery.note.battery-88.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The production-continuity note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A and 60 A details."
+        },
+        {
+            "id": "pt-BR-20260818-016",
+            "translationId": "catalogText.battery.note.battery-89.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The capacity note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 40 A wording."
+        },
+        {
+            "id": "pt-BR-20260818-017",
+            "translationId": "catalogText.battery.note.battery-90.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The note omitted A and used awkward preproduction wording.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 13 A wording."
+        },
+        {
+            "id": "pt-BR-20260818-018",
+            "translationId": "catalogText.battery.note.battery-91.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The tester-estimated note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 30 A estimate and 50 A limit."
+        },
+        {
+            "id": "pt-BR-20260818-019",
+            "translationId": "catalogText.battery.note.battery-92.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The batch note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 20 A and 30 A details."
+        },
+        {
+            "id": "pt-BR-20260818-020",
+            "translationId": "catalogText.battery.note.battery-93.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "The continuous and pulse descriptions were grammatically incomplete.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Clarified the 12 A continuous and 20 A pulse-only distinction."
+        },
+        {
+            "id": "pt-BR-20260818-021",
+            "translationId": "catalogText.battery.note.battery-94.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-wrapper note omitted A and used awkward source wording.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 20 A recommendation and later revisions."
+        },
+        {
+            "id": "pt-BR-20260818-022",
+            "translationId": "catalogText.battery.note.battery-95.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The exact-model note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 30 A exact-model value."
+        },
+        {
+            "id": "pt-BR-20260818-023",
+            "translationId": "catalogText.battery.note.battery-96.evidence",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The five-terminal revision note omitted A.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Corrected the 30 A revision warning."
+        },
+        {
+            "id": "pt-BR-20260818-024",
+            "translationId": "catalogText.battery.safety.lowDrain",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Low-drain was translated as low consumption, changing the safety meaning.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Changed to wording for low discharge capability."
+        },
+        {
+            "id": "pt-BR-20260818-025",
+            "translationId": "catalogText.mod.profile.regulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The regulated profile omitted the control-board alternative.",
+            "disposition": "resolved",
+            "evidence": ["Brazilian Portuguese source review identified the issue."],
+            "resolution": "Changed to a profile for a regulated device or control board."
+        }
+    ]
+}

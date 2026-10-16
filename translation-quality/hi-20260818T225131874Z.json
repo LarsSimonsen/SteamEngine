@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "locale": "hi",
+  "cycleId": "hi-20260818T225131874Z",
+  "resourceProfile": { "classification": "standard", "assessment": "The complete English and Hindi source scope, review metadata, glossary, and project concept references were available locally." },
+  "review": {
+    "automatedQuality": { "state": "passed", "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed." },
+    "linguisticCritique": { "state": "completed", "summary": "A bounded Hindi pass identified 5 actionable terminology, formula, and technical-clarity defects; all 5 were corrected." },
+    "competentHumanReview": { "state": "pending", "summary": "No competent Hindi human review was performed in this cycle; changed IDs remain machine-drafted." },
+    "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+  },
+  "findings": [
+    { "id": "hi-20260819-001", "translationId": "catalog.concepts.concept-kirchhoffs-laws.description", "category": "translation-defect", "severity": "high", "summary": "The Kirchhoff description did not explicitly state charge and energy conservation.", "disposition": "resolved", "evidence": ["The previous description remained general."], "resolution": "Specified charge conservation at nodes and energy conservation in closed loops." },
+    { "id": "hi-20260819-002", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.formulas.1", "category": "translation-defect", "severity": "medium", "summary": "The voltage example formula was not normalized after translation review.", "disposition": "resolved", "evidence": ["The previous formula was a residual machine-rendered variant."], "resolution": "Restored the canonical +8.0 V formula expression." },
+    { "id": "hi-20260819-003", "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.description", "category": "translation-defect", "severity": "medium", "summary": "The TCR description did not identify the component whose resistance changes.", "disposition": "resolved", "evidence": ["The subject of the resistance change was underspecified."], "resolution": "Named a component explicitly." },
+    { "id": "hi-20260819-004", "translationId": "catalog.concepts.concept-heat-flux.displayName", "category": "terminology-disagreement", "severity": "high", "summary": "The heat-flux name omitted the density qualifier.", "disposition": "resolved", "evidence": ["The previous name did not clearly represent q'' per unit area."], "resolution": "Changed it to ताप-प्रवाह घनत्व." },
+    { "id": "hi-20260819-005", "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.practical-specification.bullets.4", "category": "factual-or-safety-risk", "severity": "high", "summary": "The current-capacity instruction did not clearly express current-carrying capacity.", "disposition": "resolved", "evidence": ["The previous wording was a literal rendering."], "resolution": "Used धारा-वहन क्षमता and retained the product-data and electrical-rules warning." }
+  ]
+}

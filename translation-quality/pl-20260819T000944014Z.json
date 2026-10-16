@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "pl",
+    "cycleId": "pl-20260819T000944014Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and Polish source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded Polish pass identified three additional terminology, clarity, and formula defects; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Polish human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "pl-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading used an imprecise literal rendering instead of the standard Polish electrical term.", "disposition": "resolved", "evidence": ["Aktualne prawo Kirchhoffa describes a current or present law rather than Kirchhoff's current law."], "resolution": "Changed it to Prawo prądowe Kirchhoffa." },
+        { "id": "pl-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.paragraphs.0", "category": "translation-defect", "severity": "medium", "summary": "The current-law example used awkward branch-flow wording and an unnatural phrase for assumed current directions.", "disposition": "resolved", "evidence": ["The previous paragraph used aktualne kierunki and did not clearly describe the remaining branches collectively carrying away 5 A."], "resolution": "Rewrote the example with natural Polish current-flow terminology and explicit direction-sign guidance." },
+        { "id": "pl-20260819-008", "translationId": "catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.formulas.1", "category": "factual-or-safety-risk", "severity": "critical", "summary": "The Joule-heating energy formula used a Polish-looking variable instead of the protected energy symbol E.", "disposition": "resolved", "evidence": ["The previous expression was mi = P × t = 7,2 W × 10 s = 72 J, which changes the displayed formula variable."], "resolution": "Restored the protected expression E = P × t = 7,2 W × 10 s = 72 J." }
+    ]
+}

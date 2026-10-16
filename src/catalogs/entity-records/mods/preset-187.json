@@ -1,0 +1,41 @@
+{
+    "entityId": "pioneer4you-green-leaf-seven-22",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "source-use-intro-mods-20260805-preset-187",
+            "title": "Seven 22 SX220 mod",
+            "url": "https://www.e-cigarette-forum.com/threads/seven-22-sx220-mod.543320/",
+            "limitations": "Exact Seven 22 discussion and its SX220 relationship establish a dated upper bound only."
+        },
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Seven 22 product discussion",
+            "url": "https://www.dampfertreff.ch/t108794f636-Seven-mod.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650"
+            }
+        ],
+        "boardRelationships": [
+            {
+                "targetIdentity": "YiHi SX220"
+            }
+        ]
+    }
+}

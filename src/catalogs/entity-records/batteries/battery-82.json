@@ -1,0 +1,131 @@
+{
+    "entityId": "battery-82",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "Research record for EVE 21700/58E.",
+        "description": "EVE identifies 21700/58E as a 5.7Ah, 3.6V high-capacity cylindrical cell. Its specification allows 16.8A maximum discharge but explicitly says that level is not for cycle life; Battery Mooch tested the exact EVE 58E and recommends staying below 13A continuous, with 10A or lower preferred for efficiency and longevity. Do not present this high-capacity energy cell as a high-power choice. This record preserves exact-model evidence and unresolved revision caveats for the canonical catalog entry.",
+        "highlights": [
+            "Exact model identity is documented; wrapper and revision continuity remain relevant.",
+            "The 13A continuous candidate is supported by exact-model vaping testing; 16.8A remains an absolute manufacturer maximum, not a recommended operating target.",
+            "This is a high-capacity energy cell, not a high-power cell.",
+            "Runtime catalog admission is recorded separately from editorial visibility.",
+            "The catalog entry retains its measured and specification limits; default visibility remains a separate editorial decision."
+        ]
+    },
+    "sources": [
+        {
+            "id": "manufacturer-spec",
+            "title": "21700 58E product page",
+            "url": "https://www.evemall.com/consumer-battery/cylindrical-cell/21700-58e",
+            "publisher": "EVE Energy",
+            "limitations": "Product information establishes identity and stated specifications; it does not establish standalone vaping approval."
+        },
+        {
+            "id": "manufacturer-datasheet",
+            "title": "INR21700/58E product specification, Version A",
+            "url": "https://storage.ua.prom.st/3277718_eve_inr21700_58e_5700mah___atasheet_2025.pdf.pdf.pdf",
+            "publisher": "EVE Energy",
+            "limitations": "EVE confidential specification copy hosted outside EVE's main domain; it identifies the exact model, 5700mAh nominal capacity, and 16.8A maximum discharge marked not for cycle life."
+        },
+        {
+            "id": "general-retailer",
+            "title": "EVE 58E 21700 5700mAh 16.8A Battery",
+            "url": "https://18650battery.com/products/eve-58e-21700-5700mah-18a-battery",
+            "publisher": "18650 Battery Store",
+            "limitations": "Current exact-model retail listing supports commercial availability and displayed price; retailer claims such as authenticity are not independently verified."
+        },
+        {
+            "id": "vape-retailer",
+            "title": "EVE 21700 Battery Cells: 40P, 40PL, 50E and 58E",
+            "url": "https://www.whalebattery.com/products/eve-21700-battery",
+            "publisher": "Whale Battery",
+            "limitations": "The page markets the 58E among flat-top cells for vape use, but the exact 58E identity and ratings are established separately by EVE and the independent test."
+        },
+        {
+            "id": "vaping-test",
+            "title": "Bench Test Results: EVE 58E - 16.8A 5700mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-eve-58e-16-8a-5700mah-21700.990414/",
+            "publisher": "e-cigarette-forum.com",
+            "limitations": "Exact-model independent vaping test; conclusions apply to tested samples and revisions."
+        },
+        {
+            "id": "catalog-runtime",
+            "title": "Current canonical battery presets",
+            "publisher": "Steam Engine source catalog",
+            "limitations": "Authoritative for current runtime presets; absence means no exact preset match was found."
+        },
+        {
+            "id": "battery-methodology",
+            "title": "Battery research methodology",
+            "publisher": "Steam Engine research notes",
+            "limitations": "Internal workflow guidance separating discovery from assessment, scoring, admission, and publication."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact product identity is EVE 21700/58E (21700/58E), as named by the product source and exact-model test.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "EVE identifies INR21700/58E as a 5.7Ah, 3.6V high-capacity cylindrical cell; the current product page lists 5700mAh nominal capacity and a 16.8A maximum discharge.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "continuous-rating",
+            "statement": "Battery Mooch tested the exact EVE 58E and recommends staying below 13A continuous, with 10A or lower preferred for efficiency and longevity; EVE's 16.8A maximum is explicitly not for cycle life.",
+            "evidenceDate": "2025-06-03",
+            "confidence": "medium"
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact EVE 21700/58E has exact-model vaping test coverage.",
+            "evidenceDate": "2025-06-03",
+            "confidence": "high"
+        },
+        {
+            "id": "commercial-availability",
+            "statement": "A current retailer listing offers the exact EVE 58E 21700 cell individually, supporting commercial availability of the model.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "vape-retail",
+            "statement": "A battery retailer markets the EVE 58E among flat-top 21700 cells for vape use, supporting vaping-market relevance at the family level.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "catalog-absence",
+            "statement": "The current 76-entry Steam Engine battery catalog contains no exact EVE 21700/58E identity.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70
+        },
+        "chemistry": "Lithium-ion; exact cathode chemistry not promoted beyond the product source.",
+        "protected": false,
+        "appearance": null,
+        "authenticity": {
+            "status": "unresolved",
+            "confidence": "unknown",
+            "summary": "Exact wrapper and batch authenticity remain a separate admission check."
+        }
+    }
+}

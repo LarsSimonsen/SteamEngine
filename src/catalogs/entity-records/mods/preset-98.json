@@ -1,0 +1,23 @@
+{
+    "entityId": "okl2-t-20-w12",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Murata OKL2-T/20-W12 datasheet",
+            "url": "https://www.murata.com/products/productdata/8807038353438/okl2-t20-w12.pdf?1675222286000=",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": []
+}

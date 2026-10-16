@@ -1,0 +1,23 @@
+{
+    "entityId": "yihi-sx600h",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "YiHi current chipset documentation",
+            "url": "https://www.yihisxmini.com/articles/yihi-sx600h-chipset-quick-user-guide.html",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": []
+}

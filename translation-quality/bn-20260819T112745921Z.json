@@ -1,0 +1,169 @@
+{
+    "schemaVersion": 1,
+    "locale": "bn",
+    "cycleId": "bn-20260819T112745921Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The canonical English and complete Bengali source scope, glossary, review metadata, and UI context were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review generation, queue and findings validation, TypeScript typecheck, the focused interpolation probe, 464 tests, the production IIS build, route-contract validation, and generated internal-link validation passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Bengali critique found a runtime interpolation failure, protected-token corruption, electrical terminology errors, and unrelated literal translations."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Bengali human review was performed; corrected entries remain machine reviewed."
+        },
+        "publicationAuthorization": {
+            "state": "not-requested",
+            "summary": "The owner requested application corrections and a commit, not publication or deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "bn-placeholder-case",
+            "translationId": "messages.catalogManager.manage",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Sixteen lowercase interpolation tokens were not replaced by the case-sensitive uppercase substitution calls.",
+            "disposition": "resolved",
+            "evidence": ["The affected functions replaced __SE_ARG_n__ but their templates contained __se_arg_n__."],
+            "resolution": "Restored the protected uppercase token spelling and verified that no lowercase Bengali tokens remain."
+        },
+        {
+            "id": "bn-product-identity",
+            "translationId": "messages.navigation.home",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Steam Engine was translated or transliterated inconsistently instead of preserving product identity.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract protects product identity."],
+            "resolution": "Preserved Steam Engine in navigation, home, blog, catalog, and knowledge-base labels."
+        },
+        {
+            "id": "bn-protected-units",
+            "translationId": "calculators.juice.pg",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "PG, VG, ml, W, A, mm, °C, and °F were translated or replaced with ambiguous Bengali forms.",
+            "disposition": "resolved",
+            "evidence": ["The translation contract requires stable unit symbols and recipe abbreviations."],
+            "resolution": "Restored protected unit symbols and VG/PG consistently in the corrected scope."
+        },
+        {
+            "id": "bn-electrical-current",
+            "translationId": "calculators.batt.maximumCurrent",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Electrical current was rendered with the ordinary word for present or current time.",
+            "disposition": "resolved",
+            "evidence": ["The Bengali glossary identifies কারেন্ট as the electrical term."],
+            "resolution": "Used কারেন্ট in battery, Mod Range, shared catalog, and safety-limit wording."
+        },
+        {
+            "id": "bn-electrical-power-capacity",
+            "translationId": "messages.ohm.fields.power",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Electrical power and battery capacity used ambiguous strength or ability terms.",
+            "disposition": "resolved",
+            "evidence": ["The Bengali glossary prefers পাওয়ার for electrical power."],
+            "resolution": "Used পাওয়ার for electrical power and ধারণক্ষমতা for battery capacity."
+        },
+        {
+            "id": "bn-battery-safety",
+            "translationId": "calculators.batt.batteryHelp",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Battery help and current-headroom warnings used incorrect current terminology.",
+            "disposition": "resolved",
+            "evidence": ["These messages explain the current limit and remaining safety headroom."],
+            "resolution": "Rewrote the affected help and warning text with explicit capacity and current-limit terminology."
+        },
+        {
+            "id": "bn-juice-safety",
+            "translationId": "calculators.juice.safetyText",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "The nicotine warning omitted the e-liquid context and used awkward risk instructions.",
+            "disposition": "resolved",
+            "evidence": ["The canonical warning concerns concentrated nicotine and safe preparation of e-liquid."],
+            "resolution": "Rewrote the warning clearly while preserving its severity and independent-verification advice."
+        },
+        {
+            "id": "bn-juice-concentration",
+            "translationId": "calculators.juice.nicStrength",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Nicotine concentration labels and adjustment guidance mixed broken English abbreviations with strength terminology.",
+            "disposition": "resolved",
+            "evidence": ["The fields describe nicotine concentration and nicotine base."],
+            "resolution": "Used নিকোটিনের ঘনত্ব and rewrote the adjustment and warning guidance."
+        },
+        {
+            "id": "bn-juice-literal-labels",
+            "translationId": "calculators.juice.targetLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The target label literally asked what the user was shooting for and the amount label was unnatural.",
+            "disposition": "resolved",
+            "evidence": ["The controls describe the desired recipe and batch quantity."],
+            "resolution": "Replaced them with concise recipe-context Bengali labels."
+        },
+        {
+            "id": "bn-modrange-literals",
+            "translationId": "calculators.modrange.specs",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "Specs became eyeglasses, sweet spot became a sweet place, and graph legend became folklore.",
+            "disposition": "resolved",
+            "evidence": ["These labels describe device specifications, the ideal range, and the graph key."],
+            "resolution": "Applied UI-appropriate Bengali terminology to the affected Mod Range labels."
+        },
+        {
+            "id": "bn-coil-leg-power",
+            "translationId": "calculators.coil.legPowerLoss",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Coil-leg power loss was translated as reduced strength in a person's legs.",
+            "disposition": "resolved",
+            "evidence": ["The result is electrical power dissipated in the coil legs."],
+            "resolution": "Changed the label to লেগে পাওয়ার ক্ষয়."
+        },
+        {
+            "id": "bn-wire-results",
+            "translationId": "calculators.wirewiz.powerDissipated",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "Dissipated power and physical properties were rendered as vanished electricity and bodily properties.",
+            "disposition": "resolved",
+            "evidence": ["The Wire Wizard section reports electrical power and physical measurements."],
+            "resolution": "Used ক্ষয়িত পাওয়ার and ভৌত বৈশিষ্ট্য."
+        },
+        {
+            "id": "bn-tfr-normalization",
+            "translationId": "calculators.tcr.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "Normalized curves were described as natural, and TFR was transliterated inconsistently.",
+            "disposition": "resolved",
+            "evidence": ["Normalization is a mathematical operation and TFR is a protected acronym."],
+            "resolution": "Used explicit normalization wording and preserved TFR."
+        },
+        {
+            "id": "bn-shared-catalog-labels",
+            "translationId": "messages.encyclopediaDetail.unit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "One catalog label remained English and several technical property labels were malformed.",
+            "disposition": "resolved",
+            "evidence": ["Supported locale labels must not rely on untranslated English display text."],
+            "resolution": "Translated Unit and corrected current, capacity, power, resistivity, and atomizer property labels."
+        }
+    ]
+}

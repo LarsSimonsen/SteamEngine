@@ -1,0 +1,4 @@
+interface:
+  display_name: "Steam Engine Maintain Locale Parity"
+  short_description: "Keep enabled locales aligned with English"
+  default_prompt: "Use $steam-engine-maintain-locale-parity when English source content changes."

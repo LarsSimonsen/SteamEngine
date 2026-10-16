@@ -1,0 +1,51 @@
+{
+    "entityId": "battery-96",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "A revision-specific iJoy 20700 five-leg rewrap rated at 3000mAh and 30A continuous.",
+        "description": "The exact five-leg revision has 3000mAh and 30A test support. Four-leg and later cells used the same wrap, so physical five-leg identification is required.",
+        "highlights": [
+            "30A exact five-leg test",
+            "3000mAh capacity",
+            "Do not merge later same-wrap revisions"
+        ]
+    },
+    "sources": [
+        {
+            "id": "retail",
+            "title": "IJOY 20700 3000mAh High Drain 5 Leg",
+            "url": "https://ismokeking.se/product-category/accessories/batteries/",
+            "limitations": "Retail evidence identifies the five-leg vape-battery revision."
+        },
+        {
+            "id": "test",
+            "title": "iJoy 40A 3000mAh 20700 Bench Test Results",
+            "url": "https://www.e-cigarette-forum.com/threads/ijoy-40a-3000mah-20700-bench-test-results-overrated-but-a-good-30a-battery.798323/",
+            "limitations": "Exact five-leg test; four-leg and later revisions using the same wrap are materially different."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "Physical five-leg marking is required; later same-wrap cells are separate identities."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "20700",
+            "nominalDiameterMm": 20,
+            "nominalLengthMm": 70,
+            "terminalStyle": "flat-top"
+        },
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

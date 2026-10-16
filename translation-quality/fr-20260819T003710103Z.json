@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "locale": "fr",
+    "cycleId": "fr-20260819T003710103Z",
+    "resourceProfile": { "classification": "standard", "assessment": "The complete English and French source scope, review metadata, glossary, and project concept references were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review checks, typecheck, complete build, route and generated-link checks, and the full test suite passed after the cycle was finalized." },
+        "linguisticCritique": { "state": "completed", "summary": "A bounded French pass identified three electrical terminology and technical punctuation defects; all three were corrected." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent French human review was performed in this cycle; changed IDs remain machine-drafted." },
+        "publicationAuthorization": { "state": "not-authorized", "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted for this cycle." }
+    },
+    "findings": [
+        { "id": "fr-20260819-006", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.current-law.title", "category": "translation-defect", "severity": "medium", "summary": "The current-law heading used a literal phrase instead of the standard French electrical term.", "disposition": "resolved", "evidence": ["La loi actuelle de Kirchhoff means a current or present law rather than Kirchhoff's current law."], "resolution": "Changed it to La loi des courants de Kirchhoff." },
+        { "id": "fr-20260819-007", "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.circuit-terms.bullets.1", "category": "translation-defect", "severity": "medium", "summary": "The branch definition used chemin actuel, which is not the natural French electrical term for a current path.", "disposition": "resolved", "evidence": ["The previous bullet described a branch as un chemin actuel entre deux nœuds."], "resolution": "Changed it to chemin de courant." },
+        { "id": "fr-20260819-008", "translationId": "catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0", "category": "translation-defect", "severity": "low", "summary": "The heat-flux paragraph used nonstandard spacing in the Stefan–Boltzmann name.", "disposition": "resolved", "evidence": ["The previous paragraph displayed Stefan – Boltzmann with spaces around the en dash."], "resolution": "Normalized the name to Stefan–Boltzmann and refined the surrounding French sentence." }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "locale": "ja",
+    "cycleId": "ja-20260818T150423330Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Japanese source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Japanese pass identified 25 actionable formula, terminology, grammar, and technical-clarity defects across electrical, trigonometric, thermal, heat-flux, and unit content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Japanese human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {"id":"ja-20260818-001","translationId":"catalog.concepts.concept-ohms-law.sections.relationship.bullets.1","category":"translation-defect","severity":"low","summary":"The current definition repeated the ampere term.","disposition":"resolved","evidence":["The previous bullet repeated アンペア."],"resolution":"Changed it to concise current-in-amperes wording."},
+        {"id":"ja-20260818-002","translationId":"catalog.concepts.concept-ohms-law.sections.worked-examples.examples.0.title","category":"translation-defect","severity":"low","summary":"The current example title was a literal translation.","disposition":"resolved","evidence":["The previous title was 現在の検索."],"resolution":"Changed it to 電流を求める."},
+        {"id":"ja-20260818-003","translationId":"catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.formulas.0","category":"translation-defect","severity":"high","summary":"The voltage formula omitted spaces around units.","disposition":"resolved","evidence":["The previous expression was 0.5A × 10Ω = 5V."],"resolution":"Restored V = 0.5 A × 10 Ω = 5 V."},
+        {"id":"ja-20260818-004","translationId":"catalog.concepts.concept-ohms-law.sections.electrical-power.paragraphs.0","category":"translation-defect","severity":"medium","summary":"The power paragraph used a literal headroom loanword.","disposition":"resolved","evidence":["The previous paragraph used ヘッドルーム."],"resolution":"Changed it to 安全余裕."},
+        {"id":"ja-20260818-005","translationId":"catalog.concepts.concept-joule-heating.sections.heating-power.title","category":"translation-defect","severity":"low","summary":"The heating-power title used a literal heating-force phrase.","disposition":"resolved","evidence":["The previous title was 加熱力."],"resolution":"Changed it to 加熱電力."},
+        {"id":"ja-20260818-006","translationId":"catalog.concepts.concept-joule-heating.sections.worked-example.examples.0.conclusion","category":"factual-or-safety-risk","severity":"high","summary":"The Joule example described power as joules per second.","disposition":"resolved","evidence":["The previous conclusion used 1 秒あたり 7.2 ジュール."],"resolution":"Clarified 7.2 W and 72 J in 10 seconds."},
+        {"id":"ja-20260818-007","translationId":"catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3","category":"translation-defect","severity":"low","summary":"The heat-transfer bullet retained hardware as an English loanword.","disposition":"resolved","evidence":["The previous bullet used ハードウェア."],"resolution":"Changed it to 機器."},
+        {"id":"ja-20260818-008","translationId":"catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.0.expression","category":"translation-defect","severity":"high","summary":"The sine formula localized a protected side label.","disposition":"resolved","evidence":["The previous expression used 逆向き."],"resolution":"Restored sin(θ) = opposite / hypotenuse."},
+        {"id":"ja-20260818-009","translationId":"catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.1.expression","category":"translation-defect","severity":"high","summary":"The cosine formula localized a protected side label.","disposition":"resolved","evidence":["The previous expression used 隣接."],"resolution":"Restored cos(θ) = adjacent / hypotenuse."},
+        {"id":"ja-20260818-010","translationId":"catalog.concepts.concept-trigonometry.sections.right-triangles.formulas.2.expression","category":"translation-defect","severity":"high","summary":"The tangent formula used an uppercase function and localized labels.","disposition":"resolved","evidence":["The previous expression was Tan(θ) = 反対/隣接."],"resolution":"Restored tan(θ) = opposite / adjacent."},
+        {"id":"ja-20260818-011","translationId":"catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.0.expression","category":"translation-defect","severity":"high","summary":"The inverse-sine formula localized protected labels.","disposition":"resolved","evidence":["The previous expression used Japanese side names."],"resolution":"Restored θ = sin^-1(opposite / hypotenuse)."},
+        {"id":"ja-20260818-012","translationId":"catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.1.expression","category":"translation-defect","severity":"high","summary":"The inverse-cosine formula localized protected labels.","disposition":"resolved","evidence":["The previous expression used Japanese side names."],"resolution":"Restored θ = cos^-1(adjacent / hypotenuse)."},
+        {"id":"ja-20260818-013","translationId":"catalog.concepts.concept-trigonometry.sections.finding-sides-and-angles.formulas.2.expression","category":"translation-defect","severity":"high","summary":"The inverse-tangent formula localized protected labels.","disposition":"resolved","evidence":["The previous expression used Japanese side names."],"resolution":"Restored θ = tan^-1(opposite / adjacent)."},
+        {"id":"ja-20260818-014","translationId":"catalog.concepts.concept-heat-capacity.sections.basic-relationships.title","category":"translation-defect","severity":"low","summary":"The heat-capacity title was mistranslated as human relationships.","disposition":"resolved","evidence":["The previous title was 基本的な人間関係."],"resolution":"Changed it to 基本的な関係."},
+        {"id":"ja-20260818-015","translationId":"catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.formulas.0","category":"translation-defect","severity":"medium","summary":"The heating-time formula spelled out seconds.","disposition":"resolved","evidence":["The previous expression ended with 418 秒."],"resolution":"Changed it to 418 s."},
+        {"id":"ja-20260818-016","translationId":"catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion","category":"translation-defect","severity":"medium","summary":"The heating conclusion spelled out the validated seconds result.","disposition":"resolved","evidence":["The previous conclusion ended with 523 秒."],"resolution":"Changed it to approximately 523 s."},
+        {"id":"ja-20260818-017","translationId":"catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0","category":"translation-defect","severity":"medium","summary":"The phase paragraph used a general state term instead of phase.","disposition":"resolved","evidence":["The previous paragraph used 状態."],"resolution":"Changed it to 相."},
+        {"id":"ja-20260818-018","translationId":"catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.1","category":"translation-defect","severity":"medium","summary":"The limitation paragraph used 比熱 instead of 比熱容量.","disposition":"resolved","evidence":["The previous paragraph used 比熱."],"resolution":"Changed it to 比熱容量."},
+        {"id":"ja-20260818-019","translationId":"catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.title","category":"translation-defect","severity":"medium","summary":"The heat-flux title was mistranslated as magnetic flux.","disposition":"resolved","evidence":["The previous title was 平均ヒーター磁束."],"resolution":"Changed it to ヒーターの平均熱流束."},
+        {"id":"ja-20260818-020","translationId":"catalog.concepts.concept-heat-flux.sections.worked-example.examples.0.formulas.0","category":"translation-defect","severity":"medium","summary":"The heat-flux formula spelled out square meters.","disposition":"resolved","evidence":["The previous expression used 平方メートル."],"resolution":"Restored q'' = 100 W / 0.020 m² = 5,000 W/m²."},
+        {"id":"ja-20260818-021","translationId":"catalog.concepts.concept-heat-flux.sections.convection-and-radiation.paragraphs.0","category":"translation-defect","severity":"medium","summary":"The convection paragraph used surface coefficient and radiation terminology literally.","disposition":"resolved","evidence":["The previous paragraph used 表面係数 and 放射線."],"resolution":"Changed them to 対流係数 and 放射."},
+        {"id":"ja-20260818-022","translationId":"catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.2.1","category":"translation-defect","severity":"low","summary":"The SI table translated second as ordinal number.","disposition":"resolved","evidence":["The previous cell was 2番目."],"resolution":"Changed it to 秒."},
+        {"id":"ja-20260818-023","translationId":"catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.4.2","category":"translation-defect","severity":"high","summary":"The SI current symbol was rendered as hiragana.","disposition":"resolved","evidence":["The previous cell rendered A as あ."],"resolution":"Restored A."},
+        {"id":"ja-20260818-024","translationId":"catalog.concepts.concept-si-system-and-imperial-units.sections.base-units.table.rows.5","category":"translation-defect","severity":"medium","summary":"The amount-of-substance row contained an unrelated quantity translation.","disposition":"resolved","evidence":["The previous row used ほくろ."],"resolution":"Changed it to 物質量 and モル."},
+        {"id":"ja-20260818-025","translationId":"catalog.concepts.concept-si-system-and-imperial-units.sections.length-conversions.formulas.3","category":"translation-defect","severity":"medium","summary":"The square-inch conversion used inconsistent spelled-out units.","disposition":"resolved","evidence":["The previous expression used 1インチ平方 and mm平方."],"resolution":"Restored 1 in² = 645.16 mm²."}
+    ]
+}

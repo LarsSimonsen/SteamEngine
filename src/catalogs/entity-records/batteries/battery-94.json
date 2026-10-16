@@ -1,0 +1,52 @@
+{
+    "entityId": "battery-94",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "A revision-specific Vapcell B30 18650 rewrap rated at 3000mAh and 20A continuous.",
+        "description": "The exact tested wrapper supports 3000mAh and 20A; the tester recommends below 15A continuously. Vapehuset's title says 25A while its description supports 20A. Later rewrap revisions and underlying sourcing may differ.",
+        "highlights": [
+            "20A exact-wrapper comparison value",
+            "Below-15A continuous-use test recommendation",
+            "25A retailer-title conflict",
+            "Rewrap continuity warning"
+        ]
+    },
+    "sources": [
+        {
+            "id": "retail",
+            "title": "Vapcell B30 18650 3000mAh 25A battery",
+            "url": "https://www.vapehuset.se/batterier/vapcell-b30-18650-3000mha-25a-batteri/",
+            "limitations": "Retailer title says 25A while the description supports 20A; presence is not sales evidence."
+        },
+        {
+            "id": "test",
+            "title": "Bench Test Results: Vapcell Yellow B30 - 20A 3000mAh 18650",
+            "url": "https://www.e-cigarette-forum.com/threads/bench-test-results-vapcell-yellow-b30-20a-3000mah-18650%E2%80%A6a-great-performer.966231/",
+            "limitations": "Exact-wrapper historical test; the tester recommends below 15A continuous and later rewraps may differ."
+        }
+    ],
+    "claims": [],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "Retain the retailer rating conflict and revision-specific rewrap warning."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": "removable",
+        "formFactor": {
+            "kind": "cylindrical",
+            "sizeCode": "18650",
+            "nominalDiameterMm": 18,
+            "nominalLengthMm": 65,
+            "terminalStyle": "flat-top"
+        },
+        "protected": false,
+        "appearance": null,
+        "authenticity": null
+    }
+}

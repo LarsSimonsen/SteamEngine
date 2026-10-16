@@ -1,0 +1,279 @@
+{
+    "schemaVersion": 1,
+    "locale": "nn",
+    "cycleId": "nn-20260818T135804636Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "The complete English and Nynorsk source scope, review metadata, glossary, and project concept references were available locally."
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "Translation review metadata, queue validation, typecheck, 79 test files with 462 tests, complete build, 39 IIS rules with 61 route cases, and 724 generated-link checks passed."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "A bounded Nynorsk pass identified 25 actionable Bokmål residues, mixed-language instructions, and one factual wording defect across electrical, circuit, trigonometric, thermal, and unit-conversion content; all 25 were corrected."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Nynorsk human review was performed in this cycle; changed IDs remain machine-drafted."
+        },
+        "publicationAuthorization": {
+            "state": "not-authorized",
+            "summary": "No merge, publication, deployment, or residual-risk authorization was requested or granted."
+        }
+    },
+    "findings": [
+        {
+            "id": "nn-20260818-101",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unchanged-resistance bullet retained the Bokmål forms øker and strømmen.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence said ‘Når motstanden er uendret, øker strømmen når spenningen øker.’"],
+            "resolution": "Changed it to the Nynorsk forms uendra, aukar, straumen, and spenninga."
+        },
+        {
+            "id": "nn-20260818-102",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.rearranged-formulas.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unchanged-voltage bullet retained Bokmål forms for voltage, current, and increase.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence said ‘Når spenningen er uendret, synker strømmen når motstanden øker.’"],
+            "resolution": "Changed it to ‘Når spenninga er uendra, søkk straumen når motstanden aukar.’"
+        },
+        {
+            "id": "nn-20260818-103",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The resistance example used the Bokmål noun kretsen.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion was ‘Motstanden i kretsen er 6 Ω.’"],
+            "resolution": "Changed kretsen to the Nynorsk form krinsen."
+        },
+        {
+            "id": "nn-20260818-104",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.worked-examples.examples.2.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage example conclusion used the Bokmål form Spenningen.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion was ‘Spenningen er 5 V.’"],
+            "resolution": "Changed it to the Nynorsk form ‘Spenninga er 5 V.’"
+        },
+        {
+            "id": "nn-20260818-105",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unit-conversion title was written in Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Enhetsomregning’."],
+            "resolution": "Changed it to ‘Omrekning av einingar’."
+        },
+        {
+            "id": "nn-20260818-106",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.unit-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unit-conversion instruction was entirely Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["The previous instruction was ‘Hold enhetene konsistente før du regner:’."],
+            "resolution": "Changed it to ‘Hald einingane konsistente før du reknar:’."
+        },
+        {
+            "id": "nn-20260818-107",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The model-limitations title used the Bokmål compound begrensninger.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Modellens begrensninger’."],
+            "resolution": "Changed it to the concise Nynorsk title ‘Modellavgrensingar’."
+        },
+        {
+            "id": "nn-20260818-108",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "factual-or-safety-risk",
+            "severity": "high",
+            "summary": "The Joule-heating summary incorrectly said that current transforms resistance into heat.",
+            "disposition": "resolved",
+            "evidence": ["The previous summary said ‘Korleis elektrisk straum omdannar motstand til varme.’"],
+            "resolution": "Replaced resistance with the correct physical source: electrical energy becomes heat when current passes through a resistor."
+        },
+        {
+            "id": "nn-20260818-109",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The constant-resistance bullet retained the Bokmål verb gir.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence began ‘Ved konstant motstand gir ei dobling ...’."],
+            "resolution": "Changed gir to the Nynorsk form gjev."
+        },
+        {
+            "id": "nn-20260818-110",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.what-affects-heating.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-transfer bullet mixed Bokmål faktisk with Nynorsk content.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended with ‘den faktiske temperaturen’."],
+            "resolution": "Changed it to the Nynorsk wording ‘den verkelege temperaturen’."
+        },
+        {
+            "id": "nn-20260818-111",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.voltage-law.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The voltage-law explanation retained the Bokmål verb gir.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said ‘Ein større seriemotstand gir eit større spenningsfall’."],
+            "resolution": "Changed gir to gjev while preserving the circuit explanation."
+        },
+        {
+            "id": "nn-20260818-112",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.cells.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The parallel-cell bullet used a Bokmål passive construction.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence ended with ‘kapasitet og tilgjengeleg straum om lag blir summert’."],
+            "resolution": "Changed it to the natural Nynorsk form ‘blir lagde saman’."
+        },
+        {
+            "id": "nn-20260818-113",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.degrees-and-radians.formulas.0.expression",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The degrees-to-radians formula used the Bokmål plural radians.",
+            "disposition": "resolved",
+            "evidence": ["The previous expression was ‘180° = π radians’."],
+            "resolution": "Changed the unit word to the Nynorsk form radianar."
+        },
+        {
+            "id": "nn-20260818-114",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The waveform title used Bokmål bølgeformer and identiteter.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Bølgeformer og nyttige identiteter’."],
+            "resolution": "Changed it to ‘Bølgjeformer og nyttige identitetar’."
+        },
+        {
+            "id": "nn-20260818-115",
+            "translationId": "catalog.concepts.concept-trigonometry.sections.waveforms-and-identities.bullets.1",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The angular-frequency bullet used the Bokmål form måles.",
+            "disposition": "resolved",
+            "evidence": ["The previous sentence was ‘Vinkelfrekvensen ω måles i radianer per sekund.’"],
+            "resolution": "Changed it to ‘Vinkelfrekvensen ω blir målt i radianar per sekund.’"
+        },
+        {
+            "id": "nn-20260818-116",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.worked-example.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The heat-capacity example setup used the Bokmål noun vann.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup said ‘Varm opp 0,20 kg vann ...’."],
+            "resolution": "Changed vann to vatn."
+        },
+        {
+            "id": "nn-20260818-117",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The ideal-heating setup mixed Bokmål en with Nynorsk wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous setup said ‘med en konstant kilde på 100 W utan tap’."],
+            "resolution": "Changed it to ‘med ei konstant kjelde på 100 W utan tap’."
+        },
+        {
+            "id": "nn-20260818-118",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.electrical-heating.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The ideal-heating conclusion retained Bokmål tida and tiden.",
+            "disposition": "resolved",
+            "evidence": ["The previous conclusion used ‘Den ideelle tiden ... er den omtrent 523 sekunder’."],
+            "resolution": "Rewrote it with the Nynorsk forms tida, minutt, and ho."
+        },
+        {
+            "id": "nn-20260818-119",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change title used the Bokmål compound Faseendringer.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Faseendringer og praktiske begrensninger’."],
+            "resolution": "Changed it to ‘Faseendringar og praktiske avgrensingar’."
+        },
+        {
+            "id": "nn-20260818-120",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.phase-changes-and-limits.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The phase-change explanation used the Bokmål genitive materialets.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph said ‘endre materialets fase’."],
+            "resolution": "Changed it to the Nynorsk phrase ‘endre fasen til materialet’."
+        },
+        {
+            "id": "nn-20260818-121",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The SI-system description mixed Bokmål gir et, omregning, and måleverdier with Nynorsk terms.",
+            "disposition": "resolved",
+            "evidence": ["The previous description began ‘SI-systemet gir et sammenhengende grunnlag ...’."],
+            "resolution": "Rewrote it with gjev eit, omrekning, and måleverdiar."
+        },
+        {
+            "id": "nn-20260818-122",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The other-conversions title used the Bokmål form omregninger.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Andre vanlege omregninger’."],
+            "resolution": "Changed it to ‘Andre vanlege omrekningar’."
+        },
+        {
+            "id": "nn-20260818-123",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.other-conversions.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The imperial-unit paragraph used English/Bokmål pound, en, størrelser, and tommer wording.",
+            "disposition": "resolved",
+            "evidence": ["The previous paragraph began ‘En pound kan vise til masse ... som er ulike størrelser.’"],
+            "resolution": "Rewrote it with the Nynorsk terms pund, eit, storleikar, and tommar."
+        },
+        {
+            "id": "nn-20260818-124",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "The unit-check title used the Bokmål compound enhetskontroller.",
+            "disposition": "resolved",
+            "evidence": ["The previous title was ‘Praktiske enhetskontroller’."],
+            "resolution": "Changed it to ‘Praktiske einingskontrollar’."
+        },
+        {
+            "id": "nn-20260818-125",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.unit-checks.bullets.0",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The first unit-check instruction was written in Bokmål.",
+            "disposition": "resolved",
+            "evidence": ["The previous instruction was ‘Skriv enheten ved siden av hver verdi mens du regner.’"],
+            "resolution": "Changed it to ‘Skriv eininga ved sida av kvar verdi medan du reknar.’"
+        }
+    ]
+}

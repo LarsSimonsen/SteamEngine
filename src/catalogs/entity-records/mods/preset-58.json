@@ -1,0 +1,31 @@
+{
+    "entityId": "innokin-itaste-mvp-3-pro",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Innokin iTaste MVP 3.0 Pro manual",
+            "url": "https://manualzilla.com/doc/5643652/itaste-mvp3.0-pro-user-manual",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "integrated",
+                "manufacturerClaimedCapacityMah": 4500
+            }
+        ]
+    }
+}

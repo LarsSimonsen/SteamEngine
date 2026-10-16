@@ -1,0 +1,46 @@
+{
+    "schemaVersion": 1,
+    "locale": "da",
+    "cycleId": "da-20260820T011747899Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Canonical English, all 1,071 effective Danish runtime entries, repository checks, and Danish dictionary and technical terminology sources were available."
+    },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, complete-runtime scans, and TypeScript checking passed." },
+        "linguisticCritique": { "state": "completed", "summary": "Three complete-scope passes resolved 25 Danish export, numeric-convention, SI, circuit, and wire-gauge findings." },
+        "competentHumanReview": { "state": "pending", "summary": "The Danish corrections were machine-reviewed and still require competent human review." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "This cycle authorizes a locale-specific commit only, not publication or deployment." }
+    },
+    "findings": [
+        {
+            "id": "da-csv-output",
+            "translationId": "calculators.tcr.csvOutput",
+            "category": "translation-defect",
+            "severity": "low",
+            "summary": "The final CSV output label remained in English.",
+            "disposition": "resolved",
+            "evidence": ["The complete-runtime untranslated-label scan found one non-identity English label."],
+            "resolution": "Localized the label as DNA 200 CSV-output."
+        },
+        {
+            "id": "da-first-zero-audit",
+            "category": "tool-false-positive",
+            "severity": "low",
+            "summary": "A fresh structural and linguistic scan produced no actionable findings at that snapshot.",
+            "disposition": "rejected-with-evidence",
+            "evidence": ["All 1,071 entries passed placeholder, Unicode, untranslated-label, and targeted-language checks."],
+            "resolution": "A separate numeric-convention audit was run before convergence was accepted."
+        },
+        {
+            "id": "da-numeric-si-and-circuit-terms",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.rows.1.0",
+            "category": "factual-or-safety-risk",
+            "severity": "critical",
+            "summary": "Twenty-four grouped findings affected Danish decimal notation, SI quantities, circuit terminology, heat-flux instructions, and wire-gauge wording.",
+            "disposition": "resolved",
+            "evidence": ["Mass was mistranslated as a religious service and mole as the animal.", "Dot decimals could be read as thousands separators in Danish.", "Several circuit and heat-flux instructions retained machine-literal grammar."],
+            "resolution": "Restored correct SI quantities, Danish comma decimals, precise circuit and heat-flux prose, and consistent trådmål terminology."
+        }
+    ]
+}

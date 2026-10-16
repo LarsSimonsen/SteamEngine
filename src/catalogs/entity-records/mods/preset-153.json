@@ -1,0 +1,32 @@
+{
+    "entityId": "wismec-reuleaux-rx200s-4-10",
+    "entityType": "finished-device",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Vision X.Fir/X.Gun product record",
+            "url": "https://www.vapetrade.com/product/560/kit-vision-x-fir-x-gun-vv-vw-18650-2600ma-wooden-mod-battery-36v-312w-100-authentic",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        }
+    ],
+    "claims": [],
+    "domainData": {
+        "batteryConfigurations": [
+            {
+                "format": "18650",
+                "seriesCount": 3,
+                "parallelCount": 1
+            }
+        ]
+    }
+}

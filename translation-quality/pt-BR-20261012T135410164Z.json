@@ -1,0 +1,2674 @@
+{
+    "schemaVersion": 1,
+    "locale": "pt-BR",
+    "cycleId": "pt-BR-20261012T135410164Z",
+    "resourceProfile": {
+        "classification": "standard",
+        "assessment": "Comparative screening of all remaining locales selected Brazilian Portuguese for protected-unit corruption, repeated electrical-current mistranslations and loss of battery-warning meaning. Full review covered 1115 canonical entries, optional hooks, catalog nouns, glossary and route metadata. Independent critique resources listed below; existing canonical numerical claims retained. Resources: AGENTS.md; skills/steam-engine-improve-translations/SKILL.md; skills/steam-engine-improve-translations/references/cycle.md; skills/_shared/i18n-translation-contract.md; skills/research-vaping-sources/SKILL.md; .build-runs/translation-screening/entries.json; src/i18n/glossaries/pt-BR.json; src/i18n/locales.ts; src/i18n/mod-comparison-metadata.ts; src/i18n/comparison-messages/materials/pt-BR.ts; src/shared/ui/catalog-manager.tsx; src/catalogs/batteries/battery-editor.tsx; src/catalogs/materials/material-editor.tsx; src/catalogs/mods/mod-editor.tsx; src/pages/ohm/ohm-calculator.tsx; src/pages/wirewiz/wire-wizard.tsx; src/pages/tcr/tcr-calculator.tsx; src/pages/modrange/mod-range-calculator.tsx; src/pages/batt/battery-drain-calculator.tsx; the Steam Engine Joule heating reference; the Steam Engine temperature coefficient of resistance reference; the Steam Engine vaping batteries reference; https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf; https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=PEF3201; https://www.ti.com/lit/ug/tiduar8c/tiduar8c.pdf",
+        "limitations": [
+            "Comparative screening is not an exhaustive global ranking.",
+            "Model critique is not competent human review.",
+            "Shared application strings outside locale dictionaries are documented separately; no unrelated multi-locale architecture changes.",
+            "Machine linguistic critique, not human approval.",
+            "All1115 entries reviewed against English without consulting prior locale reports or screening conclusions.",
+            "Canonical source defects require separate English workflow; shared hardcoded UI requires shared i18n work.",
+            "Catalog research record prose and user data lie outside locale-owned dictionary scope and remain unchanged.",
+            "TI video page did not expose a full transcript; the retrieved TI primary design guide was used instead.",
+            "No proposed changes to battery ratings, calculator behavior or regulatory claims.",
+            "Numeric comma/dot localization is equivalent and preserved; valid spelled-out millimeters in table cells do not change units.",
+            "Existing liquid-calculator mobile document overflow is caused by offscreen sr-only inputs; the same 548px width occurs in English at a 390px viewport. Visible controls fit; shared layout unchanged."
+        ]
+    },
+    "review": {
+        "automatedQuality": {
+            "state": "passed",
+            "summary": "All 573 tests in 85 files passed. Post-staging typecheck, metadata and full IIS build passed; all 1115 runtime signatures, protected numbers/placeholders, 17 noun functions and six changed catalog consumers verified. Full IIS and Cloudflare builds passed 64 route cases and 737 links in 10279 HTML files. Browser checks passed 15 localized pages and three catalog editors, with four desktop/mobile calculator layouts. All 13 Portuguese route pages have balanced script/div tags and pt-BR language metadata. Cloudflare artifact includes Worker and 404 files and excludes IIS configuration."
+        },
+        "linguisticCritique": {
+            "state": "completed",
+            "summary": "Reviewed all 1115 canonical entries, 13 route metadata records, 11 glossary entries, 8 optional hooks and 17 catalog noun functions. Corrected 163 display entries and one glossary entry across 57 cause groups; localized six known category nouns while preserving user-created names."
+        },
+        "competentHumanReview": {
+            "state": "pending",
+            "summary": "No competent Brazilian Portuguese human review performed; existing unaffected approval attribution preserved, changed text returned to machine review."
+        },
+        "publicationAuthorization": {
+            "state": "owner-authorized",
+            "reviewer": "user",
+            "summary": "User requested review, improvement, commit, push and deployment."
+        }
+    },
+    "findings": [
+        {
+            "id": "ptBR-001",
+            "translationId": "messages.catalogManager.manage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Manage __se_arg_0__",
+                "Previous Brazilian Portuguese: Gerenciar __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "ptBR-002",
+            "translationId": "messages.catalogManager.shared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: shared __se_arg_0__ catalog",
+                "Previous Brazilian Portuguese: Catálogo compartilhado: __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "ptBR-003",
+            "translationId": "messages.catalogManager.close",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Close __se_arg_0__ manager",
+                "Previous Brazilian Portuguese: Fechar o gerenciamento de __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "ptBR-004",
+            "translationId": "messages.catalogManager.choose",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose visible built-ins or create __se_arg_0__ stored in this browser.",
+                "Previous Brazilian Portuguese: Escolha os itens integrados visíveis ou crie __SE_ARG_0__ personalizados neste navegador."
+            ],
+            "resolution": "Escolha os itens predefinidos visíveis ou crie itens personalizados de __SE_ARG_0__ salvos neste navegador."
+        },
+        {
+            "id": "ptBR-005",
+            "translationId": "messages.catalogManager.builtIn",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in __se_arg_0__",
+                "Previous Brazilian Portuguese: __SE_ARG_0__ integrados"
+            ],
+            "resolution": "Itens predefinidos: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-006",
+            "translationId": "messages.catalogManager.visibility",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Visibility changes save immediately. Hidden __se_arg_0__ remain available for cloning.",
+                "Previous Brazilian Portuguese: Os __SE_ARG_0__ ocultos podem ser clonados."
+            ],
+            "resolution": "As alterações de visibilidade são salvas imediatamente. Os itens ocultos (__SE_ARG_0__) continuam disponíveis para clonagem."
+        },
+        {
+            "id": "ptBR-007",
+            "translationId": "messages.catalogManager.custom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __se_arg_0__",
+                "Previous Brazilian Portuguese: __SE_ARG_0__ personalizados"
+            ],
+            "resolution": "Itens personalizados: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-008",
+            "translationId": "messages.catalogManager.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous Brazilian Portuguese: Novo __SE_ARG_0__ personalizado"
+            ],
+            "resolution": "Novo item personalizado: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-009",
+            "translationId": "messages.catalogManager.noneYet",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: No custom __se_arg_0__ yet.",
+                "Previous Brazilian Portuguese: Ainda não há __SE_ARG_0__ personalizados."
+            ],
+            "resolution": "Ainda não há itens personalizados de __SE_ARG_0__."
+        },
+        {
+            "id": "ptBR-010",
+            "translationId": "messages.catalogManager.resetSaved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset saved __se_arg_0__ data",
+                "Previous Brazilian Portuguese: Redefinir dados de __SE_ARG_0__"
+            ],
+            "resolution": "Redefinir dados salvos de __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-011",
+            "translationId": "messages.catalogManager.savedReset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saved __se_arg_0__ data was reset.",
+                "Previous Brazilian Portuguese: Os dados de __SE_ARG_0__ foram redefinidos."
+            ],
+            "resolution": "Os dados salvos de __SE_ARG_0__ foram redefinidos."
+        },
+        {
+            "id": "ptBR-012",
+            "translationId": "messages.catalogEditor.editCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Edit custom __se_arg_0__",
+                "Previous Brazilian Portuguese: Editar __SE_ARG_0__ personalizado"
+            ],
+            "resolution": "Editar item personalizado: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-013",
+            "translationId": "messages.catalogEditor.newCustom",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: New custom __se_arg_0__",
+                "Previous Brazilian Portuguese: Novo __SE_ARG_0__ personalizado"
+            ],
+            "resolution": "Novo item personalizado: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-014",
+            "translationId": "messages.catalogEditor.properties",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ properties",
+                "Previous Brazilian Portuguese: __SE_ARG_0__ propriedades"
+            ],
+            "resolution": "Propriedades de __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-015",
+            "translationId": "messages.catalogEditor.save",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Save __se_arg_0__",
+                "Previous Brazilian Portuguese: Salvar __SE_ARG_0__"
+            ],
+            "resolution": "Known category nouns localized in all 17 functions; custom names preserved."
+        },
+        {
+            "id": "ptBR-016",
+            "translationId": "messages.catalogEditor.saved",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Callers pass English entity nouns. Map known entity nouns only and use neutral item-based templates for masculine materials/mods and feminine batteries. Restore saved-data and immediate-save meaning where omitted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ saved.",
+                "Previous Brazilian Portuguese: __SE_ARG_0__ salvo."
+            ],
+            "resolution": "Item salvo: __SE_ARG_0__."
+        },
+        {
+            "id": "ptBR-017",
+            "translationId": "messages.catalogManager.customItemsDescription",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] Existing optional hook can localize the English fallback; translate only the known plural entity argument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom __SE_ARG_0__ are always shown in the calculator selector.",
+                "Previous Brazilian Portuguese: Custom __SE_ARG_0__ are always shown in the calculator selector."
+            ],
+            "resolution": "Os itens personalizados de __SE_ARG_0__ são sempre exibidos no seletor da calculadora."
+        },
+        {
+            "id": "ptBR-018",
+            "translationId": "messages.catalogManager.filterBuiltIns",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-known-nouns] The filter searches catalog items, not integrated software features.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Filter built-ins",
+                "Previous Brazilian Portuguese: Filtrar recursos integrados"
+            ],
+            "resolution": "Filtrar itens predefinidos"
+        },
+        {
+            "id": "ptBR-019",
+            "translationId": "messages.catalogManager.usedBy",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[custom-name-agreement] Preserve arbitrary user names and avoid assuming masculine gender.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cannot delete __SE_ARG_0__; it is used by __SE_ARG_1__.",
+                "Previous Brazilian Portuguese: Não é possível excluir __SE_ARG_0__; é usado por __SE_ARG_1__."
+            ],
+            "resolution": "Não é possível excluir __SE_ARG_0__: existe uma referência em __SE_ARG_1__."
+        },
+        {
+            "id": "ptBR-020",
+            "translationId": "messages.catalogManager.deleted",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[custom-name-agreement] Preserve arbitrary user names and avoid assuming masculine gender.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: __SE_ARG_0__ was deleted.",
+                "Previous Brazilian Portuguese: __SE_ARG_0__ foi excluído."
+            ],
+            "resolution": "Item excluído: __SE_ARG_0__."
+        },
+        {
+            "id": "ptBR-021",
+            "translationId": "messages.catalogEditor.sizeCodePlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-english-placeholders] Existing optional message hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, e.g. 18650",
+                "Previous Brazilian Portuguese: Optional, e.g. 18650"
+            ],
+            "resolution": "Opcional, por exemplo, 18650"
+        },
+        {
+            "id": "ptBR-022",
+            "translationId": "messages.catalogEditor.wrapperColorPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-english-placeholders] Existing optional message hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional, descriptive",
+                "Previous Brazilian Portuguese: Optional, descriptive"
+            ],
+            "resolution": "Opcional, descrição da cor"
+        },
+        {
+            "id": "ptBR-023",
+            "translationId": "messages.catalogEditor.markingsPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-english-placeholders] Existing optional message hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional; one wrapper marking per line",
+                "Previous Brazilian Portuguese: Optional; one wrapper marking per line"
+            ],
+            "resolution": "Opcional; uma marcação do invólucro por linha"
+        },
+        {
+            "id": "ptBR-024",
+            "translationId": "messages.catalogEditor.currentWithCRatingPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-english-placeholders] Existing optional message hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when C rating is set",
+                "Previous Brazilian Portuguese: Optional when C rating is set"
+            ],
+            "resolution": "Opcional quando a taxa C está definida"
+        },
+        {
+            "id": "ptBR-025",
+            "translationId": "messages.catalogEditor.cRatingWithCurrentPlaceholder",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[editor-english-placeholders] Existing optional message hook currently falls back to English.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optional when current is set",
+                "Previous Brazilian Portuguese: Optional when current is set"
+            ],
+            "resolution": "Opcional quando a corrente está definida"
+        },
+        {
+            "id": "ptBR-026",
+            "translationId": "messages.navigation.calculators",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[calculator-navigation] Navigation selects among calculators, rather than navigating inside one calculator.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Calculator navigation",
+                "Previous Brazilian Portuguese: Navegação na calculadora"
+            ],
+            "resolution": "Navegação entre calculadoras"
+        },
+        {
+            "id": "ptBR-027",
+            "translationId": "messages.catalogEditor.integratedMod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-state-agreement] The referent is the feminine bateria.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Integrated in mod",
+                "Previous Brazilian Portuguese: Integrado no mod"
+            ],
+            "resolution": "Integrada ao mod"
+        },
+        {
+            "id": "ptBR-028",
+            "translationId": "messages.encyclopediaDetail.integratedInMod",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-state-agreement] The referent is the feminine bateria.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Integrated in mod",
+                "Previous Brazilian Portuguese: Integrado no mod"
+            ],
+            "resolution": "Integrada ao mod"
+        },
+        {
+            "id": "ptBR-029",
+            "translationId": "messages.catalogEditor.protectedStatus",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-state-agreement] This labels a choice among protection states, not a protected status.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected status",
+                "Previous Brazilian Portuguese: Status protegido"
+            ],
+            "resolution": "Estado da proteção"
+        },
+        {
+            "id": "ptBR-030",
+            "translationId": "messages.catalogEditor.protectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-state-agreement] Neutral form works for the battery protection state.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Protected",
+                "Previous Brazilian Portuguese: Protegido"
+            ],
+            "resolution": "Com proteção"
+        },
+        {
+            "id": "ptBR-031",
+            "translationId": "messages.catalogEditor.unprotectedCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-state-agreement] Neutral form works for the battery protection state.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unprotected",
+                "Previous Brazilian Portuguese: Desprotegido"
+            ],
+            "resolution": "Sem proteção"
+        },
+        {
+            "id": "ptBR-032",
+            "translationId": "messages.catalogEditor.terminalStyle",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal-shape] The field describes a physical terminal type.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Terminal style",
+                "Previous Brazilian Portuguese: Estilo terminal"
+            ],
+            "resolution": "Tipo de terminal"
+        },
+        {
+            "id": "ptBR-033",
+            "translationId": "messages.catalogEditor.buttonTop",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-terminal-shape] Button top is a protruding battery terminal, not the top of a button.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Button top",
+                "Previous Brazilian Portuguese: Parte superior do botão"
+            ],
+            "resolution": "Topo saliente"
+        },
+        {
+            "id": "ptBR-034",
+            "translationId": "messages.catalogEditor.wrapperColor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-wrapper] The field describes the cell sleeve, not the retail packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrapper color",
+                "Previous Brazilian Portuguese: Cor da embalagem"
+            ],
+            "resolution": "Cor do invólucro"
+        },
+        {
+            "id": "ptBR-035",
+            "translationId": "messages.encyclopediaDetail.wrapperColor",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-wrapper] The field describes the cell sleeve, not the retail packaging.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrapper color",
+                "Previous Brazilian Portuguese: Cor da embalagem"
+            ],
+            "resolution": "Cor do invólucro"
+        },
+        {
+            "id": "ptBR-036",
+            "translationId": "messages.catalogEditor.batteryHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-meaning] Translate pack as the electrical cell assembly; preserve both current-limit conditions and nominal versus measured dimensions.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Enter at least one continuous discharge limit. Integrated batteries are internal mod packs, so standalone cell dimensions are not required. Removable-cell dimensions are nominal; use the notes for measured as-sold dimensions. When both discharge limits are set, the calculator continues to use the safer derived limit if they differ materially.",
+                "Previous Brazilian Portuguese: Insira pelo menos um limite de descarga contínua. As baterias integradas são pacotes de mod internos, portanto não são necessárias dimensões de células independentes. As dimensões das células removíveis são nominais; use as notas para dimensões medidas conforme vendidas. Quando ambos os limites de descarga são definidos, a calculadora continua a usar o limite derivado mais seguro se eles diferirem materialmente."
+            ],
+            "resolution": "Insira pelo menos um limite de descarga contínua. As baterias integradas são conjuntos de células internos do mod, portanto não são necessárias dimensões de células independentes. As dimensões das células removíveis são nominais; use as notas para registrar as dimensões medidas da bateria tal como é vendida. Quando ambos os limites de descarga estão definidos, a calculadora continua a usar o limite derivado mais seguro se eles diferirem significativamente."
+        },
+        {
+            "id": "ptBR-037",
+            "translationId": "messages.catalogEditor.normalizationHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[curve-sorting] Sorting curve points means ordering them, not classifying the curve.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Saving sorts the curve, inserts or derives the 20 °C reference, and normalizes all factors.",
+                "Previous Brazilian Portuguese: Salvar classifica a curva, insere ou deriva a referência de 20 °C e normaliza todos os fatores."
+            ],
+            "resolution": "Ao salvar, os pontos da curva são ordenados, a referência de 20 °C é inserida ou calculada e todos os fatores são normalizados."
+        },
+        {
+            "id": "ptBR-038",
+            "translationId": "messages.catalogEditor.normalizationInterpolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-concatenation] Material editor concatenates saved(noun) and this suffix directly; insert the required separating space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was interpolated and the curve was normalized.",
+                "Previous Brazilian Portuguese: O ponto 20 °C foi interpolado e a curva foi normalizada."
+            ],
+            "resolution": " O ponto 20 °C foi interpolado e a curva foi normalizada."
+        },
+        {
+            "id": "ptBR-039",
+            "translationId": "messages.catalogEditor.normalizationExtrapolated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-concatenation] Material editor concatenates saved(noun) and this suffix directly; insert the required separating space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The 20 °C point was extrapolated and the curve was normalized.",
+                "Previous Brazilian Portuguese: O ponto de 20 °C foi extrapolado e a curva foi normalizada."
+            ],
+            "resolution": " O ponto de 20 °C foi extrapolado e a curva foi normalizada."
+        },
+        {
+            "id": "ptBR-040",
+            "translationId": "messages.catalogEditor.normalizationExisting",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[normalization-concatenation] Material editor concatenates saved(noun) and this suffix directly; insert the required separating space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English:  The TFR curve was normalized at 20 °C.",
+                "Previous Brazilian Portuguese: A curva TFR foi normalizada a 20 °C."
+            ],
+            "resolution": " A curva TFR foi normalizada a 20 °C."
+        },
+        {
+            "id": "ptBR-041",
+            "translationId": "messages.home.tools.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rebuildable-atomizer] Rebuildable qualifies the atomizer; bobinas atomizadoras incorrectly makes the coils themselves atomizers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Plan rebuildable atomizer coils and explore their electrical behavior.",
+                "Previous Brazilian Portuguese: Planeje bobinas atomizadoras reconstruíveis e explore seu comportamento elétrico."
+            ],
+            "resolution": "Planeje bobinas para atomizadores reconstruíveis e explore seu comportamento elétrico."
+        },
+        {
+            "id": "ptBR-042",
+            "translationId": "messages.home.tools.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] Power means potência, not energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: See current and power drain for a battery-powered device.",
+                "Previous Brazilian Portuguese: Consulte consumo de corrente e energia para um dispositivo alimentado por bateria.",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Consulte o consumo de corrente e potência de um dispositivo alimentado por bateria."
+        },
+        {
+            "id": "ptBR-043",
+            "translationId": "messages.home.tools.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-electronics] Regulated electronics are regulados; regulamentado refers to legal or administrative regulation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find the useful resistance range for a regulated mod.",
+                "Previous Brazilian Portuguese: Encontre a faixa de resistência útil para um mod regulamentado."
+            ],
+            "resolution": "Encontre a faixa de resistência útil para um mod regulado."
+        },
+        {
+            "id": "ptBR-044",
+            "translationId": "calculators.batt.unregulated",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-electronics] Regulated electronics are regulados; regulamentado refers to legal or administrative regulation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Unregulated mod",
+                "Previous Brazilian Portuguese: Mod não regulamentado"
+            ],
+            "resolution": "Mod não regulado"
+        },
+        {
+            "id": "ptBR-045",
+            "translationId": "calculators.modrange.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-electronics] Regulated electronics are regulados; regulamentado refers to legal or administrative regulation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Find a useful resistance range from a regulated mod's output limits.",
+                "Previous Brazilian Portuguese: Encontre uma faixa de resistência útil nos limites de saída de um mod regulamentado."
+            ],
+            "resolution": "Encontre uma faixa de resistência útil nos limites de saída de um mod regulado."
+        },
+        {
+            "id": "ptBR-046",
+            "translationId": "calculators.modrange.presetIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-electronics] Regulated electronics are regulados; regulamentado refers to legal or administrative regulation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose a regulated mod preset.",
+                "Previous Brazilian Portuguese: Escolha uma predefinição de mod regulamentada."
+            ],
+            "resolution": "Escolha uma predefinição de mod regulado."
+        },
+        {
+            "id": "ptBR-047",
+            "translationId": "calculators.modrange.preset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-electronics] Regulated electronics are regulados; regulamentado refers to legal or administrative regulation.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod preset",
+                "Previous Brazilian Portuguese: Predefinição de mod regulamentado"
+            ],
+            "resolution": "Predefinição de mod regulado"
+        },
+        {
+            "id": "ptBR-048",
+            "translationId": "calculators.modrange.eyebrow",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[regulated-electronics] The calculator concerns an electronically regulated mod, not a calculator subject to regulations.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Regulated mod calculator",
+                "Previous Brazilian Portuguese: Calculadora mod regulamentada"
+            ],
+            "resolution": "Calculadora de mod regulado"
+        },
+        {
+            "id": "ptBR-049",
+            "translationId": "messages.ohm.descriptionBeforeOhm",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-sentence] Use a complete grammatical sentence around the two law links.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This is a simple",
+                "Previous Brazilian Portuguese: Este é um simples"
+            ],
+            "resolution": "Esta calculadora usa a"
+        },
+        {
+            "id": "ptBR-050",
+            "translationId": "messages.ohm.descriptionAfterLaws",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-sentence] Completes the intro sentence without a dangling feminine noun.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: calculator.",
+                "Previous Brazilian Portuguese: calculadora."
+            ],
+            "resolution": "para cálculos simples."
+        },
+        {
+            "id": "ptBR-051",
+            "translationId": "messages.ohm.joulesLawLinkLabel",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[ohm-sentence] The law-link label owns the article. Keep descriptionBetweenLaws as e because it also joins field names in both lock-summary paths.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Joule's law",
+                "Previous Brazilian Portuguese: Joule's law"
+            ],
+            "resolution": "a lei de Joule"
+        },
+        {
+            "id": "ptBR-052",
+            "translationId": "messages.ohm.simpleLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] Value locks are bloqueios, not door locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Simple locks",
+                "Previous Brazilian Portuguese: Fechaduras simples"
+            ],
+            "resolution": "Bloqueios simples"
+        },
+        {
+            "id": "ptBR-053",
+            "translationId": "messages.ohm.detailedLocks",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[value-locks] Value locks are bloqueios, not door locks.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Detailed locks",
+                "Previous Brazilian Portuguese: Fechaduras detalhadas"
+            ],
+            "resolution": "Bloqueios detalhados"
+        },
+        {
+            "id": "ptBR-054",
+            "translationId": "messages.encyclopedia.browseCategory",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-count] Portuguese count precedes the counted noun.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Browse __SE_ARG_0__ (__SE_ARG_1__ entries)",
+                "Previous Brazilian Portuguese: Procure __SE_ARG_0__ (entradas __SE_ARG_1__)"
+            ],
+            "resolution": "Explorar __SE_ARG_0__ (__SE_ARG_1__ entradas)"
+        },
+        {
+            "id": "ptBR-055",
+            "translationId": "messages.encyclopedia.categoryDescriptions.batteries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-meaning] Electrical packs are cell assemblies, not unspecified packages.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells, packs, and integrated power sources.",
+                "Previous Brazilian Portuguese: Células, pacotes e fontes de energia integradas."
+            ],
+            "resolution": "Células, conjuntos de células e fontes de energia integradas."
+        },
+        {
+            "id": "ptBR-056",
+            "translationId": "messages.encyclopediaDetail.batteryInternal",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-pack-meaning] Clarify the electrical assembly rather than a package.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This battery is an internal pack in the device rather than a user-replaceable cell.",
+                "Previous Brazilian Portuguese: Esta bateria é um pacote interno do dispositivo, e não uma célula substituível pelo usuário."
+            ],
+            "resolution": "Esta bateria é um conjunto de células interno do dispositivo, e não uma célula substituível pelo usuário."
+        },
+        {
+            "id": "ptBR-057",
+            "translationId": "messages.encyclopediaDetail.categoryLabels.mods",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-device-name] Mods are devices; translating their name as modifications changes the category.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mods",
+                "Previous Brazilian Portuguese: Modificações"
+            ],
+            "resolution": "Mods"
+        },
+        {
+            "id": "ptBR-058",
+            "translationId": "messages.encyclopediaDetail.aliases",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[catalog-alias-label] The English label Aliases should be localized for alternative entity names.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Aliases",
+                "Previous Brazilian Portuguese: Aliases"
+            ],
+            "resolution": "Nomes alternativos"
+        },
+        {
+            "id": "ptBR-059",
+            "translationId": "messages.encyclopediaDetail.introduced",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-label-grammar] The date needs a preposition or label; neutral label also avoids entity gender.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Introduced __SE_ARG_0__",
+                "Previous Brazilian Portuguese: Introduzido __SE_ARG_0__"
+            ],
+            "resolution": "Introdução no mercado: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-060",
+            "translationId": "messages.encyclopediaDetail.reviewed",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[date-label-grammar] The date needs a preposition or label, not a bare participle.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reviewed __SE_ARG_0__",
+                "Previous Brazilian Portuguese: Revisado __SE_ARG_0__"
+            ],
+            "resolution": "Data da revisão: __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-061",
+            "translationId": "messages.encyclopediaDetail.availableBy",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[available-by-date] Available by bounds the introduction date, not the end of availability.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Available by __SE_ARG_0__",
+                "Previous Brazilian Portuguese: Disponível até __SE_ARG_0__"
+            ],
+            "resolution": "Já disponível em __SE_ARG_0__"
+        },
+        {
+            "id": "ptBR-062",
+            "translationId": "messages.encyclopediaDetail.temperatureResistanceCurve",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-temperature-curve] The graph plots electrical resistance against temperature; resistência à temperatura can mean thermal endurance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature resistance curve",
+                "Previous Brazilian Portuguese: Curva de resistência à temperatura"
+            ],
+            "resolution": "Curva da resistência em função da temperatura"
+        },
+        {
+            "id": "ptBR-063",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeCurrent",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[discharge-rating-grammar] The discharge rating value needs de; retain the A or C unit and argument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ A continuous-discharge rating.",
+                "Previous Brazilian Portuguese: O catálogo lista uma classificação de descarga contínua __SE_ARG_0__ A."
+            ],
+            "resolution": "O catálogo lista uma classificação de descarga contínua de __SE_ARG_0__ A."
+        },
+        {
+            "id": "ptBR-064",
+            "translationId": "messages.encyclopediaDetail.continuousDischargeC",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[discharge-rating-grammar] The discharge rating value needs de; retain the A or C unit and argument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The catalog lists a __SE_ARG_0__ C continuous-discharge rating.",
+                "Previous Brazilian Portuguese: O catálogo lista uma classificação de descarga contínua __SE_ARG_0__ C."
+            ],
+            "resolution": "O catálogo lista uma classificação de descarga contínua de __SE_ARG_0__ C."
+        },
+        {
+            "id": "ptBR-065",
+            "translationId": "messages.encyclopediaDetail.rewrapExplanation",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[rewrap-inference] The source forbids inferring the original manufacturer from the wrapper; current target says the manufacturer is not assumed in the wrapper.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The label is treated as a rewrap brand; the underlying cell manufacturer is not assumed from the wrapper.",
+                "Previous Brazilian Portuguese: O rótulo é tratado como uma marca reembalada; o fabricante da célula subjacente não é assumido no wrapper."
+            ],
+            "resolution": "A marca é tratada como uma marca que reveste células de outros fabricantes; não se deduz o fabricante original da célula apenas pelo invólucro."
+        },
+        {
+            "id": "ptBR-066",
+            "translationId": "messages.encyclopediaDetail.modBoardCatalog",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[board-device-catalog] The catalog contains boards and devices; current text detaches board from catalog.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod board and device catalog",
+                "Previous Brazilian Portuguese: Placa de mod e catálogo de dispositivos"
+            ],
+            "resolution": "Catálogo de placas e dispositivos mod"
+        },
+        {
+            "id": "ptBR-067",
+            "translationId": "calculators.batt.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] Output includes voltage/current/power in the actual output table; target incorrectly reduces it to emitted power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimate atomizer output, battery drain, and available current headroom for regulated and unregulated mods.",
+                "Previous Brazilian Portuguese: Calcule a potência emitida pelo atomizador, o consumo da bateria e a margem de corrente disponível para mods regulados e não regulados.",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Estime a saída do atomizador, o consumo da bateria e a margem de corrente disponível para mods regulados e não regulados."
+        },
+        {
+            "id": "ptBR-068",
+            "translationId": "calculators.batt.atomizerOutput",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] The output table includes more than power.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Atomizer output",
+                "Previous Brazilian Portuguese: Potência emitida pelo atomizador",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Saída do atomizador"
+        },
+        {
+            "id": "ptBR-069",
+            "translationId": "calculators.batt.outputPower",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[atomizer-output] The electrical power is supplied by the mod to the atomizer, not emitted electrically by the atomizer.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Output power",
+                "Previous Brazilian Portuguese: Potência emitida pelo atomizador",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Potência de saída"
+        },
+        {
+            "id": "ptBR-070",
+            "translationId": "glossary.output-power.preferred",
+            "category": "terminology-disagreement",
+            "severity": "medium",
+            "summary": "[atomizer-output] Existing needs-review glossary reverses electrical energy delivery. Separate power from the general output section.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: output power",
+                "Previous Brazilian Portuguese: potência emitida pelo atomizador",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "potência de saída"
+        },
+        {
+            "id": "ptBR-071",
+            "translationId": "calculators.batt.batteryPresets",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Brazilian Portuguese: Predefinições de bateria"
+            ],
+            "resolution": "Predefinição de célula"
+        },
+        {
+            "id": "ptBR-072",
+            "translationId": "calculators.batt.cellSelection",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell selection",
+                "Previous Brazilian Portuguese: Cell selection"
+            ],
+            "resolution": "Seleção de célula"
+        },
+        {
+            "id": "ptBR-073",
+            "translationId": "calculators.batt.batteryIntro",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose the cell used throughout the pack, or enter per-cell values below.",
+                "Previous Brazilian Portuguese: Escolha uma predefinição de bateria integrada ou insira seus próprios valores abaixo."
+            ],
+            "resolution": "Escolha a célula usada em todo o conjunto ou insira abaixo os valores por célula."
+        },
+        {
+            "id": "ptBR-074",
+            "translationId": "calculators.batt.batteryPreset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell preset",
+                "Previous Brazilian Portuguese: Predefinição de bateria"
+            ],
+            "resolution": "Predefinição de célula"
+        },
+        {
+            "id": "ptBR-075",
+            "translationId": "calculators.batt.batteryValues",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cell and pack",
+                "Previous Brazilian Portuguese: Valores da bateria"
+            ],
+            "resolution": "Célula e conjunto de células"
+        },
+        {
+            "id": "ptBR-076",
+            "translationId": "calculators.batt.batteryConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery configuration",
+                "Previous Brazilian Portuguese: Battery configuration"
+            ],
+            "resolution": "Configuração da bateria"
+        },
+        {
+            "id": "ptBR-077",
+            "translationId": "calculators.batt.singleCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1S — Single cell",
+                "Previous Brazilian Portuguese: 1S — Single cell"
+            ],
+            "resolution": "1S — Uma célula"
+        },
+        {
+            "id": "ptBR-078",
+            "translationId": "calculators.batt.customConfiguration",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Custom configuration",
+                "Previous Brazilian Portuguese: Custom configuration"
+            ],
+            "resolution": "Configuração personalizada"
+        },
+        {
+            "id": "ptBR-079",
+            "translationId": "calculators.batt.cellsInSeries",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Cells in series",
+                "Previous Brazilian Portuguese: Cells in series"
+            ],
+            "resolution": "Células em série"
+        },
+        {
+            "id": "ptBR-080",
+            "translationId": "calculators.batt.parallelStrings",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Parallel strings",
+                "Previous Brazilian Portuguese: Parallel strings"
+            ],
+            "resolution": "Ramos em paralelo"
+        },
+        {
+            "id": "ptBR-081",
+            "translationId": "calculators.batt.cells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cells",
+                "Previous Brazilian Portuguese: cells"
+            ],
+            "resolution": "células"
+        },
+        {
+            "id": "ptBR-082",
+            "translationId": "calculators.batt.cell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: cell",
+                "Previous Brazilian Portuguese: cell"
+            ],
+            "resolution": "célula"
+        },
+        {
+            "id": "ptBR-083",
+            "translationId": "calculators.batt.matchedCells",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack.",
+                "Previous Brazilian Portuguese: Use identical, matched cells of the same age and condition. Current sharing is idealized; the weakest cell limits the pack."
+            ],
+            "resolution": "Use células idênticas e pareadas, com a mesma idade e nas mesmas condições. O compartilhamento de corrente é idealizado; a célula mais fraca limita o conjunto."
+        },
+        {
+            "id": "ptBR-084",
+            "translationId": "calculators.batt.pack",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Battery pack",
+                "Previous Brazilian Portuguese: Battery pack"
+            ],
+            "resolution": "Conjunto de células"
+        },
+        {
+            "id": "ptBR-085",
+            "translationId": "calculators.batt.currentPerCell",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[cell-pack-config-ui] These controls are untranslated or stale; preserve the distinction between per-cell quantities and the battery assembly.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated current per cell",
+                "Previous Brazilian Portuguese: Estimated current per cell"
+            ],
+            "resolution": "Corrente estimada por célula"
+        },
+        {
+            "id": "ptBR-086",
+            "translationId": "calculators.batt.batteryHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Current is electrical corrente, not temporal atual; feminine agreement matches the two quantities.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Nominal voltage and capacity determine the estimated stored energy and continuous runtime. They do not affect the current limit.",
+                "Previous Brazilian Portuguese: A tensão nominal e a capacidade determinam a energia armazenada estimada e o tempo de funcionamento contínuo. Eles não afetam o limite atual.",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "A tensão nominal e a capacidade determinam a energia armazenada estimada e o tempo de funcionamento contínuo. Elas não afetam o limite de corrente."
+        },
+        {
+            "id": "ptBR-087",
+            "translationId": "calculators.batt.caution",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[current-headroom] Electrical current headroom is not current space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Less than 20% current headroom remains.",
+                "Previous Brazilian Portuguese: Restam menos de 20% do espaço atual."
+            ],
+            "resolution": "A margem de corrente restante é inferior a 20%."
+        },
+        {
+            "id": "ptBR-088",
+            "translationId": "calculators.batt.estimatedRuntime",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-runtime] Battery runtime means autonomy, not software execution time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Estimated runtime",
+                "Previous Brazilian Portuguese: Tempo de execução estimado"
+            ],
+            "resolution": "Autonomia estimada"
+        },
+        {
+            "id": "ptBR-089",
+            "translationId": "calculators.batt.continuousRuntime",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-runtime] Battery runtime means autonomy, not software execution time.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Continuous runtime",
+                "Previous Brazilian Portuguese: Tempo de execução contínuo"
+            ],
+            "resolution": "Autonomia em uso contínuo"
+        },
+        {
+            "id": "ptBR-090",
+            "translationId": "calculators.batt.runtimeHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-runtime] Restore battery power and distinguish device overhead from an overload.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: This idealized estimate assumes continuous output at the calculated battery power. Real runtime varies with cutoff voltage, voltage sag, cell age, device overhead, and intermittent use.",
+                "Previous Brazilian Portuguese: Esta estimativa idealizada pressupõe produção contínua com a carga calculada da bateria. O tempo de execução real varia de acordo com a tensão de corte, queda de tensão, idade da célula, sobrecarga do dispositivo e uso intermitente."
+            ],
+            "resolution": "Esta estimativa idealizada pressupõe uma saída contínua à potência calculada da bateria. A autonomia real varia com a tensão de corte, a queda de tensão, a idade das células, o consumo interno do dispositivo e o uso intermitente."
+        },
+        {
+            "id": "ptBR-091",
+            "translationId": "calculators.coil.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[build-parameters] Build is a noun modifying parameters, not an instruction to create parameters.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Choose your wire and build parameters to estimate wraps, resistance, and heat.",
+                "Previous Brazilian Portuguese: Escolha seu fio e crie parâmetros para estimar voltas, resistência e calor."
+            ],
+            "resolution": "Escolha o fio e os parâmetros de construção para estimar o número de voltas, a resistência e o calor."
+        },
+        {
+            "id": "ptBR-092",
+            "translationId": "calculators.coil.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-material-label] Each control or row identifies a single material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Material",
+                "Previous Brazilian Portuguese: Materiais"
+            ],
+            "resolution": "Material"
+        },
+        {
+            "id": "ptBR-093",
+            "translationId": "calculators.tcr.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-material-label] Each control or row identifies a single material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Material",
+                "Previous Brazilian Portuguese: Materiais"
+            ],
+            "resolution": "Material"
+        },
+        {
+            "id": "ptBR-094",
+            "translationId": "calculators.wirewiz.material",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-material-label] Each control or row identifies a single material.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Material",
+                "Previous Brazilian Portuguese: Materiais"
+            ],
+            "resolution": "Material"
+        },
+        {
+            "id": "ptBR-095",
+            "translationId": "calculators.coil.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-turns] Wraps are turns of the coil, not wrappers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrap spacing",
+                "Previous Brazilian Portuguese: Espaçamento de envoltório"
+            ],
+            "resolution": "Espaçamento entre voltas"
+        },
+        {
+            "id": "ptBR-096",
+            "translationId": "calculators.wirewiz.wrapSpacing",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-turns] Wraps are turns of the coil, not wrappers.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wrap spacing",
+                "Previous Brazilian Portuguese: Espaçamento de envoltório"
+            ],
+            "resolution": "Espaçamento entre voltas"
+        },
+        {
+            "id": "ptBR-097",
+            "translationId": "calculators.wirewiz.wraps",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[coil-turns] Wire wraps are turns, not envelopes.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Wraps",
+                "Previous Brazilian Portuguese: Envoltórios"
+            ],
+            "resolution": "Voltas"
+        },
+        {
+            "id": "ptBR-098",
+            "translationId": "calculators.converter.americanWireGauge",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] AWG is a named gauge scale, not a measuring instrument.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: American Wire Gauge",
+                "Previous Brazilian Portuguese: Medidor de fio americano"
+            ],
+            "resolution": "American Wire Gauge"
+        },
+        {
+            "id": "ptBR-099",
+            "translationId": "calculators.converter.precisionHelp",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge tables contain wire sizes, not measuring instruments.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Precision applies to numeric results. Gauge tables remain at their published values.",
+                "Previous Brazilian Portuguese: A precisão se aplica a resultados numéricos. As tabelas de medidores permanecem com seus valores publicados."
+            ],
+            "resolution": "A precisão se aplica aos resultados numéricos. As tabelas de bitolas mantêm os valores publicados."
+        },
+        {
+            "id": "ptBR-100",
+            "translationId": "calculators.converter.reset",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[restore-defaults] Restore defaults does not redefine standards.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Reset defaults",
+                "Previous Brazilian Portuguese: Redefinir padrões"
+            ],
+            "resolution": "Restaurar configurações padrão"
+        },
+        {
+            "id": "ptBR-101",
+            "translationId": "calculators.juice.adjustMix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-concentration] Strength means nicotine concentration; preserve all alternatives and source condition.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: You may need to lower your target nic, VG or PG content, or flavoring. Alternatively, use a stronger nic base, or a nic base with a different VG/PG ratio. Please adjust your settings until all numbers are greater than zero.",
+                "Previous Brazilian Portuguese: Pode ser necessário diminuir o conteúdo alvo de nic, VG ou PG ou aromatizante. Como alternativa, use uma base nic mais forte ou uma base nic com uma proporção VG/PG diferente. Ajuste suas configurações até que todos os números sejam maiores que zero."
+            ],
+            "resolution": "Pode ser necessário reduzir a concentração desejada de nicotina, o teor de VG ou PG, ou a quantidade de aromatizante. Como alternativa, use uma base com maior concentração de nicotina ou uma base com uma proporção VG/PG diferente. Ajuste as configurações até que todos os números sejam maiores que zero."
+        },
+        {
+            "id": "ptBR-102",
+            "translationId": "calculators.juice.targetNicWarning",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[nicotine-concentration] Strength is concentration, not physical force or a base force.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Your target nic level is higher than your nic base strength. You should either get a stronger nic base, or lower your target nic strength.",
+                "Previous Brazilian Portuguese: Seu nível de nic alvo é maior que a força base da sua nic. Você deve obter uma base de nic mais forte ou diminuir a força de nic alvo."
+            ],
+            "resolution": "A concentração desejada de nicotina é maior que a concentração da base de nicotina. Use uma base mais concentrada ou reduza a concentração desejada."
+        },
+        {
+            "id": "ptBR-103",
+            "translationId": "calculators.juice.flavorPercentage",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-quantity] The percentage measures the flavoring ingredient, not taste itself.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor percentage",
+                "Previous Brazilian Portuguese: Porcentagem de sabor"
+            ],
+            "resolution": "Porcentagem de aromatizante"
+        },
+        {
+            "id": "ptBR-104",
+            "translationId": "calculators.juice.flavorVg",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[flavoring-quantity] The ingredient has a carrier; taste does not.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Flavor is VG based",
+                "Previous Brazilian Portuguese: O sabor é baseado em VG"
+            ],
+            "resolution": "O aromatizante é à base de VG"
+        },
+        {
+            "id": "ptBR-105",
+            "translationId": "calculators.modrange.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-range] The range belongs to one mod, not an assortment of mods.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Mod range",
+                "Previous Brazilian Portuguese: Gama de mods"
+            ],
+            "resolution": "Faixa do mod"
+        },
+        {
+            "id": "ptBR-106",
+            "translationId": "calculators.modrange.optimalRange",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[mod-range] This denotes a resistance interval, not reach or distance.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Optimal range",
+                "Previous Brazilian Portuguese: Alcance ideal"
+            ],
+            "resolution": "Faixa ideal"
+        },
+        {
+            "id": "ptBR-107",
+            "translationId": "calculators.modrange.optimalResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance] Canonical labels now describe electrical limit crossover and range midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance guidance",
+                "Previous Brazilian Portuguese: Resistência ideal"
+            ],
+            "resolution": "Orientações sobre resistência"
+        },
+        {
+            "id": "ptBR-108",
+            "translationId": "calculators.modrange.medianResistance",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance] Canonical labels now describe electrical limit crossover and range midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Brazilian Portuguese: Resistência mediana"
+            ],
+            "resolution": "Cruzamento dos limites de corrente e tensão"
+        },
+        {
+            "id": "ptBR-109",
+            "translationId": "calculators.modrange.median",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance] Canonical labels now describe electrical limit crossover and range midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current/voltage crossover",
+                "Previous Brazilian Portuguese: Mediana"
+            ],
+            "resolution": "Cruzamento dos limites de corrente e tensão"
+        },
+        {
+            "id": "ptBR-110",
+            "translationId": "calculators.modrange.sweetSpot",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[resistance-guidance] Canonical labels now describe electrical limit crossover and range midpoint, not an optimal resistance or statistical median.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Upper-range midpoint",
+                "Previous Brazilian Portuguese: Ponto ideal"
+            ],
+            "resolution": "Ponto médio da faixa superior"
+        },
+        {
+            "id": "ptBR-111",
+            "translationId": "calculators.modrange.currentLimit",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current limit",
+                "Previous Brazilian Portuguese: Limite atual",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Limite de corrente"
+        },
+        {
+            "id": "ptBR-112",
+            "translationId": "calculators.modrange.currentLimitRequires",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: the current limit requires",
+                "Previous Brazilian Portuguese: o limite atual exige",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "o limite de corrente exige"
+        },
+        {
+            "id": "ptBR-113",
+            "translationId": "calculators.modrange.currentReachedFirst",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The current limit is reached first.",
+                "Previous Brazilian Portuguese: O limite atual é atingido primeiro.",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "O limite de corrente é atingido primeiro."
+        },
+        {
+            "id": "ptBR-114",
+            "translationId": "calculators.modrange.current",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-current] Electrical current is corrente, not temporal atual.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Current",
+                "Previous Brazilian Portuguese: Atual",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Corrente"
+        },
+        {
+            "id": "ptBR-115",
+            "translationId": "calculators.modrange.ampere",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[protected-unit-symbol] Ampere symbol A must not become the indefinite article Um.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A",
+                "Previous Brazilian Portuguese: Um",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "A"
+        },
+        {
+            "id": "ptBR-116",
+            "translationId": "calculators.modrange.power",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] Power is the electrical quantity potência, not poder.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Power",
+                "Previous Brazilian Portuguese: Poder",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Potência"
+        },
+        {
+            "id": "ptBR-117",
+            "translationId": "calculators.tcr.noticeCleared",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[clear-selection] Clearing selected materials is not releasing materials.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Temperature points changed; selected materials were cleared.",
+                "Previous Brazilian Portuguese: Os pontos de temperatura mudaram; os materiais selecionados foram liberados."
+            ],
+            "resolution": "Os pontos de temperatura mudaram; a seleção de materiais foi limpa."
+        },
+        {
+            "id": "ptBR-118",
+            "translationId": "calculators.wirewiz.strandWire",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[strand-wire] Strand wire is a constituent wire, not necessarily braided wire.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Strand wire",
+                "Previous Brazilian Portuguese: Fio trançado"
+            ],
+            "resolution": "Fio individual"
+        },
+        {
+            "id": "ptBR-119",
+            "translationId": "calculators.wirewiz.matchTemperature",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[temperature-equivalence] Matching temperature response is not combining the wire with a mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: To match it on a mod set to",
+                "Previous Brazilian Portuguese: Para combiná-lo em um mod definido para"
+            ],
+            "resolution": "Para obter um resultado equivalente em um mod configurado para"
+        },
+        {
+            "id": "ptBR-120",
+            "translationId": "calculators.wirewiz.sourceFactorSuffix",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[source-factor-suffix] Existing optional suffix completes the resistance-factor sentence without English fallback.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: at this temperature.",
+                "Previous Brazilian Portuguese: at this temperature."
+            ],
+            "resolution": "nessa temperatura."
+        },
+        {
+            "id": "ptBR-121",
+            "translationId": "comparisons.mods.platformUnknown",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[battery-configuration-compatibility] Restore the configuration qualifier; compatibility is not a general comparison of batteries.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Some platform details are unknown, so category and battery-configuration compatibility cannot be fully compared.",
+                "Previous Brazilian Portuguese: Alguns detalhes da plataforma são desconhecidos, então a compatibilidade de categoria e bateria não pode ser totalmente comparada."
+            ],
+            "resolution": "Alguns detalhes da plataforma são desconhecidos, então a compatibilidade da categoria e da configuração da bateria não pode ser totalmente comparada."
+        },
+        {
+            "id": "ptBR-122",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] Worked examples are solved examples; the heat-flux section currently substitutes an unrelated heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked examples",
+                "Previous Brazilian Portuguese: Exemplos trabalhados"
+            ],
+            "resolution": "Exemplos resolvidos"
+        },
+        {
+            "id": "ptBR-123",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] Worked examples are solved examples; the heat-flux section currently substitutes an unrelated heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Brazilian Portuguese: Exemplo trabalhado"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "ptBR-124",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] Worked examples are solved examples; the heat-flux section currently substitutes an unrelated heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Brazilian Portuguese: Exemplo trabalhado"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "ptBR-125",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] Worked examples are solved examples; the heat-flux section currently substitutes an unrelated heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Brazilian Portuguese: Exemplo trabalhado"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "ptBR-126",
+            "translationId": "catalog.concepts.concept-heat-flux.sections.1.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[worked-example] Worked examples are solved examples; the heat-flux section currently substitutes an unrelated heading.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Worked example",
+                "Previous Brazilian Portuguese: Densidade média do fluxo de calor"
+            ],
+            "resolution": "Exemplo resolvido"
+        },
+        {
+            "id": "ptBR-127",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[thermal-headroom] Headroom means an operating margin, not physical space.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Ohm's law combines with the power relationship P = V × I. Power P is measured in watts (W). For a 4.2 V source and a 1.0 Ω load, the ideal power is 17.64 W. The component needs enough thermal capacity and headroom to dissipate the resulting heat safely.",
+                "Previous Brazilian Portuguese: A lei de Ohm combina com a relação de potência P = V × I. A potência P é medida em watts (W). Para uma fonte de 4,2 V e uma carga de 1,0 Ω, a potência ideal é 17,64 W. O componente precisa de capacidade térmica e espaço suficiente para dissipar o calor resultante com segurança."
+            ],
+            "resolution": "A lei de Ohm combina com a relação de potência P = V × I. A potência P é medida em watts (W). Para uma fonte de 4,2 V e uma carga de 1,0 Ω, a potência ideal é 17,64 W. O componente precisa de capacidade térmica e margem suficientes para dissipar o calor resultante com segurança."
+        },
+        {
+            "id": "ptBR-128",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[continuous-current-duration] Continuous here specifies rating duration; corrente contínua alone denotes DC.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Check that components, connections, and insulation can handle the expected current and power. Use appropriate headroom because real components can heat unevenly and resistance can change with temperature. Batteries and power supplies also have continuous current limits.",
+                "Previous Brazilian Portuguese: Verifique se os componentes, as conexões e o isolamento suportam a corrente e a potência esperadas. Mantenha uma margem adequada, pois os componentes reais podem aquecer de forma desigual e a resistência pode mudar com a temperatura. Baterias e fontes de alimentação também têm limites de corrente contínua.",
+                "Texas Instruments: https://www.ti.com/lit/ug/tiduar8c/tiduar8c.pdf — Series-connected cells require cell monitoring/balancing/protection, and continuous-current capability concerns sustained thermal operation."
+            ],
+            "resolution": "Verifique se os componentes, as conexões e o isolamento suportam a corrente e a potência esperadas. Mantenha uma margem adequada, pois os componentes reais podem aquecer de forma desigual e a resistência pode mudar com a temperatura. Baterias e fontes de alimentação também têm limites de corrente em operação contínua."
+        },
+        {
+            "id": "ptBR-129",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[series-cell-charging] Cells are connected in series, not lithium ions; retain monitoring and balancing/protection conditions.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Series lithium-ion charging requires cell-level monitoring and appropriate balancing or protection.",
+                "Previous Brazilian Portuguese: O carregamento em série de íons de lítio requer monitoramento no nível da célula e balanceamento ou proteção apropriados.",
+                "Texas Instruments: https://www.ti.com/lit/ug/tiduar8c/tiduar8c.pdf — Series-connected cells require cell monitoring/balancing/protection, and continuous-current capability concerns sustained thermal operation."
+            ],
+            "resolution": "O carregamento de células de íons de lítio conectadas em série requer monitoramento no nível de cada célula e balanceamento ou proteção apropriados."
+        },
+        {
+            "id": "ptBR-130",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.3.paragraphs.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[strain-versus-stress] Mechanical strain is deformação; tensão mecânica is stress. USP bilingual engineering terminology confirms the distinction.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A manufacturer's TCR normally applies to a stated temperature and resistance range. Temperature gradients, material changes, contacts, mechanical strain, and self-heating can make a real result differ from the first-order estimate.",
+                "Previous Brazilian Portuguese: O TCR do fabricante normalmente se aplica a uma faixa declarada de temperatura e resistência. Gradientes de temperatura, mudanças de material, contatos, tensão mecânica e autoaquecimento podem fazer com que um resultado real seja diferente da estimativa de primeira ordem.",
+                "Universidade de São Paulo: https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=PEF3201 — Bilingual syllabus distinguishes stress/tensão from strain/deformação."
+            ],
+            "resolution": "O TCR do fabricante normalmente se aplica a uma faixa declarada de temperatura e resistência. Gradientes de temperatura, mudanças de material, contatos, deformação mecânica e autoaquecimento podem fazer com que um resultado real seja diferente da estimativa de primeira ordem."
+        },
+        {
+            "id": "ptBR-131",
+            "translationId": "catalog.concepts.concept-heat-capacity.sections.2.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[electrical-power] The section uses watts to compute heating time; power is not energy.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Heating with electrical power",
+                "Previous Brazilian Portuguese: Aquecimento com energia elétrica",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Aquecimento com potência elétrica"
+        },
+        {
+            "id": "ptBR-132",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] The table identifies physical quantities, not amounts.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Quantity",
+                "Previous Brazilian Portuguese: Quantidade",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Grandeza"
+        },
+        {
+            "id": "ptBR-133",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[physical-quantity] Mass and force are different physical quantities, not merely different amounts.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A pound can refer to mass (lb) or force (lbf), which are different quantities. Likewise, inches, square inches, and cubic inches measure different dimensions.",
+                "Previous Brazilian Portuguese: Uma libra pode se referir à massa (lb) ou à força (lbf), que são quantidades diferentes. Da mesma forma, polegadas, polegadas quadradas e polegadas cúbicas medem dimensões diferentes.",
+                "Inmetro: https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/publicacoes/documentos-tecnicos-em-metrologia/si_versao_final.pdf — Portuguese SI terms corrente, potência and ampere A; power differs from energy."
+            ],
+            "resolution": "Uma libra pode se referir à massa (lb) ou à força (lbf), que são grandezas diferentes. Da mesma forma, polegadas, polegadas quadradas e polegadas cúbicas medem dimensões diferentes."
+        },
+        {
+            "id": "ptBR-134",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.description",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A gauge number describes a nominal size only when its gauge system is named.",
+                "Previous Brazilian Portuguese: Um número de medidor descreve um tamanho nominal somente quando seu sistema de medidor é nomeado."
+            ],
+            "resolution": "Um número de bitola só descreve um tamanho nominal quando o sistema de bitolas é identificado."
+        },
+        {
+            "id": "ptBR-135",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge systems",
+                "Previous Brazilian Portuguese: Sistemas de medição"
+            ],
+            "resolution": "Sistemas de bitolas"
+        },
+        {
+            "id": "ptBR-136",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: AWG is the American Wire Gauge, also known historically as Brown & Sharpe gauge.",
+                "Previous Brazilian Portuguese: AWG é o American Wire Gauge, também conhecido historicamente como medidor Brown & Sharpe."
+            ],
+            "resolution": "AWG é o American Wire Gauge, também conhecido historicamente como sistema de bitolas Brown & Sharpe."
+        },
+        {
+            "id": "ptBR-137",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A larger ordinary gauge number generally means a smaller diameter; sizes above gauge 0 use 00, 000, or 0000.",
+                "Previous Brazilian Portuguese: Um número de calibre comum maior geralmente significa um diâmetro menor; tamanhos acima do medidor 0 usam 00, 000 ou 0000."
+            ],
+            "resolution": "Um número de bitola comum maior geralmente significa um diâmetro menor; tamanhos acima da bitola 0 usam 00, 000 ou 0000."
+        },
+        {
+            "id": "ptBR-138",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.table.headers.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge",
+                "Previous Brazilian Portuguese: Medidor"
+            ],
+            "resolution": "Bitola"
+        },
+        {
+            "id": "ptBR-139",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.title",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Gauge, area, and resistance",
+                "Previous Brazilian Portuguese: Medidor, área e resistência"
+            ],
+            "resolution": "Bitola, área e resistência"
+        },
+        {
+            "id": "ptBR-140",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.3.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance depends on conductor length L, cross-sectional area A, and material resistivity ρ. Because area varies with the square of diameter, a modest diameter difference can make a substantial resistance difference. In AWG, increasing the gauge by three sizes approximately halves area and doubles resistance per unit length for the same material and temperature.",
+                "Previous Brazilian Portuguese: A resistência depende do comprimento do condutor L, da área da seção transversal A e da resistividade do material ρ. Como a área varia com o quadrado do diâmetro, uma diferença modesta no diâmetro pode causar uma diferença substancial na resistência. No AWG, aumentar o medidor em três tamanhos reduz aproximadamente a área pela metade e dobra a resistência por unidade de comprimento para o mesmo material e temperatura."
+            ],
+            "resolution": "A resistência depende do comprimento do condutor L, da área da seção transversal A e da resistividade do material ρ. Como a área varia com o quadrado do diâmetro, uma diferença modesta no diâmetro pode causar uma diferença substancial na resistência. No AWG, aumentar a bitola em três tamanhos reduz aproximadamente a área pela metade e dobra a resistência por unidade de comprimento para o mesmo material e temperatura."
+        },
+        {
+            "id": "ptBR-141",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[wire-gauge-system] Gauge names a wire-size scale, not a meter. Naming the system means identify its existing name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Name the system, such as 24 AWG or 24 British SWG.",
+                "Previous Brazilian Portuguese: Dê um nome ao sistema, como 24 AWG ou 24 British SWG."
+            ],
+            "resolution": "Identifique o sistema, como 24 AWG ou 24 British SWG."
+        },
+        {
+            "id": "ptBR-142",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[sheet-metal] Sheet means metal sheet, not a generic leaf.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: SWG is Standard Wire Gauge, the historical British wire and sheet-thickness system.",
+                "Previous Brazilian Portuguese: SWG é Standard Wire Gauge, o histórico sistema britânico de espessura de fios e folhas."
+            ],
+            "resolution": "SWG é Standard Wire Gauge, o histórico sistema britânico de espessura de fios e chapas."
+        },
+        {
+            "id": "ptBR-143",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.2.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-conductor] Stranded means composed of several strands and does not imply braiding.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: These values are nominal. Product tolerances, coatings, insulation, and stranded construction can change the measured or overall diameter.",
+                "Previous Brazilian Portuguese: Esses valores são nominais. Tolerâncias do produto, revestimentos, isolamento e construção trançada podem alterar o diâmetro medido ou total."
+            ],
+            "resolution": "Esses valores são nominais. Tolerâncias do produto, revestimentos, isolamento e construção multifilar podem alterar o diâmetro medido ou total."
+        },
+        {
+            "id": "ptBR-144",
+            "translationId": "catalog.concepts.concept-wire-gauges-awg-swg-bwg.sections.4.bullets.3",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[stranded-conductor] Constituent strands are not a cord; stranded conductors need not be braided.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For stranded conductors, include strand construction when flexibility and overall diameter matter.",
+                "Previous Brazilian Portuguese: Para condutores trançados, inclua a construção do cordão quando a flexibilidade e o diâmetro total forem importantes."
+            ],
+            "resolution": "Para condutores multifilares, informe a constituição dos filamentos quando a flexibilidade e o diâmetro total forem importantes."
+        },
+        {
+            "id": "ptBR-145",
+            "translationId": "catalogText.battery.note.battery-79.evidence",
+            "category": "translation-defect",
+            "severity": "high",
+            "summary": "[pulse-substitution] The source prohibits using pulse values instead of the continuous value; target reverses what must not be substituted.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 45 A independent continuous value for the tested tabless revision; do not substitute pulse ratings.",
+                "Previous Brazilian Portuguese: 45 A, valor contínuo independente para a revisão tabless testada; não substitua os valores de pulso."
+            ],
+            "resolution": "45 A, valor contínuo independente para a revisão tabless testada; não o substitua por valores de pulso."
+        },
+        {
+            "id": "ptBR-146",
+            "translationId": "catalogText.mod.preset-231.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaporesso-profile] Restore the manufacturer identity and nominal-rating meaning; translate the ordinary two-cell descriptor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-21700 regulated mod with 18650 adapters; VAPORESSO rates it 220 W; testing measured 208 W, 8.979 V, and 39 A.",
+                "Previous Brazilian Portuguese: Mod regulado Dual-21700 com adaptadores 18650; VAPORESO avalia 220 W; os testes mediram 208 W, 8,979 V e 39 A."
+            ],
+            "resolution": "Mod regulado de duas células 21700 com adaptadores 18650; VAPORESSO informa uma potência nominal de 220 W; os testes mediram 208 W, 8,979 V e 39 A."
+        },
+        {
+            "id": "ptBR-147",
+            "translationId": "catalogText.mod.preset-234.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[vaporesso-profile] Restore the manufacturer identity and nominal-rating meaning; translate the ordinary two-cell descriptor.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Dual-18650 regulated mod; VAPORESSO rates it 220 W; testing measured 215 W, 9.08 V, and 37 A.",
+                "Previous Brazilian Portuguese: Mod regulado Dual-18650; VAPORESO avalia 220 W; os testes mediram 215 W, 9,08 V e 37 A."
+            ],
+            "resolution": "Mod regulado de duas células 18650; VAPORESSO informa uma potência nominal de 220 W; os testes mediram 215 W, 9,08 V e 37 A."
+        },
+        {
+            "id": "ptBR-148",
+            "translationId": "catalogText.mod.preset-235.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[integrated-mod] The battery is built in; it does not regulate the mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Built-in-battery regulated mod rated at 100 W; testing measured 101 W, 29 A, and at least 7.97 V.",
+                "Previous Brazilian Portuguese: Mod regulado por bateria integrada avaliado em 100 W; o teste mediu 101 W, 29 A e pelo menos 7,97 V."
+            ],
+            "resolution": "Mod regulado com bateria integrada e potência nominal de 100 W; os testes mediram 101 W, 29 A e pelo menos 7,97 V."
+        },
+        {
+            "id": "ptBR-149",
+            "translationId": "catalogText.mod.preset-236.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] Single-cell construction is ordinary prose, not an untranslated product name.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-18650 regulated mod using AS Chip 4.0; manufacturer profile is 100 W, 7.5 V, 32 A, 0.1–3 Ω.",
+                "Previous Brazilian Portuguese: Mod regulado Single-18650 usando AS Chip 4.0; o perfil do fabricante é 100 W, 7,5 V, 32 A, 0,1–3 Ω."
+            ],
+            "resolution": "Mod regulado de uma célula 18650 com AS Chip 4.0; o perfil do fabricante é 100 W, 7,5 V, 32 A, 0,1–3 Ω."
+        },
+        {
+            "id": "ptBR-150",
+            "translationId": "catalogText.mod.preset-237.profile",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[single-cell-device] This is a mod with a cell adapter, not an adapter mod.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Single-cell 21700/18650-adapter mod; Eleaf specifies 100 W, 9 V, 0.05–3.5 Ω; testing identified 30 A.",
+                "Previous Brazilian Portuguese: Mod adaptador 21700/18650 de célula única; Eleaf especifica 100 W, 9 V, 0,05–3,5 Ω; testes identificaram 30 A."
+            ],
+            "resolution": "Mod de uma célula 21700, com adaptador para 18650; a Eleaf especifica 100 W, 9 V, 0,05–3,5 Ω; os testes identificaram 30 A."
+        },
+        {
+            "id": "ptBR-151",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Brazilian Portuguese: R é a resistência, medida em ohms (\\u03a9)."
+            ],
+            "resolution": "R é a resistência, medida em ohms (Ω)."
+        },
+        {
+            "id": "ptBR-152",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Brazilian Portuguese: Uma fonte de 4,2 V está conectada a uma carga de 1,0 \\u03a9."
+            ],
+            "resolution": "Uma fonte de 4,2 V está conectada a uma carga de 1,0 Ω."
+        },
+        {
+            "id": "ptBR-153",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Brazilian Portuguese: I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+            ],
+            "resolution": "I = 4,2 V / 1,0 Ω = 4,2 A"
+        },
+        {
+            "id": "ptBR-154",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Brazilian Portuguese: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "R = 12 V / 2 A = 6 Ω"
+        },
+        {
+            "id": "ptBR-155",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Brazilian Portuguese: A resistência do circuito é 6 \\u03a9."
+            ],
+            "resolution": "A resistência do circuito é 6 Ω."
+        },
+        {
+            "id": "ptBR-156",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Brazilian Portuguese: Uma corrente de 0,5 A flui através de uma resistência de 10 \\u03a9."
+            ],
+            "resolution": "Uma corrente de 0,5 A flui através de uma resistência de 10 Ω."
+        },
+        {
+            "id": "ptBR-157",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Brazilian Portuguese: 1 k\\u03a9 = 1.000 \\u03a9"
+            ],
+            "resolution": "1 kΩ = 1.000 Ω"
+        },
+        {
+            "id": "ptBR-158",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Brazilian Portuguese: 1 M\\u03a9 = 1.000.000 \\u03a9"
+            ],
+            "resolution": "1 MΩ = 1.000.000 Ω"
+        },
+        {
+            "id": "ptBR-159",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Brazilian Portuguese: Dois resistores de 0,20 \\u03a9 em série são conectados a 8,0 V."
+            ],
+            "resolution": "Dois resistores de 0,20 Ω em série são conectados a 8,0 V."
+        },
+        {
+            "id": "ptBR-160",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Brazilian Portuguese: R_total = 0,40 \\u03a9"
+            ],
+            "resolution": "R_total = 0,40 Ω"
+        },
+        {
+            "id": "ptBR-161",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Brazilian Portuguese: Dois ramos iguais de 0,40 \\u03a9 são conectados a 4,0 V."
+            ],
+            "resolution": "Dois ramos iguais de 0,40 Ω são conectados a 4,0 V."
+        },
+        {
+            "id": "ptBR-162",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Brazilian Portuguese: R_total = 0,20 \\u03a9"
+            ],
+            "resolution": "R_total = 0,20 Ω"
+        },
+        {
+            "id": "ptBR-163",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Brazilian Portuguese: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "α = 400 × 10^-6 / °C = 0,0004 / °C"
+        },
+        {
+            "id": "ptBR-164",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Brazilian Portuguese: \\u0394T = 100 - 20 = 80 °C"
+            ],
+            "resolution": "ΔT = 100 - 20 = 80 °C"
+        },
+        {
+            "id": "ptBR-165",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Brazilian Portuguese: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "R_T = 1,00 [1 + 0,0004 × 80] = 1,032 Ω"
+        },
+        {
+            "id": "ptBR-166",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Brazilian Portuguese: A resistência estimada é de 1,032 \\u03a9, cerca de 3,2% acima do seu valor a 20 \\u00b0C."
+            ],
+            "resolution": "A resistência estimada é de 1,032 Ω, cerca de 3,2% acima do seu valor a 20 °C."
+        },
+        {
+            "id": "ptBR-167",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Brazilian Portuguese: Resistência: ohm (\\u03a9)."
+            ],
+            "resolution": "Resistência: ohm (Ω)."
+        },
+        {
+            "id": "ptBR-168",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "translation-defect",
+            "severity": "medium",
+            "summary": "[literal-unicode] Decode visible escape sequences into the intended symbols without changing values or formula structure.",
+            "disposition": "resolved",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Brazilian Portuguese: Por exemplo, 2,2 k\\u03a9 é igual a 2.200 \\u03a9 e 15 mA é igual a 0,015 A. Converta os valores em unidades compatíveis antes de usar uma fórmula."
+            ],
+            "resolution": "Por exemplo, 2,2 kΩ é igual a 2.200 Ω e 15 mA é igual a 0,015 A. Converta os valores em unidades compatíveis antes de usar uma fórmula."
+        },
+        {
+            "id": "ptBR-169",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R is resistance, measured in ohms (\\u03a9).",
+                "Previous Brazilian Portuguese: R é a resistência, medida em ohms (\\u03a9)."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-170",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.1.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A resistance of zero \\u03a9 is an ideal short circuit and must be handled separately.",
+                "Previous Brazilian Portuguese: Uma resistência de 0 Ω é um curto-circuito ideal e deve ser tratada separadamente."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-171",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 4.2 V source is connected to a 1.0 \\u03a9 load.",
+                "Previous Brazilian Portuguese: Uma fonte de 4,2 V está conectada a uma carga de 1,0 \\u03a9."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-172",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: I = 4.2 V / 1.0 \\u03a9 = 4.2 A",
+                "Previous Brazilian Portuguese: I = 4,2 V / 1,0 \\u03a9 = 4,2 A"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-173",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R = 12 V / 2 A = 6 \\u03a9",
+                "Previous Brazilian Portuguese: R = 12 V / 2 A = 6 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-174",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.1.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The circuit resistance is 6 \\u03a9.",
+                "Previous Brazilian Portuguese: A resistência do circuito é 6 \\u03a9."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-175",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.2.examples.2.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.5 A current flows through a 10 \\u03a9 resistance.",
+                "Previous Brazilian Portuguese: Uma corrente de 0,5 A flui através de uma resistência de 10 \\u03a9."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-176",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 k\\u03a9 = 1,000 \\u03a9",
+                "Previous Brazilian Portuguese: 1 k\\u03a9 = 1.000 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-177",
+            "translationId": "catalog.concepts.concept-ohms-law.sections.4.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: 1 M\\u03a9 = 1,000,000 \\u03a9",
+                "Previous Brazilian Portuguese: 1 M\\u03a9 = 1.000.000 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-178",
+            "translationId": "catalog.concepts.concept-joule-heating.sections.1.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 0.8 \\u03a9 coil carries 3 A.",
+                "Previous Brazilian Portuguese: Uma bobina de 0,8 Ω é percorrida por uma corrente de 3 A."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-179",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two 0.20 \\u03a9 resistors in series are connected to 8.0 V.",
+                "Previous Brazilian Portuguese: Dois resistores de 0,20 \\u03a9 em série são conectados a 8,0 V."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-180",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.40 \\u03a9",
+                "Previous Brazilian Portuguese: R_total = 0,40 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-181",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Two equal 0.40 \\u03a9 branches are connected to 4.0 V.",
+                "Previous Brazilian Portuguese: Dois ramos iguais de 0,40 \\u03a9 são conectados a 4,0 V."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-182",
+            "translationId": "catalog.concepts.concept-kirchhoffs-laws.sections.2.examples.1.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_total = 0.20 \\u03a9",
+                "Previous Brazilian Portuguese: R_total = 0,20 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-183",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.0.bullets.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 is the material's temperature coefficient, expressed in 1/°C or ppm/°C.",
+                "Previous Brazilian Portuguese: α é o coeficiente de temperatura do material, expresso em 1 / °C ou ppm / °C."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-184",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.setup",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: A 1.00 \\u03a9 resistance is specified at 20 \\u00b0C, with a TCR of 400 ppm/\\u00b0C.",
+                "Previous Brazilian Portuguese: Uma resistência de 1,00 Ω é especificada a 20 °C, com um TCR de 400 ppm/°C."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-185",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0.0004 / \\u00b0C",
+                "Previous Brazilian Portuguese: \\u03b1 = 400 × 10^-6 / \\u00b0C = 0,0004 / \\u00b0C"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-186",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: \\u0394T = 100 - 20 = 80 \\u00b0C",
+                "Previous Brazilian Portuguese: \\u0394T = 100 - 20 = 80 °C"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-187",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.formulas.2",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: R_T = 1.00 [1 + 0.0004 × 80] = 1.032 \\u03a9",
+                "Previous Brazilian Portuguese: R_T = 1,00 [1 + 0,0004 × 80] = 1,032 \\u03a9"
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-188",
+            "translationId": "catalog.concepts.concept-temperature-coefficient-of-resistance.sections.2.examples.0.conclusion",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: The estimated resistance is 1.032 \\u03a9, about 3.2% above its value at 20 \\u00b0C.",
+                "Previous Brazilian Portuguese: A resistência estimada é de 1,032 \\u03a9, cerca de 3,2% acima do seu valor a 20 \\u00b0C."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-189",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.0.bullets.1",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Resistance: ohm (\\u03a9).",
+                "Previous Brazilian Portuguese: Resistência: ohm (\\u03a9)."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-190",
+            "translationId": "catalog.concepts.concept-si-system-and-imperial-units.sections.1.paragraphs.0",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-literal-unicode] Canonical English also contains visible Unicode escape sequences; repair it in a separate canonical-source workflow.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: For example, 2.2 k\\u03a9 equals 2,200 \\u03a9, and 15 mA equals 0.015 A. Convert values to compatible units before using a formula.",
+                "Previous Brazilian Portuguese: Por exemplo, 2,2 k\\u03a9 é igual a 2.200 \\u03a9 e 15 mA é igual a 0,015 A. Converta os valores em unidades compatíveis antes de usar uma fórmula."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-191",
+            "translationId": "catalog.concepts.concept-joule-heating.summary",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-joule-summary] Canonical source incorrectly says resistance turns into heat; the current Brazilian target already correctly describes electrical-energy conversion.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: How electrical current turns resistance into heat.",
+                "Previous Brazilian Portuguese: Como a corrente elétrica transforma a energia elétrica em calor."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-192",
+            "translationId": "calculators.juice.safetyText",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[source-calculation-certainty] Canonical claim of hundred-percent certainty from checking another calculator overstates what cross-checking establishes. The target already omits that certainty claim while preserving the warning.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Concentrated nicotine can harm or kill children, pets, or even adults. Please inform yourself of how to mitigate the dangers before you try mixing your own. If you want to be a hundred percent certain about your calculations, you should double check your results using other tools as well.",
+                "Previous Brazilian Portuguese: A nicotina concentrada pode ferir ou matar crianças, animais e adultos. Antes de misturar seu próprio e-líquido, aprenda a reduzir os riscos e confira os cálculos com outra ferramenta."
+            ],
+            "resolution": "Canonical English defect retained for a separate source/parity repair; any independently recorded target display correction was applied."
+        },
+        {
+            "id": "ptBR-193",
+            "translationId": "shared.catalogManager.corruptStorage",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: No custom {plural} were loaded, and the saved data has not been overwritten.",
+                "Previous Brazilian Portuguese: No custom {plural} were loaded, and the saved data has not been overwritten."
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-194",
+            "translationId": "shared.catalogManager.operationMessage",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: {noun} is used by: {references}.",
+                "Previous Brazilian Portuguese: {noun} is used by: {references}."
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-195",
+            "translationId": "shared.tcr.forWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: for wire",
+                "Previous Brazilian Portuguese: for wire"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-196",
+            "translationId": "shared.wirewiz.core",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core",
+                "Previous Brazilian Portuguese: Core"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-197",
+            "translationId": "shared.wirewiz.wrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Wrap",
+                "Previous Brazilian Portuguese: Wrap"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-198",
+            "translationId": "shared.wirewiz.coreTwo",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Core (two identical wires)",
+                "Previous Brazilian Portuguese: Core (two identical wires)"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-199",
+            "translationId": "shared.wirewiz.primaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Primary wrap (one around each core)",
+                "Previous Brazilian Portuguese: Primary wrap (one around each core)"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-200",
+            "translationId": "shared.wirewiz.secondaryWrap",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: Secondary wrap (around both cores)",
+                "Previous Brazilian Portuguese: Secondary wrap (around both cores)"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        },
+        {
+            "id": "ptBR-201",
+            "translationId": "shared.wirewiz.singleWire",
+            "category": "source-content-defect",
+            "severity": "medium",
+            "summary": "[shared-hardcoded-ui] Shared JSX has no existing locale-owned hook. TCR duplicates for wire already contained in the translated suffix; other strings require separate shared i18n work.",
+            "disposition": "rejected-with-evidence",
+            "evidence": [
+                "English: {single} wire",
+                "Previous Brazilian Portuguese: {single} wire"
+            ],
+            "resolution": "Shared UI localization outside locale-owned dictionaries; preserved for separate shared i18n work."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1, "locale": "it", "cycleId": "it-20260819T123836938Z",
+    "resourceProfile": { "classification": "standard", "assessment": "Canonical English and the complete Italian source, glossary, review metadata, and UI context were available locally." },
+    "review": {
+        "automatedQuality": { "state": "passed", "summary": "Translation review generation, queue validation, type checking, focused tests, production build, route checks, and link validation passed." },
+        "linguisticCritique": { "state": "completed", "summary": "A fresh Italian critique found visible interpolation tokens, identity drift, reversed chronology, coil-lead errors, and awkward nicotine-safety copy." },
+        "competentHumanReview": { "state": "pending", "summary": "No competent Italian human review was performed; corrected entries remain machine reviewed." },
+        "publicationAuthorization": { "state": "not-requested", "summary": "The owner requested correction commits, not publication or deployment." }
+    },
+    "findings": [
+        { "id": "it-placeholders", "translationId": "shared.catalogManager.manage", "category": "translation-defect", "severity": "critical", "summary": "Sixteen functions returned literal lower-case placeholder tokens.", "disposition": "resolved", "evidence": ["The draft omitted replacement calls for lower-case tokens."], "resolution": "Reimplemented affected catalog and Ohm functions in a reviewed correction layer." },
+        { "id": "it-identity", "translationId": "shared.home.tools.wirewiz.label", "category": "translation-defect", "severity": "high", "summary": "Steam Engine and Wire Wizard were translated as generic phrases.", "disposition": "resolved", "evidence": ["The translation contract protects product identity."], "resolution": "Restored protected names in shared and calculator labels." },
+        { "id": "it-date", "translationId": "shared.encyclopediaDetail.availableBy", "category": "factual-or-safety-risk", "severity": "high", "summary": "Available by was rendered as available from.", "disposition": "resolved", "evidence": ["The canonical label expresses an upper date bound."], "resolution": "Used disponibile entro." },
+        { "id": "it-leads", "translationId": "calculators.coil.legPowerLoss", "category": "translation-defect", "severity": "high", "summary": "Coil leads were translated as anatomical legs.", "disposition": "resolved", "evidence": ["The fields describe electrical wire terminals."], "resolution": "Used terminali consistently." },
+        { "id": "it-safety", "translationId": "calculators.juice.safetyText", "category": "factual-or-safety-risk", "severity": "medium", "summary": "The warning referred ambiguously to mixing one of them rather than e-liquid.", "disposition": "resolved", "evidence": ["The canonical warning concerns mixing e-liquid."], "resolution": "Rewrote the warning explicitly and concisely." }
+    ]
+}

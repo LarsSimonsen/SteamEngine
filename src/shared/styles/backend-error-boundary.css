@@ -1,0 +1,42 @@
+.backend-error {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background: rgb(0 0 0 / 60%);
+}
+
+.backend-error__panel {
+    width: min(32rem, 100%);
+    padding: 1.5rem;
+    border: 1px solid var(--se-border, #555);
+    border-radius: 0.4rem;
+    background: var(--se-panel, #222);
+    color: var(--se-text, #eee);
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 45%);
+}
+
+.backend-error__details {
+    max-height: 12rem;
+    overflow: auto;
+    padding: 0.75rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background: rgb(0 0 0 / 25%);
+    font-size: 0.8rem;
+}
+
+.backend-error__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.backend-error__details-toggle {
+    order: -1;
+    margin-right: auto;
+    text-align: left;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5496946968214683"
+        crossorigin="anonymous"></script>
+	<link rel="canonical" href="https://www.steam-engine.org/tcr" />
+	<meta property="og:url" content="https://www.steam-engine.org/tcr" />
+	<title>TCR | Steam Engine | free vaping calculators</title>
+	<meta property="og:title" content="TCR | Steam Engine | free vaping calculators" />
+	<meta name="description" content="TCR calculator" />
+	<meta property="og:description" content="TCR calculator" />
+	<link id="bscss" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="se.css?v=8" rel="stylesheet" />
+<script defer src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script defer src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="steam-engine.js?v=19"></script>
+<script defer src="analytics.js?v=1"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Lars Olaf Simonsen">
+<meta property="og:image" content="https://www.steam-engine.org/static/Hi-Res-Icon444.png" />
+<meta property="og:site_name" content="Steam Engine" />
+<meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" sizes="192x192" href="/static/icon192x192.png" />
+<link rel="icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="/static/icon128x128.png" />
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/static/icon128x128.png" />
+<base target="_parent" />
+	<style>
+		body.tempc .tempc,
+		body.tempf .tempf,
+		body.tempcf .tempc,
+		body.tempcf .tempf,
+		body.tempcf .tempcfseparator {
+			display: inline;
+		}
+		body.tempc .tempf,
+		body.tempc .tempcfseparator,
+		body.tempf .tempc,
+		body.tempf .tempcfseparator,
+		.dna200download {
+			display: none;
+		}
+		tfoot {
+			font-weight: bolder;
+		}
+		#dna200output {
+			cursor: copy;
+		}
+		.wrinput {
+			max-width:8em;
+			margin-top:0px;
+			margin-bottom:0px;
+		}
+	</style>
+</head>
+
+<body id="tcr">
+	<nav id="toppnav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#setoppmeny" aria-expanded="false" style="margin-bottom:0px;">
+                <span style="display:inline-block;margin-right:0.5em;">Menu</span>
+                <span style="display:inline-block;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </button>
+            <a href="https://www.steam-engine.org" rel="bookmark">
+                <img src="static/logo.png" alt="Steam Engine logo" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="setoppmeny">
+            <ul class="nav navbar-nav" id="choo-topnav">
+                <li class="tnf" id="navtab-main">
+                    <a class="tnf" href="https://www.steam-engine.org">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-ohm">
+                    <a class="tnf" href="ohm">
+                        Ohm's law
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-coil">
+                    <a class="tnf" href="coil">
+                        Coil wrapping
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-wirewiz">
+                    <a class="tnf" href="wirewiz">
+                        Wire Wizard
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-batt">
+                    <a class="tnf" href="batt">
+                        Battery drain
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-modrange">
+                    <a class="tnf" href="modrange">
+                        Mod range
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-juice">
+                    <a class="tnf" href="juice">
+                        E-liquid
+                    </a>
+                </li>
+                <li class="tnf" id="navtab-converter">
+                    <a class="tnf" href="converter">
+                        Convert
+                    </a>
+                </li>
+
+                <li class="tnf" id="navtab-new-site">
+                    <a class="tnf" href="..">
+                        New version!
+                    </a>
+                </li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navtab-about" class="tnf">
+                    <a class="tnf" href="about" rel="author license">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+        <div class="container">
+            <a class="legacy-new-notice" href="../tcr"><strong>Try the new TCR calculator here.</strong></a>
+        </div>
+<div class="sebackto"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-3 col-md-4">
+				<span class="btn btn-default pull-right" id="resetcalc">Reset</span>
+				<p>
+					<span class="label label-default">Obsolete</span>
+					This calculator has been replaced by the
+					<a href="wirewiz">
+						<i class="glyphicon glyphicon-align-justify"></i> 
+						Wire Wizard
+					</a>. 
+					It will not be developed further.
+				</p>
+				<div class="form-group">
+					<label>Temperature points</label>
+					<div class="input-group">
+						<input class="form-control text-right" id="temppoints" data-scale="f" />
+						<span class="input-group-addon btn">
+							<span id="temppointsdegf">&deg;F</span>
+							<span id="temppointsdegc" style="display:none;">&deg;C</span>
+						</span>
+					</div>
+					<span class="help-block">Changing the temperature points will reset the calculator.</span>
+				</div>
+				<!--<h2>Results</h2>-->
+				<h2>Select wire(s)</h2>
+				<table id="selectwire" class="table table-condensed table-bordered">
+				</table>
+			</div>
+			<div class="col-lg-9 col-md-8">
+				<h2>Temperature factors of resistance</h2>
+				<table id="tfrresults" class="table table-condensed table-bordered">
+				</table>
+				<h3>Sensitivity</h3>
+				<p>
+					Temperature sensitivity in the vaping range:
+					<strong>
+						<span id="sensitivity">?</span> %
+					</strong>
+				</p>
+				<h3>DNA 200 output</h3>
+				<textarea id="dna200output" readonly class="form-control" rows="9" style="max-width:30em;">...</textarea>
+				<a class="btn btn-primary btn-sm dna200download" id="dna200download" download="SteamEngine-DNA200.csv">
+					Download CSV file
+				</a>
+				<a href="//caniuse.com/#feat=datauri" class="dna200download" target="_blank" rel="nofollow" title="This feature cannot be used in Microsoft Internet Explorer.">
+					(not supported in MSIE)
+				</a>
+			</div>
+		</div>
+
+        <!-- steam-engine-ad:start provider="steam-engine-waterfall" placement="primary-banner" -->
+        <div class="ad-slot se-ad-placement text-center" aria-label="Advertisement"
+            data-ad-context="tcr" data-ad-placement="legacy-calculator-footer"
+            style="margin:1.5em auto;min-height:250px"></div>
+        <script async src="/advertising/runtime.js"></script>
+        <!-- steam-engine-ad:end -->
+		<span>How it works</span>
+		<div>
+			<h1>
+				Temperature coefficient of resistance <small>and temperature factor of resistance</small>
+			</h1>
+			<ul>
+				<li>
+					<a href="//en.wikipedia.org/wiki/Temperature coefficient" class="wplink">Temperature coefficient</a>
+				</li>
+			</ul>
+			<div class="row">
+				<div class="col col-md-3">
+					<h2>Quick start</h2>
+					<p>Let's say you want to make a twisted coil with Ni200 and Kanthal for temperature limited vaping.</p>
+					<ol>
+						<li>
+							Under "Select wire(s)", click
+							<code>Add wire</code> on the Kanthal and the Ni200.
+						</li>
+						<li>
+							The table "Temperature factors of resistance" is created.
+						</li>
+						<li>
+							Update the table with the resistance of each piece of wire. 
+							E.g. 0.15 for the Ni200 and 1.5 for the Kanthal. 
+							(There
+							will be a way for you to directly insert the wire gauge with time, 
+							but for now you'll have to rely on the coil calculator
+							to figure the resistance out.)
+						</li>
+						<li>
+							The column "Total R by temperature" will now show you the total resistance of your coil at various temperatures.
+						</li>
+						<li>
+							If you want to upload the profile to your DNA 200, copy the text in the "DNA 200 output" frame.
+						</li>
+					</ol>
+				</div>
+				<div class="col col-md-3">
+					<h2>Results</h2>
+					<p>
+						The table shows you the calculated resistance for each wire, at different temperatures. You'll notice that as you change
+						the resistance of each wire, the calculated resistance values are updated.
+					</p>
+					<p>
+						The row "Total R by temperature" will tell you the total resistance of your coil, after you have connected the selected wires
+						in parallel.
+					</p>
+					<p>
+						The row "normalized TFR curve" is normalized so that the factor at 70 &deg;F is always 1. These values are used in the DNA
+						200 output.
+					</p>
+					<h3>Downloading CSV</h3>
+					<p>
+						You can click the "Download CSV file" button to get a file for your DNA 200.
+						<em>This does not work in Microsoft Internet Explorer</em>, due to security limitations, but it does work in most other
+						browsers. If you need to use MSIE, you will have to do the following workaround:
+					</p>
+					<ul>
+						<li>Make a new text file on your computer.</li>
+						<li>
+							<a 
+								href="//www.mediacollege.com/microsoft/windows/extension-change.html" 
+								target="_blank" 
+								rel="nofollow"
+							>
+								Rename the extension of the text file
+							</a> 
+							from
+							<code>.txt</code> to
+							<code>.csv</code>.
+						</li>
+						<li>
+							Copy the text from the
+							<em>DNA 200 output</em> 
+							field to the clipboard.
+						</li>
+						<li>Paste it into your text file.</li>
+						<li>Save the file to disk.</li>
+					</ul>
+				</div>
+				<div class="col col-md-3">
+					<h2>Sensitivity</h2>
+					<p>
+						Under "Sensitivity", you'll se a number like for instance 81 %. 
+						This means that in the temperature range typical to vaping,
+						the resistance change will be 81 % of that of the resistance change would have been for a pure Ni200 coil. 
+						(A Ni200
+						coil will always score 100%.) 
+						A higher number means that your temperature control will be more accurate.
+					</p>
+					<p>
+						It is theoretically possible to score higher than 100 %, 
+						but first you'll have to find a coil material with a higher TCR
+						than Ni200.
+					</p>
+					<p>
+						How low you can go while maintaining reasonably accurate temperature control, 
+						depends on your 510 connection, your atomizer,
+						your building skills, and more.
+					</p>
+				</div>
+				<div class="col col-md-3">
+					<h2>Sources</h2>
+					<h3>Temperature points</h3>
+					<p>
+						The default values don't normally need to be changed, but if you want to, you can. 
+						There is no particular limit to how many
+						points you can use (but the DNA 200 will accept a maximum of 8 points). 
+						Click the &deg;F to the right of the input field
+						to change to &deg;C.
+					</p>
+					<h3>TFR and TCR</h3>
+					<p>
+						If the calculator has a resistance factor by temperature table for a particular coil material, it uses that.
+					</p>
+					<p>
+						When the selected temperature points don't correspond to the data points 
+						that are stored with the coil material, the calculator
+						approximates them using linear interpolation.
+					</p>
+					<p>
+						If no table is present for a material, the calculator uses the TCR to calculate the resistances.
+					</p>
+				</div>
+				<div class="col col-md-3">
+					<h2>Thanks to</h2>
+					<ul>
+						<li>
+							<a href="//www.evolvapor.com/" target="_blank" rel="nofollow">Evolv</a> 
+							for the suggestion to make this calculator, 
+							for the Ni200 TFR curve, 
+							and for the specification for the DNA
+							200 CSV.
+						</li>
+						<li>
+							ECF user
+							<a href="//www.e-cigarette-forum.com/forum/members/vapealone.259249/" target="_blank" rel="nofollow">
+								vapealone
+							</a> 
+							for the 316L and Ti1 TFR curves 
+							(<a 
+								href="//www.e-cigarette-forum.com/forum/threads/tc-beyond-ni200-nickel-purity-dicodes-ti-ss-resistherm-nife30-coefficient-of-resistance.676506/"
+								target="_blank" 
+								rel="nofollow"
+							>forum thread</a>).
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="sefooter" class="container-fluid">
+    <hr />
+    <div class="row">
+        
+        
+        
+        <div class="col col-md-3 col-sm-12 text-center">
+            <div id="google_translate_element"></div>
+        </div>
+        <div class="col col-md-2 col-sm-12 text-right">
+            <a id="seaddr" href="https://www.steam-engine.org">www.steam-engine.org</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+</script>
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script defer src="tcr.js?v=0"></script>
+</body>
+</html>

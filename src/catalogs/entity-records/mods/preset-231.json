@@ -1,0 +1,91 @@
+{
+    "entityId": "vaporesso-armour-max",
+    "entityType": "mod",
+    "recordStatus": "researched",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": "A dual-21700 regulated box mod, also compatible with 18650 cells, rated at 220 W.",
+        "description": "VAPORESSO documents the ARMOUR MAX as a dual-21700 regulated mod with 18650 adapter sleeves and 5–220 W output. An exact-device Vaping360 review measured 208 W, 8.979 V, and 39 A on its test sample, while the current manufacturer page retains the exact product documentation.",
+        "highlights": [
+            "Exact identity and catalog relationship are established.",
+            "Manufacturer specifications and independent electrical testing are available.",
+            "The device is used as the canonical comparison entry for the GEN MAX candidate review."
+        ]
+    },
+    "sources": [
+        {
+            "id": "official",
+            "title": "ARMOUR MAX official product page and manual",
+            "url": "https://www.vaporesso.com/series-product/armour-series/armour-max",
+            "publisher": "VAPORESSO",
+            "limitations": "Manufacturer specifications establish identity and rated limits but do not replace independent measurements."
+        },
+        {
+            "id": "store",
+            "title": "ARMOUR MAX Mod manufacturer store page",
+            "url": "https://store.vaporesso.com/en-gb/products/armour-max-mod",
+            "publisher": "VAPORESSO",
+            "limitations": "Manufacturer-controlled regional page; displayed variants were sold out when checked."
+        },
+        {
+            "id": "review",
+            "title": "VAPORESSO ARMOUR MAX Kit Review: Test Results Are In",
+            "url": "https://vaping360.com/reviews/vaporesso-armour-max-review/",
+            "publisher": "Vaping360",
+            "limitations": "Commercial editorial review and single-sample testing."
+        },
+        {
+            "id": "operating-features-armour-max-20260824",
+            "title": "ARMOUR MAX/S user manual",
+            "url": "https://www.vaporesso.com/hubfs/imgs/downloads/manual/armour-max.pdf",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "The exact marketed identity is VAPORESSO ARMOUR MAX.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Future revision or regional naming changes remain possible."
+        },
+        {
+            "id": "manufacturer-profile",
+            "statement": "VAPORESSO specifies dual 21700 cells with 18650 compatibility and 5–220 W output.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Manufacturer limits remain distinct from independent measurements."
+        },
+        {
+            "id": "measured-output",
+            "statement": "Vaping360 measured 208 W, 8.979 V, and 39 A on an exact ARMOUR MAX sample.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium",
+            "limitations": "Single-sample test-load coverage; measured values are not flat manufacturer ratings."
+        },
+        {
+            "id": "vaping-relevance",
+            "statement": "The exact ARMOUR MAX is reviewed as a regulated vaping mod with a 510 connection and removable cells.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high",
+            "limitations": "Review coverage establishes product relevance, not population-level demand."
+        }
+    ],
+    "domainData": {
+        "deviceCategory": "box-mod",
+        "batterySystem": {
+            "configuration": "dual 21700; 18650-compatible with adapters"
+        },
+        "batteryConfigurations": [
+            {
+                "format": "21700"
+            },
+            {
+                "format": "18650"
+            }
+        ]
+    }
+}

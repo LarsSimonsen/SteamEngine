@@ -1,0 +1,29 @@
+{
+    "entityId": "nivel-v3",
+    "entityType": "control-board",
+    "recordStatus": "research-only",
+    "updatedAt": "2026-08-24",
+    "identity": {
+        "identityStability": "stable"
+    },
+    "summary": {
+        "shortDescription": null,
+        "description": null,
+        "highlights": []
+    },
+    "sources": [
+        {
+            "id": "cell-configuration-audit-20260823",
+            "title": "Nivel V3 exact product record",
+            "url": "https://vapenews.ru/article/svoemesto-nivel-v3-style----novyy-punkt-v-spiske-vashih-zhelaniy",
+            "limitations": "Exact-device source set checked for cell format, count, wiring, and revision scope; unresolved dimensions remain null."
+        },
+        {
+            "id": "operating-features-nivel-20260824",
+            "title": "Nivel VV/VW board user guide",
+            "url": "https://www.scribd.com/document/118600734/Nivel-VV-VW-Board-User-Guide-en-1",
+            "limitations": "Supports only the explicitly recorded modes and capabilities; unmentioned features remain unknown."
+        }
+    ],
+    "claims": []
+}

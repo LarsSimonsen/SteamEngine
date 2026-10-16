@@ -3,6 +3,42 @@
     "sourceLocale": "en",
     "locale": "da",
     "entries": {
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "celle",
+            "context": "Individual cell; inputs are per cell, not for the complete pack.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "batteripakke",
+            "context": "Combined series/parallel cell assembly.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "runtime": {
+            "source": "runtime",
+            "preferred": "driftstid",
+            "context": "Operating duration in minutes; avoid driving-time wording.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
         "vaping": {
             "source": "vaping",
             "preferred": "dampe",

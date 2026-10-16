@@ -1,0 +1,74 @@
+{
+    "entityId": "battery-92",
+    "recordStatus": "admitted",
+    "updatedAt": "2026-08-04",
+    "identity": {
+        "identityStability": "revision-specific"
+    },
+    "summary": {
+        "shortDescription": "A 5850mAh energy-oriented tabless 21700 cell with a 20A continuous rating.",
+        "description": "The RH60 is Reliance's energy-series 21700. Battery Mooch tested two batches and found consistent performance, approximately 6000mAh measured capacity, and a defensible 20A continuous value. Reliance's 30A temperature-limited context is not the proposed runtime limit.",
+        "highlights": [
+            "5850mAh minimum/standard capacity",
+            "20A continuous rating",
+            "Two exact production-related batches tested"
+        ]
+    },
+    "sources": [
+        {
+            "id": "matrix",
+            "title": "Tabless cylindrical cell product matrix",
+            "url": "https://www.reliance-battery.com/products-en.html",
+            "publisher": "Reliance Battery",
+            "limitations": "Manufacturer product claims."
+        },
+        {
+            "id": "ecf",
+            "title": "Bench Test Results: Reliance RH60 - 20A 5850mAh 21700",
+            "url": "https://www.e-cigarette-forum.com/feeds/latest-activity?page=160",
+            "publisher": "E-Cigarette Forum",
+            "limitations": "Full exact-model report text was retrieved through the ECF activity feed and reviewed; the feed is a presentation of the original forum report."
+        }
+    ],
+    "claims": [
+        {
+            "id": "identity",
+            "statement": "Reliance identifies INR21700-RH60 as a distinct energy-series 21700 model.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "high"
+        },
+        {
+            "id": "capacity",
+            "statement": "The current production record gives 5850mAh minimum or standard capacity and the test measured about 6000mAh.",
+            "evidenceDate": "2026-05-02",
+            "confidence": "medium"
+        },
+        {
+            "id": "rating",
+            "statement": "The current product matrix lists 20A maximum continuous discharge.",
+            "evidenceDate": "2026-08-04",
+            "confidence": "medium"
+        },
+        {
+            "id": "test",
+            "statement": "The retrieved exact-model report found consistent performance across two RH60 batches, measured about 6000mAh, and considered 20A continuous reasonable; 30A is temperature-limited.",
+            "evidenceDate": "2026-05-02",
+            "confidence": "high"
+        }
+    ],
+    "reviews": [],
+    "safetyFindings": [
+        {
+            "summary": "The tester distinguishes the 20A continuous value from a higher temperature-limited context that increases sag and aging.",
+            "runtimeImplication": "Use 20A for the proposed calculator profile."
+        }
+    ],
+    "domainData": {
+        "batteryAccess": null,
+        "formFactor": null,
+        "chemistry": "Lithium-ion, Ni-based cathode",
+        "protected": null,
+        "appearance": null,
+        "authenticity": null
+    }
+}

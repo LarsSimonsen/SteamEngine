@@ -3,6 +3,30 @@
     "sourceLocale": "en",
     "locale": "nn",
     "entries": {
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "celle",
+            "context": "Individual cell, distinct from a complete battery pack.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "batteripakke",
+            "context": "Combined series/parallel cell assembly.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "English-source North Germanic group review with independent machine check",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
         "battery": {
             "source": "battery",
             "preferred": "batteri",
@@ -67,6 +91,14 @@
             "context": "Resistance or wrapping wire used to build a coil.",
             "state": "machine",
             "provenance": { "kind": "machine", "method": "workflow-foundation glossary draft" },
+            "confidence": "high"
+        },
+        "low-drain-battery": {
+            "source": "low-drain battery",
+            "preferred": "batteri med låg utladingsstraum",
+            "context": "A battery with a low continuous-discharge capability; not suitable for vaping loads.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "nn bounded translation improvement cycle" },
             "confidence": "high"
         }
     }

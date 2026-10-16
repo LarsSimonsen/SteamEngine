@@ -1,0 +1,180 @@
+{
+    "schemaVersion": 1,
+    "sourceLocale": "en",
+    "locale": "es-419",
+    "entries": {
+        "vape": {
+            "source": "vape",
+            "preferred": "vapear",
+            "context": "General user-facing verb for using an electronic cigarette.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "high"
+        },
+        "electronic-cigarette": {
+            "source": "electronic cigarette",
+            "preferred": "cigarrillo electrónico",
+            "context": "Formal general term used across Latin America.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "high"
+        },
+        "atomizer": {
+            "source": "atomizer",
+            "preferred": "atomizador",
+            "context": "The device component that holds and heats the resistance; keep it distinct from the resistance itself.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "high"
+        },
+        "coil": {
+            "source": "coil",
+            "preferred": "resistencia",
+            "context": "Vaping-facing term for the heating element or assembly; use bobina only when the wound geometry is specifically relevant.",
+            "discouraged": ["espiral"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "medium"
+        },
+        "e-liquid": {
+            "source": "e-liquid",
+            "preferred": "líquido para vapear",
+            "context": "Concise user-facing term for liquid used in an electronic cigarette.",
+            "discouraged": ["jugo"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "medium"
+        },
+        "battery-drain": {
+            "source": "battery drain",
+            "preferred": "consumo de batería",
+            "context": "Current and power drawn from a battery in calculator results.",
+            "discouraged": ["drenaje de batería"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "high"
+        },
+        "wire": {
+            "source": "wire",
+            "preferred": "alambre",
+            "context": "Resistance or temperature-control wire in calculator labels and instructions; use cable only for a cable or bundled conductor.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "medium"
+        },
+        "output-power": {
+            "source": "output power",
+            "preferred": "potencia de salida",
+            "context": "Electrical power delivered by a regulated device.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Google Translate draft with contextual terminology review" },
+            "confidence": "high"
+        },
+        "control-board": {
+            "source": "control board",
+            "preferred": "tarjeta de control",
+            "context": "Electronics board or controller used in a regulated mod.",
+            "discouraged": ["tablero de control", "placa"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Independent machine critique with contextual terminology review" },
+            "confidence": "high"
+        },
+        "current-headroom": {
+            "source": "current headroom",
+            "preferred": "margen de corriente",
+            "context": "Remaining safe electrical-current capacity below a battery or device limit.",
+            "discouraged": ["margen actual"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Independent machine critique with safety-context review" },
+            "confidence": "high"
+        },
+        "reference-resistance": {
+            "source": "reference resistance",
+            "preferred": "resistencia de referencia",
+            "context": "Resistance at the reference temperature used to normalize a TCR or TFR curve.",
+            "discouraged": ["resistencia básica"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Independent machine critique with calculator-context review" },
+            "confidence": "high"
+        },
+        "continuous-discharge-current": {
+            "source": "continuous discharge current",
+            "preferred": "corriente de descarga continua",
+            "context": "Battery safety and specification term for the current a cell is rated to deliver continuously.",
+            "discouraged": ["corriente de descarga constante", "corriente continua de descarga"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish electrical and battery terminology research" },
+            "confidence": "high"
+        },
+        "temperature-coefficient": {
+            "source": "temperature coefficient of resistance",
+            "preferred": "coeficiente de temperatura de la resistencia",
+            "context": "Formal electrical term for TCR in temperature-control calculators; use the full phrase in explanatory text.",
+            "discouraged": ["coeficiente térmico", "coeficiente de temperatura"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish electrical terminology research" },
+            "confidence": "high"
+        },
+        "regulated-mod": {
+            "source": "regulated mod",
+            "preferred": "mod regulado",
+            "context": "Vaping-facing term for a device with electronic output regulation.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Spanish vaping terminology research" },
+            "confidence": "high"
+        },
+        "battery-cell": {
+            "source": "battery cell",
+            "preferred": "celda de batería",
+            "context": "A replaceable electrochemical cell; do not use paquete integrado when the source means a cell.",
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual terminology review" },
+            "confidence": "high"
+        },
+        "wire-wizard": {
+            "source": "Wire Wizard",
+            "preferred": "Asistente de alambres",
+            "context": "Localized calculator title; use alambre for the constructed resistance wire and keep the product function clear.",
+            "discouraged": ["Asistente de cables", "Asistente de hilos"],
+            "state": "machine",
+            "provenance": { "kind": "machine", "method": "Contextual terminology review" },
+            "confidence": "high"
+        },
+        "battery-pack": {
+            "source": "battery pack",
+            "preferred": "conjunto de baterías",
+            "context": "Assembly of cells; distinguish per-cell inputs from pack totals.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Related Spanish variant comparison against canonical English",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "parallel-strings": {
+            "source": "parallel strings",
+            "preferred": "ramas en paralelo",
+            "context": "Parallel branches of the pack, each containing the selected number of series cells.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Related Spanish variant comparison against canonical English",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        },
+        "runtime": {
+            "source": "runtime",
+            "preferred": "autonomía",
+            "context": "Battery operating duration, not software execution time.",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Related Spanish variant comparison against canonical English",
+                "model": "GPT-6"
+            },
+            "confidence": "high"
+        }
+    }
+}
