@@ -21,6 +21,30 @@ describe("calculator messages", () => {
         }
     });
 
+    it("accepts extra plural forms only where the locale has that plural category", () => {
+        expect(calculatorMessagesFor("pl").batt.cellsFew).toBe("ogniwa");
+        const withExtraKey = (locale: "da" | "pl", key: string, check: (issues: readonly string[]) => void) => {
+            const routeMessages = calculatorMessagesFor(locale).batt as Record<string, string>;
+            try {
+                routeMessages[key] = "test";
+                check(calculatorMessageParityIssues());
+            } finally {
+                delete routeMessages[key];
+            }
+        };
+        withExtraKey("pl", "cellsMany", (issues) => expect(issues).not.toContain("pl:batt"));
+        withExtraKey("pl", "cellsTwo", (issues) => expect(issues).toContain("pl:batt"));
+        withExtraKey("pl", "cellFewer", (issues) => expect(issues).toContain("pl:batt"));
+        withExtraKey("pl", "missingKeyFew", (issues) => expect(issues).toContain("pl:batt"));
+        withExtraKey("da", "cellsFew", (issues) => expect(issues).toContain("da:batt"));
+    });
+
+    it("keeps English keys that resemble plural forms required", () => {
+        // Arabic has a "two" category, so tcr's `about` and `aboutTwo` could be mistaken for a plural pair.
+        expect(calculatorMessagesFor("ar").tcr.aboutTwo).toBeDefined();
+        expect(calculatorMessageParityIssues()).not.toContain("ar:tcr");
+    });
+
     it("provides distinct localized representative calculator copy", () => {
         expect(calculatorMessagesFor("en").batt.title).toBe("Battery drain");
         expect(calculatorMessagesFor("nb").batt.title).toBe("Batteriforbruk");

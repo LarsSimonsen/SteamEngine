@@ -453,6 +453,21 @@ export const calculatorMessages: Readonly<Record<Locale, CalculatorMessages>> = 
 
 export const calculatorMessagesFor = (locale: Locale): CalculatorMessages => calculatorMessages[locale];
 
+// English keys carry the "one" and "other" forms. A locale whose plural rules have further
+// categories adds them as the English key plus a suffix, for example `cellsFew` beside `cells`.
+const extraPluralCategories = ["zero", "two", "few", "many"] as const;
+
+export const pluralFormKey = (key: string, category: Intl.LDMLPluralRule): string =>
+    `${key}${category[0].toUpperCase()}${category.slice(1)}`;
+
+const isLocalePluralForm = (key: string, locale: Locale, englishKeys: readonly string[]): boolean => {
+    // An English key such as tcr's `aboutTwo` stays required even though it looks like a plural form.
+    if (englishKeys.includes(key)) return false;
+    const categories = new Intl.PluralRules(locale).resolvedOptions().pluralCategories;
+    return extraPluralCategories.some((category) => categories.includes(category)
+        && englishKeys.some((englishKey) => pluralFormKey(englishKey, category) === key));
+};
+
 export const calculatorMessageParityIssues = (): readonly string[] => {
     const issues: string[] = [];
     for (const route of Object.keys(english) as Array<keyof CalculatorMessages>) {
@@ -462,7 +477,8 @@ export const calculatorMessageParityIssues = (): readonly string[] => {
         const englishKeys = Object.keys(english[route]).sort();
         for (const locale of Object.keys(calculatorMessages) as Locale[]) {
             const localeKeys = Object.keys(calculatorMessages[locale][route])
-                .filter((key) => !optionalKeys.includes(key)).sort();
+                .filter((key) => !optionalKeys.includes(key) && !isLocalePluralForm(key, locale, englishKeys))
+                .sort();
             if (JSON.stringify(englishKeys) !== JSON.stringify(localeKeys)) {
                 issues.push(`${locale}:${route}`);
             }

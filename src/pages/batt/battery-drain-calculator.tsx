@@ -53,7 +53,11 @@ import "./battery-drain.css";
 import { createDebouncedRequest, debouncedRequestSuperseded } from "../../shared/debounced-request";
 import { formatDisplayNumber, parseNumericInput } from "../../shared/domain/numeric";
 import { pageLocale } from "../../i18n/page-locale";
-import { calculatorMessagesFor, type CalculatorRouteMessages } from "../../i18n/calculator-messages";
+import {
+    calculatorMessagesFor,
+    pluralFormKey,
+    type CalculatorRouteMessages,
+} from "../../i18n/calculator-messages";
 import { batteryDrainHandoff } from "./handoff";
 
 const storageKey = "steamengine.batteryDrain.settings.v7";
@@ -68,9 +72,9 @@ const legacyStorageKeys = [
 const defaultRatingMethod: BatteryRatingMethod = "amps";
 
 export const cellCountLabel = (count: number, locale: string, messages: CalculatorRouteMessages): string => {
-    if (count === 1) return messages.cell;
-    if (messages.cellsFew && new Intl.PluralRules(locale).select(count) === "few") return messages.cellsFew;
-    return messages.cells;
+    const category = new Intl.PluralRules(locale).select(count);
+    if (count === 1 || category === "one") return messages.cell;
+    return messages[pluralFormKey("cells", category)] ?? messages.cells;
 };
 
 type DeviceField = "atomizerResistance" | "outputVoltage" | "outputPower" | "outputCurrent" | "efficiency";
