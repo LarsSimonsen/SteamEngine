@@ -52,9 +52,36 @@ export const AboutPage = (): ReactElement => (
                     </p>
                     <h3>Translations</h3>
                     <p>
-                        For translations, use the translation tools built into your browser.
+                        The calculators and the catalog are available in several languages;
+                        choose yours from the language menu. This page is in English only.
                         The calculators are designed to work as ordinary web pages without
                         requiring an account.
+                    </p>
+                </section>
+                <section className="about-card" aria-labelledby="about-source">
+                    <h2 id="about-source">
+                        Source code <small>open, mostly</small>
+                    </h2>
+                    <p>
+                        The website itself, its translations and the catalog data are
+                        published on GitHub at{" "}
+                        <a href="https://github.com/LarsSimonsen/SteamEngine">
+                            <code>github.com/LarsSimonsen/SteamEngine</code>
+                        </a>
+                        . The calculations are done by a separate service that is not
+                        open source and is not part of that repository.
+                    </p>
+                    <p>
+                        Found a bug, a wrong value in the catalog or an awkward translation?{" "}
+                        <a href="https://github.com/LarsSimonsen/SteamEngine/issues/new/choose">
+                            Open an issue on GitHub
+                        </a>
+                        . Translation fixes and code contributions are welcome as pull requests;
+                        see the{" "}
+                        <a href="https://github.com/LarsSimonsen/SteamEngine/blob/master/CONTRIBUTING.md">
+                            contribution guide
+                        </a>
+                        .
                     </p>
                 </section>
                 <section className="about-card" aria-labelledby="about-safety">
@@ -107,9 +134,17 @@ export const AboutPage = (): ReactElement => (
                         More legalese <small>the fine print</small>
                     </h3>
                     <p>
-                        Copyright © 2014–2026. All rights are mine,{" "}
-                        <em title="And the theory about the blue whale too.">my own</em>, my
-                        precioussss.
+                        Copyright © 2014–2026 Lars Simonsen. The website code and translations are
+                        licensed under the{" "}
+                        <a href="https://github.com/LarsSimonsen/SteamEngine/blob/master/LICENSE">
+                            MIT License
+                        </a>
+                        , and the catalog data under{" "}
+                        <a href="https://github.com/LarsSimonsen/SteamEngine/blob/master/DATA-LICENSE.md">
+                            CC BY 4.0
+                        </a>
+                        . The calculation service and the Steam Engine name and logo are not
+                        covered by these licences.
                     </p>
                 </section>
             </div>
