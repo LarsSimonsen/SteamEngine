@@ -180,3 +180,11 @@ re-read whole files.
 After big code changes, refresh the graph with `trail build` (deterministic,
 no API key, $0).
 <!-- trail:end -->
+
+### Learnings are public
+
+This repository is public, and `.trail/learnings/` is committed with it. Write team learnings only about this
+repository's public code and data. Save anything about the private calculation Worker or research repository, such
+as its paths, scripts, deployment steps or open findings, in that repository's own trail or with
+`trail note --personal`. `npm run validate:public` rejects known private identifiers in learnings as in every other
+file, but it cannot recognize every private detail.

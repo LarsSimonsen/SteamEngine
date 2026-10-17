@@ -1,9 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { catalogViolations, shapeViolations } from "./validate-public-repository.mjs";
+import { catalogViolations, deniedContentViolations, shapeViolations } from "./validate-public-repository.mjs";
 
 describe("public repository validation", () => {
     it("accepts the generated catalog data and entity records", async () => {
         expect(await catalogViolations()).toEqual([]);
+    });
+
+    it("finds no private identifiers in repository files, trail learnings included", () => {
+        expect(deniedContentViolations()).toEqual([]);
     });
 
     it("rejects fields that the public site does not display", () => {

@@ -29,6 +29,12 @@ const deniedPatterns = [
     /popularity-assessments/,
     /catalog-workflow-runs/,
     /catalog-candidate-discoveries/,
+    // Names and paths of the private repository, which can leak through notes such as trail learnings.
+    /steamengine-research/,
+    /knowledge-base\//,
+    /public-private-split-review/,
+    /workers\/steamengine-api/,
+    /typecheck:api/,
     // Entry points of the proprietary calculation code, which belongs to the private calculation Worker.
     new RegExp(`\\b(${[
         "calculateBatteryDrain",
