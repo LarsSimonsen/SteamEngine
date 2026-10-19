@@ -6,6 +6,7 @@ import { googleAdsenseHeadMarkup } from "../shared/ui/google-adsense";
 import { normalizeExternalHtmlLinks } from "../build/normalize-external-links";
 
 export const blogBasePath = "/blog";
+const blogContentEnvironmentVariable = "STEAM_ENGINE_BLOG_CONTENT";
 const postsPerPage = 10;
 const hiddenPostSlugs = new Set([
     "custom-data",
@@ -87,8 +88,22 @@ const readMetadata = (directory: string): BlogPostMetadata => {
     };
 };
 
-export const readBlogPosts = (sourceDirectory: string): BlogPost[] => {
-    const postsDirectory = path.join(sourceDirectory, "posts");
+// Blog posts are not part of the public repository. The build reads them from the folder named by
+// STEAM_ENGINE_BLOG_CONTENT, otherwise from a gitignored `.blog-content` folder or link in the checkout,
+// and builds a blog without posts when that folder is missing.
+export const resolveBlogContentDirectory = (projectRoot: string): string => {
+    const configured = process.env[blogContentEnvironmentVariable];
+    if (!configured) return path.join(projectRoot, ".blog-content");
+
+    const directory = path.resolve(configured);
+    if (!fs.existsSync(path.join(directory, "posts"))) {
+        throw new Error(`${blogContentEnvironmentVariable} does not contain a posts folder: ${directory}`);
+    }
+    return directory;
+};
+
+export const readBlogPosts = (contentDirectory: string): BlogPost[] => {
+    const postsDirectory = path.join(contentDirectory, "posts");
     if (!fs.existsSync(postsDirectory)) return [];
 
     const posts = fs.readdirSync(postsDirectory, { withFileTypes: true })
@@ -348,8 +363,8 @@ const renderPost = (post: BlogPost): string => `<article class="blog-article">
     </footer>
 </article>`;
 
-const readAboutBody = (sourceDirectory: string): string => {
-    const aboutPath = path.join(sourceDirectory, "about.html");
+const readAboutBody = (contentDirectory: string): string => {
+    const aboutPath = path.join(contentDirectory, "about.html");
     return fs.existsSync(aboutPath) ? fs.readFileSync(aboutPath, "utf8") :
         "<p>This blog contains historical notes and updates from Steam Engine.</p>";
 };
@@ -382,8 +397,8 @@ ${items}
 `;
 };
 
-export const getBlogSitemapPaths = (sourceDirectory: string): readonly string[] => {
-    const posts = publicPosts(readBlogPosts(sourceDirectory));
+export const getBlogSitemapPaths = (contentDirectory: string): readonly string[] => {
+    const posts = publicPosts(readBlogPosts(contentDirectory));
     return [
         blogBasePath,
         `${blogBasePath}/about`,
@@ -391,13 +406,17 @@ export const getBlogSitemapPaths = (sourceDirectory: string): readonly string[] 
     ];
 };
 
-export const buildBlog = ({ sourceDirectory, outputDirectory }: BlogBuildOptions): void => {
-    const posts = readBlogPosts(sourceDirectory);
+export const buildBlog = ({ sourceDirectory, contentDirectory, outputDirectory }: BlogBuildOptions): void => {
+    const posts = readBlogPosts(contentDirectory);
     const visiblePosts = publicPosts(posts);
+    if (posts.length === 0) {
+        console.warn(`Building the blog without posts: no blog content in ${contentDirectory}.`);
+    }
     fs.rmSync(outputDirectory, { force: true, recursive: true });
     fs.mkdirSync(outputDirectory, { recursive: true });
 
     copyDirectory(path.join(sourceDirectory, "assets"), path.join(outputDirectory, "assets"));
+    copyDirectory(path.join(contentDirectory, "assets"), path.join(outputDirectory, "assets"));
     fs.copyFileSync(
         path.resolve(sourceDirectory, "../shared/styles/site-chrome.css"),
         path.join(outputDirectory, "assets", "site-chrome.css"),
@@ -423,7 +442,7 @@ export const buildBlog = ({ sourceDirectory, outputDirectory }: BlogBuildOptions
             renderShell(post.title, post.excerpt, postPath(post), renderPost(post)));
     }
 
-    const aboutBody = readAboutBody(sourceDirectory);
+    const aboutBody = readAboutBody(contentDirectory);
     const aboutContent = `<article class="blog-article">
     <header class="blog-article__header"><p class="blog-eyebrow">Steam Engine</p><h1>About this blog</h1></header>
     <div class="blog-article__body">${normalizeBlogLinks(aboutBody)}</div>

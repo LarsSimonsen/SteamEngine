@@ -5,7 +5,10 @@ import { fileURLToPath } from "node:url";
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const positionalArguments = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
 const captureRoot = positionalArguments[0] ?? "F:\\backup\\blog.steam-engine.org\\blog.steam-engine.org\\blog.steam-engine.org";
-const destinationRoot = path.join(projectRoot, "src", "blog");
+// Blog content is kept outside the public repository; see resolveBlogContentDirectory in src/blog/generator.ts.
+const destinationRoot = process.env.STEAM_ENGINE_BLOG_CONTENT
+    ? path.resolve(process.env.STEAM_ENGINE_BLOG_CONTENT)
+    : path.join(projectRoot, ".blog-content");
 const force = process.argv.includes("--force");
 const postsDestination = path.join(destinationRoot, "posts");
 const uploadsDestination = path.join(destinationRoot, "assets", "uploads");

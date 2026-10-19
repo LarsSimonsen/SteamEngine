@@ -8,6 +8,7 @@ src/pages/.build-runs/
 playwright-report/
 test-results/
 .i18n-translation-cache.json
+.blog-content
 *.tsbuildinfo
 __pycache__/
 *.py[cod]

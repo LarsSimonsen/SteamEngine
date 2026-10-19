@@ -102,8 +102,10 @@ const buildExtras = async (publicRoot) => {
         recursive: true,
     });
 
+    const blogContentDirectory = blog.resolveBlogContentDirectory(projectRoot);
     blog.buildBlog({
         sourceDirectory: path.join(projectRoot, "src", "blog"),
+        contentDirectory: blogContentDirectory,
         outputDirectory: path.join(publicRoot, "blog"),
     });
 
@@ -113,7 +115,7 @@ const buildExtras = async (publicRoot) => {
         ["/about", "0.2"], ["/catalog", "0.8"], ["/compare/batteries", "0.4"], ["/compare/materials", "0.4"],
         ["/compare/mods", "0.4"],
         ...detailRoutes.map((route) => [`/${route}`, "0.3"]),
-        ...blog.getBlogSitemapPaths(path.join(projectRoot, "src", "blog")).map((route) => [route, "0.3"]),
+        ...blog.getBlogSitemapPaths(blogContentDirectory).map((route) => [route, "0.3"]),
         ...localesModule.localeDefinitions.filter(({ code }) => code !== "en").flatMap(({ code }) => [
             ...localesModule.translatedRoutes(code).map((route) => [
                 route,

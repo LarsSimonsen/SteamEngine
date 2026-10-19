@@ -15,6 +15,10 @@ $publicRoot = if ($configuredPublicRoot) {
     Join-Path $projectRoot "public"
 }
 $generatedConfigPath = Join-Path $publicRoot "web.config"
+# Blog posts are kept outside the public repository, so a public checkout builds a blog without posts.
+$blogFeedPath = Join-Path $publicRoot "blog/feed.xml"
+$builtWithBlogContent = (Test-Path -LiteralPath $blogFeedPath -PathType Leaf) -and `
+    ((Get-Content -LiteralPath $blogFeedPath -Raw) -match "<item>")
 
 if (-not (Test-Path -LiteralPath $contractPath)) {
     throw "Route contract not found: $contractPath"
@@ -240,7 +244,9 @@ function Assert-IisRouteCase([string] $path, $routeCase) {
 
     switch ([string] $outcome.kind) {
         "origin" {
-            Assert-PublicFile ([string] $outcome.path)
+            if ($builtWithBlogContent -or -not $routeCase.requiresBlogContent) {
+                Assert-PublicFile ([string] $outcome.path)
+            }
             if ($null -eq $resolution -or $resolution.action -ne "Rewrite" -or $resolution.target -ne $outcome.path) {
                 throw "IIS does not rewrite '$publicPath' to '$($outcome.path)' in $path"
             }

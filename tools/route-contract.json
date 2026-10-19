@@ -685,6 +685,7 @@
         },
         {
             "publicPath": "/blog/page/2",
+            "requiresBlogContent": true,
             "outcome": {
                 "kind": "origin",
                 "path": "blog/page/2/index.html"
@@ -692,6 +693,7 @@
         },
         {
             "publicPath": "/blog/2015/11/17/welcome",
+            "requiresBlogContent": true,
             "outcome": {
                 "kind": "origin",
                 "path": "blog/2015/11/17/welcome/index.html"

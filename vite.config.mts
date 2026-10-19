@@ -30,7 +30,7 @@ import {
 } from "./src/build/i18n-pages";
 import { normalizeExternalHtmlLinks } from "./src/build/normalize-external-links";
 import { googleAdsenseScriptUrl } from "./src/shared/ui/google-adsense";
-import { buildBlog, getBlogSitemapPaths } from "./src/blog/generator";
+import { buildBlog, getBlogSitemapPaths, resolveBlogContentDirectory } from "./src/blog/generator";
 import { concepts } from "./src/catalogs/concepts/catalog";
 import { materials } from "./src/catalogs/materials/catalog";
 import { builtInPresets } from "./src/catalogs/mods/presets";
@@ -47,6 +47,7 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 const sourceRoot = path.join(projectRoot, "src");
 const pagesRoot = path.join(sourceRoot, "pages");
 const blogSourceRoot = path.join(sourceRoot, "blog");
+const blogContentRoot = resolveBlogContentDirectory(projectRoot);
 const configuredBuildWorkspace = process.env.STEAM_ENGINE_BUILD_WORKSPACE;
 const buildWorkspaceRoot = path.resolve(
     configuredBuildWorkspace ?? path.join(projectRoot, ".build-runs", "direct"),
@@ -255,7 +256,7 @@ const sitemapRoutesForBuild = () => [
     { path: "/compare/materials", priority: "0.4" },
     { path: "/compare/mods", priority: "0.4" },
     ...encyclopediaDetailRoutes.map((routePath) => ({ path: `/${routePath}`, priority: "0.3" })),
-    ...getBlogSitemapPaths(blogSourceRoot).map((routePath) => ({ path: routePath, priority: "0.3" })),
+    ...getBlogSitemapPaths(blogContentRoot).map((routePath) => ({ path: routePath, priority: "0.3" })),
     ...localeDefinitions.filter(({ code }) => code !== "en").flatMap(({ code }) => [
         ...translatedRoutes(code).map((routePath) => ({
             path: routePath,
@@ -387,6 +388,7 @@ function buildBlogSite(publicRoot: string) {
         closeBundle() {
             buildBlog({
                 sourceDirectory: blogSourceRoot,
+                contentDirectory: blogContentRoot,
                 outputDirectory: path.join(publicRoot, "blog"),
             });
         },

@@ -14,5 +14,6 @@ export type BlogPost = BlogPostMetadata & {
 
 export type BlogBuildOptions = {
     readonly sourceDirectory: string;
+    readonly contentDirectory: string;
     readonly outputDirectory: string;
 };

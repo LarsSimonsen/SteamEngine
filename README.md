@@ -51,6 +51,10 @@ Windows `SteamEngineIisSlotBroker` service to switch IIS to it. Without that ser
 For focused work, `npm run build:partial -- nb`, `npm run build:partial -- coil all-locales` and
 `npm run build:partial -- nb coil fast` build one locale, one route or one fast slice.
 
+Blog posts are not part of this repository; the blog code is. A build without them produces a blog with no
+articles. The maintainer's build reads them from the folder named by `STEAM_ENGINE_BLOG_CONTENT`, or from a
+gitignored `.blog-content` folder or link in the checkout.
+
 End-to-end tests forward calculation requests to the live API, so they need network access. Point
 `PLAYWRIGHT_PUBLIC_ROOT` at a fresh build (for example `.build-runs/cloudflare-artifact`) when running them.
 
@@ -73,3 +77,4 @@ instead. See [CONTRIBUTING.md](CONTRIBUTING.md#catalog-data).
   calculation code are proprietary and not covered.
 - Curated catalog data: [Creative Commons Attribution 4.0](DATA-LICENSE.md).
 - The Steam Engine name and logo are not licensed; see [TRADEMARKS.md](TRADEMARKS.md).
+- Blog posts are not in this repository and are not covered by these licenses.

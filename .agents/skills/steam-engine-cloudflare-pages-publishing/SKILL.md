@@ -69,6 +69,12 @@ Cloudflare artifact test. It then:
 Inspect the artifact and confirm that `_worker.js` and `404.html` exist while
 `web.config` does not. Never deploy a partial or failed build.
 
+Blog posts are kept outside this repository. Confirm that
+`.build-runs/cloudflare-artifact/blog/feed.xml` contains `<item>` entries and
+that the build did not warn about missing blog content. A build without posts
+would remove every article from the live site; stop and restore the
+`.blog-content` link or `STEAM_ENGINE_BLOG_CONTENT` before deploying.
+
 If source files changed during the task, also run the repository's normal
 `npm run build` before handoff as required by `AGENTS.md`. The normal build
 validates and switches the local IIS preview; it does not replace the

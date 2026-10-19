@@ -18,6 +18,10 @@ const assert = (condition, message) => {
 assert(fs.existsSync(path.join(artifactRoot, "_worker.js")), "Cloudflare artifact is missing _worker.js.");
 assert(fs.existsSync(path.join(artifactRoot, "404.html")), "Cloudflare artifact is missing 404.html.");
 assert(!fs.existsSync(path.join(artifactRoot, "web.config")), "Cloudflare artifact includes local IIS web.config.");
+// Blog posts are kept outside the public repository, so a public checkout builds a blog without posts.
+const blogFeed = fs.readFileSync(path.join(artifactRoot, "blog", "feed.xml"), "utf8");
+const builtWithBlogContent = blogFeed.includes("<item>");
+if (!builtWithBlogContent) console.warn("The artifact has no blog posts; skipping route cases that need them.");
 const sitemap = fs.readFileSync(path.join(artifactRoot, "sitemap.xml"), "utf8");
 assert(sitemap.includes("<loc>https://www.steam-engine.org/blog</loc>"),
     "The sitemap should include the canonical blog landing page.");
@@ -121,6 +125,7 @@ for (const routeCase of contract.routeCases) {
         continue;
     }
     assert(resolution.kind === "asset", `${routeCase.publicPath} should be served as an asset.`);
+    if (routeCase.requiresBlogContent && !builtWithBlogContent) continue;
     const artifactPath = cloudflareArtifactPathForOrigin(outcome.path);
     assert(fs.existsSync(path.join(artifactRoot, artifactPath)),
         `${routeCase.publicPath} is missing Cloudflare artifact ${artifactPath}.`);

@@ -1,7 +1,0 @@
-{
-    "slug": "qa-see-results-for-wire-components",
-    "title": "Q&A: See results for wire components",
-    "published": "2016-03-29T15:36:26+00:00",
-    "updated": "2016-03-29T15:36:26+00:00",
-    "excerpt": "Is it possible to measure the lenght of each wire used for a complex build in the Wire Wizard ? It would be very useful if the result would appear beside each segment. Yes, check the box “Show results for all components ” at the top right. "
-}

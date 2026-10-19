@@ -225,6 +225,11 @@ The retired hostname `blog.steam-engine.org` is a Cloudflare compatibility hostn
 exists; unknown paths fall back to the canonical blog landing page. The sitemap contains only canonical
 `www.steam-engine.org` URLs and never lists the compatibility hostname.
 
+Blog posts are not part of the public repository. The build reads them from the folder named by
+`STEAM_ENGINE_BLOG_CONTENT`, or from a gitignored `.blog-content` folder in the checkout. Without that content it
+builds the landing and about pages with no articles. Route cases marked `requiresBlogContent` in the executable
+contract are checked only when the build includes posts.
+
 Category, tag, author, date-archive, feed-as-page, and alternate-permalink routes are unsupported. Adding another blog
 page family requires an explicit specification and executable-contract change.
 
