@@ -20,6 +20,19 @@ alias before claiming that a release is live.
 Do not upload the repository root, a Vite intermediate directory, or the local
 IIS slots.
 
+## What this deploys
+
+This skill deploys only the frontend. The calculators call the calculation
+API, a separate Cloudflare Worker at
+`https://steam-engine-api.lars-simonsen.workers.dev`, directly from the browser
+through the adapters in `src/pages/<route>/api.ts` and
+`src/pages/encyclopedia/material-tfr-api.ts`. That Worker is proprietary and is
+deployed from its own private repository, never by this skill.
+
+Blog posts are not in this repository either; the build reads them from
+`STEAM_ENGINE_BLOG_CONTENT` or the gitignored `.blog-content` link (see
+`README.md`).
+
 ## Refresh command knowledge
 
 Load the Cloudflare Wrangler skill and retrieve the current Pages Direct Upload
@@ -84,13 +97,30 @@ Cloudflare artifact build.
 
 Before uploading:
 
-1. Inspect `git status --short` and the task-related diff.
-2. Confirm the Pages project exists and that its production branch is `main`.
-3. Record whether the tree is dirty. A deployment request does not authorize a
+1. Inspect `git status --short` and the task-related diff. Deploy from the
+   repository's `master` branch; merge pull requests and `catalog/<topic>`
+   branches first.
+2. Run `npx wrangler pages deployment list --project-name steam-engine`.
+   Confirm the project exists, that its production branch is `main`, and note
+   the source commit of the current production deployment.
+3. Review `git log` and `git diff` from that commit to `HEAD` so that you know
+   everything the upload will release, not only the current task.
+4. If that range changes an API adapter URL or request contract, confirm that
+   the new API version answers on the calculation Worker before uploading. The
+   Worker must be deployed first; never publish a frontend that calls an API
+   version the Worker does not serve.
+5. Check that the GitHub Actions "Public repository checks" run for `HEAD`
+   passed (`gh run list --branch master --limit 3`). Investigate a failure
+   before deploying.
+6. Record whether the tree is dirty. A deployment request does not authorize a
    commit, and a commit request does not silently authorize deployment.
-4. If the tree is dirty, deploy only after the changed artifact has been
+7. If the tree is dirty, deploy only after the changed artifact has been
    reviewed. Pass `--commit-dirty=true` so Wrangler records that state instead
-   of concealing it.
+   of concealing it. Uncommitted files that are not part of the build, such as
+   agent skills, still make the tree dirty.
+8. Wrangler records only this repository's commit. Report the commit of the
+   blog content used for the build in the handoff so that the release can be
+   reproduced; do not write it into this repository.
 
 ## Deploy with Wrangler
 
@@ -129,6 +159,10 @@ At minimum verify:
 - `301`: `/juice.html` and `/juice.asp` to `/juice`.
 - `404`: `/juice/`, `/blog/category/news`, `/404`, and a retired route.
 
+When the release includes a new blog post, also check that its dated page
+returns `200` and that it leads `/blog/feed.xml`. When it changes an API
+adapter, open the affected calculator and confirm that it shows results.
+
 For the redirects, compare the response status and `Location` header. Also open
 at least one calculator in a browser when the deployment includes visible UI
 changes. Stop and investigate if the unique deployment succeeds but the
@@ -142,7 +176,8 @@ Report:
 - Cloudflare's deployment status;
 - the build, route, link, and artifact validation results;
 - representative live HTTP results;
-- whether the deployed tree was clean or dirty; and
+- whether the deployed tree was clean or dirty;
+- the previous production commit and the blog content commit; and
 - any uncommitted files, permission changes, or propagation uncertainty.
 
 Do not claim that a custom domain is live unless it was separately configured
