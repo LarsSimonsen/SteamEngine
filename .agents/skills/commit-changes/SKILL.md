@@ -15,9 +15,8 @@ scoped; never stage the whole working tree by default.
    files, or documentation only when they are direct consequences. Leave unrelated
    work and generated artifacts unstaged. Ask if scope cannot be determined safely.
 3. Confirm that the selected files represent the intended commit. Do not silently stage all changes.
-4. Before writing the Git index or committing, request elevated repository write
-   permission. Do not first try an unprivileged index write: this workspace blocks
-   `.git/index.lock` without that permission.
+4. If the environment requires approval before writing the Git index, request it
+   before staging rather than retrying a failed write.
 5. Stage explicit paths with `git add -- <path>...`. Never use `git add -A`,
    `git add .`, or broad globs.
 6. Inspect `git diff --cached --stat`, `git diff --cached --check`, and

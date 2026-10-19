@@ -17,9 +17,10 @@ resources, Cloudflare Pages deployments, upload artifacts, or IIS bindings. It
 may change only the selected IIS root virtual directory's `physicalPath` as part
 of a validated slot switch.
 
-The intended cross-provider routes are defined in
-`tools/route-contract.json`. This skill owns the IIS translation of that
-contract; `tools/local-iis-web.config` remains the checked-in provider template.
+`SITE-STRUCTURE.md` is the normative specification of the public routes and
+`tools/route-contract.json` is its executable route matrix; read both before a
+route change. This skill owns the IIS translation of that contract;
+`tools/local-iis-web.config` remains the checked-in provider template.
 
 The installed `SteamEngineIisSlotBroker` is the sole elevated boundary. Read
 [broker-contract.md](references/broker-contract.md) only when changing, installing,
@@ -33,12 +34,23 @@ For a change that must apply to both local IIS and the deployed site, use
 The template maps these canonical extensionless paths to generated files:
 
 - `/catalog` -> `catalog.html`
-- `/about`, `/batt`, `/coil`, `/converter`, `/juice`, `/modrange`, `/ohm`,
-  `/tcr`, and `/wirewiz` -> the matching root `.html` file
-- `/catalog/battery/<slug>`, `/catalog/mod/<slug>`, and
-  `/catalog/material/<slug>` -> the matching category `.html` file
+- `/about`, `/privacy`, `/batt`, `/coil`, `/converter`, `/juice`, `/modrange`,
+  `/ohm`, `/tcr`, and `/wirewiz` -> the matching root `.html` file
+- `/compare/batteries`, `/compare/materials`, and `/compare/mods` -> the
+  matching `compare/<topic>.html` file
+- `/catalog/concept/<slug>`, `/catalog/battery/<slug>`, `/catalog/mod/<slug>`,
+  and `/catalog/material/<slug>` -> the matching category `.html` file
+- `/<locale>` -> `<locale>.html`, and `/<locale>/catalog`,
+  `/<locale>/<calculator>`, `/<locale>/compare/<topic>`, and
+  `/<locale>/catalog/<category>/<slug>` -> the same files under the locale
+  directory, for every enabled locale prefix
+- `/blog` and dated blog paths -> `blog/index.html` and the directory-index
+  blog pages
 - `/old/` -> `old/index.html`
 - `/old/<page>` -> `old/<page>.html`
+
+The locale prefix alternation in the template must list exactly the enabled
+locales from `src/i18n/locales.ts`.
 
 Legacy rules must remain extension-aware: requests for assets such as
 `old/se.css` and `old/tcr.js` must not be rewritten as pages.
@@ -64,9 +76,8 @@ internal rewrite rules:
 1. Inspect `tools/route-contract.json`, `tools/local-iis-web.config`, and the
    active `.iis-slots/` layout. Confirm the target file exists and identify
    whether the requested path is a page, asset, directory, rewrite, or redirect.
-2. Update the template with `apply_patch`. Use IIS rule backreferences such as
-   `{R:1}` for captures; keep IIS syntax independent from remote hosting
-   configuration syntax.
+2. Edit the template. Use IIS rule backreferences such as `{R:1}` for captures;
+   keep IIS syntax independent from remote hosting configuration syntax.
 3. If broker setup or diagnosis is in scope, follow `references/broker-contract.md`.
 4. Run `npm run build` from an ordinary Windows terminal. It holds the
    deployment lock, asks the broker to inspect IIS and create one lease, cleans
@@ -78,8 +89,8 @@ internal rewrite rules:
    If the build reports that the host identity is required, rerun it with
    host/unsandboxed approval as the pinned ordinary user. Do not call the broker
    unavailable until a host-side service query confirms it.
-5. Run `powershell -NoProfile -ExecutionPolicy Bypass -File
-   tools/test-route-contract.ps1`. It validates the contract's representative
+5. Run `npm run test:routes` (`tools/test-route-contract.ps1`) and
+   `npm run test:links`. The route test validates the contract's representative
    origin, canonical-redirect, and unsupported-route cases against the IIS
    template and generated slot `web.config`, including IIS rule order. Also
    confirm that canonical redirects precede exact-path rewrites and that no

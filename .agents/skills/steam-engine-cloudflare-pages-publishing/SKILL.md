@@ -35,9 +35,8 @@ Blog posts are not in this repository either; the build reads them from
 
 ## Refresh command knowledge
 
-Load the Cloudflare Wrangler skill and retrieve the current Pages Direct Upload
-documentation before changing Wrangler commands or deployment configuration.
-Require Wrangler 4 or newer:
+Consult the current Cloudflare Pages Direct Upload documentation before changing
+Wrangler commands or deployment configuration. Require Wrangler 4 or newer:
 
 ```powershell
 npx wrangler --version

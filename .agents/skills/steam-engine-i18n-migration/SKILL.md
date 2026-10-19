@@ -7,9 +7,12 @@ description: >-
 
 # Steam Engine static i18n migration
 
-Use this skill for bounded internationalization work under `C:\htdocs\steamengine`.
-Read `AGENTS.md` first. Keep the migration incremental and build-time: the site is a
-static multi-page Vite application, not a server-rendered application.
+Use this skill for bounded internationalization architecture work in this repository.
+Read `AGENTS.md` first. Keep the work incremental and build-time: the site is a
+static multi-page Vite application, not a server-rendered application. The original
+phased migration is complete and every locale in `src/i18n/locales.ts` is generated;
+the phases in `references/phases.md` now describe the surfaces a further architecture
+change must keep covered, for every enabled locale.
 
 ## Locked decisions
 

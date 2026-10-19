@@ -28,8 +28,8 @@ finding as:
 
 Search established target-language practice only when independent passes disagree,
 meaning or terminology is disputed, wording is safety-sensitive, or the recorded
-resource profile requires more evidence. Follow the add-locale research rules and the
-vaping-source skill when applicable. For a limited profile, use the best reasonably
+resource profile requires more evidence. Follow the research rules in the shared
+translation contract. For a limited profile, use the best reasonably
 available evidence and preserve the limitation; never require a service, corpus, or
 specialist that does not exist.
 

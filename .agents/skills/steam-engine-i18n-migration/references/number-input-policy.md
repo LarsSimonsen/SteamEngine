@@ -18,7 +18,8 @@ a text input.
 
 Resolve a raw value in this order:
 
-1. Use the page locale (`en` or `nb`) with `Intl.NumberFormat(...).formatToParts()`.
+1. Use the page locale from `src/i18n/locales.ts` with
+   `Intl.NumberFormat(...).formatToParts()`.
 2. Use `navigator.languages` and `navigator.language` as secondary browser hints when
    the page locale cannot explain the input.
 3. Remove recognized grouping separators, including regular spaces, non-breaking spaces,
@@ -35,7 +36,8 @@ changing the user's value.
 
 ## Required tests
 
-Cover at least these cases for English and Bokmål:
+Cover at least these cases for English, Bokmål, and every enabled locale whose
+decimal or grouping separators differ from both:
 
 - `1.5` and `1,5`;
 - `1234`, `1,234`, and `1.234`;

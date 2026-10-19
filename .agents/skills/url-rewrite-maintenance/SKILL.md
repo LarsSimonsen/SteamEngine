@@ -22,10 +22,12 @@ Use this skill whenever the requested behavior should be available in both.
 
 ## Shared route contract
 
-`tools/route-contract.json` is the source of truth for the intended public
-route contract. It records the generated origin layout, canonical slash policy,
-catalog categories, and route cases for generated origins, canonical redirects,
-and unsupported public paths.
+`SITE-STRUCTURE.md` is the normative specification of the public site
+structure, and `tools/route-contract.json` is its executable route matrix. The
+contract records the generated origin layout, canonical slash policy, catalog
+categories, and route cases for generated origins, canonical redirects, and
+unsupported public paths. If the two disagree, treat that as a defect and decide
+which artifact must change; never silently follow one of them.
 
 The provider implementations are then:
 
@@ -58,7 +60,7 @@ directory. Local IIS and the deployed site must implement this policy consistent
    exception change. Record the public source path, action, origin path or
    destination, query-string behavior, and whether the rule is local-only,
    remote-only, or shared.
-2. Read `tools/route-contract.json` first, then inspect
+2. Read `SITE-STRUCTURE.md` and `tools/route-contract.json` first, then inspect
    `tools/local-iis-web.config` and the generated origin layout before proposing
    changes.
 3. Prepare one paired change plan. Show the repository route or IIS template
@@ -70,17 +72,18 @@ directory. Local IIS and the deployed site must implement this policy consistent
    change requiring explicit approval and post-change HTTP verification. Do not
    infer permission to change remote hosting from permission to edit the
    repository.
-6. Complete the repository-side contract validation with
-   `tools/test-route-contract.ps1`, then complete the local build/XML/path
-   checks from the IIS skill and HTTP checks against the deployed site. If one
-   side cannot mirror the other, document the deliberate exception and its
-   affected paths.
+6. Complete the repository-side contract validation with `npm run test:routes`
+   and `npm run test:links`, then complete the local build/XML/path checks from
+   the IIS skill and HTTP checks against the deployed site. If one side cannot
+   mirror the other, document the deliberate exception and its affected paths.
 
 ## Consistency rules
 
 - Treat adding, removing, updating, or reordering shared routing as one paired
   change, not two independent edits.
-- Update the route contract before changing either provider implementation.
+- Update `SITE-STRUCTURE.md` and the route contract before changing either
+  provider implementation, and keep the specification, contract, implementation,
+  and tests in one change.
 - Treat a mismatch between the route contract and the deployed site as deployment
   drift; do not silently change the contract to match an old live rule.
 - Keep rules narrow enough that real files, assets, and nested paths are not

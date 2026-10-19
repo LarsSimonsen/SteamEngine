@@ -19,9 +19,10 @@ metadata, glossary, route, and publication rules. Use
   evidence only.
 - Ask only when a material locale/script choice remains ambiguous.
 - Complete every required entry without runtime English fallback.
-- A request to add a locale authorizes Google Translate for the bounded bulk draft
-  unless the user or project forbids external services. Evaluate its output and retain
-  machine provenance; it is never human review.
+- Draft with the active model's own target-language knowledge, as the shared contract
+  requires. An external translation provider is an optional research aid only when the
+  user explicitly authorizes it for the task; evaluate its output and retain machine
+  provenance either way. Machine drafting is never human review.
 - Stop before merge, deployment, or `approved` status unless explicitly requested.
 
 ## Implementation workflow
@@ -45,7 +46,7 @@ metadata, glossary, route, and publication rules. Use
    tests, full typecheck, tests, `npm run build`, and available narrow/wide browser or
    IIS checks of the full locale, including keyboard access, numeric input,
    persistence, exports, metadata, links, overflow, and bidi behavior.
-7. Create a `codex/locale-<tag>` branch in this repository, stage only the locale's
+7. Create a `locale/<tag>` branch in this repository, stage only the locale's
    translation, review, glossary, and required application files, commit, push, and open
    one draft pull request for the locale. Organize its description by bundle and list
    uncertain semantic IDs with confidence and consulted sources.

@@ -1,12 +1,13 @@
 ---
 name: steam-engine-related-language-review
-description: Compare existing Steam Engine translations within a related-language group against canonical English, correct clear meaning errors, and report uncertain differences. Use for language pairs or regional variants; not for adding locales, whole-locale quality cycles, parity migrations, or publishing.
+description: >-
+  Compare existing Steam Engine translations within a related-language group against
+  canonical English, correct clear meaning errors, and report uncertain differences.
+  Use for language pairs or regional variants; not for adding locales, whole-locale
+  quality cycles, parity migrations, or publishing.
 ---
 
 # Related-language translation review
-
-Adapted from Kampfisk's related-language review workflow for Steam Engine's
-English source, semantic message IDs and calculator interfaces.
 
 Read [the shared translation contract](../_shared/i18n-translation-contract.md)
 first. It owns locale scope, protected tokens, uncertainty, glossaries, per-ID review
@@ -23,7 +24,7 @@ languages; agreement between translations is a clue, never a vote.
   catalog consumers. A pilot is not a whole-locale critique or approval.
 - Run `npm run i18n:review:check` before relying on review records. Save a baseline
   of selected English and target entries, signatures and existing human attribution.
-- The adapted helper loads current source through the project's translation collector:
+- The helper loads current source through the project's translation collector:
 
   ```text
   node .agents/skills/steam-engine-related-language-review/scripts/compare.mjs pt,pt-BR calculators.batt
@@ -123,8 +124,8 @@ that same source state; any subsequent edit requires refreshed dependent records
 For translation changes, run `npm run i18n:review:check`,
 `npm run i18n:critique-queue`, `npm run typecheck`, applicable focused translation and
 calculator tests, and `npm run build`. Follow `AGENTS.md` for the IIS slot broker and
-host-identity execution requirements. Do not substitute Kampfisk's build commands or
-static HTML paths. Skill-only edits need skill/helper validation, not an application build.
+host-identity execution requirements. Skill-only edits need skill/helper validation,
+not an application build.
 Run `node --test .agents/skills/steam-engine-related-language-review/scripts/compare.test.mjs`
 for helper changes; it checks real exports against the shared collector and invalid inputs.
 
@@ -135,8 +136,8 @@ honestly and preserve locale availability. Use generated-site/link checks requir
 the affected surfaces; route-contract changes belong to their own coordinated task.
 
 Steam Engine permits validated machine drafts with a visible pending-human-review
-notice; do not import Kampfisk's locale authorization/signature gates. This workflow
-does not itself authorize enabling locales, accepting owner risk, merging, deploying
+notice; do not add locale authorization or signature gates from other projects. This
+workflow does not itself authorize enabling locales, accepting owner risk, merging, deploying
 or synchronizing an external translation repository. Follow the shared contract and
 any explicit user authorization. For requested commits, use
 [commit-changes](../commit-changes/SKILL.md) and separate skill changes from translation

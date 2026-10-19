@@ -65,9 +65,8 @@ applies to a subset.
   Run focused tests, full typecheck, tests, and `npm run build`. Perform browser
   or IIS checks proportional to the affected surface, including narrow and wide
   layouts and accessibility text.
-- Put all locale updates
-  caused by the same English change into one `codex/locale-parity-<topic>` branch and
-  one combined draft pull request.
+- Put all locale updates caused by the same English change into one
+  `locale-parity/<topic>` branch and one combined draft pull request.
 - Organize the PR description by locale and semantic ID. Distinguish preserved human
   translations from machine-updated entries, and include uncertainty and source
   summaries.
