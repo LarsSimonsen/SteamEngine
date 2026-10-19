@@ -3381,4 +3381,29 @@ export const batteryPresets: readonly DefaultBattery[] = [
             }
         },
     },
+    {
+        id: "battery-133",
+        slug: "eve-inr21700-40pl",
+        manufacturer: "EVE",
+        model: "INR21700/40PL",
+        formFactor: {
+            "kind": "cylindrical",
+            "sizeCode": "21700",
+            "nominalDiameterMm": 21,
+            "nominalLengthMm": 70,
+            "terminalStyle": "flat-top"
+        },
+        batteryAccess: "removable",
+        protected: false,
+        displayName: "EVE INR21700/40PL",
+        ratedCapacityMah: 4000,
+        continuousDischargeCurrentAmps: 45,
+        introduction: {
+            "latest": {
+                "date": "2024-09-24",
+                "event": "market-availability",
+                "relation": "no-later-than"
+            }
+        },
+    },
 ];

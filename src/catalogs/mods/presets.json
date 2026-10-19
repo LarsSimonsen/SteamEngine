@@ -11362,5 +11362,128 @@
                 "smartMode": "unknown"
             }
         }
+    },
+    {
+        "id": "preset-245",
+        "slug": "lost-vape-thelema-dna250c",
+        "manufacturer": "Lost Vape",
+        "model": "Thelema DNA250C",
+        "basedOnPresetId": "preset-217",
+        "maximumOutputVoltageVolts": 8,
+        "maximumOutputPowerWatts": 200,
+        "maximumOutputCurrentAmps": 30,
+        "minimumAtomizerResistanceOhms": 0.1,
+        "maximumAtomizerResistanceOhms": 3,
+        "introduction": {
+            "earliest": {
+                "date": "2021-01",
+                "event": "market-availability",
+                "relation": "no-earlier-than"
+            },
+            "latest": {
+                "date": "2021-01-20",
+                "event": "market-availability",
+                "relation": "no-later-than"
+            }
+        },
+        "batteryType": "removable",
+        "batteryConfigurations": [
+            {
+                "id": "native-18650-2s1p",
+                "profileIds": [
+                    "preset-245"
+                ],
+                "format": "18650",
+                "seriesCount": 2,
+                "parallelCount": 1,
+                "support": "native"
+            }
+        ],
+        "operatingFeatures": {
+            "outputModes": {
+                "voltage": "unsupported",
+                "power": "supported",
+                "current": "unsupported"
+            },
+            "capabilities": {
+                "temperatureControl": "supported",
+                "bypass": "unknown",
+                "powerCurve": "unknown",
+                "temperatureCurve": "unknown",
+                "configurableTcr": "unknown",
+                "preheat": "unknown",
+                "replay": "supported",
+                "smartMode": "unknown"
+            }
+        }
+    },
+    {
+        "id": "preset-246",
+        "slug": "steam-crave-hadron-plus-dna250c",
+        "manufacturer": "Steam Crave",
+        "model": "Hadron Plus DNA250C",
+        "basedOnPresetId": "preset-217",
+        "maximumOutputVoltageVolts": 10,
+        "maximumOutputPowerWatts": 200,
+        "maximumOutputCurrentAmps": 65,
+        "minimumAtomizerResistanceOhms": 0.02,
+        "maximumAtomizerResistanceOhms": 8,
+        "introduction": {
+            "latest": {
+                "date": "2021-09-16",
+                "event": "market-availability",
+                "relation": "no-later-than"
+            }
+        },
+        "batteryType": "removable",
+        "batteryConfigurations": [
+            {
+                "id": "dual-21700",
+                "profileIds": [
+                    "preset-246"
+                ],
+                "format": "21700",
+                "seriesCount": null,
+                "parallelCount": null,
+                "support": "native"
+            },
+            {
+                "id": "dual-20700",
+                "profileIds": [
+                    "preset-246"
+                ],
+                "format": "20700",
+                "seriesCount": null,
+                "parallelCount": null,
+                "support": "alternative"
+            },
+            {
+                "id": "dual-18650",
+                "profileIds": [
+                    "preset-246"
+                ],
+                "format": "18650",
+                "seriesCount": null,
+                "parallelCount": null,
+                "support": "alternative"
+            }
+        ],
+        "operatingFeatures": {
+            "outputModes": {
+                "voltage": "unsupported",
+                "power": "supported",
+                "current": "unsupported"
+            },
+            "capabilities": {
+                "temperatureControl": "unknown",
+                "bypass": "unknown",
+                "powerCurve": "unknown",
+                "temperatureCurve": "unknown",
+                "configurableTcr": "unknown",
+                "preheat": "unknown",
+                "replay": "unknown",
+                "smartMode": "unknown"
+            }
+        }
     }
 ]
