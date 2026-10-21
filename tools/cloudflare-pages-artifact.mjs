@@ -24,6 +24,33 @@ const removeEmptyDirectories = (directory, preserveRoot = true) => {
     if (!preserveRoot && fs.readdirSync(directory).length === 0) fs.rmdirSync(directory);
 };
 
+// Static files bypass the Worker so they do not count against the Workers daily request limit. Every path here
+// must resolve to an asset in the Worker, so excluding it does not change the response.
+export const cloudflareRoutes = {
+    version: 1,
+    include: ["/*"],
+    exclude: [
+        "/assets/*",
+        "/advertising/*",
+        "/blog/assets/*",
+        "/catalog/data/*",
+        "/old/static/*",
+        "/old/analytics.js",
+        "/old/se.css",
+        "/old/steam-engine.js",
+        "/old/tcr.js",
+        "/old/wirewiz2.css",
+        "/ads.txt",
+        "/blog/feed.xml",
+        "/favicon.ico",
+        "/sitemap.xml",
+    ],
+};
+
+export const cloudflareRouteExcludes = (pathname) => cloudflareRoutes.exclude.some((rule) => rule.endsWith("/*")
+    ? pathname.startsWith(rule.slice(0, -1))
+    : pathname === rule);
+
 export const cloudflareArtifactPathForOrigin = (originPath) => originPath === "index.html"
     ? originPath
     : originPath.endsWith("/index.html")
@@ -44,4 +71,5 @@ export const prepareCloudflarePagesArtifact = (artifactRoot) => {
     removeEmptyDirectories(artifactRoot);
     fs.writeFileSync(path.join(artifactRoot, "404.html"), notFoundPage, "utf8");
     fs.copyFileSync(workerSource, path.join(artifactRoot, "_worker.js"));
+    fs.writeFileSync(path.join(artifactRoot, "_routes.json"), `${JSON.stringify(cloudflareRoutes, null, 4)}\n`, "utf8");
 };

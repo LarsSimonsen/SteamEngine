@@ -1,7 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { cloudflareArtifactPathForOrigin } from "./cloudflare-pages-artifact.mjs";
+import {
+    cloudflareArtifactPathForOrigin, cloudflareRouteExcludes, cloudflareRoutes,
+} from "./cloudflare-pages-artifact.mjs";
 import cloudflareWorker, { blogRedirectTargetFor, resolveCloudflareRequest } from "./cloudflare-pages-worker.mjs";
 
 const projectRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -18,6 +20,37 @@ const assert = (condition, message) => {
 assert(fs.existsSync(path.join(artifactRoot, "_worker.js")), "Cloudflare artifact is missing _worker.js.");
 assert(fs.existsSync(path.join(artifactRoot, "404.html")), "Cloudflare artifact is missing 404.html.");
 assert(!fs.existsSync(path.join(artifactRoot, "web.config")), "Cloudflare artifact includes local IIS web.config.");
+const routesPath = path.join(artifactRoot, "_routes.json");
+assert(fs.existsSync(routesPath), "Cloudflare artifact is missing _routes.json.");
+assert(JSON.stringify(JSON.parse(fs.readFileSync(routesPath, "utf8"))) === JSON.stringify(cloudflareRoutes),
+    "Cloudflare artifact _routes.json does not match the generator.");
+const routeRules = [...cloudflareRoutes.include, ...cloudflareRoutes.exclude];
+assert(routeRules.length <= 100 && routeRules.every((rule) => rule.startsWith("/") && rule.length <= 100),
+    "_routes.json must stay within the Cloudflare limit of 100 rules of at most 100 characters.");
+assert(cloudflareRoutes.exclude.every((rule) => !rule.slice(0, -1).includes("*")),
+    "_routes.json exclusions may only use a trailing wildcard.");
+
+const listArtifactFiles = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = path.join(directory, entry.name);
+    return entry.isDirectory() ? listArtifactFiles(entryPath) : [entryPath];
+});
+for (const filePath of listArtifactFiles(artifactRoot)) {
+    const pathname = `/${path.relative(artifactRoot, filePath).split(path.sep).join("/")}`;
+    if (pathname === "/_worker.js" || pathname === "/_routes.json") continue;
+    const isPage = pathname.endsWith(".html");
+    if (cloudflareRouteExcludes(pathname)) {
+        assert(!isPage, `${pathname} is a page and must not bypass the Worker.`);
+        assert(resolveCloudflareRequest(pathname).kind === "asset",
+            `${pathname} bypasses the Worker but the Worker would not serve it as an asset.`);
+    } else {
+        assert(isPage, `${pathname} is a static file that should be excluded in _routes.json.`);
+    }
+}
+for (const routeCase of contract.routeCases) {
+    if (resolveCloudflareRequest(routeCase.publicPath).kind === "asset") continue;
+    assert(!cloudflareRouteExcludes(routeCase.publicPath),
+        `${routeCase.publicPath} needs the Worker but is excluded in _routes.json.`);
+}
 // Blog posts are kept outside the public repository, so a public checkout builds a blog without posts.
 const blogFeed = fs.readFileSync(path.join(artifactRoot, "blog", "feed.xml"), "utf8");
 const builtWithBlogContent = blogFeed.includes("<item>");

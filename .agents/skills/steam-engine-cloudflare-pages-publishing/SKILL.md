@@ -76,10 +76,14 @@ Cloudflare artifact test. It then:
 - converts directory-index blog and legacy pages to the slashless layout Pages
   needs for this route contract;
 - writes `404.html` so unknown paths do not fall back to the home page; and
-- copies the route-parity Worker to `_worker.js`.
+- copies the route-parity Worker to `_worker.js`; and
+- writes `_routes.json` so static files bypass the Worker and do not count
+  against the account's daily Workers request limit.
 
-Inspect the artifact and confirm that `_worker.js` and `404.html` exist while
-`web.config` does not. Never deploy a partial or failed build.
+Inspect the artifact and confirm that `_worker.js`, `_routes.json` and
+`404.html` exist while `web.config` does not. A new kind of static file outside
+the excluded paths fails the artifact test; add it to `cloudflareRoutes` in
+`tools/cloudflare-pages-artifact.mjs` rather than letting it run the Worker. Never deploy a partial or failed build.
 
 Blog posts are kept outside this repository. Confirm that
 `.build-runs/cloudflare-artifact/blog/feed.xml` contains `<item>` entries and
