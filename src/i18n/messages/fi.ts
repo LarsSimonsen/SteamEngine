@@ -15,6 +15,7 @@ export const messages = {
         "language": "Kieli",
         "languageFilter": "Suodata kieliä",
         "noLanguageMatches": "Kieliä ei löytynyt.",
+        "languageMatches": (count: number) => `Löydetyt kielet: ${count}`,
         "skipToContent": "Siirry pääsisältöön",
     },
     "theme": {

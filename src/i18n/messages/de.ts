@@ -13,6 +13,7 @@ export const messages = {
         "language": "Sprache",
         "languageFilter": "Sprachen filtern",
         "noLanguageMatches": "Keine Sprachen gefunden.",
+        "languageMatches": (count: number) => `Gefundene Sprachen: ${count}`,
         "skipToContent": "Zum Hauptinhalt springen"
     },
     "theme": {

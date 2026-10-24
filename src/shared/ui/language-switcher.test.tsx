@@ -22,12 +22,17 @@ describe("language switcher", () => {
         expect(screen.getByRole("link", { name: /Bokmål/ })).toHaveAttribute("href", "nb/ohm");
         expect(screen.getByText("Norwegian Bokmål", { selector: ".sr-only" })).toBeInTheDocument();
 
+        expect(trigger).toHaveAttribute("aria-expanded", "true");
+        expect(trigger).not.toHaveAttribute("aria-haspopup");
+        expect(screen.getByRole("status")).toBeEmptyDOMElement();
+
         fireEvent.change(screen.getByRole("textbox"), { target: { value: "norwegian" } });
+        expect(screen.getByRole("status")).toHaveTextContent("Languages found: 2");
         expect(screen.getByRole("link", { name: /Bokmål/ })).toBeInTheDocument();
         expect(screen.queryByRole("link", { name: /^English/ })).not.toBeInTheDocument();
 
         fireEvent.change(screen.getByRole("textbox"), { target: { value: "unknown" } });
-        expect(screen.getByText("No languages found.")).toBeInTheDocument();
+        expect(screen.getByRole("status")).toHaveTextContent("No languages found.");
     });
 
     it("marks each language name and its English alias with their own language", () => {
@@ -46,10 +51,12 @@ describe("language switcher", () => {
         fireEvent.click(screen.getByRole("button", { name: "Språk: Bokmål" }));
         const filter = screen.getByRole("textbox", { name: "Filtrer språk" });
         fireEvent.change(filter, { target: { value: "unknown" } });
-        expect(screen.getByText("Ingen språk funnet.")).toBeInTheDocument();
+        expect(screen.getByRole("status")).toHaveTextContent("Ingen språk funnet.");
 
         fireEvent.keyDown(filter, { key: "Escape" });
         expect(screen.queryByRole("textbox")).not.toBeInTheDocument();
+        expect(screen.getByRole("button", { name: "Språk: Bokmål" })).toHaveFocus();
+        expect(screen.getByRole("button", { name: "Språk: Bokmål" })).not.toHaveAttribute("aria-controls");
 
         fireEvent.click(screen.getByRole("button", { name: "Språk: Bokmål" }));
         expect(screen.getByRole("textbox")).toHaveValue("");

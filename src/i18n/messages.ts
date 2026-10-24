@@ -13,6 +13,7 @@ export type SharedMessages = {
         readonly language: string;
         readonly languageFilter: string;
         readonly noLanguageMatches: string;
+        readonly languageMatches: (count: number) => string;
         readonly skipToContent: string;
     };
     readonly theme: {

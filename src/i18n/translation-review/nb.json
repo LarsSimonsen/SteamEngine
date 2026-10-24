@@ -12725,6 +12725,17 @@
             "reviewer": "LarsSimonsen",
             "reviewedAt": "2026-08-09"
         },
+        "messages.navigation.languageMatches": {
+            "sourceSignature": "da57ec47683f47da3c3d15318d221a24ccf043edc7535a9209a55cdd2ab3fd37",
+            "translationSignature": "42ed7b371ba4db341f9b351e9121d48117d2f69d16ab7cf541cc48ed510d8228",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.navigation.noLanguageMatches": {
             "sourceSignature": "b266ff86e2b625992e685e2e26731f43ed532ce1f1f685639851472106b645f1",
             "translationSignature": "3e45cc568e0a6f972b81d1998159771982563305db7d2c6de52fd167638d8fba",

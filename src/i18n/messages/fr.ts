@@ -13,6 +13,7 @@ export const messages: SharedMessages = {
         "language": "Langue",
         "languageFilter": "Filtrer les langues",
         "noLanguageMatches": "Aucune langue trouvée.",
+        "languageMatches": (count: number) => `Langues trouvées : ${count}`,
         "skipToContent": "Aller au contenu principal"
     },
     "theme": {

@@ -13,6 +13,7 @@ export const messages = {
         "language": "Ngôn ngữ",
         "languageFilter": "Lọc ngôn ngữ",
         "noLanguageMatches": "Không tìm thấy ngôn ngữ nào.",
+        "languageMatches": (count: number) => `Số ngôn ngữ tìm thấy: ${count}`,
         "skipToContent": "Chuyển đến nội dung chính"
     },
     "theme": {

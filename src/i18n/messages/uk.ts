@@ -11,6 +11,7 @@ export const messages = {
         "language": "Мова",
         "languageFilter": "Фільтрувати мови",
         "noLanguageMatches": "Мови не знайдено.",
+        "languageMatches": (count: number) => `Знайдено мов: ${count}`,
         "skipToContent": "Перейти до основного вмісту"
     },
     "theme": {

@@ -70,8 +70,7 @@ export const LanguageSwitcher = ({ locale, navigation }: LanguageSwitcherProps):
             type="button"
             ref={triggerRef}
             aria-expanded={isOpen}
-            aria-controls="language-switcher-options"
-            aria-haspopup="true"
+            aria-controls={isOpen ? "language-switcher-options" : undefined}
             aria-label={`${navigation.language}: ${currentDefinition.name}`}
             onClick={() => (isOpen ? closeMenu() : setIsOpen(true))}
         >
@@ -103,7 +102,15 @@ export const LanguageSwitcher = ({ locale, navigation }: LanguageSwitcherProps):
                     </a>
                 </li>)}
             </ul>
-            {visibleDefinitions.length === 0 && <p className="language-switcher__empty">{navigation.noLanguageMatches}</p>}
+            {visibleDefinitions.length === 0
+                && <p className="language-switcher__empty" aria-hidden="true">{navigation.noLanguageMatches}</p>}
+            <p className="sr-only" role="status">
+                {normalizedFilter === ""
+                    ? ""
+                    : visibleDefinitions.length === 0
+                        ? navigation.noLanguageMatches
+                        : navigation.languageMatches(visibleDefinitions.length)}
+            </p>
         </div>}
     </div>;
 };

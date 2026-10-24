@@ -11,6 +11,7 @@ export const messages: SharedMessages = {
         language: "Språk",
         languageFilter: "Filtrer språk",
         noLanguageMatches: "Ingen språk funnet.",
+        languageMatches: (count: number) => `Språk funnet: ${count}`,
         skipToContent: "Gå til hovedinnholdet",
     },
     theme: { switchToLight: "Bytt til lys modus", switchToDark: "Bytt til mørk modus" },

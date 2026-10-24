@@ -13,6 +13,7 @@ export const messages: SharedMessages = {
         "language": "语言",
         "languageFilter": "过滤语言",
         "noLanguageMatches": "未找到语言。",
+        "languageMatches": (count: number) => `找到的语言：${count}`,
         "skipToContent": "跳到主要内容"
     },
     "theme": {
