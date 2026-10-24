@@ -28,7 +28,7 @@
     margin-top: 0.75rem;
     text-decoration: none;
 }
-.mod-range-preset-status, .mod-range-preset-help { display: block; margin-top: -0.5rem; font-size: 0.9rem; }
+.mod-range-preset-status, .mod-range-preset-help { display: block; margin-top: 0.5rem; font-size: 0.9rem; }
 .mod-range-preset-status,
 .mod-range-preset-help { color: var(--se-muted); }
 .mod-range-inputs h2 { margin: 0 0 1rem; font-size: 1.6rem; }

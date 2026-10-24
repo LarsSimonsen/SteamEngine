@@ -334,9 +334,6 @@ export const ModRangeCalculator = (): ReactElement => {
                 {selectedCustomMod !== undefined && <span className="mod-range-preset-status">
                     {messages.customMod}
                 </span>}
-                {selectedPreset === '' && <small className="mod-range-preset-status">
-                    {sharedMessages.customValues}
-                </small>}
             </section>
             <section className="se-card mod-range-card mod-range-inputs" aria-labelledby="mod-range-title">
                 <h2 id="mod-range-title">{messages.specs}</h2>
