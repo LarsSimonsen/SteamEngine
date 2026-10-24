@@ -30,6 +30,11 @@ them. The sweep fails only on violations that are not listed. When a change fixe
 from the baseline in the same change. Never add entries by hand to hide a new violation. Run
 `npm run test:a11y:baseline` to rewrite the file from a fresh scan, then review the diff: it should only shrink.
 
+Component tests can run the same WCAG rules in jsdom with `axeViolations` from `src/shared/test-axe.ts`, as
+`src/shared/ui/accessibility.test.tsx` does for the shared header, footer, language switcher, form fields and error
+dialog. Render the component in the state to check, then expect `await axeViolations(container)` to equal `[]`.
+jsdom cannot measure colour contrast, so the e2e sweep covers that.
+
 ## Catalog data
 
 The battery, coil-material and mod catalogs and the encyclopedia research summaries are generated from a private
