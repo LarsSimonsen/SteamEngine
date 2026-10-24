@@ -182,9 +182,8 @@ describe("Wire Wizard material manager", () => {
         fireEvent.change(materialSelect, { target: { value: customOption.getAttribute("value") } });
         fireEvent.click(screen.getByRole("button", { name: "Delete" }));
 
-        expect(screen.getByRole("status")).toHaveTextContent(
-            "Cannot delete Test alloy; it is used by Current Wire Wizard design.",
-        );
+        expect(screen.getByText("Cannot delete Test alloy; it is used by Current Wire Wizard design."))
+            .toHaveAttribute("role", "status");
     });
 
     it("persists the active wire and coil design across mounts", () => {
@@ -227,7 +226,7 @@ describe("Wire Wizard material manager", () => {
 
     it("preserves, validates, and explicitly applies temperature point drafts", async () => {
         render(<WireWizard />);
-        fireEvent.click(screen.getByRole("tab", { name: "TFR editor" }));
+        fireEvent.click(screen.getByRole("button", { name: "TFR editor" }));
         const temperatures = screen.getByRole("textbox", { name: /Temperature points/ });
         const apply = screen.getByRole("button", { name: "Apply temperature points" });
         expect(apply).toBeDisabled();
@@ -296,9 +295,11 @@ describe("Wire Wizard material manager", () => {
     it("shows the temperature scale toggle only for the graph", async () => {
         const { container } = render(<WireWizard />);
 
-        screen.getAllByRole("tab").forEach((button) => {
+        const views = screen.getByRole("group", { name: "Temperature control" });
+        within(views).getAllByRole("button").forEach((button) => {
             expect(button).toHaveClass("se-button--compact");
         });
+        expect(within(views).getByRole("button", { name: "Graph" })).toHaveAttribute("aria-pressed", "true");
         await waitFor(() => expect(
             within(screen.getByRole("region", { name: "Results" })).getByText("Resistance"),
         ).toBeInTheDocument());
@@ -307,9 +308,9 @@ describe("Wire Wizard material manager", () => {
         within(scaleToggle).getAllByRole("button").forEach((button) => {
             expect(button).toHaveClass("se-button--compact");
         });
-        fireEvent.click(screen.getByRole("tab", { name: "Table" }));
+        fireEvent.click(screen.getByRole("button", { name: "Table" }));
         expect(screen.queryByRole("group", { name: "Temperature scale" })).not.toBeInTheDocument();
-        fireEvent.click(screen.getByRole("tab", { name: "Graph" }));
+        fireEvent.click(screen.getByRole("button", { name: "Graph" }));
         expect(screen.getByRole("group", { name: "Temperature scale" })).toBeInTheDocument();
     });
 
@@ -328,8 +329,9 @@ describe("Wire Wizard material manager", () => {
         }));
         render(<WireWizard />);
 
-        fireEvent.click(screen.getByRole("tab", { name: "Equivalents" }));
-        await waitFor(() => expect(screen.getByRole("status")).toBeInTheDocument());
+        fireEvent.click(screen.getByRole("button", { name: "Equivalents" }));
+        const equivalentsResult = (): Element | null => document.querySelector(".wirewiz-equivalents__result");
+        await waitFor(() => expect(equivalentsResult()).toHaveAttribute("role", "status"));
         const celsius = screen.getByRole("spinbutton", { name: "Celsius (°C)" });
         const fahrenheit = screen.getByRole("spinbutton", { name: "Fahrenheit (°F)" });
         expect(celsius).toHaveValue(210);
@@ -348,7 +350,7 @@ describe("Wire Wizard material manager", () => {
             name: "Test reference alloy",
         })).toBeInTheDocument();
         fireEvent.change(referenceMaterial, { target: { value: "test-reference" } });
-        await waitFor(() => expect(screen.getByRole("status")).toHaveTextContent("Test reference alloy"));
+        await waitFor(() => expect(equivalentsResult()).toHaveTextContent("Test reference alloy"));
 
         const saved = JSON.parse(localStorage.getItem(wireWizardStorageKey) ?? "{}");
         expect(saved.settings).not.toHaveProperty("equivalenceTemperatureCelsius");

@@ -5,33 +5,6 @@
         ],
         ".se-alert > a[href$=\"wirewiz\"]": [
             "/tcr"
-        ],
-        ".wirewiz-wire-card__summary > div:nth-child(1) > dt": [
-            "/wirewiz"
-        ],
-        ".wirewiz-wire-card__summary > div:nth-child(2) > dt": [
-            "/wirewiz"
-        ],
-        ".wirewiz-wire-card__summary > div:nth-child(3) > dt": [
-            "/wirewiz"
-        ],
-        ".wirewiz-wire-card__summary > div:nth-child(4) > dt": [
-            "/wirewiz"
-        ],
-        "#wirewiz-results > details:nth-child(3) > summary": [
-            "/wirewiz"
-        ],
-        "details:nth-child(4) > summary": [
-            "/wirewiz"
-        ],
-        "details:nth-child(5) > summary": [
-            "/wirewiz"
-        ],
-        "div:nth-child(3) > dt > small": [
-            "/wirewiz"
-        ],
-        "h4": [
-            "/wirewiz"
         ]
     }
 }

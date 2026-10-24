@@ -52,6 +52,7 @@ import { CalculatorLegacyNote, CalculatorPageHeader } from "../../shared/ui/calc
 import { CatalogSelectOptions } from "../../shared/ui/catalog-select-options";
 import { EmbeddedConverter } from "../converter/embedded-converter";
 import { SiteLayout } from "../../shared/ui/site-layout";
+import { ResultAnnouncement, resultSummary } from "../../shared/ui/result-announcement";
 import { calculatorMessagesFor, type CalculatorRouteMessages } from "../../i18n/calculator-messages";
 import { pageLocale } from "../../i18n/page-locale";
 import { awgToMm, mmToAwg } from "../../shared/domain/wire-units";
@@ -254,7 +255,7 @@ const WireEditor = ({
             {showResults && (
                 <section id={depth === 0 ? "wirewiz-results" : undefined}
                     className="wirewiz-wire-card__results" aria-label={messages.results}>
-                    <h4>{messages.results}</h4>
+                    <h3>{messages.results}</h3>
                     <dl className="wirewiz-wire-card__summary">
                         <div>
                             <dt>{messages.resistance}</dt>
@@ -803,6 +804,13 @@ export const WireWizard = (): ReactElement => {
                         {messages.results} ↓
                     </a>
                 </aside>
+                <ResultAnnouncement summary={validCalculation && resultSummary(pageLocale(), [
+                    `${messages.resistance} ${formatResult(validCalculation.root.resistance, 3)} Ω`,
+                    `${messages.length} ${formatResult(validCalculation.root.length, 1)} mm`,
+                    ...validCalculation.root.heatCapacity === null ? [] : [
+                        `${messages.heatCapacity} ${formatResult(validCalculation.root.heatCapacity, 1)} mJ/K`,
+                    ],
+                ])} />
                 <div className="wirewiz-layout">
                     <section className="se-card wirewiz-panel wirewiz-coil-parameters">
                         <h2>{messages.coilParameters}</h2>
@@ -884,16 +892,15 @@ export const WireWizard = (): ReactElement => {
                     </section>
                     <section className="se-card wirewiz-panel wirewiz-temperature">
                         <header className="wirewiz-temperature__header">
-                            <h2>{messages.temperatureControl}</h2>
+                            <h2 id="wirewiz-temperature-title">{messages.temperatureControl}</h2>
                             <div className="wirewiz-temperature__controls">
-                                <div className="wirewiz-tabs" role="tablist">
+                                <div className="wirewiz-tabs" role="group" aria-labelledby="wirewiz-temperature-title">
                                     {(["tfr", "graph", "table", "equivalents", "dna"] as const).map((item) => (
                                         <button
                                             key={item}
                                             className="se-button se-button--compact"
                                             type="button"
-                                            role="tab"
-                                            aria-selected={tab === item}
+                                            aria-pressed={tab === item}
                                             onClick={() => setTab(item)}
                                         >
                                             {item === "tfr"
