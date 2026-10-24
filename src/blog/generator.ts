@@ -129,6 +129,45 @@ export const readBlogPosts = (contentDirectory: string): BlogPost[] => {
     return posts;
 };
 
+export type BlogImageAltIssue = Readonly<{
+    post: string;
+    src: string;
+    alt?: string;
+}>;
+
+const imageTagPattern = /<img\b[^>]*>/gi;
+
+const attributeValue = (tag: string, name: string): string | undefined => {
+    const match = tag.match(new RegExp(`\\s${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`, "i"));
+    return match ? match[1] ?? match[2] ?? match[3] : undefined;
+};
+
+// WordPress-style uploads append "-300x200" sizes and "-e1471949543105" edit stamps to the file name.
+const fileStem = (src: string): string => (src.split(/[?#]/)[0].split("/").pop() ?? "")
+    .replace(/\.[a-z0-9]+$/i, "")
+    .replace(/-\d+x\d+$/, "")
+    .replace(/-e\d+$/, "")
+    .toLowerCase();
+
+// A single token that repeats the file name, has a separator or ends in an image extension, such as
+// "misthub-ohms-law-chart1", names a file rather than describing the image.
+const looksLikeFileName = (alt: string, src: string): boolean => {
+    const token = alt.trim();
+    return !/\s/.test(token) && (/[-_]/.test(token) || /\.(?:avif|gif|jpe?g|png|svg|webp)$/i.test(token)
+        || token.toLowerCase() === fileStem(src));
+};
+
+/**
+ * Lists post images without a text alternative or with a file name as their alt text. Images marked decorative
+ * with alt="" are fine.
+ */
+export const findBlogImageAltIssues = (posts: readonly Pick<BlogPost, "slug" | "body">[]): BlogImageAltIssue[] =>
+    posts.flatMap((post) => [...post.body.matchAll(imageTagPattern)].flatMap(([tag]) => {
+        const alt = attributeValue(tag, "alt");
+        const src = attributeValue(tag, "src") ?? "";
+        return alt === undefined || looksLikeFileName(alt, src) ? [{ post: post.slug, src, alt }] : [];
+    }));
+
 const postPath = (post: BlogPost): string => {
     const date = post.published.slice(0, 10).split("-");
     return `${blogBasePath}/${date[0]}/${date[1]}/${date[2]}/${post.slug}`;
@@ -412,6 +451,14 @@ export const buildBlog = ({ sourceDirectory, contentDirectory, outputDirectory }
     const visiblePosts = publicPosts(posts);
     if (posts.length === 0) {
         console.warn(`Building the blog without posts: no blog content in ${contentDirectory}.`);
+    }
+    // The blog content lives outside this repository; this report keeps missing alt text visible until it is
+    // fixed there, after which it should fail the build.
+    const imageAltIssues = findBlogImageAltIssues(posts);
+    if (imageAltIssues.length > 0) {
+        const lines = imageAltIssues.map((issue) =>
+            `  ${issue.post}: ${issue.src} (${issue.alt === undefined ? "no alt" : `alt="${issue.alt}"`})`);
+        console.warn(`Blog images without a text alternative (${imageAltIssues.length}):\n${lines.join("\n")}`);
     }
     fs.rmSync(outputDirectory, { force: true, recursive: true });
     fs.mkdirSync(outputDirectory, { recursive: true });
