@@ -74,6 +74,18 @@ describe('OhmCalculator', () => {
         await waitFor(() => expect(screen.getByLabelText('Current I')).toHaveValue(1.6));
     });
 
+    it('announces a result summary once the recalculated values settle', async () => {
+        render(<OhmCalculator />);
+        const announcement = screen.getAllByRole('status').find((status) => status.classList.contains('sr-only'))!;
+        expect(announcement).toBeEmptyDOMElement();
+
+        fireEvent.change(screen.getByLabelText('Voltage U'), { target: { value: '4' } });
+
+        await waitFor(() => expect(announcement).toHaveTextContent(
+            'Resistance 2.5 Ω, Voltage 4 V, Current 1.6 A, Power 6.4 W',
+        ), { timeout: 3000 });
+    });
+
     it('resets values and lock behavior independently from their owning panels', async () => {
         render(<OhmCalculator />);
         const valuesPanel = screen.getByRole('region', { name: 'Values' });
@@ -90,7 +102,7 @@ describe('OhmCalculator', () => {
         expect(lockSelectors[0]).toHaveValue('current');
         expect(within(lockPanel).getByRole('button', { name: 'Reset' })).toBeVisible();
         expect(within(valuesPanel).queryByRole('button', { name: 'Reset' })).not.toBeInTheDocument();
-        expect(within(valuesPanel).getByRole('status')).toHaveTextContent('Default settings have been restored.');
+        expect(within(valuesPanel).getByText('Default settings have been restored.')).toHaveAttribute('role', 'status');
 
         fireEvent.change(screen.getByLabelText('Voltage U'), { target: { value: '4' } });
         await waitFor(() => expect(screen.getByLabelText('Resistance R')).toHaveValue(2.86));

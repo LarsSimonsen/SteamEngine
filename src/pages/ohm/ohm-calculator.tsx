@@ -28,6 +28,7 @@ import { parseNumericInput } from '../../shared/domain/numeric';
 import { messagesFor } from '../../i18n/messages';
 import { CalculatorLegacyNote, CalculatorPageHeader } from '../../shared/ui/calculator-page-header';
 import { SiteLayout } from '../../shared/ui/site-layout';
+import { ResultAnnouncement, resultSummary } from '../../shared/ui/result-announcement';
 import { TransientMessage, transientMessageDuration } from '../../shared/ui/transient-message';
 import './ohm.css';
 
@@ -230,6 +231,8 @@ export const OhmCalculator = (): ReactElement => {
                     error={invalidFields[field] ? <>{labels[field]} &gt; 0</> : undefined}
                     fieldClassName="ohm-field" errorClassName="ohm-field-error"
                     inputWrapperClassName="ohm-input" />)}
+                <ResultAnnouncement summary={resultSummary(locale, fields.map(({ field, unit }) =>
+                    `${labels[field]} ${format(state.values[field])} ${unit}`))} />
             </section>
             <section className="se-card ohm-card lock-card" aria-labelledby="lock-title">
                 <div className="se-split-heading se-split-heading--center ohm-heading lock-heading">
