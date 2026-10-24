@@ -19,7 +19,7 @@
 .ohm-card { position: relative; }
 .lock-card h2 { margin-top: 0; }
 .simple-locks { display: grid; gap: 0.75rem; }
-.simple-lock-rule { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8rem, 0.45fr); gap: 1rem;
+.simple-lock-rule { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8rem, max-content); gap: 1rem;
     align-items: center; padding: 0.75rem; background: color-mix(in srgb, var(--se-body-bg) 65%, transparent);
     border: 1px solid var(--se-border); border-radius: 0.25rem; line-height: 1.45; }
 .simple-lock-rule select { width: 100%; min-height: 2.75rem; padding: 0.5rem 2rem 0.5rem 0.65rem; color: var(--se-text);
@@ -36,8 +36,7 @@
 .help-text { color: var(--se-muted); }
 .lock-summary { margin: 0.75rem 0 0; line-height: 1.5; }
 .ohm-card .notice { position: absolute; top: 0.75rem; right: 1.5rem; z-index: 1; max-width: calc(100% - 3rem);
-    margin: 0; cursor: pointer; animation: ohm-notice-fade 1s ease-in 9s forwards; }
-@keyframes ohm-notice-fade { to { opacity: 0; } }
+    margin: 0; }
 .ohm-about { max-width: 760px; margin-top: 2rem; line-height: 1.6; }
 @media (max-width: 800px) {
     .ohm-layout { grid-template-columns: 1fr; }
