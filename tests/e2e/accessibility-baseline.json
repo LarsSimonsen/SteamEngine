@@ -20,51 +20,8 @@
         ]
     },
     "color-contrast": {
-        ".is-active": [
-            "/catalog"
-        ],
-        ".juice-carrier-option--selected": [
-            "/juice"
-        ],
         ".juice-status": [
             "/juice"
-        ],
-        ".language-switcher__trigger": [
-            "/",
-            "/batt",
-            "/catalog",
-            "/catalog/battery/lg-18650hg2",
-            "/catalog/concept/ohms-law",
-            "/catalog/material/kanthal-a1",
-            "/catalog/mod/acesmok-ace50",
-            "/coil",
-            "/compare/batteries",
-            "/compare/materials",
-            "/compare/mods",
-            "/converter",
-            "/juice",
-            "/modrange",
-            "/ohm",
-            "/tcr",
-            "/wirewiz"
-        ],
-        ".se-button--compact.se-button[role=\"tab\"]:nth-child(2)": [
-            "/wirewiz"
-        ],
-        ".site-nav__global > a[href$=\"blog\"]": [
-            "/"
-        ],
-        ".site-nav__global > a[href$=\"catalog\"]": [
-            "/",
-            "/compare/batteries",
-            "/compare/materials",
-            "/compare/mods"
-        ],
-        ".tcr-controls > .se-button.se-button--primary": [
-            "/tcr"
-        ],
-        ".wirewiz-scale-toggle > .se-button--compact.se-button:nth-child(1)": [
-            "/wirewiz"
         ],
         ".wirewiz-wire-card__summary > div:nth-child(1) > dt": [
             "/wirewiz"
@@ -81,76 +38,7 @@
         "#wirewiz-results > details:nth-child(3) > summary": [
             "/wirewiz"
         ],
-        "a[aria-current=\"page\"]": [
-            "/batt",
-            "/coil",
-            "/juice",
-            "/modrange",
-            "/ohm",
-            "/wirewiz"
-        ],
-        "a[href$=\"about\"]": [
-            "/",
-            "/batt",
-            "/blog",
-            "/blog/<article>",
-            "/blog/page/<n>",
-            "/catalog",
-            "/catalog/battery/lg-18650hg2",
-            "/catalog/concept/ohms-law",
-            "/catalog/material/kanthal-a1",
-            "/catalog/mod/acesmok-ace50",
-            "/coil",
-            "/compare/batteries",
-            "/compare/materials",
-            "/compare/mods",
-            "/converter",
-            "/juice",
-            "/modrange",
-            "/ohm",
-            "/privacy",
-            "/tcr",
-            "/wirewiz"
-        ],
-        "a[href$=\"blog\"]": [
-            "/about",
-            "/batt",
-            "/catalog",
-            "/catalog/battery/lg-18650hg2",
-            "/catalog/concept/ohms-law",
-            "/catalog/material/kanthal-a1",
-            "/catalog/mod/acesmok-ace50",
-            "/coil",
-            "/compare/batteries",
-            "/compare/materials",
-            "/compare/mods",
-            "/converter",
-            "/juice",
-            "/modrange",
-            "/ohm",
-            "/privacy",
-            "/tcr",
-            "/wirewiz"
-        ],
-        "a[href$=\"catalog\"]": [
-            "/about",
-            "/batt",
-            "/blog",
-            "/blog/<article>",
-            "/blog/page/<n>",
-            "/coil",
-            "/converter",
-            "/juice",
-            "/modrange",
-            "/ohm",
-            "/privacy",
-            "/tcr",
-            "/wirewiz"
-        ],
         "aside > a[href$=\"wirewiz\"]": [
-            "/tcr"
-        ],
-        "button[aria-label=\"Temperature scale: °F\"]": [
             "/tcr"
         ],
         "details:nth-child(4) > summary": [

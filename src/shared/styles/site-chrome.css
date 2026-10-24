@@ -12,10 +12,10 @@
     --se-button-font-weight: 400;
     --se-icon-size: 1rem;
     --se-button-active: #3579ad;
-    --se-button-active-hover: #418bca;
+    --se-button-active-hover: #2a6496;
     --se-button-active-text: #fff;
     --se-button-secondary-active: #5d7486;
-    --se-button-secondary-active-hover: #6d879a;
+    --se-button-secondary-active-hover: #516879;
     --se-button-secondary-active-text: #fff;
     --se-button-passive: #3a3a3a;
     --se-button-passive-hover: #474747;
@@ -29,7 +29,7 @@
     --se-danger-text: #ffb4b4;
     --se-warning-text: #f8c471;
     --se-alert-warning-text: #f39c12;
-    --se-brand-blue: #428bca;
+    --se-brand-blue: #2f6fa8;
     --se-header-text: #fff;
     --se-header-text-hover: #eaf4fd;
     color: var(--se-text);
@@ -46,11 +46,11 @@
     --se-text: #212529;
     --se-muted: #5d6772;
     --se-border: rgb(0 0 0 / 18%);
-    --se-button-active: #418bca;
-    --se-button-active-hover: #347bb5;
+    --se-button-active: #2f6fa8;
+    --se-button-active-hover: #285f91;
     --se-button-active-text: #fff;
-    --se-button-secondary-active: #8fa5b5;
-    --se-button-secondary-active-hover: #7c96a9;
+    --se-button-secondary-active: #5d7486;
+    --se-button-secondary-active-hover: #516879;
     --se-button-secondary-active-text: #fff;
     --se-button-passive: #e9eef3;
     --se-button-passive-hover: #dbe4ec;
@@ -163,7 +163,7 @@ a:focus-visible {
 .site-nav__global a:hover,
 .site-nav__global a:focus-visible {
     color: var(--se-header-text-hover);
-    background: rgb(255 255 255 / 18%);
+    background: rgb(0 0 0 / 22%);
 }
 
 .theme-toggle {
@@ -186,7 +186,7 @@ a:focus-visible {
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
     color: var(--se-header-text-hover);
-    background: rgb(255 255 255 / 18%);
+    background: rgb(0 0 0 / 22%);
 }
 
 .language-switcher {
@@ -213,7 +213,7 @@ a:focus-visible {
 .language-switcher__trigger:focus-visible,
 .language-switcher__trigger[aria-expanded="true"] {
     color: var(--se-header-text-hover);
-    background: rgb(255 255 255 / 18%);
+    background: rgb(0 0 0 / 22%);
 }
 
 .language-switcher__chevron {
