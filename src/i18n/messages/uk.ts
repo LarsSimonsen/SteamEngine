@@ -42,6 +42,7 @@ export const messages = {
     },
     "notice": { "dismiss": "Закрити" },
     "filter": { "matches": (count: number) => `Збігів: ${count}` },
+    "comparison": { "differs": "Відрізняється" },
     "calculatorHeader": {
         "oldVersionNote": "Ви можете знайти стару версію цього калькулятора",
         "oldVersionLinkLabel": "тут"

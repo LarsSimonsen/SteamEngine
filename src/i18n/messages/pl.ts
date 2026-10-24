@@ -42,6 +42,7 @@ export const messages =  {
     },
     "notice": { "dismiss": "Zamknij" },
     "filter": { "matches": (count: number) => `Dopasowania: ${count}` },
+    "comparison": { "differs": "Różni się" },
     "calculatorHeader":  {
         "oldVersionNote": "Możesz znaleźć starą wersję tego kalkulatora",
         "oldVersionLinkLabel": "tutaj"

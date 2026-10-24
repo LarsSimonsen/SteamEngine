@@ -47,6 +47,7 @@ export const messages = {
     },
     "notice": { "dismiss": "Sulje" },
     "filter": { "matches": (count: number) => `Osumat: ${count}` },
+    "comparison": { "differs": "Eroaa" },
     "calculatorHeader": {
         "oldVersionNote": "Löydät tämän laskimen vanhan version",
         "oldVersionLinkLabel": "täältä",

@@ -85,7 +85,7 @@ describe("mod comparison page", () => {
         render(<ModComparisonPage />);
 
         const platformSection = screen.getByRole("heading", { name: "Platform" }).closest("section")!;
-        const platformRows = platformSection.querySelectorAll("dl > div");
+        const platformRows = platformSection.querySelectorAll("tbody tr");
         expect(platformRows[platformRows.length - 1]).toHaveTextContent("Weight (g)");
 
         const atomizerSection = screen.getByRole("heading", { name: "Atomizer range" }).closest("section")!;

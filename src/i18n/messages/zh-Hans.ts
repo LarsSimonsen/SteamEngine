@@ -44,6 +44,7 @@ export const messages: SharedMessages = {
     },
     "notice": { "dismiss": "关闭" },
     "filter": { "matches": (count: number) => `匹配项：${count}` },
+    "comparison": { "differs": "不同" },
     "calculatorHeader": {
         "oldVersionNote": "您可以找到此计算器的旧版本",
         "oldVersionLinkLabel": "这里"

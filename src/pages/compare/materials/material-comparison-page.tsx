@@ -26,6 +26,7 @@ import {
 } from "../../encyclopedia/material-tfr-api";
 import "../batteries/battery-comparison.css";
 import { ComparisonPicker } from "../comparison-picker";
+import { ComparisonSection, type ComparisonRow } from "../comparison-section";
 
 type Side = "a" | "b";
 
@@ -34,13 +35,6 @@ type MaterialOption = Readonly<{
     material: DefaultMaterial;
     label: string;
     slug: string;
-}>;
-
-type ComparisonRow = Readonly<{
-    label: string;
-    first: ReactNode;
-    second: ReactNode;
-    different?: boolean;
 }>;
 
 type MaterialCurveResponses = Readonly<Record<Side, MaterialTfrApiResponse | undefined>>;
@@ -119,23 +113,6 @@ const MaterialCurve = ({ material, response, loadingLabel, noCurveLabel, derived
     return <MaterialTfrGraph materialName={material.name} data={response}
         caption={material.tfr ? undefined : derivedCaption} scale={scale} />;
 };
-
-const ComparisonSection = ({ title, rows, unknownLabel }: Readonly<{
-    title: string;
-    rows: readonly ComparisonRow[];
-    unknownLabel: string;
-}>): ReactElement => <section className="battery-comparison__section">
-    <h2>{title}</h2>
-    <dl>
-        {rows.map((row) => <div className={row.different ? "is-different" : ""} key={row.label}>
-            <dt>{row.label}</dt>
-            <dd className={row.first === unknownLabel || row.first === "—"
-                ? "comparison-value--unknown" : undefined}>{row.first}</dd>
-            <dd className={row.second === unknownLabel || row.second === "—"
-                ? "comparison-value--unknown" : undefined}>{row.second}</dd>
-        </div>)}
-    </dl>
-</section>;
 
 export const MaterialComparisonPage = (): ReactElement => {
     const locale = pageLocale();
@@ -375,7 +352,9 @@ export const MaterialComparisonPage = (): ReactElement => {
                 <strong>{selected.b && detailHref("b")
                     ? <a href={detailHref("b")}>{selected.b.label}</a> : messages.secondMaterial}</strong>
             </div>
-            {sections.map((section) => <ComparisonSection key={section.title} {...section} unknownLabel={unknown} />)}
+            {sections.map((section) => <ComparisonSection key={section.title} {...section}
+                columns={[selected.a?.label ?? messages.firstMaterial, selected.b?.label ?? messages.secondMaterial]}
+                unknownLabel={unknown} />)}
         </main>
     </SiteLayout>;
 };

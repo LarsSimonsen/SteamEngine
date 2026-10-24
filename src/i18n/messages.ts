@@ -48,6 +48,9 @@ export type SharedMessages = {
     readonly filter: {
         readonly matches: (count: number) => string;
     };
+    readonly comparison: {
+        readonly differs: string;
+    };
     readonly calculatorHeader: {
         readonly oldVersionNote: string;
         readonly oldVersionLinkLabel: string;

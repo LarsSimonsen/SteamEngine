@@ -9045,6 +9045,17 @@
             },
             "confidence": "low"
         },
+        "messages.comparison.differs": {
+            "sourceSignature": "e95d8a00098933bd39f4b95bab615cac0377c840e98a60b10927cc91e1744be0",
+            "translationSignature": "82a3f5114efbddda8c5f290334e4c14b06d07a648f064f7e5403bd4288fc3ad4",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.encyclopedia.all": {
             "sourceSignature": "8b60e70bad022d9226d9766b75a76cdf7a05d4f37b2f21c7e051484d4f2c92dc",
             "translationSignature": "d7864784ae36f721f63329ff43b3fdf4827fa8bb6b1084a6a0f783e7735a2c50",

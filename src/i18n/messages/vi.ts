@@ -44,6 +44,7 @@ export const messages = {
     },
     "notice": { "dismiss": "Đóng" },
     "filter": { "matches": (count: number) => `Kết quả phù hợp: ${count}` },
+    "comparison": { "differs": "Khác nhau" },
     "calculatorHeader": {
         "oldVersionNote": "Bạn có thể tìm thấy phiên bản cũ của máy tính này",
         "oldVersionLinkLabel": "ở đây"

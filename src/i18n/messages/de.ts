@@ -44,6 +44,7 @@ export const messages = {
     },
     "notice": { "dismiss": "Schließen" },
     "filter": { "matches": (count: number) => `Treffer: ${count}` },
+    "comparison": { "differs": "Unterschiedlich" },
     "calculatorHeader": {
         "oldVersionNote": "Sie finden die alte Version dieses Rechners",
         "oldVersionLinkLabel": "hier"

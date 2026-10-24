@@ -22,6 +22,7 @@ import { limitsFromPreset } from "../../modrange/domain";
 import { ModRangeGraph } from "../../modrange/mod-range-graph";
 import "../batteries/battery-comparison.css";
 import { ComparisonPicker } from "../comparison-picker";
+import { ComparisonSection, type ComparisonRow } from "../comparison-section";
 
 type Side = "a" | "b";
 
@@ -30,13 +31,6 @@ type ModOption = Readonly<{
     mod: DefaultMod;
     label: string;
     slug: string;
-}>;
-
-type ComparisonRow = Readonly<{
-    label: string;
-    first: ReactNode;
-    second: ReactNode;
-    different?: boolean;
 }>;
 
 type ModCurveResponses = Readonly<Record<Side, ModRangeApiResponse | undefined>>;
@@ -113,20 +107,6 @@ const introductionText = (mod: DefaultMod, locale: ReturnType<typeof pageLocale>
     if (introduction.earliest) return messages.introducedNoEarlier(format(introduction.earliest.date));
     return messages.availableBy(format(introduction.latest!.date));
 };
-
-const ComparisonSection = ({ title, rows, unknownLabel, extraRows }: Readonly<{
-    title: string;
-    rows: readonly ComparisonRow[];
-    unknownLabel: string;
-    extraRows?: ReactNode;
-}>): ReactElement => <section className="battery-comparison__section">
-    <h2>{title}</h2>
-    <dl>{rows.map((row) => <div className={row.different ? "is-different" : ""} key={row.label}>
-        <dt>{row.label}</dt>
-        <dd className={row.first === unknownLabel ? "comparison-value--unknown" : undefined}>{row.first}</dd>
-        <dd className={row.second === unknownLabel ? "comparison-value--unknown" : undefined}>{row.second}</dd>
-    </div>)}{extraRows}</dl>
-</section>;
 
 const sharedPowerCurveScale = (graphs: readonly ModRangeGraphResponse[]): PowerCurveScale | undefined => {
     if (graphs.length === 0) return undefined;
@@ -446,18 +426,19 @@ export const ModComparisonPage = (): ReactElement => {
                     ? <a href={detailHref("b")}>{selected.b.label}</a> : messages.secondMod}</strong>
             </div>
             {sections.map((section) => <ComparisonSection key={section.title} {...section} unknownLabel={unknown}
+                columns={[selected.a?.label ?? messages.firstMod, selected.b?.label ?? messages.secondMod]}
                 extraRows={section.title === messages.powerLimits
-                    && <div className="battery-comparison__power-curve-row">
-                    <dt>{powerCurveLabel}<span className="battery-comparison__power-curve-description">
-                        {powerCurveDescription}
-                    </span></dt>
-                    <dd><ModComparisonPowerCurve response={curveResponses.a} scale={powerCurveScale}
+                    && <tr className="battery-comparison__power-curve-row" role="row">
+                    <th role="rowheader" scope="row">{powerCurveLabel}
+                        <span className="battery-comparison__power-curve-description">{powerCurveDescription}</span>
+                    </th>
+                    <td role="cell"><ModComparisonPowerCurve response={curveResponses.a} scale={powerCurveScale}
                         selected={Boolean(selected.a)} loadingLabel={shared.encyclopediaDetail.loadingPowerCurve}
-                        unavailableLabel={shared.encyclopediaDetail.noUsableResistanceRange} /></dd>
-                    <dd><ModComparisonPowerCurve response={curveResponses.b} scale={powerCurveScale}
+                        unavailableLabel={shared.encyclopediaDetail.noUsableResistanceRange} /></td>
+                    <td role="cell"><ModComparisonPowerCurve response={curveResponses.b} scale={powerCurveScale}
                         selected={Boolean(selected.b)} loadingLabel={shared.encyclopediaDetail.loadingPowerCurve}
-                        unavailableLabel={shared.encyclopediaDetail.noUsableResistanceRange} /></dd>
-                </div>} />)}
+                        unavailableLabel={shared.encyclopediaDetail.noUsableResistanceRange} /></td>
+                </tr>} />)}
         </main>
     </SiteLayout>;
 };

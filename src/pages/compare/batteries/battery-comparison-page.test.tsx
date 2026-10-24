@@ -90,8 +90,8 @@ describe("BatteryComparisonPage", () => {
         window.history.replaceState(null, "", "/compare/batteries?a=aw-imr-14500-600mah");
         render(<BatteryComparisonPage />);
         const identitySection = screen.getByRole("heading", { name: "Identity" }).parentElement!;
-        expect(identitySection.querySelectorAll("dd")[1]).toHaveTextContent("");
-        expect(identitySection.querySelectorAll("dd")[1]).not.toHaveTextContent("Unknown");
+        expect(identitySection.querySelectorAll("tbody td")[1]).toHaveTextContent("");
+        expect(identitySection.querySelectorAll("tbody td")[1]).not.toHaveTextContent("Unknown");
     });
 
     it("swaps the query-string selections without reloading", () => {

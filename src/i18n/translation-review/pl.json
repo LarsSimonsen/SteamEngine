@@ -10003,6 +10003,17 @@
             },
             "confidence": "medium"
         },
+        "messages.comparison.differs": {
+            "sourceSignature": "e95d8a00098933bd39f4b95bab615cac0377c840e98a60b10927cc91e1744be0",
+            "translationSignature": "43c3d5ea2a7f1319d6ff0effd01091c7f134aeec5a66ab787a2a21e63f2e5cbe",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.encyclopedia.all": {
             "sourceSignature": "8b60e70bad022d9226d9766b75a76cdf7a05d4f37b2f21c7e051484d4f2c92dc",
             "translationSignature": "3ccd0883eff108d8a6d6152e887b412275c49f368d4b32b29feaf6e629b8ff41",

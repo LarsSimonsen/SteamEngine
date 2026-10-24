@@ -39,6 +39,7 @@ export const messages: SharedMessages = {
     },
     notice: { dismiss: "Dismiss" },
     filter: { matches: (count: number) => `Matches: ${count}` },
+    comparison: { differs: "Differs" },
     calculatorHeader: { oldVersionNote: "You can find the old version of this calculator", oldVersionLinkLabel: "here" },
     calculatorVisibility: {
         label: "Calculator visibility",

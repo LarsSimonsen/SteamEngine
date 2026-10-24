@@ -42,6 +42,7 @@ export const messages: SharedMessages = normalizeNynorsk({
     },
     notice: { dismiss: "Lukk" },
     filter: { matches: (count: number) => `Treff: ${count}` },
+    comparison: { differs: "Ulik" },
     calculatorHeader: {
         oldVersionNote: "Du finn den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

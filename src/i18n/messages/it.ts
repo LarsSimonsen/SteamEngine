@@ -44,6 +44,7 @@ export const messages: SharedMessages = {
     },
     "notice": { "dismiss": "Chiudi" },
     "filter": { "matches": (count: number) => `Corrispondenze: ${count}` },
+    "comparison": { "differs": "Diverso" },
     "calculatorHeader": {
         "oldVersionNote": "Puoi trovare la vecchia versione di questa calcolatrice",
         "oldVersionLinkLabel": "Qui"

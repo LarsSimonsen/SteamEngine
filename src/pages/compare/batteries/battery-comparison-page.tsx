@@ -15,6 +15,7 @@ import { withoutTrailingSlash } from "../../../shared/ui/site-navigation";
 import { loadEntityRecord } from "../../encyclopedia/entity-record-loader";
 import "./battery-comparison.css";
 import { ComparisonPicker } from "../comparison-picker";
+import { ComparisonSection, type ComparisonRow } from "../comparison-section";
 
 type Side = "a" | "b";
 
@@ -24,13 +25,6 @@ type BatteryOption = Readonly<{
     heading: string;
     label: string;
     slug: string;
-}>;
-
-type ComparisonRow = Readonly<{
-    label: string;
-    first: ReactNode;
-    second: ReactNode;
-    different?: boolean;
 }>;
 
 export const batterySlugsFromSearch = (search: string): Readonly<Record<Side, string | undefined>> => {
@@ -104,21 +98,6 @@ export const dischargeRatingText = (
     }
     return unknown;
 };
-
-const ComparisonSection = ({ title, rows, unknownLabel }: Readonly<{
-    title: string;
-    rows: readonly ComparisonRow[];
-    unknownLabel: string;
-}>): ReactElement => <section className="battery-comparison__section">
-    <h2>{title}</h2>
-    <dl>
-        {rows.map((row) => <div className={row.different ? "is-different" : ""} key={row.label}>
-            <dt>{row.label}</dt>
-            <dd className={row.first === unknownLabel ? "comparison-value--unknown" : undefined}>{row.first}</dd>
-            <dd className={row.second === unknownLabel ? "comparison-value--unknown" : undefined}>{row.second}</dd>
-        </div>)}
-    </dl>
-</section>;
 
 const introductionText = (
     battery: DefaultBattery,
@@ -471,6 +450,8 @@ export const BatteryComparisonPage = (): ReactElement => {
                     ? <a href={detailHref("b")}>{selected.b.heading}</a> : messages.compareSecondBattery}</strong>
             </div>
             {sections.map((section) => <ComparisonSection key={section.title} {...section}
+                columns={[selected.a?.heading ?? messages.compareFirstBattery,
+                    selected.b?.heading ?? messages.compareSecondBattery]}
                 unknownLabel={shared.encyclopediaDetail.unknown} />)}
         </main>
     </SiteLayout>;
