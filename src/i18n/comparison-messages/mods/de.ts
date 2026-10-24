@@ -18,4 +18,8 @@ export const messages: ModComparisonMessages = {
         "Einige Plattformdetails sind unbekannt; die Kompatibilität von Kategorie und " +
         "Akkukonfiguration kann daher nicht vollständig verglichen werden.",
     noSafetyFindings: "Für diesen Eintrag sind keine eintragsspezifischen Sicherheitsbefunde verzeichnet.",
+    chooseMod: "Mod oder Platine auswählen",
+    firstMod: "Mod/Platine A auswählen",
+    secondMod: "Mod/Platine B auswählen",
+    swap: "Mods/Platinen tauschen",
 };

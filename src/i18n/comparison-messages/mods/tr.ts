@@ -15,4 +15,8 @@ export const messages = {
         "Bazı platform ayrıntıları bilinmediğinden kategori ve pil yapılandırması uyumluluğu tam "
         + "olarak karşılaştırılamaz.",
     noSafetyFindings: "Girişe özgü hiçbir güvenlik bulgusu kaydedilmemiştir.",
+    chooseMod: "Bir mod veya kart seçin",
+    firstMod: "Mod/kart A seçin",
+    secondMod: "Mod/kart B seçin",
+    swap: "Modların/kartların yerini değiştir",
 } as const;

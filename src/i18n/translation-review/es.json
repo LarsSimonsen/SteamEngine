@@ -8023,6 +8023,28 @@
             },
             "confidence": "low"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "0211bfb0ad7bd1897d1b2c566bb9270a0998b5d4538891db6943c85e2cbd9bce",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "46522718b168702a34a3e2b9e10199f6904cbd78e9f222f5d101ef2c47e89606",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "ef09f4388f3f3ff70c6b8fdcbd1903846b5382800446a49feab7b388fc004571",
@@ -8092,6 +8114,28 @@
                 "method": "Google Translate machine draft with Spanish vaping terminology research"
             },
             "confidence": "low"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "a481ab8514080409fc347c2534ed29bb9b1aa6e8538d942c52f1faa36ee6e0db",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "3adfcc65b3f798109d19b256ac40352b65628d0a07c655244f0c6a19d4fcd469",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.calculatorHeader.oldVersionLinkLabel": {
             "sourceSignature": "499b1c72a14859d0046274837728ec00adb1183eff90173dac7e79c62da1cc42",
@@ -10552,6 +10596,17 @@
                 "method": "Google Translate machine draft with Spanish vaping terminology research"
             },
             "confidence": "low"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "2c820539bcfd2455701d4274c478f01c90282a4d58b3dc5ce5e9fdbbd67ac042",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.footer.advertisement": {
             "sourceSignature": "f639f9def404eb4cf5f56d274b21ed6cef294278a3ddbc9793fa80d0b8289107",

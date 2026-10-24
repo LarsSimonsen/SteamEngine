@@ -43,6 +43,7 @@ export const messages: SharedMessages = {
         "wholeNumber": "Utilisez un nombre entier."
     },
     "notice": { "dismiss": "Fermer" },
+    "filter": { "matches": (count: number) => `Correspondances : ${count}` },
     "calculatorHeader": {
         "oldVersionNote": "Vous pouvez retrouver l'ancienne version de ce calculateur",
         "oldVersionLinkLabel": "ici"

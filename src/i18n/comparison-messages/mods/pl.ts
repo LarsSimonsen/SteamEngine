@@ -16,4 +16,8 @@ export const messages: ModComparisonMessages = {
         "Niektóre dane platformy są nieznane, dlatego nie można w pełni porównać zgodności " +
         "kategorii i konfiguracji akumulatora.",
     noSafetyFindings: "Nie odnotowano ustaleń dotyczących bezpieczeństwa właściwych dla tego wpisu.",
+    chooseMod: "Wybierz mod lub płytkę",
+    firstMod: "Wybierz mod/płytkę A",
+    secondMod: "Wybierz mod/płytkę B",
+    swap: "Zamień mody/płytki",
 };

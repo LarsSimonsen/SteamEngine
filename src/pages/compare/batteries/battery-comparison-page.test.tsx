@@ -81,7 +81,7 @@ describe("BatteryComparisonPage", () => {
         expect(screen.getByRole("heading", { name: "Construction" })).toBeInTheDocument();
         expect(screen.getByRole("heading", { name: "Electrical" })).toBeInTheDocument();
         expect(screen.queryByText("molicel-inr-21700-p45b")).not.toBeInTheDocument();
-        expect(screen.getAllByRole("option", {
+        expect(screen.getAllByRole("button", {
             name: /Molicel INR-21700-P45B.*4,500 mAh.*21700 · 45 A/,
         })).toHaveLength(2);
     });

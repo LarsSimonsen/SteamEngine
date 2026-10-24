@@ -9178,6 +9178,28 @@
             },
             "confidence": "high"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "2a009532d0214dca1a15ba9dfeb8c263954dbbd32d45361a9aef9a8c1f6feda0",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "1604acdf40902fab4fc67c51bb534d98e3af93d575d05ce99433a617c7674801",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "c49aba25f60c8423511f4d35a65cc6b15ae036de27fc794d4cb8a500f719bc71",
@@ -9254,6 +9276,28 @@
                 "model": "GPT-6"
             },
             "confidence": "high"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "a879b4cf5bb0103608bd444aa69296c4ca75dbcf8dcd0de3fed2694d960042f8",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "ee19b86eca0b28a05f4361ce9f4e9696ceea53c81afe8db7257bb72dde11642a",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.calculatorHeader.oldVersionLinkLabel": {
             "sourceSignature": "499b1c72a14859d0046274837728ec00adb1183eff90173dac7e79c62da1cc42",
@@ -11977,6 +12021,17 @@
                 "model": "GPT-6"
             },
             "confidence": "high"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "10d343fcfaebd0bd268a0fdf2ea42fbce7710b864c4a1488867cfabaf647d61f",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.footer.advertisement": {
             "sourceSignature": "f639f9def404eb4cf5f56d274b21ed6cef294278a3ddbc9793fa80d0b8289107",

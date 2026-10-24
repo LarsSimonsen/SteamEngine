@@ -35,10 +35,6 @@
     font-weight: 700;
 }
 
-.battery-picker__label-compact {
-    display: none;
-}
-
 .battery-picker details {
     position: relative;
 }
@@ -95,12 +91,15 @@
 .battery-picker__options {
     display: grid;
     max-height: 20rem;
+    margin: 0;
+    padding: 0;
     overflow-y: auto;
+    list-style: none;
 }
 
 .battery-picker__options button:hover,
 .battery-picker__options button:focus-visible,
-.battery-picker__options button[aria-selected="true"] {
+.battery-picker__options button[aria-pressed="true"] {
     background: var(--se-body-bg);
 }
 
@@ -208,14 +207,6 @@
 }
 
 @media (max-width: 700px) {
-    .battery-picker__label-full {
-        display: none;
-    }
-
-    .battery-picker__label-compact {
-        display: inline;
-    }
-
     .battery-comparison__selectors {
         grid-template-columns: 1fr;
     }

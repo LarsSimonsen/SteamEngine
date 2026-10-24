@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactElement, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactElement, type ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightArrowLeft, faCircleInfo, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 import type { DefaultBattery } from "../../../catalogs/batteries/catalog";
@@ -14,6 +14,7 @@ import { Breadcrumbs } from "../../../shared/ui/breadcrumbs";
 import { withoutTrailingSlash } from "../../../shared/ui/site-navigation";
 import { loadEntityRecord } from "../../encyclopedia/entity-record-loader";
 import "./battery-comparison.css";
+import { ComparisonPicker } from "../comparison-picker";
 
 type Side = "a" | "b";
 
@@ -102,55 +103,6 @@ export const dischargeRatingText = (
             + `(${formatNumber(locale, currentAmps)} A)`;
     }
     return unknown;
-};
-
-const BatteryPicker = ({
-    label,
-    options,
-    selected,
-    onSelect,
-    chooseLabel,
-}: Readonly<{
-    label: string;
-    options: readonly BatteryOption[];
-    selected?: BatteryOption;
-    onSelect: (slug: string | undefined) => void;
-    chooseLabel: string;
-}>): ReactElement => {
-    const details = useRef<HTMLDetailsElement>(null);
-    const [query, setQuery] = useState("");
-    const matches = options.filter((option) => `${option.label} ${option.slug}`.toLocaleLowerCase()
-        .includes(query.trim().toLocaleLowerCase()));
-    const select = (slug: string | undefined): void => {
-        onSelect(slug);
-        setQuery("");
-        if (details.current) details.current.open = false;
-    };
-
-    return <div className="battery-picker">
-        <span className="battery-picker__label">
-            <span className="battery-picker__label-full">{label}</span>
-            <span className="battery-picker__label-compact" aria-hidden="true">
-                {label === "Select battery A" ? "Battery A" : label === "Select battery B" ? "Battery B" : label}
-            </span>
-        </span>
-        <details ref={details}>
-            <summary>{selected?.label ?? chooseLabel}</summary>
-            <div className="battery-picker__popover">
-                <input type="search" value={query} aria-label={chooseLabel} placeholder={chooseLabel}
-                    onChange={(event) => setQuery(event.target.value)} />
-                {selected && <button type="button" className="battery-picker__clear"
-                    onClick={() => select(undefined)}>{chooseLabel}</button>}
-                <div className="battery-picker__options" role="listbox" aria-label={label}>
-                    {matches.map((option) => <button type="button" role="option" key={option.battery.id}
-                        aria-selected={option.slug === selected?.slug} onClick={() => select(option.slug)}>
-                        <strong>{option.label}</strong>
-                        <span>{option.details}</span>
-                    </button>)}
-                </div>
-            </div>
-        </details>
-    </div>;
 };
 
 const ComparisonSection = ({ title, rows, unknownLabel }: Readonly<{
@@ -491,13 +443,13 @@ export const BatteryComparisonPage = (): ReactElement => {
                 <p>{messages.compareDescription}</p>
             </header>
             <section className="battery-comparison__selectors" aria-label={messages.compareTitle}>
-                <BatteryPicker label={messages.compareFirstBattery} options={options} selected={selected.a}
+                <ComparisonPicker label={messages.compareFirstBattery} options={options} selected={selected.a}
                     chooseLabel={messages.compareChooseBattery} onSelect={(slug) => update("a", slug)} />
                 <button type="button" className="battery-comparison__swap" onClick={swap}
                     aria-label={messages.compareSwap} title={messages.compareSwap}>
                     <FontAwesomeIcon icon={faArrowRightArrowLeft} aria-hidden="true" />
                 </button>
-                <BatteryPicker label={messages.compareSecondBattery} options={options} selected={selected.b}
+                <ComparisonPicker label={messages.compareSecondBattery} options={options} selected={selected.b}
                     chooseLabel={messages.compareChooseBattery} onSelect={(slug) => update("b", slug)} />
             </section>
             <div className="battery-comparison__notices" aria-live="polite">

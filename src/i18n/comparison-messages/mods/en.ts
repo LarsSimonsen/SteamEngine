@@ -16,4 +16,8 @@ export const messages: ModComparisonMessages = {
         "Some platform details are unknown, so category and battery-configuration " +
         "compatibility cannot be fully compared.",
     noSafetyFindings: "No entry-specific safety findings are recorded.",
+    chooseMod: "Choose a mod or board",
+    firstMod: "Select mod/board A",
+    secondMod: "Select mod/board B",
+    swap: "Swap mods/boards",
 };

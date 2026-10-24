@@ -8045,6 +8045,28 @@
             },
             "confidence": "low"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "09792a94ccdbab6408c629ba672babd1da84b16d46d1c4df1f56f7fb0a04252f",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "2601b3f5f638301f5d6de181aacb7603b58afa29478fad4b74d778a06cfbd277",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "1f93e503fd126f9fd618e7c1e8909b6a2e80083821035ebfbdb6ce717e2140bc",
@@ -8114,6 +8136,28 @@
                 "method": "Google Translate machine draft with Indonesian vaping and electrical terminology research"
             },
             "confidence": "low"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "ff08d17e7ea656461455308688f582c790743b2a661a62be33d130c14564fcac",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "c01e260cd01558b76c88973670efbdfdb862284086955180e3c100b341e24930",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.calculatorHeader.oldVersionLinkLabel": {
             "sourceSignature": "499b1c72a14859d0046274837728ec00adb1183eff90173dac7e79c62da1cc42",
@@ -10579,6 +10623,17 @@
                 "method": "Google Translate machine draft with Indonesian vaping and electrical terminology research"
             },
             "confidence": "low"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "1212aa36d029f712cd33fdf1b5cda9901f02116db32ede4d2e843c21ab245003",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.footer.advertisement": {
             "sourceSignature": "f639f9def404eb4cf5f56d274b21ed6cef294278a3ddbc9793fa80d0b8289107",

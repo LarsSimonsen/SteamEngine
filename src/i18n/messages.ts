@@ -45,6 +45,9 @@ export type SharedMessages = {
     readonly notice: {
         readonly dismiss: string;
     };
+    readonly filter: {
+        readonly matches: (count: number) => string;
+    };
     readonly calculatorHeader: {
         readonly oldVersionNote: string;
         readonly oldVersionLinkLabel: string;

@@ -93,6 +93,10 @@ export type ModComparisonMessages = Readonly<{
     readonly platformDiffers: string;
     readonly platformUnknown: string;
     readonly noSafetyFindings: string;
+    readonly chooseMod: string;
+    readonly firstMod: string;
+    readonly secondMod: string;
+    readonly swap: string;
 }>;
 export type MaterialComparisonMessages = Readonly<{
     readonly title: string;

@@ -15,4 +15,8 @@ export const messages = {
     "platformUnknown": "Osa laitetyypin ja kennokokoonpanon tiedoista puuttuu, joten "
         + "niiden yhteensopivuutta ei voi verrata kattavasti.",
     "noSafetyFindings": "Tuotekohtaisia turvallisuushavaintoja ei ole kirjattu.",
+    "chooseMod": "Valitse modi tai ohjauskortti",
+    "firstMod": "Valitse modi/ohjauskortti A",
+    "secondMod": "Valitse modi/ohjauskortti B",
+    "swap": "Vaihda modien/ohjauskorttien paikat",
 } as const;

@@ -46,6 +46,7 @@ export const messages = {
         "wholeNumber": "Käytä kokonaislukua."
     },
     "notice": { "dismiss": "Sulje" },
+    "filter": { "matches": (count: number) => `Osumat: ${count}` },
     "calculatorHeader": {
         "oldVersionNote": "Löydät tämän laskimen vanhan version",
         "oldVersionLinkLabel": "täältä",

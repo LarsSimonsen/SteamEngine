@@ -16,4 +16,8 @@ export const messages: ModComparisonMessages = {
         "Certains détails de la plateforme sont inconnus ; la compatibilité des catégories et " +
         "des configurations de batteries ne peut pas être entièrement comparée.",
     noSafetyFindings: "Aucun constat de sécurité propre à cette entrée n'est enregistré.",
+    chooseMod: "Choisissez un mod ou une carte",
+    firstMod: "Sélectionner le mod/la carte A",
+    secondMod: "Sélectionner le mod/la carte B",
+    swap: "Permuter les mods/cartes",
 };

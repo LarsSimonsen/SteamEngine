@@ -43,6 +43,7 @@ export const messages: SharedMessages = {
         "wholeNumber": "Use un número entero."
     },
     "notice": { "dismiss": "Cerrar" },
+    "filter": { "matches": (count: number) => `Coincidencias: ${count}` },
     "calculatorHeader": {
         "oldVersionNote": "Puedes encontrar la versión antigua de esta calculadora.",
         "oldVersionLinkLabel": "aquí"

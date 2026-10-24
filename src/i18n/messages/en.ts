@@ -38,6 +38,7 @@ export const messages: SharedMessages = {
         wholeNumber: "Use a whole number.",
     },
     notice: { dismiss: "Dismiss" },
+    filter: { matches: (count: number) => `Matches: ${count}` },
     calculatorHeader: { oldVersionNote: "You can find the old version of this calculator", oldVersionLinkLabel: "here" },
     calculatorVisibility: {
         label: "Calculator visibility",

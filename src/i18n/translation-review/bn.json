@@ -8021,6 +8021,28 @@
             },
             "confidence": "low"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "889fbb947e7626b9db6f13b3dd0b34a367a9f3a2223662d9a00229f6c5642f43",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "a370d764b68d047f2e1cbc66ae308ce996895c02bfda69ebeb02f30535d662b9",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "5cc1a83c0cdaaa57df06f6f4fa0d24ebbdb42f069d5ba63d19b2a3de9abebf9d",
@@ -8090,6 +8112,28 @@
                 "method": "Google Translate machine draft with Bengali vaping terminology research"
             },
             "confidence": "low"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "9564c1fa02c874077959d3ee8ffc2caa328ec02b0d18dfe038dbc58fcaaab44d",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "46d5f230ac53a522dc9aaf44fc4ac37acbecc026dd91b20a05fd5df36734c5ab",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.calculatorHeader.oldVersionLinkLabel": {
             "sourceSignature": "499b1c72a14859d0046274837728ec00adb1183eff90173dac7e79c62da1cc42",
@@ -10550,6 +10594,17 @@
                 "method": "Google Translate machine draft with Bengali vaping terminology research"
             },
             "confidence": "low"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "1cbbccde3f9b26f03a089d207b4003f8f40817a30552c96e0ba870c93c065393",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.footer.advertisement": {
             "sourceSignature": "f639f9def404eb4cf5f56d274b21ed6cef294278a3ddbc9793fa80d0b8289107",

@@ -18,4 +18,8 @@ export const messages: ModComparisonMessages = {
         "Một số chi tiết nền tảng chưa rõ, nên không thể so sánh đầy đủ khả năng tương " +
         "thích về danh mục và cấu hình pin.",
     noSafetyFindings: "Không có phát hiện an toàn riêng cho mục này được ghi nhận.",
+    chooseMod: "Chọn mod hoặc bo mạch",
+    firstMod: "Chọn mod/bo mạch A",
+    secondMod: "Chọn mod/bo mạch B",
+    swap: "Hoán đổi mod/bo mạch",
 };

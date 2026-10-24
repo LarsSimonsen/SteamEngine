@@ -16,4 +16,8 @@ export const messages: ModComparisonMessages = {
         "Nokre plattformdetaljar er ukjende, så kompatibilitet for kategori og " +
         "batterikonfigurasjon kan ikkje samanliknast fullt ut.",
     noSafetyFindings: "Ingen oppføringsspesifikke tryggleiksfunn er registrerte.",
+    chooseMod: "Vel ein mod eller eit styrekort",
+    firstMod: "Vel mod/styrekort A",
+    secondMod: "Vel mod/styrekort B",
+    swap: "Byt om moddar/styrekort",
 };

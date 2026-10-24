@@ -18,4 +18,8 @@ export const messages: ModComparisonMessages = {
         "Vissa plattformsuppgifter är okända, så kompatibiliteten för kategori och " +
         "batterikonfiguration kan inte jämföras fullständigt.",
     noSafetyFindings: "Inga postspecifika säkerhetsfynd finns registrerade.",
+    chooseMod: "Välj en mod eller ett styrkort",
+    firstMod: "Välj mod/styrkort A",
+    secondMod: "Välj mod/styrkort B",
+    swap: "Byt plats på mods/styrkort",
 };

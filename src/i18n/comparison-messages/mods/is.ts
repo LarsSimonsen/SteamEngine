@@ -16,4 +16,8 @@ export const messages: ModComparisonMessages = {
         "Sumar upplýsingar um vettvanginn eru óþekktar og því er ekki hægt að bera samhæfi " +
         "flokks og rafhlöðuskipunar saman að fullu.",
     noSafetyFindings: "Engar öryggisniðurstöður sérstaklega fyrir þessa færslu eru skráðar.",
+    chooseMod: "Veldu rafrettutæki eða stýrispjald",
+    firstMod: "Veldu rafrettutæki eða stýrispjald A",
+    secondMod: "Veldu rafrettutæki eða stýrispjald B",
+    swap: "Víxla rafrettutækjum/stýrispjöldum",
 };

@@ -38,6 +38,7 @@ export const messages: SharedMessages = {
         "wholeNumber": "Bruk et heltall."
     },
     notice: { "dismiss": "Lukk" },
+    filter: { "matches": (count: number) => `Treff: ${count}` },
     calculatorHeader: {
         oldVersionNote: "Du finner den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

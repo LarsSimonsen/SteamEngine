@@ -9305,6 +9305,28 @@
             "reviewer": "Maintainer instruction",
             "reviewedAt": "2026-08-17"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "39b57adb363bc1d6199bb487f2120745fa4d0e21af80d391222effe4d3e9ef5c",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "3798cb584d292f49df8ad4f46b3597a17b399a08e9137b5fda51177e6f5c2934",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "c0c7c0e132cc72c05ab3198901e1f5281729e39b860fe571a27c6e768f0a0ec1",
@@ -9387,6 +9409,28 @@
             "confidence": "low",
             "reviewer": "Maintainer instruction",
             "reviewedAt": "2026-08-17"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "69ef13984f84090b9071dcf2b608a87e9915591a75bba52bdf2ba646e771563a",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "0ef1202b305d21cab85e9901b5d27fa2f4c82f09962895655944a0d562844426",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.calculatorHeader.oldVersionLinkLabel": {
             "sourceSignature": "499b1c72a14859d0046274837728ec00adb1183eff90173dac7e79c62da1cc42",
@@ -12276,6 +12320,17 @@
             "confidence": "low",
             "reviewer": "Maintainer instruction",
             "reviewedAt": "2026-08-17"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "e8ebb11d3e5e5861f7b1c45aa1883e6bfc9d8968b18a48a8c325a899e313da8c",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
         },
         "messages.footer.advertisement": {
             "sourceSignature": "f639f9def404eb4cf5f56d274b21ed6cef294278a3ddbc9793fa80d0b8289107",

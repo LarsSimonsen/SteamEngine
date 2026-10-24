@@ -43,6 +43,7 @@ export const messages = {
         "wholeNumber": "Verwenden Sie eine ganze Zahl."
     },
     "notice": { "dismiss": "Schließen" },
+    "filter": { "matches": (count: number) => `Treffer: ${count}` },
     "calculatorHeader": {
         "oldVersionNote": "Sie finden die alte Version dieses Rechners",
         "oldVersionLinkLabel": "hier"

@@ -8006,6 +8006,28 @@
             },
             "confidence": "medium"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "f8c4b48f4a296747b2a3f3ce2b1c7daf1fafe6965b37db754230e0ee92297147",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "7c705791fa587594c501dcc013dff3eadea45c6eb9844fe6c1ebf34005ad40df",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "a7dcfffdd0e6ea0e3232944f9303c6a787d07a7937b799edf1f1c3b519fcaa93",
@@ -8073,6 +8095,28 @@
             "provenance": {
                 "kind": "machine",
                 "method": "Google Translate machine draft"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "f377290ccbec088f04389b0f62fa44239e9dde2b22f062a170acce373c6d0bc3",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "05eca7480c145300c80244b05f7889665da9237c492286cec97c61a3a8acd46f",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
             },
             "confidence": "medium"
         },
@@ -10533,6 +10577,17 @@
             "provenance": {
                 "kind": "machine",
                 "method": "Google Translate machine draft"
+            },
+            "confidence": "medium"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "6e12d71076f4f2642c2008262dc55ac816f25e4952b38c79f310375269771e3c",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
             },
             "confidence": "medium"
         },

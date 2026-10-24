@@ -41,6 +41,7 @@ export const messages = {
         "wholeNumber": "Використайте ціле число."
     },
     "notice": { "dismiss": "Закрити" },
+    "filter": { "matches": (count: number) => `Збігів: ${count}` },
     "calculatorHeader": {
         "oldVersionNote": "Ви можете знайти стару версію цього калькулятора",
         "oldVersionLinkLabel": "тут"

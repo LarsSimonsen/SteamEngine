@@ -41,6 +41,7 @@ export const messages =  {
         "wholeNumber": "Użyj liczby całkowitej."
     },
     "notice": { "dismiss": "Zamknij" },
+    "filter": { "matches": (count: number) => `Dopasowania: ${count}` },
     "calculatorHeader":  {
         "oldVersionNote": "Możesz znaleźć starą wersję tego kalkulatora",
         "oldVersionLinkLabel": "tutaj"

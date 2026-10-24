@@ -43,6 +43,7 @@ export const messages: SharedMessages = {
         "wholeNumber": "请使用整数。"
     },
     "notice": { "dismiss": "关闭" },
+    "filter": { "matches": (count: number) => `匹配项：${count}` },
     "calculatorHeader": {
         "oldVersionNote": "您可以找到此计算器的旧版本",
         "oldVersionLinkLabel": "这里"

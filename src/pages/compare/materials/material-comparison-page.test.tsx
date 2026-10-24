@@ -41,7 +41,7 @@ describe("material comparison page", () => {
             "href",
             "../catalog/material/kanthal-a1",
         );
-        expect(screen.queryByRole("option", { name: "Ohm's law" })).not.toBeInTheDocument();
+        expect(screen.queryByRole("button", { name: "Ohm's law" })).not.toBeInTheDocument();
         expect(screen.queryByText("kanthal-a1")).not.toBeInTheDocument();
         expect(screen.getAllByText(/Ω·mm²\/m ·/).length).toBeGreaterThan(0);
     });

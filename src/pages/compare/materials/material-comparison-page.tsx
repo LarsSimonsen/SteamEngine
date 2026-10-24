@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactElement, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactElement, type ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightArrowLeft, faCircleInfo, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { materialEncyclopediaRecordFor, type MaterialProperty } from "../../../catalogs/materials/encyclopedia";
@@ -25,6 +25,7 @@ import {
     type MaterialTfrApiResponse,
 } from "../../encyclopedia/material-tfr-api";
 import "../batteries/battery-comparison.css";
+import { ComparisonPicker } from "../comparison-picker";
 
 type Side = "a" | "b";
 
@@ -117,55 +118,6 @@ const MaterialCurve = ({ material, response, loadingLabel, noCurveLabel, derived
     }
     return <MaterialTfrGraph materialName={material.name} data={response}
         caption={material.tfr ? undefined : derivedCaption} scale={scale} />;
-};
-
-const MaterialPicker = ({
-    label,
-    options,
-    selected,
-    onSelect,
-    chooseLabel,
-}: Readonly<{
-    label: string;
-    options: readonly MaterialOption[];
-    selected?: MaterialOption;
-    onSelect: (slug?: string) => void;
-    chooseLabel: string;
-}>): ReactElement => {
-    const details = useRef<HTMLDetailsElement>(null);
-    const [query, setQuery] = useState("");
-    const matches = options.filter((option) => `${option.label} ${option.slug}`.toLocaleLowerCase()
-        .includes(query.trim().toLocaleLowerCase()));
-    const select = (slug: string | undefined): void => {
-        onSelect(slug);
-        setQuery("");
-        if (details.current) details.current.open = false;
-    };
-
-    return <div className="battery-picker">
-        <span className="battery-picker__label">
-            <span className="battery-picker__label-full">{label}</span>
-            <span className="battery-picker__label-compact" aria-hidden="true">
-                {label === "Select material A" ? "Material A" : label === "Select material B" ? "Material B" : label}
-            </span>
-        </span>
-        <details ref={details}>
-            <summary>{selected?.label ?? chooseLabel}</summary>
-            <div className="battery-picker__popover">
-                <input type="search" value={query} aria-label={chooseLabel} placeholder={chooseLabel}
-                    onChange={(event) => setQuery(event.target.value)} />
-                {selected && <button type="button" className="battery-picker__clear"
-                    onClick={() => select(undefined)}>{chooseLabel}</button>}
-                <div className="battery-picker__options" role="listbox" aria-label={label}>
-                    {matches.map((option) => <button type="button" role="option" key={option.material.id}
-                        aria-selected={option.slug === selected?.slug} onClick={() => select(option.slug)}>
-                        <strong>{option.label}</strong>
-                        <span>{option.details}</span>
-                    </button>)}
-                </div>
-            </div>
-        </details>
-    </div>;
 };
 
 const ComparisonSection = ({ title, rows, unknownLabel }: Readonly<{
@@ -399,13 +351,13 @@ export const MaterialComparisonPage = (): ReactElement => {
                 <h1>{metadata.title}</h1><p>{metadata.description}</p>
             </header>
             <section className="battery-comparison__selectors" aria-label={metadata.title}>
-                <MaterialPicker label={messages.firstMaterial} options={options} selected={selected.a}
+                <ComparisonPicker label={messages.firstMaterial} options={options} selected={selected.a}
                     chooseLabel={messages.chooseMaterial} onSelect={(slug) => update("a", slug)} />
                 <button type="button" className="battery-comparison__swap" onClick={swap}
                     aria-label={messages.swap} title={messages.swap}>
                     <FontAwesomeIcon icon={faArrowRightArrowLeft} aria-hidden="true" />
                 </button>
-                <MaterialPicker label={messages.secondMaterial} options={options} selected={selected.b}
+                <ComparisonPicker label={messages.secondMaterial} options={options} selected={selected.b}
                     chooseLabel={messages.chooseMaterial} onSelect={(slug) => update("b", slug)} />
             </section>
             <div className="battery-comparison__notices" aria-live="polite">

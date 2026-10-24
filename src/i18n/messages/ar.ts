@@ -34,6 +34,7 @@ export const messages: SharedMessages = {"navigation": {"about": "حول",
         "wholeNumber": "استخدم عددًا صحيحًا."
     },
 "notice": { "dismiss": "إغلاق" },
+"filter": { "matches": (count: number) => `النتائج المطابقة: ${count}` },
 "calculatorHeader": {"oldVersionNote": "يمكنك العثور على الإصدار القديم من هذه الحاسبة",
 "oldVersionLinkLabel": "هنا"},
 "calculatorVisibility": {"label": "حالة ظهور الحاسبة",

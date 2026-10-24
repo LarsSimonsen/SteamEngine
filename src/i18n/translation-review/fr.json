@@ -8911,6 +8911,28 @@
             },
             "confidence": "medium"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "807841e1f540c819e86145dd444eea7752447baa9296327d01be05a778c645ac",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "af1e105bf975141ff6deaff05433870cf734b222c4eb639cb7ca03bf8592a06d",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "a129273f66b28a827446be12dd37d675704efbe0331f4d7c5678fae828cfa1b8",
@@ -8985,6 +9007,28 @@
                 "kind": "machine",
                 "model": "GPT-6",
                 "method": "Full canonical English-source French critique; selective Spanish/Portuguese comparison and independent reconciliation"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "cd67fe18126e8798b602a459256b3f95901ddb0408b5b623766baa4bed4e834b",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "d465d713b37d6c39a0941bfd8077e880aba68053d1a9092040ffca914282c30e",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
             },
             "confidence": "medium"
         },
@@ -11732,6 +11776,17 @@
                 "kind": "machine",
                 "model": "GPT-6",
                 "method": "Full canonical English-source French critique; selective Spanish/Portuguese comparison and independent reconciliation"
+            },
+            "confidence": "medium"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "140328904e18fa01494475a8402fce0814a22d877516ce7595b713b9876ca813",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
             },
             "confidence": "medium"
         },

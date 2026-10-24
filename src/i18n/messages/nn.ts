@@ -41,6 +41,7 @@ export const messages: SharedMessages = normalizeNynorsk({
         wholeNumber: "Bruk eit heiltal.",
     },
     notice: { dismiss: "Lukk" },
+    filter: { matches: (count: number) => `Treff: ${count}` },
     calculatorHeader: {
         oldVersionNote: "Du finn den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

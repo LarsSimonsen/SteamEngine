@@ -43,6 +43,7 @@ export const messages = {
         "wholeNumber": "Hãy dùng số nguyên."
     },
     "notice": { "dismiss": "Đóng" },
+    "filter": { "matches": (count: number) => `Kết quả phù hợp: ${count}` },
     "calculatorHeader": {
         "oldVersionNote": "Bạn có thể tìm thấy phiên bản cũ của máy tính này",
         "oldVersionLinkLabel": "ở đây"

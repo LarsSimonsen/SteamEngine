@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactElement, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactElement, type ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightArrowLeft, faCircleInfo, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 import type { ModEntityRecord } from "../../../catalogs/entity-records";
@@ -21,6 +21,7 @@ import { calculateModRangeFromApi, type ModRangeApiResponse, type ModRangeGraphR
 import { limitsFromPreset } from "../../modrange/domain";
 import { ModRangeGraph } from "../../modrange/mod-range-graph";
 import "../batteries/battery-comparison.css";
+import { ComparisonPicker } from "../comparison-picker";
 
 type Side = "a" | "b";
 
@@ -111,47 +112,6 @@ const introductionText = (mod: DefaultMod, locale: ReturnType<typeof pageLocale>
     }
     if (introduction.earliest) return messages.introducedNoEarlier(format(introduction.earliest.date));
     return messages.availableBy(format(introduction.latest!.date));
-};
-
-const ModPicker = ({ label, options, selected, onSelect, chooseLabel, selectorFullLabel, selectorCompactLabel }: Readonly<{
-    label: string;
-    options: readonly ModOption[];
-    selected?: ModOption;
-    onSelect: (slug: string | undefined) => void;
-    chooseLabel: string;
-    selectorFullLabel: string;
-    selectorCompactLabel: string;
-}>): ReactElement => {
-    const details = useRef<HTMLDetailsElement>(null);
-    const [query, setQuery] = useState("");
-    const matches = options.filter((option) => `${option.label} ${option.slug}`.toLocaleLowerCase()
-        .includes(query.trim().toLocaleLowerCase()));
-    const select = (slug: string | undefined): void => {
-        onSelect(slug);
-        setQuery("");
-        if (details.current) details.current.open = false;
-    };
-    return <div className="battery-picker">
-        <span className="battery-picker__label">
-            <span className="battery-picker__label-full">{selectorFullLabel}</span>
-            <span className="battery-picker__label-compact" aria-hidden="true">{selectorCompactLabel}</span>
-        </span>
-        <details ref={details}>
-            <summary>{selected?.label ?? chooseLabel}</summary>
-            <div className="battery-picker__popover">
-                <input type="search" value={query} aria-label={chooseLabel} placeholder={chooseLabel}
-                    onChange={(event) => setQuery(event.target.value)} />
-                {selected && <button type="button" className="battery-picker__clear"
-                    onClick={() => select(undefined)}>{chooseLabel}</button>}
-                <div className="battery-picker__options" role="listbox" aria-label={label}>
-                    {matches.map((option) => <button type="button" role="option" key={option.mod.id}
-                        aria-selected={option.slug === selected?.slug} onClick={() => select(option.slug)}>
-                        <strong>{option.label}</strong><span>{option.details}</span>
-                    </button>)}
-                </div>
-            </div>
-        </details>
-    </div>;
 };
 
 const ComparisonSection = ({ title, rows, unknownLabel, extraRows }: Readonly<{
@@ -443,10 +403,6 @@ export const ModComparisonPage = (): ReactElement => {
     const powerCurveScale = modComparisonPowerCurveScale(curveResponses);
     const powerCurveLabel = calculatorMessagesFor(locale).modrange.powerCurve;
     const powerCurveDescription = calculatorMessagesFor(locale).modrange.powerCurveDescription;
-    const selectorFullLabel = (side: string): string => locale === "is"
-        ? `Veldu rafrettutæki eða stýrispjald ${side}` : `Select mod/board ${side}`;
-    const selectorCompactLabel = (side: string): string => locale === "is"
-        ? `Rafrettutæki eða stýrispjald ${side}` : `Mod/board ${side}`;
 
     return <SiteLayout basePath="../../" className="battery-comparison-page" rootHref={localizedRootHref(locale)}>
         <main id="main" className="page-content battery-comparison">
@@ -463,16 +419,14 @@ export const ModComparisonPage = (): ReactElement => {
                 <h1>{metadata.title}</h1><p>{metadata.description}</p>
             </header>
             <section className="battery-comparison__selectors" aria-label={metadata.title}>
-                <ModPicker label="A" options={options} selected={selected.a} chooseLabel={metadata.title}
-                    selectorFullLabel={selectorFullLabel("A")} selectorCompactLabel={selectorCompactLabel("A")}
-                    onSelect={(slug) => update("a", slug)} />
+                <ComparisonPicker label={messages.firstMod} options={options} selected={selected.a}
+                    chooseLabel={messages.chooseMod} onSelect={(slug) => update("a", slug)} />
                 <button type="button" className="battery-comparison__swap" onClick={swap}
-                    aria-label={metadata.title} title={metadata.title}>
+                    aria-label={messages.swap} title={messages.swap}>
                     <FontAwesomeIcon icon={faArrowRightArrowLeft} aria-hidden="true" />
                 </button>
-                <ModPicker label="B" options={options} selected={selected.b} chooseLabel={metadata.title}
-                    selectorFullLabel={selectorFullLabel("B")} selectorCompactLabel={selectorCompactLabel("B")}
-                    onSelect={(slug) => update("b", slug)} />
+                <ComparisonPicker label={messages.secondMod} options={options} selected={selected.b}
+                    chooseLabel={messages.chooseMod} onSelect={(slug) => update("b", slug)} />
             </section>
             <div className="battery-comparison__notices" aria-live="polite">
                 {invalidReference && <p className="notice notice--warning"><FontAwesomeIcon
@@ -487,9 +441,9 @@ export const ModComparisonPage = (): ReactElement => {
             <div className="battery-comparison__column-headings">
                 <span></span>
                 <strong>{selected.a && detailHref("a")
-                    ? <a href={detailHref("a")}>{selected.a.label}</a> : selectorFullLabel("A")}</strong>
+                    ? <a href={detailHref("a")}>{selected.a.label}</a> : messages.firstMod}</strong>
                 <strong>{selected.b && detailHref("b")
-                    ? <a href={detailHref("b")}>{selected.b.label}</a> : selectorFullLabel("B")}</strong>
+                    ? <a href={detailHref("b")}>{selected.b.label}</a> : messages.secondMod}</strong>
             </div>
             {sections.map((section) => <ComparisonSection key={section.title} {...section} unknownLabel={unknown}
                 extraRows={section.title === messages.powerLimits

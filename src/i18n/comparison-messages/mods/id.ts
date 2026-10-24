@@ -12,4 +12,8 @@ export const messages: ModComparisonMessages = {
     platformDiffers: "Entri ini berbeda dalam kategori atau konfigurasi baterai. Pastikan perbandingan ini sesuai dengan penggunaan yang Anda maksud.",
     platformUnknown: "Beberapa detail platform tidak diketahui, sehingga kompatibilitas kategori dan konfigurasi baterai tidak dapat dibandingkan sepenuhnya.",
     noSafetyFindings: "Tidak ada temuan keselamatan khusus entri yang tercatat.",
+    chooseMod: "Pilih mod atau papan",
+    firstMod: "Pilih mod/papan A",
+    secondMod: "Pilih mod/papan B",
+    swap: "Tukar mod/papan",
 };

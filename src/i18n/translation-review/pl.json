@@ -8878,6 +8878,28 @@
             },
             "confidence": "medium"
         },
+        "comparisons.mods.chooseMod": {
+            "sourceSignature": "176a31ade7b3210bf17a53519b591788e9dd2ecc2e0063aeed70c004e6f9cfb4",
+            "translationSignature": "4b3240a7c4c16c50656153d45baffc5f7950b2e2760fe5c62c06cbd97d80ac3f",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.firstMod": {
+            "sourceSignature": "dbe20574f32d713d608b68a7f5499ca30ef106cab842892a111838a29bb738bf",
+            "translationSignature": "6e941a63b488541222e0c08ef5678c642fea3b8c261eddb2fca1e11533a8389c",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "comparisons.mods.invalidSelection": {
             "sourceSignature": "72a6b0a7695b511f0866523af1b246dfb10865a18a2aeedccf01d96b412c5689",
             "translationSignature": "11b997d22489ab015bf06db68d620605c33ed19accb908bd323e6453a9f12062",
@@ -8952,6 +8974,28 @@
                 "kind": "machine",
                 "model": "GPT-6",
                 "method": "Full English-source Polish critique and independent reconciliation; selective Ukrainian comparison"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.secondMod": {
+            "sourceSignature": "c5ecc7444c21839c326d9216b0e1c0801d22acc9229ceb8773e2ddb1c2234443",
+            "translationSignature": "3a414411b22d5a72d3f721b1903e4d780a60c2d32b27c792854be1360317dfac",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "comparisons.mods.swap": {
+            "sourceSignature": "59c3be7deae3e8a5c25d2531e697fa4091611b9a2b332fe47ffdcab9b3fa040e",
+            "translationSignature": "8fcd68ebfd6e181426130ee4aab480731363f1a8a8932429b3c5f78a2af30766",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
             },
             "confidence": "medium"
         },
@@ -11670,6 +11714,17 @@
                 "kind": "machine",
                 "model": "GPT-6",
                 "method": "Full English-source Polish critique and independent reconciliation; selective Ukrainian comparison"
+            },
+            "confidence": "medium"
+        },
+        "messages.filter.matches": {
+            "sourceSignature": "5b9fa1173cd677f6a9392b8918b5b696d1308f73cd39654cb44b796e2693aca6",
+            "translationSignature": "8a3597265001d30400b47875aef864de9a2b4a828e799541d27f7b132a24d391",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
             },
             "confidence": "medium"
         },

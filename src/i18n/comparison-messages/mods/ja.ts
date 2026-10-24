@@ -12,4 +12,8 @@ export const messages: ModComparisonMessages = {
     platformDiffers: "これらの項目はカテゴリーまたはバッテリー構成が異なります。目的に合う比較か確認してください。",
     platformUnknown: "一部のプラットフォーム情報が不明なため、カテゴリーとバッテリー構成の互換性を完全には比較できません。",
     noSafetyFindings: "この項目固有の安全上の所見は記録されていません。",
+    chooseMod: "MOD または基板を選択",
+    firstMod: "MOD/基板 A を選択",
+    secondMod: "MOD/基板 B を選択",
+    swap: "MOD/基板を入れ替え",
 };

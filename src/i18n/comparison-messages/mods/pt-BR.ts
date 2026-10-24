@@ -18,4 +18,8 @@ export const messages: ModComparisonMessages = {
         "Alguns detalhes da plataforma são desconhecidos, então a compatibilidade da "
         + "categoria e da configuração da bateria não pode ser totalmente comparada.",
     noSafetyFindings: "Não há achados de segurança específicos registrados para esta entrada.",
+    chooseMod: "Escolha um mod ou uma placa",
+    firstMod: "Selecione o mod/placa A",
+    secondMod: "Selecione o mod/placa B",
+    swap: "Trocar mods/placas",
 };

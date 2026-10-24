@@ -49,11 +49,11 @@ describe("mod comparison page", () => {
         window.history.replaceState(null, "", "/compare/mods?a=dna40");
         render(<ModComparisonPage />);
 
-        expect(screen.getAllByRole("option", { name: /^Evolv DNA-40/ })).toHaveLength(2);
-        expect(screen.queryByRole("option", { name: /DNA-40 \(std\. wire\)/ })).not.toBeInTheDocument();
-        expect(screen.queryByRole("option", { name: /DNA-40 \(Ni 200\)/ })).not.toBeInTheDocument();
+        expect(screen.getAllByRole("button", { name: /^Evolv DNA-40/ })).toHaveLength(2);
+        expect(screen.queryByRole("button", { name: /DNA-40 \(std\. wire\)/ })).not.toBeInTheDocument();
+        expect(screen.queryByRole("button", { name: /DNA-40 \(Ni 200\)/ })).not.toBeInTheDocument();
         expect(screen.queryByText("dna40")).not.toBeInTheDocument();
-        expect(screen.getAllByRole("option", { name: /Evolv DNA-40.*40 W.*9 V/ })).toHaveLength(2);
+        expect(screen.getAllByRole("button", { name: /Evolv DNA-40.*40 W.*9 V/ })).toHaveLength(2);
     });
 
     it("leaves an unselected side empty and links the selected heading", async () => {
