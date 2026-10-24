@@ -1,8 +1,5 @@
 {
     "color-contrast": {
-        ".juice-status": [
-            "/juice"
-        ],
         ".se-alert > a[href$=\"wirewiz\"]": [
             "/tcr"
         ]

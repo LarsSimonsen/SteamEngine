@@ -26,7 +26,9 @@ import { SiteLayout } from "../../shared/ui/site-layout";
 import { NumericField } from "../../shared/ui/form-fields";
 import { NumericDraftReset, NumericInput } from "../../shared/ui/numeric-input";
 import { CalculatorLegacyNote, CalculatorPageHeader } from "../../shared/ui/calculator-page-header";
+import { ResultAnnouncement, resultSummary } from "../../shared/ui/result-announcement";
 import { TransientMessage, useTransientMessage } from "../../shared/ui/transient-message";
+import { useStickyScrollPadding } from "../../shared/ui/sticky-scroll-padding";
 import { calculatorMessagesFor, type CalculatorRouteMessages } from "../../i18n/calculator-messages";
 import { pageLocale } from "../../i18n/page-locale";
 import "./juice.css";
@@ -133,19 +135,22 @@ const DetailTable = ({ id, table, messages }: {
     </div>
 );
 
-const RecipeRowView = ({ item, messages }: {
-    readonly item: IngredientTable["rows"][number];
-    readonly messages: CalculatorRouteMessages;
-}): ReactElement => {
-    const negative = item.volume < 0;
-    const title = negative ? messages.negativeValue : undefined;
-    const localizedName = item.italic
+const recipeRowName = (item: IngredientTable["rows"][number], messages: CalculatorRouteMessages): string =>
+    item.italic
         ? item.name
         : item.name === "Nicotine"
             ? messages.nicotine
             : item.name.startsWith("Nicotine base")
                 ? item.name.replace("Nicotine base", messages.nicotineBaseIngredient)
                 : item.name;
+
+const RecipeRowView = ({ item, messages }: {
+    readonly item: IngredientTable["rows"][number];
+    readonly messages: CalculatorRouteMessages;
+}): ReactElement => {
+    const negative = item.volume < 0;
+    const title = negative ? messages.negativeValue : undefined;
+    const localizedName = recipeRowName(item, messages);
     return <tr>
         <td className={item.italic ? "juice-italic" : undefined}>{localizedName}</td>
         <td className={negative ? "juice-negative" : undefined} title={title}>{legacyRound(item.volume)}</td>
@@ -157,6 +162,7 @@ export const JuiceCalculator = (): ReactElement => {
     const [inputReset, setInputReset] = useState(0);
     const messages = calculatorMessagesFor(pageLocale()).juice;
     const nextFlavorId = useRef(0);
+    const mixWarning = useRef<HTMLDivElement>(null);
     const createFlavorDraft = (flavor: JuiceSettings["flavors"][number]): FlavorDraft => ({
         id: nextFlavorId.current++,
         nm: flavor.nm,
@@ -169,6 +175,7 @@ export const JuiceCalculator = (): ReactElement => {
         createFlavorDraft({ nm: "Flavor", perc: 0, vg: false }),
     ]);
     const [calculation, setCalculation] = useState<JuiceCalculation>(emptyCalculation);
+    useStickyScrollPadding(mixWarning, !calculation.canMix);
     const debouncedCalculation = useMemo(() => createDebouncedRequest<JuiceCalculation>(200), []);
     useEffect(() => {
         void debouncedCalculation.schedule(() => calculateJuiceFromApi(settings))
@@ -319,7 +326,8 @@ export const JuiceCalculator = (): ReactElement => {
                             </button>
                         </div>
                     </details>} />
-            {!calculation.canMix && <div className="juice-mix-warning" role="alert">
+            {/* The results status announces this; a second alert would repeat it. */}
+            {!calculation.canMix && <div className="juice-mix-warning" ref={mixWarning}>
                 <FontAwesomeIcon icon={faTriangleExclamation} aria-hidden="true" />
                 <span>{messages.cannotMix}</span>
             </div>}
@@ -386,7 +394,7 @@ export const JuiceCalculator = (): ReactElement => {
                     </div>
                     <div className="se-table-scroll juice-table-scroll">
                         <table className="se-table juice-flavor-table">
-                        <thead><tr><th aria-label={messages.remove} />
+                        <thead><tr><th><span className="sr-only">{messages.remove}</span></th>
                         <th colSpan={2}><div className="juice-flavor-input-headings">
                             <span>{messages.flavor}</span><span>{messages.percentage}</span>
                         </div></th>
@@ -423,6 +431,10 @@ export const JuiceCalculator = (): ReactElement => {
                 <section className="se-card se-card--soft-shadow juice-panel juice-panel--primary juice-recipe-panel"
                     aria-labelledby="juice-recipe-title">
                     <h2 id="juice-recipe-title">{messages.recipe}</h2>
+                    <ResultAnnouncement summary={calculation.canMix
+                        ? resultSummary(pageLocale(), calculation.recipe.rows.filter((item) => !item.italic).map(
+                            (item) => `${recipeRowName(item, messages)} ${legacyRound(item.volume)} ${messages.ml}`))
+                        : undefined} />
                     <div className="se-table-scroll juice-table-scroll">
                         <table className="se-table juice-recipe-table">
                         <thead><tr><th>{messages.addColumn}</th><th>{messages.ml}</th>

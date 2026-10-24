@@ -208,7 +208,7 @@
 }
 
 .juice-icon-button:hover {
-    color: #e74c3c;
+    color: var(--se-danger-text);
 }
 
 .juice-carrier-options {
@@ -255,7 +255,7 @@
 }
 
 .juice-negative {
-    color: #e74c3c;
+    color: var(--se-danger-text);
     background: rgb(231 76 60 / 12%);
 }
 
@@ -304,11 +304,11 @@
 }
 
 .juice-status--ok {
-    color: #00bc8c;
+    color: var(--se-link);
 }
 
 .juice-status--error {
-    color: #e74c3c;
+    color: var(--se-danger-text);
 }
 
 .juice-status--error span {
@@ -322,7 +322,7 @@
     gap: 0.65rem;
     margin-bottom: 1rem;
     padding: 0.8rem 1rem;
-    color: #ffb4ae;
+    color: var(--se-danger-text);
     background: rgb(231 76 60 / 14%);
     border: 1px solid rgb(231 76 60 / 55%);
     border-radius: 0.35rem;
