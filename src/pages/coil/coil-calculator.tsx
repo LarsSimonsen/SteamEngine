@@ -49,6 +49,7 @@ import {
 } from "../../shared/ui/form-fields";
 import { NumericDraftReset } from "../../shared/ui/numeric-input";
 import { SiteLayout } from "../../shared/ui/site-layout";
+import { ResultAnnouncement, resultSummary } from "../../shared/ui/result-announcement";
 import { TransientMessage, useTransientMessage } from "../../shared/ui/transient-message";
 import { canonicalMaterialId } from "../../catalogs/materials/catalog";
 import { formatDisplayNumber } from "../../shared/domain/numeric";
@@ -609,6 +610,13 @@ export const CoilCalculator = (): ReactElement => {
                 <section className="se-card se-card--soft-shadow coil-panel coil-results-panel"
                     aria-labelledby="coil-results-title">
                     <h2 id="coil-results-title">{messages.results}</h2>
+                    <ResultAnnouncement summary={result && resultSummary(pageLocale(), [
+                        `${messages.wraps} ${displayNumber(result.numberOfWraps, 2)}`,
+                        `${messages.resistanceActual} `
+                            + `${resistanceValue(result.roundedWrapResistance * setupFactor)} Ω`,
+                        `${messages.heatFlux} ${displayNumber(result.recommendPower, 1)} W`
+                            + ` ${displayNumber(result.recommendVoltage, 1)} V`,
+                    ])} />
                         {calculation.kind === "invalid"
                             ? <p className="coil-error" role="alert">{calculation.message}</p>
                             : result && <>
@@ -651,7 +659,7 @@ export const CoilCalculator = (): ReactElement => {
                                     max="500"
                                     step="10"
                                     onChange={changeHeatFlux} />
-                                <output className="coil-heatflux-output" aria-live="polite">
+                                <output className="coil-heatflux-output" aria-live="off">
                                     <strong>{displayNumber(result.recommendPower, 1)} W</strong>
                                     <span aria-hidden="true">·</span>
                                     <strong>{displayNumber(result.recommendVoltage, 1)} V</strong>

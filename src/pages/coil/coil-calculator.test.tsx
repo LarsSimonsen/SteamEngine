@@ -83,6 +83,25 @@ describe("CoilCalculator thermal results", () => {
         expect(document.querySelector("#coil-results-title")).toBeInTheDocument();
     });
 
+    it("announces one result summary and keeps the heat-flux output from announcing on its own", async () => {
+        const { container } = render(<CoilCalculator />);
+        const announcement = container.querySelector(".sr-only[role='status']")!;
+        await waitFor(() => expect(container.querySelector(".coil-heatflux-output")).toBeInTheDocument());
+        expect(announcement).toBeEmptyDOMElement();
+        expect(container.querySelector(".coil-heatflux-output")).toHaveAttribute("aria-live", "off");
+
+        const calculate = vi.mocked(fetch).getMockImplementation()!;
+        vi.mocked(fetch).mockImplementation(async (input) => {
+            const body = await (await calculate(input)).json() as Record<string, unknown>;
+            return new Response(JSON.stringify({ ...body, numberOfWraps: 6.5, roundedWrapResistance: 1.5 }));
+        });
+        fireEvent.change(screen.getByRole("spinbutton", { name: /Target resistance/ }), { target: { value: "1.5" } });
+
+        await waitFor(() => expect(announcement).toHaveTextContent(
+            "Number of wraps 6.5, actual resistance 1.5 Ω, Heat flux 10 W 4.2 V"),
+            { timeout: 3000 });
+    });
+
     it("resets calculator settings without closing header tools", async () => {
         render(<CoilCalculator />);
         fireEvent.click(screen.getByRole("button", { name: "Manage materials" }));
