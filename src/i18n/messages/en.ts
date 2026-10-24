@@ -37,6 +37,7 @@ export const messages: SharedMessages = {
         atMost: (max: string) => `Enter a number of at most ${max}.`,
         wholeNumber: "Use a whole number.",
     },
+    notice: { dismiss: "Dismiss" },
     calculatorHeader: { oldVersionNote: "You can find the old version of this calculator", oldVersionLinkLabel: "here" },
     calculatorVisibility: {
         label: "Calculator visibility",

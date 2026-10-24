@@ -37,6 +37,7 @@ export const messages: SharedMessages = {
         "atMost": (max: string) => `Skriv inn et tall på høyst ${max}.`,
         "wholeNumber": "Bruk et heltall."
     },
+    notice: { "dismiss": "Lukk" },
     calculatorHeader: {
         oldVersionNote: "Du finner den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

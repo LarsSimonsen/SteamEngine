@@ -40,6 +40,7 @@ export const messages = {
         "atMost": (max: string) => `Введіть число не більше ніж ${max}.`,
         "wholeNumber": "Використайте ціле число."
     },
+    "notice": { "dismiss": "Закрити" },
     "calculatorHeader": {
         "oldVersionNote": "Ви можете знайти стару версію цього калькулятора",
         "oldVersionLinkLabel": "тут"

@@ -33,7 +33,6 @@ import "./juice.css";
 
 const storageKey = "steamengine.juice.settings.v1";
 const legacyCookieKey = "steamengine-ej2";
-const messageDuration = 3500;
 
 const emptyTable: IngredientTable = { rows: [], totalVolume: 0, totalWeight: 0, density: 0 };
 const emptyCalculation = (): JuiceCalculation => ({
@@ -182,7 +181,7 @@ export const JuiceCalculator = (): ReactElement => {
     const [showBaseDetails, setShowBaseDetails] = useState(false);
     const [showTargetDetails, setShowTargetDetails] = useState(false);
     const [savedSettings, setSavedSettings] = useState<JuiceSettings | null>(() => readStoredSettings());
-    const { message, showMessage, clearMessage } = useTransientMessage(messageDuration);
+    const { message, showMessage, clearMessage } = useTransientMessage();
     const applySettings = (next: JuiceSettings): void => {
         setInputReset((revision) => revision + 1);
         const copy = cloneSettings(next);

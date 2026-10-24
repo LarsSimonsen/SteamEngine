@@ -42,6 +42,7 @@ export const messages: SharedMessages = {
         "atMost": (max: string) => `Inserisci un numero minore o uguale a ${max}.`,
         "wholeNumber": "Usa un numero intero."
     },
+    "notice": { "dismiss": "Chiudi" },
     "calculatorHeader": {
         "oldVersionNote": "Puoi trovare la vecchia versione di questa calcolatrice",
         "oldVersionLinkLabel": "Qui"

@@ -315,8 +315,7 @@ describe("CoilCalculator thermal results", () => {
         fireEvent.click(screen.getByRole("button", { name: "Manage materials" }));
         fireEvent.click(screen.getByRole("button", { name: "Delete" }));
 
-        expect(screen.getByRole("status")).toHaveTextContent(
-            "Cannot delete Test alloy; it is used by Current Coil calculator settings.",
-        );
+        expect(screen.getByText("Cannot delete Test alloy; it is used by Current Coil calculator settings."))
+            .toHaveAttribute("role", "status");
     });
 });

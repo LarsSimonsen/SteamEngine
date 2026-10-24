@@ -42,6 +42,7 @@ export const messages: SharedMessages = {
         "atMost": (max: string) => `请输入不大于 ${max} 的数字。`,
         "wholeNumber": "请使用整数。"
     },
+    "notice": { "dismiss": "关闭" },
     "calculatorHeader": {
         "oldVersionNote": "您可以找到此计算器的旧版本",
         "oldVersionLinkLabel": "这里"

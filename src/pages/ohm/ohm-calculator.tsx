@@ -28,6 +28,7 @@ import { parseNumericInput } from '../../shared/domain/numeric';
 import { messagesFor } from '../../i18n/messages';
 import { CalculatorLegacyNote, CalculatorPageHeader } from '../../shared/ui/calculator-page-header';
 import { SiteLayout } from '../../shared/ui/site-layout';
+import { TransientMessage, transientMessageDuration } from '../../shared/ui/transient-message';
 import './ohm.css';
 
 const fields = [
@@ -93,7 +94,7 @@ export const OhmCalculator = (): ReactElement => {
     useEffect(() => () => debouncedCalculation.cancel(), [debouncedCalculation]);
     useEffect(() => {
         if (!notice) return;
-        const timeout = window.setTimeout(() => setNotice(undefined), 10000);
+        const timeout = window.setTimeout(() => setNotice(undefined), transientMessageDuration);
         return () => window.clearTimeout(timeout);
     }, [notice]);
     useEffect(() => {
@@ -158,11 +159,8 @@ export const OhmCalculator = (): ReactElement => {
         setState((current) => resetOhmLockSettings(current));
         setNotice({ panel: 'locks', text: messages.defaultsRestored });
     };
-    const renderNotice = (panel: 'values' | 'locks') => notice?.panel === panel && <p className="notice"
-        role="status" tabIndex={0} onClick={() => setNotice(undefined)}
-        onKeyDown={(event) => {
-            if (event.key === 'Enter' || event.key === ' ') setNotice(undefined);
-        }}>{notice.text}</p>;
+    const renderNotice = (panel: 'values' | 'locks') => <TransientMessage className="notice"
+        message={notice?.panel === panel ? notice.text : undefined} onDismiss={() => setNotice(undefined)} />;
     const chooseSimple = (field: OhmField) => setState((current) => ({
         ...current, lockSettings: selectSimpleLock(current.lockSettings, field)
     }));

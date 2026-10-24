@@ -42,6 +42,7 @@ export const messages = {
         "atMost": (max: string) => `Nhập một số không lớn hơn ${max}.`,
         "wholeNumber": "Hãy dùng số nguyên."
     },
+    "notice": { "dismiss": "Đóng" },
     "calculatorHeader": {
         "oldVersionNote": "Bạn có thể tìm thấy phiên bản cũ của máy tính này",
         "oldVersionLinkLabel": "ở đây"

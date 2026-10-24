@@ -42,6 +42,9 @@ export type SharedMessages = {
         readonly atMost: (max: string) => string;
         readonly wholeNumber: string;
     };
+    readonly notice: {
+        readonly dismiss: string;
+    };
     readonly calculatorHeader: {
         readonly oldVersionNote: string;
         readonly oldVersionLinkLabel: string;

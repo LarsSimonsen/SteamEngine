@@ -33,6 +33,7 @@ export const messages: SharedMessages = {"navigation": {"about": "حول",
         "atMost": (max: string) => `أدخل رقمًا لا يزيد على ${max}.`,
         "wholeNumber": "استخدم عددًا صحيحًا."
     },
+"notice": { "dismiss": "إغلاق" },
 "calculatorHeader": {"oldVersionNote": "يمكنك العثور على الإصدار القديم من هذه الحاسبة",
 "oldVersionLinkLabel": "هنا"},
 "calculatorVisibility": {"label": "حالة ظهور الحاسبة",

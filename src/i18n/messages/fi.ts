@@ -45,6 +45,7 @@ export const messages = {
         "atMost": (max: string) => `Anna luku, joka on enintään ${max}.`,
         "wholeNumber": "Käytä kokonaislukua."
     },
+    "notice": { "dismiss": "Sulje" },
     "calculatorHeader": {
         "oldVersionNote": "Löydät tämän laskimen vanhan version",
         "oldVersionLinkLabel": "täältä",

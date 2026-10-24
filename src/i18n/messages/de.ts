@@ -42,6 +42,7 @@ export const messages = {
         "atMost": (max: string) => `Geben Sie eine Zahl von höchstens ${max} ein.`,
         "wholeNumber": "Verwenden Sie eine ganze Zahl."
     },
+    "notice": { "dismiss": "Schließen" },
     "calculatorHeader": {
         "oldVersionNote": "Sie finden die alte Version dieses Rechners",
         "oldVersionLinkLabel": "hier"

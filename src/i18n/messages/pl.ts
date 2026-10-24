@@ -40,6 +40,7 @@ export const messages =  {
         "atMost": (max: string) => `Wpisz liczbę nie większą niż ${max}.`,
         "wholeNumber": "Użyj liczby całkowitej."
     },
+    "notice": { "dismiss": "Zamknij" },
     "calculatorHeader":  {
         "oldVersionNote": "Możesz znaleźć starą wersję tego kalkulatora",
         "oldVersionLinkLabel": "tutaj"

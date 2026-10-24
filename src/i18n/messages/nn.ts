@@ -40,6 +40,7 @@ export const messages: SharedMessages = normalizeNynorsk({
         atMost: (max: string) => `Skriv inn eit tal på høgst ${max}.`,
         wholeNumber: "Bruk eit heiltal.",
     },
+    notice: { dismiss: "Lukk" },
     calculatorHeader: {
         oldVersionNote: "Du finn den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

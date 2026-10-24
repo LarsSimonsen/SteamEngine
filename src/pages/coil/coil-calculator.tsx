@@ -57,7 +57,6 @@ import { calculatorMessagesFor, type CalculatorRouteMessages } from "../../i18n/
 import "./coil.css";
 
 const storageKey = "steamengine.coil.settings.v1";
-const messageDuration = 5000;
 
 type Drafts = Record<
     | "twistPitch"
@@ -226,7 +225,7 @@ export const CoilCalculator = (): ReactElement => {
     const [drafts, setDrafts] = useState<Drafts>(() => draftValues(readStoredSettings()));
     const lastValidSettings = useRef<CoilSettings>(settings.diameter > 0 ? settings : cloneSettings(defaultSettings));
     const targetResistanceEditing = useRef(false);
-    const { message, showMessage, clearMessage } = useTransientMessage(messageDuration);
+    const { message, showMessage, clearMessage } = useTransientMessage();
     const [showMaterialManager, setShowMaterialManager] = useState(false);
     const [showConverter, setShowConverter] = useState(false);
     const [nonstandardDiameter, setNonstandardDiameter] = useState(false);
