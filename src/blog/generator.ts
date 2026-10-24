@@ -452,13 +452,13 @@ export const buildBlog = ({ sourceDirectory, contentDirectory, outputDirectory }
     if (posts.length === 0) {
         console.warn(`Building the blog without posts: no blog content in ${contentDirectory}.`);
     }
-    // The blog content lives outside this repository; this report keeps missing alt text visible until it is
-    // fixed there, after which it should fail the build.
+    // The blog content lives outside this repository, so its alt text is checked here, where every build reads it.
     const imageAltIssues = findBlogImageAltIssues(posts);
     if (imageAltIssues.length > 0) {
         const lines = imageAltIssues.map((issue) =>
             `  ${issue.post}: ${issue.src} (${issue.alt === undefined ? "no alt" : `alt="${issue.alt}"`})`);
-        console.warn(`Blog images without a text alternative (${imageAltIssues.length}):\n${lines.join("\n")}`);
+        throw new Error(`Blog images need a text alternative, or alt="" when decorative `
+            + `(${imageAltIssues.length}):\n${lines.join("\n")}`);
     }
     fs.rmSync(outputDirectory, { force: true, recursive: true });
     fs.mkdirSync(outputDirectory, { recursive: true });
