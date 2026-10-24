@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+  await routeToLiveApi(page);
+});
 
 test.describe("Wire Wizard", () => {
   test("shows the graph by default and supports recursive wire editing", async ({
@@ -83,19 +88,19 @@ test.describe("Wire Wizard", () => {
       }));
     });
     await page.goto("/wirewiz");
-    await page.getByRole("tab", { name: "Graph" }).click();
+    await page.getByRole("button", { name: "Graph" }).click();
     await expect(
       page.getByRole("img", { name: "Temperature resistance factor graph" }),
     ).toBeVisible();
-    await page.getByRole("tab", { name: "TFR editor" }).click();
+    await page.getByRole("button", { name: "TFR editor" }).click();
     await page.getByRole("textbox", { name: /Temperature points/ })
       .fill("20, 50, 100, 150, 200, 250, 300");
     await page.getByRole("button", { name: "Apply temperature points" }).click();
-    await page.getByRole("tab", { name: "Graph" }).click();
+    await page.getByRole("button", { name: "Graph" }).click();
     await expect(
       page.getByText("Values outside the available TFR range were linearly extrapolated."),
     ).toHaveCount(0);
-    await page.getByRole("tab", { name: "Equivalents" }).click();
+    await page.getByRole("button", { name: "Equivalents" }).click();
 
     const celsius = page.getByRole("spinbutton", { name: "Celsius" });
     const fahrenheit = page.getByRole("spinbutton", { name: "Fahrenheit" });
@@ -105,7 +110,7 @@ test.describe("Wire Wizard", () => {
     await expect(fahrenheit).toHaveValue("392");
 
     await page.getByLabel("Reference material").selectOption("browser-reference");
-    await expect(page.getByRole("status")).toContainText("Browser reference alloy");
+    await expect(page.locator(".wirewiz-equivalents__result")).toContainText("Browser reference alloy");
     await expect(page.getByText(/resistance factor of/)).toBeVisible();
   });
 
@@ -113,11 +118,11 @@ test.describe("Wire Wizard", () => {
     page,
   }) => {
     await page.goto("/wirewiz");
-    await page.getByRole("tab", { name: "TFR editor" }).click();
+    await page.getByRole("button", { name: "TFR editor" }).click();
     await page.getByRole("textbox", { name: /Temperature points/ })
       .fill("-40, 50, 100, 150, 200");
     await page.getByRole("button", { name: "Apply temperature points" }).click();
-    await page.getByRole("tab", { name: "DNA200" }).click();
+    await page.getByRole("button", { name: "DNA200" }).click();
     const output = page.getByRole("textbox", { name: "DNA200 CSV output" });
     await expect(output).toHaveValue(/Temperature \(degF\)/);
     await expect(output).not.toHaveValue(/\n68\.0000,/);
@@ -159,7 +164,7 @@ test.describe("Wire Wizard", () => {
     await page.reload();
     await expect(page.getByLabel("Inner diameter (mm)")).toHaveValue("3.5");
 
-    await page.getByRole("button", { name: "Menu" }).click();
+    await page.locator("summary", { hasText: "Menu" }).click();
     const downloadPromise = page.waitForEvent("download");
     await page.getByRole("button", { name: "Export", exact: true }).click();
     const download = await downloadPromise;
@@ -191,7 +196,7 @@ test.describe("Wire Wizard", () => {
       mimeType: "application/json",
       buffer: Buffer.from(JSON.stringify(imported)),
     });
-    await expect(page.getByRole("status")).toHaveText("Wire and coil design imported.");
+    await expect(page.getByRole("status").filter({ hasText: "imported" })).toHaveText("Wire and coil design imported.");
     await expect(page.getByLabel("Inner diameter (mm)")).toHaveValue("4");
     await page.reload();
     await expect(page.getByLabel("Inner diameter (mm)")).toHaveValue("4");
@@ -199,7 +204,7 @@ test.describe("Wire Wizard", () => {
 
   test("validates and applies temperature drafts", async ({ page }) => {
     await page.goto("/wirewiz");
-    await page.getByRole("tab", { name: "TFR editor" }).click();
+    await page.getByRole("button", { name: "TFR editor" }).click();
     const input = page.getByRole("textbox", { name: /Temperature points/ });
     const apply = page.getByRole("button", { name: "Apply temperature points" });
 

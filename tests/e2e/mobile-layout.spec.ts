@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 test.use({ viewport: { width: 390, height: 844 } });
 

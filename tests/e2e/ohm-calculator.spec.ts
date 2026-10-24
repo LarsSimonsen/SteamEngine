@@ -38,8 +38,8 @@ test('OhmCalc updates values and changes its simple lock target', async ({ page 
     await expect(lockSelectors.nth(0)).toHaveValue('current');
     await expect(lockPanel.getByRole('button', { name: 'Reset', exact: true })).toBeVisible();
     await expect(valuesPanel.getByRole('button', { name: 'Reset', exact: true })).toHaveCount(0);
-    await expect(valuesPanel.locator('.notice')).toHaveText('Default settings have been restored.');
-    await valuesPanel.locator('.notice').click();
+    await expect(valuesPanel.locator('.notice').getByRole('status')).toHaveText('Default settings have been restored.');
+    await valuesPanel.locator('.notice').getByRole('button', { name: 'Dismiss' }).click();
 
     await page.locator('#cc-u').fill('4');
     await expect.poll(async () => Number(await page.locator('#cc-r').inputValue())).toBeCloseTo(2.86, 2);
@@ -59,9 +59,9 @@ test('OhmCalc updates values and changes its simple lock target', async ({ page 
     await expect(page.getByRole('button', { name: 'Reset', exact: true })).toHaveCount(0);
     await expect(page.locator('svg[data-icon="rotate-left"]')).toHaveCount(0);
     const notice = page.locator('.lock-card .notice');
-    await expect(notice).toHaveText('Default settings have been restored.');
+    await expect(notice.getByRole('status')).toHaveText('Default settings have been restored.');
     await expect(page.locator('.ohm-card').first().locator('.notice')).toHaveCount(0);
-    await notice.click();
+    await notice.getByRole('button', { name: 'Dismiss' }).click();
     await expect(notice).toHaveCount(0);
     await page.getByRole('button', { name: 'Show detailed locks' }).click();
     await expect(page.getByRole('button', { name: 'Hide detailed locks' })).toHaveAttribute('aria-expanded', 'true');

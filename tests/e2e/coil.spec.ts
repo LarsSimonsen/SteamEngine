@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 test.describe("Coil Wrapping calculator", () => {
     test("shows default results and advanced controls", async ({ page }) => {
@@ -96,7 +101,8 @@ test.describe("Coil Wrapping calculator", () => {
         await page.getByLabel("TFR temperature").nth(1).fill("200");
         await page.getByLabel("TFR resistance factor").nth(1).fill("1.4");
         await page.getByRole("button", { name: "Save material" }).click();
-        await expect(page.getByRole("status")).toContainText("20 °C point was extrapolated");
+        await expect(page.getByRole("status").filter({ hasText: "20 °C point" }))
+            .toContainText("20 °C point was extrapolated");
 
         await page.getByLabel("Material", { exact: true }).selectOption({ label: "Browser alloy" });
         await page.goto("/tcr");
@@ -115,7 +121,8 @@ test.describe("Coil Wrapping calculator", () => {
         const editedMaterial = page.locator(".catalog-manager__item--custom")
             .filter({ hasText: "Browser alloy edited" });
         await editedMaterial.getByRole("button", { name: "Delete" }).click();
-        await expect(page.getByRole("status")).toContainText("Current TCR calculator settings");
+        await expect(page.getByRole("status").filter({ hasText: "Current TCR" }))
+            .toContainText("Current TCR calculator settings");
     });
 
     test("clones hidden defaults and persists default visibility", async ({ page }) => {

@@ -1,4 +1,9 @@
 import { expect, test } from '@playwright/test';
+import { routeToLiveApi } from './live-api';
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 test('Mod Range manages its mod catalog and validates editable limits', async ({ page }) => {
     await page.goto('/modrange');

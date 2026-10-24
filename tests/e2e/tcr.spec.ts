@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 test("TCR calculates, persists, and stays out of primary navigation", async ({ page }) => {
     await page.goto("/tcr");

@@ -34,7 +34,7 @@ test("Polish recipe settings retain numeric values across save and load", async 
     await page.goto("/pl/juice");
     const amount = page.getByRole("spinbutton", { name: /Ilość do przygotowania/ });
     await amount.fill("20");
-    await page.getByRole("button", { name: /^Menus?$/ }).click();
+    await page.locator("summary", { hasText: /^Menus?$/ }).click();
     await page.getByRole("button", { name: "Zapisz", exact: true }).click();
     await page.getByRole("button", { name: "Zresetuj", exact: true }).click();
     await expect(amount).toHaveValue("10");
@@ -44,7 +44,7 @@ test("Polish recipe settings retain numeric values across save and load", async 
 
 test("Polish Wire Wizard preserves the DNA200 CSV protocol", async ({ page }) => {
     await page.goto("/pl/wirewiz");
-    await page.getByRole("tab", { name: "DNA200", exact: true }).click();
+    await page.getByRole("button", { name: "DNA200", exact: true }).click();
     await expect(page.getByRole("textbox", { name: /DNA200/ })).toHaveValue(/Temperature \(degF\)/);
     const download = page.waitForEvent("download");
     await page.getByRole("button", { name: /CSV/ }).click();

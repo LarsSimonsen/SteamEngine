@@ -36,7 +36,7 @@ test("Finnish recipe settings save and load numeric values", async ({ page }) =>
     const amount = page.getByRole("spinbutton", { name: /Valmistettava määrä/ });
     await expect(batch.first()).toBeVisible();
     await amount.fill("20");
-    await page.getByRole("button", { name: "Valikko", exact: true }).click();
+    await page.locator("summary", { hasText: "Valikko" }).click();
     await page.getByRole("button", { name: "Tallenna", exact: true }).click();
     await page.getByRole("button", { name: "Nollaa", exact: true }).click();
     await expect(amount).toHaveValue("10");
@@ -46,7 +46,7 @@ test("Finnish recipe settings save and load numeric values", async ({ page }) =>
 
 test("Finnish Wire Wizard preserves CSV protocol", async ({ page }) => {
     await page.goto("/fi/wirewiz");
-    await page.getByRole("tab", { name: "DNA200", exact: true }).click();
+    await page.getByRole("button", { name: "DNA200", exact: true }).click();
     await expect(page.getByRole("textbox", { name: /DNA200/ })).toHaveValue(/Temperature \(degF\)/);
     const download = page.waitForEvent("download");
     await page.getByRole("button", { name: /CSV/ }).click();

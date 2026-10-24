@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 test("Battery Drain supports the main device and battery workflows", async ({ page }) => {
     await page.goto("/batt");
@@ -42,7 +47,7 @@ test("Battery Drain manages and protects custom batteries", async ({ page }) => 
     await selector.selectOption(customBatteryId!);
     await expect(page.getByLabel("Capacity")).toHaveValue("3000");
     await page.getByRole("button", { name: "Delete" }).click();
-    await expect(page.getByRole("status")).toContainText(
+    await expect(page.getByRole("status").filter({ hasText: "Cannot delete Browser Test Cell" })).toContainText(
         "Cannot delete Browser Test Cell; it is used by Current Battery Drain settings.",
     );
 });

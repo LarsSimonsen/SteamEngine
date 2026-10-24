@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 const examples = [
     ["juice", "Flavor percentage 1", "0.02"],
@@ -42,14 +47,14 @@ test("Wire Wizard reset replaces a cleared draft even if its calculation value d
     const input = page.getByRole("spinbutton", { name: "Inner diameter (mm)", exact: true });
     await input.fill("");
     await expect(input).toHaveValue("");
-    await page.getByRole("button", { name: "Menu", exact: true }).click();
+    await page.locator("summary", { hasText: "Menu" }).click();
     await page.getByRole("button", { name: "Reset", exact: true }).click();
     await expect(input).toHaveValue("2");
 });
 
 test("Wire Wizard Fahrenheit input retains fractions and updates Celsius", async ({ page }) => {
     await page.goto("/wirewiz");
-    await page.getByRole("tab", { name: "Equivalents", exact: true }).click();
+    await page.getByRole("button", { name: "Equivalents", exact: true }).click();
     const input = page.getByRole("spinbutton", { name: "Fahrenheit (°F)", exact: true });
     await input.fill("");
     await input.pressSequentially("410.5", { delay: 100 });

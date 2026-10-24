@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { routeToLiveApi } from "./live-api";
+
+test.beforeEach(async ({ page }) => {
+    await routeToLiveApi(page);
+});
 
 test("Converter supports numeric conversion, discrete gauge results, swap, and reset", async ({ page }) => {
     await page.goto("/converter");
