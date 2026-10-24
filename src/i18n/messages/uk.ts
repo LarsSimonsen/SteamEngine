@@ -20,7 +20,8 @@ export const messages = {
     "footer": {
         "purgeCache": "Очистити кеш",
         "translationDraft": "Цей переклад було створено машинним способом і очікує на перевірку людьми.",
-        "suggestCorrection": "Запропонуйте виправлення"
+        "suggestCorrection": "Запропонуйте виправлення",
+        "advertisement": "Реклама"
     },
     "error": {
         "title": "Не вдалося оновити калькулятор",

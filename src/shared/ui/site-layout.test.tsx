@@ -82,6 +82,18 @@ describe("site layout", () => {
         expect(screen.getByLabelText("Advertisement")).toHaveAttribute("data-ad-placement", "home-footer");
     });
 
+    it("renders the ad placement as a landmark labelled in the page language", () => {
+        document.getElementById("root")!.dataset.locale = "de";
+        render(
+            <SiteLayout basePath="./" currentRoute="ohm" rootHref=".">
+                <main>Calculator content</main>
+            </SiteLayout>,
+        );
+
+        expect(screen.getByRole("complementary", { name: "Werbung" }))
+            .toHaveAttribute("data-ad-placement", "calculator-footer");
+    });
+
     it("keeps localized calculator home links slashless", () => {
         window.history.replaceState({}, "", "/nb/ohm");
         document.getElementById("root")!.dataset.locale = "nb";

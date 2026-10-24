@@ -18,6 +18,7 @@ export const messages: SharedMessages = {
         purgeCache: "Purge cache",
         translationDraft: "This translation was machine-drafted and is awaiting human review.",
         suggestCorrection: "Suggest a correction",
+        advertisement: "Advertisement",
     },
     error: {
         title: "The calculator could not update",

@@ -22,7 +22,8 @@ export const messages = {
     "footer": {
         "purgeCache": "Cache leeren",
         "translationDraft": "Diese Übersetzung wurde maschinell erstellt und wartet auf eine menschliche Überprüfung.",
-        "suggestCorrection": "Schlagen Sie eine Korrektur vor"
+        "suggestCorrection": "Schlagen Sie eine Korrektur vor",
+        "advertisement": "Werbung"
     },
     "error": {
         "title": "Der Rechner konnte nicht aktualisiert werden",

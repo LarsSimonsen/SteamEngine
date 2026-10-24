@@ -22,7 +22,8 @@ export const messages: SharedMessages = {
     "footer": {
         "purgeCache": "清除缓存",
         "translationDraft": "该翻译是机器起草的，正在等待人工审核。",
-        "suggestCorrection": "建议更正"
+        "suggestCorrection": "建议更正",
+        "advertisement": "广告"
     },
     "error": {
         "title": "计算器无法更新",

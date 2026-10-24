@@ -22,7 +22,8 @@ export const messages: SharedMessages = {
     "footer": {
         "purgeCache": "Svuota cache",
         "translationDraft": "Questa traduzione è stata redatta automaticamente ed è in attesa di revisione umana.",
-        "suggestCorrection": "Suggerire una correzione"
+        "suggestCorrection": "Suggerire una correzione",
+        "advertisement": "Pubblicità"
     },
     "error": {
         "title": "Impossibile aggiornare la calcolatrice",

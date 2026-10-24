@@ -21,6 +21,7 @@ export const messages: SharedMessages = normalizeNynorsk({
         purgeCache: "Tøm hurtigbuffer",
         translationDraft: "Denne omsetjinga er maskinlaga og ventar på menneskeleg gjennomgang.",
         suggestCorrection: "Foreslå ei retting",
+        advertisement: "Annonse",
     },
     error: {
         title: "Kalkulatoren kunne ikkje oppdaterast",

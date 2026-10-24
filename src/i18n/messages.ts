@@ -23,6 +23,7 @@ export type SharedMessages = {
         readonly purgeCache: string;
         readonly translationDraft: string;
         readonly suggestCorrection: string;
+        readonly advertisement: string;
     };
     readonly error: {
         readonly title: string;

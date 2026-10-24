@@ -18,6 +18,7 @@ export const messages: SharedMessages = {
         purgeCache: "Tøm hurtigbuffer",
         translationDraft: "Denne oversettelsen er maskinlaget og venter på menneskelig gjennomgang.",
         suggestCorrection: "Foreslå en rettelse",
+        advertisement: "Annonse",
     },
     error: {
         title: "Kalkulatoren kunne ikke oppdateres",

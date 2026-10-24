@@ -1,4 +1,6 @@
 import { useEffect, type ReactElement } from "react";
+import { messagesFor } from "../../i18n/messages";
+import { pageLocale } from "../../i18n/page-locale";
 
 export type AdPlacementName =
     | "blog-article-inline"
@@ -43,7 +45,8 @@ export const AdPlacement = ({
     readonly placement: AdPlacementName;
 }): ReactElement => {
     useEffect(ensureRuntime, []);
-    return <div className="ad-slot se-ad-placement text-center" aria-label="Advertisement"
+    return <aside className="ad-slot se-ad-placement text-center"
+        aria-label={messagesFor(pageLocale()).footer.advertisement}
         data-ad-context={context} data-ad-placement={placement}
         style={{ margin: "1.5em auto", minHeight: 250 }} />;
 };

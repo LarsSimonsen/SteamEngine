@@ -1,27 +1,10 @@
 {
-    "aria-prohibited-attr": {
-        ".ad-slot": [
-            "/",
-            "/batt",
-            "/blog",
-            "/blog/<article>",
-            "/catalog",
-            "/catalog/battery/lg-18650hg2",
-            "/catalog/concept/ohms-law",
-            "/catalog/material/kanthal-a1",
-            "/catalog/mod/acesmok-ace50",
-            "/coil",
-            "/converter",
-            "/juice",
-            "/modrange",
-            "/ohm",
-            "/tcr",
-            "/wirewiz"
-        ]
-    },
     "color-contrast": {
         ".juice-status": [
             "/juice"
+        ],
+        ".se-alert > a[href$=\"wirewiz\"]": [
+            "/tcr"
         ],
         ".wirewiz-wire-card__summary > div:nth-child(1) > dt": [
             "/wirewiz"
@@ -37,9 +20,6 @@
         ],
         "#wirewiz-results > details:nth-child(3) > summary": [
             "/wirewiz"
-        ],
-        "aside > a[href$=\"wirewiz\"]": [
-            "/tcr"
         ],
         "details:nth-child(4) > summary": [
             "/wirewiz"

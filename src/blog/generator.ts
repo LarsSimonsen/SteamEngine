@@ -45,9 +45,9 @@ const escapeHtml = (value: string): string => value
 
 const attribute = (value: string): string => escapeHtml(value);
 
-const renderAdPlacement = (placement: string): string => `<div class="ad-slot se-ad-placement text-center"
+const renderAdPlacement = (placement: string): string => `<aside class="ad-slot se-ad-placement text-center"
     aria-label="Advertisement" data-ad-placement="${attribute(placement)}"
-    style="margin:1.5em auto;min-height:250px"></div>`;
+    style="margin:1.5em auto;min-height:250px"></aside>`;
 
 const paragraphOpeningTag = /<p(?:\s[^>]*)?>/gi;
 
@@ -343,9 +343,9 @@ const renderListing = (
     if (!includeSidebarAd) return listingSection;
     return `<div class="blog-listing-layout">
     ${listingSection}
-    <aside class="blog-listing__ad" aria-label="Advertisement">
+    <div class="blog-listing__ad">
         ${renderAdPlacement("blog-index-sidebar")}
-    </aside>
+    </div>
 </div>`;
 };
 

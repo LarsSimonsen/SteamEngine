@@ -12018,6 +12018,17 @@
             "reviewer": "LarsSimonsen",
             "reviewedAt": "2026-08-07"
         },
+        "messages.footer.advertisement": {
+            "sourceSignature": "f639f9def404eb4cf5f56d274b21ed6cef294278a3ddbc9793fa80d0b8289107",
+            "translationSignature": "04ec418387dcc0e5fa3e94c3b43a348a4e3a020607f45534a7ce90b8462c9738",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.footer.purgeCache": {
             "sourceSignature": "d86acf86f2adfcc6ea1c835610943aec4f6d0936ca99f53743b3d5d98ae72a07",
             "translationSignature": "a34a111c2741592e1a50df65e5494e9615f0bdcdf6bf8fa0e412f4bcb18f437f",

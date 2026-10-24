@@ -20,7 +20,8 @@ export const messages =  {
     "footer":  {
         "purgeCache": "Wyczyść pamięć podręczną",
         "translationDraft": "To tłumaczenie zostało zredagowane maszynowo i oczekuje na weryfikację przez człowieka.",
-        "suggestCorrection": "Zaproponuj korektę"
+        "suggestCorrection": "Zaproponuj korektę",
+        "advertisement": "Reklama"
     },
     "error":  {
         "title": "Kalkulator nie mógł zostać zaktualizowany",

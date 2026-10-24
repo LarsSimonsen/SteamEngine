@@ -22,7 +22,8 @@ export const messages = {
     "footer": {
         "purgeCache": "Xóa bộ nhớ đệm",
         "translationDraft": "Bản dịch này được soạn thảo bằng máy và đang chờ con người xem xét.",
-        "suggestCorrection": "Đề nghị sửa chữa"
+        "suggestCorrection": "Đề nghị sửa chữa",
+        "advertisement": "Quảng cáo"
     },
     "error": {
         "title": "Máy tính không thể cập nhật",

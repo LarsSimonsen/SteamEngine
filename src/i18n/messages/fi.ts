@@ -26,6 +26,7 @@ export const messages = {
         "translationDraft": "Tämä käännös on koneellisesti laadittu luonnos, joka odottaa "
             + "ihmisen tarkistusta.",
         "suggestCorrection": "Ehdota korjausta",
+        "advertisement": "Mainos",
     },
     "error": {
         "title": "Laskimen päivitys epäonnistui",
