@@ -128,7 +128,7 @@ describe("JuiceCalculator", () => {
         expect(details).toHaveAttribute("aria-expanded", "true");
         expect(document.getElementById("juice-base-details")).toBeVisible();
 
-        fireEvent.click(screen.getByRole("button", { name: "Menu" }));
+        fireEvent.click(screen.getByText("Menu", { selector: "summary" }));
         expect(screen.getByRole("button", { name: "Load" })).toBeDisabled();
         expect(screen.getByRole("button", { name: "Reset" })).toBeDisabled();
         expect(screen.getByRole("button", { name: "Save" })).toBeEnabled();

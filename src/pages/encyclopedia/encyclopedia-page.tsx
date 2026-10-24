@@ -367,7 +367,7 @@ const MaterialPropertyNotes = ({
 }): ReactElement | null => {
     const messages = detailMessages();
     if (notes.length === 0 && properties.length === 0) return null;
-    return <div className="material-property-notes" aria-label={messages.additionalPropertyNotes}>
+    return <div className="material-property-notes" role="group" aria-label={messages.additionalPropertyNotes}>
         {properties.map((property) => <p key={`${property.label}-${property.value}`}>
             <strong>{property.label}:</strong> {property.value}. {property.note
                 ?? messages.unknownPropertyValue}

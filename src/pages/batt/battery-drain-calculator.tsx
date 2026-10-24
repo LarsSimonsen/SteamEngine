@@ -754,12 +754,14 @@ export const BatteryDrainCalculator = (): ReactElement => {
                         {` ${selectedModOption?.format}`} · {messages.cellSelection}:
                         {` ${batteryPresetFormat(selectedBattery)}`}
                     </p>}
-                    {limitViolations.length > 0 && <ul
+                    {limitViolations.length > 0 && <div
                         className="se-alert se-alert--warning battery-mod-limits" role="alert">
-                        {limitViolations.map((violation) => <li key={violation.field}>
-                            <FontAwesomeIcon icon={faTriangleExclamation} /> {limitViolationText(violation)}
-                        </li>)}
-                    </ul>}
+                        <ul>
+                            {limitViolations.map((violation) => <li key={violation.field}>
+                                <FontAwesomeIcon icon={faTriangleExclamation} /> {limitViolationText(violation)}
+                            </li>)}
+                        </ul>
+                    </div>}
                     <fieldset className="battery-choice">
                         <legend>{messages.operatingMode}</legend>
                         <label><input type="radio" name="device-mode" checked={state.device.mode === "power-regulated"}

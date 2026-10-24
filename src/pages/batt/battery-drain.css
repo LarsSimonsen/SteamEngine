@@ -52,7 +52,7 @@
 .battery-mod-configuration { margin-top: 1rem; }
 .battery-mod-profile { display: grid; gap: 0.25rem; margin: 1rem 0; }
 .battery-mod-status, .battery-mod-limits { margin: 0.75rem 0 1rem; }
-.battery-mod-limits { list-style: none; }
+.battery-mod-limits ul { margin: 0; padding: 0; list-style: none; }
 .battery-mod-limits li + li { margin-top: 0.35rem; }
 .battery-result--safe { border-color: #2ecc71; }
 .battery-result--caution { border-color: #f39c12; }

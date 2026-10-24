@@ -306,7 +306,7 @@ export const PowerCurveGraph = ({
                 {messages.power}
             </SvgGraphLabel>
         </SvgGraph>
-        <div className="power-curve-graph__legend" aria-label={messages.powerCurveLegend}>
+        <div className="power-curve-graph__legend" role="group" aria-label={messages.powerCurveLegend}>
             <span><i className="power-curve-graph__legend-line power-curve-graph__legend-line--combined" />
                 {messages.maxAchievablePower}</span>
             <span><i className="power-curve-graph__legend-area" /> {messages.maximumPowerRange}</span>

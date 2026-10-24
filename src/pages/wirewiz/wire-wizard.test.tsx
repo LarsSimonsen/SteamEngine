@@ -59,7 +59,7 @@ describe("Wire Wizard material manager", () => {
         expect(
             within(header as HTMLElement).getByRole("button", { name: "Converter" }),
         ).toBeInTheDocument();
-        const menuButton = within(header as HTMLElement).getByRole("button", { name: "Menu" });
+        const menuButton = within(header as HTMLElement).getByText("Menu", { selector: "summary" });
         expect(menuButton).toBeInTheDocument();
         fireEvent.click(menuButton);
         expect(within(header as HTMLElement).getByRole("button", { name: "Reset" })).toBeInTheDocument();
@@ -197,7 +197,7 @@ describe("Wire Wizard material manager", () => {
 
         render(<WireWizard />);
         expect(screen.getByRole("spinbutton", { name: "Inner diameter (mm)" })).toHaveValue(3.5);
-        fireEvent.click(screen.getByRole("button", { name: "Menu" }));
+        fireEvent.click(screen.getByText("Menu", { selector: "summary" }));
         expect(screen.getByRole("button", { name: "Export" })).toBeInTheDocument();
         expect(screen.getByRole("button", { name: "Import" })).toBeInTheDocument();
     });

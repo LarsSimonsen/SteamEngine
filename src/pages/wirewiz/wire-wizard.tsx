@@ -229,11 +229,9 @@ const WireEditor = ({
                 </label>
                 <div className="wirewiz-wire-card__actions">
                     {node.kind === "parallel" && (
-                        <span
-                            className="wirewiz-wire-card__count"
-                            aria-label={`${node.members.length} ${messages.parallelWires}`}
-                        >
-                            {node.members.length}
+                        <span className="wirewiz-wire-card__count">
+                            <span aria-hidden="true">{node.members.length}</span>
+                            <span className="sr-only">{`${node.members.length} ${messages.parallelWires}`}</span>
                         </span>
                     )}
                     {parentId && parentKind && compositeWireRules[parentKind].variableMembers && (
@@ -755,7 +753,7 @@ export const WireWizard = (): ReactElement => {
                             {showConverter ? ` ${messages.hideConverter}` : ` ${messages.converter}`}
                         </button>
                         <details className="se-menu">
-                            <summary role="button">{messages.menu}
+                            <summary>{messages.menu}
                                 <FontAwesomeIcon icon={faCaretDown} aria-hidden="true" />
                             </summary>
                             <div className="se-menu__items">

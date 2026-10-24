@@ -331,7 +331,7 @@ export const EncyclopediaHub = (): ReactElement => {
                         <input type="search" value={query} placeholder={messages.searchPlaceholder}
                             onChange={(event) => setQuery(event.target.value)} />
                     </label>
-                    <div className="encyclopedia-filters" aria-label={messages.filtersLabel}>
+                    <div className="encyclopedia-filters" role="group" aria-label={messages.filtersLabel}>
                         <button type="button" className={category === "all" ? "is-active" : ""}
                             aria-pressed={category === "all"} onClick={() => setCategory("all")}>{messages.all}</button>
                         {categories.map((item) => (

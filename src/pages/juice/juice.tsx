@@ -305,7 +305,7 @@ export const JuiceCalculator = (): ReactElement => {
             <TransientMessage message={message} onDismiss={clearMessage} />
             <CalculatorPageHeader className="juice-page-header" eyebrow={messages.eyebrow}
                 title={messages.title} description={messages.description}
-                actions={<details className="se-menu"><summary role="button">{messages.menu}
+                actions={<details className="se-menu"><summary>{messages.menu}
                     <FontAwesomeIcon icon={faCaretDown} aria-hidden="true" />
                 </summary>
                         <div className="se-menu__items">
