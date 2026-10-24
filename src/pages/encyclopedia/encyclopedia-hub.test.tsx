@@ -70,6 +70,14 @@ describe("encyclopedia hub", () => {
         expect(screen.queryByRole("button", { name: /Browse/ })).not.toBeInTheDocument();
     });
 
+    it("makes every entry title a heading for heading navigation", () => {
+        render(<EncyclopediaHub />);
+
+        const cards = document.querySelectorAll(".encyclopedia-entry-card");
+        expect(screen.getAllByRole("heading", { level: 2 })).toHaveLength(cards.length);
+        expect(screen.getByRole("heading", { level: 2, name: "Heat capacity" })).toBeInTheDocument();
+    });
+
     it("localizes the catalog hub chrome on Bokmål pages", () => {
         document.body.innerHTML = '<div id="root" data-locale="nb"></div>';
         render(<EncyclopediaHub />, { container: document.getElementById("root")! });

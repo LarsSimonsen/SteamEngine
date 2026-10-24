@@ -556,6 +556,8 @@ describe("encyclopedia pages", () => {
         const inspector = await screen.findByRole("slider", { name: "Resistance" });
         const output = document.querySelector(".power-curve-graph__inspector output");
         if (!output) throw new Error("Expected a power-curve inspection output.");
+        expect(inspector.getAttribute("aria-valuetext")).toMatch(/^[\d.,]+ Ω, [\d.,]+ W$/);
+        expect(output).toHaveAttribute("aria-live", "off");
         const crossover = screen.getByRole("button", { name: "Current/voltage crossover" });
         const upperMidpoint = screen.getByRole("button", { name: "Upper-range midpoint" });
         expect(crossover).toHaveAttribute("aria-pressed", "true");

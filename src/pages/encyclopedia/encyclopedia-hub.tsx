@@ -349,7 +349,7 @@ export const EncyclopediaHub = (): ReactElement => {
                                 <span className="encyclopedia-entry-card__category">
                                     {messages.categoryLabels[entry.category]}
                                 </span>
-                                <strong>{entry.title}</strong>
+                                <h2 className="encyclopedia-entry-card__title">{entry.title}</h2>
                                 <span className="encyclopedia-entry-card__summary">{entry.summary}</span>
                                 <span className="encyclopedia-entry-card__link">{messages.openEntry}
                                     <span aria-hidden="true">-&gt;</span></span>

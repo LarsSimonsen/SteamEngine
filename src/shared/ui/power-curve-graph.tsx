@@ -325,8 +325,11 @@ export const PowerCurveGraph = ({
             <input id={`power-curve-inspector-${instanceId}`} type="range"
                 min={axisBounds.minimumResistance} max={axisBounds.maximumResistance} step={inspectionStep}
                 value={clampedInspectedResistance}
+                aria-valuetext={`${formatGraphValue(clampedInspectedResistance)} Ω, `
+                    + `${formatGraphValue(inspectedPower)} W`}
                 onChange={(event) => setInspectedResistance(Number(event.currentTarget.value))} />
-            <output htmlFor={`power-curve-inspector-${instanceId}`} aria-live="polite">
+            {/* The slider's value text already announces both values. */}
+            <output htmlFor={`power-curve-inspector-${instanceId}`} aria-live="off">
                 {formatGraphValue(clampedInspectedResistance)} Ω · {formatGraphValue(inspectedPower)} W
             </output>
         </div>

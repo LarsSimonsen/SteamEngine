@@ -488,6 +488,8 @@
 
 .encyclopedia-search:focus-within {
     border-color: var(--se-link);
+    outline: 2px solid var(--se-link);
+    outline-offset: 2px;
 }
 
 .encyclopedia-search input {
@@ -581,6 +583,14 @@
     line-height: 1.45;
 }
 
+.encyclopedia-entry-card__title {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Line clamping keeps whole lines under text-spacing overrides; the full summary stays in the DOM and on the entry
+   page. */
 .encyclopedia-entry-card__summary {
     display: -webkit-box;
     overflow: hidden;

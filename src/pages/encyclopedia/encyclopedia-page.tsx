@@ -514,7 +514,8 @@ const MaterialTfrTable = ({ material }: { readonly material: DefaultMaterial }):
         <MaterialTfrGraph materialName={material.name} data={response}
             caption={tcrDerived ? curveDescription : undefined} />
         <table className="se-table encyclopedia-property-table material-tfr__table">
-            <thead><tr><th>{messages.temperature} (°C)</th><th>{messages.relativeResistance} (R/R20)</th></tr></thead>
+            <thead><tr><th scope="col">{messages.temperature} (°C)</th>
+                <th scope="col">{messages.relativeResistance} (R/R20)</th></tr></thead>
             <tbody>{response.points.map(({ temperatureCelsius, resistanceFactor }) => <tr key={temperatureCelsius}>
                 <th scope="row">{temperatureCelsius}</th><td>{resistanceFactor.toFixed(6)}</td>
             </tr>)}</tbody>
