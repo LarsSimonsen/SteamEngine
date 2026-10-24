@@ -10956,6 +10956,61 @@
             },
             "confidence": "medium"
         },
+        "messages.numericInput.atLeast": {
+            "sourceSignature": "ebde1488f445c6f828c1888cf29b2f961e12bea1e1a2b7cae0090b99bd42abab",
+            "translationSignature": "9bec2bc109f482fb35c8bb34eac8eddfdb899929fd1b94a82684f3f02f3117f1",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "messages.numericInput.atMost": {
+            "sourceSignature": "e199521a71eb6436d51a3894f18549650b6d03e3744d0f21887695ff6d54520f",
+            "translationSignature": "85e6114218a3aecece440c9883a12440fb3a265aee34146d7cf384be17ed5f33",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "messages.numericInput.enterNumber": {
+            "sourceSignature": "5818e788c2387a3f4c4018181de895798adbfa15e64b58f2c8fb1526eea0f7b6",
+            "translationSignature": "855627ebe8361d529df794ce3d6b578874078bf5ee220a78cca6608bd3af101e",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "messages.numericInput.range": {
+            "sourceSignature": "bac1346e0ad707d695531ad18f1af873d1965e343addeb1efbcd6040f5422ef8",
+            "translationSignature": "668ab5ad0b9fb751ea68d953ec7ff1d244638fa4c5373980460e4e850a7cd930",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
+        "messages.numericInput.wholeNumber": {
+            "sourceSignature": "677fab8ff51d1115f898203bff89e2533b0e5f1376e8fc53443b0396a7d56ac1",
+            "translationSignature": "6a41b81bf4da1f20854046f5d08553414570b990b0c7e11916639a4b18f07bfa",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.ohm.about": {
             "sourceSignature": "25772f940874b70532c722fc07d30342fbbd9072996601ad3a7f212b1fe9c976",
             "translationSignature": "3c2aa235de2fd99ddf6ba2b8f9902ae8a8e31fdb61e6eeb6bd3d1d5815c99116",

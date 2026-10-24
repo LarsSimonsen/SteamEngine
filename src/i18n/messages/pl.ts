@@ -33,6 +33,13 @@ export const messages =  {
         "retry": "Spróbuj ponownie",
         "retrying": "Ponawiam próbę…"
     },
+    "numericInput": {
+        "enterNumber": "Wpisz liczbę.",
+        "range": (min: string, max: string) => `Wpisz liczbę od ${min} do ${max}.`,
+        "atLeast": (min: string) => `Wpisz liczbę nie mniejszą niż ${min}.`,
+        "atMost": (max: string) => `Wpisz liczbę nie większą niż ${max}.`,
+        "wholeNumber": "Użyj liczby całkowitej."
+    },
     "calculatorHeader":  {
         "oldVersionNote": "Możesz znaleźć starą wersję tego kalkulatora",
         "oldVersionLinkLabel": "tutaj"

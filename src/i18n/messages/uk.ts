@@ -33,6 +33,13 @@ export const messages = {
         "retry": "Повторіть спробу",
         "retrying": "Повторна спроба…"
     },
+    "numericInput": {
+        "enterNumber": "Введіть число.",
+        "range": (min: string, max: string) => `Введіть число від ${min} до ${max}.`,
+        "atLeast": (min: string) => `Введіть число не менше ніж ${min}.`,
+        "atMost": (max: string) => `Введіть число не більше ніж ${max}.`,
+        "wholeNumber": "Використайте ціле число."
+    },
     "calculatorHeader": {
         "oldVersionNote": "Ви можете знайти стару версію цього калькулятора",
         "oldVersionLinkLabel": "тут"

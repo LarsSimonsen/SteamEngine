@@ -177,6 +177,10 @@
     grid-template-columns: minmax(0, 1fr) 5.5rem;
 }
 
+.juice-flavor-input-group .se-input-error {
+    grid-column: 1 / -1;
+}
+
 .juice-flavor-input-headings span:last-child {
     text-align: right;
 }
@@ -185,7 +189,7 @@
     border-radius: 0.2rem 0 0 0.2rem;
 }
 
-.juice-flavor-input-group input:last-child {
+.juice-flavor-input-group input + input {
     border-left: 0;
     border-radius: 0 0.2rem 0.2rem 0;
 }

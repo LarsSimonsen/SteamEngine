@@ -26,6 +26,13 @@ export const messages: SharedMessages = {"navigation": {"about": "حول",
 "viewDetails": "عرض التفاصيل",
 "retry": "أعد المحاولة",
 "retrying": "جارٍ إعادة المحاولة…"},
+"numericInput": {
+        "enterNumber": "أدخل رقمًا.",
+        "range": (min: string, max: string) => `أدخل رقمًا من ${min} إلى ${max}.`,
+        "atLeast": (min: string) => `أدخل رقمًا لا يقل عن ${min}.`,
+        "atMost": (max: string) => `أدخل رقمًا لا يزيد على ${max}.`,
+        "wholeNumber": "استخدم عددًا صحيحًا."
+    },
 "calculatorHeader": {"oldVersionNote": "يمكنك العثور على الإصدار القديم من هذه الحاسبة",
 "oldVersionLinkLabel": "هنا"},
 "calculatorVisibility": {"label": "حالة ظهور الحاسبة",

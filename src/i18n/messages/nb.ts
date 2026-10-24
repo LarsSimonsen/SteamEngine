@@ -30,6 +30,13 @@ export const messages: SharedMessages = {
         retry: "Prøv igjen",
         retrying: "Prøver igjen…",
     },
+    numericInput: {
+        "enterNumber": "Skriv inn et tall.",
+        "range": (min: string, max: string) => `Skriv inn et tall fra ${min} til ${max}.`,
+        "atLeast": (min: string) => `Skriv inn et tall på minst ${min}.`,
+        "atMost": (max: string) => `Skriv inn et tall på høyst ${max}.`,
+        "wholeNumber": "Bruk et heltall."
+    },
     calculatorHeader: {
         oldVersionNote: "Du finner den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

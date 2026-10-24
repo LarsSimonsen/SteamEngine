@@ -35,6 +35,13 @@ export const messages = {
         "retry": "Versuchen Sie es noch einmal",
         "retrying": "Erneuter Versuch…"
     },
+    "numericInput": {
+        "enterNumber": "Geben Sie eine Zahl ein.",
+        "range": (min: string, max: string) => `Geben Sie eine Zahl von ${min} bis ${max} ein.`,
+        "atLeast": (min: string) => `Geben Sie eine Zahl von mindestens ${min} ein.`,
+        "atMost": (max: string) => `Geben Sie eine Zahl von höchstens ${max} ein.`,
+        "wholeNumber": "Verwenden Sie eine ganze Zahl."
+    },
     "calculatorHeader": {
         "oldVersionNote": "Sie finden die alte Version dieses Rechners",
         "oldVersionLinkLabel": "hier"

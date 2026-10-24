@@ -35,6 +35,13 @@ export const messages: SharedMessages = {
         "retry": "Réessayer",
         "retrying": "Nouvelle tentative…"
     },
+    "numericInput": {
+        "enterNumber": "Saisissez un nombre.",
+        "range": (min: string, max: string) => `Saisissez un nombre compris entre ${min} et ${max}.`,
+        "atLeast": (min: string) => `Saisissez un nombre supérieur ou égal à ${min}.`,
+        "atMost": (max: string) => `Saisissez un nombre inférieur ou égal à ${max}.`,
+        "wholeNumber": "Utilisez un nombre entier."
+    },
     "calculatorHeader": {
         "oldVersionNote": "Vous pouvez retrouver l'ancienne version de ce calculateur",
         "oldVersionLinkLabel": "ici"

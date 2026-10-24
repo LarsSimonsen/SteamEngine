@@ -35,6 +35,13 @@ export type SharedMessages = {
         readonly retry: string;
         readonly retrying: string;
     };
+    readonly numericInput: {
+        readonly enterNumber: string;
+        readonly range: (min: string, max: string) => string;
+        readonly atLeast: (min: string) => string;
+        readonly atMost: (max: string) => string;
+        readonly wholeNumber: string;
+    };
     readonly calculatorHeader: {
         readonly oldVersionNote: string;
         readonly oldVersionLinkLabel: string;

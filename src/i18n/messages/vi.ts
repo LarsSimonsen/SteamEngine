@@ -35,6 +35,13 @@ export const messages = {
         "retry": "Thử lại",
         "retrying": "Đang thử lại…"
     },
+    "numericInput": {
+        "enterNumber": "Nhập một số.",
+        "range": (min: string, max: string) => `Nhập một số từ ${min} đến ${max}.`,
+        "atLeast": (min: string) => `Nhập một số không nhỏ hơn ${min}.`,
+        "atMost": (max: string) => `Nhập một số không lớn hơn ${max}.`,
+        "wholeNumber": "Hãy dùng số nguyên."
+    },
     "calculatorHeader": {
         "oldVersionNote": "Bạn có thể tìm thấy phiên bản cũ của máy tính này",
         "oldVersionLinkLabel": "ở đây"

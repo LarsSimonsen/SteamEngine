@@ -1,6 +1,6 @@
-import type { ReactElement, ReactNode } from "react";
+import { useId, useState, type ReactElement, type ReactNode } from "react";
 import { normalizeNumericInput } from "../domain/numeric";
-import { NumericInput } from "./numeric-input";
+import { NumericInput, numericInputErrorMessage } from "./numeric-input";
 
 export type NumericFieldProps = {
     readonly label: ReactNode;
@@ -55,11 +55,22 @@ export const NumericField = ({
     onCommit,
     commitOnArrowKeys = false,
 }: NumericFieldProps): ReactElement => {
-    const helpId = help !== undefined && id !== undefined ? `${id}-help` : undefined;
-    const errorId = error !== undefined && id !== undefined ? `${id}-error` : undefined;
+    const generatedId = useId();
+    const inputId = id ?? generatedId;
+    const [inputInvalid, setInputInvalid] = useState(false);
+    const shownError = error ?? (inputInvalid ? numericInputErrorMessage({ min, max, integer }) : undefined);
+    const labelId = `${inputId}-label`;
+    const unitId = `${inputId}-unit`;
+    const helpId = help !== undefined ? `${inputId}-help` : undefined;
+    const errorId = shownError !== undefined ? `${inputId}-error` : undefined;
     const describedBy = [helpId, errorId].filter(Boolean).join(" ") || undefined;
-    const input = <NumericInput id={id} className={inputClassName} aria-label={ariaLabel}
-        aria-describedby={describedBy} aria-invalid={error === undefined ? undefined : true}
+    // An explicit name keeps the help and error text in the label out of the accessible name.
+    const labelledBy = ariaLabel === undefined ? [labelId, unit === undefined ? undefined : unitId]
+        .filter(Boolean).join(" ") : undefined;
+    const input = <NumericInput id={inputId} className={inputClassName} aria-label={ariaLabel}
+        aria-labelledby={labelledBy} aria-describedby={describedBy}
+        aria-invalid={error === undefined ? undefined : true} showErrorMessage={false}
+        onInvalidChange={setInputInvalid}
         min={min} max={max} step={step} value={normalizeNumericInput(String(value))}
         placeholder={placeholder} required={required} integer={integer}
         disabled={disabled} onChange={(event) => onChange(normalizeNumericInput(event.target.value))}
@@ -72,15 +83,17 @@ export const NumericField = ({
         }} />;
     const unitElement = unit === undefined
         ? undefined
-        : unitTag === "span" ? <span>{unit}</span> : <em>{unit}</em>;
+        : unitTag === "span" ? <span id={unitId}>{unit}</span> : <em id={unitId}>{unit}</em>;
     const control = inputWrapperClassName !== undefined || unit !== undefined || adornment !== undefined
         ? <span className={inputWrapperClassName}>{input}{adornment}{unitElement}</span>
         : input;
-    return <label className={fieldClassName} htmlFor={id}>
-        <span>{label}</span>
+    return <label className={fieldClassName} htmlFor={inputId}>
+        <span id={labelId}>{label}</span>
         {control}
         {help && <small id={helpId} className={helpClassName}>{help}</small>}
-        {error && <small id={errorId} className={errorClassName} role="alert">{error}</small>}
+        {shownError && <small id={errorId} className={errorClassName ?? "se-input-error"} role="alert">
+            {shownError}
+        </small>}
     </label>;
 };
 
@@ -120,12 +133,18 @@ export const SelectField = ({
     fieldClassName,
     selectClassName,
     helpClassName,
-}: SelectFieldProps): ReactElement => <label className={fieldClassName} htmlFor={id}>
-    <span>{label}</span>
-    <select id={id} className={selectClassName} aria-label={ariaLabel} value={value} size={size}
-        disabled={disabled} onChange={(event) => onChange(event.target.value)}>
-        {children ?? options?.map((option) => <option key={option.value} value={option.value}
-            disabled={option.disabled}>{option.label}</option>)}
-    </select>
-    {help && <small className={helpClassName}>{help}</small>}
-</label>;
+}: SelectFieldProps): ReactElement => {
+    const generatedId = useId();
+    const selectId = id ?? generatedId;
+    const helpId = help ? `${selectId}-help` : undefined;
+    return <label className={fieldClassName} htmlFor={selectId}>
+        <span id={`${selectId}-label`}>{label}</span>
+        <select id={selectId} className={selectClassName} aria-label={ariaLabel}
+            aria-labelledby={ariaLabel === undefined ? `${selectId}-label` : undefined} aria-describedby={helpId}
+            value={value} size={size} disabled={disabled} onChange={(event) => onChange(event.target.value)}>
+            {children ?? options?.map((option) => <option key={option.value} value={option.value}
+                disabled={option.disabled}>{option.label}</option>)}
+        </select>
+        {help && <small id={helpId} className={helpClassName}>{help}</small>}
+    </label>;
+};

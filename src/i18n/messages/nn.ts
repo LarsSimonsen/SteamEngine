@@ -33,6 +33,13 @@ export const messages: SharedMessages = normalizeNynorsk({
         retry: "Prøv igjen",
         retrying: "Prøver igjen…",
     },
+    numericInput: {
+        enterNumber: "Skriv inn eit tal.",
+        range: (min: string, max: string) => `Skriv inn eit tal frå ${min} til ${max}.`,
+        atLeast: (min: string) => `Skriv inn eit tal på minst ${min}.`,
+        atMost: (max: string) => `Skriv inn eit tal på høgst ${max}.`,
+        wholeNumber: "Bruk eit heiltal.",
+    },
     calculatorHeader: {
         oldVersionNote: "Du finn den gamle versjonen av denne kalkulatoren",
         oldVersionLinkLabel: "her",

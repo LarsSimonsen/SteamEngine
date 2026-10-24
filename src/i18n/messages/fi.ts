@@ -38,6 +38,13 @@ export const messages = {
         "retry": "Yritä uudelleen",
         "retrying": "Yritetään uudelleen…",
     },
+    "numericInput": {
+        "enterNumber": "Anna luku.",
+        "range": (min: string, max: string) => `Anna luku väliltä ${min}–${max}.`,
+        "atLeast": (min: string) => `Anna luku, joka on vähintään ${min}.`,
+        "atMost": (max: string) => `Anna luku, joka on enintään ${max}.`,
+        "wholeNumber": "Käytä kokonaislukua."
+    },
     "calculatorHeader": {
         "oldVersionNote": "Löydät tämän laskimen vanhan version",
         "oldVersionLinkLabel": "täältä",

@@ -1,5 +1,6 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { NumericField } from "./form-fields";
 import { NumericDraftReset, NumericInput } from "./numeric-input";
 
 afterEach(cleanup);
@@ -70,5 +71,52 @@ describe("NumericInput", () => {
         expect(input).toHaveValue(2.5);
         expect(input).toHaveAttribute("aria-invalid", "true");
         expect(onChange).not.toHaveBeenCalled();
+    });
+});
+
+describe("numeric input errors", () => {
+    it("explains an invalid value in text without changing the accessible name", () => {
+        render(<label><span>Inner diameter</span>
+            <NumericInput value={2} min={0.01} max="10" validChangesOnly onChange={() => undefined} />
+        </label>);
+        const input = screen.getByRole("spinbutton", { name: "Inner diameter" });
+        fireEvent.change(input, { target: { value: "20" } });
+        fireEvent.blur(input);
+
+        expect(input).toHaveAttribute("aria-invalid", "true");
+        expect(input).toHaveAccessibleName("Inner diameter");
+        expect(input).toHaveAccessibleDescription("Enter a number from 0.01 to 10.");
+        expect(screen.getByText("Enter a number from 0.01 to 10.")).toBeVisible();
+
+        fireEvent.change(input, { target: { value: "5" } });
+        expect(input).not.toHaveAccessibleDescription();
+    });
+
+    it("asks for a whole number in the page language", () => {
+        document.body.innerHTML = '<div id="root" data-locale="de"></div>';
+        render(<NumericInput aria-label="Stränge" value={2} min={1} integer validChangesOnly
+            onChange={() => undefined} />);
+        const input = screen.getByRole("spinbutton");
+        fireEvent.change(input, { target: { value: "2.5" } });
+        fireEvent.blur(input);
+
+        expect(input).toHaveAccessibleDescription(
+            "Geben Sie eine Zahl von mindestens 1 ein. Verwenden Sie eine ganze Zahl.");
+        document.body.innerHTML = "";
+    });
+
+    it("names a numeric field by its label and unit and describes it by help and error text", () => {
+        render(<NumericField label="Resistance" unit="Ω" value={1} min={0.01} help="Coil resistance."
+            onChange={() => undefined} />);
+        const input = screen.getByRole("spinbutton");
+        expect(input).toHaveAccessibleName("Resistance Ω");
+        expect(input).toHaveAccessibleDescription("Coil resistance.");
+
+        fireEvent.change(input, { target: { value: "0" } });
+        fireEvent.blur(input);
+
+        expect(input).toHaveAccessibleName("Resistance Ω");
+        expect(input).toHaveAccessibleDescription("Coil resistance. Enter a number of at least 0.01.");
+        expect(screen.getByRole("alert")).toHaveTextContent("Enter a number of at least 0.01.");
     });
 });

@@ -35,6 +35,13 @@ export const messages: SharedMessages = {
         "retry": "Rever",
         "retrying": "Reintentando…"
     },
+    "numericInput": {
+        "enterNumber": "Introduzca un número.",
+        "range": (min: string, max: string) => `Introduzca un número entre ${min} y ${max}.`,
+        "atLeast": (min: string) => `Introduzca un número mayor o igual que ${min}.`,
+        "atMost": (max: string) => `Introduzca un número menor o igual que ${max}.`,
+        "wholeNumber": "Use un número entero."
+    },
     "calculatorHeader": {
         "oldVersionNote": "Puedes encontrar la versión antigua de esta calculadora.",
         "oldVersionLinkLabel": "aquí"

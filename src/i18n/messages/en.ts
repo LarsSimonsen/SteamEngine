@@ -30,6 +30,13 @@ export const messages: SharedMessages = {
         retry: "Retry",
         retrying: "Retrying…",
     },
+    numericInput: {
+        enterNumber: "Enter a number.",
+        range: (min: string, max: string) => `Enter a number from ${min} to ${max}.`,
+        atLeast: (min: string) => `Enter a number of at least ${min}.`,
+        atMost: (max: string) => `Enter a number of at most ${max}.`,
+        wholeNumber: "Use a whole number.",
+    },
     calculatorHeader: { oldVersionNote: "You can find the old version of this calculator", oldVersionLinkLabel: "here" },
     calculatorVisibility: {
         label: "Calculator visibility",

@@ -35,6 +35,13 @@ export const messages: SharedMessages = {
         "retry": "重试",
         "retrying": "正在重试..."
     },
+    "numericInput": {
+        "enterNumber": "请输入一个数字。",
+        "range": (min: string, max: string) => `请输入 ${min} 到 ${max} 之间的数字。`,
+        "atLeast": (min: string) => `请输入不小于 ${min} 的数字。`,
+        "atMost": (max: string) => `请输入不大于 ${max} 的数字。`,
+        "wholeNumber": "请使用整数。"
+    },
     "calculatorHeader": {
         "oldVersionNote": "您可以找到此计算器的旧版本",
         "oldVersionLinkLabel": "这里"
