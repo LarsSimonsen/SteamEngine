@@ -7,6 +7,7 @@
     --se-text: #fff;
     --se-muted: #adb5bd;
     --se-border: rgb(255 255 255 / 15%);
+    --se-control-border: #999;
     --se-button-padding-block: 0.5rem;
     --se-button-padding-inline: 0.7rem;
     --se-button-font-weight: 400;
@@ -46,6 +47,7 @@
     --se-text: #212529;
     --se-muted: #5d6772;
     --se-border: rgb(0 0 0 / 18%);
+    --se-control-border: #6c757d;
     --se-button-active: #2f6fa8;
     --se-button-active-hover: #285f91;
     --se-button-active-text: #fff;
@@ -240,7 +242,7 @@ a:focus-visible {
     padding: 0.55rem 0.65rem;
     color: var(--se-text);
     background: var(--se-body-bg);
-    border: 1px solid var(--se-border);
+    border: 1px solid var(--se-control-border);
     border-radius: 0.25rem;
     font: inherit;
 }

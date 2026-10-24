@@ -176,7 +176,7 @@
     color: var(--se-text);
     font: inherit;
     background: var(--se-body-bg);
-    border: 1px solid var(--se-border);
+    border: 1px solid var(--se-control-border);
     border-radius: 0.25rem;
 }
 

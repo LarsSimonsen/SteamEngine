@@ -12,7 +12,7 @@
 .ohm-field small { color: var(--se-muted); }
 .ohm-input { display: flex; align-items: center; gap: 0.5rem; }
 .ohm-input input { width: 100%; padding: 0.65rem; color: var(--se-text); text-align: right; font: inherit;
-    background: var(--se-body-bg); border: 1px solid var(--se-border); border-radius: 0.25rem; }
+    background: var(--se-body-bg); border: 1px solid var(--se-control-border); border-radius: 0.25rem; }
 .ohm-input input[aria-invalid="true"] { border-color: var(--se-danger-text); outline-color: var(--se-danger-text); }
 .ohm-input em { min-width: 1.5rem; color: var(--se-muted); font-style: normal; }
 .ohm-field-error { display: block; margin-top: 0.35rem; color: var(--se-danger-text); }
@@ -23,7 +23,7 @@
     align-items: center; padding: 0.75rem; background: color-mix(in srgb, var(--se-body-bg) 65%, transparent);
     border: 1px solid var(--se-border); border-radius: 0.25rem; line-height: 1.45; }
 .simple-lock-rule select { width: 100%; min-height: 2.75rem; padding: 0.5rem 2rem 0.5rem 0.65rem; color: var(--se-text);
-    background: var(--se-body-bg); border: 1px solid var(--se-border); border-radius: 0.25rem; font: inherit; }
+    background: var(--se-body-bg); border: 1px solid var(--se-control-border); border-radius: 0.25rem; font: inherit; }
 .simple-lock-rule--custom { margin-top: 0.75rem; }
 .detail-toggle { min-height: 2.75rem; margin-top: 0.5rem; padding: 0.5rem 0; color: var(--se-muted); background: transparent;
     border: 1px solid transparent; cursor: pointer; font: inherit; font-size: 0.9rem; }
