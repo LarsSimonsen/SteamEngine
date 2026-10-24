@@ -3,10 +3,8 @@ import {
     useMemo,
     useRef,
     useState,
-    type Dispatch,
     type ReactElement,
     type ReactNode,
-    type SetStateAction,
 } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -49,6 +47,8 @@ import { CalculatorLegacyNote, CalculatorPageHeader } from "../../shared/ui/calc
 import { NumericField, SelectField, type NumericFieldProps } from "../../shared/ui/form-fields";
 import { NumericDraftReset } from "../../shared/ui/numeric-input";
 import { SiteLayout } from "../../shared/ui/site-layout";
+import { ManagerDialog } from "../../shared/ui/manager-dialog";
+import { ResultAnnouncement, resultSummary } from "../../shared/ui/result-announcement";
 import "./battery-drain.css";
 import { createDebouncedRequest, debouncedRequestSuperseded } from "../../shared/debounced-request";
 import { formatDisplayNumber, parseNumericInput } from "../../shared/domain/numeric";
@@ -202,44 +202,6 @@ const modConfigurationLabel = (option: ModBatteryOption): string => {
     return option.format === undefined ? topology : `${option.format} · ${topology}`;
 };
 
-const useManagerDialog = (visible: boolean, setVisible: Dispatch<SetStateAction<boolean>>) => {
-    const dialogRef = useRef<HTMLDivElement>(null);
-    const buttonRef = useRef<HTMLButtonElement>(null);
-    useEffect(() => {
-        if (!visible) return;
-        const previousOverflow = document.body.style.overflow;
-        document.body.style.overflow = "hidden";
-        dialogRef.current?.focus();
-        const handleDialogKeyDown = (event: KeyboardEvent): void => {
-            if (event.key === "Escape") {
-                setVisible(false);
-                return;
-            }
-            if (event.key !== "Tab") return;
-            const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
-                "a[href], button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled)",
-            );
-            if (!focusable || focusable.length === 0) return;
-            const first = focusable[0];
-            const last = focusable[focusable.length - 1];
-            if (event.shiftKey && document.activeElement === first) {
-                event.preventDefault();
-                last.focus();
-            } else if (!event.shiftKey && document.activeElement === last) {
-                event.preventDefault();
-                first.focus();
-            }
-        };
-        document.addEventListener("keydown", handleDialogKeyDown);
-        return () => {
-            document.body.style.overflow = previousOverflow;
-            document.removeEventListener("keydown", handleDialogKeyDown);
-            buttonRef.current?.focus();
-        };
-    }, [setVisible, visible]);
-    return [dialogRef, buttonRef] as const;
-};
-
 export const BatteryDrainCalculator = (): ReactElement => {
     const [inputReset, setInputReset] = useState(0);
     const calculatorMessages = calculatorMessagesFor(pageLocale());
@@ -282,8 +244,8 @@ export const BatteryDrainCalculator = (): ReactElement => {
     const [showBatteryManager, setShowBatteryManager] = useState(false);
     const [showModManager, setShowModManager] = useState(false);
     const [editingCustomConfiguration, setEditingCustomConfiguration] = useState(false);
-    const [managerDialogRef, managerButtonRef] = useManagerDialog(showBatteryManager, setShowBatteryManager);
-    const [modManagerDialogRef, modManagerButtonRef] = useManagerDialog(showModManager, setShowModManager);
+    const managerButtonRef = useRef<HTMLButtonElement>(null);
+    const modManagerButtonRef = useRef<HTMLButtonElement>(null);
     const draftsRef = useRef(drafts);
     const [result, setResult] = useState<
         ReturnType<typeof calculateBatteryFromApi> extends Promise<infer T> ? T : never
@@ -711,15 +673,10 @@ export const BatteryDrainCalculator = (): ReactElement => {
                             <FontAwesomeIcon icon={faSliders} aria-hidden="true" /> {modMessages.manage}
                         </button>
                     </div>
-                    {showModManager && <div id="battery-mod-manager" className="battery-manager-overlay"
-                        onMouseDown={(event) => {
-                            if (event.target === event.currentTarget) setShowModManager(false);
-                        }}>
-                        <div ref={modManagerDialogRef} className="battery-manager-dialog" role="dialog"
-                            aria-modal="true" aria-label={modMessages.manage} tabIndex={-1}>
-                            <ModManager repository={modRepository} onClose={() => setShowModManager(false)} />
-                        </div>
-                    </div>}
+                    {showModManager && <ManagerDialog id="battery-mod-manager" label={modMessages.manage}
+                        returnFocusTo={modManagerButtonRef} onClose={() => setShowModManager(false)}>
+                        <ModManager repository={modRepository} onClose={() => setShowModManager(false)} />
+                    </ManagerDialog>}
                     {selectedDefaultMod?.slug !== undefined && <a className="battery-encyclopedia-link"
                         href={`./catalog/mod/${selectedDefaultMod.slug}`}>{modMessages.details}</a>}
                     {selectedCustomMod !== undefined
@@ -841,16 +798,11 @@ export const BatteryDrainCalculator = (): ReactElement => {
                             <FontAwesomeIcon icon={faSliders} aria-hidden="true" /> {messages.manage}
                         </button>
                     </div>
-                    {showBatteryManager && <div id="battery-manager" className="battery-manager-overlay"
-                        onMouseDown={(event) => {
-                            if (event.target === event.currentTarget) setShowBatteryManager(false);
-                        }}>
-                        <div ref={managerDialogRef} className="battery-manager-dialog" role="dialog"
-                            aria-modal="true" aria-label={messages.manage} tabIndex={-1}>
-                            <BatteryManager repository={batteryRepository}
-                                onClose={() => setShowBatteryManager(false)} />
-                        </div>
-                    </div>}
+                    {showBatteryManager && <ManagerDialog id="battery-manager" label={messages.manage}
+                        returnFocusTo={managerButtonRef} onClose={() => setShowBatteryManager(false)}>
+                        <BatteryManager repository={batteryRepository}
+                            onClose={() => setShowBatteryManager(false)} />
+                    </ManagerDialog>}
                     {selectedDefaultBattery?.slug !== undefined && <a className="battery-encyclopedia-link"
                         href={`./catalog/battery/${selectedDefaultBattery.slug}`}>{messages.detailsBattery}</a>}
                     {selectedCustomBattery !== undefined
@@ -936,8 +888,14 @@ export const BatteryDrainCalculator = (): ReactElement => {
                         onCommit={() => commitField("nominalVoltage")} />
                     <p className="se-muted-copy battery-help">{messages.batteryHelp}</p>
                 </section>
-                <section className="se-sidebar-layout__output battery-output" aria-live="polite"
-                    aria-label={messages.results}>
+                <section className="se-sidebar-layout__output battery-output" aria-label={messages.results}>
+                    <ResultAnnouncement summary={result.kind === "valid" ? `${resultSummary(pageLocale(), [
+                        `${messages.batterySafety} ${format(result.values.safety.currentPerCell)} A / `
+                            + `${format(result.values.safety.effectiveLimit)} A`,
+                        `${format(result.values.safety.headroomPercent)}% ${messages.currentHeadroom}`,
+                        `${messages.continuousRuntime} ${format(result.values.runtime.continuousMinutes, 1)} min`,
+                    ])} ${messages[result.values.safety.status === "danger" ? "danger"
+                        : result.values.safety.status === "caution" ? "caution" : "safe"]}` : undefined} />
                     {result.kind === "valid" && resultsUseLastValidValues && <p
                         className="se-alert se-alert--info battery-stale-results" role="status">
                         {messages.resultsUseLastValidValues}

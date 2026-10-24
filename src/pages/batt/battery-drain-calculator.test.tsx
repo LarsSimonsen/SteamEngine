@@ -143,7 +143,7 @@ describe("BatteryDrainCalculator", () => {
         expect(screen.getByText("Efficiency: ≤ 100%")).toBeInTheDocument();
         await waitFor(() => expect(screen.getByRole("heading", { name: "Battery safety" }))
             .toBeInTheDocument());
-        expect(screen.getByRole("status")).toHaveTextContent("Results use the last valid value.");
+        expect(screen.getByText("Results use the last valid value.")).toHaveAttribute("role", "status");
     });
 
     it("offers four operating modes including current regulation", () => {
@@ -421,11 +421,13 @@ describe("BatteryDrainCalculator", () => {
 
         fireEvent.click(managerButton);
         expect(managerButton).toHaveAttribute("aria-expanded", "true");
-        const manager = container.querySelector<HTMLElement>("#battery-manager");
-        expect(screen.getByRole("dialog", { name: "Manage batteries" })).toHaveAttribute("aria-modal", "true");
-        expect(manager).toHaveClass("battery-manager-overlay");
+        const dialog = screen.getByRole("dialog", { name: "Manage batteries" });
+        expect(dialog).toBe(container.querySelector("dialog#battery-manager"));
+        expect(dialog).toHaveAttribute("open");
+        expect(dialog).toHaveFocus();
         expect(screen.getByRole("heading", { name: /^Manage batteries/ })).toBeInTheDocument();
-        fireEvent.keyDown(document, { key: "Escape" });
+        // The browser turns Escape in a modal dialog into a cancel event.
+        fireEvent(dialog, new Event("cancel", { cancelable: true }));
         expect(screen.queryByRole("heading", { name: /^Manage batteries/ })).not.toBeInTheDocument();
         expect(managerButton).toHaveFocus();
 
@@ -542,8 +544,7 @@ describe("BatteryDrainCalculator", () => {
 
         fireEvent.click(screen.getByRole("button", { name: "Manage batteries" }));
         fireEvent.click(screen.getByRole("button", { name: "Delete" }));
-        expect(screen.getByRole("status")).toHaveTextContent(
-            "Cannot delete Test Battery; it is used by Current Battery Drain settings.",
-        );
+        expect(screen.getByText("Cannot delete Test Battery; it is used by Current Battery Drain settings."))
+            .toHaveAttribute("role", "status");
     });
 });

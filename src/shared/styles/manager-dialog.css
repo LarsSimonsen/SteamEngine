@@ -1,0 +1,35 @@
+.se-manager-dialog {
+    width: min(72rem, calc(100% - 4rem));
+    max-width: none;
+    max-height: calc(100vh - 4rem);
+    padding: 0;
+    overflow: auto;
+    color: var(--se-text);
+    background: var(--se-surface);
+    border: 1px solid var(--se-border);
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 45%);
+}
+
+.se-manager-dialog::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+
+.se-manager-dialog .catalog-manager {
+    margin-top: 0;
+}
+
+@media (max-width: 760px) {
+    .se-manager-dialog {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .se-manager-dialog .catalog-manager {
+        min-height: 100%;
+    }
+}
