@@ -1,21 +1,15 @@
 .backend-error {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-    background: rgb(0 0 0 / 60%);
+    width: min(32rem, calc(100% - 2rem));
+    padding: 1.5rem;
+    border: 1px solid var(--se-border);
+    border-radius: 0.4rem;
+    color: var(--se-text);
+    background: var(--se-surface);
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 45%);
 }
 
-.backend-error__panel {
-    width: min(32rem, 100%);
-    padding: 1.5rem;
-    border: 1px solid var(--se-border, #555);
-    border-radius: 0.4rem;
-    background: var(--se-panel, #222);
-    color: var(--se-text, #eee);
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 45%);
+.backend-error::backdrop {
+    background: rgb(0 0 0 / 60%);
 }
 
 .backend-error__details {
@@ -36,7 +30,6 @@
 }
 
 .backend-error__details-toggle {
-    order: -1;
-    margin-right: auto;
-    text-align: left;
+    margin-inline-end: auto;
+    text-align: start;
 }

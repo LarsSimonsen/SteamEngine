@@ -1,4 +1,4 @@
-import { Component, type ErrorInfo, type ReactNode, type ReactElement } from "react";
+import { Component, createRef, type ErrorInfo, type ReactNode, type ReactElement } from "react";
 import { subscribeToBackendErrors, type BackendRequestError } from "../backend-request";
 import "../styles/backend-error-boundary.css";
 import { messagesFor } from "../../i18n/messages";
@@ -21,12 +21,37 @@ export class BackendErrorBoundary extends Component<Props, ErrorState> {
     private unsubscribe?: () => void;
     private ignoreNextError = false;
     private ignoreNextErrorTimer?: number;
+    private readonly dialog = createRef<HTMLDialogElement>();
+    private readonly retryButton = createRef<HTMLButtonElement>();
+    private focusBeforeError?: HTMLElement;
 
     override componentDidMount(): void {
         this.unsubscribe = subscribeToBackendErrors((error, retry, cancel, reset) =>
             this.ignoreNextError
                 ? undefined
                 : this.setState({ error, retry, cancel, reset, detailsOpen: false, retrying: false }));
+    }
+
+    override componentDidUpdate(_props: Props, previous: ErrorState): void {
+        if (this.state.error && !previous.error) this.openDialog();
+        if (!this.state.error && previous.error) this.restoreFocus();
+    }
+
+    // A modal dialog makes the page behind it inert, keeps Tab inside it and turns Escape into a cancel event.
+    private openDialog(): void {
+        const dialog = this.dialog.current;
+        if (!dialog) return;
+        if (document.activeElement instanceof HTMLElement && document.activeElement !== document.body) {
+            this.focusBeforeError = document.activeElement;
+        }
+        if (!dialog.open) dialog.showModal();
+        this.retryButton.current?.focus();
+    }
+
+    private restoreFocus(): void {
+        const target = this.focusBeforeError;
+        this.focusBeforeError = undefined;
+        if (target?.isConnected) target.focus();
     }
 
     override componentWillUnmount(): void {
@@ -89,32 +114,37 @@ export class BackendErrorBoundary extends Component<Props, ErrorState> {
         const messages = messagesFor(pageLocale());
         return <>
             {state.renderError ? null : this.props.children}
-            {state.error && <aside className="backend-error" role="alertdialog" aria-labelledby="backend-error-title">
-                <div className="backend-error__panel">
-                    <h2 id="backend-error-title">{messages.error.title}</h2>
-                    <p>{state.error.message}</p>
-                    {state.detailsOpen && <pre className="backend-error__details">
-                        {state.error.status ? `HTTP ${state.error.status}\n` : ""}
-                        {state.error.endpoint}
-                        {state.renderError ? `\n\n${state.renderError.stack ?? state.renderError.message}` : ""}
-                    </pre>}
-                    <div className="backend-error__actions">
-                        <button type="button" onClick={() => {
-                            this.dismissAndIgnoreFollowUp(state.cancel);
-                        }}>{messages.error.cancel}</button>
-                        <button type="button" onClick={() => {
-                            this.dismissAndIgnoreFollowUp(state.reset);
-                        }}>{messages.error.reset}</button>
-                        <button type="button" className="se-button se-button--quiet backend-error__details-toggle"
-                            onClick={() => this.setState({ ...state, detailsOpen: !state.detailsOpen })}>
-                            {state.detailsOpen ? messages.error.hideDetails : messages.error.viewDetails}
-                        </button>
-                        <button type="button" onClick={() => void this.retry()} disabled={state.retrying}>
-                            {state.retrying ? messages.error.retrying : messages.error.retry}
-                        </button>
-                    </div>
+            {state.error && <dialog className="backend-error" role="alertdialog" ref={this.dialog}
+                aria-labelledby="backend-error-title" aria-describedby="backend-error-message"
+                onCancel={(event) => {
+                    event.preventDefault();
+                    this.dismissAndIgnoreFollowUp(state.cancel);
+                }}>
+                <h2 id="backend-error-title">{messages.error.title}</h2>
+                <p id="backend-error-message">{state.error.message}</p>
+                {state.detailsOpen && <pre className="backend-error__details">
+                    {state.error.status ? `HTTP ${state.error.status}\n` : ""}
+                    {state.error.endpoint}
+                    {state.renderError ? `\n\n${state.renderError.stack ?? state.renderError.message}` : ""}
+                </pre>}
+                <div className="backend-error__actions">
+                    <button type="button" className="se-button se-button--quiet backend-error__details-toggle"
+                        aria-expanded={state.detailsOpen === true}
+                        onClick={() => this.setState({ ...state, detailsOpen: !state.detailsOpen })}>
+                        {state.detailsOpen ? messages.error.hideDetails : messages.error.viewDetails}
+                    </button>
+                    <button type="button" onClick={() => {
+                        this.dismissAndIgnoreFollowUp(state.cancel);
+                    }}>{messages.error.cancel}</button>
+                    <button type="button" onClick={() => {
+                        this.dismissAndIgnoreFollowUp(state.reset);
+                    }}>{messages.error.reset}</button>
+                    <button type="button" ref={this.retryButton} onClick={() => void this.retry()}
+                        disabled={state.retrying}>
+                        {state.retrying ? messages.error.retrying : messages.error.retry}
+                    </button>
                 </div>
-            </aside>}
+            </dialog>}
         </>;
     }
 }
