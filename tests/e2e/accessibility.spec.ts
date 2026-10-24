@@ -99,8 +99,9 @@ const scanFirstLinkedPage = (description: string, selector: string, theme: Theme
     test(`${description} has no axe violations (${theme}) @static`, async ({ page }, testInfo) => {
         const apiRequests = await preparePage(page, testInfo, theme, false);
         await page.goto("/blog", { waitUntil: "networkidle" });
-        const href = await page.locator(selector).first().getAttribute("href").catch(() => null);
-        test.skip(href === null, "This build has no blog posts.");
+        const link = page.locator(selector).first();
+        test.skip(await link.count() === 0, "This build has no blog posts.");
+        const href = await link.getAttribute("href");
         await page.goto(new URL(href ?? "", page.url()).pathname, { waitUntil: "networkidle" });
         await scan(page, theme, apiRequests);
     });
