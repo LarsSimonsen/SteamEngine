@@ -33,6 +33,8 @@ import { CalculatorLegacyNote, CalculatorPageHeader } from '../../shared/ui/calc
 import { NumericField, SelectField } from '../../shared/ui/form-fields';
 import { NumericDraftReset } from '../../shared/ui/numeric-input';
 import { SiteLayout } from '../../shared/ui/site-layout';
+import { ManagerDialog } from '../../shared/ui/manager-dialog';
+import { ResultAnnouncement, resultSummary } from '../../shared/ui/result-announcement';
 import './mod-range.css';
 import { formatDisplayNumber } from '../../shared/domain/numeric';
 import { localizedRouteHref, pageLocale } from '../../i18n/page-locale';
@@ -85,7 +87,6 @@ export const ModRangeCalculator = (): ReactElement => {
         : defaultDrafts);
     const [selectedPreset, setSelectedPreset] = useState(initialSettings.selectedPresetId);
     const [showModManager, setShowModManager] = useState(false);
-    const managerDialogRef = useRef<HTMLDivElement>(null);
     const managerButtonRef = useRef<HTMLButtonElement>(null);
     const [activeLimits, setActiveLimits] = useState<ModLimits>(initialLimits);
     const [calculation, setCalculation] = useState<ModRangeResult>(() => initialParse.kind === 'valid'
@@ -112,38 +113,6 @@ export const ModRangeCalculator = (): ReactElement => {
             setRequestError(error instanceof Error ? error.message : String(error));
         });
     }, [activeLimits, debouncedCalculation]);
-    useEffect(() => {
-        if (!showModManager) return;
-        const previousOverflow = document.body.style.overflow;
-        document.body.style.overflow = 'hidden';
-        managerDialogRef.current?.focus();
-        const handleDialogKeyDown = (event: KeyboardEvent): void => {
-            if (event.key === 'Escape') {
-                setShowModManager(false);
-                return;
-            }
-            if (event.key !== 'Tab') return;
-            const focusable = managerDialogRef.current?.querySelectorAll<HTMLElement>(
-                'a[href], button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled)'
-            );
-            if (!focusable || focusable.length === 0) return;
-            const first = focusable[0];
-            const last = focusable[focusable.length - 1];
-            if (event.shiftKey && document.activeElement === first) {
-                event.preventDefault();
-                last.focus();
-            } else if (!event.shiftKey && document.activeElement === last) {
-                event.preventDefault();
-                first.focus();
-            }
-        };
-        document.addEventListener('keydown', handleDialogKeyDown);
-        return () => {
-            document.body.style.overflow = previousOverflow;
-            document.removeEventListener('keydown', handleDialogKeyDown);
-            managerButtonRef.current?.focus();
-        };
-    }, [showModManager]);
     useEffect(
         () => modRepository.registerReferences('modrange-active-settings', {
             label: 'Current Mod Range settings',
@@ -351,15 +320,10 @@ export const ModRangeCalculator = (): ReactElement => {
                         <FontAwesomeIcon icon={faSliders} aria-hidden="true" /> {messages.manage}
                     </button>
                 </div>
-                {showModManager && <div id="mod-manager" className="mod-manager-overlay"
-                    onMouseDown={(event) => {
-                        if (event.target === event.currentTarget) setShowModManager(false);
-                    }}>
-                    <div ref={managerDialogRef} className="mod-manager-dialog" role="dialog"
-                        aria-modal="true" aria-label={messages.manage} tabIndex={-1}>
-                        <ModManager repository={modRepository} onClose={() => setShowModManager(false)} />
-                    </div>
-                </div>}
+                {showModManager && <ManagerDialog id="mod-manager" label={messages.manage}
+                    returnFocusTo={managerButtonRef} onClose={() => setShowModManager(false)}>
+                    <ModManager repository={modRepository} onClose={() => setShowModManager(false)} />
+                </ManagerDialog>}
                 {selectedDefaultMod?.slug !== undefined && <a className="mod-range-encyclopedia-link"
                     href={`./catalog/mod/${selectedDefaultMod.slug}`}>{messages.details}</a>}
                 {batteryDrainLink !== undefined && <a
@@ -410,6 +374,11 @@ export const ModRangeCalculator = (): ReactElement => {
                     className="se-alert se-alert--warning mod-range-validation" role="alert">
                     {calculation.message}
                 </p>}
+                <ResultAnnouncement summary={validCalculation && resultSummary(pageLocale(), [
+                    `${messages.maximumPowerRange} ${formatValue(validCalculation.minimumResistance)} – `
+                        + `${formatValue(validCalculation.maximumResistance)} Ω`,
+                    `${messages.sweetSpot} ${formatValue(validCalculation.sweetSpotResistance)} Ω`,
+                ])} />
                 <ModRangeGraph graph={graph} />
                 {result}
             </section>

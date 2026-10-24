@@ -11,25 +11,6 @@
 .mod-range-page-header > div > p:last-child { max-width: 42rem; margin: 0; color: var(--se-muted);
     line-height: 1.5; }
 .mod-range-page-header__actions { gap: 0.35rem; }
-.mod-manager-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: grid;
-    place-items: center;
-    padding: 2rem;
-    background: rgb(0 0 0 / 70%);
-}
-.mod-manager-dialog {
-    width: min(72rem, 100%);
-    max-height: calc(100vh - 4rem);
-    overflow: auto;
-    background: var(--se-surface);
-    border: 1px solid var(--se-border);
-    border-radius: 0.5rem;
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 45%);
-}
-#mod-manager .catalog-manager { margin-top: 0; }
 .mod-range-presets h2 { margin: 0 0 1rem; font-size: 1.6rem; }
 .mod-range-presets .mod-range-intro { margin-bottom: 1rem; }
 .mod-range-preset-controls {
@@ -67,11 +48,6 @@
 .mod-range-field-error { display: block; margin-top: 0.35rem; color: var(--se-danger-text); }
 @media (max-width: 800px) {
     .mod-range-output { grid-row: auto; }
-}
-@media (max-width: 760px) {
-    .mod-manager-overlay { place-items: stretch; padding: 0; }
-    .mod-manager-dialog { width: 100%; height: 100%; max-height: none; border: 0; border-radius: 0; }
-    #mod-manager .catalog-manager { min-height: 100%; }
 }
 @media (max-width: 560px) {
     .mod-range-preset-controls { grid-template-columns: 1fr; }

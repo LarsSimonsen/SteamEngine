@@ -117,7 +117,9 @@ describe('ModRangeCalculator', () => {
         fireEvent.click(managerButton);
         expect(managerButton).toHaveClass('se-button--secondary-active');
         const dialog = screen.getByRole('dialog', { name: 'Manage mods' });
-        expect(dialog).toHaveAttribute('aria-modal', 'true');
+        expect(dialog.tagName).toBe('DIALOG');
+        expect(dialog).toHaveAttribute('open');
+        expect(dialog).toHaveFocus();
 
         fireEvent.change(within(dialog).getByRole('searchbox', { name: 'Filter built-ins' }), {
             target: { value: 'AceSmok' }
