@@ -219,7 +219,7 @@ export const TcrCalculator = (): ReactElement => {
     );
 
     return <SiteLayout basePath="./" className="tcr-app" currentRoute="tcr" rootHref=".">
-        <main className="page-content tcr-page">
+        <main id="main" className="page-content tcr-page">
             <CalculatorPageHeader className="tcr-page-header" eyebrow={messages.eyebrow}
                 title={messages.title} description={messages.description}
                 actionsClassName="se-page-header__action-buttons tcr-page-header__actions" actions={

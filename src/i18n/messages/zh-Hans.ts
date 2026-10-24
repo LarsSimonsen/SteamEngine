@@ -12,7 +12,8 @@ export const messages: SharedMessages = {
         "calculators": "计算器导航",
         "language": "语言",
         "languageFilter": "过滤语言",
-        "noLanguageMatches": "未找到语言。"
+        "noLanguageMatches": "未找到语言。",
+        "skipToContent": "跳到主要内容"
     },
     "theme": {
         "switchToLight": "切换到灯光模式",

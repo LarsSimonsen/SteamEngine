@@ -29,6 +29,19 @@ describe("site layout", () => {
         expect(screen.getByRole("link", { name: "Privacy" })).toHaveAttribute("href", "/privacy");
     });
 
+    it("starts with a localized skip link to the main content", () => {
+        document.getElementById("root")!.dataset.locale = "de";
+        const { container } = render(
+            <SiteLayout basePath="./" currentRoute="ohm" rootHref=".">
+                <main id="main">Calculator content</main>
+            </SiteLayout>,
+        );
+
+        const firstLink = container.querySelector("a, button");
+        expect(firstLink).toHaveTextContent("Zum Hauptinhalt springen");
+        expect(firstLink).toHaveAttribute("href", "#main");
+    });
+
     it("places the calculator ad placement between every calculator and the footer", () => {
         for (const route of ["ohm", "coil", "wirewiz", "batt", "modrange", "juice", "converter", "tcr"] as const) {
             render(

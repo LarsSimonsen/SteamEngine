@@ -23,7 +23,7 @@ export const routeLabel = (route: string): string => {
 export function PreviewPage({ route, title, description }: PreviewPageOptions) {
     return (
         <SiteLayout basePath="./" currentRoute={route} rootHref=".">
-            <main className="page-content">
+            <main id="main" className="page-content">
                 <section className="se-card preview-card" aria-labelledby="page-title">
                     <p className="eyebrow">Phase 0 modernization preview</p>
                     <h1 id="page-title">{title}</h1>

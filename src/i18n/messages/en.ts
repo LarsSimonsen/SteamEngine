@@ -11,6 +11,7 @@ export const messages: SharedMessages = {
         language: "Language",
         languageFilter: "Filter languages",
         noLanguageMatches: "No languages found.",
+        skipToContent: "Skip to main content",
     },
     theme: { switchToLight: "Switch to light mode", switchToDark: "Switch to dark mode" },
     footer: {

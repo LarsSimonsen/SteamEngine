@@ -262,6 +262,7 @@ const renderShell = (
 </head>
 <body>
     <div class="app-shell">
+        <a class="skip-link" href="#main">Skip to main content</a>
         <header class="site-header">
             <div class="site-header__primary">
                 <div class="site-header__inner">
@@ -281,7 +282,7 @@ const renderShell = (
                 </div>
             </div>
         </header>
-        <main class="blog-main">
+        <main id="main" class="blog-main">
             ${content}
         </main>
         <footer class="site-footer">

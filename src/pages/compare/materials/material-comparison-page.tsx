@@ -385,7 +385,7 @@ export const MaterialComparisonPage = (): ReactElement => {
     const capabilityDiffers = temperatureCapabilityDiffers(selected.a?.material, selected.b?.material);
 
     return <SiteLayout basePath="../../" className="battery-comparison-page" rootHref={localizedRootHref(locale)}>
-        <main className="page-content battery-comparison">
+        <main id="main" className="page-content battery-comparison">
             <Breadcrumbs label={shared.encyclopediaDetail.breadcrumb} items={[
                 { label: "Steam Engine", href: localizedRootHref(locale) },
                 {

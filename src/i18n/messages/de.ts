@@ -12,7 +12,8 @@ export const messages = {
         "calculators": "Rechnernavigation",
         "language": "Sprache",
         "languageFilter": "Sprachen filtern",
-        "noLanguageMatches": "Keine Sprachen gefunden."
+        "noLanguageMatches": "Keine Sprachen gefunden.",
+        "skipToContent": "Zum Hauptinhalt springen"
     },
     "theme": {
         "switchToLight": "Wechseln Sie in den Lichtmodus",

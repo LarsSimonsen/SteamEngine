@@ -449,7 +449,7 @@ export const ModComparisonPage = (): ReactElement => {
         ? `Rafrettutæki eða stýrispjald ${side}` : `Mod/board ${side}`;
 
     return <SiteLayout basePath="../../" className="battery-comparison-page" rootHref={localizedRootHref(locale)}>
-        <main className="page-content battery-comparison">
+        <main id="main" className="page-content battery-comparison">
             <Breadcrumbs label={shared.encyclopediaDetail.breadcrumb} items={[
                 { label: "Steam Engine", href: localizedRootHref(locale) },
                 {

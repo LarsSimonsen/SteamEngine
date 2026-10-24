@@ -730,7 +730,7 @@ export const WireWizard = (): ReactElement => {
     return (
         <NumericDraftReset.Provider value={inputReset}>
         <SiteLayout basePath="./" currentRoute="wirewiz" rootHref=".">
-            <main className="page-content wirewiz-page">
+            <main id="main" className="page-content wirewiz-page">
                 <CalculatorPageHeader className="wirewiz-header" copyClassName="wirewiz-header__copy"
                     eyebrow={messages.eyebrow} title={messages.title}
                     description={practicalDescription(messages.description)}

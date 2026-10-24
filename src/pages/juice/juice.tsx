@@ -301,7 +301,7 @@ export const JuiceCalculator = (): ReactElement => {
 
     return <NumericDraftReset.Provider value={inputReset}>
         <SiteLayout basePath="./" className="juice-app" currentRoute="juice" rootHref=".">
-        <main className="page-content">
+        <main id="main" className="page-content">
             <TransientMessage message={message} onDismiss={clearMessage} />
             <CalculatorPageHeader className="juice-page-header" eyebrow={messages.eyebrow}
                 title={messages.title} description={messages.description}

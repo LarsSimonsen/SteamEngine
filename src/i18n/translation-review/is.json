@@ -10946,6 +10946,17 @@
             },
             "confidence": "low"
         },
+        "messages.navigation.skipToContent": {
+            "sourceSignature": "a592882df8a09e60913ff01e3426a2fd7a73fa36ca4e50ef24de50cfbb391da4",
+            "translationSignature": "042b97113e49f9e949e12d8fefd22efce9773fa539727fbf17eef74a075f10c7",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.ohm.about": {
             "sourceSignature": "25772f940874b70532c722fc07d30342fbbd9072996601ad3a7f212b1fe9c976",
             "translationSignature": "310ebfd7ca89e8e8bd27641662d8d50f2f812c1e6e8f34d91e246e604c2ad03b",

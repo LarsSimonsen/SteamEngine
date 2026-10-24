@@ -476,7 +476,7 @@ export const BatteryComparisonPage = (): ReactElement => {
     const invalidReference = (slugs.a !== undefined && !selected.a) || (slugs.b !== undefined && !selected.b);
 
     return <SiteLayout basePath="../../" className="battery-comparison-page" rootHref={localizedRootHref(locale)}>
-        <main className="page-content battery-comparison">
+        <main id="main" className="page-content battery-comparison">
             <Breadcrumbs label={shared.encyclopediaDetail.breadcrumb} items={[
                 { label: "Steam Engine", href: localizedRootHref(locale) },
                 {

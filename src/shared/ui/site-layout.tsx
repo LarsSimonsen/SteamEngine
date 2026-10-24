@@ -3,6 +3,7 @@ import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
 import { withoutTrailingSlash, type SiteRoute } from "./site-navigation";
 import { AdPlacement, type AdPlacementName } from "./ad-placement";
+import { messagesFor } from "../../i18n/messages";
 import { localizedRouteHref, pageLocale } from "../../i18n/page-locale";
 
 const calculatorRoutes: readonly SiteRoute[] = [
@@ -41,6 +42,7 @@ export const SiteLayout = ({
         && calculatorRoutes.includes(currentRoute) ? "calculator-footer" : undefined);
 
     return <div className={["app-shell", className].filter(Boolean).join(" ")}>
+        <a className="skip-link" href="#main">{messagesFor(locale).navigation.skipToContent}</a>
         <SiteHeader basePath={basePath} currentRoute={currentRoute} rootHref={resolvedRootHref} />
         {children}
         {resolvedAdPlacement && <AdPlacement context={currentRoute} placement={resolvedAdPlacement} />}

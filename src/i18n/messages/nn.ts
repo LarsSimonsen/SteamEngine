@@ -14,6 +14,7 @@ export const messages: SharedMessages = normalizeNynorsk({
         language: "Språk",
         languageFilter: "Filtrer språk",
         noLanguageMatches: "Ingen språk funne.",
+        skipToContent: "Gå til hovudinnhaldet",
     },
     theme: { switchToLight: "Byt til lys modus", switchToDark: "Byt til mørk modus" },
     footer: {

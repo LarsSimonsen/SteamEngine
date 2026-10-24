@@ -320,7 +320,7 @@ export const ModRangeCalculator = (): ReactElement => {
 
     return <NumericDraftReset.Provider value={inputReset}>
         <SiteLayout basePath="./" className="mod-range-app" currentRoute="modrange" rootHref=".">
-        <main className="page-content">
+        <main id="main" className="page-content">
             <CalculatorPageHeader className="mod-range-page-header" eyebrow={messages.eyebrow}
                 title={messages.title} description={messages.description}
                 actionsClassName="se-page-header__action-buttons mod-range-page-header__actions" actions={<>

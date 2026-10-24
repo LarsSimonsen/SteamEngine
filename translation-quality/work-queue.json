@@ -59,14 +59,14 @@
         {
             "locale": "de",
             "priority": 20,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 15,
             "lastCompletedCycle": "de-20261007T232502040Z",
             "resultSummary": "Full review of 1115 canonical entries and 11 route metadata records completed. Improved 109 display/runtime entries across 42 groups, including localized catalog nouns, sentence assembly and battery placeholders. Typecheck, full build, route/link and browser checks passed; human review remains pending.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "fd07ce37cbc3cd605c5c258c3daa5c7fb988fef344b2d83476e236c7f64b0c02",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "el",
@@ -83,14 +83,14 @@
         {
             "locale": "hi",
             "priority": 20,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 14,
             "lastCompletedCycle": "hi-20261012T121528848Z",
             "resultSummary": "Full published Hindi scope reviewed; 240 strings and six catalog nouns corrected across 75 groups. No unresolved actionable locale findings from completed passes; competent human review remains pending.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "e7e16b1a654cd7a8c17fffe03cd0be557be1c9f337d3c613e067fce44f2a35f0",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "is",
@@ -155,26 +155,26 @@
         {
             "locale": "pt",
             "priority": 20,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 13,
             "lastCompletedCycle": "pt-20261012T132732989Z",
             "resultSummary": "Full 1115-entry Portuguese review completed. Corrected 174 display entries, one glossary entry and six category nouns across 56 cause groups. Structural, full-build and browser checks passed; human review pending; shared source/UI issues recorded separately.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "fbec320e1307cd6b84c7c923bc7c2df43b02dbaaae0a5923a89cd26abf8d225c",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "pt-BR",
             "priority": 20,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 13,
             "lastCompletedCycle": "pt-BR-20261012T135410164Z",
             "resultSummary": "Full 1115-entry Brazilian Portuguese review completed. Corrected 163 display entries, one glossary entry and six category nouns across 57 groups. Full-build, structural and browser checks passed. Human review pending; shared source/UI issues recorded separately.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "1e0b5f352d4462e32586d964d7459f802c633875f9d065a10310845abcb2ca48",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "sv",
@@ -191,26 +191,26 @@
         {
             "locale": "uk",
             "priority": 20,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 15,
             "lastCompletedCycle": "uk-20261007T230324950Z",
             "resultSummary": "Full 1115-entry review completed; 248 display entries corrected across 73 recurring issue groups. Verified final runtime signatures, build, route/link checks and Ukrainian desktop/mobile rendering. Human review remains pending.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "c07537bf98d3e5335559ed995ada12790f081912a52bebc50739ca4a9e03e7aa",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "vi",
             "priority": 20,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 14,
             "lastCompletedCycle": "vi-20261007T224017060Z",
             "resultSummary": "Complete independent 1115-entry review corrected 191 display entries in 75 issue groups; automated and browser checks passed; human review remains pending.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "b9a05f487f6381bd4185b0c711054af5797ce3fdf5313630b1821d5770365d1e",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "zh-Hans",
@@ -287,14 +287,14 @@
         {
             "locale": "tr",
             "priority": 40,
-            "status": "stable",
-            "reason": "Requeue when English changes, visitor feedback arrives, or stronger checks become available.",
+            "status": "queued",
+            "reason": "New machine-drafted accessibility strings from the WCAG remediation (#51) need critique.",
             "iterationCount": 12,
             "lastCompletedCycle": "tr-20261012T125549325Z",
             "resultSummary": "Reviewed full Turkish locale scope; corrected 163 strings and five catalog noun mappings in three iterations. Locale-owned findings resolved; shared source/UI gaps recorded separately. Human review pending.",
             "sourceSignature": "ee4faf322f57e8a3efaf61680d1ca867265c45630e9aa1a09046efb5e7e7ae40",
             "contentSignature": "aef38053550a51c27a2bf2934f5465592a750dd766b7bac6b5ab7f9678c497fa",
-            "lastOutcome": "stable"
+            "lastOutcome": "requeued"
         },
         {
             "locale": "fi",

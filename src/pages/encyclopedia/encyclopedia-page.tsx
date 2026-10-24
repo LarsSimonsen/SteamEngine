@@ -1458,7 +1458,7 @@ export const EncyclopediaPage = ({ category, slug }: EncyclopediaProps): ReactEl
     const rootHref = localizedRootHref(locale);
 
     return <SiteLayout basePath="../../" className="encyclopedia-page" currentRoute="catalog" rootHref={rootHref}>
-        <main className="page-content encyclopedia-content">
+        <main id="main" className="page-content encyclopedia-content">
             <Breadcrumbs label={messages.breadcrumb} items={[
                 { label: "Steam Engine", href: rootHref },
                 { label: messagesFor(locale).encyclopedia.title, href: "../../catalog" },

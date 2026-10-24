@@ -255,7 +255,11 @@ export const EncyclopediaHub = (): ReactElement => {
         replaceCategoryFragment(category);
     }, [category]);
     useEffect(() => {
-        const handleHashChange = (): void => setCategory(categoryFromHash(window.location.hash));
+        const handleHashChange = (): void => {
+            // The skip link's #main target is not a category and must not clear the selected one.
+            if (window.location.hash === "#main") return;
+            setCategory(categoryFromHash(window.location.hash));
+        };
         window.addEventListener("hashchange", handleHashChange);
         return () => window.removeEventListener("hashchange", handleHashChange);
     }, []);
@@ -297,7 +301,7 @@ export const EncyclopediaHub = (): ReactElement => {
         currentRoute="catalog"
         rootHref={localizedRootHref(locale)}
     >
-        <main className="page-content encyclopedia-hub-content">
+        <main id="main" className="page-content encyclopedia-hub-content">
             <section className="encyclopedia-hero" aria-labelledby="encyclopedia-title">
                 <p className="encyclopedia-kicker">{messages.kicker}</p>
                 <h1 id="encyclopedia-title">{messages.title}</h1>

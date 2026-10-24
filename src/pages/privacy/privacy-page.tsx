@@ -41,7 +41,7 @@ export const PrivacyPage = (): ReactElement => {
     };
 
     return <SiteLayout basePath="./" currentRoute="privacy" rootHref=".">
-        <main className="page-content privacy-page">
+        <main id="main" className="page-content privacy-page">
             <header className="privacy-page__header">
                 <p className="eyebrow">Steam Engine</p>
                 <h1>Privacy</h1>

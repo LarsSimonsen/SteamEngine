@@ -134,7 +134,7 @@
     "bundles": {
         "messages": {
             "sourceFile": "src/i18n/messages/en.ts",
-            "sourceSignature": "da485bb4855a34fa869b5df706607c93b64fb7dc18ba05c957f2ed619d9a62e1",
+            "sourceSignature": "0a4c7c0d6e2c13ccf7f0c65dc1cb96c1527519b85f38cb4a5a93a07b83fe5460",
             "files": {
                 "en": "src/i18n/messages/en.ts",
                 "nb": "src/i18n/messages/nb.ts",

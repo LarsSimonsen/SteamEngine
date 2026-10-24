@@ -12,7 +12,8 @@ export const messages = {
         "calculators": "Điều hướng máy tính",
         "language": "Ngôn ngữ",
         "languageFilter": "Lọc ngôn ngữ",
-        "noLanguageMatches": "Không tìm thấy ngôn ngữ nào."
+        "noLanguageMatches": "Không tìm thấy ngôn ngữ nào.",
+        "skipToContent": "Chuyển đến nội dung chính"
     },
     "theme": {
         "switchToLight": "Chuyển sang chế độ ánh sáng",

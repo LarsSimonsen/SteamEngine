@@ -10,7 +10,8 @@ export const messages = {
         "calculators": "Калькулятор навігації",
         "language": "Мова",
         "languageFilter": "Фільтрувати мови",
-        "noLanguageMatches": "Мови не знайдено."
+        "noLanguageMatches": "Мови не знайдено.",
+        "skipToContent": "Перейти до основного вмісту"
     },
     "theme": {
         "switchToLight": "Переключіться на світлий режим",

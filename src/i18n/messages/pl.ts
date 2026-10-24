@@ -10,7 +10,8 @@ export const messages =  {
         "calculators": "Nawigacja kalkulatora",
         "language": "Język",
         "languageFilter": "Filtruj języki",
-        "noLanguageMatches": "Nie znaleziono języków."
+        "noLanguageMatches": "Nie znaleziono języków.",
+        "skipToContent": "Przejdź do treści głównej"
     },
     "theme":  {
         "switchToLight": "Przełącz na tryb oświetlenia",

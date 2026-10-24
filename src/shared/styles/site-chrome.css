@@ -94,6 +94,27 @@ a:focus-visible {
     flex-direction: column;
 }
 
+.skip-link {
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    inset-inline-start: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    color: var(--se-header-text);
+    background: var(--se-brand-blue);
+    border-radius: 0.4rem;
+    transform: translateY(-200%);
+}
+
+.skip-link:hover,
+.skip-link:focus-visible {
+    color: var(--se-header-text);
+}
+
+.skip-link:focus {
+    transform: none;
+}
+
 .site-header {
     border-bottom: 1px solid var(--se-border);
 }

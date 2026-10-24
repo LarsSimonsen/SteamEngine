@@ -5,7 +5,7 @@ import "./about.css";
 
 export const AboutPage = (): ReactElement => (
     <SiteLayout basePath="./" currentRoute="about" rootHref=".">
-        <main className="page-content about-page">
+        <main id="main" className="page-content about-page">
             <header className="about-page__header">
                 <p className="eyebrow">Steam Engine</p>
                 <h1>About</h1>

@@ -467,7 +467,7 @@ export const CoilCalculator = (): ReactElement => {
 
     return <NumericDraftReset.Provider value={inputReset}>
         <SiteLayout basePath="./" className="coil-app" currentRoute="coil" rootHref=".">
-        <main className="page-content">
+        <main id="main" className="page-content">
             <TransientMessage message={message} onDismiss={clearMessage} />
             <CalculatorPageHeader className="coil-page-header" copyClassName="coil-page-header__copy"
                 eyebrow={messages.eyebrow} title={messages.title}

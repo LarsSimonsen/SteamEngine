@@ -12716,6 +12716,17 @@
             "reviewer": "Maintainer instruction",
             "reviewedAt": "2026-08-17"
         },
+        "messages.navigation.skipToContent": {
+            "sourceSignature": "a592882df8a09e60913ff01e3426a2fd7a73fa36ca4e50ef24de50cfbb391da4",
+            "translationSignature": "000a20e32469d0f36c192030bacbf0a9631c86f2fcbd800f4fae040b2d18e05a",
+            "state": "machine",
+            "provenance": {
+                "kind": "machine",
+                "method": "Accessibility remediation machine draft",
+                "model": "Claude Opus 5.5"
+            },
+            "confidence": "medium"
+        },
         "messages.ohm.about": {
             "sourceSignature": "25772f940874b70532c722fc07d30342fbbd9072996601ad3a7f212b1fe9c976",
             "translationSignature": "dfa8ad976e65a35f95c0e2d713f3ad5068d49b0588de39747c1445c3a888cf07",

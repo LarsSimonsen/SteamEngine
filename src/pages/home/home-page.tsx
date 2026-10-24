@@ -79,8 +79,9 @@ export const HomePage = (): ReactElement => {
     const homeBasePath = locale === "nb" ? "nb/" : "";
     return <SiteLayout adPlacement="home-footer" basePath={homeBasePath} className="home-app"
         rootHref={locale === "nb" ? "nb" : "."}>
-        <main className="page-content home-content">
+        <main id="main" className="page-content home-content">
             <section className="home-hero">
+                <h1 className="sr-only">Steam Engine</h1>
                 <p className="home-intro">
                     {messages.home.intro}
                 </p>

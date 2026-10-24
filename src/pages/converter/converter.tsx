@@ -9,7 +9,7 @@ import { pageLocale } from "../../i18n/page-locale";
 export const Converter = (): ReactElement => {
     const messages = calculatorMessagesFor(pageLocale()).converter;
     return <SiteLayout basePath="./" className="converter-app" currentRoute="converter" rootHref=".">
-    <main className="page-content">
+    <main id="main" className="page-content">
         <CalculatorPageHeader className="converter-page-header" eyebrow={messages.eyebrow}
             title={messages.title} description={messages.description} />
         <ConverterPanel persistenceKey={converterStorageKey} />

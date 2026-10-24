@@ -683,7 +683,7 @@ export const BatteryDrainCalculator = (): ReactElement => {
 
     return <NumericDraftReset.Provider value={inputReset}>
         <SiteLayout basePath="./" className="battery-app" currentRoute="batt" rootHref=".">
-        <main className="page-content">
+        <main id="main" className="page-content">
             <CalculatorPageHeader className="battery-page-header" eyebrow={messages.eyebrow}
                 title={messages.title} description={messages.description}
                 actionsClassName="se-page-header__action-buttons battery-page-header__actions" actions={<>

@@ -15,6 +15,7 @@ export const messages = {
         "language": "Kieli",
         "languageFilter": "Suodata kieliä",
         "noLanguageMatches": "Kieliä ei löytynyt.",
+        "skipToContent": "Siirry pääsisältöön",
     },
     "theme": {
         "switchToLight": "Vaihda vaaleaan tilaan",

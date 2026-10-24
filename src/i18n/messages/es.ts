@@ -12,7 +12,8 @@ export const messages: SharedMessages = {
         "calculators": "Navegación con calculadora",
         "language": "Idioma",
         "languageFilter": "Filtrar idiomas",
-        "noLanguageMatches": "No se encontraron idiomas."
+        "noLanguageMatches": "No se encontraron idiomas.",
+        "skipToContent": "Saltar al contenido principal"
     },
     "theme": {
         "switchToLight": "Cambiar al modo de luz",

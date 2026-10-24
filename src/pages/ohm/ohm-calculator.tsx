@@ -202,7 +202,7 @@ export const OhmCalculator = (): ReactElement => {
 
     return <NumericDraftReset.Provider value={inputReset}>
         <SiteLayout basePath="./" className="ohm-app" currentRoute="ohm" rootHref=".">
-        <main className="page-content">
+        <main id="main" className="page-content">
             <CalculatorPageHeader className="ohm-page-header" eyebrow={messages.eyebrow}
                 title={messages.title}
                 description={<>
