@@ -94,11 +94,12 @@ export const LanguageSwitcher = ({ locale, navigation }: LanguageSwitcherProps):
                     <a
                         className="language-switcher__option"
                         href={languageHref(definition.code)}
+                        hrefLang={definition.htmlLang}
                         aria-current={definition.code === locale ? "page" : undefined}
                         onClick={() => saveLocalePreference(definition.code)}
                     >
-                        {definition.name}
-                        <span className="sr-only">{definition.englishAlias}</span>
+                        <span lang={definition.htmlLang}>{definition.name}</span>
+                        <span className="sr-only" lang="en"> {definition.englishAlias}</span>
                     </a>
                 </li>)}
             </ul>

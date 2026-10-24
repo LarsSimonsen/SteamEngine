@@ -30,7 +30,8 @@ export const SiteFooter = ({ homeHref }: SiteFooterProps): ReactElement => {
     return <footer className="site-footer">
         <div className="site-footer__inner">
             <a className="site-footer__home-link" href={withoutTrailingSlash(homeHref)}>www.steam-engine.org</a>
-            <a className="site-footer__privacy-link" href="/privacy">Privacy</a>
+            {/* The privacy policy is published in English only. */}
+            <a className="site-footer__privacy-link" href="/privacy" hrefLang="en" lang="en">Privacy</a>
             {localeNeedsTranslationReview(locale) && <p className="site-footer__translation-review">
                 {messages.footer.translationDraft}{" "}{correctionLink}
             </p>}

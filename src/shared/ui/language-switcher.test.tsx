@@ -30,6 +30,16 @@ describe("language switcher", () => {
         expect(screen.getByText("No languages found.")).toBeInTheDocument();
     });
 
+    it("marks each language name and its English alias with their own language", () => {
+        render(<LanguageSwitcher locale="de" navigation={messagesFor("de").navigation} />);
+        fireEvent.click(screen.getByRole("button", { name: "Sprache: Deutsch" }));
+
+        const arabic = screen.getByRole("link", { name: /Arabic/ });
+        expect(arabic).toHaveAttribute("hrefLang", "ar");
+        expect(arabic.querySelector("[lang='ar']")).toHaveTextContent("العربية");
+        expect(screen.getByText("Arabic", { selector: ".sr-only" })).toHaveAttribute("lang", "en");
+    });
+
     it("localizes the empty state and clears the filter when Escape closes the menu", () => {
         render(<LanguageSwitcher locale="nb" navigation={messagesFor("nb").navigation} />);
 

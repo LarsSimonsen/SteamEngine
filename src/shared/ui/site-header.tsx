@@ -79,7 +79,7 @@ export const SiteHeader = ({
                         >
                             {catalogNavigationItem.label}
                         </a>
-                        <a href={withoutTrailingSlash(localizedRouteHref("en", "blog"))}>
+                        <a href={withoutTrailingSlash(localizedRouteHref("en", "blog"))} hrefLang="en">
                             {messages.navigation.blog}
                         </a>
                         <button className="theme-toggle" type="button" aria-label={messages.theme[
@@ -90,6 +90,7 @@ export const SiteHeader = ({
                         </button>
                         <a
                             href={withoutTrailingSlash(localizedRouteHref("en", "about"))}
+                            hrefLang="en"
                             aria-current={currentRoute === "about" ? "page" : undefined}
                         >
                             {messages.navigation.about}
