@@ -14,6 +14,7 @@ import { calculateConversionFromApi } from "./api";
 import { createDebouncedRequest, debouncedRequestSuperseded } from "../../shared/debounced-request";
 import { birminghamWireGauge, fractionalInches, standardWireGauge } from "./data";
 import { SelectField } from "../../shared/ui/form-fields";
+import { ResultAnnouncement, resultSummary } from "../../shared/ui/result-announcement";
 import { calculatorMessagesFor } from "../../i18n/calculator-messages";
 import { pageLocale } from "../../i18n/page-locale";
 import "./converter.css";
@@ -201,8 +202,17 @@ export const ConverterPanel = ({
                 }))} />
             <p className="se-muted-copy converter-help">{messages.precisionHelp}</p>
         </section>
-        <section className="se-card converter-card converter-result-panel" aria-live="polite" aria-busy={pending}
+        <section className="se-card converter-card converter-result-panel" aria-busy={pending}
             aria-labelledby={resultTitleId}>
+            <ResultAnnouncement summary={pending ? undefined : result?.kind === "exact"
+                ? `${draftValue} ${displayUnit(settings.fromUnit)} = `
+                    + `${result.outputValue} ${displayUnit(settings.toUnit)}`
+                : result?.kind === "approximate" ? `${messages.betweenStandardValues} ${resultSummary(pageLocale(), [
+                    `${result.approximation.larger.name} (${result.approximation.largerErrorPercent.toFixed(2)}% `
+                        + `${messages.larger})`,
+                    `${result.approximation.smaller.name} (${result.approximation.smallerErrorPercent.toFixed(2)}% `
+                        + `${messages.smaller})`,
+                ])}` : undefined} />
             <div className="se-split-heading converter-heading"><h2 id={resultTitleId}>{messages.result}</h2>
                 {!sameSettings(settings, defaultSettings) && <button
                     className="se-button se-button--quiet converter-reset" type="button" onClick={reset}>
@@ -211,7 +221,7 @@ export const ConverterPanel = ({
             </div>
             <p className="converter-equation">{draftValue} {displayUnit(settings.fromUnit)}
                 <span aria-hidden="true"> = </span></p>
-            {pending && <p className="se-muted-copy converter-pending" role="status">{messages.calculating}</p>}
+            {pending && <p className="se-muted-copy converter-pending">{messages.calculating}</p>}
             {!pending && result?.kind === "exact" && <p className="converter-result-value">
                 <strong>{result.outputValue}</strong>
                 {` ${displayUnit(settings.toUnit)}`}</p>}

@@ -1,7 +1,1 @@
-{
-    "color-contrast": {
-        ".se-alert > a[href$=\"wirewiz\"]": [
-            "/tcr"
-        ]
-    }
-}
+{}

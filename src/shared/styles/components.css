@@ -427,3 +427,8 @@ svg.svg-inline--fa {
     color: var(--se-danger-text);
     font-size: 0.85rem;
 }
+
+/* The tinted background drops the normal link colour below 4.5:1, so links use the stronger hover shade. */
+.se-alert--info a {
+    color: var(--se-link-hover);
+}
