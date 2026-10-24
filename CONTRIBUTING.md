@@ -7,13 +7,28 @@ generated elsewhere and is corrected through issues instead; see [Catalog data](
 
 - Keep changes small and focused, and preserve existing behavior unless the change is meant to alter it.
 - Use four spaces for indentation and keep lines within 120 characters.
-- Treat WCAG 2.2 Level AA as the minimum accessibility target and prefer semantic HTML.
+- Treat WCAG 2.2 Level AA as the minimum accessibility target and prefer semantic HTML. For changes to pages or
+  shared UI, run `npm run test:a11y` against a fresh `build:cloudflare` artifact; see
+  [Accessibility checks](#accessibility-checks).
 - Read `SITE-STRUCTURE.md` and `tools/route-contract.json` before changing routes, navigation, canonical URLs,
   redirects or generated links, and update them together.
 - The calculation API is a separate, proprietary service. Frontend changes must keep using its existing versioned
   routes through the adapters in `src/pages/<route>/api.ts`; propose API changes in an issue.
 - Run `npm run typecheck`, `npm test`, `npm run validate:public` and `npm run build:cloudflare` before opening a
   pull request. Add `npm run test:routes` and `npm run test:links` for route or link changes.
+
+### Accessibility checks
+
+`npm run test:a11y` scans every page family with axe for WCAG 2.2 A and AA violations: English pages in both
+themes, and the home page, calculators, catalog and comparisons in every locale. `npm run test:e2e` includes it.
+Calculator pages forward calculation requests to the live API through `tests/e2e/live-api.ts`. Set
+`PLAYWRIGHT_PUBLIC_ROOT` to `.build-runs/cloudflare-artifact` after `npm run build:cloudflare`.
+
+Violations that existed before the remediation work are listed in `tests/e2e/accessibility-baseline.json`, keyed by
+axe rule and selector, with the page families (routes without a locale prefix) where they occur, or `"*"` for all of
+them. The sweep fails only on violations that are not listed. When a change fixes a violation, remove its entries
+from the baseline in the same change. Never add entries by hand to hide a new violation. Run
+`npm run test:a11y:baseline` to rewrite the file from a fresh scan, then review the diff: it should only shrink.
 
 ## Catalog data
 

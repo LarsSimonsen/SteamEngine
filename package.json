@@ -35,6 +35,8 @@
     "audit:links": "node tools/audit-links.mjs",
     "test:watch": "vitest",
     "test:e2e": "node tools/run-playwright-e2e.mjs",
+    "test:a11y": "node tools/run-playwright-e2e.mjs tests/e2e/accessibility.spec.ts",
+    "test:a11y:baseline": "node tools/update-accessibility-baseline.mjs",
     "i18n:qc:tr:browser": "node tools/run-playwright-e2e.mjs tests/e2e/turkish-qc.spec.ts"
   },
   "dependencies": {
@@ -45,6 +47,7 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.61.1",
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",

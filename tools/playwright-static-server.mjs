@@ -48,16 +48,22 @@ const contentTypes = new Map([
     [".jpeg", "image/jpeg"],
 ]);
 
+// IIS slots store these pages as folder indexes; the Cloudflare Pages artifact stores them as flat .html files.
+const existingFile = (...candidates) => candidates.find((candidate) => {
+    const filePath = safeFilePath(candidate);
+    return filePath !== undefined && existsSync(filePath) && statSync(filePath).isFile();
+}) ?? candidates[0];
+
 const routeFile = (pathname) => {
     if (pathname === "/") return "index.html";
-    if (pathname === "/old") return "old/index.html";
-    if (pathname === "/blog") return "blog/index.html";
+    if (pathname === "/old") return existingFile("old/index.html", "old.html");
+    if (pathname === "/blog") return existingFile("blog/index.html", "blog.html");
     if (blogPaginationPage.test(pathname) || blogArticlePage.test(pathname)) {
-        return `blog${pathname.slice("/blog".length)}/index.html`;
+        return existingFile(`${pathname.slice(1)}/index.html`, `${pathname.slice(1)}.html`);
     }
 
     if (new RegExp(
-        `^/(?:about|batt|coil|converter|juice|modrange|ohm|tcr|wirewiz|catalog|${comparisonPattern})$`,
+        `^/(?:about|privacy|batt|coil|converter|juice|modrange|ohm|tcr|wirewiz|catalog|${comparisonPattern})$`,
     ).test(pathname)) {
         return `${pathname.slice(1)}.html`;
     }
@@ -78,6 +84,12 @@ const safeFilePath = (relativePath) => {
 };
 
 const sendNotFound = (response) => {
+    const notFoundPage = safeFilePath("404.html");
+    if (notFoundPage !== undefined && existsSync(notFoundPage)) {
+        response.writeHead(404, { "content-type": contentTypes.get(".html") });
+        createReadStream(notFoundPage).pipe(response);
+        return;
+    }
     response.writeHead(404, { "content-type": "text/plain; charset=utf-8" });
     response.end("Not found");
 };
