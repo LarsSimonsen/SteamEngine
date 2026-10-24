@@ -36,7 +36,7 @@
     "test:watch": "vitest",
     "test:e2e": "node tools/run-playwright-e2e.mjs",
     "test:a11y": "node tools/run-playwright-e2e.mjs tests/e2e/accessibility.spec.ts",
-    "test:a11y:baseline": "node tools/update-accessibility-baseline.mjs",
+    "test:a11y:static": "node tools/run-playwright-e2e.mjs tests/e2e/accessibility.spec.ts --grep @static",
     "i18n:qc:tr:browser": "node tools/run-playwright-e2e.mjs tests/e2e/turkish-qc.spec.ts"
   },
   "dependencies": {

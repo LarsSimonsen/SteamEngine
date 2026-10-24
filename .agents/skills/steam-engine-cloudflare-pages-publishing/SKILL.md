@@ -85,6 +85,16 @@ Inspect the artifact and confirm that `_worker.js`, `_routes.json` and
 the excluded paths fails the artifact test; add it to `cloudflareRoutes` in
 `tools/cloudflare-pages-artifact.mjs` rather than letting it run the Worker. Never deploy a partial or failed build.
 
+Then run the full accessibility sweep against the artifact:
+
+```powershell
+$env:PLAYWRIGHT_PUBLIC_ROOT = ".build-runs/cloudflare-artifact"; npm run test:a11y
+```
+
+It scans every page family, calculators included, through the live calculation API and must report zero WCAG 2.2
+A and AA violations. CI covers only the pages that do not call the API, so this local run is the release gate for
+the rest. Never deploy while it fails.
+
 Blog posts are kept outside this repository. Confirm that
 `.build-runs/cloudflare-artifact/blog/feed.xml` contains `<item>` entries and
 that the build did not warn about missing blog content. A build without posts

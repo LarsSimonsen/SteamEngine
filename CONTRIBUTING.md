@@ -19,16 +19,15 @@ generated elsewhere and is corrected through issues instead; see [Catalog data](
 
 ### Accessibility checks
 
-`npm run test:a11y` scans every page family with axe for WCAG 2.2 A and AA violations: English pages in both
-themes, and the home page, calculators, catalog and comparisons in every locale. `npm run test:e2e` includes it.
-Calculator pages forward calculation requests to the live API through `tests/e2e/live-api.ts`. Set
-`PLAYWRIGHT_PUBLIC_ROOT` to `.build-runs/cloudflare-artifact` after `npm run build:cloudflare`.
+`npm run test:a11y` scans every page family with axe and fails on any WCAG 2.2 A or AA violation: English pages in
+both themes, and the home page, calculators, catalog and comparisons in every locale. `npm run test:e2e` includes
+it. Calculator and material or mod detail pages forward calculation requests to the live API through
+`tests/e2e/live-api.ts`. Set `PLAYWRIGHT_PUBLIC_ROOT` to `.build-runs/cloudflare-artifact` after
+`npm run build:cloudflare`.
 
-Violations that existed before the remediation work are listed in `tests/e2e/accessibility-baseline.json`, keyed by
-axe rule and selector, with the page families (routes without a locale prefix) where they occur, or `"*"` for all of
-them. The sweep fails only on violations that are not listed. When a change fixes a violation, remove its entries
-from the baseline in the same change. Never add entries by hand to hide a new violation. Run
-`npm run test:a11y:baseline` to rewrite the file from a fresh scan, then review the diff: it should only shrink.
+`npm run test:a11y:static` runs only the scans tagged `@static`, the pages that never call the calculation API. They
+block the API and fail if a page tries to reach it. The public repository checks run this command on every pull
+request; run the full `npm run test:a11y` locally before each deployment.
 
 Component tests can run the same WCAG rules in jsdom with `axeViolations` from `src/shared/test-axe.ts`, as
 `src/shared/ui/accessibility.test.tsx` does for the shared header, footer, language switcher, form fields and error

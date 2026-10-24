@@ -53,3 +53,8 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build:cloudflare
+      - run: npx playwright install chromium
+      - name: Accessibility sweep of pages that do not call the calculation API
+        run: npm run test:a11y:static
+        env:
+          PLAYWRIGHT_PUBLIC_ROOT: .build-runs/cloudflare-artifact
