@@ -35,7 +35,8 @@ import { createDebouncedRequest, debouncedRequestSuperseded } from "../../shared
 import type { CustomMaterial, DefaultMaterial } from "../../catalogs/materials/catalog";
 import { MaterialManager } from "../../catalogs/materials/material-manager";
 import { createMaterialRepository } from "../../catalogs/materials/repository";
-import { heatFluxColor } from "./heat-flux";
+import { blackBodyCurveIcon } from "./black-body-icon";
+import { heatFluxColor, type HeatFluxColorScale } from "./heat-flux";
 import "../../shared/styles/foundation.css";
 import { useRepository } from "../../shared/hooks/use-repository";
 import { CalculatorLegacyNote, CalculatorPageHeader } from "../../shared/ui/calculator-page-header";
@@ -58,6 +59,23 @@ import { calculatorMessagesFor, type CalculatorRouteMessages } from "../../i18n/
 import "./coil.css";
 
 const storageKey = "steamengine.coil.settings.v1";
+const heatFluxScaleStorageKey = "steamengine.coil.heat-flux-scale.v1";
+
+const readStoredHeatFluxScale = (): HeatFluxColorScale => {
+    try {
+        return localStorage.getItem(heatFluxScaleStorageKey) === "blackBody" ? "blackBody" : "legacy";
+    } catch {
+        return "legacy";
+    }
+};
+
+const storeHeatFluxScale = (scale: HeatFluxColorScale): void => {
+    try {
+        localStorage.setItem(heatFluxScaleStorageKey, scale);
+    } catch {
+        // The icon still toggles when storage is unavailable; the choice just is not remembered.
+    }
+};
 
 type Drafts = Record<
     | "twistPitch"
@@ -230,6 +248,7 @@ export const CoilCalculator = (): ReactElement => {
     const [showMaterialManager, setShowMaterialManager] = useState(false);
     const [showConverter, setShowConverter] = useState(false);
     const [nonstandardDiameter, setNonstandardDiameter] = useState(false);
+    const [heatFluxScale, setHeatFluxScale] = useState<HeatFluxColorScale>(readStoredHeatFluxScale);
     const [calculation, setCalculation] = useState<CoilCalculation>({
         kind: "invalid", message: messages.calculating
     });
@@ -652,8 +671,14 @@ export const CoilCalculator = (): ReactElement => {
                                 {result.legLossMessage}</p>}
                             {result.wireLengthWarning && <p className="coil-result-note coil-result-note--danger">
                                 {messages.wireLengthWarning}</p>}
-                            <div className="coil-heatflux"><h3><FontAwesomeIcon icon={faFire}
-                                style={{ color: heatFluxColor(settings.heatFlux) }} />
+                            <div className="coil-heatflux"><h3><FontAwesomeIcon
+                                icon={heatFluxScale === "blackBody" ? blackBodyCurveIcon : faFire}
+                                style={{ color: heatFluxColor(settings.heatFlux, heatFluxScale) }}
+                                onClick={() => {
+                                    const next = heatFluxScale === "legacy" ? "blackBody" : "legacy";
+                                    setHeatFluxScale(next);
+                                    storeHeatFluxScale(next);
+                                }} />
                                 {messages.heatFlux}</h3>
                                 <Field label={messages.targetHeatFlux} value={drafts.heatFlux} unit="mW/mm²" min="10"
                                     max="500"
